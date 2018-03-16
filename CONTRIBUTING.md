@@ -5,13 +5,13 @@
 #### master
 
 <p align="justify">&emsp;&emsp;A branch master é a branch de produção, onde ficará a versão estável do projeto. Ela estará bloqueada para commits e para pushs.
-Veja a política de merges no tópico [merges para master](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-master).</p>
+Veja a política de merges no tópico [Merges para master](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-master) .</p>
 
 #### development
 
 <p align="justify">&emsp;&emsp;A branch development é a branch de desenvolvimento, onde o trabalho das outras branchs será unificado e onde será criada uma versão estável para mesclar com a master.
 Assim como a master ela está bloqueada para commits e pushs.
-Veja a política de merges no tópico [merges para development](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-development).</p>
+Veja a política de merges no tópico [Merges para development](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-development) .</p>
 
 #### Nome das Branches  
 
