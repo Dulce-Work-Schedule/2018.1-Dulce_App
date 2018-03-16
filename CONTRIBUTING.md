@@ -5,13 +5,13 @@
 #### master
 
 <p align="justify">&emsp;&emsp;A branch master é a branch de produção, onde ficará a versão estável do projeto. Ela estará bloqueada para commits e para pushs.
-Veja a política de merges no tópico POLITICA_DE_MERGES-MASTER.</p>
+Veja a política de merges no tópico [merges para master](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-master).</p>
 
 #### development
 
 <p align="justify">&emsp;&emsp;A branch development é a branch de desenvolvimento, onde o trabalho das outras branchs será unificado e onde será criada uma versão estável para mesclar com a master.
 Assim como a master ela está bloqueada para commits e pushs.
-Veja a política de merges no tópico POLITICA_DE_MERGES-DEVELOPMENT.</p>
+Veja a política de merges no tópico [merges para development](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-development).</p>
 
 #### Nome das Branches  
 
@@ -71,7 +71,7 @@ Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
 
 <p align="justify">&emsp;&emsp;Os pull requests externos devem ser feitos apenas para a branch development seguindo as regras e os passos do tópico Merges para development. No conteúdo do pull request deve haver uma descrição clara do que foi feito.</p>
 
-[IMAGEM PULL REQUEST EXEMPLO]
+[Template Pull Request](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/2_template_issue_pull_request/docs/PULL_REQUEST_TEMPLATE.md)
 
 <p align="justify">&emsp;&emsp;Para a equipe interna, os pull requests seram realizados em duas situações, para development e para "master" seguindo as regras e passos de merge para ambas branchs.</p>
 
@@ -79,11 +79,11 @@ Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
 
 | Label name | Description
 | --- | --- |
-| `work-in-progress` | Pull requests que ainda estão em andamento, mais modificações estão por vir. |
-| `needs-review` | Pull requests que precisam de revisão de código. |
-| `under-review` | Pull requests em revisão de código. |
-| `requires-changes` | Pull requests que precisam de modificações e devem ser revisadas de novo. |
-| `needs-testing` | Pull requests que precisam ser testados. |
+| `em-progresso` | Pull requests que ainda estão em andamento, mais modificações estão por vir. |
+| `para-revisao` | Pull requests que precisam de revisão de código. |
+| `em-revisao` | Pull requests em revisão de código. |
+| `mudanca-requerida` | Pull requests que precisam de modificações e devem ser revisadas de novo. |
+| `teste-requerido` | Pull requests que precisam ser testados. |
 
 
 #### Merges para development
@@ -95,11 +95,12 @@ Os merges para development deverão ser feitos quando a funcionalidade ou refato
 
 Para fazer um merge para development os passos a serem seguidos são:  
 - Atualizar a branch development local usando o comando `git pull --rebase origin development`;
-- Mudar para branch que deseja mesclar para development;
+- Mudar para branch que deseja mesclar para development `git checkout X_nome_da_branch`;
 - Na branch a ser mesclada usar o comando `git rebase --preserve-merges development`;
 - A branch será mesclada com a development local;
-- Abrir `merge request` ou `pull request` para development.
-
+- Subir a branch para o repositório do git `git push origin X_nome_da_branch`;
+- Abrir `merge request` ou `pull request` para development;
+- O `merge request` ou `pull request` deve ser revisado por algum membro da equipe ou o P.O..
 
 #### Merges para master
 <p align="justify">&emsp;&emsp;Os merges para master deveram ser feitos apenas após o término da sprint, quando todas as funcionalidades estiverem entregues. O merge deve ser feito a partir da development e apenas quando atingir os seguintes critérios:</p>
