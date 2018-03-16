@@ -22,23 +22,27 @@ Veja a política de merges no tópico POLITICA_DE_MERGES-DEVELOPMENT.</p>
 <p align="justify">&emsp;&emsp;Em casos de issues de features de produção, o nome da  branch deve ser “X_nome_da_issue”.</p>
 
 <p align="justify">&emsp;&emsp;X representa o código de rastreio da issue.
-Para criar a branch, vá para a branch `development`:</p>
+Para criar a branch, vá para a <u>development</u>:</p>
 
 ```
 git checkout development
 ```
+
 <p align="justify">&emsp;&emsp;Depois é só criar a branch e está pronto para produzir!</p>
+
 ```
 git checkout -b X_nome_da_issue
 ```
 
 ### Política de Commits
 
-<p align="justify">&emsp;&emsp;Todos os commits devem ser feitos usando o comando `-s` para indicar sua assinatura no commit.</p>
+Todos os commits devem ser feitos usando o comando `-s` para indicar sua assinatura no commit.
+
 ```
 git commit -s
 ```
-<p align="justify">&emsp;&emsp;A issue em questão deve ser citada no commit, para isso, basta adicionar `#`+numero_da_issue ao commit.</p>
+
+A issue em questão deve ser citada no commit, para isso, basta adicionar `#`+numero_da_issue ao commit.
 
 ```
 git commit -sm"#5 Fazendo guia de contribuição"
