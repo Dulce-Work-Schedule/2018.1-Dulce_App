@@ -36,7 +36,7 @@ Não foi gerado gráfico de burndown por não ter definido a pontuação.
 
 ### Riscos
 
-###1 - Curva de aprendizagem da linguagem
+#### 1 - Curva de aprendizagem da linguagem
 
 Descrição: A tecnologia é nova novo para todos do time.
 
@@ -47,8 +47,6 @@ medidas tomadas:
 - Dojo de react na sprint 1 com Lucas Amoêdo, quarta-feira.
 
 
-
-
 ### Revisão
 
 
@@ -57,8 +55,7 @@ medidas tomadas:
 
 |Pontos positivos|Pontos negativos|
 |---|---|
-|Dificuldade com download e instalação do ambiente do react para estudar a linguagem na prática||
-
+||Dificuldade com download e instalação do ambiente do react para estudar a linguagem na prática|
 
 
 <!-- Histórias implementadas -->
