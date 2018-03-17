@@ -1,17 +1,26 @@
 # Política de uso de repositório  
 
+### Política de Issues
+
+As <i>issues</i> devem possuir título, descrição, no mínimo um assinante responsável pela execução, <i>labels</i> indicando o grupo a quem se destina, a tarefa e <i>milestone</i> e <i>estimated</i> para as <i>issues</i> pontuadas e informar a <i>sprint</i> que ela deve ser concluída.
+
+As Labels usadas no projeto estão descritas no tópico [Labels](https://github.com/fga-gpp-mds/AGR-APP-react-native/labels) no Github.
+
+Para criação de issue o [template Issue](docs/ISSUE_TEMPLATE.md) deve ser seguido.
+
 ### Política de Branches  
 
 #### <i>master</i>
 
 <p align="justify">&emsp;&emsp;A branch <i>master</i> é a branch de produção, onde ficará a versão estável do projeto. Ela estará bloqueada para commits e para pushs.
-Veja a política de merges no tópico <a href="https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-master">merges para <i>master</i></a>. </p>
+Veja a política de merges no tópico [Merges para <i>master</i>](CONTRIBUTING.md#merges-para-master)</a>. </p>
 
 #### <i>development</i>
 
 <p align="justify">&emsp;&emsp;A branch <i>development</i> é a branch de desenvolvimento, onde o trabalho das outras branchs será unificado e onde será criada uma versão estável para mesclar com a <i>master</i>.
 Assim como a <i>master</i> ela está bloqueada para commits e pushs.
-Veja a política de merges no tópico <a href="https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/CONTRIBUTING.md#merges-para-development">merges para <i>development</i></a> .</p>
+Veja a política de merges no tópico [Merges para development](CONTRIBUTING.md#merges-para-development)
+merges para <i>development</i></a> .</p>
 
 #### Nome das Branches  
 
@@ -36,21 +45,26 @@ git checkout -b X_nome_da_issue
 
 ### Política de Commits
 
-Todos os commits devem ser feitos usando o comando `-s` para indicar sua assinatura no commit.
+Todos os commits devem ser feitos usando o parâmetro `-s` para indicar sua assinatura no commit.
 
 ```
 git commit -s
 ```
 
-A issue em questão deve ser citada no commit, para isso, basta adicionar `#`+numero_da_issue ao commit.
+A issue em questão deve ser citada no commit, para isso, basta adicionar `#<numero_da_issue ao commit>`.
 
 ```
 git commit -sm"#5 Fazendo guia de contribuição"
 ```
 
-<img src="https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/docs/img/commit-individual.png" alt="Commit individual">
+![Commit individual](docs/img/commit-individual.png)
 
-<p align="justify">&emsp;&emsp;Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.</p>
+** \*\*Por padrão, o caracter `#` define uma linha de comentário no arquivo da mensagem do commit. Para resolver este problema, use o commando:**
+```
+git config --local core.commentChar '!'
+```
+
+<p align="justify">Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.</p>
 
 ```
 git commit -s
@@ -63,8 +77,14 @@ Signed-off-by: João Henrique Egewarth <egewarth@gmail.com>
 Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
 ```
 
-<img src="https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/5_guia_de_contribuicao/docs/img/commit-dupla.png" alt="Commit pareamento">
+![Commit pareamento](/docs/img/commit-dupla.png)
 
+Para commits que encerram a resolução de uma issue, deve-se iniciar a mensagem do commit com `Fix #<numero_da_issue ao commit>`, para que a issue seja [encerrada automaticamente](https://help.github.com/articles/closing-issues-using-keywords/) quando mesclada na `master`.
+
+Exemplo do comentário do commit:
+```
+git commit -sm"Fix #5 Finalizando guia de contribuição do projeto"
+```
 
 ### Política de Merges e Pull Requests
 
@@ -74,17 +94,11 @@ Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
 
 <p align="justify">&emsp;&emsp;Para a equipe interna, os pull requests seram realizados em duas situações, para <i>development</i> e para <i>master</i> seguindo as regras e passos de merge para ambas branchs.</p>
 
-Para ambos os casos deve ser seguido o [template Pull Request](https://github.com/fga-gpp-mds/AGR-APP-react-native/blob/2_template_issue_pull_request/docs/PULL_REQUEST_TEMPLATE.md).
+Para ambos os casos deve ser seguido o [template Pull Request](docs/PULL_REQUEST_TEMPLATE.md).
 
-##### Labels
+##### Work in Progress
 
-| Label name | Description
-| --- | --- |
-| `em-progresso` | Pull requests que ainda estão em andamento, mais modificações estão por vir. |
-| `para-revisao` | Pull requests que precisam de revisão de código. |
-| `em-revisao` | Pull requests em revisão de código. |
-| `mudanca-requerida` | Pull requests que precisam de modificações e devem ser revisadas de novo. |
-| `teste-requerido` | Pull requests que precisam ser testados. |
+Caso haja a necessidade de atualizar a branch development antes de concluir a issue, o nome do pull request deve conter WIP:<X_nome_da_branch> para que a branch não seja deletada.
 
 
 #### Merges para development
