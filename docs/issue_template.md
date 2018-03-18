@@ -12,9 +12,18 @@ O nome da issue deve conter uma breve descrição sobre o problema a ser resolvi
 ### Conteúdo da issue
 O conteúdo da issue deve conter uma descrição detalhada explicando a finalidade para a qual aquela issue foi criada.
 
+### Outros campos
+As issues devem estar devidamente organizadas nos seguintes campos adicionais:
+ - Pipeline
+ - Assignees
+ - Labels
+ - Milestone
+ - Estimate
+
+
 Veja um exemplo de issue [aqui neste link](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/19)
 
-
+![Issue Example](/docs/img/issue_example.gif)
 
 ### Requisitos
-Para ser aceito sem grandes mudanças, o pull request deve estar de acordo com as politicas de uso do repositório.
+Para ser uma issue válida, deve ter como conteúdo alguma das finalidade listadas acima e estar de acordo com as politicas de uso do repositório.
