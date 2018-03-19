@@ -22,7 +22,7 @@ O pipeline do [boards](https://github.com/fga-gpp-mds/AGR-APP-react-native/issue
 os revisores (se possivel) e  
 as labels (se necessário).
 
-![Pull request](docs/img/pull_request_template.png)
+![Pull request](/docs/img/pull_request_template.png)
 
 ### Requisitos
 Para ser aceito sem grandes mudanças, o pull request deve estar de acordo com as [politicas de uso do repositório.](../CONTRIBUTING.md)
