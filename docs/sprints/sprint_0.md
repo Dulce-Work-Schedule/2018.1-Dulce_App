@@ -30,37 +30,25 @@ Duração: 12 dias
 
 ### Burndown
 
-Não foi gerado gráfico de burndown por não ter definido a pontuação.
-
->#### Horas trabalhadas
-
-### Riscos
-
-#### 1 - Curva de aprendizagem da linguagem
-
-Descrição: A tecnologia é nova novo para todos do time.
-
-medidas tomadas:
-- Compra de curso na Udemi para o time;
-- Definição da tarefa (# da issue) para o time de desenvolvimento;
-- Dojo de react na sprint 1 com Fabio Teixeira, terça-feira;
-- Dojo de react na sprint 1 com Lucas Amoêdo, quarta-feira.
+Não foi gerado gráfico de burndown por não estar definida a pontuação.
 
 
 ### Revisão
 
+- A missão da equipe EPS nessa sprint foi integrar a equipe, definir papeis e auxiliar o time de desenvolvimento a conhecer as tecnologias.  
+- A missão do time de desenvolvimento nessa sprint foi estudar por meio dos cursos disponibilizados pela equipe de EPS e por outros meios de estudo;   
+- A sprint foi concluída sem riscos pontuais;  
+- As práticas ágeis e as tecnologias adotadas para o projeto foram aderidas por todos os membros.
 
 
 ### Retrospectiva
 
 |Pontos positivos|Pontos negativos|
 |---|---|
-||Dificuldade com download e instalação do ambiente do react para estudar a linguagem na prática|
+|Adequação do time de desenvolvimento com a tecnologia. |Dificuldade com download e instalação do ambiente do react para estudar a linguagem na prática.|
+|As práticas ágeis e as tecnologias adotadas para a Release 1 foram aderidas por todos os membros.||
 
 
-<!-- Histórias implementadas -->
-<!-- Quanto da features foi implementadas -->
+#### Dívidas Técnicas
 
-#### Dividas Técnicas
-
-Sem dividas técnicas.
+Sem dívidas técnicas.
