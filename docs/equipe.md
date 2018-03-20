@@ -11,5 +11,5 @@
 |![Ezequiel](https://avatars2.githubusercontent.com/u/37127457?v=4&s=100)  |Ezequiel De Oliveira Dos Reis |email@email|[EzequielDeOliveira](https://github.com/EzequielDeOliveira)|   
 |![Felipe](https://avatars3.githubusercontent.com/u/29442029?v=4&s=100)  |Felipe Campos|email@email|[fepas](https://github.com/fepas)|   
 |![Gabriela](https://avatars2.githubusercontent.com/u/31254028?v=4&s=100)  |Gabriela Barrozo Guedes|gabrielabguedes@gmail.com|[gabibguedes](https://github.com/gabibguedes)|   
-|![Guilherme](https://avatars0.githubusercontent.com/u/30842015?v=4&s=100)  |Guilherme Deusdará|email@email|[gdeusdara](https://github.com/gdeusdara)|   
+|![Guilherme](https://avatars0.githubusercontent.com/u/30842015?v=4&s=100)  |Guilherme Deusdará|guibanci@gmail|[gdeusdara](https://github.com/gdeusdara)|   
 |![Vitor](https://avatars0.githubusercontent.com/u/36925258?v=4&s=100)  |Vitor Leal dos Santos|email@email|[vitorl-s](https://github.com/vitorl-s)|  
