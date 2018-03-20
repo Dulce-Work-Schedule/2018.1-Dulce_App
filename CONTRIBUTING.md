@@ -2,7 +2,7 @@
 
 ### Política de Issues
 
-As <i>issues</i> devem possuir título, descrição, no mínimo um assinante responsável pela execução, <i>labels</i> indicando o grupo a quem se destina, a tarefa e <i>milestone</i> e <i>estimated</i> para as <i>issues</i> pontuadas e informar a <i>sprint</i> que ela deve ser concluída.
+As *issues* devem possuir título, descrição, no mínimo um assinante responsável pela execução, *labels* indicando o grupo a quem se destina, a tarefa e *milestone* e *estimated* para as *issues* pontuadas e informar a *sprint* que ela deve ser concluída.
 
 As Labels usadas no projeto estão descritas no tópico [Labels](https://github.com/fga-gpp-mds/AGR-APP-react-native/labels) no Github.
 
@@ -10,34 +10,34 @@ Para criação de issue o [template Issue](docs/ISSUE_TEMPLATE.md) deve ser segu
 
 ### Política de Branches  
 
-#### <i>master</i>
+#### *master*
 
-<p align="justify">&emsp;&emsp;A branch <i>master</i> é a branch de produção, onde ficará a versão estável do projeto. Ela estará bloqueada para commits e para pushs.
-Veja a política de merges no tópico [Merges para <i>master</i>](CONTRIBUTING.md#merges-para-master)</a>. </p>
+A branch *master* é a branch de produção, onde ficará a versão estável do projeto. Ela estará bloqueada para commits e para pushs.
+Veja a política de merges no tópico [Merges para *master*](CONTRIBUTING.md#merges-para-master).
 
-#### <i>development</i>
+#### *development*
 
-<p align="justify">&emsp;&emsp;A branch <i>development</i> é a branch de desenvolvimento, onde o trabalho das outras branchs será unificado e onde será criada uma versão estável para mesclar com a <i>master</i>.
-Assim como a <i>master</i> ela está bloqueada para commits e pushs.
+A branch *development* é a branch de desenvolvimento, onde o trabalho das outras branchs será unificado e onde será criada uma versão estável para mesclar com a *master*.
+Assim como a *master* ela está bloqueada para commits e pushs.
 Veja a política de merges no tópico [Merges para development](CONTRIBUTING.md#merges-para-development)
-merges para <i>development</i></a> .</p>
+merges para *development*</a> .
 
 #### Nome das Branches  
 
 ##### X_descricao_da_issue
 
-<p align="justify">&emsp;&emsp;As branchs de desenvolvimento de features serão criadas a partir da branch <i>development</i> com a nomenclatura padrão “X_descricao_da_issue”.</p>
+As branchs de desenvolvimento de features serão criadas a partir da branch *development* com a nomenclatura padrão “X_descricao_da_issue”.
 
-<p align="justify">&emsp;&emsp;Em casos de issues de features de produção, o nome da  branch deve ser “X_nome_da_issue”.</p>
+Em casos de issues de features de produção, o nome da  branch deve ser “X_nome_da_issue”.
 
-<p align="justify">&emsp;&emsp;X representa o código de rastreio da issue.
-Para criar a branch, vá para a <i>development</i>:</p>
+X representa o código de rastreio da issue.
+Para criar a branch, vá para a *development*:
 
 ```
 git checkout development
 ```
 
-<p align="justify">&emsp;&emsp;Depois é só criar a branch e está pronto para produzir!</p>
+Depois é só criar a branch e está pronto para produzir!
 
 ```
 git checkout -b X_nome_da_issue
@@ -64,7 +64,7 @@ git commit -sm"#5 Fazendo guia de contribuição"
 git config --local core.commentChar '!'
 ```
 
-<p align="justify">Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.</p>
+<p align="justify">Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.
 
 ```
 git commit -s
@@ -90,16 +90,15 @@ git commit -sm"Fix #5 Finalizando guia de contribuição do projeto"
 
 #### Pull Requests
 
-<p align="justify">&emsp;&emsp;Os pull requests externos devem ser feitos apenas para a branch development seguindo as regras e os passos do tópico Merges para development. No conteúdo do pull request deve haver uma descrição clara do que foi feito.</p>
+Os pull requests externos devem ser feitos apenas para a branch development seguindo as regras e os passos do tópico Merges para development. No conteúdo do pull request deve haver uma descrição clara do que foi feito.
 
-<p align="justify">&emsp;&emsp;Para a equipe interna, os pull requests seram realizados em duas situações, para <i>development</i> e para <i>master</i> seguindo as regras e passos de merge para ambas branchs.</p>
+Para a equipe interna, os pull requests seram realizados em duas situações, para *development* e para *master* seguindo as regras e passos de merge para ambas branchs.
 
 Para ambos os casos deve ser seguido o [template Pull Request](docs/PULL_REQUEST_TEMPLATE.md).
 
 ##### Work in Progress
 
 Caso haja a necessidade de atualizar a branch development antes de concluir a issue, o nome do pull request deve conter WIP:<X_nome_da_branch> para que a branch não seja deletada.
-
 
 #### Merges para development
 Os merges para development deverão ser feitos quando a funcionalidade ou refatoração estiverem de acordo com os seguintes aspectos:  
@@ -108,17 +107,19 @@ Os merges para development deverão ser feitos quando a funcionalidade ou refato
 - Testes feitos;
 - Funcionalidade revisada por algum outro membro.
 
-Para fazer um merge para <i>development</i> os passos a serem seguidos são:  
-- Atualizar a *branch development* local usando o comando `git pull --rebase origin <i>development</i>`;
-- Mudar para branch que deseja mesclar para <i>development</i> `git checkout X_nome_da_branch`;
-- Na branch a ser mesclada usar o comando `git rebase --preserve-merges development`;
-- A branch será mesclada com a <i>development</i> local;
-- Subir a branch para o repositório do git `git push origin X_nome_da_branch`;
-- Abrir *merge request* ou *pull request* para <i>development</i>;
-- O *merge request* ou *pull request* deve ser revisado por algum membro da equipe ou o P.O..
+Para fazer um merge para *development* os passos a serem seguidos são:  
+- `git checkout branch_de_trabalho`;
+- `git pull --rebase origin development`;
+- `git push origin branch_de_trabalho`;
+- Abrir pull request via interface GitHub;
+- Aguardar Code Review
 
-#### Merges para <i>master</i>
-<p align="justify">&emsp;&emsp;Os merges para <i>master</i> deveram ser feitos apenas após o término da sprint, quando todas as funcionalidades estiverem entregues. O merge deve ser feito a partir da <i>development</i> e apenas quando atingir os seguintes critérios:</p>
+#### Merges para *master*
+Os merges para *master* deveram ser feitos apenas após o término da sprint, quando todas as funcionalidades estiverem entregues. O merge deve ser feito a partir da *development* e apenas quando atingir os seguintes critérios:
 
 - Build Travis passando;
 - Sprint dada como concluída.  
+
+##### Code Review
+O code review deve ser feito por um ou mais membros da equipe que não participaram das modificações.
+Após pelo menos uma aprovação de Code Review, Status Check (Travis, CodeClimate) o PullRequest poderá ser aceito;
