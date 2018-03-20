@@ -8,7 +8,7 @@
 |![Isaque](https://avatars1.githubusercontent.com/u/17963713?v=4&s=100)  |Isaque Alves |isaquealvesdl@gmail.com|[alvesisaque](https://github.com/alvesisaque)|   
 |![João](https://avatars3.githubusercontent.com/u/12779174?v=4&s=100)  |João Henrique Egewarth|egewarth@gmail.com|[egewarth](https://github.com/egewarth)|  
 |![Hanae](https://avatars1.githubusercontent.com/u/33128970?v=4&s=100)  |Beatriz Hanae Fujimoto|beatriz.hanae@gmail.com|[BeatrizHanae](https://github.com/BeatrizHanae)|   
-|![Ezequiel](https://avatars2.githubusercontent.com/u/37127457?v=4&s=100)  |Ezequiel De Oliveira Dos Reis |email@email|[EzequielDeOliveira](https://github.com/EzequielDeOliveira)|   
+|![Ezequiel](https://avatars2.githubusercontent.com/u/37127457?v=4&s=100)  |Ezequiel De Oliveira Dos Reis |ezequiel1de1oliveira@gmail.com|[EzequielDeOliveira](https://github.com/EzequielDeOliveira)|   
 |![Felipe](https://avatars3.githubusercontent.com/u/29442029?v=4&s=100)  |Felipe Campos|fepascampos@gmail.com|[fepas](https://github.com/fepas)|   
 |![Gabriela](https://avatars2.githubusercontent.com/u/31254028?v=4&s=100)  |Gabriela Barrozo Guedes|gabrielabguedes@gmail.com|[gabibguedes](https://github.com/gabibguedes)|   
 |![Guilherme](https://avatars0.githubusercontent.com/u/30842015?v=4&s=100)  |Guilherme Deusdará|guibanci@gmail.com|[gdeusdara](https://github.com/gdeusdara)|   
