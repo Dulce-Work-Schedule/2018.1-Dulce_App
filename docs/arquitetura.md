@@ -27,7 +27,7 @@
 
 ### 1.4 Referências
 
-* <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md"> Documento de Visão;</a>
+* <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md "target="_blank" > Documento de Visão;</a>
 
 ### 1.5 Visão Geral
 <div style ="text-align: justify">
