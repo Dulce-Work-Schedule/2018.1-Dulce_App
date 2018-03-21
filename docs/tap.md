@@ -11,11 +11,11 @@
 
 ## 3. Propósito e Justificativa
 
-<p align = "justify"> A atual situação da saúde pública do DF revela deficiências relacionadas a gerência de insumos. Medicamentos e recursos em falta, equipamentos carentes de manutenção, quantidade insuficeiente de leitos são apenas alguns problemas que causam revolta da população brasiliense. </p>
+<p align = "justify"> A atual situação da saúde pública do DF revela deficiências relacionadas a gerência de insumos. Medicamentos e recursos em falta, equipamentos carentes de manutenção, quantidade insuficeiente de leitos são apenas alguns problemas que causam incômodo à população brasiliense. </p>
 
-<p align = "justify"> Os dados denunciam essas ocorrências. Com base nas informações fornecidas é possível mapear as demandas de insumos de cada unidade públicas de serviços de saúde e observar quais possíveis ações reativas devem ser aplicadas </p>
+<p align = "justify"> Os dados revelam essas ocorrências. Com base nas informações fornecidas é possível mapear as demandas de insumos de cada unidade pública de serviços de saúde e observar quais possíveis ações reativas devem ser aplicadas </p>
 
-<p align = "justify">  A solução de <i>software</i> AGR-APP viabiliza o monitoramento das demandas e deficiencias de cada unidade pública de atendimento voltada para o sistema de saúde e por meio da análise dos dados coletados é possível avaliar ações preventivas e reativas que podem ser aplicadas.</p>
+<p align = "justify">  A solução de <i>software</i> AGR-APP viabiliza o monitoramento das demandas e deficiencias de cada unidade pública de atendimento voltada para o sistema de saúde e por meio da análise dos dados coletados é pode-se avaliar ações preventivas e reativas que podem ser aplicadas.</p>
 
 ## 4. Objetivos
 
