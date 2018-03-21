@@ -23,36 +23,35 @@ ___
 
 <h3 name="introducao"> 1. Introdução
 
-<p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile AGR-APP, auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>
+<p align = "justify">&emsp;&emsp;Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile AGR-APP, auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>
 <br>
 
 <h3 name="visao"> 2. Visão Geral
 
 </h3>
-<p align = "justify">A saúde é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. </p>
-<p align = "justify"> O objetivo do AGR-APP é fornecer informações à população e aos gestores  e facilitar a escolha dos melhores locais para atendimento.</p>
+<p align = "justify">&emsp;&emsp;A saúde é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. O objetivo do AGR-APP é fornecer informações aos gestores  para auxilia-los nas decisões de remanejamento e manutenção de profissionais, materiais e demandas</p><h2>??</h2>
 <br>
 
 <h3 name="proposito"> 3. Propósito
 
 </h3>
-<p align = "justify">O aplicativo AGR-APP tem como propósito oferecer um sistema que seja capaz de: auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal e apresentar transparência para os cidadãos, referente à escala de profissionais, materiais, demanda e estrutura disponíveis nos hospitais da cidade.</p>
+<p align = "justify">&emsp;&emsp;O aplicativo AGR-APP tem como propósito oferecer um sistema que seja capaz de auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal, referente à escala de profissionais, materiais, demanda e estrutura disponíveis nos hospitais do DF.</p>
 
 <br>
 
 <h3 name="problema"> 4. Problema
 
-<p align = "justify">É perceptível a degradante situação do Sistema Unificado de Saúde (SUS). Cirurgias atrasadas, tratamentos cancelados e pacientes em fila de espera são acontecimentos recorrentes em hospitais da rede pública do Distrito Federal. Quem depende da rede pública de saúde sabe bem da dificuldade para conseguir ser atendido. Faltam materiais, médicos, remédios e vagas em Unidades de Terapia Intensiva (UTI). </p>
+<p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF enfrenta dificuldades na gestão e manutenção do serviço público . Cirurgias atrasadas, tratamentos cancelados e pacientes em fila de espera são acontecimentos recorrentes em hospitais da rede pública do Distrito Federal. Quem depende da rede pública de saúde sabe bem da dificuldade para conseguir ser atendido. Faltam materiais, médicos, remédios e vagas em Unidades de Terapia Intensiva (UTI). </p>
 
-<p align = "justify">Com tudo isso, o problema a ser tratado por este projeto é o gerenciamento das informações de pessoal qualificado, materiais, estrutura e demanda.
+<p align = "justify">&emsp;&emsp;Com tudo isso, o problema a ser tratado por este projeto é o gerenciamento das informações de pessoal qualificado, materiais, estrutura e demanda.
 </p>
 
 |Tipo      | Descrição |
 | --       |    --     |
-| Problema | Má gestão de pessoal, estrutura e material.     |
-| Afeta  |   População em geral e profissionais da área.    |  
-| Impacto   |  Superlotação de hospitais, falta de medicamentos, estrutra precária.    |  
-| Solução  |  Aplicativo AGR-APP para monitorar as informações do SUS e sugerir soluções para os problemas de demanada e escala.     |
+| Problema | A dificuldade na gestão de pessoal, estrutura e material.     |
+| Afeta | Profissionais da área.|  
+| Impacto | Má alocação de recursos no sistema de saúde     |  
+| Solução |  Aplicativo AGR-APP para monitorar as informações do SUS e sugerir soluções para o gerenciamento e manutenção de recursos   |
 
 <br>
 
@@ -62,15 +61,26 @@ ___
 
 <h3 name="envolvidos"> 5. Descrição das Partes Envolvidas
 
-<p align = "justify"></p>
-<p align = "justify"></p>
+* Cliente
+  * Cliente e idealizador da ideia do projeto.
+* Usuários
+  * Usuários
 
-| Nome      | Descrição | Responsabilidade | Envolvido |
-|   --      |     --    |        --        |      --   |        
-|   --      |     --    |        --        |      --   |
-|   --      |     --    |        --          |           |
-<br>
+* Equipe
+  * A equipe é composta graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software que encontram-se em semestres iniciais.   
 
+|     Membro     |        GitHub       |        E-mail       |
+|:--------------:|:-------------------:|:-------------------:|
+| Eliseu Egewarth | [eliseuegewarth](https://github.com/eliseuegewarth) | eliseuegewarth@gmail.com
+| Gabriela Alves da Gama | [gag2502](https://github.com/gag2502)  |gabrielaalvesdagama@gmail.com  |
+| Isaque Alves de Lima | [alvesisaque](https://github.com/alvesisaque)  |isaquealvesdl@gmail.com  |
+| João Henrique Egewarth | [egewarth](https://github.com/egewarth)  |egewarth@gmail.com  |
+| Beatriz Hanae Fujimoto | [BeatrizHanae](https://github.com/BeatrizHanae)  |beatriz.hanae@gmail.com  |
+| Ezequiel De Oliveira Dos Reis  | [EzequielDeOliveira](https://github.com/EzequielDeOliveira)  |ezequiel1de1oliveira@gmail.com  |
+| Felipe Campos | [fepas](https://github.com/fepas)  | fepascampos@gmail.com  |
+| Gabriela Barrozo Guedes | [gabibguedes](https://github.com/gabibguedes)  |gabrielabguedes@gmail.com  |
+| Guilherme Deusdará | [gdeusdara](https://github.com/gdeusdara)  |guibanci@gmail.com  |
+| Vitor Leal dos Santos | [vitorl-s](https://github.com/vitorl-s)  |vitinho2201@gmail.com  |
 <h3 name="descricaoEscopo"> 6. Descrição do escopo
 
 <h4 name="escopo"> 6.1 Escopo
@@ -84,30 +94,3 @@ ___
 <br></br>
 
 **Recursos gerais:**
-
-
-<br>
-
-<h4 name="fab"> 6.3 Matriz de Features e benefícios (FAB) </p>
-
-|           Feature          | Hipótese de benefício |
-|           --               |     --                |  
-|                            |                       |
-|                            |                       |  
-|                            |                       |
-|                            |                       |
-|                            |                       |
-|                            |                       |
-|                            |                       |   
-|                            |                       |
-|                            |                       |
-
-<br>
-
-<h3 name="rnf"> 7. Requisitos Não funcionais
-
-<p align = "justify">
-
-</p>
-
-<br>
