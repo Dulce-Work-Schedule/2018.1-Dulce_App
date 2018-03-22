@@ -1,6 +1,8 @@
 # Documento de Arquitetura
 
-## Sumário
+## 1. Introdução
+
+### Sumário
 <ul>
 <li><a href="#Introdução">Introdução</a></li>
 <li><a href="#Finalidade">Finalidade</a></li>
@@ -11,12 +13,10 @@
 <li><a href="#Representação">Representação da Arquitetura</a></li>
 <li><a href="#Metas">Metas Restrições de Arquitetura</a></li>
 <li><a href="#Lógica">Visão Lógica</a></li>
-<li><a href="Implementação">Visão de implementação</a></li>
+<li><a href="#Implementação">Visão de implementação</a></li>
 </ul>
 
 <div name = "Introdução" id = "Introdução"></div>
-
-## 1. Introdução
 
  <div name= "Finalidade" id= "Finalidade"></div>
 
