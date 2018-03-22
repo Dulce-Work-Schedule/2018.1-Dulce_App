@@ -37,7 +37,7 @@ ___
 
 <h4 name="escopo-intro"> &emsp;1.2) Escopo:
 
-  &emsp;&emsp;O objetivo deste documento se limita a fornecer a todos os envolvidos uma descrição compreensível das funcionalidades que serão atendidas no projeto AGR-APP. Quando necessário este documento pode ser atualizado durante todo o ciclo de desenvolvimento da solução.
+  &emsp;&emsp;O escopo deste documento se limita a fornecer a todos os envolvidos uma descrição compreensível da problematização, do propósito do produto, suas funcionalidades que serão atendidas e as partes envolvidas no projeto AGR-AP. Quando necessário este documento pode ser atualizado durante todo o ciclo de desenvolvimento da solução.
 
 
   <h4 name="definicoes-intro"> &emsp;1.3) Definições:
@@ -69,23 +69,23 @@ ___
 <h3 name="posicionamento"> 2. Posicionamento
 <h4 name="oportunidade"> &emsp;2.1) Oportunidade de negócio:
 
-  <p align = "justify">&emsp; Com a implantação do AGR-APP, as áreas de gestão de pessoal, estrutura e material, na Secretaria de Saúde do DF tende a se tornar mais diligente. Assim, atendendo a ampla demanda de pacientes que necessitam dos procedimentos hospitalares.
+  <p align = "justify">&emsp; Com a implantação do AGR-APP, as áreas de gestão de pessoal, estrutura e material, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Assim, o atendimento da ampla demanda de pacientes que necessitam dos procedimentos hospitalares será aprimorada.
 </p>
 
   <h4 name="instru-problema"> &emsp;2.2) Instrução do Problema:</h4>
     </h3>
-  <p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF enfrenta dificuldades na gestão e manutenção do serviço público . Cirurgias atrasadas, tratamentos cancelados e pacientes em fila de espera são acontecimentos recorrentes em hospitais da rede pública do Distrito Federal. Quem depende da rede pública de saúde sabe bem da dificuldade para conseguir ser atendido. Faltam materiais, médicos, remédios e vagas em Unidades de Terapia Intensiva (UTI). </p>
+  <p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF enfrenta dificuldades no gerenciamento e manutenção do serviço público . Cirurgias atrasadas, tratamentos cancelados e pacientes em fila de espera são acontecimentos recorrentes em hospitais da rede pública do Distrito Federal. Faltam materiais, médicos, remédios e vagas em Unidades de Terapia Intensiva (UTI). </p>
 
-  <p align = "justify">&emsp;&emsp;Com tudo isso, o problema a ser tratado por este projeto é o gerenciamento das informações de pessoal qualificado, materiais, estrutura e demanda.
+  <p align = "justify">&emsp;&emsp;Com tudo isso, o problema a ser tratado por este projeto é o gerenciamento e o controle das informações de pessoal qualificado, materiais, estrutura e demanda.
   </p>
 
 
   | Tipo    | Descrição|
   | --      |    --    |
   | Problema| A dificuldade na gestão de pessoal, estrutura e material.    |
-  | Afeta| Profissionais da área|  
-  | Impacto| Má alocação de recursos no sistema de saúde    |  
-  | Solução|  Aplicativo AGR-APP para monitorar as informações do SUS e sugerir soluções para o gerenciamento e manutenção de recursos  |
+  | Afeta| Recusos financeiros, profissionais da área, população em geral|  
+  | Impacto| Má alocação de recursos no sistema de saúde   |  
+  | Solução|  Aplicativo AGR-APP para monitorar as informações do SES-DF e sugerir soluções para o gerenciamento e manutenção de recursos  |
 
 <br>
 
@@ -95,7 +95,7 @@ ___
 
   <h4 name="instru-produto"> &emsp;2.3) Instrução de Posição do Produto:
 
-  <p align = "justify">&emsp;&emsp;O site da SES-DF permite que o cidadão tenha acesso a transparência de informações sobre disponibilidades de estoque de medicamentos, leitos, escala de médicos, lista da fila de espera para algum serviço da área da saúde, entre outros atendimentos acessíveis, porém, essa coleta de dados e análise, ainda é realizada de forma manual ou digital sem um sistema de software para auxílio. O AGR-APP é um aplicativo que oferecerá suporte à esses gestores da SES-DF, para ter o controle desses recursos hospitalares, por intermédio de um celular.</p>
+  <p align = "justify">&emsp;&emsp;O site da SES-DF permite que o cidadão tenha acesso a transparência de informações sobre disponibilidades de estoque de medicamentos, leitos, escala de médicos, lista da fila de espera para algum serviço da área da saúde, entre outros atendimentos acessíveis, porém, essa coleta de dados e análise, ainda é realizada de forma manual ou digital sem um sistema de software para auxílio. O AGR-APP é um aplicativo que oferecerá suporte à esses gestores da SES-DF, para estes terem o controle dos recursos hospitalares, por intermédio de um celular.</p>
 
 
 <h3 name="visao"> 3. Visão Geral do Produto
@@ -103,7 +103,7 @@ ___
   <h4 name="escopo-produto"> &emsp;3.1) Escopo do produto:
 
   </h3>
-  <p align = "justify">&emsp;&emsp;A saúde é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. O objetivo do AGR-APP é fornecer informações aos gestores  para auxilia-los nas decisões de remanejamento e manutenção de profissionais, materiais e demandas</p><h2></h2>
+  <p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. O objetivo do AGR-APP é fornecer informações aos gestores  para auxilia-los nas decisões de remanejamento e manutenção de profissionais, materiais e demandas</p><h2></h2>
   <br>
 
   <h4 name="proposito-produto"> &emsp;3.2) Propósito do produto:
@@ -126,7 +126,7 @@ ___
     * Usuários
 
   * Equipe
-    * A equipe é composta graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software que encontram-se em semestres iniciais.
+    * A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software, que encontram-se em semestres iniciais.
 
 
   |     Membro     |        GitHub       |        E-mail       |
