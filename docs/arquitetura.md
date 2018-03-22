@@ -64,20 +64,15 @@
   </p>
 </div>
 
-* ##### Introdução:
- Visualização da composição basica do documento de arquitetura;
+* <b>Introdução:</b> Visualização da composição basica do documento de arquitetura;
 
-* ##### Representação da Arquitetura:
-Noções básicas da forma da arquitetura do projeto em relação a API e o banco de dados;
+* <b>Representação da Arquitetura:</b> Noções básicas da forma da arquitetura do projeto em relação a API e o banco de dados;
 
-* ##### Metas e Restrições de Arquitetura:
-Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
+* <b>Metas e Restrições de Arquitetura:</b> Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
 
-* ##### Visão Lógica:
-Esplana as classes principais da arquitetura do projeto por meio de diagramas;
+* <b>Visão Lógica:</b> Esplana as classes principais da arquitetura do projeto por meio de diagramas;
 
-* ##### Visão de implementação:
-Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
+* <b>Visão de implementação:</b> Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
 
 
 <div name= "Representação" id= "Representação"></div>
