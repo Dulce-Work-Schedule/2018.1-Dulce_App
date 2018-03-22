@@ -152,9 +152,35 @@ ___
   | Vitor Leal dos Santos | [vitorl-s](https://github.com/vitorl-s)  |vitinho2201@gmail.com  |
 
 
-<h4 name="perfis-usuario"> &emsp;4.2) Perfis do Usuário:
+<h4 name="perfis-usuario"> &emsp;4.2 Perfis do Usuário:
 
 <p align = "justify">&emsp;&emsp;Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.
+
+<h4 name="perfis-usuario"> &emsp;4.3 Alternativas e Concorrência
+
+* ERP Radar Empresarial
+  * É um software integrado para gestão de empresas. Ele busca cobrir todas as áreas gerenciáveis de empresa: vendas, finanças, materiais, produção, custos, serviços, controladoria, RH, GED, BI e qualidade, adaptável às necessidades e à realidade de empresas de todos os portes e segmentos.
+
+   ![Radar](https://static.wixstatic.com/media/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png/v1/crop/x_0,y_109,w_740,h_724/fill/w_638,h_623,al_c,usm_0.66_1.00_0.01/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png)
+
+
+
+* ContaAzul
+  * É um software feito para realização de toda a gestão de um negócio com um único sistema de controle financeiro, com uma visão de relatórios em tempo real, das contas a vencer à situação do fluxo de caixa; com controle de estoque de produtos, facilita a elaboração de relatórios gerenciais
+
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;![contaAzul](http://www.informant.com.br/arquivos/cases/foto_1320842073.jpg)
+
+
+
+* Gestão Plus
+  * Este software de gestão facilita a organização de informações fiscais e contábeis, além dos dados relativos aos clientes e às vendas, cadastro de produtos etc.
+
+
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;![Gestaoplus](http://4.bp.blogspot.com/-Ixw8as5lZ4Q/TeTvhln318I/AAAAAAAABZ8/0ToGxJGdf6c/s1600/Cabe%25C3%25A7alho_gestaoplus_blog_novo5.jpg)
+
+
 
 <h3 name="restricoes"> 5. Restrições:
 
