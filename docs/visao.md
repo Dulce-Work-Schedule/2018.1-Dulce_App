@@ -91,6 +91,8 @@ ___
 
 #### Diagrama de Fishbone
 
+![Fishbone](https://imgur.com/J9CH7UL.png)
+
 <br>
 
   <h4 name="instru-produto"> &emsp;2.3) Instrução de Posição do Produto:
