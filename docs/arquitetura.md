@@ -33,7 +33,7 @@
 ### 1.2 Escopo
 <div style ="text-align: justify">
   <p>
-    < COLOQUE AQUI O ESCOPO >
+        Este documento possui o objetivo de explicar detalhadamente a arquitetura empregada na produção do aplicativo AGR, implementado nas plataformas IOS e Android pela tecnologia react-native.
   </p>
 </div>
 
@@ -46,7 +46,6 @@
   </p>
 </div>
 
-* AGR = "agora";
 * MDS = "Métodos de Desenvolvimento de Software";
 * EPS = "Engenharia de Produtos de Software";
 
@@ -61,7 +60,12 @@
 ### 1.5 Visão Geral
 <div style ="text-align: justify">
   <p>
-    < COLOQUE AQUI A VISÃO GERAL>
+    Este documento é estruturado da seguinte forma:
+    * Introdução: Visualização da composição basica do documento de arquitetura;
+    * Representação da Arquitetura: Noções básicas da forma da arquitetura do projeto em relação a API e o banco de dados;
+    * Metas e Restrições de Arquitetura: Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
+    * Visão Lógica: Esplana as classes principais da arquitetura do projeto por meio de diagramas;
+    * Visão de implementação: Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
   </p>
 </div>
 
