@@ -21,6 +21,7 @@ ___
 >#### [4. Descrições das Partes Envolvidas](#envolvidos)
 >###### &emsp;&emsp;[4.1 Perfis das Partes Interessadas](#perfis-partes-interessadas)
 >###### &emsp;&emsp;[4.2 Perfis do Usuário](#perfis-usuario)
+>###### &emsp;&emsp;[4.3 Alternativas e Concorrência](#alternativas)
 
 
 >### [5. Restrições](#restricoes)
@@ -156,7 +157,14 @@ ___
 
 <p align = "justify">&emsp;&emsp;Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.
 
-<h4 name="perfis-usuario"> &emsp;4.3 Alternativas e Concorrência
+<h4 name="alternativas"> &emsp;4.3 Alternativas e Concorrência
+
+* TrakCare
+  * O sistema eletrônico atual da Secretaria de Saúde do DF. Ele que reúne todos os dados de consultas, alergias, exames e histórico médico da rede pública de saúde do Distrito Federal.
+
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;![TrakCare](https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg)
+
 
 * ERP Radar Empresarial
   * É um software integrado para gestão de empresas. Ele busca cobrir todas as áreas gerenciáveis de empresa: vendas, finanças, materiais, produção, custos, serviços, controladoria, RH, GED, BI e qualidade, adaptável às necessidades e à realidade de empresas de todos os portes e segmentos.
