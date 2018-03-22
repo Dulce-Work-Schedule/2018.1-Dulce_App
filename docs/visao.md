@@ -130,6 +130,8 @@ ___
   * Equipe
     * A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software, que encontram-se em semestres iniciais.
 
+  #### Engenharia Do Produto de software
+
 
   |     Membro     |        GitHub       |        E-mail       |
   |:--------------:|:-------------------:|:-------------------:|
@@ -137,6 +139,11 @@ ___
   | Gabriela Alves da Gama | [gag2502](https://github.com/gag2502)  |gabrielaalvesdagama@gmail.com  |
   | Isaque Alves de Lima | [alvesisaque](https://github.com/alvesisaque)  |isaquealvesdl@gmail.com  |
   | João Henrique Egewarth | [egewarth](https://github.com/egewarth)  |egewarth@gmail.com  |
+
+  #### &emsp;&emsp;Metodos de Desenvolvimento de Software
+
+  |     Membro     |        GitHub       |        E-mail       |
+  |:--------------:|:-------------------:|:-------------------:|
   | Beatriz Hanae Fujimoto | [BeatrizHanae](https://github.com/BeatrizHanae)  |beatriz.hanae@gmail.com  |
   | Ezequiel De Oliveira Dos Reis  | [EzequielDeOliveira](https://github.com/EzequielDeOliveira)  |ezequiel1de1oliveira@gmail.com  |
   | Felipe Campos | [fepas](https://github.com/fepas)  | fepascampos@gmail.com  |
@@ -146,6 +153,8 @@ ___
 
 
 <h4 name="perfis-usuario"> &emsp;4.2) Perfis do Usuário:
+
+<p align = "justify">&emsp;&emsp;Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.
 
 <h3 name="restricoes"> 5. Restrições:
 
@@ -160,6 +169,8 @@ ___
  &emsp;
 [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/pt-br/SSYMRC_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html)
 
-  &emsp; [Projeto Receituário Médico - Documento de visão](https://github.com/fga-gpp-mds/2017.2-Receituario-Medico)
+&emsp; [Projeto Receituário Médico - Documento de visão](https://github.com/fga-gpp-mds/2017.2-Receituario-Medico)
+
+
 
 <br></br>
