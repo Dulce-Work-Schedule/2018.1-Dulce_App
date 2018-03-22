@@ -1,7 +1,5 @@
 # Documento de Arquitetura
 
-## 1. Introdução
-
 ### Sumário
 <ul>
 <li><a href="#Introdução">Introdução</a></li>
@@ -19,6 +17,8 @@
 <div name = "Introdução" id = "Introdução"></div>
 
  <div name= "Finalidade" id= "Finalidade"></div>
+
+## 1. Introdução
 
 ### 1.1 Finalidade
 <div style ="text-align: justify">
@@ -86,7 +86,7 @@ Descreve de forma geral a implementação e como as classes devem se comportar p
 
 <div style ="text-align: justify">
   <p>
-    < COLOQUE AQUI A IMAGEM BUNITINHA>
+    <img src ="img/arquitetura.png">
   </p>
 </div>
 
