@@ -61,13 +61,24 @@
 <div style ="text-align: justify">
   <p>
     Este documento é estruturado da seguinte forma:
-    * Introdução: Visualização da composição basica do documento de arquitetura;
-    * Representação da Arquitetura: Noções básicas da forma da arquitetura do projeto em relação a API e o banco de dados;
-    * Metas e Restrições de Arquitetura: Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
-    * Visão Lógica: Esplana as classes principais da arquitetura do projeto por meio de diagramas;
-    * Visão de implementação: Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
   </p>
 </div>
+
+* ##### Introdução:
+ Visualização da composição basica do documento de arquitetura;
+
+* ##### Representação da Arquitetura:
+Noções básicas da forma da arquitetura do projeto em relação a API e o banco de dados;
+
+* ##### Metas e Restrições de Arquitetura:
+Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
+
+* ##### Visão Lógica:
+Esplana as classes principais da arquitetura do projeto por meio de diagramas;
+
+* ##### Visão de implementação:
+Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
+
 
 <div name= "Representação" id= "Representação"></div>
 
