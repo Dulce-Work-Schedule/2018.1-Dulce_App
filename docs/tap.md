@@ -39,14 +39,23 @@
 
 ## 6. Riscos
 
-<p align = "justify">&emsp;&emsp;Os riscos do projeto AGR-APP são abordados, priorizados, monitorados e gerenciados no documento de monitoramento e gerenciamento de riscos. (link do documento).</p>
+<p align = "justify">&emsp;&emsp;Os principais riscos do projeto são detalhados a seguir.</p>
+
+| **Risco** |  **Plano de Ação** |
+|:--------------:|:-------------------:|
+|Adaptação da equipe  com as tecnologias| Realização de treinamentos sobre tecnologias.|
+|Falta de equipamentos |Pareamento com disponibilidade de horário e Isolamento do ambiente do projeto com Docker.|
+|Divergência de horários entre os membros do time| Os membros do time se reunirão presencialmente às terças-feiras, quintas-feiras e aos sábados, também será utilizada a ferramente slack para comunicação e atualização do time.|
+|Dificuldade em configurar o ambiente| Automatizar o ambiente com a ferramenta Docker.|
+|Dificuldades na interação do time| Realizar feedbacks constantes para minimizar a falta de comunicação e fazendo o acompanhamento constante dos membros.|
+|Mudança no escopo | Planejar corretamente cada sprint e manter contato frequente com o cliente para ajustar o escopo.|
 
 
 ## 7. Entregas do produto
 
 <p align = "justify">&emsp;&emsp;O Projeto tem como base duas entregas principais que são chamadas <i>Release</i>, as datas das <i>Releases</i> foram definidas pela professora para ajustar ao tempo e cronograma das disciplinas de Engenharia do Produto de <i>Software</i> (EPS) e Metodologias de Desenvolvimento de <i>Software</i> (MDS). As possíveis datas para as entregas são:</p>
 
-<p align = "justify"> <b> <i>Release 1</i>  (12/04/2018) </b> -  .</p>
+<p align = "justify"> <b> <i>Release 1</i>  (10/04/2018) </b> -  .</p>
 <p align = "justify"> <b> <i>Release 2</i>  (DD/MM/AAAA) </b> -  .</p>
 
 
@@ -54,25 +63,25 @@
 
 ### Recusos Humanos
 
-<p align = "justify">&emsp;&emsp;Segundo dados apresentados pelo ultimo relatório de gestão da Universidade de Brasília (ano de 2016) o custo anual de um estudante de Engenharia de software é de R$ 26.040,00.</p>
-<p align = "justify">&emsp;&emsp;A quantidade média anual de créditos de um aluno é 48 e cada crédito representa 15 horas.</p>
-<p align = "justify">&emsp;&emsp;</p>
-
+<p align = "justify">&emsp;&emsp;Segundo dados apresentados pelo ultimo relatório de gestão da Universidade de Brasília (ano de 2016) o custo anual de um estudante de Engenharia de software é de R$ 26.040,00. A quantidade média anual de créditos de um aluno é 48 e cada crédito representa 15 horas, totalizando 720 horas por aluno por ano. A partir desses dados podemos dizer que o custo por hora do aluno é de R$ 36,00. A quantidade de horas trabalhadas pelos estudantes é de aproximadamente 10 horas por semana. Considerando a duração do projeto de 18 semanas temos o calculo:
+preço/aluno = ((26040,00/(48x15)x10)x18) = R$ 6.510,00 por aluno.</p>
+Opreço total para os 10 integrantes é de R$ 65.100,00
 
 
 ### Estrutura
+
 <p align = "justify">&emsp;&emsp;Para a analise de custos de estrurura, foi considerado o valor da taxa de condôminio do condôminio Village no Gama, onde são realizadas nossas reuniões semanais.</p>
 
-A taxa de condôminio é de aproximadamente R$ 400,00 por mês, podendo variar para mais ou para menos.
+<p align = "justify">&emsp;&emsp;A taxa de condôminio é de aproximadamente R$ 400,00 por mês, logo multiplicando esse valor por 4 meses temos: R$ 1.600,00.</p>
 
 ### Materiais
 <p align = "justify">&emsp;&emsp;Os custos de materiais contam com consumo de internet para 10 pessoas por 4 meses, 10 Notebooks, energia para 10 computadores. .</p>
 
 #### Notebooks
-10 x Notebook Samsung Expert X22s Intel Core i5 8GB 1TB Tela Led HD 14"
+10 x Notebook Samsung Expert X22s Intel Core i5 8GB 1TB Tela Led HD 14
 
-Valor do notebook = R$ 2.184,99
-Valor final = R$ 21849,90
+Valor do notebook = R$ 1.994,99
+Valor final = R$ 19.949,90
 
 #### Energia
 Energia = (((consumo_pc)x(horas_trabalhadas/mes)x(quantidade_pessoas)/1000)x(valor_KWh))x(duração_projeto)
@@ -93,6 +102,19 @@ quantidade_pessoas = 10
 duração_projeto = 4
 
 Valor final = ((120)x(10)x(4)) = R$ 4800,00
+
+#### Valor final
+  | Recurso | Valor |
+|:--------------:|:-------------------:|
+|Recursos Humanos|R$ R$ 65.100,00|
+|Estrutura|R$ 1.600,00|
+|Internet|R$ 4.800,00|
+|Energia|R$ 62,95|
+|Notebooks| R$ R$ 19.949,90|
+| **Total** |**R$ 91.512,95**|
+
+Para acessar as informações e calculos de custo ajustado durante o projeto está disponível no (documento de custo).
+
 
 
 ## 9. Partes Interessadas
@@ -146,5 +168,9 @@ Para o projeto ser aprovado pelo cliente deve atingir as seguintes metas:
 <p align = "justify"> Referência</p>
 
 Relatório de Gestão 2016, Universidade de Brasília, pag. 155:
-http://www.dpo.unb.br/index.php?option=com_phocadownload&view=file&id=558&Itemid=816  
+<http://www.dpo.unb.br/index.php?option=com_phocadownload&view=file&id=558&Itemid=816>  
 Acesso em: 20/03/2018, 22:03, Horário de Brasília.
+
+Notebook pesquisado:
+<https://www.submarino.com.br/produto/132568845/notebook-samsung-expert-x22s-intel-core-i5-8gb-1tb-tela-led-hd-14-windows-10-cinza?WT.srch=1&epar=bp_pl_00_go_pla_inf_geral_1p&gclid=Cj0KCQjwqM3VBRCwARIsAKcekb0CYvmxkiETCJSRZF3ya-62r-CshYwK9xefGaJ_FFDdo-ILrOHHT2oaAvtoEALw_wcB&opn=XMLGOOGLE&sellerId=00776574000660>  
+Acesso em 23/03/2018, 00:21, Horário de Brasília.
