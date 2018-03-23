@@ -33,7 +33,7 @@
 ### 1.2 Escopo
 <div style ="text-align: justify">
   <p>
-        Este documento possui o objetivo de explicar detalhadamente a arquitetura empregada na produção do aplicativo AGR, implementado nas plataformas IOS e Android pela tecnologia react-native.
+      Este documento se aplica à produção do aplicativo AGR, implementado nas plataformas IOS e Android, representando a arquitetura utilizada.
   </p>
 </div>
 
@@ -48,6 +48,7 @@
 
 * MDS = "Métodos de Desenvolvimento de Software";
 * EPS = "Engenharia de Produtos de Software";
+* API = "Application Programming Interface" ou Interface de Programação de Aplicativos;
 
 <div name= "Referências" id= "Referências"></div>
 
@@ -70,7 +71,7 @@
 
 * <b>Metas e Restrições de Arquitetura:</b> Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
 
-* <b>Visão Lógica:</b> Esplana as classes principais da arquitetura do projeto por meio de diagramas;
+* <b>Visão Lógica:</b> Explana as classes principais da arquitetura do projeto por meio de diagramas;
 
 * <b>Visão de implementação:</b> Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
 
@@ -91,9 +92,17 @@
 
 <div style ="text-align: justify">
   <p>
-    < COLOQUE AQUI O QUE SERÁ UTILIZADO>
+    Para o desenvolvimento deste projeto serão ultilizadas as seguintes tecnologias:
   </p>
 </div>
+
+* <a href ="https://facebook.github.io/react-native/"> React-native</a>: Utilizado para a construção do aplicativo em IOS e Android;
+
+* <a href ="https://nodejs.org/en/">Node.js</a>: Plataforma de desenvolvimento da API;
+
+* Banco de dados fornecido pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
+
+* Manutenibilidade: O código deve ser facilmente modificado e corrigido;
 
 <div name= "Lógica" id= "Lógica"></div>
 
@@ -111,7 +120,7 @@
 * #### Diagrama de Classes
 <div style ="text-align: justify">
   <p>
-    < COLOQUE AQUI A IMAGEM DO DIAGRAMA>
+    <img src="img/diagrama_de_classes.png">
   </p>
 </div>
 
