@@ -12,6 +12,7 @@
 <li><a href="#Metas">Metas Restrições de Arquitetura</a></li>
 <li><a href="#Lógica">Visão Lógica</a></li>
 <li><a href="#Implementação">Visão de implementação</a></li>
+<li><a href="#Referencia">Referências</a></li>
 </ul>
 
 <div name = "Introdução" id = "Introdução"></div>
@@ -26,7 +27,7 @@
       O documento arquitetura tem a função de específicar decisões arquiteturais relevantes na produção e implementação do projeto AGR, produzido em react native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
   </p>
 </div>
-<div
+
 
 <div name= "Escopo" id= "Escopo"></div>
 
@@ -128,5 +129,23 @@
 <div style ="text-align: justify">
   <p>
     < COLOQUE AQUI A IMAGEM DO DIAGRAMA>
+  </p>
+</div>
+
+
+<div name= "Referencia" id= "referencia"></div>
+## 6. Referências
+<div style ="text-align: justify">
+  <p>
+    Secretaria de Estado de Saúde do Distrito Federal, http://www.saude.df.gov.br/index.php Acesso em: 23/03/2018, 11:36, Horário de Brasília.
+  </p>
+  <p>
+    React-native, https://facebook.github.io/react-native/ Acesso em: 23/03/2018, 11:20, Horário de Brasília.
+  </p>
+  <p>
+    Node.js, https://nodejs.org/en/ Acesso em: 23/03/2018, 11:56, Horário de Brasília.
+  </p>
+  <p>
+    React Native Architecture: Explained! https://www.logicroom.co/react-native-architecture-explained/ Acesso em: 22/03/2018, 12:05, Horário de Brasília.
   </p>
 </div>
