@@ -38,7 +38,7 @@ ___
 
 <h4 name="escopo-intro"> &emsp;1.2) Escopo:
 
-  &emsp;&emsp;O escopo deste documento se limita a fornecer a todos os envolvidos uma descrição compreensível da problematização, do propósito do produto, suas funcionalidades que serão atendidas e as partes envolvidas no projeto AGR-AP. Quando necessário este documento pode ser atualizado durante todo o ciclo de desenvolvimento da solução.
+  &emsp;&emsp;O escopo deste documento se limita a fornecer a todos os envolvidos uma descrição compreensível da problematização, do propósito do produto, suas funcionalidades que serão atendidas e as partes envolvidas no projeto AGR-APP. Quando necessário este documento pode ser atualizado durante todo o ciclo de desenvolvimento da solução.
 
 
   <h4 name="definicoes-intro"> &emsp;1.3) Definições:
@@ -98,7 +98,7 @@ ___
 
   <h4 name="instru-produto"> &emsp;2.3) Instrução de Posição do Produto:
 
-  <p align = "justify">&emsp;&emsp;O site da SES-DF permite que o cidadão tenha acesso a transparência de informações sobre disponibilidades de estoque de medicamentos, leitos, escala de médicos, lista da fila de espera para algum serviço da área da saúde, entre outros atendimentos acessíveis, porém, essa coleta de dados e análise, ainda é realizada de forma manual ou digital sem um sistema de software para auxílio. O AGR-APP é um aplicativo que oferecerá suporte à esses gestores da SES-DF, para estes terem o controle dos recursos hospitalares, por intermédio de um celular.</p>
+  <p align = "justify">&emsp;&emsp;O site da SES-DF permite que o cidadão tenha acesso a transparência de informações sobre disponibilidades de estoque de medicamentos, leitos, escala de médicos, lista da fila de espera para algum serviço da área da saúde, entre outros atendimentos acessíveis, porém, essa coleta de dados e análise, ainda é realizada de forma manual ou digital sem um sistema de software para auxílio. O AGR-APP é um aplicativo que oferecerá suporte à esses gestores da SES-DF, para estes terem o controle dos recursos hospitalares, por intermédio de um dispositivo móvel.</p>
 
 
 <h3 name="visao"> 3. Visão Geral do Produto
@@ -106,8 +106,7 @@ ___
   <h4 name="escopo-produto"> &emsp;3.1) Escopo do produto:
 
   </h3>
-  <p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. O objetivo do AGR-APP é fornecer informações aos gestores  para auxilia-los nas decisões de remanejamento e manutenção de profissionais, materiais e demandas</p><h2></h2>
-  <br>
+  <p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. O objetivo do AGR-APP é fornecer informações aos gestores  para auxiliá-los nas decisões de remanejamento e manutenção de profissionais, materiais e demandas</p><h2></h2>
 
   <h4 name="proposito-produto"> &emsp;3.2) Propósito do produto:
 
@@ -118,7 +117,6 @@ ___
 
 <p align = "justify">&emsp;&emsp;O principal recurso ou funcionalidade, do produto após a obtenção das informações, é analisar os dados obtidos e promover uma alternativa de melhora para os gestores.</p>
 
-<br>
 <h3 name="envolvidos"> 4. Descrição das Partes Envolvidas
 
   <h4 name="perfis-partes-interessadas"> &emsp;4.1) Perfis das Partes Interessadas:
@@ -160,26 +158,31 @@ ___
 <h4 name="alternativas"> &emsp;4.3 Alternativas e Concorrência
 
 * TrakCare
-  * O sistema eletrônico atual da Secretaria de Saúde do DF. Ele que reúne todos os dados de consultas, alergias, exames e histórico médico da rede pública de saúde do Distrito Federal.
+  * O sistema eletrônico atual da Secretaria de Saúde do DF. O qual reúne todos os dados de consultas, alergias, exames e histórico médico da rede pública de saúde do Distrito Federal.
+  <br>
+  <br>
+  <img src='https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg' width=480 height=180>
 
 
-  &emsp;&emsp;&emsp;&emsp;&emsp;![TrakCare](https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg)
-
+  <br>
 
 * ERP Radar Empresarial
   * É um software integrado para gestão de empresas. Ele busca cobrir todas as áreas gerenciáveis de empresa: vendas, finanças, materiais, produção, custos, serviços, controladoria, RH, GED, BI e qualidade, adaptável às necessidades e à realidade de empresas de todos os portes e segmentos.
+  <br>
+  <br>
+  <img src='https://static.wixstatic.com/media/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png/v1/crop/x_0,y_109,w_740,h_724/fill/w_638,h_623,al_c,usm_0.66_1.00_0.01/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png' width=560 height=520>
 
-   ![Radar](https://static.wixstatic.com/media/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png/v1/crop/x_0,y_109,w_740,h_724/fill/w_638,h_623,al_c,usm_0.66_1.00_0.01/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png)
 
-
+  <br>
 
 * ContaAzul
   * É um software feito para realização de toda a gestão de um negócio com um único sistema de controle financeiro, com uma visão de relatórios em tempo real, das contas a vencer à situação do fluxo de caixa; com controle de estoque de produtos, facilita a elaboração de relatórios gerenciais
 
+  <br>
 
-  &emsp;&emsp;&emsp;&emsp;&emsp;![contaAzul](http://www.informant.com.br/arquivos/cases/foto_1320842073.jpg)
-
-
+  &emsp;&emsp;&emsp;<img src='http://www.informant.com.br/arquivos/cases/foto_1320842073.jpg' width=530 height=340>
+  <br>
+  <br>
 
 * Gestão Plus
   * Este software de gestão facilita a organização de informações fiscais e contábeis, além dos dados relativos aos clientes e às vendas, cadastro de produtos etc.
@@ -188,7 +191,7 @@ ___
 
   &emsp;&emsp;&emsp;&emsp;&emsp;![Gestaoplus](http://4.bp.blogspot.com/-Ixw8as5lZ4Q/TeTvhln318I/AAAAAAAABZ8/0ToGxJGdf6c/s1600/Cabe%25C3%25A7alho_gestaoplus_blog_novo5.jpg)
 
-
+<br>
 
 <h3 name="restricoes"> 5. Restrições:
 
