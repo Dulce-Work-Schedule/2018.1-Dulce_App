@@ -38,28 +38,28 @@ ___
 <p align = "justify">&emsp;&emsp;Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile AGR-APP, auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
 
 <h4 name="escopo-intro"> &emsp;1.2) Escopo:
-</h3>
+
 </h4>
   &emsp;&emsp;O escopo deste documento se limita a fornecer a todos os envolvidos uma descrição compreensível da problematização, do propósito do produto, suas funcionalidades que serão atendidas e as partes envolvidas no projeto AGR-APP. Quando necessário este documento pode ser atualizado durante todo o ciclo de desenvolvimento da solução.
 
 
   <h4 name="definicoes-intro"> &emsp;1.3) Definições:
-  </h3>
+
   </h4>
 
-&emsp;Algumas definições são utilizadas neste projeto, como:
+&emsp;Algumas definições são utilizadas neste projeto, como: <br>
 
-&emsp;&emsp;SES-DF - Secretaria de Estado de Saúde do Distrito Federal;
+&emsp;&emsp;SES-DF - Secretaria de Estado de Saúde do Distrito Federal; <br>
 
-&emsp;&emsp;MDS - disciplina de Métodos de Desenvolvimento de Software;
+&emsp;&emsp;MDS - disciplina de Métodos de Desenvolvimento de Software; <br>
 
-&emsp;&emsp;EPS - disciplina de Engenharia de Produto de Software;
+&emsp;&emsp;EPS - disciplina de Engenharia de Produto de Software; <br>
 
-&emsp;&emsp;Android - Sistema operacional móvel suportado pela Google;
+&emsp;&emsp;Android - Sistema operacional móvel suportado pela Google; <br>
 
-&emsp;&emsp;IOS - Sistema operacional móvel da Apple Inc.;
+&emsp;&emsp;iOS - Sistema operacional móvel da Apple Inc.; <br>
 
-&emsp;&emsp;SO - Sistema Operacional;
+&emsp;&emsp;SO - Sistema Operacional; <br>
 
    </p>
 
@@ -86,12 +86,12 @@ ___
   </p>
 
 
-  | Tipo    | Descrição|
-  | --      |    --    |
-  | Problema| A dificuldade na gestão de pessoal, estrutura e material.    |
-  | Afeta| Recusos financeiros, profissionais da área, população em geral|  
-  | Impacto| Má alocação de recursos no sistema de saúde   |  
-  | Solução|  Aplicativo AGR-APP para monitorar as informações do SES-DF e sugerir soluções para o gerenciamento e manutenção de recursos  |
+| Tipo    | Descrição|
+| --      |    --    |
+| Problema| A dificuldade na gestão de pessoal, estrutura e material.    |
+| Afeta| Recusos financeiros, profissionais da área, população em geral|  
+| Impacto| Má alocação de recursos no sistema de saúde   |  
+| Solução|  Aplicativo AGR-APP para monitorar as informações do SES-DF e sugerir soluções para o gerenciamento e manutenção de recursos  |
 
 <br>
 
@@ -115,7 +115,7 @@ ___
   <p align = "justify">&emsp;&emsp;A Secretaria de Saúde do DF é um serviço essencial em nossa sociedade que através do serviços dos profissionais dos quais lá trabalham(médicos, enfermeiros e demais profissionais) permitem uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como falta de materiais, estrutura, alta demanda e falta de profissionais para suprí-la. O objetivo do AGR-APP é fornecer informações aos gestores  para auxiliá-los nas decisões de remanejamento e manutenção de profissionais, materiais e demandas</p><h2></h2>
 
   <h4 name="proposito-produto"> &emsp;3.2) Propósito do produto:
-
+  </h4>
   </h3>
   <p align = "justify">&emsp;&emsp;O aplicativo AGR-APP tem como propósito oferecer um sistema que seja capaz de auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal, referente à escala de profissionais, materiais, demanda e estrutura disponíveis nos hospitais do DF.</p>
 
@@ -126,16 +126,16 @@ ___
 
 <h3 name="envolvidos"> 4. Descrição das Partes Envolvidas
 </h3>
-</h4>
+
   <h4 name="perfis-partes-interessadas"> &emsp;4.1) Perfis das Partes Interessadas:
   </h4>
-  * Cliente
-    * Cliente e idealizador da ideia do projeto.
-  * Usuários
-    * Usuários
+  * Cliente <br>
+    * Cliente e idealizador da ideia do projeto. <br>
+  * Usuários <br>
+    * Usuários <br>
 
-  * Equipe
-    * A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software, que encontram-se em semestres iniciais.
+  * Equipe <br>
+    * A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software, que encontram-se em semestres iniciais. <br>
 
   #### Engenharia Do Produto de software
 
@@ -147,7 +147,7 @@ ___
   | Isaque Alves de Lima | [alvesisaque](https://github.com/alvesisaque)  |isaquealvesdl@gmail.com  |
   | João Henrique Egewarth | [egewarth](https://github.com/egewarth)  |egewarth@gmail.com  |
 
-  #### &emsp;&emsp;Metodos de Desenvolvimento de Software
+  #### Metodos de Desenvolvimento de Software
 
   |     Membro     |        GitHub       |        E-mail       |
   |:--------------:|:-------------------:|:-------------------:|
@@ -160,7 +160,7 @@ ___
 
 
 <h4 name="perfis-usuario"> &emsp;4.2 Perfis do Usuário:
-
+</h4>
 <p align = "justify">&emsp;&emsp;Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.
 
 <h4 name="alternativas"> &emsp;4.3 Alternativas e Concorrência
@@ -169,7 +169,7 @@ ___
   * O sistema eletrônico atual da Secretaria de Saúde do DF. O qual reúne todos os dados de consultas, alergias, exames e histórico médico da rede pública de saúde do Distrito Federal.
   <br>
   <br>
-  <img src='https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg' width=480 height=180>
+  <img src='https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg' width=460 height=160>
 
 
   <br>
@@ -178,7 +178,7 @@ ___
   * É um software integrado para gestão de empresas. Ele busca cobrir todas as áreas gerenciáveis de empresa: vendas, finanças, materiais, produção, custos, serviços, controladoria, RH, GED, BI e qualidade, adaptável às necessidades e à realidade de empresas de todos os portes e segmentos.
   <br>
   <br>
-  <img src='https://static.wixstatic.com/media/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png/v1/crop/x_0,y_109,w_740,h_724/fill/w_638,h_623,al_c,usm_0.66_1.00_0.01/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png' width=560 height=520>
+  <img src='https://static.wixstatic.com/media/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png/v1/crop/x_0,y_109,w_740,h_724/fill/w_638,h_623,al_c,usm_0.66_1.00_0.01/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png' width=550 height=510>
 
 
   <br>
@@ -202,9 +202,13 @@ ___
 <br>
 
 <h3 name="restricoes"> 5. Restrições:
+</h3>
 
-<h3 name="restricoes"> 6. Referências:
-
+ 1. O sistema necessita de informações que serão fornecidas pela SES-DF; <br>
+ 2. O sistema deverá estar acessível até julho de 2018; <br>
+ 3. O sistema deverá funcionar tanto em Android como em iOS;
+<br>
+<h3 name="restricoes"> 6. Referências: </h3>
  &emsp;
 [O Globo: Saúde  Pública do país sofre de ma gestão.](https://oglobo.globo.com/opiniao/saude-publica-do-pais-sofre-de-ma-gestao-12010246)
 
