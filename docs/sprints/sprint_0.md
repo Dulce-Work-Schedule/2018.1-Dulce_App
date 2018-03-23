@@ -2,7 +2,7 @@
 
 ### Objetivo
 
-- Integrar a equipe, definir papeis, prover viabilidade técnica; 
+- Integrar a equipe, definir papeis, prover viabilidade técnica;
 - Adequar o projeto às diretrizes da comunidade de software livre no GitHub.
 
 ### Sprint Backlog
@@ -11,10 +11,12 @@
 |---|
 |[#1 - Adicionar Licença do repositório](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/1)|
 |[#4 - Adicionar código de conduta](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/4)|
+|[#5 - Adicionar guia de contribuição do projeto](https://github.com/fga-gpp-mds/agr-react-native/issues/5)|
 |[#6 - Treinamento 1 - Scrum](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/6)|
 |[#8 - Treinamento 2 - Git, Kanban](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/8)|
 |[#11 - Adicionar documentação de sprints](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/11)|
 |[#14 - Estudar as tecnologias do projeto](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/14)|
+|[#24 - Documentar Sprint 0](https://github.com/fga-gpp-mds/agr-react-native/issues/24)|
 
 ### Papéis
 
