@@ -121,6 +121,7 @@ ___
 
   <h4 name="perfis-partes-interessadas"> &emsp;4.1) Perfis das Partes Interessadas:
   </h4>
+  
   * Cliente
 
     * Cliente e idealizador da ideia do projeto.
@@ -167,17 +168,24 @@ ___
   * O sistema eletrônico atual da Secretaria de Saúde do DF. O qual reúne todos os dados de consultas, alergias, exames e histórico médico da rede pública de saúde do Distrito Federal.
   <br>
   <br>
-  <img src='https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg' width=460 height=160>
+  <img src='https://pbs.twimg.com/media/CpWQyfaUMAIjufI.jpg' width=300 height=100>
 
 
   <br>
+  
+* Mobi Saúde
+
+  *  É um aplicativo que facilita a administração hospitalar e de unidades de saúde, controlando a escala de funcionários e agilizando a comunicação com o corpo clínico.
+  <br>
+  <br>
+  <img src='https://www.itforum365.com.br/wp-content/uploads/2017/05/MOBI-Sa%C3%BAde.jpg'>
 
 * ERP Radar Empresarial
 
   * É um software integrado para gestão de empresas. Ele busca cobrir todas as áreas gerenciáveis de empresa: vendas, finanças, materiais, produção, custos, serviços, controladoria, RH, GED, BI e qualidade, adaptável às necessidades e à realidade de empresas de todos os portes e segmentos.
   <br>
   <br>
-  <img src='https://static.wixstatic.com/media/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png/v1/crop/x_0,y_109,w_740,h_724/fill/w_638,h_623,al_c,usm_0.66_1.00_0.01/5b9da9_b4f89355f7ae481b86a982b5c32e1df6~mv2.png' width=550 height=510>
+  <img src='http://brasaosistemas.com.br/blog/wp-content/uploads/2017/01/Radar-IRPJ-LALUR-780x371.png' width=300 height=100>
 
 
   <br>
@@ -188,7 +196,7 @@ ___
 
   <br>
 
-  &emsp;&emsp;&emsp;<img src='http://www.informant.com.br/arquivos/cases/foto_1320842073.jpg' width=530 height=340>
+  &emsp;&emsp;<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVAX33cpC1_94miUaHWB4XD8QQAAZGEbgnD_sNnDBQi6Xct0n'>
   <br>
   <br>
 
@@ -210,6 +218,7 @@ ___
  3. O sistema deverá funcionar tanto em Android como em iOS;
 <br>
 <h3 name="referencias"> 6. Referências: </h3>
+
  &emsp;[O Globo Saúde  Pública do país sofre de ma gestão](https://oglobo.globo.com/opiniao/saude-publica-do-pais-sofre-de-ma-gestao-12010246)
 
  &emsp;[Secretaria de Estado de Saúde do Distrito Federal](  http://www.saude.df.gov.br/component/content/article/254-sobre-a-secretaria/772-transparencia-na-saude.html)
@@ -221,3 +230,6 @@ ___
  &emsp;[TrakCare Sistema de informação em Saude](www.intersystems.com/br/produtos/trakcare/trakcare-overview-2/)
 
  &emsp;[Radar Empresarial Segurança nos processos](www.wk.com.br/solucoes/erp)
+ 
+ &emsp;[Aplicativo de gestao Hospitalar](https://g1.globo.com/bemestar/noticia/aplicativo-de-gestao-hospitalar-monitora-equipe-medica-e-promete-reduzir-custos.ghtml)
+
