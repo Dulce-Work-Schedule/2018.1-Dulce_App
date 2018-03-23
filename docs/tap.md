@@ -78,10 +78,10 @@ Opreço total para os 10 integrantes é de R$ 65.100,00
 <p align = "justify">&emsp;&emsp;Os custos de materiais contam com consumo de internet para 10 pessoas por 4 meses, 10 Notebooks, energia para 10 computadores. .</p>
 
 #### Notebooks
-10 x Notebook Samsung Expert X22s Intel Core i5 8GB 1TB Tela Led HD 14
+10 x Notebook Essentials E25s Intel Celeron Dual Core 4GB 500GB Tela LED HD 14
 
-Valor do notebook = R$ 1.994,99
-Valor final = R$ 19.949,90
+Valor do notebook = R$ 1.377,49
+Valor final = R$ 13.774,90
 
 #### Energia
 Energia = (((consumo_pc)x(horas_trabalhadas/mes)x(quantidade_pessoas)/1000)x(valor_KWh))x(duração_projeto)
@@ -110,21 +110,27 @@ Valor final = ((120)x(10)x(4)) = R$ 4800,00
 |Estrutura|R$ 1.600,00|
 |Internet|R$ 4.800,00|
 |Energia|R$ 62,95|
-|Notebooks| R$ R$ 19.949,90|
-| **Total** |**R$ 91.512,95**|
+|Notebooks| R$ R$ 13.774,90|
+| **Total** |**R$ 85.337,85**|
 
 Para acessar as informações e calculos de custo ajustado durante o projeto está disponível no (documento de custo).
 
 
 
 ## 9. Partes Interessadas
-* Cliente
-  * Cliente e idealizador da ideia do projeto.
-* Usuários
-  * Usuários
+#### Cliente
 
-* Equipe
-  * A equipe é composta graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software que encontram-se em semestres iniciais.   
+ |     Nome     |        contato       |  
+ |-|-|  
+ | - | - |
+
+#### Usuários
+ * População
+ * Gestores da Secretaria de Saúde
+
+
+#### Equipe
+ * A equipe é composta graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software, cursando em semestres próximos ao período de conclusão do curso, e Métodos de Desenvolvimento de Software que encontram-se em semestres iniciais.  
 
 |     Membro     |        GitHub       |        E-mail       |
 |:--------------:|:-------------------:|:-------------------:|
@@ -140,19 +146,24 @@ Para acessar as informações e calculos de custo ajustado durante o projeto est
 | Vitor Leal dos Santos | [vitorl-s](https://github.com/vitorl-s)  |vitinho2201@gmail.com  |
 
 
-* PO
+#### PO
 
 
-|     Membro     |        E-mail       |
+|     Nome     |        contato       |
 |:--------------:|:-------------------:|
-| Iza |  iza@gmail.com |
+| Iza Cristina|  https://github.com/izacristina |
 
+#### Coach
 
-* Orientadora
-
-|     Membro     |        E-mail       |
+|     Nome     |        contato       |
 |:--------------:|:-------------------:|
-| Carla |  Carla@gmail.com |
+| Felipe Cesar |  fel.cesar@gmail.com |
+
+#### Orientadora
+
+|     Nome     |        contato       |
+|:--------------:|:-------------------:|
+| Carla Rocha|  https://fga.unb.br/carla.rocha |
 
 ## 10. Requisitos para a aprovação
 
@@ -172,5 +183,5 @@ Relatório de Gestão 2016, Universidade de Brasília, pag. 155:
 Acesso em: 20/03/2018, 22:03, Horário de Brasília.
 
 Notebook pesquisado:
-<https://www.submarino.com.br/produto/132568845/notebook-samsung-expert-x22s-intel-core-i5-8gb-1tb-tela-led-hd-14-windows-10-cinza?WT.srch=1&epar=bp_pl_00_go_pla_inf_geral_1p&gclid=Cj0KCQjwqM3VBRCwARIsAKcekb0CYvmxkiETCJSRZF3ya-62r-CshYwK9xefGaJ_FFDdo-ILrOHHT2oaAvtoEALw_wcB&opn=XMLGOOGLE&sellerId=00776574000660>  
-Acesso em 23/03/2018, 00:21, Horário de Brasília.
+https://www.americanas.com.br/produto/132538304/notebook-essentials-e25s-intel-celeron-dual-core-4gb-500gb-tela-led-hd-14-windows-10-preto-samsung?WT.srch=1&epar=bp_pl_00_go_inf_notebooks_todas_geral_gmv&gclid=Cj0KCQjwqM3VBRCwARIsAKcekb1AOUan4B4pJyySCfdI93tWlZfrp9To9wlstwH2tqJ7ljcD8pFUW6oaAlS1EALw_wcB&opn=YSMESP&sellerId=00776574000660
+Acesso em 23/03/2018, 00:54, Horário de Brasília.
