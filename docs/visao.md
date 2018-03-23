@@ -33,16 +33,19 @@ ___
 <h3 name="introducao"> 1. Introdução
 
 <h4 name="proposito"> &emsp;1.1) Propósito:
-
+</h3>
+</h4>
 <p align = "justify">&emsp;&emsp;Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile AGR-APP, auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
 
 <h4 name="escopo-intro"> &emsp;1.2) Escopo:
-
+</h3>
+</h4>
   &emsp;&emsp;O escopo deste documento se limita a fornecer a todos os envolvidos uma descrição compreensível da problematização, do propósito do produto, suas funcionalidades que serão atendidas e as partes envolvidas no projeto AGR-APP. Quando necessário este documento pode ser atualizado durante todo o ciclo de desenvolvimento da solução.
 
 
   <h4 name="definicoes-intro"> &emsp;1.3) Definições:
-
+  </h3>
+  </h4>
 
 &emsp;Algumas definições são utilizadas neste projeto, como:
 
@@ -62,15 +65,17 @@ ___
 
 
   <h4 name="visao-geral-intro"> &emsp;1.4) Visão Geral do Documento:
-
+  </h3>
+  </h4>
   <p align = "justify">&emsp;O conteúdo deste documento, está organizado de forma a fornecer uma visão dos envolvidos no projeto, das necessidades apontadas por estes envolvidos, dos benefícios esperados pelos envolvidos, e das funcionalidades e suas características para atender a estes benefícios. Também são apresentados aqui requisitos importantes para o produto, não sendo, porém, realizado o detalhamento de cada funcionalidade de sistema, visto que esta atividade será realizada na especificação dos casos de uso. </p>
 
 
 
 <h3 name="posicionamento"> 2. Posicionamento
 <h4 name="oportunidade"> &emsp;2.1) Oportunidade de negócio:
-
-  <p align = "justify">&emsp; Com a implantação do AGR-APP, as áreas de gestão de pessoal, estrutura e material, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Assim, o atendimento da ampla demanda de pacientes que necessitam dos procedimentos hospitalares será aprimorada.
+  </h3>
+  </h4>
+  <p align = "justify">&emsp;&emsp; Com a implantação do AGR-APP, as áreas de gestão de pessoal, estrutura e material, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Assim, o atendimento da ampla demanda de pacientes que necessitam dos procedimentos hospitalares será aprimorada.
 </p>
 
   <h4 name="instru-problema"> &emsp;2.2) Instrução do Problema:</h4>
@@ -97,7 +102,8 @@ ___
 <br>
 
   <h4 name="instru-produto"> &emsp;2.3) Instrução de Posição do Produto:
-
+  </h3>
+  </h4>
   <p align = "justify">&emsp;&emsp;O site da SES-DF permite que o cidadão tenha acesso a transparência de informações sobre disponibilidades de estoque de medicamentos, leitos, escala de médicos, lista da fila de espera para algum serviço da área da saúde, entre outros atendimentos acessíveis, porém, essa coleta de dados e análise, ainda é realizada de forma manual ou digital sem um sistema de software para auxílio. O AGR-APP é um aplicativo que oferecerá suporte à esses gestores da SES-DF, para estes terem o controle dos recursos hospitalares, por intermédio de um dispositivo móvel.</p>
 
 
@@ -114,13 +120,15 @@ ___
   <p align = "justify">&emsp;&emsp;O aplicativo AGR-APP tem como propósito oferecer um sistema que seja capaz de auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal, referente à escala de profissionais, materiais, demanda e estrutura disponíveis nos hospitais do DF.</p>
 
   <h4 name="recursos-produto"> &emsp;3.3) Recursos do produto:
-
+  </h3>
+  </h4>
 <p align = "justify">&emsp;&emsp;O principal recurso ou funcionalidade, do produto após a obtenção das informações, é analisar os dados obtidos e promover uma alternativa de melhora para os gestores.</p>
 
 <h3 name="envolvidos"> 4. Descrição das Partes Envolvidas
-
+</h3>
+</h4>
   <h4 name="perfis-partes-interessadas"> &emsp;4.1) Perfis das Partes Interessadas:
-
+  </h4>
   * Cliente
     * Cliente e idealizador da ideia do projeto.
   * Usuários
@@ -156,7 +164,7 @@ ___
 <p align = "justify">&emsp;&emsp;Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.
 
 <h4 name="alternativas"> &emsp;4.3 Alternativas e Concorrência
-
+</h4>
 * TrakCare
   * O sistema eletrônico atual da Secretaria de Saúde do DF. O qual reúne todos os dados de consultas, alergias, exames e histórico médico da rede pública de saúde do Distrito Federal.
   <br>
