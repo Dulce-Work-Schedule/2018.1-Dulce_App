@@ -1,4 +1,4 @@
-# Sprint 2
+# Sprint 6
 
 ### Objetivo
 
