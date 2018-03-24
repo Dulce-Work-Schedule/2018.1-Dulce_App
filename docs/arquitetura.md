@@ -10,7 +10,6 @@
 <li><a href="#Visão">Visão Geral</a></li>
 <li><a href="#Representação">Representação da Arquitetura</a></li>
 <li><a href="#Metas">Metas Restrições de Arquitetura</a></li>
-<li><a href="#Lógica">Visão Lógica</a></li>
 <li><a href="#Implementação">Visão de implementação</a></li>
 <li><a href="#Referencia">Referências</a></li>
 </ul>
@@ -72,8 +71,6 @@
 
 * <b>Metas e Restrições de Arquitetura:</b> Descrição dos objetivos do software de grande importancia e as restrições encontradas no desenvolvimento;
 
-* <b>Visão Lógica:</b> Explana as classes principais da arquitetura do projeto por meio de diagramas;
-
 * <b>Visão de implementação:</b> Descreve de forma geral a implementação e como as classes devem se comportar por meio do diagrama de classes.
 
 
@@ -108,19 +105,9 @@
 
 * Manutenibilidade: O código deve ser facilmente modificado e corrigido;
 
-<div name= "Lógica" id= "Lógica"></div>
-
-## 4. Visão Lógica
-* #### Diagrama de Pacotes
-<div style ="text-align: justify">
-  <p>
-    < COLOQUE AQUI A IMAGEM DO DIAGRAMA>
-  </p>
-</div>
-
 <div name= "Implementação" id= "Implementação"></div>
 
-## 5. Visão de Implementação
+## 4. Visão de Implementação
 * #### Diagrama de Classes
 <div style ="text-align: justify">
   <p>
@@ -128,17 +115,10 @@
   </p>
 </div>
 
-* #### Diagrama de Banco de Dados
-<div style ="text-align: justify">
-  <p>
-    < COLOQUE AQUI A IMAGEM DO DIAGRAMA>
-  </p>
-</div>
-
 
 <div name= "Referencia" id= "referencia"></div>
 
-## 6. Referências
+## 5. Referências
 
 <div style ="text-align: justify">
   <p>
