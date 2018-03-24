@@ -86,7 +86,7 @@
     <img src ="img/diagrama.png">
     </p>
   <p>
-    <img src ="img/arquitetura.png">
+    <img src ="img/reactdiagrama.png">
   </p>
 </div>
 
