@@ -24,7 +24,7 @@
 ### 1.1 Finalidade
 <div style ="text-align: justify">
   <p>
-      O documento arquitetura tem a função de específicar decisões arquiteturais relevantes na produção e implementação do projeto AGR, produzido em react native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
+      O documento de arquitetura tem a função de específicar decisões arquiteturais relevantes na produção e implementação do projeto AGR, produzido em react native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
   </p>
 </div>
 
@@ -101,7 +101,7 @@
 
 * <a href ="https://nodejs.org/en/">Node.js</a>: Plataforma de desenvolvimento da API;
 
-* Banco de dados fornecido pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
+* Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
 
 * Manutenibilidade: O código deve ser facilmente modificado e corrigido;
 
