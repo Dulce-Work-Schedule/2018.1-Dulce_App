@@ -2,7 +2,7 @@
 
 ### Objetivo
 
-<!--Objetivos da sprint elencados -->
+<!--Objetivos da sprint elencados aqui -->
 
 ### Sprint Backlog
 
