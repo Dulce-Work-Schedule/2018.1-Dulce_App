@@ -83,6 +83,9 @@
 
 <div style ="text-align: justify">
   <p>
+    <img src ="img/diagrama.png">
+    </p>
+  <p>
     <img src ="img/arquitetura.png">
   </p>
 </div>
