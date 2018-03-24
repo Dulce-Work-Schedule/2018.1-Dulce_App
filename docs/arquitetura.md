@@ -111,7 +111,7 @@
 * #### Diagrama de Classes
 <div style ="text-align: justify">
   <p>
-    <img src="img/Classes.png">
+    <img src="img/D_Classe.png">
   </p>
 </div>
 
