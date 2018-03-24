@@ -1,29 +1,50 @@
 # Issue Template
 
 Uma issue deve ser criada com a finalidade de descrever:
- - Uma tarefa do projeto
- - Um requisito do produto (Feature)
- - Uma nova funcionalidade do produto (Estória de usuário)
- - Um defeito no produto (bug, inconsistência com um requisito já entregue)
+ - Uma tarefa do projeto;
+ - Um requisito do produto (Feature);
+ - Uma nova funcionalidade do produto (Estória de usuário);
+ - Um defeito no produto (bug, inconsistência ou documento que necessite de atualização ou correção).
 
-### Nome da issue
-O nome da issue deve conter uma breve descrição sobre o problema a ser resolvido.
+### Nome da *issue*
 
-### Conteúdo da issue
-O conteúdo da issue deve conter uma descrição detalhada explicando a finalidade para a qual aquela issue foi criada.
+O nome da *issue* deve conter uma breve descrição sobre o problema a ser resolvido e deve ser entitulado no infinitivo.
 
-### Outros campos
-As issues devem estar devidamente organizadas nos seguintes campos adicionais:
- - Pipeline
- - Assignees
- - Labels
- - Milestone
- - Estimate
+### Conteúdo da *issue*
+
+Descrever o que será resolvido e informar atividades necessárias para conclui-la.
+
+```
+Nessa issue será realizado:
+- tarefa 1
+- tarefa 2
+- tarefa 3
+
+Critérios de aceitação:
+- critério 1
+- critério 2
+- critério 3
+
+```
+
+### *Pipeline*
+
+Classificar na fase:
+- Product Backlog caso seja de código;
+- Project Backlog caso seja de documentação;
+- Sprint Backlog caso a issue esteja priorizada para sprint;
+- In Progreess caso esteja em desenvolvimento;
+- Code Review caso necessite de revisão de código.
+
+### *Labels*
+
+Você pode utilizar as [*labels*](https://github.com/fga-gpp-mds/AGR-APP-react-native/labels) para organizar as *issues* e *Pull Requests*.
 
 
-Veja um exemplo de issue [aqui neste link](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/19)
+### *Milestone*
 
-![Issue Example](/docs/img/issue_example.gif)
+Selecionar a sprint que a issue é referente.
 
-### Requisitos
-Para ser uma issue válida, deve ter como conteúdo alguma das finalidade listadas acima e estar de acordo com as politicas de uso do repositório.
+### *Estimate*
+
+Estimar a pontuação da issue entre 0-21 seguindo a sequência de Fibonacci.
