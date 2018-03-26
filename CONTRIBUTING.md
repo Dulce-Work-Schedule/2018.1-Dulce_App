@@ -2,8 +2,7 @@
 
 ## Como contribuir?
 
-Para contribuir com o projeto
-contribuir com o projeto é muito fácil e cada pouquinho conta! Basta seguir os seguintes passos:
+Para contribuir com o projeto é muito fácil e cada pouquinho conta! Basta seguir os seguintes passos:
 
 * *Fork* do repositório (apenas para usuários externos)
 * Criar [*issues*](CONTRIBUTING.md#política-de-issues)
@@ -14,7 +13,7 @@ contribuir com o projeto é muito fácil e cada pouquinho conta! Basta seguir os
 
 ### Política de Issues
 
-As *issues* devem possuir título, descrição, no mínimo um assinante responsável, *labels*, e *milestone* e *estimated* para as *issues* pontuadas. Também deverá ser informada a *sprint* que ela deve ser concluída.
+As *issues* devem possuir título, descrição, no mínimo um assinante responsável, *labels*,  *milestone*(a *sprint* que deve ser concluída) e *estimated*(puntuação) para as *issues* pontuadas.
 
 As Labels usadas no projeto estão descritas no tópico [Labels](https://github.com/fga-gpp-mds/AGR-APP-react-native/labels) no Github.
 
@@ -36,9 +35,11 @@ Veja a política de merges no tópico [Merges para development](CONTRIBUTING.md#
 merges para *development*</a> .
 
 #### Nome das Branches  
+
 As branchs de desenvolvimento de features serão criadas a partir da branch *development* com a nomenclatura padrão `x_nome_da_issue`, onde o `x` representa o código de rastreio da issue.
 
 ### Política de Commits
+
 Os commits devem ser feitos usando o parâmetro `-s` para indicar sua assinatura no commit.
 
 ```
@@ -47,7 +48,7 @@ git commit -s
 A issue em questão deve ser citada no commit, para isso, basta adicionar `#<numero_da_issue>`.
 
 ```
-git commit -sm"#5 Fazendo guia de contribuição"
+ #5 Fazendo guia de contribuição
 ```
 
 ** \*\*Por padrão, o caracter `#` define uma linha de comentário no arquivo da mensagem do commit. Para resolver este problema, use o commando:**
@@ -55,7 +56,7 @@ git commit -sm"#5 Fazendo guia de contribuição"
 git config --local core.commentChar '!'
 ```
 
-Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.
+Igualmente, para commits em dupla deve ser usado o comando `-s` , e deve ser adicionado a assinatura da sua dupla.
 
 ```
 git commit -s
@@ -68,9 +69,23 @@ Signed-off-by: João Henrique Egewarth <egewarth@gmail.com>
 Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
 ```
 
-Para commits que encerram a resolução de uma issue, deve-se iniciar a mensagem do commit com `Fix #<numero_da_issue ao commit>`, para que a issue seja [encerrada automaticamente](https://help.github.com/articles/closing-issues-using-keywords/) quando mesclada na `master`.
+Para que ambos envolvidos no commit sejam incluidos como contribuintes no gráfico de commits do GitHub, basta incluir a instrução `Co-authored-by:` na mensagem:
 
-Exemplo do comentário do commit:
+```
+#5 Fazendo guia de contribuição
+
+Signed-off-by: João Henrique Egewarth <egewarth@gmail.com>
+Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
+
+Co-authored-by: João Henrique Egewarth <egewarth@gmail.com>
+Co-authored-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
+
+```
+
+
+Para commits que encerram a resolução de uma issue, deve-se iniciar a mensagem do commit com `Fix #<numero_da_issue> <mensagem>`, para que a issue seja [encerrada automaticamente](https://help.github.com/articles/closing-issues-using-keywords/) quando mesclada na `master`.
+
+Exemplo de comentário do commit:
 ```
 git commit -sm"Fix #5 Finalizando guia de contribuição do projeto"
 ```
@@ -79,36 +94,35 @@ git commit -sm"Fix #5 Finalizando guia de contribuição do projeto"
 
 #### Pull Requests
 
-Os pull requests externos devem ser feitos apenas para a branch development seguindo as regras e os passos do tópico Merges para development. No conteúdo do pull request deve haver uma descrição clara do que foi feito.
+Pull requests devem ser feitos para a branch *master* seguindo as regras e os passos do tópico [*Merges para master*](CONTRIBUTING.md#merges-para-master). No conteúdo do pull request deve haver uma descrição clara do que foi feito.
 
-Para a equipe interna, os pull requests seram realizados em duas situações, para *development* e para *master* seguindo as regras e passos de merge para ambas branchs.
-
-Para ambos os casos deve ser seguido o [template Pull Request](docs/PULL_REQUEST_TEMPLATE.md).
+Deve ser seguido o [template Pull Request](docs/PULL_REQUEST_TEMPLATE.md).
 
 ##### Work in Progress
 
-Caso haja a necessidade de atualizar a branch development antes de concluir a issue, o nome do pull request deve conter WIP:<X_nome_da_branch> para que a branch não seja deletada.
+Caso haja a necessidade de atualizar a branch *master* antes de concluir a issue, o nome do pull request deve conter WIP:<X_nome_da_branch> para que a branch não seja deletada.
 
-#### Merges para development
-Os merges para development deverão ser feitos quando a funcionalidade ou refatoração estiverem de acordo com os seguintes aspectos:  
+#### Merges para *master*
+Os merges para *master* deverão ser feitos quando a funcionalidade ou refatoração estiverem de acordo com os seguintes aspectos:  
 - Funcionalidade ou refatoração concluída;
 - *Build* do Travis passando;
-- Testes feitos;
+- Progredir ou manter a porcentagem de cobertura de teste;
 - Funcionalidade revisada por algum outro membro.
 
-Para fazer um merge para *development* os passos a serem seguidos são:  
+Para fazer um merge para *master* os passos a serem seguidos são:  
 - `git checkout branch_de_trabalho`;
-- `git pull --rebase origin development`;
+- `git pull --rebase origin master`;
 - `git push origin branch_de_trabalho`;
 - Abrir pull request via interface GitHub;
 - Aguardar Code Review
 
-#### Merges para *master*
-Os merges para *master* deveram ser feitos apenas após o término da sprint, quando todas as funcionalidades estiverem entregues. O merge deve ser feito a partir da *development* e apenas quando atingir os seguintes critérios:
-
-- Build Travis passando;
-- Sprint dada como concluída.  
 
 ##### Code Review
 O code review deve ser feito por um ou mais membros da equipe que não participaram das modificações.
 Após pelo menos uma aprovação de Code Review, Status Check (Travis, CodeClimate) o PullRequest poderá ser aceito;
+
+Para aceitar o PullRequest, deve-se usar a opção *merge* no Github.
+
+#### Tag's
+
+<!-- Explicar tag's -->
