@@ -87,7 +87,14 @@ Para commits que encerram a resolução de uma issue, deve-se iniciar a mensagem
 
 Exemplo de comentário do commit:
 ```
-git commit -sm"Fix #5 Finalizando guia de contribuição do projeto"
+Fix #5 Finalizando guia de contribuição do projeto
+```
+
+Para commits que incluem uma pequena mudança em uma issue que já teve sua resolução encerrada, deve-se iniciar a mensagem do commit com `HOTFIX #<numero_da_issue> <mensagem>`
+
+Exemplo de comentário do commit:
+```
+HOTFIX #5 Atualizando guia de contribuição do projeto
 ```
 
 ### Política de Merges e Pull Requests
@@ -122,6 +129,8 @@ O code review deve ser feito por um ou mais membros da equipe que não participa
 Após pelo menos uma aprovação de Code Review, Status Check (Travis, CodeClimate) o PullRequest poderá ser aceito;
 
 Para aceitar o PullRequest, deve-se usar a opção *merge* no Github.
+
+![Merge](/docs/img/merges.png)
 
 #### Tag's
 
