@@ -4,7 +4,6 @@
  <li><a href="#1">1. Introdução</li>
  <li><a href="#1.1">1.1 Propósito</li>
  <li><a href="#1.2">1.2 Escopo</li>
- <li><a href="#1.3">1.3 Definições</li>
 </ul>
 
 <ul>
@@ -46,7 +45,7 @@
 
 ### 1.1) Propósito:
 
-<p align = "justify">&emsp;&emsp;Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile AGR-APP, auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
+<p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile AGR-APP, auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
 
 <div name = "1.2" id = "1.2"></div>
 
@@ -57,30 +56,6 @@
 
   <div name = "1.3" id = "1.3"></div>  
 
-### 1.3) Definições:
-
-
-###### Algumas definições são utilizadas neste projeto, como: <br><br>
-
-<ul>
-
-<li>SES-DF - Secretaria de Estado de Saúde do Distrito Federal;</li>
-
-<li>MDS - disciplina de Métodos de Desenvolvimento de Software;</li>
-
-<li>EPS - disciplina de Engenharia de Produto de Software;</li>
-
-<li>Android - Sistema operacional móvel suportado pela Google;</li>
-
-<li>iOS - Sistema operacional móvel da Apple Inc.;</li>
-
-<li>SO - Sistema Operacional;</li>
-
-</ul>
-
-</p>
-
-<div name = "1.4" id = "1.4"></div>
 
 ### 1.4) Visão Geral do Documento:
 
@@ -97,25 +72,30 @@
 ### 2.1) Oportunidade de negócio:
 
 
-  <p align = "justify"> Com a implantação do AGR-APP, as áreas de gestão de pessoal, estrutura e material, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Assim, o atendimento da ampla demanda de pacientes que necessitam dos procedimentos hospitalares será aprimorada.
+  <p align = "justify"> Com a implantação do AGR-APP (Dulce), as áreas de gestão de pessoal, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes.(Dulce) será um aplicativo voltado para gestão e gerenciamento de escalas.  
 </p>
 
 <div name = "2.2" id = "2.2"></div>
 
 ### 2.2) Instrução do Problema:
 
-  <p align = "justify">A Secretaria de Saúde do DF enfrenta dificuldades no gerenciamento e manutenção do serviço público . Cirurgias atrasadas, tratamentos cancelados e pacientes em fila de espera são acontecimentos recorrentes em hospitais da rede pública do Distrito Federal. </p>
+  <p align = "justify">A Secretaria de Saúde do DF enfrenta dificuldades no gerenciamento do pessoal dos hospitais públicos.
+  </p>
 
-  <p align = "justify">Com tudo isso, o problema a ser tratado por este projeto é o gerenciamento e o controle das informações de pessoal qualificado, materiais, estrutura e demanda.
+  <p align = "justify">As escalas dos setores dos hospitais são feitas manualmente no Exel colocadas mensalmente no Software TrakCare, onde os profissionais podem visualizar a própria escala e colocar as consultas/trabalhos realizados. Além do TrakCare, há também o sistema de ponto eletrônico, em que os servidores o utilizam a fim de marcar presença.
+  </p>
+
+  <p align = "justify">
+  Esses dois sistemas são independentes, e muitas vezes as informações entre os dois não coicidem.
   </p>
 
 
 | Tipo    | Descrição|
 | --      |    --    |
-| Problema| A dificuldade na gestão de pessoal, estrutura e material.    |
+| Problema| A dificuldade na gestão de pessoal e no gerenciamento das escalas    |
 | Afeta| Recusos financeiros, profissionais da área, população em geral|  
-| Impacto| Má alocação de recursos no sistema de saúde   |  
-| Solução|  Aplicativo AGR-APP para monitorar as informações do SES-DF e sugerir soluções para o gerenciamento e manutenção de recursos  |
+| Impacto| alocação e remanejamento de profissionais no sistema de saúde requer muito trabalho manual  |  
+| Solução|  Aplicativo AGR-APP (Dulce) para  aprimorar o gerenciamento das escalas dos profissionais do SES-DF  |
 
 <br>
 
@@ -130,7 +110,7 @@
 ### 2.3) Instrução de Posição do Produto:
 
 
-  <p align = "justify">O site da SES-DF permite que o cidadão tenha acesso a transparência de informações sobre disponibilidades de estoque de medicamentos, leitos, escala de médicos, lista da fila de espera para algum serviço da área da saúde, entre outros atendimentos acessíveis, porém, essa coleta de dados e análise, ainda é realizada pelo TrackCare. O AGR-APP é um aplicativo que oferecerá suporte à esses gestores da SES-DF, para estes terem o controle dos recursos hospitalares, por intermédio de um dispositivo móvel.</p>
+  <p align = "justify"> AGR-APP (Dulce) é um aplicativo que oferecerá suporte aos gestores da SES-DF, para estes terem maior controle sobre as escalas e o remajamento de pessoal. Além disso, o servidor poderá consultar sua escala, pedir alteração ou remanejamento, e se for preciso, enviar para o gestor do seu devido setor um atestado nos casos de problemas de saúde, tudo isso por meio do dispositivo móvel.</p>
 
 <div name = "3" id = "3"></div>
 
@@ -141,13 +121,13 @@
 ### 3.1) Escopo do produto:
 
 
-  <p align = "justify">A Secretaria de Saúde do DF é essencial em nossa sociedade, através dos serviços dos profissionais da área, há uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta problemas como dificuldade de gerenciamento de materiais, estrutura, profissionais, o que decai a qualidade do sistema. O objetivo do AGR-APP é fornecer informações aos gestores  para auxiliá-los nas decisões de remanejamento e manutenção dos recursos disponíveis.</p>
+  <p align = "justify">A Secretaria de Saúde do DF é essencial em nossa sociedade, através dos serviços dos profissionais da área, há uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta dificuldades de gerenciamento, o que pode afetar a qualidade do sistema. O objetivo do AGR-APP (Dulce) é fornecer informações aos gestores para auxiliá-los nas decisões de remanejamento e servir para auxiliar no contato entre gestão e servidores do seu devido setor.</p>
 
 <div name = "3.2" id = "3.2"></div>
 
 ### 3.2) Propósito do produto:
 
-  <p align = "justify">O aplicativo AGR-APP tem como propósito oferecer um sistema que seja capaz de auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal, referente à escala de profissionais, materiais, demanda e estrutura disponíveis nos hospitais do DF.</p>
+  <p align = "justify">O aplicativo AGR-APP (Dulce) tem como propósito oferecer um sistema que seja capaz de auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal, referente à escala de profissionais, remanejamentos nos hospitais do DF.</p>
 
 <div name = "3.3" id = "3.3"></div>
 
@@ -185,7 +165,7 @@
 ## 4.2 Perfis do Usuário:
 
 
-<p align = "justify">Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.
+<p align = "justify">Os Usuários serão os gestores da Secretaria de Saúde. A Secretaria de Saúde é o órgão do Poder Executivo do Distrito Federal responsável pela organização e elaboração de planos e políticas públicas voltados para a promoção, prevenção e assistência à saúde. É função da Secretaria de Saúde dispor de condições para a proteção e recuperação da saúde da população, reduzindo as enfermidades, controlando as doenças endêmicas e parasitárias e melhorando a vigilância à saúde, dando, assim, mais qualidade de vida aos moradores do Distrito Federal.</p>
 
 <div name = "4.3" id = "4.3"></div>
 
