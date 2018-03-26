@@ -1,13 +1,26 @@
-# Política de uso de repositório  
+# Guia de Contribuição  
+
+## Como contribuir?
+
+Para contribuir com o projeto
+contribuir com o projeto é muito fácil e cada pouquinho conta! Basta seguir os seguintes passos:
+
+* *Fork* do repositório (apenas para usuários externos)
+* Criar [*issues*](CONTRIBUTING.md#política-de-issues)
+* Criar [*branchs*](CONTRIBUTING.md#política-de-branches)
+* Seguir a política de [*commits*](CONTRIBUTING.md#política-de-commits)
+* Submeter [*Pull Request*](CONTRIBUTING.md#política-de-merges-e-pull-requests)
+
 
 ### Política de Issues
 
-As *issues* devem possuir título, descrição, no mínimo um assinante responsável pela execução, *labels* indicando o grupo a quem se destina, a tarefa e *milestone* e *estimated* para as *issues* pontuadas e informar a *sprint* que ela deve ser concluída.
+As *issues* devem possuir título, descrição, no mínimo um assinante responsável, *labels*, e *milestone* e *estimated* para as *issues* pontuadas. Também deverá ser informada a *sprint* que ela deve ser concluída.
 
 As Labels usadas no projeto estão descritas no tópico [Labels](https://github.com/fga-gpp-mds/AGR-APP-react-native/labels) no Github.
 
 Para criação de issue o [template Issue](docs/ISSUE_TEMPLATE.md) deve ser seguido.
 
+![Issue Example](/docs/img/issue_example.gif)
 ### Política de Branches  
 
 #### *master*
@@ -23,48 +36,26 @@ Veja a política de merges no tópico [Merges para development](CONTRIBUTING.md#
 merges para *development*</a> .
 
 #### Nome das Branches  
-
-##### X_descricao_da_issue
-
-As branchs de desenvolvimento de features serão criadas a partir da branch *development* com a nomenclatura padrão “X_descricao_da_issue”.
-
-Em casos de issues de features de produção, o nome da  branch deve ser “X_nome_da_issue”.
-
-X representa o código de rastreio da issue.
-Para criar a branch, vá para a *development*:
-
-```
-git checkout development
-```
-
-Depois é só criar a branch e está pronto para produzir!
-
-```
-git checkout -b X_nome_da_issue
-```
+As branchs de desenvolvimento de features serão criadas a partir da branch *development* com a nomenclatura padrão `x_nome_da_issue`, onde o `x` representa o código de rastreio da issue.
 
 ### Política de Commits
-
-Todos os commits devem ser feitos usando o parâmetro `-s` para indicar sua assinatura no commit.
+Os commits devem ser feitos usando o parâmetro `-s` para indicar sua assinatura no commit.
 
 ```
 git commit -s
 ```
-
-A issue em questão deve ser citada no commit, para isso, basta adicionar `#<numero_da_issue ao commit>`.
+A issue em questão deve ser citada no commit, para isso, basta adicionar `#<numero_da_issue>`.
 
 ```
 git commit -sm"#5 Fazendo guia de contribuição"
 ```
-
-![Commit individual](docs/img/commit-individual.png)
 
 ** \*\*Por padrão, o caracter `#` define uma linha de comentário no arquivo da mensagem do commit. Para resolver este problema, use o commando:**
 ```
 git config --local core.commentChar '!'
 ```
 
-<p align="justify">Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.
+Para commits em dupla deve ser usado o comando `-s` igualmente, e deve ser adicionado a assinatura da sua dupla.
 
 ```
 git commit -s
@@ -76,8 +67,6 @@ Comentário do commit:
 Signed-off-by: João Henrique Egewarth <egewarth@gmail.com>
 Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
 ```
-
-![Commit pareamento](/docs/img/commit-dupla.png)
 
 Para commits que encerram a resolução de uma issue, deve-se iniciar a mensagem do commit com `Fix #<numero_da_issue ao commit>`, para que a issue seja [encerrada automaticamente](https://help.github.com/articles/closing-issues-using-keywords/) quando mesclada na `master`.
 
