@@ -2,8 +2,8 @@
 
 ### Objetivo
 
+
 - Integrar a equipe, definir papeis, prover viabilidade técnica;
-- Adequar o projeto às diretrizes da comunidade de software livre no GitHub.
 
 ### Sprint Backlog
 
