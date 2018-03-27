@@ -102,9 +102,15 @@
 
 #### Diagrama de Fishbone
 
+<br></br>
+
+<div align="center">
+
 <img src="img/fishbone.png">
 
-<br>
+</div>
+
+<br></br>
 
 <div name = "2.3" id = "2.3"></div>
 
