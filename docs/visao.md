@@ -4,6 +4,7 @@
  <li><a href="#1">1. Introdução</li>
  <li><a href="#1.1">1.1 Propósito</li>
  <li><a href="#1.2">1.2 Escopo</li>
+ <li><a href="#1.3">1.3 Visão Geral do Documento</li>
 </ul>
 
 <ul>
@@ -45,7 +46,7 @@
 
 ### 1.1) Propósito:
 
-<p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile  Dulce (**D**ispositivo **U**nificado de Co**l**aboração para **C**onstrução de **E**scala) auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
+<p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile  Dulce (<strong>D</strong>ispositivo <strong>U</strong>nificado de Co<strong>l</strong>aboração para <strong>C</strong>onstrução de <strong>E</strong>scala) auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
 
 <div name = "1.2" id = "1.2"></div>
 
@@ -57,7 +58,7 @@
   <div name = "1.3" id = "1.3"></div>  
 
 
-### 1.4) Visão Geral do Documento:
+### 1.3) Visão Geral do Documento:
 
 
   <p align = "justify">O conteúdo deste documento, está organizado de forma a fornecer uma visão dos envolvidos no projeto, das necessidades apontadas por estes envolvidos, dos benefícios esperados pelos envolvidos, e das funcionalidades e suas características para atender a estes benefícios. Também são apresentados aqui requisitos importantes para o produto, não sendo, porém, realizado o detalhamento de cada funcionalidade de sistema, visto que esta atividade será realizada na especificação dos casos de uso. </p>
