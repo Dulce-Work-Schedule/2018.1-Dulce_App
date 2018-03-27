@@ -42,7 +42,14 @@ Duração: 7 dias
 
 <p align="justify">&emsp;&emsp;Houve um *super pairing* para fazer os documentos de Visão e Arquitetura. Para o Protótipo foi definido que todos os membros do desenvolvimento participariam.</p>
 
-[quadro de pareamento]
+<p align="justify">&emsp;&emsp;A equipe 1 ficou responsável pelo documento de Arquitetura e a equipe 2 por produzir o documento de Visão.</p>
+
+|Equipe 1|Equipe 2|
+|---|---|
+|[fepas](https://github.com/fepas)|[BeatrizHanae](https://github.com/BeatrizHanae)|
+|[gabibguedes](https://github.com/gabibguedes)|[vitorl-s](https://github.com/vitorl-s)|
+|[EzequielDeOliveira](https://github.com/EzequielDeOliveira)|[gdeusdara](https://github.com/gdeusdara)|
+
 
 ### Burndown
 
@@ -54,8 +61,8 @@ Executados:
 - 12 Issues
 - 29 pontos  
 
-[BURNDOWN]
 
+![Quadro de Conhecimento](/docs/img/sprint/burndown_sprint_1.png)
 
 ### Revisão
 Duração: 45 minutos.
@@ -69,16 +76,17 @@ Duração: 45 minutos.
 [#15 Criar Docker para React Native ](https://github.com/fga-gpp-mds/agr-react-native/issues/15)  
 <p align="justify">&emsp;&emsp;Devido ao mau planejamento essa tarefa ela não foi concluida, pois primeiro era necessário entender o funcionamento ambiente de aplicações do *React Native* para automatizar a configuração do ambiente via Docker.</p>
 <p align="justify">&emsp;&emsp;Para as próximas *sprints* ela foi replanejada e virou um épico com duas atividades:</p>
+
 - [#71 Analizar configuração de ambiente React Native](https://github.com/fga-gpp-mds/agr-react-native/issues/71)
 - [#87 Criar Docker React-Native](https://github.com/fga-gpp-mds/agr-react-native/issues/87)
 
-A tarefa [#87](https://github.com/fga-gpp-mds/agr-react-native/issues/87) é dependente da [#71](https://github.com/fga-gpp-mds/agr-react-native/issues/71) portanto serão realizadas em duas sprints consecutivas.
+<p align="justify">&emsp;&emsp;A tarefa [#87](https://github.com/fga-gpp-mds/agr-react-native/issues/87) é dependente da [#71](https://github.com/fga-gpp-mds/agr-react-native/issues/71) portanto serão realizadas em duas sprints consecutivas.</p>
 
 
 ### Retrospectiva
 Duração: 45 minutos.
 
-Os pontos positivos e negativos foram apresentados e discutidos pela equipe durante a retrospectiva.
+<p align="justify">&emsp;&emsp;Os pontos positivos e negativos foram apresentados e discutidos pela equipe durante a retrospectiva.</p>
 
 |Pontos positivos|Pontos negativos|
 |---|---|
@@ -92,12 +100,24 @@ Os pontos positivos e negativos foram apresentados e discutidos pela equipe dura
 
 #### Quadro de conhecimento
 
-[quadro de conhecimento]  
-Houve aumento mas nada muito significativo em relação à sprint 0.
+![Quadro de Conhecimento](/docs/img/sprint/conhecimento_sprint_1.png)
+![Legenda](/docs/img/sprint/conhecimento_legenda.png)
+
+Houve aumento, mas nada muito significativo em relação à sprint 0.
+
+#### *Velocity*
+
+<p align="justify">&emsp;&emsp;O velocity vai começar a ser analizado na sprint 2, pois a sprint 0 não foi pontuada.</p>
+
+#### Frequência de *commits*
+
+<p align="justify">&emsp;&emsp;No início da sprint o time teve dificuldades para entender o funcionamento do git e para se adaptar às politicas de contribuição, o time também está se adaptando a realizar commits diários.</p>
+
+![Frequência de commits](/docs/img/sprint/frequencia_commits_sprint_1.png)
 
 #### Riscos
 
-Durante a sprint foram coletados riscos que podem atrapalhar o andamento do projeto, esses riscos podem ser encontrados no [documento de risco do projeto].
+<p align="justify">&emsp;&emsp;Durante a sprint foram coletados riscos que podem atrapalhar o andamento do projeto, esses riscos podem ser encontrados no [documento de risco do projeto].</p>
 
 ## Feedback
 
