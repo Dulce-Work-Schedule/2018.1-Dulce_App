@@ -17,3 +17,5 @@
 * SES-DF - Secretaria de Estado de Saúde do Distrito Federal;
 
 * SO - Sistema Operacional;
+
+* Dulce - Dispositivo Unificado para a Construção de Escala;
