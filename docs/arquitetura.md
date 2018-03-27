@@ -59,9 +59,12 @@
 
 <div style ="text-align: justify">
   <p>
-    <img src ="img/diagrama.png">
+    <img src ="img/arquiteturaMicroservice.png">
     </p>
   <p>
+
+<br>
+
     <img src ="img/reactdiagrama.png">
   </p>
 </div>
