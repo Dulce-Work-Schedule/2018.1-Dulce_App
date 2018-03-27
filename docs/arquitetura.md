@@ -52,7 +52,7 @@
 <div style ="text-align: justify">
   <p>
     <img src ="img/arquiteturaMicroservice.png">
-    </p>
+  </p>
   <p>
 
 <br>
