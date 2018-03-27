@@ -21,7 +21,7 @@
 ### 1.1 Finalidade
 <div style ="text-align: justify">
   <p>
-      O documento de arquitetura tem a função de específicar decisões arquiteturais relevantes na produção e implementação do projeto Dulce, produzido em react native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
+      O documento de arquitetura tem a função de especificar decisões arquiteturais relevantes na produção e implementação do projeto Dulce, em que a tecnologia utilizada foi React Native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
   </p>
 </div>
 
@@ -31,7 +31,7 @@
 ### 1.2 Escopo
 <div style ="text-align: justify">
   <p>
-      Este documento se aplica à produção do aplicativo Dulce, implementado nas plataformas IOS e Android, representando a arquitetura utilizada.
+      Este documento se aplica à produção do aplicativo Dulce, implementado para as plataformas IOS e Android, representando a arquitetura utilizada.
   </p>
 </div>
 
