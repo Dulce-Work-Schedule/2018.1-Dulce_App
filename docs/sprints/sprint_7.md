@@ -1,19 +1,28 @@
-# Sprint 0
+# Sprint 7
+
+### Objetivo
+
+<!--Objetivos da sprint elencados  -->
 
 ### Sprint Backlog
 
-|Issue|Tipo|Responsáveis|
-|---|---|---|
-||||
-||||
+|Issues|
+|---|
+||
+||
+||
+||
+||
+||
+||
+||
 
 ### Papéis
 
-· Product Owner:  
-· Scrum Master:  
-· Developers:  
-· Code Review:   
-· Arquitetura:  
+· Product Owner: [João Egewarth](https://github.com/egewarth)  
+· Scrum Master: [Isaque Alves](https://github.com/alvesisaque)  
+· DevOps: [Eliseu Egewarth](https://github.com/eliseuegewarth)  
+· Arquitetura: [Gabriela Alves](https://github.com/gag2502)
 
 ### Pareamento
 
@@ -21,25 +30,27 @@
 
 ### Duração
 
-Data início: 10/03/2018
-Data término: 17/03/2018
-Duração: 7 dias
+Data início: 00/00/2018  
+Data término: 00/00/2018  
+Duração: x dias
 
 ### Burndown
 
 <!-- Imagem para burndown -->
 
->#### Horas trabalhadas
-
-### Retrospectiva
-
-|Pontos positivos|Pontos negativos|
-|---|---|
-|||
+<!-- #### Horas trabalhadas -->
 
 ### Revisão
 
 <!-- Histórias implementadas -->
 <!-- Quanto da features foi implementadas -->
 
->#### Dividas Técnicas
+
+### Retrospectiva
+
+|Pontos positivos|Pontos negativos|
+|---|---|
+|||
+||||
+
+<!-- #### Dívidas Técnicas -->
