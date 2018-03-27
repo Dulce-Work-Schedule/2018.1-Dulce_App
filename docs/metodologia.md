@@ -9,7 +9,6 @@
 ##### Slack
 Devido a baixa maturidade do time nas primeiras semanas, foi adotada uma comunicação mais formal usando o Slack. No Slack temos apenas a comunicação necessária e temos a integração com outras ferramentas utilizadas como o GitHub, ZenHub, Code Climate e Travis. Outro fator importante para a decisão do uso do Slack foi a possibilidade de configurar um bot para as Daily Meetings(GeekBot) que nem sempre podem ser pessoais.
 
-
 ##### GitHub
 O GitHub foi essencial na transparência interna da equipe e externa junto ao cliente, a orientadora do projeto (Carla Rocha) e a comunidade em geral. Foi feito um uso extensivo das issues para comunicação entre os membros da equipe, para dúvidas sobre a issue e para mostrar o andamento do projeto.
 
@@ -25,6 +24,7 @@ O Telegram foi usado inicialmente para comunicação entre os membros, porém, d
 | DevOps | Eliseu Egewarth |
 | Developers | Beatriz Hanae, Gabriela Guedes, Vitor Leal, Felipe Campos, Ezequiel Oliveira, Guilherme Deusdara |
 
+![Papeis](/docs/img/papeis.png)
 
 ### Ferramentas
 ##### GitHub
