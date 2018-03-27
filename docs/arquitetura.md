@@ -5,7 +5,6 @@
 <li><a href="#Introdução">Introdução</a></li>
 <li><a href="#Finalidade">Finalidade</a></li>
 <li><a href="#Escopo">Escopo</a></li>
-<li><a href="#Definições">Definições, Acrônimos e abreviações</a></li>
 <li><a href="#Referências">Referências</a></li>
 <li><a href="#Representação">Representação da Arquitetura</a></li>
 <li><a href="#Metas">Metas Restrições de Arquitetura</a></li>
@@ -36,21 +35,14 @@
   </p>
 </div>
 
-<div name= "Definições" id= "Definições"></div>
-
-### 1.3 Definições, Acrônimos e abreviações
-
-
-
-* <p> Clique <a href= ""> aqui </a> para visualizar o glossário do projeto.
-  </p>
-
-
 <div name= "Referências" id= "Referências"></div>
 
-### 1.4 Referências
+### 1.3 Referências
 
 * <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md"> Documento de Visão;</a>
+
+* <p> <a href= "https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/lexico.md"> Glossário </a>   
+  </p>
 
 
 <div name= "Representação" id= "Representação"></div>
@@ -81,7 +73,7 @@
 
 * <a href ="https://facebook.github.io/react-native/"> React-native</a>: Utilizado para a construção do aplicativo em IOS e Android;
 
-* <a href ="https://nodejs.org/en/">Node.js</a>: Plataforma de desenvolvimento da API;
+* <a href ="https://www.djangoproject.com/">Django</a>: Plataforma de desenvolvimento;
 
 * Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
 
@@ -110,7 +102,7 @@
     React-native, https://facebook.github.io/react-native/ Acesso em: 23/03/2018, 11:20, Horário de Brasília.
   </p>
   <p>
-    Node.js, https://nodejs.org/en/ Acesso em: 23/03/2018, 11:56, Horário de Brasília.
+    Django, https://www.djangoproject.com/ Acesso em: 26/03/2018, 20:33, Horário de Brasília.
   </p>
   <p>
     React Native Architecture: Explained! https://www.logicroom.co/react-native-architecture-explained/ Acesso em: 22/03/2018, 12:05, Horário de Brasília.
