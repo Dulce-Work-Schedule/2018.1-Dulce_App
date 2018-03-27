@@ -41,7 +41,7 @@
 
 * <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md"> Documento de Visão;</a>
 
-* <p> <a href= "https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/lexico.md"> Glossário </a>   
+* <p> <a href= "https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/lexico.md"> Glossário. </a>   
   </p>
 
 
@@ -77,7 +77,7 @@
 
 * Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
 
-* Manutenibilidade: O código deve ser facilmente modificado e corrigido;
+* Manutenibilidade: O código deve ser facilmente modificado e corrigido.
 
 <div name= "Implementação" id= "Implementação"></div>
 
