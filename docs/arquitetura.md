@@ -57,7 +57,7 @@
 
 <br>
 
-    <img src ="img/reactdiagrama.png">
+   <img src ="img/reactdiagrama.png">
   </p>
 </div>
 
