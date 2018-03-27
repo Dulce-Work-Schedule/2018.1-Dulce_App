@@ -134,7 +134,7 @@
 
 ### 3.2) Propósito do produto:
 
-  <p align = "justify">O aplicativo Dulce tem como propósito oferecer um sistema que seja capaz de auxiliar no gerenciamento para os gestores da secretaria de saúde do Distrito Federal, referente à escala de profissionais, remanejamentos nos hospitais do DF.</p>
+  <p align = "justify">Dulce tem o propósito de auxiliar a gestão no sistema de saúde do DF, promovendo uma interface entre gestor e servidores de um detrminado setor, auxiliando os gestores a criar escalas dos servidores do seu setor, facilitando também o remanejamento de escalas, e aos servidores, seu controle de ponto.</p>
 
 <div name = "3.3" id = "3.3"></div>
 
