@@ -40,9 +40,9 @@ Duração: 7 dias
 
 ### Pareamento
 
-<p align="justify">&emsp;&emsp;Houve um *super pairing* para fazer os documentos de Visão e Arquitetura. Para o Protótipo foi definido que todos os membros do desenvolvimento participariam.</p>
+<p align="justify">&emsp;&emsp;Houve um <i>super pairing</i> para fazer os documentos de Visão e Arquitetura. Para o Protótipo foi definido que todos os membros do desenvolvimento participariam.</p>
 
-<p align="justify">&emsp;&emsp;A equipe 1 ficou responsável pelo documento de Arquitetura e a equipe 2 por produzir o documento de Visão.</p>
+<p align="justify">&emsp;&emsp;A <b>equipe 1</b> ficou responsável pelo documento de Arquitetura e a <b>equipe 2</b> por produzir o documento de Visão.</p>
 
 |Equipe 1|Equipe 2|
 |---|---|
@@ -62,25 +62,25 @@ Executados:
 - 29 pontos  
 
 
-![Quadro de Conhecimento](/docs/img/sprint/burndown_sprint_1.png)
+![Burndown](/docs/img/sprint/burndown_sprint_1.PNG)
 
 ### Revisão
 Duração: 45 minutos.
 
-<p align="justify">&emsp;&emsp;A revisão da sprint ocorreu dentro do tempo planejado, onde toda a equipe corrigiu os documentos de arquitetura, visão e prototipo.</p>
-<p align="justify">&emsp;&emsp;As correções realizadas podem ser encontradas nos comentários das issues [#20 ](https://github.com/fga-gpp-mds/agr-react-native/issues/20), [#21](https://github.com/fga-gpp-mds/agr-react-native/issues/21) e [#22](https://github.com/fga-gpp-mds/agr-react-native/issues/22).</p>
-<p align="justify">&emsp;&emsp;Também foram feitas correções no Termo de Abertura do Projeto (TAP) e na Estrutura Analítica do Projeto (EAP) e em seguida apresentado para toda a equipe validar.</p>
+A revisão da sprint ocorreu dentro do tempo planejado, onde toda a equipe corrigiu os documentos de arquitetura, visão e prototipo.
+As correções realizadas podem ser encontradas nos comentários das issues [#20](https://github.com/fga-gpp-mds/agr-react-native/issues/20), [#21](https://github.com/fga-gpp-mds/agr-react-native/issues/21) e [#22](https://github.com/fga-gpp-mds/agr-react-native/issues/22).
+Também foram feitas correções no Termo de Abertura do Projeto (TAP) e na Estrutura Analítica do Projeto (EAP) e em seguida apresentado para toda a equipe validar.
 
 #### Dívidas Técnicas
 
 [#15 Criar Docker para React Native ](https://github.com/fga-gpp-mds/agr-react-native/issues/15)  
-<p align="justify">&emsp;&emsp;Devido ao mau planejamento essa tarefa ela não foi concluida, pois primeiro era necessário entender o funcionamento ambiente de aplicações do *React Native* para automatizar a configuração do ambiente via Docker.</p>
-<p align="justify">&emsp;&emsp;Para as próximas *sprints* ela foi replanejada e virou um épico com duas atividades:</p>
+Devido ao mau planejamento essa tarefa ela não foi concluida, pois primeiro era necessário entender o funcionamento ambiente de aplicações do <i>React Native</i> para automatizar a configuração do ambiente via Docker.
+Para as próximas <i>sprints</i> ela foi replanejada e virou um épico com duas atividades:
 
 - [#71 Analizar configuração de ambiente React Native](https://github.com/fga-gpp-mds/agr-react-native/issues/71)
 - [#87 Criar Docker React-Native](https://github.com/fga-gpp-mds/agr-react-native/issues/87)
 
-<p align="justify">&emsp;&emsp;A tarefa [#87](https://github.com/fga-gpp-mds/agr-react-native/issues/87) é dependente da [#71](https://github.com/fga-gpp-mds/agr-react-native/issues/71) portanto serão realizadas em duas sprints consecutivas.</p>
+A tarefa [#87](https://github.com/fga-gpp-mds/agr-react-native/issues/87) é dependente da [#71](https://github.com/fga-gpp-mds/agr-react-native/issues/71) portanto serão realizadas em duas sprints consecutivas.
 
 
 ### Retrospectiva
@@ -100,8 +100,7 @@ Duração: 45 minutos.
 
 #### Quadro de conhecimento
 
-![Quadro de Conhecimento](/docs/img/sprint/conhecimento_sprint_1.png)
-![Legenda](/docs/img/sprint/conhecimento_legenda.png)
+![Quadro de Conhecimento](/docs/img/sprint/conhecimento_sprint_1.PNG)
 
 Houve aumento, mas nada muito significativo em relação à sprint 0.
 
@@ -113,7 +112,7 @@ Houve aumento, mas nada muito significativo em relação à sprint 0.
 
 <p align="justify">&emsp;&emsp;No início da sprint o time teve dificuldades para entender o funcionamento do git e para se adaptar às politicas de contribuição, o time também está se adaptando a realizar commits diários.</p>
 
-![Frequência de commits](/docs/img/sprint/frequencia_commits_sprint_1.png)
+![Frequência de commits](/docs/img/sprint/frequencia_commits_sprint_1.PNG)
 
 #### Riscos
 
