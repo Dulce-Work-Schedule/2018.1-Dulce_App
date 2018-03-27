@@ -45,7 +45,7 @@
 
 ### 1.1) Propósito:
 
-<p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile  Dulce  auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
+<p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile  Dulce (**D**ispositivo **U**nificado de Co**l**aboração para **C**onstrução de **E**scala) auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
 
 <div name = "1.2" id = "1.2"></div>
 
