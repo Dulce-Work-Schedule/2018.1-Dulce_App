@@ -83,7 +83,7 @@
   <p align = "justify">A Secretaria de Saúde do DF enfrenta dificuldades no gerenciamento do pessoal dos hospitais públicos.
   </p>
 
-  <p align = "justify">As escalas dos setores dos hospitais são feitas manualmente no Excel colocadas mensalmente no Software TrakCare, onde os profissionais podem visualizar a própria escala e colocar as consultas/trabalhos realizados. Além do TrakCare, há também o sistema de ponto eletrônico, em que os servidores o utilizam a fim de marcar presença.
+  <p align = "justify">As escalas dos setores dos hospitais são feitas manualmente no Excel e colocadas mensalmente no Software TrakCare, onde os profissionais podem visualizar a própria escala e colocar as consultas/trabalhos realizados. Além do TrakCare, há também o sistema de ponto eletrônico, em que os servidores o utilizam a fim de marcar presença.
   </p>
 
   <p align = "justify">
@@ -128,7 +128,7 @@
 ### 3.1) Escopo do produto:
 
 
-  <p align = "justify">A Secretaria de Saúde do DF é essencial em nossa sociedade, através dos serviços dos profissionais da área, há uma maior qualidade de vida para todos. Entretanto, a saúde ainda apresenta dificuldades de gerenciamento, o que pode afetar a qualidade do sistema. O objetivo do Dulce é fornecer informações aos gestores para auxiliá-los nas decisões de remanejamento e servir para auxiliar no contato entre gestão e servidores do seu devido setor.</p>
+  <p align = "justify">A Secretaria de Saúde do DF apresenta deficiencias no gerenciamento de escalas, o que pode afetar a qualidade do sistema. O Dulce será utilizado em conjunto com o TrakCare e o sistema de ponto, com o objetivo de fornecer informações relevantess aos gestores para auxiliá-los nas decisões de remanejamento e no contato entre gestores e servidores de cada setor.</p>
 
 <div name = "3.2" id = "3.2"></div>
 
