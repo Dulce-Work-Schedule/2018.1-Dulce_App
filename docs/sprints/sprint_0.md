@@ -20,10 +20,10 @@
 
 ### Papéis
 
-· Product Owner: [João Egewarth](https://github.com/egewarth)  
-· Scrum Master: [Isaque Alves](https://github.com/alvesisaque)  
-· DevOps: [Eliseu Egewarth](https://github.com/eliseuegewarth)  
-· Arquitetura: [Gabriela Alves](https://github.com/gag2502)
+- Product Owner: [João Egewarth](https://github.com/egewarth)  
+- Scrum Master: [Isaque Alves](https://github.com/alvesisaque)  
+- DevOps: [Eliseu Egewarth](https://github.com/eliseuegewarth)  
+- Arquitetura: [Gabriela Alves](https://github.com/gag2502)
 
 ### Pareamento
 
