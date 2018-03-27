@@ -83,7 +83,7 @@
   <p align = "justify">A Secretaria de Saúde do DF enfrenta dificuldades no gerenciamento do pessoal dos hospitais públicos.
   </p>
 
-  <p align = "justify">As escalas dos setores dos hospitais são feitas manualmente no Exel colocadas mensalmente no Software TrakCare, onde os profissionais podem visualizar a própria escala e colocar as consultas/trabalhos realizados. Além do TrakCare, há também o sistema de ponto eletrônico, em que os servidores o utilizam a fim de marcar presença.
+  <p align = "justify">As escalas dos setores dos hospitais são feitas manualmente no Excel colocadas mensalmente no Software TrakCare, onde os profissionais podem visualizar a própria escala e colocar as consultas/trabalhos realizados. Além do TrakCare, há também o sistema de ponto eletrônico, em que os servidores o utilizam a fim de marcar presença.
   </p>
 
   <p align = "justify">
