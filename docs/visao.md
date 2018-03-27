@@ -72,7 +72,7 @@
 ### 2.1) Oportunidade de negócio:
 
 
-  <p align = "justify"> Com a implantação do Dulce, as áreas de gestão de pessoal, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Dulce será um aplicativo voltado para gestão e gerenciamento de escalas.  
+  <p align = "justify"> Com a implantação do Dulce, as áreas de gestão de pessoal, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Dulce será um aplicativo voltado para gestão e gerenciamento de escalas. com a implementação de Dulce a saúde pública tende a ter uma grande melhoria em sua gestão , principalmente na relação entre o gestor e os servidores de um determinado setor, ganhando agilidade para criar e remanejar escalas.  
 </p>
 
 <div name = "2.2" id = "2.2"></div>
