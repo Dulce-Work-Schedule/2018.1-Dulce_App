@@ -22,15 +22,8 @@
 
 ### Ferramentas
 
-<img src="/docs/img/logos/codeclimate.png" width="100" height="100">
-<img src="/docs/img/logos/telegram.png" width="100" height="100">
-<img src="/docs/img/logos/travis.gif" width="110" height="100">
-<img src="/docs/img/logos/slack.gif" width="115" height="100">
-<img src="/docs/img/logos/GitHub.gif" width="110" height="100">
-<img src="/docs/img/logos/drive.gif" width="110" height="100">
-<img src="/docs/img/logos/atom.png" width="100" height="100">
-<img src="/docs/img/logos/docker.gif" width="100" height="100">
-<img src="/docs/img/logos/protoio.png" width="100" height="100">
+<img src="/docs/img/logos/codeclimate.png" width="100" height="100"> <img src="/docs/img/logos/telegram.png" width="100" height="100"><img src="/docs/img/logos/travis.gif" width="110" height="100"> <img src="/docs/img/logos/slack.gif" width="115" height="100"><img src="/docs/img/logos/GitHub.gif" width="110" height="100"> <img src="/docs/img/logos/drive.gif" width="110" height="100">
+<img src="/docs/img/logos/atom.png" width="100" height="100"> <img src="/docs/img/logos/docker.gif" width="100" height="100"> <img src="/docs/img/logos/protoio.png" width="100" height="100">
 
 
 ### Comunicação
