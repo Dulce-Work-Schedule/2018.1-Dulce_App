@@ -1,8 +1,37 @@
 # Metodologia
 
 ### Metodologia adotada no projeto
+<p align="justify">&emsp;&emsp;Foi adotado como base o <i>framework scrum</i> onde empregamos diversos processos e técnicas adaptando às necessidades da equipe. </p>
+<p align="justify">&emsp;&emsp;O papel do Scrum no projeto é fazer transparecer a eficácia relativa das práticas de desenvolvimento para que a equipe possa melhorá-las, enquanto provê um framework adaptado para o desenvolvimento do produto. Também emprega uma abordagem iterativa e incremental para otimizar a previsibilidade e controlar riscos.</p>
 
-### Definição de pronto
+#### Transparência
+
+<p align="justify">&emsp;&emsp;A transparência irá garantir que aspectos do processo que afetam o resultado serão visíveis e apresentados para todo o time.</p>
+
+- As issues permitem visualizar as tarefas e histórias de usuário que estão sendo desenvolvidas e as que já foram concluídas;
+- O gráfico de commits e o Burndown evidênciam a contribuição do time com o projeto;
+- A documentação do projeto, em especial a documentação das sprints, apresenta as informações sobre o planejamento de cada ciclo de desenvolvimento, os riscos encontrados, partes envolvidas, metricas e indicadores e o incremeto gerado.
+
+#### Inspeção
+
+### Indicadores
+
+### Definição de Produtividade
+
+### Definição de Pronto
+
+### Ferramentas
+
+<img src="/docs/img/logos/codeclimate.png" width="100" height="100">
+<img src="/docs/img/logos/telegram.png" width="100" height="100">
+<img src="/docs/img/logos/travis.gif" width="110" height="100">
+<img src="/docs/img/logos/slack.gif" width="115" height="100">
+<img src="/docs/img/logos/GitHub.gif" width="110" height="100">
+<img src="/docs/img/logos/drive.gif" width="110" height="100">
+<img src="/docs/img/logos/atom.png" width="100" height="100">
+<img src="/docs/img/logos/docker.gif" width="100" height="100">
+<img src="/docs/img/logos/protoio.png" width="100" height="100">
+
 
 ### Comunicação
 
@@ -26,26 +55,6 @@ O Telegram foi usado inicialmente para comunicação entre os membros, porém, d
 
 ![Papeis](/docs/img/papeis.png)
 
-### Ferramentas
-##### GitHub
-
-##### Slack Bots
-[GeekBot](https://geekbot.io/):  
-GitHub Bot:  
-[ZenHub Bot](https://www.zenhub.com/blog/add-to-slack/):  
-##### Draw.io
-Usado para diagramação em geral
-##### Proto.io
-Usado para prototipagem do App.
-##### Drive
-Usado para preenchimento das tabelas de quadro de conhecimento e banco de horas.
-##### Atom
-Usado para o pareamento através da ferramenta [Teletype](https://teletype.atom.io/).
-##### Code Climate
-Ferramenta utilizada para a analise estatica de código.
-##### Travis
-Ferramenta de integração continua.
-
 ### Pontuação
 Nossa pontuação foi baseada no esforço necessário para determinada tarefa. O esforço foi contabilizado como horas trabalhadas para a realização de uma determinada tarefa.
 
@@ -61,3 +70,5 @@ Nossa pontuação foi baseada no esforço necessário para determinada tarefa. O
 | 21 | 30 horas | 10 horas | 40 horas |
 
 ** \*Tarefas com pontuação de 13 ou 21 devem ser quebradas em uma ou mais tarefas**
+
+### Referências Bibliográficas
