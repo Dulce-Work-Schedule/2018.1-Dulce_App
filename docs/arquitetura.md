@@ -54,9 +54,7 @@
     <img src ="img/arquiteturaMicroservice.png">
   </p>
   <p>
-
-<br>
-
+    <br>
     <img src ="img/reactdiagrama.png">
   </p>
 </div>
