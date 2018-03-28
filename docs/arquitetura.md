@@ -73,7 +73,7 @@
 
 * <a href ="https://facebook.github.io/react-native/"> React-native</a>: Utilizado para a construção do aplicativo em IOS e Android;
 
-* <a href ="https://www.djangoproject.com/">Django</a>: Plataforma de desenvolvimento;
+* <a href ="https://www.djangoproject.com/">Django</a>: Plataforma de desenvolvimento da API;
 
 * Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
 
@@ -85,7 +85,7 @@
 * #### Diagrama de Classes
 <div style ="text-align: justify">
   <p>
-    <img src="img/Diagrama-classes.png">
+    <img src="img/diagramaUML1.png">
   </p>
 </div>
 
