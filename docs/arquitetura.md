@@ -5,7 +5,6 @@
 <li><a href="#Introdução">Introdução</a></li>
 <li><a href="#Finalidade">Finalidade</a></li>
 <li><a href="#Escopo">Escopo</a></li>
-<li><a href="#Definições">Definições, Acrônimos e abreviações</a></li>
 <li><a href="#Referências">Referências</a></li>
 <li><a href="#Representação">Representação da Arquitetura</a></li>
 <li><a href="#Metas">Metas Restrições de Arquitetura</a></li>
@@ -22,7 +21,7 @@
 ### 1.1 Finalidade
 <div style ="text-align: justify">
   <p>
-      O documento de arquitetura tem a função de específicar decisões arquiteturais relevantes na produção e implementação do projeto Dulce, produzido em react native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
+      O documento de arquitetura tem a função de especificar decisões arquiteturais relevantes na produção e implementação do projeto Dulce, em que a tecnologia utilizada foi React Native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
   </p>
 </div>
 
@@ -32,25 +31,18 @@
 ### 1.2 Escopo
 <div style ="text-align: justify">
   <p>
-      Este documento se aplica à produção do aplicativo Dulce, implementado nas plataformas IOS e Android, representando a arquitetura utilizada.
+      Este documento se aplica à produção do aplicativo Dulce, implementado para as plataformas IOS e Android, representando a arquitetura utilizada.
   </p>
 </div>
 
-<div name= "Definições" id= "Definições"></div>
-
-### 1.3 Definições, Acrônimos e abreviações
-
-
-
-* <p> Clique <a href= ""> aqui </a> para visualizar o glossário do projeto.
-  </p>
-
-
 <div name= "Referências" id= "Referências"></div>
 
-### 1.4 Referências
+### 1.3 Referências
 
 * <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md"> Documento de Visão;</a>
+
+* <p> <a href= "https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/lexico.md"> Glossário. </a>   
+  </p>
 
 
 <div name= "Representação" id= "Representação"></div>
@@ -60,11 +52,9 @@
 <div style ="text-align: justify">
   <p>
     <img src ="img/arquiteturaMicroservice.png">
-    </p>
+  </p>
   <p>
-
-<br>
-
+    <br>
     <img src ="img/reactdiagrama.png">
   </p>
 </div>
@@ -81,11 +71,11 @@
 
 * <a href ="https://facebook.github.io/react-native/"> React-native</a>: Utilizado para a construção do aplicativo em IOS e Android;
 
-* <a href ="https://nodejs.org/en/">Node.js</a>: Plataforma de desenvolvimento da API;
+* <a href ="https://www.djangoproject.com/">Django</a>: Plataforma de desenvolvimento da API;
 
 * Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
 
-* Manutenibilidade: O código deve ser facilmente modificado e corrigido;
+* Manutenibilidade: O código deve ser facilmente modificado e corrigido.
 
 <div name= "Implementação" id= "Implementação"></div>
 
@@ -93,7 +83,7 @@
 * #### Diagrama de Classes
 <div style ="text-align: justify">
   <p>
-    <img src="img/Diagrama-classes.png">
+    <img src="img/diagramaUML1.png">
   </p>
 </div>
 
@@ -110,7 +100,7 @@
     React-native, https://facebook.github.io/react-native/ Acesso em: 23/03/2018, 11:20, Horário de Brasília.
   </p>
   <p>
-    Node.js, https://nodejs.org/en/ Acesso em: 23/03/2018, 11:56, Horário de Brasília.
+    Django, https://www.djangoproject.com/ Acesso em: 26/03/2018, 20:33, Horário de Brasília.
   </p>
   <p>
     React Native Architecture: Explained! https://www.logicroom.co/react-native-architecture-explained/ Acesso em: 22/03/2018, 12:05, Horário de Brasília.
