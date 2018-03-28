@@ -6,7 +6,7 @@
 ###### Score: 188
 
 | **Risco** |  **Ação Preventiva** |**Ação Reativa**|
-|:--------------:|:-------------------:|
+|:--------------:|:-------------------:|:-------------------:|
 |Adaptação da equipe  com as tecnologias| Procurar alunos com experiência para ministrar treinamentos.|Realização de treinamentos sobre tecnologias.|
 |Falta de equipamentos |Pareamento com disponibilidade de horário e Isolamento do ambiente do projeto com Docker.|Alguns membros adiquiriram novos computadores, mas ainda existe o risco em um dos computadores.|
 |Divergência de horários entre os membros do time|Quadro de horários vagos |Planejamento do pareamento semanal a partir do quadro de horarios vagos.|
@@ -25,7 +25,7 @@
 ###### Score: 185
 
 | **Risco** |  **Ação Preventiva** |**Ação Reativa**|
-|:--------------:|:-------------------:|
+|:--------------:|:-------------------:|:-------------------:|
 |Trabalhar com outro grupo de EPS|Definir um membro da equipe para realizar a comunicação entre os times.|Aplicar arquitetura da API com microserviços com ambientes independentes.|
 |Atividades atrasadas|Planejar a sprint utilizando indicadores.|Replanejar a atividade para as próximas sprints|
 
@@ -33,7 +33,7 @@
 ## Sprint 2
 ###### Score:
 | **Risco** |  **Ação Preventiva** |**Ação Reativa**|
-|:--------------:|:-------------------:|
+|:--------------:|:-------------------:|:-------------------:|
 |Atividades secundárias dos membros|Definir calendário para os membros colocas as datas de suas atividades acadêmicas|Organizar o pareamento para que apenas um integrante tenha a atividade acadêmica.|
 |Erros nos custos|Procurar profissionais com experiência e bibliografias de apoio.|Refatorar os calculos.|
 
