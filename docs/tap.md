@@ -65,8 +65,9 @@
 
 <p align = "justify">&emsp;&emsp;Segundo dados apresentados pelo ultimo relatório de gestão da Universidade de Brasília (ano de 2016) o custo anual de um estudante de Engenharia de software é de R$ 26.040,00. A quantidade média anual de créditos de um aluno é 48 e cada crédito representa 15 horas, totalizando 720 horas por aluno por ano. A partir desses dados podemos dizer que o custo por hora do aluno é de R$ 36,00. A quantidade de horas trabalhadas pelos estudantes é de aproximadamente 10 horas por semana. Considerando a duração do projeto de 18 semanas temos o calculo:
 preço/aluno = ((26040,00/(48x15)x10)x18) = R$ 6.510,00 por aluno.</p>
-Opreço total para os 10 integrantes é de R$ 65.100,00
+O preço total para os 10 integrantes é de R$ 65.100,00
 
+O preço do Coach é de ((26040,00/(48x15)x2)x18) =  R$ 1302,00
 
 ### Estrutura
 
@@ -78,10 +79,10 @@ Opreço total para os 10 integrantes é de R$ 65.100,00
 <p align = "justify">&emsp;&emsp;Os custos de materiais contam com consumo de internet para 10 pessoas por 4 meses, 10 Notebooks, energia para 10 computadores. .</p>
 
 #### Notebooks
-10 x Notebook Essentials E25s Intel Celeron Dual Core 4GB 500GB Tela LED HD 14
+10 x Notebook Lenovo Ideapad 320 Intel Core i5 8GB 1 TB - Led 15,6
 
-Valor do notebook = R$ 1.377,49
-Valor final = R$ 13.774,90
+Valor do notebook = R$ 2.089,99
+Valor final = R$ 20.899,90
 
 #### Energia
 Energia = (((consumo_pc)x(horas_trabalhadas/mes)x(quantidade_pessoas)/1000)x(valor_KWh))x(duração_projeto)
@@ -106,12 +107,14 @@ Valor final = ((120)x(10)x(4)) = R$ 4800,00
 #### Valor final
   | Recurso | Valor |
 |:--------------:|:-------------------:|
-|Recursos Humanos|R$ R$ 65.100,00|
+|Recursos Humanos|R$ 65.100,00|
 |Estrutura|R$ 1.600,00|
 |Internet|R$ 4.800,00|
 |Energia|R$ 62,95|
-|Notebooks| R$ R$ 13.774,90|
-| **Total** |**R$ 85.337,85**|
+|Notebooks| R$ 20.899,99|
+|Coach| R$ 1302,00 |
+|Risco| +15% |
+| **Total** |**R$ 106.332,38 **|
 
 Para acessar as informações e calculos de custo ajustado durante o projeto está disponível no (documento de custo).
 
