@@ -65,56 +65,33 @@
 
 <p align = "justify">&emsp;&emsp;Segundo dados apresentados pelo ultimo relatório de gestão da Universidade de Brasília (ano de 2016) o custo anual de um estudante de Engenharia de software é de R$ 26.040,00. A quantidade média anual de créditos de um aluno é 48 e cada crédito representa 15 horas, totalizando 720 horas por aluno por ano. A partir desses dados podemos dizer que o custo por hora do aluno é de R$ 36,00. A quantidade de horas trabalhadas pelos estudantes é de aproximadamente 10 horas por semana. Considerando a duração do projeto de 18 semanas temos o calculo:
 preço/aluno = ((26040,00/(48x15)x10)x18) = R$ 6.510,00 por aluno.</p>
-O preço total para os 10 integrantes é de R$ 65.100,00
+<p align = "justify">O preço total para os 10 integrantes é de R$ 65.100,00</p>
 
-O preço do Coach é de ((26040,00/(48x15)x2)x18) =  R$ 1302,00
+<p align = "justify">O preço do Coach é de ((26040,00/(48x15)x2)x18) =  R$ 1302,00</p>
+
 
 ### Estrutura
 
 <p align = "justify">&emsp;&emsp;Para a analise de custos de estrurura, foi considerado o valor da taxa de condôminio do condôminio Village no Gama, onde são realizadas nossas reuniões semanais.</p>
 
-<p align = "justify">&emsp;&emsp;A taxa de condôminio é de aproximadamente R$ 400,00 por mês, logo multiplicando esse valor por 4 meses temos: R$ 1.600,00.</p>
+<p align = "justify">&emsp;&emsp;A taxa de condôminio é de aproximadamente R$ 400,00 por mês, a diária custa R$ 13,40. Logo multiplicando esse valor por 18 temos: R$ 241,20.</p>
 
-### Materiais
-<p align = "justify">&emsp;&emsp;Os custos de materiais contam com consumo de internet para 10 pessoas por 4 meses, 10 Notebooks, energia para 10 computadores. .</p>
-
-#### Notebooks
+### Notebooks
 10 x Notebook Lenovo Ideapad 320 Intel Core i5 8GB 1 TB - Led 15,6
 
 Valor do notebook = R$ 2.089,99
 Valor final = R$ 20.899,90
 
-#### Energia
-Energia = (((consumo_pc)x(horas_trabalhadas/mes)x(quantidade_pessoas)/1000)x(valor_KWh))x(duração_projeto)
-
-consumo_pc = 43wh
-horas_trabalhadas = 60
-valor_KWh = R$ 0,61
-quantidade_pessoas = 10
-duração_projeto = 4 meses
-
-Valor final = ((43Wh)x(60h/m)x(10)/1000)x(R$0,61)x4 = R$ 62,95.
-
-#### Internet
-Internet = ((link_internet)x(quantidade_pessoas)x(duração_projeto))
-
-link_internet = R$ 120,00
-quantidade_pessoas = 10
-duração_projeto = 4
-
-Valor final = ((120)x(10)x(4)) = R$ 4800,00
 
 #### Valor final
   | Recurso | Valor |
 |:--------------:|:-------------------:|
 |Recursos Humanos|R$ 65.100,00|
-|Estrutura|R$ 1.600,00|
-|Internet|R$ 4.800,00|
-|Energia|R$ 62,95|
+|Estrutura|R$ 241,20|
 |Notebooks| R$ 20.899,99|
 |Coach| R$ 1302,00 |
 |Risco| +15% |
-| **Total** |**R$ 106.332,38 **|
+| **Total** |**R$ 100.674,67 **|
 
 Para acessar as informações e calculos de custo ajustado durante o projeto está disponível no (documento de custo).
 
