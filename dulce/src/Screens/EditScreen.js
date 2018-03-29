@@ -9,15 +9,16 @@ const styles = {
     flexDirection: 'column',
     padding: 15,
     backgroundColor: '#FFF',
+    paddingHorizontal: 20,
   },
   input:{
-    height: 30,
+    height: 36,
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
     marginBottom: 10,
     alignSelf: 'center',
     width: '80%',
-    marginTop: 40,
+    marginTop: 10,
   },
   button: {
     alignItems: 'center',
@@ -28,35 +29,47 @@ const styles = {
 };
 
 class EditScreen extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {editable:false};
+  }
+
+  tornarVisivel(){
+    this.setState({
+      editable: !this.state.editable
+    });
+  }
+
+
   render() {
     return (
       <View style={styles.container}>
         <TextInput style={styles.input}
           placeholder='Nome'
-          editable = 'false'
+          editable = {this.state.editable}
         />
         <TextInput style={styles.input}
           placeholder='Matricula'
-          editable = 'false'
+          editable = {this.state.editable}
         />
         <TextInput style={styles.input}
           placeholder='Hospital'
-          editable = 'false'
+          editable = {this.state.editable}
         />
         <TextInput style={styles.input}
           placeholder='Setor'
-          editable = 'false'
+          editable = {this.state.editable}
         />
         <TextInput style={styles.input}
           placeholder='Editar senha'
-          editable = 'false'
+          editable = {this.state.editable}
         />
         <AGRButton
           text ="Editar perfil"
           style={styles.button}
-          onPress = {() => this.setState({editable:true})}
-        >
-        </AGRButton>
+          onPress={() => {this.tornarVisivel()}}
+        />
+
       </View>
     );
   }
