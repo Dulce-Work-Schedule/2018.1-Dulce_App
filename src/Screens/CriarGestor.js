@@ -36,44 +36,44 @@ class CriarGestor extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      <Image source={logo}  style={styles.logo} />
-      <TextInput
-        style={styles.input}
-        placeholder="Nome Completo"
-        underlineColorAndroid="transparent"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Matrícula"
-        underlineColorAndroid="transparent"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Hospital"
-        underlineColorAndroid="transparent"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Setor"
-        underlineColorAndroid="transparent"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Senha"
-        underlineColorAndroid="transparent"
-        secureTextEntry
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Confirme sua senha"
-        underlineColorAndroid="transparent"
-        secureTextEntry
-      />
-      <AGRButton
-        style={styles.button}
-        text="Entrar"
-        onPress={() => this.props.navigation.navigate('login')}
-      />
+        <Image source={logo}  style={styles.logo} />
+        <TextInput
+          style={styles.input}
+          placeholder="Nome Completo"
+          underlineColorAndroid="transparent"
+          />
+          <TextInput
+          style={styles.input}
+          placeholder="Matrícula"
+          underlineColorAndroid="transparent"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Hospital"
+          underlineColorAndroid="transparent"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Setor"
+          underlineColorAndroid="transparent"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Senha"
+          underlineColorAndroid="transparent"
+          secureTextEntry
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Confirme sua senha"
+          underlineColorAndroid="transparent"
+          secureTextEntry
+        />
+        <AGRButton
+          style={styles.button}
+          text="Entrar"
+          onPress={() => this.props.navigation.navigate('login')}
+        />
       </View>
     );
   }

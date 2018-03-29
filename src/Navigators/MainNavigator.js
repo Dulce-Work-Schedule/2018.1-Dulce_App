@@ -1,6 +1,7 @@
 import { StackNavigator } from 'react-navigation';
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
+import CriarGestor from '../Screens/CriarGestor';
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
@@ -21,6 +22,12 @@ const routes = {
             title: 'Usuários'
         }
     },
+    criarGestor: {
+        screen: CriarGestor,
+        navigationOptions: {
+            title: 'Crie sua conta'
+        }
+    },    
     edit: {
         screen: EditScreen,
         navigationOptions: {
