@@ -91,6 +91,7 @@ class EditScreen extends React.Component {
         <TextInput style={styles.input}
           placeholder='Editar senha'
           editable = {this.state.editable}
+          secureTextEntry
         />
         <View style={styles.alinhar}>
           <TouchableHighlight
