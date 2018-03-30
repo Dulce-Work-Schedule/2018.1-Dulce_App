@@ -1,6 +1,8 @@
 import React from 'react';
-import {View, TextInput, Text} from 'react-native';
+import {View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
 import AGRButton from '../Components/AGRButton';
+
+const logo = require('../../assets/img/logo.png');
 
 
 const styles = {
@@ -22,10 +24,18 @@ const styles = {
   },
   button: {
     alignItems: 'center',
-    backgroundColor: 'pink',
+    backgroundColor: 'lightgray',
     padding: 10,
-    color: 'blue'
+    width: 140,
+    height:40,
+    marginTop: 15,
+    marginRight: 5,
+    marginLeft: 10,
   },
+  alinhar:{
+    flexDirection:'row',
+    alignContent:'space-around',
+  }
 };
 
 class EditScreen extends React.Component {
@@ -40,11 +50,29 @@ class EditScreen extends React.Component {
     });
   }
 
+  salvar(){
+    this.setState({
+      editable:false
+    });
+  }
+
+  mostraDados(){
+    return{textValue: ''};
+  }
+
+  atualizaDados(){
+    this.setState({
+      textValue: this.state.Textvalue
+    });
+  }
+
+
 
   render() {
     return (
       <View style={styles.container}>
-        <TextInput style={styles.input}
+        <Image source = {logo}/>
+        <TextInput style={styles.input } Textvalue = {this.state.Textvalue}
           placeholder='Nome'
           editable = {this.state.editable}
         />
@@ -64,12 +92,20 @@ class EditScreen extends React.Component {
           placeholder='Editar senha'
           editable = {this.state.editable}
         />
-        <AGRButton
-          text ="Editar perfil"
-          style={styles.button}
-          onPress={() => {this.tornarVisivel()}}
-        />
+        <View style={styles.alinhar}>
+          <TouchableHighlight
+          style= {styles.button}
+          onPress={()=>{this.tornarVisivel()}}>
+            <Text>Editar perfil</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+            style= {styles.button}
+            onPress={()=>{this.salvar(), ()=>{this.atualizaDados()}}}
 
+          >
+            <Text>Salvar</Text>
+          </TouchableHighlight>
+        </View>
       </View>
     );
   }
