@@ -8,8 +8,6 @@
 preço/aluno = ((26040,00/(48x15)x13)x16) = R$ 7.522,67 por aluno.</p>
 <p align = "justify">O preço total para os 10 integrantes é de R$ 75.226,70.</p>
 
-<p align = "justify">O preço do Coach é de ((26040,00/(48x15)x2)x16) =  R$ 1157,33.</p>
-
 
 ### Estrutura
 
@@ -31,21 +29,20 @@ Valor final = R$ 20.899,90
 |Recursos Humanos|R$ 75.226,70|
 |Estrutura|R$ 241,20|
 |Notebooks| R$ 20.899,99|
-|Coach| R$ 1157,33|
 |Risco| +15% |
-| **Total** |**R$ 97.698,81 **|
+| **Total** |**R$ 96.369,89 **|
 
 ## Valor Planejado (PV) e Custo Real (AC)
 
-A EVM foi toda baseada no valor da sprint, ou seja, independentemente de quantos pontos fossem planejados para aquela sprint específica, o custo dela não muda. Dessa forma, o custo real não seria abaixo e nem acima do que foi planejado, ele seria igual, mesmo que a equipe não entregasse ou entregasse além do que foi planejado.
+A EVM foi toda baseada no valor da sprint, ou seja, independentemente de quantos pontos fossem planejados para aquela sprint específica, o custo dela não muda. Dessa forma, o custo real não seria abaixo e nem acima do que foi planejado, ele seria igual, mesmo que o time não entregasse ou entregasse além do que foi planejado.
 
 ## Valor Agregado (EV)
 
-Diferente do valor planejado e do custo real, o valor agregado se difere em cada _sprint_ dependendo do desempenho da equipe na mesma. O valor agregado é um indicador da produtividade da equipe refletida no custo, onde é possível perceber se a equipe está fazendo as entregas conforme o planejado. Para o cálculo do valor agregado, é necessário saber a Porcentagem Concluída na _Sprint_ (PPC) e o Valor Planejado (PV).
+Diferente do valor planejado e do custo real, o valor agregado se difere em cada _sprint_ dependendo do desempenho do time na mesma. O valor agregado é um indicador da produtividade do time refletida no custo, onde é possível perceber se o time está fazendo as entregas conforme o planejado. Para o cálculo do valor agregado, é necessário saber a Porcentagem Concluída na _Sprint_ (PPC) e o Valor Planejado (PV).
 
  PPC = PC / PP
 
- EV = PPC * PV                                                    
+ EV = PPC * PV                                                
 
 PC = Pontos Concluídos  
 PP = Pontos Planejados

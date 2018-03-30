@@ -73,9 +73,8 @@
 |Recursos Humanos|R$ 75.226,70|
 |Estrutura|R$ 241,20|
 |Notebooks| R$ 20.899,99|
-|Coach| R$ 1157,33|
 |Risco| +15% |
-| **Total** |**R$ 97.698,81 **|
+| **Total** |**R$ 96.369,89 **|
 
 Para acessar os custos detalhados, acesse [aqui.](EVM.md)
 
