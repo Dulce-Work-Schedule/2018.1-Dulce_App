@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TextInput, Image } from 'react-native';
+import { View, TextInput, Image, Alert } from 'react-native';
 import AGRButton from '../Components/AGRButton';
 
 
@@ -33,6 +33,18 @@ const styles = {
 
 class CriarGestor extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      nome: '',
+      matricula: '',
+      hospital: '',
+      setor: '',
+      senha: '',
+      confirmaSenha: ''
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -41,38 +53,57 @@ class CriarGestor extends React.Component {
           style={styles.input}
           placeholder="Nome Completo"
           underlineColorAndroid="transparent"
+          onChangeText={(text) => this.setState({
+            nome: text})}
           />
           <TextInput
           style={styles.input}
           placeholder="Matrícula"
           underlineColorAndroid="transparent"
+          onChangeText={(text) => this.setState({
+            matricula: text})}
         />
         <TextInput
           style={styles.input}
           placeholder="Hospital"
           underlineColorAndroid="transparent"
+          onChangeText={(text) => this.setState({
+            hospital: text})}
         />
         <TextInput
           style={styles.input}
           placeholder="Setor"
           underlineColorAndroid="transparent"
+          onChangeText={(text) => this.setState({
+            setor: text})}
         />
         <TextInput
           style={styles.input}
           placeholder="Senha"
           underlineColorAndroid="transparent"
           secureTextEntry
+          onChangeText={(text) => this.setState({
+            Senha: text})}
         />
         <TextInput
           style={styles.input}
           placeholder="Confirme sua senha"
           underlineColorAndroid="transparent"
           secureTextEntry
+          onChangeText={(text) => this.setState({
+            confirmaSenha: text})}
         />
         <AGRButton
           style={styles.button}
-          text="Entrar"
-          onPress={() => this.props.navigation.navigate('login')}
+          text= 'Testar'
+          onPress={() => Alert.alert(
+            'nome: ' + this.state.nome +
+            '\nmatricula: ' + this.state.matricula +
+            '\nhospital: ' + this.state.hospital
+
+
+           )
+          }
         />
       </View>
     );
