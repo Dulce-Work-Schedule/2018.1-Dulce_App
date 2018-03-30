@@ -1,6 +1,6 @@
 ### Roadmap
 
-Para facilitar a visualização nosso Roadmap foi dividido em 5 grandes grupos de acordo com nosso EAP. Cada grupo tem suas Competências ou Features e Histórias ou Tasks seguindo o modelo Story Map adaptado.
+Para facilitar a visualização nosso Roadmap foi dividido em 7 grandes grupos de acordo com nosso EAP. Cada grupo tem suas Competências ou Features e Histórias ou Tasks seguindo o modelo Story Map adaptado.
 
 ![Produto](/docs/img/produto.png)
 
@@ -11,3 +11,7 @@ Para facilitar a visualização nosso Roadmap foi dividido em 5 grandes grupos d
 ![Especificações](/docs/img/especificacao.png)
 
 ![Abertura](/docs/img/abertura.png)
+
+![Marketing](/docs/img/marketing.png)
+
+![Design](/docs/img/design.png)
