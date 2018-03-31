@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
 import AGRButton from '../Components/AGRButton';
+import ValidationComponent from 'react-native-form-validator';
 
 const logo = require('../../assets/img/logo.png');
 
@@ -38,11 +39,28 @@ const styles = {
   }
 };
 
-class EditScreen extends React.Component {
+export default class EditScreen extends ValidationComponent {
   constructor(props){
     super(props);
-    this.state = {editable:false};
+    this.state = {
+      editable:false
+      nome: '',
+      matricula: '',
+      hospital: '',
+      setor: '',
+      senha: '',
+    };
   }
+
+  _onPressButton(){
+   if(this.validate({
+       nome: {required: true},
+       matricula: {numbers: true, required: true},
+       hospital: {required: true},
+       setor: {required: true},
+       senha: {minlength:4, maxlength:8, required: true},
+  ))}
+}
 
   tornarVisivel(){
     this.setState({
@@ -72,27 +90,41 @@ class EditScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Image source = {logo}/>
+
+
         <TextInput style={styles.input } Textvalue = {this.state.Textvalue}
           placeholder='Nome'
           editable = {this.state.editable}
+          onChangeText={(text) => this.setState({
+            nome: text})}
         />
+        {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput style={styles.input}
           placeholder='Matricula'
-          editable = {this.state.editable}
+          editable = {false}
         />
         <TextInput style={styles.input}
           placeholder='Hospital'
           editable = {this.state.editable}
+          onChangeText={(text) => this.setState({
+            hospital: text})}
         />
+        {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput style={styles.input}
           placeholder='Setor'
           editable = {this.state.editable}
+          onChangeText={(text) => this.setState({
+            setor: text})}
         />
+        {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput style={styles.input}
           placeholder='Editar senha'
           editable = {this.state.editable}
           secureTextEntry
+          onChangeText={(text) => this.setState({
+           senha: text})}
         />
+        {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
           <TouchableHighlight
           style= {styles.button}
@@ -101,12 +133,17 @@ class EditScreen extends React.Component {
           </TouchableHighlight>
           <TouchableHighlight
             style= {styles.button}
-            onPress={()=>{this.salvar(), ()=>{this.atualizaDados()}}}
+            onPress={()=>{this.salvar()}
 
           >
             <Text>Salvar</Text>
           </TouchableHighlight>
         </View>
+        <AGRButton
+          style={styles.button}
+          text= 'Criar'
+          onPress={() => this._onPressButton()}
+        />
       </View>
     );
   }
