@@ -1,10 +1,14 @@
-import { StackNavigator } from 'react-navigation';
+
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
 import CriarGestor from '../Screens/CriarGestor';
+<<<<<<< HEAD:src/Navigators/MainNavigator.js
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
+=======
+import { StackNavigator } from 'react-navigation';
+>>>>>>> #60 fazendo primeiro teste com sucesso:dulce/src/Navigators/MainNavigator.js
 const routes = {
 
     login: {

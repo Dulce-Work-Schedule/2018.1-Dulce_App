@@ -22,6 +22,8 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+dulce/__tests__/__snapshots__/*
+
 # Android/IntelliJ
 #
 build/
