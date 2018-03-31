@@ -63,6 +63,7 @@ export default class CriarGestor extends ValidationComponent {
       })){
         //Metodo para mandar para a API estará aqui
         Alert.alert(
+          'Dados do novo gestor',
           'nome: ' + this.state.nome +
           '\nMatricula: ' + this.state.matricula +
           '\nHospital: ' + this.state.hospital +
@@ -75,6 +76,7 @@ export default class CriarGestor extends ValidationComponent {
 
   render() {
     return (
+
       <View style={styles.container}>
         <Image source={logo}  style={styles.logo} />
         <ScrollView>
@@ -133,6 +135,7 @@ export default class CriarGestor extends ValidationComponent {
             confirmaSenha: text})}
         />
         {this.isFieldInError('confirmaSenha') && this.getErrorsInField('confirmaSenha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+
         <AGRButton
           style={styles.button}
           text= 'Testar'
