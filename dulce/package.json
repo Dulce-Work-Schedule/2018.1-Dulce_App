@@ -19,5 +19,8 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
