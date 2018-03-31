@@ -9,7 +9,10 @@ const logo = require('../../assets/img/logo.png');
 const styles = {
   logo: {
     alignSelf: 'center',
-    marginBottom: 20
+    marginBottom: 20,
+    width: 200,
+    height: 100,
+    resizeMode: 'contain'
   },
   container: {
     flex: 1,
@@ -32,7 +35,8 @@ const styles = {
     marginTop : 30
   },
   error:{
-    color: 'red'
+    color: 'red',
+    alignSelf: 'center'
   }
 };
 
@@ -46,21 +50,19 @@ export default class CriarGestor extends ValidationComponent {
       hospital: '',
       setor: '',
       senha: '',
-      confirmaSenha: '',
-      error: false
-
+      confirmaSenha: ''
     }
   }
 
   _onPressButton(){
     if(this.validate({
-        nome: {minlength:3, required: true},
+        nome: {required: true},
         matricula: {numbers: true, required: true},
         hospital: {required: true},
         setor: {required: true},
         senha: {minlength:4, maxlength:8, required: true},
-        confirmaSenha: {minlength:4, maxlength:8, required: true}
-      })){
+        confirmaSenha: {required: true}
+      }) && (this.state.confirmaSenha == this.state.senha)){
         //Metodo para mandar para a API estará aqui
         Alert.alert(
           'Dados do novo gestor',
@@ -69,14 +71,25 @@ export default class CriarGestor extends ValidationComponent {
           '\nHospital: ' + this.state.hospital +
           '\nSetor: ' + this.state.setor +
           '\nSenha: ' + this.state.senha +
-          '\nConfirmação de Senha: ' + this.state.confirmaSenha
+          '\nConfirmação de Senha: ' + this.state.confirmaSenha,
+          [
+            {text:'Ok', onPress: () => this.props.navigation.navigate('login')}
+          ]
          )
       }
   }
 
+  confirmaSenhaErrado(){
+    if (this.state.confirmaSenha != this.state.senha) {
+      return true;
+    }else {
+      return false;
+    }
+
+  }
+
   render() {
     return (
-
       <View style={styles.container}>
         <Image source={logo}  style={styles.logo} />
         <ScrollView>
@@ -108,13 +121,14 @@ export default class CriarGestor extends ValidationComponent {
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput
+          ref="setor"
           style={styles.input}
           placeholder="Setor"
           underlineColorAndroid="transparent"
           onChangeText={(text) => this.setState({
             setor: text})}
         />
-
+        {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput
           ref="senha"
           style={styles.input}
@@ -138,7 +152,7 @@ export default class CriarGestor extends ValidationComponent {
 
         <AGRButton
           style={styles.button}
-          text= 'Testar'
+          text= 'Criar'
           onPress={() => this._onPressButton()}
         />
         </ScrollView>

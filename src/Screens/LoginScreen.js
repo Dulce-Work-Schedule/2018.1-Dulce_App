@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, TextInput, Image } from 'react-native';
 import AGRButton from '../Components/AGRButton';
+import BotaoTransparente from '../Components/BotaoTransparente';
 
 const logo = require('../../assets/img/logo.png');
 
