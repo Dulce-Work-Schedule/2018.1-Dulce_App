@@ -46,8 +46,31 @@ export default class CriarGestor extends ValidationComponent {
       hospital: '',
       setor: '',
       senha: '',
-      confirmaSenha: ''
+      confirmaSenha: '',
+      error: false
+
     }
+  }
+
+  _onPressButton(){
+    if(this.validate({
+        nome: {minlength:3, required: true},
+        matricula: {numbers: true, required: true},
+        hospital: {required: true},
+        setor: {required: true},
+        senha: {minlength:4, maxlength:8, required: true},
+        confirmaSenha: {minlength:4, maxlength:8, required: true}
+      })){
+        //Metodo para mandar para a API estará aqui
+        Alert.alert(
+          'nome: ' + this.state.nome +
+          '\nMatricula: ' + this.state.matricula +
+          '\nHospital: ' + this.state.hospital +
+          '\nSetor: ' + this.state.setor +
+          '\nSenha: ' + this.state.senha +
+          '\nConfirmação de Senha: ' + this.state.confirmaSenha
+         )
+      }
   }
 
   render() {
@@ -97,7 +120,7 @@ export default class CriarGestor extends ValidationComponent {
           underlineColorAndroid="transparent"
           secureTextEntry
           onChangeText={(text) => this.setState({
-            Senha: text})}
+            senha: text})}
         />
         {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput
@@ -113,14 +136,7 @@ export default class CriarGestor extends ValidationComponent {
         <AGRButton
           style={styles.button}
           text= 'Testar'
-          onPress={() => this.validate({
-            nome: {minlength:3, maxlength:7, required: true},
-            matricula: {numbers: true, required: true},
-            hospital: {required: true},
-            setor: {required: true},
-            senha: {minlength:4, maxlength:8, required: true},
-            confirmaSenha: {minlength:4, maxlength:8, required: true}
-          })}
+          onPress={() => this._onPressButton()}
         />
         </ScrollView>
       </View>
