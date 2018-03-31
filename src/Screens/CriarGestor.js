@@ -93,15 +93,6 @@ export default class CriarGestor extends ValidationComponent {
       <View style={styles.container}>
         <Image source={logo}  style={styles.logo} />
         <ScrollView>
-        <TextInput
-          ref="nome"
-          style={styles.input}
-          placeholder="Nome Completo"
-          underlineColorAndroid="transparent"
-          onChangeText={(text) => this.setState({
-            nome: text})}
-          />
-          {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <TextInput
           ref="matricula"
           style={styles.input}
@@ -110,6 +101,11 @@ export default class CriarGestor extends ValidationComponent {
           onChangeText={(text) => this.setState({
             matricula: text})}
         />
+        <TextInput ref="nome" style={styles.input} placeholder="Nome Completo" underlineColorAndroid="transparent" onChangeText={(text) => this.setState({ nome: text})} />
+        {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        
+        <TextInput  ref="matricula"  style={styles.input} placeholder="Matrícula" underlineColorAndroid="transparent"  onChangeText={(text) => this.setState({  matricula: text})} />
+
         {this.isFieldInError('matricula') && this.getErrorsInField('matricula').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <TextInput
           ref="hospital"
@@ -129,32 +125,15 @@ export default class CriarGestor extends ValidationComponent {
             setor: text})}
         />
         {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <TextInput
-          ref="senha"
-          style={styles.input}
-          placeholder="Senha"
-          underlineColorAndroid="transparent"
-          secureTextEntry
-          onChangeText={(text) => this.setState({
-            senha: text})}
-        />
+        <TextInput ref="senha" style={styles.input} placeholder="Senha" underlineColorAndroid="transparent" secureTextEntry onChangeText={(text) => this.setState({ senha: text})} />
+
         {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <TextInput
-          ref="confirmaSenha"
-          style={styles.input}
-          placeholder="Confirme sua senha"
-          underlineColorAndroid="transparent"
-          secureTextEntry
-          onChangeText={(text) => this.setState({
-            confirmaSenha: text})}
-        />
+
+        <TextInput ref="confirmaSenha" style={styles.input} placeholder="Confirme sua senha" underlineColorAndroid="transparent" secureTextEntry onChangeText={(text) => this.setState({ confirmaSenha: text})} />
+
         {this.isFieldInError('confirmaSenha') && this.getErrorsInField('confirmaSenha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
 
-        <AGRButton
-          style={styles.button}
-          text= 'Criar'
-          onPress={() => this._onPressButton()}
-        />
+        <AGRButton style={styles.button} text= 'Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
       </View>
     );
