@@ -40,7 +40,7 @@ const styles = {
   }
 };
 
-export default class CriarGestor extends ValidationComponent {
+export default class NewManager extends ValidationComponent {
 
   constructor(props) {
     super(props);
