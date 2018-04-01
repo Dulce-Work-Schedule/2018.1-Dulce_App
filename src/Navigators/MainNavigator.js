@@ -1,4 +1,3 @@
-
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
 import NewManager from '../Screens/NewManager';
