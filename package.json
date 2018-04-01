@@ -1,0 +1,62 @@
+{
+  "name": "dulce",
+  "author": "gpp-mds",
+  "description": "Dulce é um aplicativo desenvolvido em react-native para análise/monitoramento de indicadores da saúde pública regional (DF)",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fga-gpp-mds/agr-react-native"
+  },
+  "homepage": "https://fga-gpp-mds.github.io/agr-react-native/",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src __tests__",
+    "coverage": "rimraf coverage && jest --coverage"
+  },
+  "bugs": "https://github.com/fga-gpp-mds/agr-react-native/issues",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "event-emitter": "^0.3.4",
+    "immutable": "^3.7.6",
+    "lodash": "^4.11.0",
+    "moment": "^2.12.0",
+    "prop-types": "^15.6.0",
+    "react": "16.3.0-alpha.3",
+    "react-native": "0.54.2",
+    "react-native-form-validator": "^0.2.0",
+    "react-navigation": "^1.5.9",
+    "react-native-vector-icons": "^4.4.2",
+    "standard-http-error": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^7.1.0",
+    "babel-jest": "22.4.3",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-react-native": "4.0.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "eslint": "^3.10.1",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-react": "^6.7.1",
+    "fetch-mock": "^5.5.0",
+    "istanbul": "1.0.0-alpha.2",
+    "jest": "22.4.3",
+    "plop": "^1.7.4",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^16.0.0",
+    "react-native-mock": "~0.2.5",
+    "react-test-renderer": "16.3.0-alpha.3",
+    "remote-redux-devtools": "^0.5.7",
+    "rimraf": "^2.5.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
