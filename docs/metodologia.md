@@ -36,10 +36,10 @@ trabalhar em um outro conjunto de prioridades.
 - As decisões do Product Owner devem ser visíveis no conteúdo e na priorização do Backlog do Produto.
 
 #### DevOps
-- Garantir que todas as alterações de código e configurações sejam feitas usando mecanismos automatizados, rastreáveis ​​e repetíveis.
+- Garantir que todas as alterações de código e configurações sejam feitas usando mecânismos automatizados, rastreáveis ​.
 - Automatizar a Infraestrutura.
-- Automatizar e garantir a integração continua
-- Autmatizar e garantir o deploy continuo
+- Automatizar e garantir a integração contínua
+- Automatizar e garantir o deploy contínuo
 - Facilitar o processo de desenvolvimento
 - Organizar os pipeline do produto.
 
@@ -147,7 +147,7 @@ Uma feature é considerada finalizada quando todas as histórias derivadas estã
 
 **Sprint**  
 
-Uma sprint conclui quando as histórias foram finalizadas e mescladas na branch master, caso contrário a sprint falhou e o que não foi feito deve ser alocado para a próxima Sprint como dívida técnica.
+Uma sprint conclui após 7 dias de trabalho. Caso as histórias não forem finalizadas e mescladas na branch master, houveram falhas e o que não foi feito deve ser alocado para a próxima Sprint como dívida técnica. Os riscos identificados devido as dificuldades enfrentadas são mapeados. 
 
 **Artefato**
 
