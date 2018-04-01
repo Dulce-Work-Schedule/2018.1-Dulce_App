@@ -4,7 +4,7 @@ import UsersScreen from '../Screens/UsersScreen';
 
 import EditScreen from '../Screens/EditScreen';
 
-import VisualizaGestor from '../Screens/ProfileManager';
+import ProfileManager from '../Screens/ProfileManager';
 
 
 const routes = {
