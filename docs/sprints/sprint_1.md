@@ -30,6 +30,7 @@ Duração: 7 dias
 |[#43 Adicionar informações pendentes dos membros da equipe ](https://github.com/fga-gpp-mds/agr-react-native/issues/43)|
 |[#54 Refatoração de documentos ](https://github.com/fga-gpp-mds/agr-react-native/issues/54)|
 |[#15 Criar Docker para React Native ](https://github.com/fga-gpp-mds/agr-react-native/issues/15)|
+|[#30 Criar Roadmap ](https://github.com/fga-gpp-mds/agr-react-native/issues/30)|
 
 ### Papéis
 
@@ -54,8 +55,8 @@ Duração: 7 dias
 ### Burndown
 
 Planejados:
-- 13 issues
-- 42 Pontos
+- 14 issues
+- 43 Pontos
 
 Executados:
 - 12 Issues
@@ -82,6 +83,9 @@ Para as próximas <i>sprints</i> ela foi replanejada e virou um épico com duas 
 
 A tarefa [#87](https://github.com/fga-gpp-mds/agr-react-native/issues/87) é dependente da [#71](https://github.com/fga-gpp-mds/agr-react-native/issues/71) portanto serão realizadas em duas sprints consecutivas.
 
+[#30 Criar Roadmap ](https://github.com/fga-gpp-mds/agr-react-native/issues/30)  
+Devido a falta de conhecimento sobre o Escopo, a tarefa não pode ser finalizada a tempo.
+
 
 ### Retrospectiva
 Duração: 45 minutos.
@@ -102,7 +106,7 @@ Duração: 45 minutos.
 
 ![Quadro de Conhecimento](/docs/img/sprint/conhecimento_sprint_1.PNG)
 
-Houve aumento, mas nada muito significativo em relação à sprint 0.
+Houve aumento do conhecimento em JavaScript em relação à sprint 0.
 
 #### *Velocity*
 
@@ -116,7 +120,7 @@ Houve aumento, mas nada muito significativo em relação à sprint 0.
 
 #### Riscos
 
-<p align="justify">&emsp;&emsp;Durante a sprint foram coletados riscos que podem atrapalhar o andamento do projeto, esses riscos podem ser encontrados no [documento de risco do projeto].</p>
+<p align="justify">&emsp;&emsp;Durante a sprint foram coletados riscos que podem atrapalhar o andamento do projeto, esses riscos podem ser encontrados [aqui](/Docs/riscos.md).</p>
 
 ## Feedback
 
