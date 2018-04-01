@@ -15,7 +15,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src __tests__",
-    // "bundle:ios": "node ./node_modules/react-native/local-cli/cli.js bundle --platform ios --entry-file index.js --bundle-output ios/PepperoniAppTemplate/main.jsbundle --dev=false --verbose",
     "coverage": "rimraf coverage && jest --coverage"
   },
   "bugs": "https://github.com/fga-gpp-mds/agr-react-native/issues",
