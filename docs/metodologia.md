@@ -2,8 +2,7 @@
 
 ### Metodologia adotada no projeto
 <p align="justify">&emsp;&emsp;Foi adotado como base o <i>framework scrum</i> onde empregamos diversos processos e técnicas adaptando às necessidades da equipe. </p>
-<p align="justify">&emsp;&emsp;O papel do Scrum no projeto é fazer transparecer a eficácia relativa das práticas de desenvolvimento para que a equipe possa melhorá-las, enquanto provê um framework adaptado para o desenvolvimento do produto. Também emprega uma abordagem iterativa e incremental para otimizar a previsibilidade e controlar riscos.</p>
-
+<p align="justify">&emsp;&emsp;O objetivo do Scrum no projeto é permitir o controle do trabalho a ser realizado por meio de uma gestão dinâmica, assim identificar obstáculos durante o processo de desenvolvimento e reagir a eles. A abordagem iterativa e incremental empregada otimiza a previsão e monitoramento de riscos </p>
 
 ### Papeis
 |Papel|Membro|
@@ -44,12 +43,13 @@ trabalhar em um outro conjunto de prioridades.
 - Facilitar o processo de desenvolvimento
 - Organizar os pipeline do produto.
 
-#### Arquiteta
-- Definir padrões de projeto a usar
-- Certificar que os membros estão seguindo a arquitetura definida.
-- Determinar qual a arquitetura deverá ser utilizada.
+#### Software Architect
+- Elaborar e projetar a melhor solução técnica a ser adotada no projeto
+- Garantir que a arquitetura projetada seja implementada
+- Cuidar para que o produto atenda ás expectivas do cliente dentro do prazo e custos definidos
 
-#### Time de Desenvolvimento
+
+#### Developers
 - Transformam o Backlog do Produto em incrementos
 de funcionalidades potencialmente entregáveis em cada Sprint.
 - Os conhecimentos que os membros do Time devem compartilhar é a habilidade de pegar um
@@ -101,15 +101,18 @@ Missão: Inspecionar o incremento e adaptar o Backlog.
 4 - O grupo colabora com as soluções;  
 5 - É feita uma análise do mercado para definir o que é mais importante para fazer a seguir.
 
+<!-- Acredito que não é necessário tanto tempo de
+retrospectiva -->
+
 #### Retrospectiva
 Duração: 45 min  
 
 
 1 - Revisar, dentro do modelo de trabalho e das práticas do processo do Scrum, o processo de desenvolvimento, de forma a torná-lo mais eficaz e gratificante para a próxima
 Sprint;  
-2 - Inspecionar como correu a última Sprint em se tratando de pessoas, das relações entre elas, dos processos e das ferramentas.
-3 - Priorizar os principais itens que correram bem e aqueles que, se feitos de modo diferente, poderiam ter deixado as coisas ainda melhores;
-1 - Auto avaliação dos membros;  
+2 - Inspecionar como correu a última Sprint em se tratando de pessoas, das relações entre elas, dos processos e das ferramentas.  
+3 - Priorizar os principais itens que correram bem e aqueles que, se feitos de modo diferente, poderiam ter deixado as coisas ainda melhores;  
+4 - Auto avaliação dos membros;  
 
 ### Indicadores
 **Gráfico de Burndown**  
@@ -128,24 +131,32 @@ Apresenta a quantidade de story points entregue por sprint.
 Apresenta o crescimento individual e da equipe sobre o conhecimento das tecnologias.
 
 **Frequência de commits**  
-Indica se o time está seguindo as técnicas de trabalho constante.
+Indica se o time está contantemente trabalhando no projeto. Auxilía na avaliação do comprometimento.
+
+<!-- Falta métricas!!-->
 
 ### Definição de Pronto
-**História**  
-Uma história é definida como pronta quando a funcionalidade está feita, testada, e validada pelo PO e a cobertura do código superior ou igual a 90%.
+
+**História de Usuário**  
+
+Uma história estará finalizada quando a funcionalidade for implementada, testada, e validada junto ao PO, além de cobertura de teste superior ou igual a 90%.
 
 **Feature**  
-Uma feature é considerada pronta quando todas as histórias derivadas estão prontas e testadas com cobertura de no mínimo 90%.
+
+Uma feature é considerada finalizada quando todas as histórias derivadas estão todas implementadas e testadas com cobertura de teste no mínimo em 90%.
 
 **Sprint**  
-Uma sprint está pronta quando as histórias foram concluídas e mescladas na master, caso contrário a sprint falhou e o que não foi feito deve ser alocado para a próxima Sprint.
 
-**Artefato**  
+Uma sprint conclui quando as histórias foram finalizadas e mescladas na branch master, caso contrário a sprint falhou e o que não foi feito deve ser alocado para a próxima Sprint como dívida técnica.
+
+**Artefato**
+
 Um artefato é considerado pronto quando for finalizado e feito o pull request com as validações presentes no guia de contribuição.
+
 ### Ferramentas
 
 <img src="/docs/img/logos/codeclimate.png" width="100" height="100"> <img src="/docs/img/logos/telegram.png" width="100" height="100"><img src="/docs/img/logos/travis.gif" width="110" height="100"> <img src="/docs/img/logos/slack.gif" width="115" height="100"><img src="/docs/img/logos/GitHub.gif" width="110" height="100"> <img src="/docs/img/logos/drive.gif" width="110" height="100">
-<img src="/docs/img/logos/atom.png" width="100" height="100"> <img src="/docs/img/logos/docker.gif" width="100" height="100"> <img src="/docs/img/logos/protoio.png" width="100" height="100">
+<img src="/docs/img/logos/atom.png" width="100" height="100"> <img src="/docs/img/logos/docker.gif" width="100" height="100"> <img src="/docs/img/logos/protoio.png" width="100" height="100"><img src="/docs/img/logos/node.png" width="100" height="100"><img src="/docs/img/logos/mongodb.png" width="100" height="100"><img src="/docs/img/logos/js.png" width="100" height="100"><img src="/docs/img/logos/graphql.png" width="100" height="100"><img src="/docs/img/logos/jest.png" width="100" height="100"><img src="/docs/img/logos/android.gif" width="100" height="100">
 
 
 ### Comunicação
@@ -159,8 +170,8 @@ No Slack é realizada a comunicação necessária e a integração com outras fe
 ##### GitHub
 O GitHub é essencial na transparência interna da equipe e externa junto ao cliente, a orientadora do projeto (Carla Rocha) e a comunidade em geral. Foi feito um uso extensivo das issues para comunicação entre os membros da equipe, para dúvidas sobre a issue e para mostrar o andamento do projeto.
 
-
 ### Pontuação das histórias e tarefas
+
 A pontuação foi baseada no esforço necessário para concluir as tarefas. O esforço foi contabilizado como horas trabalhadas para a realização de uma determinada tarefa.
 
 |Pontuação|Duração|Risco|Máximo|
