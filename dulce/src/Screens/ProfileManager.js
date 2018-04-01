@@ -7,17 +7,11 @@ import{View,
 import AGRButton from '../Components/AGRButton';
 
 const styles = {
- principal:{
+  principal:{
     flex: 1,
     flexDirection: 'column',
     paddin: 15,
-    paddingHorizontal: 50,
-    marginTop: 30,
- },
- informacoes: {
-
-    marginBottom: 50
-
+    paddingHorizontal: 50
  }
  }
 
@@ -32,15 +26,15 @@ class ProfileManager extends React.Component {
 
         }
 
-}
+    }
 
 componentDidMount(){
 
-const url = 'https://jsonplaceholder.typicode.com/users';
-this.setState({loading: true});
-fetch(url)
-.then((response) => {return response.json();})
-.then((json) => { this.setState ({perfilGestor: json , loading: false})})
+  const url = 'https://jsonplaceholder.typicode.com/users';
+  this.setState({loading: true});
+  fetch(url)
+  .then((response) => {return response.json();})
+  .then((json) => { this.setState ({perfilGestor: json , loading: false})})
 }
 
   render(){
@@ -59,13 +53,13 @@ fetch(url)
           }
 
 
-          <AGRButton
-          text='Editar Perfil'
-          onPress = {() => this.props.navigation.navigate('users')}
-          />
+            <AGRButton
+              text='Editar Perfil'
+              onPress = {() => this.props.navigation.navigate('users')}
+            />
 
 
-          <TouchableHighlight >
+          <TouchableHighlight widht>
               <Text>alterar senha</Text>
           </TouchableHighlight>
         </View>
