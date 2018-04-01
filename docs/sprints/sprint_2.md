@@ -110,9 +110,10 @@ Duração: 45 minutos.
 
 #### Riscos
 
-<p align="justify">&emsp;&emsp;Durante a sprint foram coletados riscos que podem atrapalhar o andamento do projeto, esses riscos podem ser encontrados [aqui](/Docs/riscos.md).</p>
+Durante a sprint foram coletados riscos que podem atrapalhar o andamento do projeto, esses riscos podem ser encontrados [aqui](/docs/riscos.md).
 
 ## Feedback
 
 Durante a sprint foram detectados problemas pontuais e os pertinentes colocados no documento de riscos, as duplas conseguiram trabalhar bem durante a sprint.  
-A reunião de revisão e retrospectiva ocorreram bem e conseguimos seguir o tempo determinado para cada reunião.
+A reunião de revisão e retrospectiva ocorreram bem e conseguimos seguir o tempo determinado para cada reunião.  
+Os indicadores dessa sprint apresentaram melhorias dentro da equipe, o conhecimento sobre react, teste e o scrum foi atualizado. Os commits passaram a ser mais constantes em relação à sprint passada.
