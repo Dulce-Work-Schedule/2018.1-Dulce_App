@@ -36,6 +36,9 @@
 |:--------------:|:-------------------:|:-------------------:|
 |Atividades secundárias dos membros|Definir calendário para controle entre o projeto e as atividades acadêmicas dos membros.|Organizar o pareamento para que nenhuma dupla fique inativa por conta de outras atividades.|
 |Erros nos custos|Procurar profissionais com experiência e bibliografias de apoio.|Refatorar os cálculos.|
+|Falha nas máquinas por uso extensivo do emulador|Usar somente quando for testar uma funcionalidade|Recuperar o sistema operacional, caso não dê certo recinfigurar a máquina.|
+|Curva de aprendizado nos testes|Treinamento e estudo de testes em React|Os membros da equipe com marior conhecimento deve ajudar os que possuem menos.|
+
 
 
 ## Burndown de Riscos
