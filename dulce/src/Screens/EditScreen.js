@@ -2,10 +2,7 @@ import React from 'react';
 import {View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import ValidationComponent from 'react-native-form-validator';
-
 const logo = require('../../assets/img/logo.png');
-
-
 const styles = {
   container:{
     flex: 1,
@@ -38,12 +35,11 @@ const styles = {
     alignContent:'space-around',
   }
 };
-
 export default class EditScreen extends ValidationComponent {
   constructor(props){
     super(props);
     this.state = {
-      editable:false
+      editable:false,
       nome: '',
       matricula: '',
       hospital: '',
@@ -51,7 +47,6 @@ export default class EditScreen extends ValidationComponent {
       senha: '',
     };
   }
-
   _onPressButton(){
    if(this.validate({
        nome: {required: true},
@@ -59,39 +54,23 @@ export default class EditScreen extends ValidationComponent {
        hospital: {required: true},
        setor: {required: true},
        senha: {minlength:4, maxlength:8, required: true},
-  ))}
+  }));
 }
-
   tornarVisivel(){
     this.setState({
       editable: !this.state.editable
     });
   }
-
   salvar(){
     this.setState({
       editable:false
     });
   }
 
-  mostraDados(){
-    return{textValue: ''};
-  }
-
-  atualizaDados(){
-    this.setState({
-      textValue: this.state.Textvalue
-    });
-  }
-
-
-
   render() {
     return (
       <View style={styles.container}>
         <Image source = {logo}/>
-
-
         <TextInput style={styles.input } Textvalue = {this.state.Textvalue}
           placeholder='Nome'
           editable = {this.state.editable}
@@ -133,21 +112,11 @@ export default class EditScreen extends ValidationComponent {
           </TouchableHighlight>
           <TouchableHighlight
             style= {styles.button}
-            onPress={()=>{this.salvar()}
-
-          >
+            onPress={()=>{[this.salvar(),this._onPressButton()]}}>
             <Text>Salvar</Text>
           </TouchableHighlight>
         </View>
-        <AGRButton
-          style={styles.button}
-          text= 'Criar'
-          onPress={() => this._onPressButton()}
-        />
       </View>
     );
   }
 }
-
-
-export default EditScreen;
