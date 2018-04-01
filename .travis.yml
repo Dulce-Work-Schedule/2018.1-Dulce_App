@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - "6.9"
   - "7.1"
+  - "8"
 sudo: false
 env:
   - NODE_ENV='test'
@@ -9,7 +9,6 @@ script:
   - cp env.example.js env.js
   - npm run lint
   - npm test
-  - npm run bundle:ios
 matrix:
   include:
     - language: android
@@ -28,16 +27,16 @@ matrix:
         - yarn
       android:
         components:
-          - tools
-          - platform-tools
-          - build-tools-23.0.1
+          - addon-google_apis-google-16
           - android-23
-          - build-tools-26.0.1
           - android-26
+          - build-tools-23.0.1
+          - build-tools-26.0.1
           - extra-android-m2repository
           - extra-google-google_play_services
           - extra-google-m2repository
-          - addon-google_apis-google-16
+          - platform-tools
+          - tools
       script:
         - cd android && ./gradlew assembleDebug && ./gradlew assembleRelease
     - language: objective-c
