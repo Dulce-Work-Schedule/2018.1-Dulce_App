@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Alert, Text } from 'react-native';
+import {TouchableHighlight, Alert, Text} from 'react-native';
 
 const styles = {
   container: {
@@ -12,7 +12,7 @@ const styles = {
     color: 'white',
     fontSize: 18
   }
-}
+};
 
 class AGRButton extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class AGRButton extends React.Component {
       >
         <Text style={styles.text}>{this.props.text}</Text>
       </TouchableHighlight>
-    )
+    );
   }
 }
 

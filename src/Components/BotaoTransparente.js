@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Alert, Text } from 'react-native';
+import {TouchableHighlight, Text} from 'react-native';
 
 const styles = {
   container: {
@@ -12,7 +12,7 @@ const styles = {
     color: 'grey',
     fontSize: 18
   }
-}
+};
 
 class BotaoTransparente extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class BotaoTransparente extends React.Component {
       >
         <Text style={styles.text}>{this.props.text}</Text>
       </TouchableHighlight>
-    )
+    );
   }
 }
 

@@ -4,7 +4,7 @@ import NewManager from '../Screens/NewManager';
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
-import { StackNavigator } from 'react-navigation';
+import {StackNavigator} from 'react-navigation';
 const routes = {
 
     login: {
@@ -34,6 +34,25 @@ const routes = {
             title: 'Editar'
         }
     }
+  },
+  users: {
+    screen: UsersScreen,
+    navigationOptions: {
+      title: 'Usuários'
+    }
+  },
+  newManager: {
+    screen: NewManager,
+    navigationOptions: {
+      title: 'Crie sua conta'
+    }
+  },
+  edit: {
+    screen: EditScreen,
+    navigationOptions: {
+      title: 'Editar'
+    }
+  }
 };
 
 const config = {};
