@@ -83,55 +83,21 @@ export default class NewManager extends ValidationComponent {
       <View style={styles.container}>
         <Image source={logo} style={styles.logo} />
         <ScrollView>
-          <TextInput
-            ref='nome' style={styles.input} placeholder='Nome Completo'
-            onChangeText={(text) => this.setState({nome: text})}
-          />
-          {this.isFieldInError('nome') && this.getErrorsInField('nome').map(
-            errorMessage => <Text style={styles.error}>{errorMessage}</Text>
+          <TextInput ref='nome' style={styles.input} placeholder='Nome Completo' onChangeText={(text) => this.setState({nome: text})}/>
+          {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+          <TextInput ref='matricula' style={styles.input} placeholder='Matrícula'onChangeText={(text) => this.setState({matricula: text})}/>
+          {this.isFieldInError('matricula') && this.getErrorsInField('matricula').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+          <TextInput ref='hospital' style={styles.input} placeholder='Hospital' onChangeText={(text) => this.setState({hospital: text})}/>
+          {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+          <TextInput ref='setor' style={styles.input} placeholder='Setor' onChangeText={(text) => this.setState({setor: text})}/>
+          {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+          <TextInput ref='senha' style={styles.input} placeholder='Senha' secureTextEntry onChangeText={(text) => this.setState({senha: text})}/>
+          {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+          <TextInput ref='confirmaSenha' style={styles.input} placeholder='Confirme sua senha' secureTextEntry onChangeText={(text) => this.setState({confirmaSenha: text})}/>
+          {this.state.confirmaSenha !== this.state.senha ? (
+            <Text style={styles.error}>Password and password confirmation must match</Text>
+            ) : (this.isFieldInError('confirmaSenha') && this.getErrorsInField('confirmaSenha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)
           )}
-          <TextInput
-            ref='matricula' style={styles.input} placeholder='Matrícula'
-            onChangeText={(text) => this.setState({matricula: text})}
-          />
-          {this.isFieldInError('matricula') && this.getErrorsInField('matricula').map(
-            errorMessage => <Text style={styles.error}>{errorMessage}</Text>
-          )}
-          <TextInput
-            ref='hospital' style={styles.input} placeholder='Hospital'
-            onChangeText={(text) => this.setState({hospital: text})}
-          />
-          {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(
-            errorMessage => <Text style={styles.error}>{errorMessage}</Text>
-          )}
-          <TextInput
-            ref='setor' style={styles.input} placeholder='Setor'
-            onChangeText={(text) => this.setState({setor: text})}
-          />
-          {this.isFieldInError('setor') && this.getErrorsInField('setor').map(
-            errorMessage => <Text style={styles.error}>{errorMessage}</Text>
-          )}
-          <TextInput
-            ref='senha' style={styles.input} placeholder='Senha'  secureTextEntry
-            onChangeText={(text) => this.setState({senha: text})}
-          />
-          {this.isFieldInError('senha') && this.getErrorsInField('senha').map(
-            errorMessage => <Text style={styles.error}>{errorMessage}</Text>
-          )}
-          <TextInput ref='confirmaSenha'
-            style={styles.input}
-            placeholder='Confirme sua senha'
-            secureTextEntry
-            onChangeText={(text) => this.setState({confirmaSenha: text})}
-          />
-          {
-            this.state.confirmaSenha !== this.state.senha?(
-              <Text style={styles.error}>Password and password confirmation must match</Text>
-            ):(
-              this.isFieldInError('confirmaSenha') && this.getErrorsInField('confirmaSenha').map(
-                errorMessage => <Text style={styles.error}>{errorMessage}</Text>
-              )
-            )}
           <AGRButton style={styles.button} text='Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
       </View>

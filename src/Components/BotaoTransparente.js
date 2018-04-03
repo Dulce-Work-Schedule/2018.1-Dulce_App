@@ -15,6 +15,9 @@ const styles = {
 };
 
 class BotaoTransparente extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <TouchableHighlight
