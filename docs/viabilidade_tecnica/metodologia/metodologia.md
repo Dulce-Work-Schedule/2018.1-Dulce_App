@@ -72,7 +72,7 @@ Duração máxima: 2:00
 2 - O time decide o que vai ser implementado do Backlog do Produto. (Somente o Time pode avaliar o que ele é capaz de realizar na próxima Sprint);  
 3 - O Product Owner deve explicá-la e tirar as dúvidas da equipe sobre os itens selecionados do Backlog do produto, para que todos possam ter uma melhor base para a pontuação;  
 4 - O time etima o esforço para concluir cada atividade utilizando o planning pocker;  
-5 - Apresentar o pareamento da semana;
+5 - Apresentar o pareamento da semana;  
 6 - Determinar como será realizado a atividade;  
 
 **Entradas**
@@ -110,9 +110,9 @@ Duração: 45 min
 
 1 - Revisar, dentro do modelo de trabalho e das práticas do processo do Scrum, o processo de desenvolvimento, de forma a torná-lo mais eficaz e gratificante para a próxima
 Sprint;  
-2 - Inspecionar como correu a última Sprint em se tratando de pessoas, das relações entre elas, dos processos e das ferramentas.  
+2 - Inspecionar como correu a última Sprint em se tratando de pessoas, das relações entre elas, dos processos e das ferramentas;  
 3 - Priorizar os principais itens que correram bem e aqueles que, se feitos de modo diferente, poderiam ter deixado as coisas ainda melhores;  
-4 - Auto avaliação dos membros;  
+4 - Auto avaliação dos membros.
 
 ### Indicadores
 **Gráfico de Burndown**  
@@ -147,16 +147,13 @@ Uma feature é considerada finalizada quando todas as histórias derivadas estã
 
 **Sprint**  
 
-Uma sprint conclui após 7 dias de trabalho. Caso as histórias não forem finalizadas e mescladas na branch master, houveram falhas e o que não foi feito deve ser alocado para a próxima Sprint como dívida técnica. Os riscos identificados devido as dificuldades enfrentadas são mapeados. 
+Uma sprint conclui após 7 dias de trabalho. Caso as histórias não forem finalizadas e mescladas na branch master, houveram falhas e o que não foi feito deve ser alocado para a próxima Sprint como dívida técnica. Os riscos identificados devido as dificuldades enfrentadas são mapeados.
 
 **Artefato**
 
 Um artefato é considerado pronto quando for finalizado e feito o pull request com as validações presentes no guia de contribuição.
 
-### Ferramentas
 
-<img src="/docs/img/logos/codeclimate.png" width="100" height="100"> <img src="/docs/img/logos/telegram.png" width="100" height="100"><img src="/docs/img/logos/travis.gif" width="110" height="100"> <img src="/docs/img/logos/slack.gif" width="115" height="100"><img src="/docs/img/logos/GitHub.gif" width="110" height="100"> <img src="/docs/img/logos/drive.gif" width="110" height="100">
-<img src="/docs/img/logos/atom.png" width="100" height="100"> <img src="/docs/img/logos/docker.gif" width="100" height="100"> <img src="/docs/img/logos/protoio.png" width="100" height="100"><img src="/docs/img/logos/node.png" width="100" height="100"><img src="/docs/img/logos/mongodb.png" width="100" height="100"><img src="/docs/img/logos/js.png" width="100" height="100"><img src="/docs/img/logos/graphql.png" width="100" height="100"><img src="/docs/img/logos/jest.png" width="100" height="100"><img src="/docs/img/logos/android.gif" width="100" height="100">
 
 
 ### Comunicação

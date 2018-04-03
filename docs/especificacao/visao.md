@@ -106,7 +106,7 @@
 
 <div align="center">
 
-<img src="img/fishbone.png">
+<img src="/docs/img/fishbone.png">
 
 </div>
 
@@ -192,7 +192,7 @@
   *  É um aplicativo que facilita a administração hospitalar e de unidades de saúde, controlando a escala de funcionários e agilizando a comunicação com o corpo clínico.
   <br>
   <br>
-  <img src='img/mobi_saude.png'>
+  <img src="/docs/img/mobi_saude.png">
 
 * ERP Radar Empresarial
 
