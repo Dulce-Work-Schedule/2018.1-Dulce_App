@@ -17,7 +17,7 @@ IOS APP [link apple store]
 
 ### Contribuir
 Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribuição](CONTRIBUTING.md) onde são explicados todos os passos para contribuir. Ahh, não esquece de ler nosso [código de conduta](CODE_OF_CONDUCT.md).   
-Caso reste duvidas você também pode entrar em contato conosco pelo email dulce.application@gmail.com.
+Caso reste duvidas você também pode entrar em contato conosco criando uma issue ou pelo email dulce.application@gmail.com.
 
 #### Instalação
 
