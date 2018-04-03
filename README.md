@@ -16,7 +16,8 @@ Android APP [link play store]
 IOS APP [link apple store]
 
 ### Contribuir
-Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribuição](CONTRIBUTING.md) onde são explicados todos os passos para contribuir. Ahh, não esquece de ler nosso [código de conduta](CODE_OF_CONDUCT.md).
+Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribuição](CONTRIBUTING.md) onde são explicados todos os passos para contribuir. Ahh, não esquece de ler nosso [código de conduta](CODE_OF_CONDUCT.md).   
+Caso reste duvidas você também pode entrar em contato conosco pelo email dulce.application@gmail.com.
 
 #### Instalação
 
@@ -24,24 +25,7 @@ Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribui
 
 ### Tecnologias
 
-<img src="/docs/img/logos/codeclimate.png" width="100" height="100" title="CodeClimate">
-<img src="/docs/img/logos/telegram.png" width="100" height="100" title="Telegram">
-<img src="/docs/img/logos/travis.gif" width="110" height="100" title="Travis">
-<img src="/docs/img/logos/slack.gif" width="115" height="100" title="Slack">
-<img src="/docs/img/logos/GitHub.gif" width="110" height="100" title="GitHub">
-<img src="/docs/img/logos/drive.gif" width="110" height="100" title="Drive">
-<img src="/docs/img/logos/atom.png" width="100" height="100" title="Atom">
-<img src="/docs/img/logos/docker.gif" width="100" height="100" title="Docker">
-<img src="/docs/img/logos/protoio.png" width="100" height="100" title="Proto.io">
-<img src="/docs/img/logos/node.png" width="100" height="100" title="Node.js">
-<img src="/docs/img/logos/mongodb.png" width="100" height="100" title="MongoDB">
-<img src="/docs/img/logos/js.png" width="100" height="100" title="JS">
-<img src="/docs/img/logos/graphql.png" width="100" height="100" title="GraphQL">
-<img src="/docs/img/logos/jest.png" width="100" height="100" title="Jtest">
-<img src="/docs/img/logos/android.gif" width="130" height="100" title="Android">
-<img src="/docs/img/logos/react-native.png" width="100" height="100" title="React Native">
-<img src="/docs/img/logos/facebook.gif" width="100" height="100" title="Facebook">
-<img src="/docs/img/logos/whatsapp.png" width="100" height="100" title="Whatsapp">
+<img src="/docs/img/logos/codeclimate.png" width="100" height="100" title="CodeClimate"> <img src="/docs/img/logos/telegram.png" width="100" height="100" title="Telegram"> <img src="/docs/img/logos/travis.gif" width="110" height="100" title="Travis"> <img src="/docs/img/logos/slack.gif" width="115" height="100" title="Slack"> <img src="/docs/img/logos/GitHub.gif" width="110" height="100" title="GitHub"> <img src="/docs/img/logos/drive.gif" width="110" height="100" title="Drive"> <img src="/docs/img/logos/atom.png" width="100" height="100" title="Atom"> <img src="/docs/img/logos/docker.gif" width="100" height="100" title="Docker"> <img src="/docs/img/logos/protoio.png" width="100" height="100" title="Proto.io"> <img src="/docs/img/logos/node.png" width="130" height="100" title="Node.js"> <img src="/docs/img/logos/mongodb.png" width="100" height="100" title="MongoDB"> <img src="/docs/img/logos/js.png" width="100" height="100" title="JS"> <img src="/docs/img/logos/graphql.png" width="100" height="100" title="GraphQL"> <img src="/docs/img/logos/jest.png" width="100" height="100" title="Jtest"> <img src="/docs/img/logos/android.gif" width="130" height="100" title="Android"> <img src="/docs/img/logos/react-native.png" width="100" height="100" title="React Native"> <img src="/docs/img/logos/facebook.gif" width="100" height="100" title="Facebook"> <img src="/docs/img/logos/whatsapp.png" width="100" height="100" title="Whatsapp"> <img src="/docs/img/logos/zenhub.png" width="100" height="100" title="Whatsapp">
 
 
 ### Colaboradores
