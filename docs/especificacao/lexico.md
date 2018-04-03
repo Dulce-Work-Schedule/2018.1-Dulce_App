@@ -1,6 +1,6 @@
 # Léxico
 
-## Algumas definições são utilizadas neste projeto, como: <br><br>
+#### Definições utilizadas neste projeto: <br><br>
 
 * AGR - Acordo Geral de Gerenciamento de Resultados;
 

@@ -50,13 +50,6 @@ rejeitar comentários e contribuições que não estão alinhados com este Códi
 ## Cumprimento
 
 <p align="justify">&emsp;&emsp;Instâncias de comportamento abusivo, assediador ou de outra forma inaceitável podem ser
-relatadas à equipe do projeto pelo e-mail [isaquealvesdl@gmail.com]. A equipe é obrigada a manter a confidencialidade diante a denúncia de um incidente. Todas as queixas serão revistas e investigadas, resultando em uma resposta considerada apropriada às circunstâncias.</p>
+relatadas à equipe do projeto pelo e-mail dulce.application@gmail.com. A equipe é obrigada a manter a confidencialidade diante a denúncia de um incidente. Todas as queixas serão revistas e investigadas, resultando em uma resposta considerada apropriada às circunstâncias.</p>
 
 <p align="justify">&emsp;&emsp;Os mantenedores do projeto que não acompanham ou aplicam o Código de Conduta em boas condições também podem enfrentar consequências temporárias ou permanentes conforme determinado por outros membros da liderança do projeto.</p>
-
-
-
-
-
-
-
