@@ -12,10 +12,10 @@
   "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
+    "test": "jest --updateSnapshot",
     "test:watch": "jest --updateSnapshot --watch",
     "lint": "eslint src __tests__",
-    "coverage": "rimraf coverage && jest --coverage"
+    "coverage": "rimraf coverage && jest --updateSnapshot --coverage"
   },
   "bugs": "https://github.com/fga-gpp-mds/agr-react-native/issues",
   "dependencies": {

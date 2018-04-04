@@ -43,7 +43,6 @@ buck-out/
 
 # 
 coverage/
-__tests__/__snapshots__/
 
 # fastlane
 #
