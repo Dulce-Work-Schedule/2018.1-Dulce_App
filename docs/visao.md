@@ -44,13 +44,13 @@
 
 <div name = "1.1" id = "1.1"></div>
 
-<h5> 1.1) Propósito:</h5>
+<h5> 1.1 Propósito:</h5>
 
 <p align = "justify">Este artefato apresenta as justificativas para o desenvolvimento da aplicação mobile  Dulce (<strong>D</strong>ispositivo <strong>U</strong>nificado de Co<strong>l</strong>aboração para <strong>C</strong>onstrução de <strong>E</strong>scala) auxiliando na compreensão do contexto em que a aplicação está inserida, assim como os objetivos e metas que a equipe das disciplinas de Métodos de Desenvolvimento de Software e Engenharia do Produto de Software procuram alcançar com o desenvolvimento deste sistema. Além destas descrições do sistema, serão apresentados esquemas e diagramas que garantem a visibilidade do funcionamento e de certas características do sistema para a equipe, permitindo que os mesmos possam trabalhar de uma maneira produtiva e sincronizada. </p>      
 
 <div name = "1.2" id = "1.2"></div>
 
-<h5> 1.2) Escopo:</h5>
+<h5> 1.2 Escopo:</h5>
 
 
   <p align = "justify">O Documento de Visão tem o objetivo de informar aos envolvidos a problematização a ser resolvida e as funcionalidades do produto que serão atendidas pelo projeto Dulce. Tendo em vista que este documento será atualizado durante a produção do aplicativo.</p>
@@ -58,7 +58,7 @@
   <div name = "1.3" id = "1.3"></div>  
 
 
-<h5> 1.3) Visão Geral do Documento:</h5>
+<h5> 1.3 Visão Geral do Documento:</h5>
 
 
   <p align = "justify">O conteúdo deste documento, está organizado de forma a fornecer uma visão dos envolvidos no projeto, das necessidades apontadas, dos benefícios esperados, e das funcionalidades e suas características para atender a estes benefícios. Também são apresentados aqui requisitos importantes para o produto, não sendo, porém, realizado o detalhamento de cada funcionalidade de sistema, visto que esta atividade será realizada na especificação dos casos de uso. </p>
@@ -70,7 +70,7 @@
 
 <div name = "2.1" id = "2.1"></div>
 
-<h5> 2.1) Oportunidade de negócio:</h5>
+<h5> 2.1 Oportunidade de negócio:</h5>
 
 
   <p align = "justify"> Com a implantação do Dulce, as áreas de gestão de pessoal, na Secretaria de Saúde do DF, tenderão a se tornar mais eficientes. Dulce será um aplicativo voltado para gestão e gerenciamento de escalas. com a implementação de Dulce a saúde pública tende a ter uma grande melhoria em sua gestão , principalmente na relação entre o gestor e os servidores de um determinado setor, ganhando agilidade para criar e remanejar escalas.  
@@ -78,7 +78,7 @@
 
 <div name = "2.2" id = "2.2"></div>
 
-<h5> 2.2) Instrução do Problema:</h5>
+<h5> 2.2 Instrução do Problema:</h5>
 
   <p align = "justify">A Secretaria de Saúde do DF enfrenta dificuldades no gerenciamento do pessoal dos hospitais públicos.
   </p>
@@ -137,7 +137,7 @@
 
 <div name = "2.3" id = "2.3"></div>
 
-<h5> 2.3) Instrução de Posição do Produto:</h5>
+<h5> 2.3 Instrução de Posição do Produto:</h5>
 
 
   <p align = "justify"> Dulce é um aplicativo que oferecerá suporte aos gestores da SES-DF, para estes terem maior controle sobre as escalas e o remanejamento de pessoal. Além disso, o servidor poderá consultar sua escala, pedir alteração ou remanejamento, e se for preciso, enviar para o gestor do seu devido setor um atestado nos casos de problemas de saúde, tudo isso por meio do dispositivo móvel.</p>
@@ -148,20 +148,20 @@
 
 <div name = "3.1" id = "3.1"></div>
 
-<h5> 3.1) Escopo do produto:</h5>
+<h5> 3.1 Escopo do produto:</h5>
 
 
   <p align = "justify">A Secretaria de Saúde do DF apresenta deficiências no gerenciamento de escalas, o que pode afetar a qualidade do sistema. O Dulce será utilizado em conjunto com o TrakCare e o sistema de ponto, com o objetivo de fornecer informações relevantes aos gestores para auxiliá-los nas decisões de remanejamento e no contato entre gestores e servidores de cada setor.</p>
 
 <div name = "3.2" id = "3.2"></div>
 
-<h5>3.2) Propósito do produto:</h5>
+<h5>3.2 Propósito do produto:</h5>
 
   <p align = "justify">Dulce tem o propósito de auxiliar a gestão no sistema de saúde do DF, promovendo uma interface entre gestor e servidores de um determinado setor, auxiliando os gestores a criar escalas dos servidores do seu setor, facilitando também o remanejamento de escalas, e aos servidores, seu controle de ponto.</p>
 
 <div name = "3.3" id = "3.3"></div>
 
-<h5>3.3) Recursos do produto:</h5>
+<h5>3.3 Recursos do produto:</h5>
 
 <p align = "justify">O principal recurso ou funcionalidade, do produto após a obtenção das informações, é analisar os dados obtidos e promover uma alternativa de melhora para os gestores.</p>
 
@@ -171,7 +171,7 @@
 
 <div name = "4.1" id = "4.1"></div>
 
-<h5> 4.1) Perfis das Partes Interessadas:</h5>
+<h5> 4.1 Perfis das Partes Interessadas:</h5>
 <ul>
  <li>Cliente</li>
  <ul>
