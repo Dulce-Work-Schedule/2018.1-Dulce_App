@@ -12,8 +12,8 @@
   "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --updateSnapshot",
+    "test:watch": "jest --updateSnapshot --watch",
     "lint": "eslint src __tests__",
     "coverage": "rimraf coverage && jest --coverage"
   },
@@ -37,7 +37,7 @@
     "babel-eslint": "^7.1.0",
     "babel-jest": "22.4.3",
     "babel-polyfill": "^6.9.0",
-    "babel-preset-react-native": "4.0.0",
+    "babel-preset-react-native": "^4.0.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
     "enzyme": "^3.0.0",
@@ -57,6 +57,12 @@
     "rimraf": "^2.5.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "!node_modules/react-runtime"
+    ]
   }
 }
