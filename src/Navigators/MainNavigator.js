@@ -6,35 +6,37 @@ import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 import EmployeeProfileScreen from '../Screens/EmployeeProfileScreen';
 import {StackNavigator} from 'react-navigation';
 import InitialScreen from '../Screens/InitialScreen';
+import ListScreen from '../Screens/ListScreen';
+import ProfileScreen from '../Screens/ProfileScreen';
 
 const routes = {
-
-  ProfileManager: {
-    screen: ProfileManagerScreen,
-  },
-  EmployeeProfile: {
-    screen: EmployeeProfileScreen,
-
-  },
+    list: {
+      screen: ListScreen,
+      navigationOptions: {
+        title: 'Lista'
+      }
+    },
+    profile: {
+      screen: ProfileScreen,
+      navigationOptions:{
+        title: 'Profile'
+      }
+    },
     login: {
         screen: LoginScreen,
         navigationOptions: {
             header: null
         }
     },
-
     ProfileManager: {
       screen: ProfileManagerScreen,
     },
-
     initial : {
       screen: InitialScreen,
       navigationOptions: {
           header: null
       }
     },
-
-
     EmployeeProfile: {
         screen: EmployeeProfileScreen,
 
