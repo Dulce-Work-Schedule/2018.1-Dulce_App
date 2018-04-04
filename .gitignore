@@ -41,6 +41,10 @@ buck-out/
 \.buckd/
 *.keystore
 
+# 
+coverage/
+__tests__/__snapshots__/
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
