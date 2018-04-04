@@ -39,9 +39,9 @@
 
 ### 1.3 Referências
 
-* <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md"> Documento de Visão;</a>
+* <a href= "https://github.com/fga-gpp-mds/2018.1-Dulce_App/blob/master/docs/especificacao/visao.md"> Documento de Visão;</a>
 
-* <p> <a href= "https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/lexico.md"> Glossário. </a>   
+* <p> <a href= "https://github.com/fga-gpp-mds/2018.1-Dulce_App/blob/master/docs/especificacao/lexico.md"> Glossário. </a>   
   </p>
 
 
