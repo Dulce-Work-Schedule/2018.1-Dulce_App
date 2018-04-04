@@ -27,8 +27,13 @@ const routes = {
       navigationOptions: {
         title: 'Perfil'
       }
-
-    },
+  },
+  list: {
+    screen: ListScreen,
+    navigationOptions: {
+      title: 'Lista'
+    }
+  },
     login: {
         screen: LoginScreen,
         navigationOptions: {
@@ -58,7 +63,7 @@ const routes = {
             title: 'Crie sua conta'
         }
     },
-    edit: {
+      edit: {
         screen: EditScreen,
         navigationOptions: {
             title: 'Editar'
