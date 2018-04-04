@@ -12,7 +12,7 @@
   "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest --updateSnapshot",
+    "test": "jest",
     "test:watch": "jest --updateSnapshot --watch",
     "lint": "eslint src __tests__",
     "coverage": "rimraf coverage && jest --coverage"
