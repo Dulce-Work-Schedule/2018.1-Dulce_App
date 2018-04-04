@@ -51,11 +51,11 @@
 
 <div style ="text-align: justify">
   <p>
-    <img src ="img/arquiteturaMicroservice.png">
+    <img src ="docs/img/arquiteturaMicroservice.png">
   </p>
   <p>
     <br>
-    <img src ="img/reactdiagrama.png">
+    <img src ="/docs/img/reactdiagrama.png">
   </p>
 </div>
 
@@ -83,7 +83,7 @@
 * #### Diagrama de Classes
 <div style ="text-align: justify">
   <p>
-    <img src="img/diagramaUML1.png">
+    <img src="/docs/img/diagramaUML1.png">
   </p>
 </div>
 
