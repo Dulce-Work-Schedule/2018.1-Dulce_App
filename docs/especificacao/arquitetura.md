@@ -51,7 +51,7 @@
 
 <div style ="text-align: justify">
   <p>
-    <img src ="docs/img/arquiteturaMicroservice.png">
+    <img src ="/docs/img/arquiteturaMicroservice.png">
   </p>
   <p>
     <br>
