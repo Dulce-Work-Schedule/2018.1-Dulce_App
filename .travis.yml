@@ -7,12 +7,11 @@ cache:
     - "node_modules"
 script:
   - npm install -g
-  - npm install -g codeclimate-test-reporter
+  - npm install -g coveralls
   # - npm run lint # Será implementado a partir da sprint 3
   - npm run test
   - npm run coverage
-  - echo "repo_token: ${COVERALLS_REPO_TOKEN}" > .coveralls.yml
-  - cat ./coverage/lcov.info |coveralls
+  - echo 'repo_token: ${COVERALLS_REPO_TOKEN}' > .coveralls.yml && cat ./coverage/lcov.info | coveralls
 
 matrix:
   include:
