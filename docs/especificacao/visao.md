@@ -182,7 +182,7 @@
    <br>
    <h6>Equipe:</h6>
    <dd>A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software e Métodos de Desenvolvimento de Software.</dd>
-   <a href="https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/equipe.md">Documento de Equipe</a>
+   <dd><a href="https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/equipe.md">Documento de Equipe</a><dd>
 
 </dl>
 
