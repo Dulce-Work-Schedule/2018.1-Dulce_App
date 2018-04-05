@@ -5,7 +5,7 @@ const styles = {
   text: {
     fontSize: 25,
     alignSelf: 'center',
-    color: '#666666',
+    color: 'black',
     margin: 15
   }
 }
