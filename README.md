@@ -1,5 +1,5 @@
 # Dulce React Native
-[![Build Status](https://travis-ci.org/fga-gpp-mds/2018.1-Dulce_App.svg?branch=master)](https://travis-ci.org/fga-gpp-mds/2018.1-Dulce_App) [![Maintainability](https://api.codeclimate.com/v1/badges/2446e950fda3550f98ca/maintainability)](https://codeclimate.com/github/fga-gpp-mds/2018.1-Dulce_App/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/2446e950fda3550f98ca/test_coverage)](https://codeclimate.com/github/fga-gpp-mds/2018.1-Dulce_App/test_coverage) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/fga-gpp-mds/2018.1-Dulce_App.svg?branch=master)](https://travis-ci.org/fga-gpp-mds/2018.1-Dulce_App) [![Maintainability](https://api.codeclimate.com/v1/badges/2446e950fda3550f98ca/maintainability)](https://codeclimate.com/github/fga-gpp-mds/2018.1-Dulce_App/maintainability) [![Coverage Status](https://coveralls.io/repos/github/fga-gpp-mds/2018.1-Dulce_API/badge.svg?branch=81_teste_coverage)](https://coveralls.io/github/fga-gpp-mds/2018.1-Dulce_API) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Dulce
 
