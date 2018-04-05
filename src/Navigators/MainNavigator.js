@@ -35,9 +35,6 @@ const routes = {
             header: null
         }
     },
-    ProfileManager: {
-      screen: ProfileManagerScreen,
-    },
     initial : {
       screen: InitialScreen,
       navigationOptions: {

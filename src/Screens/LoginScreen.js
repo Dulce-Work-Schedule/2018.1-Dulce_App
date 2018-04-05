@@ -108,7 +108,7 @@ class LoginScreen extends React.Component {
 
         <AGRButton
           onPress={this._onPressButton.bind(this)}
-          text='Entrar'
+          text="Entrar"
         />
       </View>
     );
