@@ -174,18 +174,18 @@
 <h5> 4.1 Perfis das Partes Interessadas:</h5>
 
 <dl>
-   <dt>Cliente:</dt>
-   <dd>O cliente é o idealizador do projeto.</dd>
-
-   <dt>Usuários:</dt>
-   <dd>Funcionários da Secretaria de Saúde do DF.</dd>
-   
-   <dt>Equipe:</dt>
+   <h6>Cliente:</h6>
+   O cliente é o idealizador do projeto.
+   <br>
+   <h6>Usuários:</h6>
+   Funcionários da Secretaria de Saúde do DF.
+   <br>
+   <h6>Equipe:</h6>
    <dd>A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software e Métodos de Desenvolvimento de Software.</dd>
+   <a href="https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/equipe.md">Documento de Equipe</a>
 
 </dl>
 
-<a href="https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/equipe.md">Documento de Equipe</a>
 
 
 <div name = "4.2" id = "4.2"></div>
