@@ -9,7 +9,8 @@ const styles = {
     padding: 15,
   },
   text: {
-    fontSize: 48
+    fontSize: 48,
+    color: 'black'
   }
 };
 
@@ -44,11 +45,11 @@ class ListScreen extends React.Component {
             renderItem={(data) =>{return <UserItem text={data.item.name}
             onPress={()=> this.props.navigation.navigate('profile', {userId: data.item.id})}
               />
-          //UserItem
+
               }}
             />
-          ) //linha40
-        } //linha37
+          )
+        }
       </ScrollView>
     ); //esse eh do return;
   } //esse fecha do render

@@ -44,7 +44,6 @@ class ProfileScreen extends React.Component {
 
     }
 
-
   }
 
 
