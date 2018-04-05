@@ -22,6 +22,13 @@ const routes = {
       title: ' '
     }
   },
+    ProfileManager: {
+      screen: ProfileManagerScreen,
+      navigationOptions: {
+        title: 'Perfil'
+      }
+
+    },
     login: {
         screen: LoginScreen,
         navigationOptions: {
