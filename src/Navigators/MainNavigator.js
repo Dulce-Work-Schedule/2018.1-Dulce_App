@@ -5,19 +5,15 @@ import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
 const routes = {
-    ProfileManager: {
-      screen: ProfileManagerScreen,
-      navigationOptions: {
-        title: 'Perfil'
-      }
-
-    },
 
     login: {
         screen: LoginScreen,
         navigationOptions: {
             header: null
         }
+    },
+    ProfileManager: {
+      screen: ProfileManagerScreen,
     },
     users: {
         screen: UsersScreen,
