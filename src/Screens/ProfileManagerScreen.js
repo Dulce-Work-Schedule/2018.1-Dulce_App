@@ -56,12 +56,12 @@ class ProfileManagerScreen extends React.Component {
          <View style={{marginTop: 30}} />
           <AGRButton
            text='Editar'
-           onPress = {() => null}
+           onPress = {() => this.props.navigation.navigate('edit')}
            />
 
            <SmallButton
            text='Alterar senha'
-           onPress = {() => null}
+           onPress = {() => this.props.navigation.navigate('edit')}
             />
 
           </View>
