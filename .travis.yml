@@ -7,8 +7,11 @@ cache:
     - "node_modules"
 script:
   - npm install -g
+  - npm install -g codeclimate-test-reporter
   # - npm run lint # Será implementado a partir da sprint 3
   - npm run test
+  - npm run coverage
+  - codeclimate-test-reporter < coverage/lcov.info
 matrix:
   include:
     - language: android
