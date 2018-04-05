@@ -11,8 +11,9 @@ script:
   # - npm run lint # Será implementado a partir da sprint 3
   - npm run test
   - npm run coverage
-  - $(echo "repo_token: $COVERALLS_REPO_TOKEN" > .coveralls.yml)
-  - cat ./coverage/lcov.info | coveralls
+after_success:
+  - echo "repo_token: ${COVERALLS_REPO_TOKEN}" > .coveralls.yml
+  - cat ./coverage/lcov.info |coveralls
 
 matrix:
   include:
