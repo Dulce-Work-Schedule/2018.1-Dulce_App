@@ -21,7 +21,7 @@
 ### 1.1 Finalidade
 <div style ="text-align: justify">
   <p>
-      O documento de arquitetura tem a função de especificar decisões arquiteturais relevantes na produção e implementação do projeto Dulce, em que a tecnologia utilizada foi React Native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
+      O documento de arquitetura tem a função de especificar decisões arquiteturais relevantes na produção e implementação do projeto Dulce, empregando a tecnologia React Native, descrevendo seus aspectos e funcionalidades do sistema de forma clara e objetiva.
   </p>
 </div>
 
@@ -39,9 +39,9 @@
 
 ### 1.3 Referências
 
-* <a href= "https:///github.com/fga-gpp-mds/AGR-APP-react-native/blob/master/docs/visao.md"> Documento de Visão;</a>
+* <a href= "https://github.com/fga-gpp-mds/2018.1-Dulce_App/blob/master/docs/especificacao/visao.md"> Documento de Visão;</a>
 
-* <p> <a href= "https://github.com/fga-gpp-mds/agr-react-native/blob/master/docs/lexico.md"> Glossário. </a>   
+* <p> <a href= "https://github.com/fga-gpp-mds/2018.1-Dulce_App/blob/master/docs/especificacao/lexico.md"> Glossário. </a>   
   </p>
 
 
@@ -71,7 +71,7 @@
 
 * <a href ="https://facebook.github.io/react-native/"> React-native</a>: Utilizado para a construção do aplicativo em IOS e Android;
 
-* <a href ="https://www.djangoproject.com/">Django</a>: Plataforma de desenvolvimento da API;
+* <a href ="https://nodejs.org/en/">Node.js</a>: Plataforma de desenvolvimento da API;
 
 * Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;
 
@@ -100,9 +100,10 @@
     React-native, https://facebook.github.io/react-native/ Acesso em: 23/03/2018, 11:20, Horário de Brasília.
   </p>
   <p>
-    Django, https://www.djangoproject.com/ Acesso em: 26/03/2018, 20:33, Horário de Brasília.
+    Node.js, https://nodejs.org/en/ Acesso em: 03/04/2018, 12:33, Horário de Brasília.
   </p>
   <p>
     React Native Architecture: Explained! https://www.logicroom.co/react-native-architecture-explained/ Acesso em: 22/03/2018, 12:05, Horário de Brasília.
   </p>
 </div>
+
