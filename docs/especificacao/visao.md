@@ -176,10 +176,10 @@
 <dl>
    <dt>Cliente:</dt>
    <dd>O cliente é o idealizador do projeto.</dd>
-   <br>
+
    <dt>Usuários:</dt>
    <dd>Funcionários da Secretaria de Saúde do DF.</dd>
-   <br>
+   
    <dt>Equipe:</dt>
    <dd>A equipe é composta por graduandos em Engenharia de Software pela Universidade de Brasília, Campus Gama, discentes das disciplinas de Engenharia de Produto de Software e Métodos de Desenvolvimento de Software.</dd>
 
