@@ -2,8 +2,17 @@ import { StackNavigator } from 'react-navigation';
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
 import EditScreen from '../Screens/EditScreen';
+import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
 const routes = {
+    ProfileManager: {
+      screen: ProfileManagerScreen,
+      navigationOptions: {
+        title: 'Perfil'
+      }
+
+    },
+
     login: {
         screen: LoginScreen,
         navigationOptions: {

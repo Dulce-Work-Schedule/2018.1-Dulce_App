@@ -47,12 +47,13 @@ class ProfileManagerScreen extends React.Component {
       {
         this.state.loading ? (<Text style={styles.text}>Carregando... </Text>) : (
           <View style={styles.informacoes}>
-          <Text style={styles.text}>Nome: {this.state.profile[0].name}</Text>
-          <Text style={styles.text}>Matriula: {this.state.profile[0].address.zipcode}</Text>
+          <Text style={styles.text}>{this.state.profile[0].name}</Text>
+          <Text style={styles.text}>Matriula:</Text>
+          <Text style={styles.text}>{this.state.profile[0].address.zipcode}</Text>
           <Text style={styles.text}>Setor: Pediatria</Text>
           <Text style={styles.text}>Hospital do Gama</Text>
           <Text style={styles.text}>Cargo: Gestor</Text>
-         <View style={{marginTop: 60}} />
+         <View style={{marginTop: 30}} />
           <AGRButton
            text='Editar'
            onPress = {() => null}
