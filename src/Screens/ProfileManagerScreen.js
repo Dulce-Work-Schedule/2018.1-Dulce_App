@@ -51,7 +51,7 @@ class ProfileManagerScreen extends React.Component {
     return(
       <View style={styles.container}>
       {
-        this.state.loading ? (<Text style={styles.text}>Carregando... </Text>) : (
+        this.state.loading ? (<Text style={styles.text}>Carregando... / >) : (
           <View style={styles.informacoes}>
           <Text style={styles.name}>{this.state.profile[0].name}</Text>
           <Text style={styles.text}>Matriula:</Text>
