@@ -43,7 +43,30 @@ class ProfileManagerScreen extends React.Component {
 
   render(){
     return(
+      <View style={styles.container}>
+      {
+        this.state.loading ? (<Text style={styles.text}>Carregando... </Text>) : (
+          <View style={styles.informacoes}>
+          <Text style={styles.text}>{this.state.profile[0].name}</Text>
+          <Text style={styles.text}>{this.state.profile[0].address.zipcode}</Text>
+          <Text style={styles.text}>Pediatria</Text>
+          <Text style={styles.text}>Hospital do Gama</Text>
+          <Text style={styles.text}>Cargo: Gestor</Text>
+         <View style={{marginTop: 60}} />
+          <AGRButton
+           text='Editar'
+           onPress = {() => null}
+           />
 
+           <SmallButton
+           text='Alterar senha'
+           onPress = {() => null}
+            />
+
+          </View>
+        )
+      }
+      </View>
     )
   }
 
