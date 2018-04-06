@@ -3,14 +3,14 @@ import {View, Text, Image, TouchableHighlight} from 'react-native';
 
 const styles = {
   container: {
-   marginTop: 150,
-   width: 50,
+   marginTop: 100,
+   width: 100,
    justifyContent: 'center',
    alignItems: 'center'
  },
     icon: {
-    height: 50,
-    width: 50
+    height: 100,
+    width: 100
     }
 }
 
