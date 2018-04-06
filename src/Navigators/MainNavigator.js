@@ -2,15 +2,16 @@ import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
 import NewManager from '../Screens/NewManager';
 import EditScreen from '../Screens/EditScreen';
-
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
-
-import InitialScreen from '../Screens/InitialScreen';
 import EmployeeProfileScreen from '../Screens/EmployeeProfileScreen';
-
 import {StackNavigator} from 'react-navigation';
+import InitialScreen from '../Screens/InitialScreen';
+
 const routes = {
 
+  ProfileManager: {
+    screen: ProfileManagerScreen,
+  },
     login: {
         screen: LoginScreen,
         navigationOptions: {
