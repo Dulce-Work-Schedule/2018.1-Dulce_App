@@ -1,7 +1,11 @@
 import { StackNavigator } from 'react-navigation';
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
+
 import EditScreen from '../Screens/EditScreen';
+
+import ProfileManager from '../Screens/ProfileManager';
+
 
 const routes = {
     login: {
@@ -16,11 +20,19 @@ const routes = {
             title: 'Usuários'
         }
     },
+
     edit: {
         screen: EditScreen,
         navigationOptions: {
             title: 'Editar'
         }
+
+    ProfileManager: {
+      screen: ProfileManager,
+      navigationOptions: {
+          title: 'Perfil'
+      }
+
     }
 };
 

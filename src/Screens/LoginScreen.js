@@ -51,7 +51,8 @@ class LoginScreen extends React.Component {
         />
         <AGRButton
           text="Entrar"
-          onPress={() => this.props.navigation.navigate('edit')}
+           onPress={() => this.props.navigation.navigate('ProfileManager')}
+
         />
       </View>
     );
