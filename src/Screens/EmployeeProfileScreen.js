@@ -31,19 +31,4 @@ class EmployeeProfileScreen extends React.native{
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default EmployeeProfileScreen;
