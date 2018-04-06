@@ -2,13 +2,18 @@ import { StackNavigator } from 'react-navigation';
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
 import EditScreen from '../Screens/EditScreen';
+import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
 const routes = {
+
     login: {
         screen: LoginScreen,
         navigationOptions: {
             header: null
         }
+    },
+    ProfileManager: {
+      screen: ProfileManagerScreen,
     },
     users: {
         screen: UsersScreen,
