@@ -1,13 +1,31 @@
 import React from 'react';
 import {View , Text} from 'react-native';
 
-class EmployeeProfileScreen extends React.native{
+const styles = {
+
+container: {
+flex: 1,
+flexDirection: 'column',
+padding: 50,
+backgroundColor:'#FFF'
+},
+text: {
+fontSize: 36,
+marginBottom: 15,
+alignSelf: 'center'
+},
+informacoes: {
+  alignSelf: 'center'
+}
+
+}
+
+class EmployeeProfileScreen extends React.Component{
 
   constructor(props){
     super(props);
     this.state = {
-
-      employees: [],
+      employee: [],
       loading: true
 
     }
@@ -16,19 +34,38 @@ class EmployeeProfileScreen extends React.native{
 
   componentDidMount(){
 
+    const url = 'https://jsonplaceholder.typicode.com/users';
     this.setState({loading: true});
-    const url = '';
     fetch(url)
     .then((response) => {return response.json();})
-    .then((json) => {this.setState({employees: json,loading: false});})
-
+    .then((json) => {this.setState({employee: json,loading: false});})
   }
 
   render(){
+    return(
+      <View style={styles.container}>
+      {
+        this.state.loading ? (<Text style={styles.text}>Carregando...</Text>) : (
+          <View style={styles.informacoes}>
+          <Text style={styles.text}>{this.state.employee[0].name}</Text>
+          <Text style={styles.text}>CRM/Matricula:</Text>
+          <Text style={styles.text}>{this.state.employee[0].address.zipcode}</Text>
+          <Text style={styles.text}>setor: Pediatria</Text>
+          <Text style={styles.text}>Cirurgião</Text>
+          <Text style={styles.text}>Hospital do Gama</Text>
+          </View>
 
-    return this.state.loading ? (<View />) : ( );
+
+        )
+
+      }
+      </View>
+    )
 
   }
+
+
+
 }
 
 export default EmployeeProfileScreen;
