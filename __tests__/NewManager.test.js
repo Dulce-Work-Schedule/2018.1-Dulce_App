@@ -1,9 +1,9 @@
 import React from 'react';
-import CriarGestor from '../src/Screens/CriarGestor';
+import NewManager from '../src/Screens/NewManager';
 
 import renderer from 'react-test-renderer';
 
 test('renders correctly', () => {
-  const tree = renderer.create(<CriarGestor />).toJSON();
+  const tree = renderer.create(<NewManager />).toJSON();
   expect(tree).toMatchSnapshot();
 });
