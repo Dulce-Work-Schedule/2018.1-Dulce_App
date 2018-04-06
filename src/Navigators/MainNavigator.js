@@ -12,6 +12,10 @@ const routes = {
   ProfileManager: {
     screen: ProfileManagerScreen,
   },
+  EmployeeProfile: {
+    screen: EmployeeProfileScreen,
+
+  },
     login: {
         screen: LoginScreen,
         navigationOptions: {
