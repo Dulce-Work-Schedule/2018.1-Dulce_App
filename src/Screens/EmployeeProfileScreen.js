@@ -11,9 +11,14 @@ padding: 50,
 backgroundColor:'#FFF'
 },
 text: {
-fontSize: 36,
+fontSize: 30,
 marginBottom: 15,
 alignSelf: 'center'
+},
+name: {
+  fontSize: 40,
+  marginBottom: 15,
+  alignSelf: 'center'
 },
 informacoes: {
   alignSelf: 'center'
@@ -48,7 +53,7 @@ class EmployeeProfileScreen extends React.Component{
       {
         this.state.loading ? (<Text style={styles.text}>Carregando...</Text>) : (
           <View style={styles.informacoes}>
-          <Text style={styles.text}>{this.state.employee[0].name}</Text>
+          <Text style={styles.name}>{this.state.employee[0].name}</Text>
           <Text style={styles.text}>CRM/Matricula:</Text>
           <Text style={styles.text}>{this.state.employee[0].address.zipcode}</Text>
           <Text style={styles.text}>setor: Pediatria</Text>
