@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import ScaleIcon from '../Components/ScaleIcon';
 
 const styles = {
   text: {
@@ -39,6 +40,10 @@ class ProfileScreen extends React.Component {
         <Text style = {styles.text}>Setor: {this.state.collaborator.address.suite}</Text>
         <Text style = {styles.text}>Especialidade: {this.state.collaborator.address.city}</Text>
         <Text style = {styles.text}>Hospital: {this.state.collaborator.address.city}</Text>
+
+        <ScaleIcon onPress = {() => null} />
+      
+
         </View>
       )
 
