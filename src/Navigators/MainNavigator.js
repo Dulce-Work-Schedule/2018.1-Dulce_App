@@ -34,25 +34,6 @@ const routes = {
             title: 'Editar'
         }
     }
-  },
-  users: {
-    screen: UsersScreen,
-    navigationOptions: {
-      title: 'Usuários'
-    }
-  },
-  newManager: {
-    screen: NewManager,
-    navigationOptions: {
-      title: 'Crie sua conta'
-    }
-  },
-  edit: {
-    screen: EditScreen,
-    navigationOptions: {
-      title: 'Editar'
-    }
-  }
 };
 
 const config = {};
