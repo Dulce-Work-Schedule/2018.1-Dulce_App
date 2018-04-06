@@ -10,25 +10,31 @@ import EmployeeProfileScreen from '../Screens/EmployeeProfileScreen';
 
 import {StackNavigator} from 'react-navigation';
 const routes = {
-  EmployeeProfile: {
-    screen: EmployeeProfileScreen,
 
-  },
     login: {
         screen: LoginScreen,
         navigationOptions: {
             header: null
         }
     },
+
     ProfileManager: {
       screen: ProfileManagerScreen,
     },
+
     initial : {
       screen: InitialScreen,
       navigationOptions: {
           header: null
       }
     },
+
+
+    EmployeeProfile: {
+        screen: EmployeeProfileScreen,
+
+      },
+
     users: {
         screen: UsersScreen,
         navigationOptions: {
