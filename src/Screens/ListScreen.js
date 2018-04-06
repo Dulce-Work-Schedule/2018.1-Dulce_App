@@ -22,7 +22,7 @@ class ListScreen extends React.Component {
       employees: [],
       loading: true
     }
-  } //fecha constructor
+  }
 
   componentDidMount(){
     const url = 'https://jsonplaceholder.typicode.com/users'
@@ -31,7 +31,7 @@ class ListScreen extends React.Component {
     fetch(url)
     .then((response) => {return response.json();})
     .then((json) => {this.setState({employees: json, loading: false})})
-  }; //fecha ComponentDidMount
+  };
 
   render (){
     return (
@@ -52,8 +52,8 @@ class ListScreen extends React.Component {
           )
         }
       </ScrollView>
-    ); //esse eh do return;
-  } //esse fecha do render
-} //fecha a classe
+    );
+  }
+}
 
 export default ListScreen;
