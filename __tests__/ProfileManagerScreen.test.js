@@ -1,10 +1,12 @@
 import React from 'react';
 import 'react-native';
-import ProfileManager from '../src/Screens/ProfileManager';
+import ProfileManagerScreen from '../src/Screens/ProfileManagerScreen';
 
 import renderer from 'react-test-renderer';
 
-test('renders correctly', () => {
-  const tree = renderer.create(<ProfileManager />).toJSON();
+it('renders correctly', () => {
+  const tree = renderer
+  .create(<ProfileManagerScreen />)
+  .toJSON();
   expect(tree).toMatchSnapshot();
 });
