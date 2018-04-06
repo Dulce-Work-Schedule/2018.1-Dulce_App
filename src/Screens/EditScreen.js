@@ -4,66 +4,66 @@ import AGRButton from '../Components/AGRButton';
 import ValidationComponent from 'react-native-form-validator';
 const logo = require('../../assets/img/logo.png');
 const styles = {
-  container:{
+  container: {
     flex: 1,
     flexDirection: 'column',
     padding: 15,
     backgroundColor: '#FFF',
-    paddingHorizontal: 20,
+    paddingHorizontal: 20
   },
-  input:{
+  input: {
     height: 36,
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
     marginBottom: 10,
     alignSelf: 'center',
     width: '80%',
-    marginTop: 10,
+    marginTop: 10
   },
   button: {
     alignItems: 'center',
     backgroundColor: 'lightgray',
     padding: 10,
     width: 140,
-    height:40,
+    height: 40,
     marginTop: 15,
     marginRight: 5,
-    marginLeft: 10,
+    marginLeft: 10
   },
-  alinhar:{
-    flexDirection:'row',
-    alignContent:'space-around',
+  alinhar: {
+    flexDirection: 'row',
+    alignContent: 'space-around'
   }
 };
 export default class EditScreen extends ValidationComponent {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      editable:false,
+      editable: false,
       nome: '',
       matricula: '',
       hospital: '',
       setor: '',
-      senha: '',
+      senha: ''
     };
   }
-  _onPressButton(){
-   if(this.validate({
-       nome: {required: true},
-       matricula: {numbers: true, required: true},
-       hospital: {required: true},
-       setor: {required: true},
-       senha: {minlength:4, maxlength:8, required: true},
-  }));
-}
-  tornarVisivel(){
+  _onPressButton() {
+    if (this.validate({
+      nome: {required: true},
+      matricula: {numbers: true, required: true},
+      hospital: {required: true},
+      setor: {required: true},
+      senha: {minlength: 4, maxlength: 8, required: true}
+    })) {}
+  }
+  tornarVisivel() {
     this.setState({
       editable: !this.state.editable
     });
   }
-  salvar(){
+  salvar() {
     this.setState({
-      editable:false
+      editable: false
     });
   }
 
@@ -101,18 +101,18 @@ export default class EditScreen extends ValidationComponent {
           editable = {this.state.editable}
           secureTextEntry
           onChangeText={(text) => this.setState({
-           senha: text})}
+            senha: text})}
         />
         {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
           <TouchableHighlight
-          style= {styles.button}
-          onPress={()=>{this.tornarVisivel()}}>
+            style= {styles.button}
+            onPress={() => {this.tornarVisivel();}}>
             <Text>Editar perfil</Text>
           </TouchableHighlight>
           <TouchableHighlight
             style= {styles.button}
-            onPress={()=>{[this.salvar(),this._onPressButton()]}}>
+            onPress={() => {[this.salvar(),this._onPressButton()];}}>
             <Text>Salvar</Text>
           </TouchableHighlight>
         </View>

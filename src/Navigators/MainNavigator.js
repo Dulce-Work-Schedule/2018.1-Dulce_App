@@ -1,9 +1,10 @@
-import { StackNavigator } from 'react-navigation';
 import LoginScreen from '../Screens/LoginScreen';
 import UsersScreen from '../Screens/UsersScreen';
+import NewManager from '../Screens/NewManager';
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 
+import {StackNavigator} from 'react-navigation';
 const routes = {
 
     login: {
@@ -19,6 +20,12 @@ const routes = {
         screen: UsersScreen,
         navigationOptions: {
             title: 'Usuários'
+        }
+    },
+    newManager: {
+        screen: NewManager,
+        navigationOptions: {
+            title: 'Crie sua conta'
         }
     },
     edit: {

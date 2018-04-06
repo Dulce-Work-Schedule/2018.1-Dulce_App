@@ -15,7 +15,7 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 15,
+    padding: 15
   },
   text: {
     fontSize: 48
@@ -28,20 +28,20 @@ class UsersScreen extends React.Component {
     this.state = {
       users: [],
       loading: true
-    }
+    };
   }
 
   componentDidMount() {
     const url = 'https://jsonplaceholder.typicode.com/users';
-    this.setState({ loading: true });
+    this.setState({loading: true});
     fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((json) => {
-      console.log(json);
-      this.setState({ users: json, loading: false })
-    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        console.log(json);
+        this.setState({users: json, loading: false});
+      });
   }
 
   render() {
@@ -58,7 +58,7 @@ class UsersScreen extends React.Component {
                 return item.id.toString();
               }}
               renderItem={(data) => {
-                return <AGRButton text={data.item.name}  onPress={() => this.props.navigation.navigate('users')} />
+                return <AGRButton text={data.item.name} onPress={() => this.props.navigation.navigate('users')} />;
               }}
             />
           )

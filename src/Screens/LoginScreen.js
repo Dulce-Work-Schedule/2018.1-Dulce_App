@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, TextInput, Image } from 'react-native';
+import {View, TextInput, Image} from 'react-native';
 import AGRButton from '../Components/AGRButton';
+import BotaoTransparente from '../Components/BotaoTransparente';
 
 const logo = require('../../assets/img/logo.png');
 
@@ -10,7 +11,7 @@ const styles = {
     flexDirection: 'column',
     padding: 15,
     backgroundColor: '#FFF',
-    paddingHorizontal: 50,
+    paddingHorizontal: 50
   },
   input: {
     height: 36,
@@ -19,7 +20,6 @@ const styles = {
     marginBottom: 10,
     width: '100%',
     alignSelf: 'center',
-    marginBottom: 50,
   },
   text: {
     fontSize: 36,
@@ -37,16 +37,16 @@ class LoginScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={logo}  style={styles.logo} />
+        <Image source={logo} style={styles.logo} />
         <TextInput
           style={styles.input}
-          placeholder="Usuário"
-          underlineColorAndroid="transparent"
+          placeholder='Usuário'
+          underlineColorAndroid='transparent'
         />
         <TextInput
           style={styles.input}
-          placeholder="Senha"
-          underlineColorAndroid="transparent"
+          placeholder='Senha'
+          underlineColorAndroid='transparent'
           secureTextEntry
         />
         <AGRButton

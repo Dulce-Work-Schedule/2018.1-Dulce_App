@@ -1,20 +1,23 @@
 import React from 'react';
-import {TouchableHighlight, Alert, Text} from 'react-native';
+import {TouchableHighlight, Text} from 'react-native';
 
 const styles = {
   container: {
-    backgroundColor: 'grey',
+    backgroundColor: '#FFF',
     height: 50,
     justifyContent: 'center',
     alignItems: 'center'
   },
   text: {
-    color: 'white',
+    color: 'grey',
     fontSize: 18
   }
 };
 
-class AGRButton extends React.Component {
+class BotaoTransparente extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <TouchableHighlight
@@ -27,4 +30,4 @@ class AGRButton extends React.Component {
   }
 }
 
-export default AGRButton;
+export default BotaoTransparente;
