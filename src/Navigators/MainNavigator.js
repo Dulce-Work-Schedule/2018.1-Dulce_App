@@ -10,18 +10,18 @@ import ListScreen from '../Screens/ListScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 
 const routes = {
-    list: {
-      screen: ListScreen,
-      navigationOptions: {
-        title: 'Lista'
-      }
-    },
-    profile: {
-      screen: ProfileScreen,
-      navigationOptions:{
-        title: 'Profile'
-      }
-    },
+  list: {
+    screen: ListScreen,
+    navigationOptions: {
+      title: 'Lista de Médicos'
+    }
+  },
+  profile: {
+    screen: ProfileScreen,
+    navigationOptions:{
+      title: ' '
+    }
+  },
     login: {
         screen: LoginScreen,
         navigationOptions: {
