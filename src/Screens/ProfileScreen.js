@@ -8,6 +8,10 @@ const styles = {
     alignSelf: 'center',
     color: 'black',
     margin: 15
+  },
+  icon: {
+    justifyContent : 'center',
+    alignItems:  'center'
   }
 }
 
@@ -34,16 +38,16 @@ class ProfileScreen extends React.Component {
     render() {
       return this.state.loading ? (<View />) : (
 
-        <View>
+        <View style = {{ flex: 1 }}>
         <Text style = {styles.text}>Nome: {this.state.collaborator.name}</Text>
         <Text style = {styles.text}>CRM/Matricula: {this.state.collaborator.address.geo.lng}</Text>
         <Text style = {styles.text}>Setor: {this.state.collaborator.address.suite}</Text>
         <Text style = {styles.text}>Especialidade: {this.state.collaborator.address.city}</Text>
         <Text style = {styles.text}>Hospital: {this.state.collaborator.address.city}</Text>
 
-        <ScaleIcon onPress = {() => null} />
-      
-
+          <View style = {styles.icon}>
+            <ScaleIcon onPress = {() => null} />
+          </View>
         </View>
       )
 
