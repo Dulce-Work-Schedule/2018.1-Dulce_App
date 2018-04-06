@@ -1,5 +1,6 @@
 import React from 'react';
 import {View , Text} from 'react-native';
+import AGRButton from '../Components/AGRButton';
 
 const styles = {
 
@@ -53,6 +54,10 @@ class EmployeeProfileScreen extends React.Component{
           <Text style={styles.text}>setor: Pediatria</Text>
           <Text style={styles.text}>Cirurgião</Text>
           <Text style={styles.text}>Hospital do Gama</Text>
+          <View style={{height: 50}} />
+          <AGRButton
+          text='editar'
+          onPress={() => this.props.navigation.navigate('edit')} />
           </View>
 
 
