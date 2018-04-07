@@ -1,13 +1,12 @@
-
 import React from 'react';
 import 'react-native';
-import ProfileManagerScreen from '../src/Screens/ProfileManagerScreen';
+import EmployeeProfileScreen from '../src/Screens/EmployeeProfileScreen';
 
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<ProfileManagerScreen />)
+  .create(<EmployeeProfileScreen />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });
