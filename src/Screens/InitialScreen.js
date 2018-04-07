@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     ScrollView,
     Text,
@@ -17,7 +17,7 @@ export default class InitialScreen extends React.Component {
                 </Text>
                 <View style={{margin:20}} />
                 <AGRButton
-                            onPress={this.props.onLogoutPress}
+                            onPress={() => this.props.navigation.navigate('login')}
                             text="Logout"
                      />
                 </ScrollView>
