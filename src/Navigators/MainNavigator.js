@@ -6,15 +6,33 @@ import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 import EmployeeProfileScreen from '../Screens/EmployeeProfileScreen';
 import {StackNavigator} from 'react-navigation';
 import InitialScreen from '../Screens/InitialScreen';
+import ListScreen from '../Screens/ListScreen';
+import ProfileScreen from '../Screens/ProfileScreen';
 
 const routes = {
-
-  ProfileManager: {
-    screen: ProfileManagerScreen,
+  list: {
+    screen: ListScreen,
+    navigationOptions: {
+      title: 'Lista de Médicos'
+    }
   },
-  EmployeeProfile: {
-    screen: EmployeeProfileScreen,
-
+  profile: {
+    screen: ProfileScreen,
+    navigationOptions:{
+      title: ' '
+    }
+  },
+    ProfileManager: {
+      screen: ProfileManagerScreen,
+      navigationOptions: {
+        title: 'Perfil'
+      }
+  },
+  list: {
+    screen: ListScreen,
+    navigationOptions: {
+      title: 'Lista'
+    }
   },
     login: {
         screen: LoginScreen,
@@ -22,19 +40,12 @@ const routes = {
             header: null
         }
     },
-
-    ProfileManager: {
-      screen: ProfileManagerScreen,
-    },
-
     initial : {
       screen: InitialScreen,
       navigationOptions: {
           header: null
       }
     },
-
-
     EmployeeProfile: {
         screen: EmployeeProfileScreen,
 
@@ -52,7 +63,7 @@ const routes = {
             title: 'Crie sua conta'
         }
     },
-    edit: {
+      edit: {
         screen: EditScreen,
         navigationOptions: {
             title: 'Editar'

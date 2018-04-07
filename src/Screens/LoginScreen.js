@@ -15,6 +15,14 @@ const styles = {
     backgroundColor: '#FFF',
     paddingHorizontal: 50
   },
+  input: {
+    height: 36,
+    borderBottomWidth: 1,
+    borderBottomColor: 'grey',
+    marginBottom: 10,
+    width: '100%',
+    alignSelf: 'center',
+  },
   text: {
     fontSize: 36,
     color: '#039200'
@@ -91,7 +99,6 @@ class LoginScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Image source={logo} style={styles.logo} />
-
         <AGRInput
           autoCapitalize='none'
           placeholder='Usuário'
@@ -108,7 +115,7 @@ class LoginScreen extends React.Component {
 
         <AGRButton
           onPress={this._onPressButton.bind(this)}
-          text='Entrar'
+          text="Entrar"
         />
       </View>
     );

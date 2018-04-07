@@ -3,9 +3,13 @@ import { Text, TouchableHighlight } from 'react-native';
 
 const styles = {
   item: {
-    height: 40,
+    height: 60,
     borderBottomWidth: 1,
     justifyContent: 'center'
+  },
+  text: {
+    color: 'black',
+    fontSize: 25
   }
 };
 
@@ -16,7 +20,7 @@ class UserItem extends React.Component {
         onPress={this.props.onPress}
         style={styles.item}
       >
-        <Text>{this.props.text}</Text>
+        <Text style={styles.text}>{this.props.text}</Text>
       </TouchableHighlight>
     );
   }
