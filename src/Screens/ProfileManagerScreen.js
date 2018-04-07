@@ -1,7 +1,7 @@
 import React from 'react';
 import {View , Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
-import SmallButton from '../Components/SmallButton';
+
 
 const styles = {
   container: {
@@ -12,8 +12,13 @@ const styles = {
 
   },
   text: {
-    fontSize:36,
+    fontSize:30,
     marginBottom:15,
+    alignSelf: 'center'
+  },
+  name: {
+    fontSize: 42,
+    marginBottom: 15,
     alignSelf: 'center'
   },
   informacoes: {
@@ -34,8 +39,8 @@ class ProfileManagerScreen extends React.Component {
   }
 
   componentDidMount(){
+    const fetch = require ('isomorphic-fetch')
     const url = 'https://jsonplaceholder.typicode.com/users';
-    const fetch = require('isomorphic-fetch')
     this.setState({ loading: true});
     fetch(url)
     .then((response) => {return response.json();})
@@ -48,22 +53,16 @@ class ProfileManagerScreen extends React.Component {
       {
         this.state.loading ? (<Text style={styles.text}>Carregando... </Text>) : (
           <View style={styles.informacoes}>
-          <Text style={styles.text}>{this.state.profile[0].name}</Text>
+          <Text style={styles.name}>{this.state.profile[0].name}</Text>
           <Text style={styles.text}>Matriula:</Text>
           <Text style={styles.text}>{this.state.profile[0].address.zipcode}</Text>
           <Text style={styles.text}>Setor: Pediatria</Text>
           <Text style={styles.text}>Hospital do Gama</Text>
-          <Text style={styles.text}>Cargo: Gestor</Text>
-         <View style={{marginTop: 30}} />
+         <View style={{marginTop: 60}} />
           <AGRButton
            text='Editar'
            onPress = {() => this.props.navigation.navigate('edit')}
            />
-
-           <SmallButton
-           text='Alterar senha'
-           onPress = {() => this.props.navigation.navigate('edit')}
-            />
 
           </View>
         )
