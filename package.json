@@ -19,6 +19,7 @@
   },
   "bugs": "https://github.com/fga-gpp-mds/agr-react-native/issues",
   "dependencies": {
+    "axios": "^0.18.0",
     "bluebird": "^3.3.5",
     "event-emitter": "^0.3.4",
     "immutable": "^3.7.6",
@@ -28,8 +29,8 @@
     "react": "16.3.0-alpha.3",
     "react-native": "0.54.2",
     "react-native-form-validator": "^0.2.0",
-    "react-navigation": "^1.5.9",
     "react-native-vector-icons": "^4.4.2",
+    "react-navigation": "^1.5.9",
     "standard-http-error": "^2.0.0"
   },
   "devDependencies": {

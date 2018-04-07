@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "flex": 1,
+      "flexDirection": "column",
+      "padding": 15,
+      "paddingHorizontal": 50,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/img/logo.png",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 100,
+        "marginBottom": 20,
+        "resizeMode": "contain",
+        "width": 200,
+      }
+    }
+  />
+  <RCTScrollView>
+    <View>
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Nome Completo"
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 36,
+            "marginBottom": 20,
+            "underlineColorAndroid": "transparent",
+            "width": "100%",
+          }
+        }
+      />
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Matrícula"
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 36,
+            "marginBottom": 20,
+            "underlineColorAndroid": "transparent",
+            "width": "100%",
+          }
+        }
+      />
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Hospital"
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 36,
+            "marginBottom": 20,
+            "underlineColorAndroid": "transparent",
+            "width": "100%",
+          }
+        }
+      />
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Setor"
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 36,
+            "marginBottom": 20,
+            "underlineColorAndroid": "transparent",
+            "width": "100%",
+          }
+        }
+      />
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Senha"
+        secureTextEntry={true}
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 36,
+            "marginBottom": 20,
+            "underlineColorAndroid": "transparent",
+            "width": "100%",
+          }
+        }
+      />
+      <TextInput
+        allowFontScaling={true}
+        onChangeText={[Function]}
+        placeholder="Confirme sua senha"
+        secureTextEntry={true}
+        style={
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 36,
+            "marginBottom": 20,
+            "underlineColorAndroid": "transparent",
+            "width": "100%",
+          }
+        }
+      />
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "grey",
+            "height": 50,
+            "justifyContent": "center",
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "white",
+              "fontSize": 18,
+            }
+          }
+        >
+          Criar
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

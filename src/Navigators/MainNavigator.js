@@ -3,7 +3,7 @@ import UsersScreen from '../Screens/UsersScreen';
 import NewManager from '../Screens/NewManager';
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
-
+import InitialScreen from '../Screens/InitialScreen';
 import {StackNavigator} from 'react-navigation';
 const routes = {
 
@@ -15,6 +15,12 @@ const routes = {
     },
     ProfileManager: {
       screen: ProfileManagerScreen,
+    },
+    initial : {
+      screen: InitialScreen,
+      navigationOptions: {
+          header: null
+      }
     },
     users: {
         screen: UsersScreen,
