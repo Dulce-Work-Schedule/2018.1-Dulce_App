@@ -39,7 +39,7 @@ class EmployeeProfileScreen extends React.Component{
   }
 
   componentDidMount(){
-
+    const fetch = require ('isomorphic-fetch')
     const url = 'https://jsonplaceholder.typicode.com/users';
     this.setState({loading: true});
     fetch(url)
