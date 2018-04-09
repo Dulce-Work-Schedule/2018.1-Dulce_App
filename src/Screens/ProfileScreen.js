@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import ScaleIcon from '../Components/ScaleIcon';
+import axios from 'axios';
 
 const styles = {
   text: {
@@ -29,10 +30,9 @@ class ProfileScreen extends React.Component {
 
     const url = 'https://jsonplaceholder.typicode.com/users/' + this.props.navigation.state.params.userId;
 
-    fetch(url)
+    axios.get(url)
 
-    .then((response) => {return response.json();})
-    .then((json) => {this.setState({collaborator: json,loading: false});})
+    .then((response) => {this.setState({collaborator: response.data,loading: false});})
 }
     render() {
       return this.state.loading ? (<View />) : (
