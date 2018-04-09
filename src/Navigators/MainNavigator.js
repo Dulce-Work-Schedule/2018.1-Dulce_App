@@ -40,12 +40,6 @@ const routes = {
         title: 'Perfil'
       }
   },
-  list: {
-    screen: ListScreen,
-    navigationOptions: {
-      title: 'Lista'
-    }
-  },
     EmployeeProfile: {
         screen: EmployeeProfileScreen,
 

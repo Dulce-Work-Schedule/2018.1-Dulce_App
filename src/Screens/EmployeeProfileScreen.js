@@ -1,7 +1,7 @@
 import React from 'react';
 import {View , Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
-
+import axios from 'axios';
 const styles = {
 
 container: {
@@ -39,12 +39,10 @@ class EmployeeProfileScreen extends React.Component{
   }
 
   componentDidMount(){
-    const fetch = require('isomorphic-fetch')
     const url = 'https://jsonplaceholder.typicode.com/users';
     this.setState({loading: true});
-    fetch(url)
-    .then((response) => {return response.json();})
-    .then((json) => {this.setState({employee: json,loading: false});})
+    axios.get(url)
+    .then((response) => {this.setState({employee: response.data,loading: false});})
   }
 
   render(){
