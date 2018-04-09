@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Button, FlatList, ScrollView} from 'react-native';
 import UserItem from '../Components/UserItem';
+import axios from 'axios';
 
 const styles = {
   container: {
@@ -28,9 +29,8 @@ class ListScreen extends React.Component {
     const fetch = require('isomorphic-fetch')
     const url = 'https://jsonplaceholder.typicode.com/users'
     this.setState({loading: true});
-    fetch(url)
-    .then((response) => {return response.json();})
-    .then((json) => {this.setState({employees: json, loading: false})})
+    axios.get(url)
+    .then((response) => {this.setState({employees: response.data, loading: false});})
   };
 
   render (){
