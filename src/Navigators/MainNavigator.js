@@ -44,13 +44,6 @@ const routes = {
         screen: EmployeeProfileScreen,
 
       },
-
-    users: {
-        screen: UsersScreen,
-        navigationOptions: {
-            title: 'Usuários'
-        }
-    },
     newManager: {
         screen: NewManager,
         navigationOptions: {
