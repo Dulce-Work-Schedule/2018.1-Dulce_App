@@ -1,5 +1,4 @@
 import LoginScreen from '../Screens/LoginScreen';
-import UsersScreen from '../Screens/UsersScreen';
 import NewManager from '../Screens/NewManager';
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
