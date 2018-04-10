@@ -2,8 +2,8 @@
 
 ## Tipos de requisitos não-funcionais:
 
+<img src='/docs/assets/img/requisitosNaoFuncionais.png'>
 
-<img src= "../assets/img/requisitosNaoFuncionais.png"/>
 ## 1 - Requisitos do produto:
 
 #### 1.1 - Requisitos de facilidade de uso:
