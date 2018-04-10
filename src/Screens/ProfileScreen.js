@@ -25,7 +25,6 @@ class ProfileScreen extends React.Component {
   }
 
   componentDidMount(){
-
     this.setState({loading: true});
 
     const url = 'https://jsonplaceholder.typicode.com/users/' + this.props.navigation.state.params.userId;

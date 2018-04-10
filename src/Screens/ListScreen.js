@@ -26,7 +26,6 @@ class ListScreen extends React.Component {
 
   componentDidMount(){
     const url = 'https://jsonplaceholder.typicode.com/users'
-    const fetch = require('isomorphic-fetch')
     this.setState({loading: true});
     fetch(url)
     .then((response) => {return response.json();})
