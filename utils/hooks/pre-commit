@@ -1,0 +1,2 @@
+npm run lint -s
+npm run test -s
