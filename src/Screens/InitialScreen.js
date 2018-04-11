@@ -10,17 +10,25 @@ import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
 
 
+const styles={
+    text:{
+      fontSize: 27
+    },
+    lastButton:{
+      marginBottom: 150
+    }
+
+}
 
 export default class InitialScreen extends React.Component {
     render() {
         return (
-            <ScrollView style={{padding: 20}}>
+            <ScrollView>
               <SmallLogo />
-                <Text
-                    style={{fontSize: 27}}>
+                <Text style={styles.text}>
                     Welcome
                 </Text>
-                <View style={{margin:20}} />
+                <View/>
                 <AGRButton
                   onPress={() => this.props.navigation.navigate('profile')}
                   text="Perfil"
@@ -46,6 +54,7 @@ export default class InitialScreen extends React.Component {
                   text="Perfil gestor"
                 />
                 <AGRButton
+                   style={styles.lastButton}
                   onPress={() => this.props.navigation.navigate('login')}
                   text="Logout"
                 />

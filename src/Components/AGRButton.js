@@ -1,5 +1,5 @@
 import React from 'react';
-import {TouchableHighlight, Alert, Text} from 'react-native';
+import {TouchableHighlight, Alert, Text, View} from 'react-native';
 
 const styles = {
   container: {
@@ -7,23 +7,29 @@ const styles = {
     height: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 25
+    marginTop: 30,
+    paddingHorizontal: 50
   },
   text: {
     color: 'white',
     fontSize: 18
+  },
+  view: {
+    paddingHorizontal: 30
   }
 };
 
 class AGRButton extends React.Component {
   render() {
     return (
+      <View style={styles.view}>
       <TouchableHighlight
         style={styles.container}
         onPress={() => this.props.onPress()}
       >
         <Text style={styles.text}>{this.props.text}</Text>
       </TouchableHighlight>
+      </View>
     );
   }
 }

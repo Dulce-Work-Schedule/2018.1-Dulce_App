@@ -1,6 +1,8 @@
 import { LOGIN, LOGOUT } from '../Actions/currentUser';
 
-const initialState = {};
+const initialState = {
+  nome:"gabibs"
+  };
 
 function currentUser(state=initialState,action){
   switch (action.type) {

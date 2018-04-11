@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {View, TextInput, Image, Alert} from 'react-native';
+import {View, ScrollView, TextInput, Image, Alert} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import BotaoTransparente from '../Components/BotaoTransparente';
@@ -14,8 +14,7 @@ const styles = {
     flex: 1,
     flexDirection: 'column',
     padding: 15,
-    backgroundColor: '#FFF',
-    paddingHorizontal: 50
+    backgroundColor: '#FFF'
   },
   input: {
     height: 36,
@@ -42,14 +41,14 @@ class LoginScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
+      matricula: '',
       password: ''
     };
   }
 
 
   _onPressButton() {
-    if (this.state.password === '' || this.state.username === '') {
+    if (this.state.password === '' || this.state.matricula === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
         'Para entrar preencha corretamente os campos de matrícula e senha.'
@@ -60,17 +59,20 @@ class LoginScreen extends React.Component {
         'A senha deve ter no minimo 6 caracteres.'
       );
     } else {
-      this.login();
+      //this.login();
+      token_falso = this.state.matricula + this.state.password;
+      this.props.setCurrentUser(token_falso);
     }
   }
 
   login(){
     axios.post('http://localhost:3000/auth/users', {
-      username: this.state.username,
+      matricula: this.state.matricula,
       password: this.state.password
     })
-      .then((ameixa) => {
-        return this.props.navigation.navigate('users');
+      .then((response) => {
+        this.props.setCurrentUser(response.data);
+        return this.props.navigation.navigate('initial');
       })
       .catch((error) => {
         if (error.response) {
@@ -94,11 +96,12 @@ class LoginScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <ScrollView>
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
-          placeholder='Usuário'
-          onChangeText={(text) => this.setState({username: text})}
+          placeholder='Matrícula'
+          onChangeText={(text) => this.setState({matricula: text})}
         />
 
         <AGRInput
@@ -113,6 +116,7 @@ class LoginScreen extends React.Component {
           onPress={this._onPressButton.bind(this)}
           text="Entrar"
         />
+        </ScrollView>
       </View>
     );
   }
