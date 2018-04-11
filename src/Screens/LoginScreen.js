@@ -1,9 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {View, TextInput, Image, Alert} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import BotaoTransparente from '../Components/BotaoTransparente';
 import axios from 'axios';
+import { actionLogin } from '../Actions/currentUser';
 
 const logo = require('../../assets/img/logo.png');
 
@@ -58,13 +60,7 @@ class LoginScreen extends React.Component {
         'A senha deve ter no minimo 6 caracteres.'
       );
     } else {
-      //this.props.navigation.navigate('initial');
       this.login();
-      /*Alert.alert(
-        'Dados',
-        this.state.username + '\n' +
-        this.state.password
-      );*/
     }
   }
 
@@ -122,4 +118,23 @@ class LoginScreen extends React.Component {
   }
 }
 
-export default LoginScreen;
+
+
+const mapStateToProps = (state) => {
+  return{
+    currentUser:state.currentUser
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setCurrentUser: (value) =>{
+      const currentUser = {
+        token: value
+      };
+      return dispatch(setCurrentUser(currentUser));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);

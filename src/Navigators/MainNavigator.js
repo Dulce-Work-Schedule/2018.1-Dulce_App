@@ -10,6 +10,12 @@ import ListScreen from '../Screens/ListScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 
 const routes = {
+  login: {
+    screen: LoginScreen,
+    navigationOptions: {
+      header: null
+    }
+  },
   initial : {
     screen: InitialScreen,
     navigationOptions: {
@@ -40,12 +46,6 @@ const routes = {
       title: 'Lista'
     }
   },
-    login: {
-        screen: LoginScreen,
-        navigationOptions: {
-            header: null
-        }
-    },
     EmployeeProfile: {
         screen: EmployeeProfileScreen,
 

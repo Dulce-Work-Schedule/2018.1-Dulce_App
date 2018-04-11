@@ -31,6 +31,8 @@
     "react-native-form-validator": "^0.2.0",
     "react-native-vector-icons": "^4.4.2",
     "react-navigation": "^1.5.9",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
     "standard-http-error": "^2.0.0"
   },
   "devDependencies": {
