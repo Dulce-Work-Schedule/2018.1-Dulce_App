@@ -21,40 +21,49 @@ RNF 05    | O aplicativo deverá possuir design responsivo adequando-se ao apare
 
 Requisito | Descrição |
 ----------|-----------|
-RNF 07    |Usuários estipulados como gestor, terá acesso à camada de administração do sistema.
+RNF 06    |Usuários estipulados como gestor, terá acesso à camada de administração do sistema.
 
 
 #### 1.3 - Requisitos de portablidade:
 Requisitos | Descrição |
 -----------|-----------
-RNF 08    |O aplicativo deverá ter uma versão para Android. (versão x ou superior)
-RNF 09   |O aplicativo deverá ter uma versão IOS. (versão x ou superior)
+RNF 07    |O aplicativo deverá ter uma versão para Android. (versão x ou superior)
+RNF 08   |O aplicativo deverá ter uma versão IOS. (versão x ou superior)
 
 
 ## 2- Requisitos organizacionais:
-......... Requisitos Organizacionais São requisitos derivados das políticas organizacionais do cliente e do desenvolvedor, ...........
 
 #### 2.1 - Requisitos de entrega:
----------------- Requisitos de entrega: referem-se ao modo como será implantada a solução como configurações necessárias e ordem de instalação dos pacotes. --------------
-#### 2.2 - Requisitos de implementação:
------------- Requisitos de Implementação: ligados às regras de codificação e restrições de software e hardware usados para desenvolver ou executar o sistema ------------
-#### 2.3 - Requisitos de padrões:
+Requisitos | Descrição |
+-----------|-----------
+RNF 09     | Seguindo a metodologia ágil, o desenvolvimento do aplicativo de acordo com as necessidades,  deverá ser entregue a cada sprint planejado e executado semanalmente, até que o produto esteja pronto para o uso.
+RNF 10     |  Utiliza-se também o método KanBan para organização de cada sprint e poderá ser acompanhado pelo roadmap do projeto.
+RNF 11     | Na priorização das features, são consideradas a qualidade técnica da equipe juntamente com a importância dos requisitos.
 
-................... Requisitos de Padrões: referem-se à definição da linguagem de programação e às normas que devem ser seguidas pelo sistema ou no processo de desenvolvimento.
-.....................
+#### 2.2 - Requisitos de implementação:
+Requisitos | Descrição |
+-----------|-----------
+RNF 12     | O software deverá ser desenvolvido utilizando a linguagem React-Native como front-end.
+RNF 13     | No Back-end, API's que serão utilizados, o framework será Node.Js .
+RNF 14     | O sistema deverá portar 90% de cobertura de testes.
+
+
+#### 2.3 - Requisitos de padrões:
+Requisitos | Descrição |
+-----------|-----------
+RNF 15     | O sistema utilizará a folha de estilo da Airbnb como paradigma de programação.
+RNF 16     | O código deverá ser em inglês.
+
 ## 3- Requisitos externos:
 
 #### 3.1 - Requisitos éticos:
 
 Requisito | Descrição |
 ----------|-----------|
-RNF 0 N   |Informações pessoais dos usuários não poderão ser visualizados pelos desenvolvedores do sistema.
+RNF 17   |Informações pessoais dos usuários não poderão ser visualizados pelos desenvolvedores do sistema.
 
 #### 3.2 - Requisitos legais:
 
 Requisito | Descrição |
 ----------|-----------|
-RNF 0 N   |O software deverá obedecer o critério de acessos referente aos dados sensíveis armazenados pela instuitição.
-
-*obs: procurar lei referente ao acesso de dados sensíveis armazenados pelo governo.
-
+RNF 18    | O software deverá obedecer o critério de acessos referente aos dados sensíveis armazenados pela instituição.
