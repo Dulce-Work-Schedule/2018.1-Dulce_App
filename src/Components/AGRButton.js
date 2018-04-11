@@ -6,7 +6,8 @@ const styles = {
     backgroundColor: 'grey',
     height: 50,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 25
   },
   text: {
     color: 'white',

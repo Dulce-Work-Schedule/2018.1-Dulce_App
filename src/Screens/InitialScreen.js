@@ -37,10 +37,12 @@ export default class InitialScreen extends React.Component {
                   onPress={() => this.props.navigation.navigate('newManager')}
                   text="Criar novos gerentes"
                 />
+                // Verificar o uso do Employee
                 <AGRButton
                   onPress={() => this.props.navigation.navigate('EmployeeProfile')}
                   text="Employee Profile"
                 />
+                // Verificar o uso do perfil gestor
                 <AGRButton
                   onPress={() => this.props.navigation.navigate('ProfileManager')}
                   text="Perfil gestor"
