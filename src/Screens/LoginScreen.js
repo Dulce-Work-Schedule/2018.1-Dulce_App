@@ -60,8 +60,12 @@ class LoginScreen extends React.Component {
       );
     } else {
       //this.login();
-      token_falso = this.state.matricula + this.state.password;
+      const token_falso = {
+        matricula: this.state.matricula,
+        senha: this.state.password
+      };
       this.props.setCurrentUser(token_falso);
+      this.props.navigation.navigate('initial');
     }
   }
 
@@ -132,11 +136,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setCurrentUser: (value) =>{
+    setCurrentUser: (value) => {
       const currentUser = {
         token: value
       };
-      return dispatch(setCurrentUser(currentUser));
+      return dispatch(actionLogin(currentUser));
     }
   };
 };

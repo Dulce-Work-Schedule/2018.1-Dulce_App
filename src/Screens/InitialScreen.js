@@ -8,7 +8,8 @@ import {
 } from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
-
+import { connect } from 'react-redux';
+import { actionLogout } from '../Actions/currentUser';
 
 const styles={
     text:{
@@ -20,7 +21,12 @@ const styles={
 
 }
 
-export default class InitialScreen extends React.Component {
+_onPressLogout() {
+  this.removeUser();
+  this.props.navigation.navigate('login');
+}
+
+class InitialScreen extends React.Component {
     render() {
         return (
             <ScrollView>
@@ -55,10 +61,27 @@ export default class InitialScreen extends React.Component {
                 />
                 <AGRButton
                    style={styles.lastButton}
-                  onPress={() => this.props.navigation.navigate('login')}
+                  onPress={() => this._onPressLogout}
                   text="Logout"
                 />
-                </ScrollView>
-              );
-    }
+              </ScrollView>
+            );
+        }
 }
+
+const mapStateToProps = (state) => {
+  return{
+    currentUser:state.currentUser
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    removeUser: () => {
+      const currentUser = {};
+      return dispatch(actionLogout());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(InitialScreen);

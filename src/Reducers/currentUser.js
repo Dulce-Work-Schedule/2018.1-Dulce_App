@@ -9,6 +9,10 @@ function currentUser(state=initialState,action){
     case LOGIN:
       const currentUser = action.currentUser;
       return currentUser;
+    case LOGOUT:
+      const currentUser = action.currentUser;
+      return currentUser;
+
     default:
       return initialState;
   }
