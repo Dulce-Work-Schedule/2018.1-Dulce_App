@@ -10,6 +10,9 @@ import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
 import { connect } from 'react-redux';
 import { actionLogout } from '../Actions/currentUser';
+import store from '../Reducers/store';
+
+
 
 const styles={
     text:{
@@ -18,15 +21,33 @@ const styles={
     lastButton:{
       marginBottom: 150
     }
+};
 
-}
 
-_onPressLogout() {
-  this.removeUser();
-  this.props.navigation.navigate('login');
-}
 
 class InitialScreen extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      logged: false
+    }
+  }
+
+  checkLogin(){
+    if(store.currentUser !== {}){
+      this.setState({
+        logged:true
+      });
+    } else {
+      this.props.navigation.navigate('login');
+    }
+  }
+
+  _onPressLogout() {
+    this.props.removeUser();
+    this.props.navigation.navigate('login');
+  }
+
     render() {
         return (
             <ScrollView>
@@ -61,7 +82,7 @@ class InitialScreen extends React.Component {
                 />
                 <AGRButton
                    style={styles.lastButton}
-                  onPress={() => this._onPressLogout}
+                  onPress={() => this._onPressLogout()}
                   text="Logout"
                 />
               </ScrollView>
@@ -71,14 +92,13 @@ class InitialScreen extends React.Component {
 
 const mapStateToProps = (state) => {
   return{
-    currentUser:state.currentUser
+    currentUser:{}
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     removeUser: () => {
-      const currentUser = {};
       return dispatch(actionLogout());
     }
   };

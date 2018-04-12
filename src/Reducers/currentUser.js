@@ -1,8 +1,6 @@
 import { LOGIN, LOGOUT } from '../Actions/currentUser';
 
-const initialState = {
-  nome:"gabibs"
-  };
+const initialState = {};
 
 function currentUser(state=initialState,action){
   switch (action.type) {
@@ -10,7 +8,7 @@ function currentUser(state=initialState,action){
       const currentUser = action.currentUser;
       return currentUser;
     case LOGOUT:
-      const currentUser = action.currentUser;
+      currentUser = action.currentUser;
       return currentUser;
 
     default:

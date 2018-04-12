@@ -66,6 +66,7 @@ class LoginScreen extends React.Component {
       };
       this.props.setCurrentUser(token_falso);
       this.props.navigation.navigate('initial');
+
     }
   }
 
@@ -76,7 +77,7 @@ class LoginScreen extends React.Component {
     })
       .then((response) => {
         this.props.setCurrentUser(response.data);
-        return this.props.navigation.navigate('initial');
+        this.props.navigation.navigate('initial');
       })
       .catch((error) => {
         if (error.response) {
