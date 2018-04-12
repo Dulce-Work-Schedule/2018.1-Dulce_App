@@ -700,9 +700,25 @@
                                         <div class="tab-pane" id="requitos_qualidade">
 
 
+                                            <style>
+                                          table {
+                                              font-family: arial, sans-serif;
+                                              border-collapse: collapse;
+                                          
+                                          }
+
+                                          td, th {
+                                              border: 1px solid #dddddd;
+                                              text-align: left;
+                                              padding: 8px;
+                                          }
+
+
+                                          </style>
+
                                           <h1>Requisito de Qualidade:</h1>
 
-                                          <h2> Tipos de requisitos não-funcionais:</h2>
+                                          <h2> Tipos de requisitos de qualidade:</h2>
 
                                           <img src="../assets/img/requisitosNaoFuncionais.png">
 
@@ -716,23 +732,23 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 01</td>
+                                          <td>RQ 01</td>
                                           <td>A interação do usuário com o aplicativo deverá ser intuitiva.</td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 02</td>
+                                          <td>RQ 02</td>
                                           <td>Não deverá existir a necessidade de treinamento preparatório para o uso do aplicativo.</td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 03</td>
+                                          <td>RQ 03</td>
                                           <td>O aplicativo deverá possuir prevenção e notificação de erros, caso o preenchimento de dados for incorreto.</td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 04</td>
+                                          <td>RQ 04</td>
                                           <td>O aplicativo deverá ser disponibilizado em língua portuguesa (Brasil).</td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 05</td>
+                                          <td>RQ 05</td>
                                           <td>O aplicativo deverá possuir design responsivo adequando-se ao aparelho em que é utilizado de forma correta.
                                           </td>
                                           </tr>
@@ -748,8 +764,13 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 06</td>
-                                          <td>Usuários estipulados como gestor, terá acesso à camada de administração do sistema.</td>
+                                          <td>RQ 06</td>
+                                          <td>Somente os funcionários cadastrados terão acesso aos seus dados pessoais. Em caso específico, do cargo de gestor, terá acesso as informações necessárias dos outros usuários do aplicativo.</td>
+                                          </tr>
+
+                                          <tr>
+                                          <td>RQ 07</td>
+                                          <td>Não deverá ocorrer erros nas informações contidas na base de dados que serão exibidos.</td>
                                           </tr>
 
                                           </table>
@@ -764,19 +785,17 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 07</td>
-                                          <td>O aplicativo deverá ter uma versão para Android. (versão x ou superior).</td>
+                                          <td>RQ 08</td>
+                                          <td>O aplicativo deverá ter uma versão para Android. (Android 4.1 ou superior)</td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 08</td>
-                                          <td>O aplicativo deverá ter uma versão IOS. (versão x ou superior)</td>
+                                          <td>RQ 09</td>
+                                          <td>O aplicativo deverá ter uma versão IOS. (iOS 8.0 ou superior)</td>
                                           </tr>
                                           </table>
 
 
                                           <h2> 2- Requisitos organizacionais:</h2>
-
-                                            <p>Requisitos Organizacionais São requisitos derivados das políticas organizacionais do cliente e do desenvolvedor.</p>
 
                                           <h4> 2.1 - Requisitos de entrega: </h4>
 
@@ -786,17 +805,12 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 09</td>
-                                          <td>Seguindo a metodologia ágil, o desenvolvimento do aplicativo de acordo com as necessidades,  deverá ser entregue a cada sprint planejado e executado semanalmente, até que o produto esteja pronto para o uso.
+                                          <td>RQ 10</td>
+                                          <td>Seguindo a metodologia ágil, o desenvolvimento do aplicativo será realizado por sprints com entregas semanais, e deverá estar disponivel para o usuário até o final do primeiro semestre de 2018.
                                           </td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 10</td>
-                                          <td>Utiliza-se também o método KanBan para organização de cada sprint e poderá ser acompanhado pelo roadmap do projeto.
-                                          </td>
-                                          </tr>
-                                          <tr>
-                                          <td>RNF 11</td>
+                                          <td>RQ 11</td>
                                           <td>Na priorização das features, são consideradas a qualidade técnica da equipe juntamente com a importância dos requisitos.</td>
                                           </tr>
                                           </table>
@@ -810,18 +824,18 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 12</td>
+                                          <td>RQ 12</td>
                                           <td>O software deverá ser desenvolvido utilizando a linguagem JavaScript com o framework React-Native como front-end.
 
                                           </td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 13</td>
-                                          <td>No Back-end API's serão desenvolvidas utilizando o framework Node.Js .
+                                          <td>RQ 13</td>
+                                          <td>No Back-end, API's serão desenvolvidas utilizando o framework Node.js .
                                           </td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 14</td>
+                                          <td>RQ 14</td>
                                           <td>O sistema deverá portar 90% de cobertura de testes.
                                           </td>
                                           </tr>
@@ -837,13 +851,13 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 15</td>
-                                          <td>O sistema utilizará a folha de estilo da Airbnb como paradigma de programação.
+                                          <td>RQ 15</td>
+                                          <td>O código deverá seguir a folha de estilo da Airbnb.
 
                                           </td>
                                           </tr>
                                           <tr>
-                                          <td>RNF 16</td>
+                                          <td>RQ 16</td>
                                           <td>O código deverá ser em inglês.
                                           </td>
                                           </tr>
@@ -861,8 +875,8 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 17</td>
-                                          <td>Informações pessoais dos usuários não poderão ser visualizados pelos desenvolvedores do sistema.</td>
+                                          <td>RQ 17</td>
+                                          <td>Os desenvolvedores do software se comprometem a não divulgar dados sensíveis dos usuários do aplicativo.</td>
                                           </tr>
 
                                           </table>
@@ -876,8 +890,12 @@
                                           <th>Descrição</th>
                                           </tr>
                                           <tr>
-                                          <td>RNF 18</td>
-                                          <td>O software deverá obedecer o critério de acessos referente aos dados sensíveis armazenados pela instuitição.</td>
+                                          <td>RQ 18</td>
+                                          <td>O software deverá obedecer o critério de acessos referente aos dados sensíveis armazenados pela instituição.</td>
+                                          </tr>
+                                          <tr>
+                                          <td>RQ 19</td>
+                                          <td>O Software deverá seguir o Projeto de Lei nº 5276/16, relacionado á dados sensíveis.</td>
                                           </tr>
 
                                           </table>
