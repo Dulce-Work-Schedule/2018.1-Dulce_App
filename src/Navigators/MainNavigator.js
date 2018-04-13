@@ -12,13 +12,7 @@ const routes = {
   login: {
     screen: LoginScreen,
     navigationOptions: {
-      header: null
-    }
-  },
-  initial : {
-    screen: InitialScreen,
-    navigationOptions: {
-      header: null
+        header: null
     }
   },
   list: {
@@ -39,6 +33,12 @@ const routes = {
         title: 'Perfil'
       }
   },
+    initial : {
+      screen: InitialScreen,
+      navigationOptions: {
+          header: null
+      }
+    },
     EmployeeProfile: {
         screen: EmployeeProfileScreen,
 
