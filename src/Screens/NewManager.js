@@ -2,6 +2,11 @@ import React from 'react';
 import {Text, View, TextInput, Image, Alert, ScrollView } from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import AGRButton from '../Components/AGRButton';
+import SmallLogo from '../Components/SmallLogo';
+import AGRInput from '../Components/AGRInput';
+
+
+
 
 const logo = require('../../assets/img/logo.png');
 
@@ -18,7 +23,7 @@ const styles = {
     flexDirection: 'column',
     padding: 15,
     backgroundColor: '#FFF',
-    paddingHorizontal: 50
+    //paddingHorizontal: 50
 
   },
   input: {
@@ -90,27 +95,27 @@ export default class NewManager extends ValidationComponent {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={logo}  style={styles.logo} />
+        <SmallLogo/>
         <ScrollView>
-          <TextInput ref='nome' style={styles.input} placeholder='Nome Completo' underlineColorAndroid='transparent' onChangeText={(text) => this.setState({nome: text})} />
+          <AGRInput ref='nome' placeholder='Nome Completo' underlineColorAndroid='transparent'
+            onChangeText={(text) => this.setState({nome: text})} />
           {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <TextInput ref='matricula' style={styles.input} placeholder='Matrícula' underlineColorAndroid='transparent' onChangeText={(text) => this.setState({matricula: text})} />
+          <AGRInput ref='matricula' placeholder='Matrícula' underlineColorAndroid='transparent'
+            onChangeText={(text) => this.setState({matricula: text})} />
           {this.isFieldInError('matricula') && this.getErrorsInField('matricula').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <TextInput ref='hospital' style={styles.input} placeholder='Hospital' underlineColorAndroid='transparent' onChangeText={(text) => this.setState({hospital: text})} />
+          <AGRInput ref='hospital' placeholder='Hospital' underlineColorAndroid='transparent'
+            onChangeText={(text) => this.setState({hospital: text})} />
           {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <TextInput ref='setor' style={styles.input} placeholder='Setor' underlineColorAndroid='transparent' onChangeText={(text) => this.setState({setor: text})} />
+          <AGRInput ref='setor'placeholder='Setor'underlineColorAndroid='transparent'
+          onChangeText={(text) => this.setState({setor: text})} />
           {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <TextInput ref='senha' style={styles.input} placeholder='Senha' underlineColorAndroid='transparent' secureTextEntry onChangeText={(text) => this.setState({senha: text})} />
+          <AGRInput ref='senha' placeholder='Senha'underlineColorAndroid='transparent'
+          secureTextEntry onChangeText={(text) => this.setState({senha: text})} />
           {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+          <AGRInput ref='confirmaSenha' placeholder='Confirme sua senha' underlineColorAndroid='transparent'
+            secureTextEntry onChangeText={(text) => this.setState({confirmaSenha: text})} />
           {this.isFieldInError('confirmaSenha') && this.getErrorsInField('confirmaSenha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <TextInput ref='confirmaSenha' style={styles.input}
-            placeholder='Confirme sua senha'
-            underlineColorAndroid='transparent'
-            secureTextEntry
-            onChangeText={(text) => this.setState({confirmaSenha: text})} />
           <AGRButton style={styles.button} text='Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
-      </View>
-    );
-  }
+      </View> );}
 }

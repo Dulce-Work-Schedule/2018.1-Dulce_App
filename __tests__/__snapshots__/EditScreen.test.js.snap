@@ -8,6 +8,7 @@ exports[`renders correctly 1`] = `
       "flex": 1,
       "flexDirection": "column",
       "padding": 15,
+      "paddingHorizontal": 20,
     }
   }
 >
@@ -39,9 +40,11 @@ exports[`renders correctly 1`] = `
         }
       >
         <TextInput
+          Textvalue={undefined}
           allowFontScaling={true}
+          editable={false}
           onChangeText={[Function]}
-          placeholder="Nome Completo"
+          placeholder="Nome"
           style={
             Object {
               "alignSelf": "center",
@@ -65,8 +68,8 @@ exports[`renders correctly 1`] = `
       >
         <TextInput
           allowFontScaling={true}
-          onChangeText={[Function]}
-          placeholder="Matrícula"
+          editable={false}
+          placeholder="Matricula"
           style={
             Object {
               "alignSelf": "center",
@@ -90,6 +93,7 @@ exports[`renders correctly 1`] = `
       >
         <TextInput
           allowFontScaling={true}
+          editable={false}
           onChangeText={[Function]}
           placeholder="Hospital"
           style={
@@ -115,6 +119,7 @@ exports[`renders correctly 1`] = `
       >
         <TextInput
           allowFontScaling={true}
+          editable={false}
           onChangeText={[Function]}
           placeholder="Setor"
           style={
@@ -140,8 +145,9 @@ exports[`renders correctly 1`] = `
       >
         <TextInput
           allowFontScaling={true}
+          editable={false}
           onChangeText={[Function]}
-          placeholder="Senha"
+          placeholder="Editar senha"
           secureTextEntry={true}
           style={
             Object {
@@ -160,33 +166,8 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "paddingHorizontal": 30,
-          }
-        }
-      >
-        <TextInput
-          allowFontScaling={true}
-          onChangeText={[Function]}
-          placeholder="Confirme sua senha"
-          secureTextEntry={true}
-          style={
-            Object {
-              "alignSelf": "center",
-              "borderBottomColor": "grey",
-              "borderBottomWidth": 1,
-              "height": 36,
-              "marginBottom": 10,
-              "marginTop": 30,
-              "width": "100%",
-            }
-          }
-          underlineColorAndroid="transparent"
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "paddingHorizontal": 30,
+            "alignContent": "space-around",
+            "flexDirection": "row",
           }
         }
       >
@@ -209,11 +190,13 @@ exports[`renders correctly 1`] = `
           style={
             Object {
               "alignItems": "center",
-              "backgroundColor": "grey",
-              "height": 50,
-              "justifyContent": "center",
-              "marginTop": 30,
-              "paddingHorizontal": 50,
+              "backgroundColor": "lightgray",
+              "height": 40,
+              "marginLeft": 10,
+              "marginRight": 5,
+              "marginTop": 15,
+              "padding": 10,
+              "width": 140,
             }
           }
           testID={undefined}
@@ -223,14 +206,49 @@ exports[`renders correctly 1`] = `
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "white",
-                "fontSize": 18,
-              }
-            }
+            style={null}
           >
-            Criar
+            Editar perfil
+          </Text>
+        </View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "lightgray",
+              "height": 40,
+              "marginLeft": 10,
+              "marginRight": 5,
+              "marginTop": 15,
+              "padding": 10,
+              "width": 140,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={null}
+          >
+            Salvar
           </Text>
         </View>
       </View>

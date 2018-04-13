@@ -1,9 +1,12 @@
 import React from 'react';
-import {View, TextInput, Image, Alert} from 'react-native';
+import { connect } from 'react-redux';
+import {View, ScrollView, TextInput, Image, Alert} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import BotaoTransparente from '../Components/BotaoTransparente';
 import axios from 'axios';
+import { actionLogin } from '../Actions/currentUser';
+import { NavigationActions } from 'react-navigation';
 
 const logo = require('../../assets/img/logo.png');
 
@@ -12,8 +15,7 @@ const styles = {
     flex: 1,
     flexDirection: 'column',
     padding: 15,
-    backgroundColor: '#FFF',
-    paddingHorizontal: 50
+    backgroundColor: '#FFF'
   },
   input: {
     height: 36,
@@ -35,19 +37,28 @@ const styles = {
   }
 };
 
-class LoginScreen extends React.Component {
+export class LoginScreen extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
+      matricula: '',
       password: ''
     };
   }
 
+  resetNavigation(targetRoute) {
+    const resetAction = NavigationActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({ routeName: targetRoute }),
+      ],
+    });
+    this.props.navigation.dispatch(resetAction);
+  }
 
   _onPressButton() {
-    if (this.state.password === '' || this.state.username === '') {
+    if (this.state.password === '' || this.state.matricula === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
         'Para entrar preencha corretamente os campos de matrícula e senha.'
@@ -58,24 +69,24 @@ class LoginScreen extends React.Component {
         'A senha deve ter no minimo 6 caracteres.'
       );
     } else {
-      //this.props.navigation.navigate('initial');
-      this.login();
-      /*Alert.alert(
-        'Dados',
-        this.state.username + '\n' +
-        this.state.password
-      );*/
+      //this.login();
+      const token_falso = {
+        matricula: this.state.matricula,
+        senha: this.state.password
+      };
+      this.props.setCurrentUser(token_falso);
+      this.resetNavigation('initial')
+
     }
   }
 
   login(){
     axios.post('http://localhost:3000/auth/users', {
-      username: this.state.username,
-      password: this.state.password
+      matricula: this.state.matricula, password: this.state.password
     })
-      .then((ameixa) => {
-        return this.props.navigation.navigate('users');
-      })
+      .then((response) => {
+        this.props.setCurrentUser(response.data.token, response.data.id);
+        this.resetNavigation('initial') })
       .catch((error) => {
         if (error.response) {
           Alert.alert(
@@ -98,11 +109,12 @@ class LoginScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <ScrollView>
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
-          placeholder='Usuário'
-          onChangeText={(text) => this.setState({username: text})}
+          placeholder='Matrícula'
+          onChangeText={(text) => this.setState({matricula: text})}
         />
 
         <AGRInput
@@ -117,9 +129,30 @@ class LoginScreen extends React.Component {
           onPress={this._onPressButton.bind(this)}
           text="Entrar"
         />
+        </ScrollView>
       </View>
     );
   }
 }
 
-export default LoginScreen;
+
+
+const mapStateToProps = (state) => {
+  return{
+    currentUser:state.currentUser
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setCurrentUser: (api_token, api_id) => {
+      const currentUser = {
+        token: api_token,
+        id: api_id
+      };
+      return dispatch(actionLogin(currentUser));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);

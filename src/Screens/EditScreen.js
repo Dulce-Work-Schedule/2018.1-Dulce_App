@@ -1,7 +1,9 @@
 import React from 'react';
-import {View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
+import {View, TextInput, Text, TouchableHighlight, Image, ScrollView} from 'react-native';
 import AGRButton from '../Components/AGRButton';
+import AGRInput from '../Components/AGRInput';
 import ValidationComponent from 'react-native-form-validator';
+import SmallLogo from '../Components/SmallLogo';
 const logo = require('../../assets/img/logo.png');
 const styles = {
   container: {
@@ -70,33 +72,34 @@ export default class EditScreen extends ValidationComponent {
   render() {
     return (
       <View style={styles.container}>
-        <Image source = {logo}/>
-        <TextInput style={styles.input } Textvalue = {this.state.Textvalue}
+      <SmallLogo />
+      <ScrollView>
+        <AGRInput Textvalue = {this.state.Textvalue}
           placeholder='Nome'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             nome: text})}
         />
         {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <TextInput style={styles.input}
+        <AGRInput
           placeholder='Matricula'
           editable = {false}
         />
-        <TextInput style={styles.input}
+        <AGRInput
           placeholder='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             hospital: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <TextInput style={styles.input}
+        <AGRInput
           placeholder='Setor'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             setor: text})}
         />
         {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <TextInput style={styles.input}
+        <AGRInput
           placeholder='Editar senha'
           editable = {this.state.editable}
           secureTextEntry
@@ -116,6 +119,7 @@ export default class EditScreen extends ValidationComponent {
             <Text>Salvar</Text>
           </TouchableHighlight>
         </View>
+        </ScrollView>
       </View>
     );
   }
