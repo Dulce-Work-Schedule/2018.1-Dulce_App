@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Button, FlatList, ScrollView} from 'react-native';
+import {View, Text, Button, FlatList, ScrollView, Alert} from 'react-native';
 import UserItem from '../Components/UserItem';
 import axios from 'axios';
 
@@ -26,12 +26,18 @@ class ListScreen extends React.Component {
   }
 
   componentDidMount(){
-    const fetch = require('isomorphic-fetch')
-    const url = 'https://jsonplaceholder.typicode.com/users'
+    const url = 'http://172.17.0.1:8080/user/all'
     this.setState({loading: true});
-    axios.get(url)
-    .then((response) => {this.setState({employees: response.data, loading: false});})
-  };
+    axios.get(url, {
+      headers: {
+        'x-access-token': this.props.navigation.state.params.token
+      }
+    })
+    .then((response) => {
+      this.setState({employees: response.data, loading: false});
+  })
+    .catch(() => {Alert.alert('ERRO')});
+  }
 
   render (){
     return (
@@ -42,9 +48,9 @@ class ListScreen extends React.Component {
         ) : (
           <FlatList
             data = {this.state.employees}
-            keyExtractor = {(item) => {return item.id.toString();}}
+            keyExtractor = {(item) => {return item._id.toString();}}
             renderItem={(data) =>{return <UserItem text={data.item.name}
-            onPress={()=> this.props.navigation.navigate('profile', {userId: data.item.id})}
+            onPress={()=> this.props.navigation.navigate('profile', {userId: data.item._id, token: this.props.navigation.state.params.token})}
               />
 
               }}
