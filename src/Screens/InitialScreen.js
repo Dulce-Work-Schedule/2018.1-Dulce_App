@@ -52,39 +52,23 @@ class InitialScreen extends React.Component {
         return (
             <ScrollView>
               <SmallLogo />
-                <Text style={styles.text}>
-                    Welcome
-                </Text>
+                <Text style={styles.text}> Welcome !! </Text>
                 <View/>
-                <AGRButton
-                  onPress={() => this.props.navigation.navigate('profile')}
-                  text="Perfil"
-                />
-                <AGRButton
-                  onPress={() => this.props.navigation.navigate('edit')}
-                  text="Editar Perfil"
-                />
-                <AGRButton
-                  onPress={() => this.props.navigation.navigate('list')}
-                  text="Ver médicos"
-                />
-                <AGRButton
-                  onPress={() => this.props.navigation.navigate('newManager')}
-                  text="Criar novos gerentes"
-                />
-                <AGRButton
-                  onPress={() => this.props.navigation.navigate('EmployeeProfile')}
-                  text="Employee Profile"
-                />
-                <AGRButton
-                  onPress={() => this.props.navigation.navigate('ProfileManager')}
-                  text="Perfil gestor"
-                />
-                <AGRButton
-                   style={styles.lastButton}
+                <AGRButton onPress={() => this.props.navigation.navigate('profile')}
+                  text="Perfil"/>
+                <AGRButton onPress={() => this.props.navigation.navigate('edit')}
+                  text="Editar Perfil"/>
+                <AGRButton onPress={() => this.props.navigation.navigate('list')}
+                  text="Ver médicos"/>
+                <AGRButton onPress={() => this.props.navigation.navigate('newManager')}
+                  text="Criar novos gerentes"/>
+                <AGRButton onPress={() => this.props.navigation.navigate('EmployeeProfile')}
+                  text="Employee Profile"/>
+                <AGRButton onPress={() => this.props.navigation.navigate('ProfileManager')}
+                  text="Perfil gestor"/>
+                <AGRButton style={styles.lastButton}
                   onPress={() => this._onPressLogout()}
-                  text="Logout"
-                />
+                  text="Logout"/>
               </ScrollView>
             );
         }
