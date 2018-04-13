@@ -36,7 +36,7 @@ const styles = {
   }
 };
 
-class LoginScreen extends React.Component {
+export class LoginScreen extends React.Component {
 
   constructor(props) {
     super(props);
