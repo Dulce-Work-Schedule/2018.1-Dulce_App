@@ -1,5 +1,5 @@
 import React from 'react';
-import {TouchableHighlight, Alert, Text, View} from 'react-native';
+import {TouchableHighlight,Text,View} from 'react-native';
 
 const styles = {
   container: {
