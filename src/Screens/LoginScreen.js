@@ -42,7 +42,7 @@ export class LoginScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      matricula: '',
+      registration: '',
       password: ''
     };
   }
@@ -58,52 +58,25 @@ export class LoginScreen extends React.Component {
   }
 
   _onPressButton() {
-    if (this.state.password === '' || this.state.matricula === '') {
+    if (this.state.password === '' || this.state.registration === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
         'Para entrar preencha corretamente os campos de matrícula e senha.'
       );
-    } else if (this.state.password.length < 6) {
-      Alert.alert(
-        'Sua senha é muito curta',
-        'A senha deve ter no minimo 6 caracteres.'
-      );
-    } else {
-      //this.login();
-      const token_falso = {
-        matricula: this.state.matricula,
-        senha: this.state.password
-      };
-      this.props.setCurrentUser(token_falso);
-      this.resetNavigation('initial')
 
+    } else {
+      this.login();
     }
   }
 
   login(){
-    axios.post('http://localhost:3000/auth/users', {
-      matricula: this.state.matricula, password: this.state.password
+    axios.post('http://172.17.0.1:8080/user/login', {
+      registration: this.state.registration,
+      password: this.state.password
     })
       .then((response) => {
-        this.props.setCurrentUser(response.data.token, response.data.id);
-        this.resetNavigation('initial') })
-      .catch((error) => {
-        if (error.response) {
-          Alert.alert(
-            'Erro 1'
-          );
-          console.log(error.response);
-        } else if (error.request) {
-          Alert.alert(
-            'Erro 2'
-          );
-          console.log(error.request);
-        } else {
-          Alert.alert(
-            'Erro 3'
-          );
-          console.log(error.messege);
-        }
+       const token = response.data.token;
+       this.props.navigation.navigate('list', {token: token});
       })
   }
   render() {
@@ -113,8 +86,8 @@ export class LoginScreen extends React.Component {
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
-          placeholder='Matrícula'
-          onChangeText={(text) => this.setState({matricula: text})}
+          placeholder='Matricula'
+          onChangeText={(text) => this.setState({registration: text})}
         />
 
         <AGRInput
