@@ -64,9 +64,14 @@ export default class EditScreen extends ValidationComponent {
     });
   }
   salvar() {
-    this.setState({
-      editable: false
-    });
+    axios.post('http://172.17.0.1:8080/user/edit/' + this.props.navigation.state.params.userId , {
+      registration: this.state.registration,
+      password: this.state.password
+    })
+      .then((response) => {
+       const token = response.data.token;
+       this.props.navigation.navigate('list', {token: token});
+      })
   }
 
   render() {
