@@ -39,9 +39,18 @@ class EmployeeProfileScreen extends React.Component{
   }
 
   componentDidMount(){
-    const url = 'https://jsonplaceholder.typicode.com/users';
+
     this.setState({loading: true});
-    axios.get(url)
+
+    const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
+
+    axios.get(url,{
+
+      headers: {
+        'x-access-token': this.props.navigation.state.params.token
+      }
+
+    })
     .then((response) => {this.setState({employee: response.data,loading: false});})
   }
 
