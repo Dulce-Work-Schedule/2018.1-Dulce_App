@@ -11,6 +11,7 @@ import SmallLogo from '../Components/SmallLogo';
 import { connect } from 'react-redux';
 import { actionLogout } from '../Actions/currentUser';
 import store from '../Reducers/store';
+import { NavigationActions } from 'react-navigation';
 
 
 
@@ -33,19 +34,19 @@ class InitialScreen extends React.Component {
     }
   }
 
-  checkLogin(){
-    if(store.currentUser !== {}){
-      this.setState({
-        logged:true
-      });
-    } else {
-      this.props.navigation.navigate('login');
-    }
-  }
-
   _onPressLogout() {
     this.props.removeUser();
-    this.props.navigation.navigate('login');
+    this.resetNavigation('login')
+  }
+
+  resetNavigation(targetRoute) {
+    const resetAction = NavigationActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({ routeName: targetRoute }),
+      ],
+    });
+    this.props.navigation.dispatch(resetAction);
   }
 
     render() {

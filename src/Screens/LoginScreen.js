@@ -6,6 +6,7 @@ import AGRInput from '../Components/AGRInput';
 import BotaoTransparente from '../Components/BotaoTransparente';
 import axios from 'axios';
 import { actionLogin } from '../Actions/currentUser';
+import { NavigationActions } from 'react-navigation';
 
 const logo = require('../../assets/img/logo.png');
 
@@ -46,6 +47,15 @@ export class LoginScreen extends React.Component {
     };
   }
 
+  resetNavigation(targetRoute) {
+    const resetAction = NavigationActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({ routeName: targetRoute }),
+      ],
+    });
+    this.props.navigation.dispatch(resetAction);
+  }
 
   _onPressButton() {
     if (this.state.password === '' || this.state.matricula === '') {
@@ -65,7 +75,7 @@ export class LoginScreen extends React.Component {
         senha: this.state.password
       };
       this.props.setCurrentUser(token_falso);
-      this.props.navigation.navigate('initial');
+      this.resetNavigation('initial')
 
     }
   }
@@ -75,8 +85,8 @@ export class LoginScreen extends React.Component {
       matricula: this.state.matricula, password: this.state.password
     })
       .then((response) => {
-        this.props.setCurrentUser(response.data);
-        this.props.navigation.navigate('initial'); })
+        this.props.setCurrentUser(response.data.token, response.data.id);
+        this.resetNavigation('initial') })
       .catch((error) => {
         if (error.response) {
           Alert.alert(
@@ -135,9 +145,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setCurrentUser: (value) => {
+    setCurrentUser: (api_token, api_id) => {
       const currentUser = {
-        token: value
+        token: api_token,
+        id: api_id
       };
       return dispatch(actionLogin(currentUser));
     }
