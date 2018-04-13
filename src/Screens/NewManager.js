@@ -97,52 +97,25 @@ export default class NewManager extends ValidationComponent {
       <View style={styles.container}>
         <SmallLogo/>
         <ScrollView>
-          <AGRInput
-            ref='nome'
-            placeholder='Nome Completo'
-            underlineColorAndroid='transparent'
-            onChangeText={(text) => this.setState({nome: text})}
-          />
+          <AGRInput ref='nome' placeholder='Nome Completo' underlineColorAndroid='transparent'
+            onChangeText={(text) => this.setState({nome: text})} />
           {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <AGRInput
-            ref='matricula'
-            placeholder='Matrícula'
-            underlineColorAndroid='transparent'
-            onChangeText={(text) => this.setState({matricula: text})}
-          />
+          <AGRInput ref='matricula' placeholder='Matrícula' underlineColorAndroid='transparent'
+            onChangeText={(text) => this.setState({matricula: text})} />
           {this.isFieldInError('matricula') && this.getErrorsInField('matricula').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <AGRInput
-            ref='hospital'
-            placeholder='Hospital'
-            underlineColorAndroid='transparent'
-            onChangeText={(text) => this.setState({hospital: text})}
-          />
+          <AGRInput ref='hospital' placeholder='Hospital' underlineColorAndroid='transparent'
+            onChangeText={(text) => this.setState({hospital: text})} />
           {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput
-            ref='setor'
-            placeholder='Setor'
-            underlineColorAndroid='transparent'
-            onChangeText={(text) => this.setState({setor: text})}
-          />
+          <AGRInput ref='setor'placeholder='Setor'underlineColorAndroid='transparent'
+          onChangeText={(text) => this.setState({setor: text})} />
           {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput
-            ref='senha'
-            placeholder='Senha'
-            underlineColorAndroid='transparent'
-            secureTextEntry
-            onChangeText={(text) => this.setState({senha: text})}
-          />
+          <AGRInput ref='senha' placeholder='Senha'underlineColorAndroid='transparent'
+          secureTextEntry onChangeText={(text) => this.setState({senha: text})} />
           {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput ref='confirmaSenha'
-            placeholder='Confirme sua senha'
-            underlineColorAndroid='transparent'
-            secureTextEntry
-            onChangeText={(text) => this.setState({confirmaSenha: text})}
-          />
+          <AGRInput ref='confirmaSenha' placeholder='Confirme sua senha' underlineColorAndroid='transparent'
+            secureTextEntry onChangeText={(text) => this.setState({confirmaSenha: text})} />
           {this.isFieldInError('confirmaSenha') && this.getErrorsInField('confirmaSenha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <AGRButton style={styles.button} text='Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
-      </View>
-    );
-  }
+      </View> );}
 }

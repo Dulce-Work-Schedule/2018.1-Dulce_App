@@ -72,13 +72,11 @@ class LoginScreen extends React.Component {
 
   login(){
     axios.post('http://localhost:3000/auth/users', {
-      matricula: this.state.matricula,
-      password: this.state.password
+      matricula: this.state.matricula, password: this.state.password
     })
       .then((response) => {
         this.props.setCurrentUser(response.data);
-        this.props.navigation.navigate('initial');
-      })
+        this.props.navigation.navigate('initial'); })
       .catch((error) => {
         if (error.response) {
           Alert.alert(
