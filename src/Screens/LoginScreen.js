@@ -75,8 +75,8 @@ export class LoginScreen extends React.Component {
       password: this.state.password
     })
       .then((response) => {
-       const token = response.data.token;
-       this.props.navigation.navigate('list', {token: token});
+       this.props.setCurrentUser(response.data.token, response.data.id);
+       this.props.navigation.navigate('list');
       })
       .catch((err) => {
         console.log(err);
