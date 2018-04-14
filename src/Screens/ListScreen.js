@@ -3,6 +3,7 @@ import {Text, FlatList, ScrollView, Alert} from 'react-native';
 import UserItem from '../Components/UserItem';
 import axios from 'axios';
 import store from '../Reducers/store';
+import { Container, Header, Content, Spinner } from 'native-base';
 
 
 const styles = {
@@ -46,7 +47,13 @@ class ListScreen extends React.Component {
       <ScrollView contentContainerStyle={styles.container}>
       {
         this.state.loading ? (
-          <Text style={styles.text}>Carregando...</Text>
+
+              <Container>
+                <Content>
+              <Spinner color='blue' />
+              </Content>
+              </Container>
+
         ) : (
           <FlatList
             data = {this.state.employees}
