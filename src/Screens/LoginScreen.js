@@ -76,7 +76,13 @@ export class LoginScreen extends React.Component {
     })
       .then((response) => {
        const token = response.data.token;
+       const message = response.data.message;
+       Alert.alert(message);
        this.props.navigation.navigate('list', {token: token});
+      })
+      .catch((err) => {
+        console.log(err);
+        Alert.alert('Erro!', err.response.data.message);
       })
   }
   render() {
