@@ -20,12 +20,14 @@ class BotaoTransparente extends React.Component {
   }
   render() {
     return (
-      <TouchableHighlight
+      <Container>
         style={styles.container}
-        onPress={() => this.props.onPress()}
-      >
-        <Text style={styles.text}>{this.props.text}</Text>
-      </TouchableHighlight>
+        <Content>
+          <Button transparent onPress={() => this.props.onPress()}>
+            <Text>Light style={styles.text}>{this.props.text}</Text>
+          </Button>
+        </Content>
+     </Container>
     );
   }
 }
