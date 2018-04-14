@@ -80,32 +80,32 @@ export default class EditScreen extends ValidationComponent {
       <SmallLogo />
       <ScrollView>
         <AGRInput Textvalue = {this.state.Textvalue}
-          placeholder='Nome'
+          placeholder ='Nome'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             nome: text})}
         />
         {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <AGRInput
-          placeholder='Matricula'
+          placeholder ='Matricula'
           editable = {false}
         />
         <AGRInput
-          placeholder='Hospital'
+          namelabel ='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             hospital: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <AGRInput
-          placeholder='Setor'
+          namelabel ='Setor'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             setor: text})}
         />
         {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <AGRInput
-          placeholder='Editar senha'
+          namelabel ='Editar senha'
           editable = {this.state.editable}
           secureTextEntry
           onChangeText={(text) => this.setState({

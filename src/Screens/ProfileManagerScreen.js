@@ -37,7 +37,7 @@ class ProfileManagerScreen extends React.Component {
     };
   }
 
-  componentDidMount() { 
+  componentDidMount() {
     this.setState({loading: true});
 
     const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id;

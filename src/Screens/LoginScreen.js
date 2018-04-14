@@ -90,12 +90,12 @@ export class LoginScreen extends React.Component {
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
-          placeholder='Matricula'
-          onChangeText={(text) => this.setState({registration: text})}
+          namelabel ='Matrícula'
+          onChangeText={(text) => this.setState({matricula: text})}
         />
 
         <AGRInput
-          placeholder='Senha'
+          namelabel ='Senha'
           secureTextEntry
           onChangeText={(text) => {
             return this.setState({ password: text });
