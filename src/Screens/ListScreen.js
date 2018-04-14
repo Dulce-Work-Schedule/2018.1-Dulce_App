@@ -50,7 +50,7 @@ class ListScreen extends React.Component {
 
               <Container>
                 <Content>
-              <Spinner color='blue' />
+              <Spinner color='purple'/>
               </Content>
               </Container>
 

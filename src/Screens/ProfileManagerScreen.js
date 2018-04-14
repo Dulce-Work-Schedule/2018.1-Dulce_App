@@ -3,6 +3,7 @@ import {View , Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
 import store from '../Reducers/store';
+import { Container, Header, Content, Spinner } from 'native-base';
 
 
 const styles = {
@@ -56,7 +57,14 @@ class ProfileManagerScreen extends React.Component {
     return (
       <View style={styles.container}>
       {
-        this.state.loading ? (<Text style={styles.text}>Carregando...</Text>) : (
+        this.state.loading ? (
+        <Container>
+          <Content>
+        <Spinner color='purple'/>
+        </Content>
+        </Container>
+
+      ) : (
           <View style={styles.informacoes}>
           <Text style={styles.name}>{this.state.profile.name}</Text>
           <Text style={styles.text}>Matriula:</Text>
