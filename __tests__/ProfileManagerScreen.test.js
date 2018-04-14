@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<ProfileManagerScreen />)
+  .create(ProfileManagerScreen )
   .toJSON();
   expect(tree).toMatchSnapshot();
 });
