@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(EmployeeProfileScreen )
+  .create(<EmployeeProfileScreen />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });
