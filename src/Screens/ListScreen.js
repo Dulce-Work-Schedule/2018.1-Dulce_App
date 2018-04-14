@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Button, FlatList, ScrollView, Alert} from 'react-native';
+import {Text, FlatList, ScrollView, Alert} from 'react-native';
 import UserItem from '../Components/UserItem';
 import axios from 'axios';
 
@@ -7,7 +7,7 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 15,
+    padding: 15
   },
   text: {
     fontSize: 48,
@@ -17,16 +17,16 @@ const styles = {
 
 class ListScreen extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       employees: [],
       loading: true
-    }
+    };
   }
 
-  componentDidMount(){
-    const url = 'http://172.17.0.1:8080/user/all'
+  componentDidMount() {
+    const url = 'http://172.17.0.1:8080/user/all';
     this.setState({loading: true});
     axios.get(url, {
       headers: {
@@ -35,11 +35,11 @@ class ListScreen extends React.Component {
     })
     .then((response) => {
       this.setState({employees: response.data, loading: false});
-  })
-    .catch(() => {Alert.alert('ERRO')});
+    })
+    .catch(() => {Alert.alert('ERRO');});
   }
 
-  render (){
+  render() {
     return (
       <ScrollView contentContainerStyle={styles.container}>
       {
@@ -49,11 +49,11 @@ class ListScreen extends React.Component {
           <FlatList
             data = {this.state.employees}
             keyExtractor = {(item) => {return item._id.toString();}}
-            renderItem={(data) =>{return <UserItem text={data.item.name}
-            onPress={()=> this.props.navigation.navigate('profile', {userId: data.item._id, token: this.props.navigation.state.params.token})}
-              />
+            renderItem={(data) => {return <UserItem text={data.item.name}
+            onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id, token: this.props.navigation.state.params.token})}
+              />;
 
-              }}
+            }}
             />
           )
         }
