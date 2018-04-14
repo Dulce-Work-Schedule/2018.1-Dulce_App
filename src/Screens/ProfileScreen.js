@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import ScaleIcon from '../Components/ScaleIcon';
 import axios from 'axios';
+import store from '../Reducers/store';
 
 const styles = {
   text: {
@@ -30,10 +31,11 @@ class ProfileScreen extends React.Component {
 
     const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
 
+
     axios.get(url,{
 
       headers: {
-        'x-access-token': this.props.navigation.state.params.token
+        'x-access-token': store.getState().currentUser.token
       }
 
     })
