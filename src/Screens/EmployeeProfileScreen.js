@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
+import store from '../Reducers/store';
 const styles = {
 
   container: {
@@ -40,12 +41,12 @@ export class EmployeeProfileScreen extends React.Component {
 
   componentDidMount() {
 
-    const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
+    const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id ;
 
     axios.get(url, {
 
       headers: {
-        'x-access-token': this.props.navigation.state.params.token
+        'x-access-token': store.getState().currentUser.token
       }
 
     })
