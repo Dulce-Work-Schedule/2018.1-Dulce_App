@@ -50,7 +50,7 @@ class ListScreen extends React.Component {
             data = {this.state.employees}
             keyExtractor = {(item) => {return item._id.toString();}}
             renderItem={(data) =>{return <UserItem text={data.item.name}
-            onPress={()=> this.props.navigation.navigate('Profile', {userId: data.item._id, token: this.props.navigation.state.params.token})}
+            onPress={()=> this.props.navigation.navigate('profile', {userId: data.item._id, token: this.props.navigation.state.params.token})}
               />
 
               }}
