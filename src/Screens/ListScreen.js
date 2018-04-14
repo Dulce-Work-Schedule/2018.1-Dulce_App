@@ -2,6 +2,8 @@ import React from 'react';
 import {Text, FlatList, ScrollView, Alert} from 'react-native';
 import UserItem from '../Components/UserItem';
 import axios from 'axios';
+import store from '../Reducers/store';
+
 
 const styles = {
   container: {
@@ -30,7 +32,7 @@ class ListScreen extends React.Component {
     this.setState({loading: true});
     axios.get(url, {
       headers: {
-        'x-access-token': this.props.navigation.state.params.token
+        'x-access-token': store.getState().currentUser.token
       }
     })
     .then((response) => {
@@ -50,7 +52,7 @@ class ListScreen extends React.Component {
             data = {this.state.employees}
             keyExtractor = {(item) => {return item._id.toString();}}
             renderItem={(data) => {return <UserItem text={data.item.name}
-            onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id, token: this.props.navigation.state.params.token})}
+            onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})}
               />;
 
             }}
