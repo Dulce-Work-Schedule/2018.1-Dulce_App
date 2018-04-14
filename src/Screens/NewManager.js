@@ -6,9 +6,6 @@ import SmallLogo from '../Components/SmallLogo';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';
 
-
-
-
 const logo = require('../../assets/img/logo.png');
 
 const styles = {
@@ -87,7 +84,7 @@ newManager(){
     })
       .then((response) => {
        const token = response.data.token;
-       this.props.navigation.navigate('login', {token: token});
+       this.props.navigation.navigate('login');
       })
 }
 
