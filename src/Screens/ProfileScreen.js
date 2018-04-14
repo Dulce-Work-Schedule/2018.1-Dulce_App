@@ -1,6 +1,8 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import ScaleIcon from '../Components/ScaleIcon';
+import axios from 'axios';
+import store from '../Reducers/store';
 
 const styles = {
   text: {
@@ -27,22 +29,28 @@ class ProfileScreen extends React.Component {
   componentDidMount(){
     this.setState({loading: true});
 
-    const url = 'https://jsonplaceholder.typicode.com/users/' + this.props.navigation.state.params.userId;
+    const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
 
-    fetch(url)
 
-    .then((response) => {return response.json();})
-    .then((json) => {this.setState({collaborator: json,loading: false});})
+    axios.get(url,{
+
+      headers: {
+        'x-access-token': store.getState().currentUser.token
+      }
+
+    })
+
+    .then((response) => {this.setState({collaborator: response.data,loading: false});})
 }
     render() {
       return this.state.loading ? (<View />) : (
 
         <View style = {{ flex: 1 }}>
         <Text style = {styles.text}>Nome: {this.state.collaborator.name}</Text>
-        <Text style = {styles.text}>CRM/Matricula: {this.state.collaborator.address.geo.lng}</Text>
-        <Text style = {styles.text}>Setor: {this.state.collaborator.address.suite}</Text>
-        <Text style = {styles.text}>Especialidade: {this.state.collaborator.address.city}</Text>
-        <Text style = {styles.text}>Hospital: {this.state.collaborator.address.city}</Text>
+        <Text style = {styles.text}>Matrícula: {this.state.collaborator.registration}</Text>
+        <Text style = {styles.text}>Hospital: {this.state.collaborator.hospital}</Text>
+        <Text style = {styles.text}>Setor: {this.state.collaborator.sector}</Text>
+
 
           <View style = {styles.icon}>
             <ScaleIcon onPress = {() => null} />

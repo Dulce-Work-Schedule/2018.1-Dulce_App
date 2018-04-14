@@ -1,5 +1,4 @@
 import LoginScreen from '../Screens/LoginScreen';
-import UsersScreen from '../Screens/UsersScreen';
 import NewManager from '../Screens/NewManager';
 import EditScreen from '../Screens/EditScreen';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
@@ -13,13 +12,7 @@ const routes = {
   login: {
     screen: LoginScreen,
     navigationOptions: {
-      header: null
-    }
-  },
-  initial : {
-    screen: InitialScreen,
-    navigationOptions: {
-      header: null
+        header: null
     }
   },
   list: {
@@ -40,23 +33,16 @@ const routes = {
         title: 'Perfil'
       }
   },
-  list: {
-    screen: ListScreen,
-    navigationOptions: {
-      title: 'Lista'
-    }
-  },
+    initial : {
+      screen: InitialScreen,
+      navigationOptions: {
+          header: null
+      }
+    },
     EmployeeProfile: {
         screen: EmployeeProfileScreen,
 
       },
-
-    users: {
-        screen: UsersScreen,
-        navigationOptions: {
-            title: 'Usuários'
-        }
-    },
     newManager: {
         screen: NewManager,
         navigationOptions: {
