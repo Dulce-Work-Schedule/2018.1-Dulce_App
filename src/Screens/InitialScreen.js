@@ -10,15 +10,14 @@ import { connect } from 'react-redux';
 import { actionLogout } from '../Actions/currentUser';
 import store from '../Reducers/store';
 import { NavigationActions } from 'react-navigation';
-import { Container, Header, Content, Button, Icon, Text } from 'native-base';
-
+import { Container, Header, Content, Button, Text } from 'native-base';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const styles={
     text:{
-      fontSize: 15,
-      marginLeft: 30
-
+      fontSize: 24,
+      marginLeft: 25
     },
     lastButton:{
       marginBottom: 150
@@ -29,15 +28,10 @@ const styles={
       paddingLeft: 5
     },
     btn:{
-      backgroundColor: 'purple',
-      width: 300,
-      height: 50,
-      alignItems: 'center',
-      marginTop: 30,
-      paddingHorizontal: 50,
-      alignSelf: 'center',
-      marginBottom: 0
+      marginBottom: 20,
+      paddingHorizontal: 48
     }
+
 };
 
 
@@ -69,48 +63,42 @@ class InitialScreen extends React.Component {
         return (
             <ScrollView>
               <SmallLogo />
-
-
                 <Container>
                   <Content>
 
-                    <Button style={styles.btn} iconLeft onPress={() => this.props.navigation.navigate('edit')}>
-                      <Image source={require('../../assets/img/editprofile.png')} style = {styles.image}/>
-                      <Text style={styles.text}>Editar Perfil</Text>
-                    </Button>
-
-                    <Button iconLeft style={styles.btn} onPress={() => this.props.navigation.navigate('list')}>
-                      <Image source={require('../../assets/img/list.png')} style = {styles.image}/>
-                      <Text style={styles.text}>Ver médicos</Text>
-                    </Button>
-
-                    <Button iconLeft style={styles.btn}  onPress={() => this.props.navigation.navigate('newManager')}>
-                      <Image source={require('../../assets/img/newManager.png')} style = {styles.image}/>
-                      <Text style={styles.text}>Criar novos gerentes</Text>
-                    </Button>
-
-                    <Button iconLeft style={styles.btn} onPress={() => this.props.navigation.navigate('EmployeeProfile')}>
-                      <Image source={require('../../assets/img/employee.png')} style = {styles.image}/>
-                      <Text style={styles.text}>Employee Profile</Text>
-                    </Button>
-
-                    <Button iconLeft style={styles.btn} onPress={() => this.props.navigation.navigate('ProfileManager')}>
-                      <Image source={require('../../assets/img/profileManager.png')} style = {styles.image}/>
-                      <Text style={styles.text}>Perfil gestor</Text>
-                    </Button>
-
-                    <Button iconLeft style={styles.btn} onPress={() => this._onPressLogout()}>
-                      <Image source={require('../../assets/img/logout.png')} style = {styles.image}/>
-                      <Text style={styles.text}>Logout</Text>
-                    </Button>
-
-
-
-
-
-                  </Content>
-                </Container>
-              </ScrollView>
+                <View style={styles.btn}>
+                <Icon.Button name="edit" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('edit')}>
+                  Editar perfil
+                </Icon.Button>
+                </View>
+                <View style={styles.btn}>
+                <Icon.Button name="users" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('list')}>
+                  Ver médicos
+                </Icon.Button>
+                </View>
+                <View style={styles.btn}>
+                <Icon.Button name="user-plus" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('newManager')}>
+                  Criar novos gerentes
+                </Icon.Button>
+                </View>
+                <View style={styles.btn}>
+                <Icon.Button name="user" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('EmployeeProfile')}>
+                  Employee Profile
+                </Icon.Button>
+                </View>
+                <View style={styles.btn}>
+                <Icon.Button name="user-o" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('ProfileManager')}>
+                  Perfil gestor
+                </Icon.Button>
+                </View>
+                <View style={styles.btn}>
+                <Icon.Button name="sign-out" style={styles.text} backgroundColor="purple" onPress={() => this._onPressLogout()}>
+                  Logout
+                  </Icon.Button>
+                </View>
+                </Content>
+              </Container>
+          </ScrollView>
             );
 
 }
