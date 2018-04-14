@@ -22,7 +22,7 @@ class AGRInput extends React.Component {
     return (
       <Form>
         <Item floatingLabel>
-          <Label>{this.props.namelabel}</Label>
+          <Label>{this.props.nameLabel}</Label>
         <Input style={styles.textInput} underlineColorAndroid="transparent"
         {...this.props} />
         </Item>
