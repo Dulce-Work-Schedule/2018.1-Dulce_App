@@ -9,12 +9,12 @@ const styles = {
     flex: 1,
     flexDirection: 'column',
     padding: 50 ,
-    backgroundColor: '#FFF',
+    backgroundColor: '#FFF'
 
   },
   text: {
-    fontSize:30,
-    marginBottom:15,
+    fontSize: 30,
+    marginBottom: 15,
     alignSelf: 'center'
   },
   name: {
@@ -28,30 +28,38 @@ const styles = {
 }
 
 class ProfileManagerScreen extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       profile: [],
       loading: true
-    }
+    };
   }
 
-  componentDidMount(){
-    const url = 'https://jsonplaceholder.typicode.com/users';
-    this.setState({ loading: true});
-    axios.get(url)
-    .then((response) => {this.setState({profile: response.data , loading: false});})
+  componentDidMount() { 
+    this.setState({loading: true});
+
+    const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
+
+    axios.get(url,{
+
+      headers: {
+        'x-access-token': this.props.navigation.state.params.token
+      }
+
+    })
+    .then((response) => {this.setState({profile: response.data , loading: false});});
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <View style={styles.container}>
       {
         this.state.loading ? (<Text style={styles.text}>Carregando...</Text>) : (
           <View style={styles.informacoes}>
-          <Text style={styles.name}>{this.state.profile[0].name}</Text>
+          <Text style={styles.name}>{this.state.profile.name}</Text>
           <Text style={styles.text}>Matriula:</Text>
-          <Text style={styles.text}>{this.state.profile[0].address.zipcode}</Text>
+          <Text style={styles.text}>{this.state.profile.registration}</Text>
           <Text style={styles.text}>Setor: Pediatria</Text>
           <Text style={styles.text}>Hospital do Gama</Text>
          <View style={{marginTop: 60}} />
