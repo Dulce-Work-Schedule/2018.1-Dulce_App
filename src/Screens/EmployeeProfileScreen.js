@@ -35,19 +35,18 @@ export class EmployeeProfileScreen extends React.Component {
     this.state = {
       employee: [],
       loading: true
-
     };
-
   }
   componentDidMount() {
 
-    const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id ;
+    const url = 'http://localhost:8080/api/userManager/listById' + store.getState().currentUser.id ;
+    this.setState({loading: true});
+
     axios.get(url, {
 
       headers: {
         'x-access-token': store.getState().currentUser.token
       }
-
     })
       .then((response) => { this.setState({employee: response.data, loading: false});});
   }
@@ -68,15 +67,11 @@ export class EmployeeProfileScreen extends React.Component {
                 text='editar'
                 onPress={() => this.props.navigation.navigate('edit')} />
             </View>
-
           )
-
         }
       </View>
     );
-
   }
-
 }
 
 export default EmployeeProfileScreen;

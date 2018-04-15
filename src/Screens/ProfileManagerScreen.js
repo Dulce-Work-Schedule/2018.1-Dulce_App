@@ -32,7 +32,7 @@ class ProfileManagerScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: {},
+      profile: [],
       loading: true
     };
   }
@@ -40,7 +40,7 @@ class ProfileManagerScreen extends React.Component {
   componentDidMount() {
     this.setState({loading: true});
 
-    const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id;
+    const url = 'http://localhost:8080/api/userManager/listById' + store.getState().currentUser.id;
 
     axios.get(url,{
 
@@ -55,25 +55,25 @@ class ProfileManagerScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        {
-          this.state.loading ? (
-            <Container>
-              <Content>
-                <Spinner color='purple'/>
-              </Content>
-            </Container>
-          ) : (
-            <View style={styles.informacoes}>
-              <Text style={styles.name}>{this.state.profile.name}</Text>
-              <Text style={styles.text}>Matriula:</Text>
-              <Text style={styles.text}>{this.state.profile.registration}</Text>
-              <Text style={styles.text}>Setor: Pediatria</Text>
-              <Text style={styles.text}>Hospital do Gama</Text>
-              <View style={{marginTop: 60}} />
-              <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
-            </View>
-          )
-        }
+      {
+        this.state.loading ? (
+        <Container>
+          <Content>
+        <Spinner color='purple'/>
+        </Content>
+        </Container>
+      ) : (
+          <View style={styles.informacoes}>
+          <Text style={styles.name}>{this.state.profile.name}</Text>
+          <Text style={styles.text}>Matriula:</Text>
+          <Text style={styles.text}>{this.state.profile.registration}</Text>
+          <Text style={styles.text}>Setor: Pediatria</Text>
+          <Text style={styles.text}>Hospital do Gama</Text>
+         <View style={{marginTop: 60}} />
+          <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
+    </View>
+        )
+      }
       </View>
     );
   }

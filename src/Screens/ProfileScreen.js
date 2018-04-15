@@ -29,7 +29,7 @@ class ProfileScreen extends React.Component {
   componentDidMount() {
     this.setState({loading: true});
 
-    const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
+    const url = 'http://localhost:8080/api/userManager/listById' + this.props.navigation.state.params.userId;
 
     axios.get(url,{
 

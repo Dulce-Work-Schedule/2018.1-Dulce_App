@@ -1,10 +1,12 @@
 import React from 'react';
-import {Text, View, ScrollView} from 'react-native';
+import {Text, View, TextInput, Image, Alert, ScrollView } from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';
+
+const logo = require('../../assets/img/logo.png');
 
 const styles = {
   logo: {
@@ -60,12 +62,13 @@ export default class NewManager extends ValidationComponent {
       confirmepassword: {required: true}
     }) && (this.state.confirmepassword === this.state.password)) {
       this.newManager();
-    }
-  }
+     }
+    };
 
-  newManager() {
 
-    axios.post('http://172.17.0.1:8080/user/add', {
+newManager(){
+
+  axios.post('http://localhost:8080/api/userManager/create', {
       registration: this.state.registration,
       password: this.state.password,
       name: this.state.name,
@@ -74,13 +77,15 @@ export default class NewManager extends ValidationComponent {
       manager: true
     })
       .then((response) => {
-        console.log(response.data);
-        this.props.navigation.navigate('initial');
-      });
-  }
+       const token = response.data.token;
+       this.props.navigation.navigate('initial');
+      })
+}
+
+
 
   confirmepasswordErrado() {
-    if (this.state.confirmepassword !== this.state.password) {
+    if (this.state.confirmepassword != this.state.password) {
       return true;
     } else {
       return false;
@@ -107,5 +112,5 @@ export default class NewManager extends ValidationComponent {
           {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
           <AGRButton text='Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
-      </View>);}
+      </View> );}
 }
