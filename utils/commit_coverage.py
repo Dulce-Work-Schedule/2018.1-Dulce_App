@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 file = "commits.txt"
 
 def turnStringListIntoCommit(commit_string_list=None):
@@ -74,6 +74,8 @@ def getAuthorsFromCommits(commits_list=None):
 
 authors = getAuthorsFromCommits(commits)
 
+authors_no_duplidates = getAuthorsNoDuplicate(authors)
+
 def groupAuthorsByEmail(authors=None):
     pass
 
@@ -120,3 +122,14 @@ print ('Temos {} commits assinados, {} commits de merge e {} não assinados num 
 last_unsigned_commit = lastUnsignedCommit(commits)
 print ('O Último commit não assinado é o commit {} de {} .\n'.format(last_unsigned_commit['id'], last_unsigned_commit['date']))
 print (last_unsigned_commit)
+
+# git log -n 1 $(git rev-list --max-parents=0 HEAD)
+def adsd(commits, authors):
+    for commit in commits:                                                                                                                                                        
+        if(commit['author'] == 'Eliseu Egewarth <eliseuegewarth@gmail.com>' or commit['author'] == 'Eliseu Egewarth <eliseuegewarth@users.noreply.github.com>'):                         
+            list_commits.append(
+                "Date: '{}' Commit: __ {} __ Author: {}".format(
+                    commit['date'], commit['id'][:7], commit['author']
+                )
+            )
+print(list_commits)
