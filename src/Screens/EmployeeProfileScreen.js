@@ -76,16 +76,16 @@ export class EmployeeProfileScreen extends React.Component {
 
 
         )
-
+      }
     axios.get(url, {
 
-      headers: {
+      headers : {
         'x-access-token': store.getState().currentUser.token
       }
 
     })
       .then((response) => { this.setState({employee: response.data, loading: false});});
-  }
+  )}
 
   render() {
     return (

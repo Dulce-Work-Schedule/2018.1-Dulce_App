@@ -63,7 +63,6 @@ class ProfileManagerScreen extends React.Component {
         <Spinner color='purple'/>
         </Content>
         </Container>
-
       ) : (
           <View style={styles.informacoes}>
           <Text style={styles.name}>{this.state.profile.name}</Text>
@@ -72,12 +71,8 @@ class ProfileManagerScreen extends React.Component {
           <Text style={styles.text}>Setor: Pediatria</Text>
           <Text style={styles.text}>Hospital do Gama</Text>
          <View style={{marginTop: 60}} />
-          <AGRButton
-           text='Editar'
-           onPress = {() => this.props.navigation.navigate('edit')}
-           />
-
-          </View>
+          <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
+    </View>
         )
       }
       </View>
