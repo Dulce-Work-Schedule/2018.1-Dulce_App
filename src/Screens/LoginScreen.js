@@ -61,7 +61,7 @@ export class LoginScreen extends React.Component {
     if (this.state.password === '' || this.state.registration === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
-        'Para entrar preencha corretamente os campos de matrícula e senha.'
+        'Para entrar preencha corretamente os campos de matrícula e senha.' + this.state.registration
       );
 
     } else {
@@ -76,7 +76,7 @@ export class LoginScreen extends React.Component {
     })
       .then((response) => {
        this.props.setCurrentUser(response.data.token, response.data.id);
-       this.props.navigation.navigate('list');
+       this.props.navigation.navigate('initial');
       })
       .catch((err) => {
         console.log(err);
@@ -90,15 +90,13 @@ export class LoginScreen extends React.Component {
         <AGRInput
           autoCapitalize='none'
           nameLabel ='Matrícula'
-          onChangeText={(text) => this.setState({matricula: text})}
+          onChangeText={(registration) => this.setState({registration})}
         />
 
         <AGRInput
           nameLabel ='Senha'
           secureTextEntry
-          onChangeText={(text) => {
-            return this.setState({ password: text });
-          }}
+          onChangeText={(password) => this.setState({password})}
         />
 
         <AGRButton
@@ -106,7 +104,9 @@ export class LoginScreen extends React.Component {
           text="Entrar"
         />
       </View>
+
     );
+  
   }
 }
 
@@ -123,7 +123,11 @@ const mapDispatchToProps = (dispatch) => {
     setCurrentUser: (api_token, api_id) => {
       const currentUser = {
         token: api_token,
-        id: api_id
+        id: api_id,
+        name: 'John',
+        registration: '1234',
+        sector: 'Gama',
+        hospital: 'Hospital do Gama'
       };
       return dispatch(actionLogin(currentUser));
     }
