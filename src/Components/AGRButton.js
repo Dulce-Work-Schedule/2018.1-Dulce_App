@@ -1,35 +1,33 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {TouchableHighlight,Text,View} from 'react-native';
+import { Container, Header, Content, Button } from 'native-base';
 
 const styles = {
   container: {
-    backgroundColor: 'grey',
+    backgroundColor: 'purple',
     height: 50,
-    justifyContent: 'center',
     alignItems: 'center',
     marginTop: 30,
-    paddingHorizontal: 50
+    paddingHorizontal: 50,
+    alignSelf: 'center',
+    marginBottom: 0
   },
   text: {
     color: 'white',
-    fontSize: 18
-  },
-  view: {
-    paddingHorizontal: 30
+    fontSize: 20
   }
 };
 
 class AGRButton extends React.Component {
   render() {
     return (
-      <View style={styles.view}>
-      <TouchableHighlight
-        style={styles.container}
-        onPress={() => this.props.onPress()}
-      >
-        <Text style={styles.text}>{this.props.text}</Text>
-      </TouchableHighlight>
-      </View>
+      <Container>
+        <Content>
+          <Button block   style={styles.container} onPress={() => this.props.onPress()}>
+            <Text style={styles.text}>{this.props.text}</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
 }

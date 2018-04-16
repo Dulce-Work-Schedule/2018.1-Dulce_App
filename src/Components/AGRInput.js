@@ -1,9 +1,10 @@
 import React from 'react';
-import { TextInput, View } from 'react-native';
+import { TextInput } from 'react-native';
+import {Container, Content, Text, Input, Item, Form, Label } from 'native-base';
 
 const styles = {
   textInput: {
-    height: 36,
+    height: 40,
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
     marginBottom: 10,
@@ -19,13 +20,13 @@ const styles = {
 class AGRInput extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-      <TextInput
-        style={styles.textInput}
-        underlineColorAndroid="transparent"
-        {...this.props}
-      />
-      </View>
+      <Form>
+        <Item floatingLabel>
+          <Label>{this.props.nameLabel}</Label>
+        <Input style={styles.textInput} underlineColorAndroid="transparent"
+        {...this.props} />
+        </Item>
+      </Form>
     );
   }
 }

@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
     ScrollView,
-    Text,
     View,
-    Button,
     Image
 } from 'react-native';
 import AGRButton from '../Components/AGRButton';
@@ -12,16 +10,28 @@ import { connect } from 'react-redux';
 import { actionLogout } from '../Actions/currentUser';
 import store from '../Reducers/store';
 import { NavigationActions } from 'react-navigation';
-
+import { Container, Header, Content, Button, Text } from 'native-base';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const styles={
     text:{
-      fontSize: 27
+      fontSize: 24,
+      marginLeft: 25
     },
     lastButton:{
       marginBottom: 150
+    },
+    image:{
+      height: 30,
+      width: 30,
+      paddingLeft: 5
+    },
+    btn:{
+      marginBottom: 20,
+      paddingHorizontal: 48
     }
+
 };
 
 
@@ -53,26 +63,22 @@ class InitialScreen extends React.Component {
         return (
             <ScrollView>
               <SmallLogo />
-                <Text style={styles.text}> Welcome !! </Text>
-                <View/>
-                <AGRButton onPress={() => this.props.navigation.navigate('profile')}
-                  text="Perfil"/>
-                <AGRButton onPress={() => this.props.navigation.navigate('edit')}
-                  text="Editar Perfil"/>
-                <AGRButton onPress={() => this.props.navigation.navigate('list')}
-                  text="Ver médicos"/>
-                <AGRButton onPress={() => this.props.navigation.navigate('newManager')}
-                  text="Criar novos gerentes"/>
-                <AGRButton onPress={() => this.props.navigation.navigate('EmployeeProfile')}
-                  text="Employee Profile"/>
-                <AGRButton onPress={() => this.props.navigation.navigate('ProfileManager')}
-                  text="Perfil gestor"/>
-                <AGRButton style={styles.lastButton}
-                  onPress={() => this._onPressLogout()}
-                  text="Logout"/>
-              </ScrollView>
-            );
-        }
+                <Container>
+                  <Content>
+                <View style={styles.btn}>
+                <Icon.Button name="edit" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('edit')}>Editar perfil</Icon.Button></View>
+                <View style={styles.btn}>
+                <Icon.Button name="users" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('list')}>Ver médicos</Icon.Button></View>
+                <View style={styles.btn}>
+                <Icon.Button name="user-plus" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('newManager')}>Criar novos gerentes</Icon.Button></View>
+                <View style={styles.btn}>
+                <Icon.Button name="user" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('EmployeeProfile')}>Employee Profile</Icon.Button></View>
+                <View style={styles.btn}>
+                <Icon.Button name="user-o" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('ProfileManager')}>Perfil gestor</Icon.Button></View>
+                <View style={styles.btn}>
+                <Icon.Button name="sign-out" style={styles.text} backgroundColor="purple" onPress={() => this._onPressLogout()}>Logout</Icon.Button></View></Content></Container></ScrollView>);
+
+}
 }
 
 const mapStateToProps = (state) => {

@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
 import store from '../Reducers/store';
+import { Container, Header, Content, Spinner } from 'native-base';
 const styles = {
 
   container: {
@@ -38,11 +39,10 @@ export class EmployeeProfileScreen extends React.Component {
     };
 
   }
-
   componentDidMount() {
 
     const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id ;
-
+    this.setState({loading: true});
     axios.get(url, {
 
       headers: {
@@ -52,6 +52,8 @@ export class EmployeeProfileScreen extends React.Component {
     })
       .then((response) => { this.setState({employee: response.data, loading: false});});
   }
+
+
 
   render() {
     return (

@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, TextInput, Text, TouchableHighlight, Image, ScrollView} from 'react-native';
+import {View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
-import ValidationComponent from 'react-native-form-validator';
 import SmallLogo from '../Components/SmallLogo';
-const logo = require('../../assets/img/logo.png');
+import ValidationComponent from 'react-native-form-validator';
+
+
 const styles = {
   container: {
     flex: 1,
@@ -14,7 +15,7 @@ const styles = {
     paddingHorizontal: 20
   },
   input: {
-    height: 36,
+    height: 40,
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
     marginBottom: 10,
@@ -41,7 +42,7 @@ export default class EditScreen extends ValidationComponent {
   constructor(props) {
     super(props);
     this.state = {
-      editable: false,
+      editable: true,
       nome: '',
       matricula: '',
       hospital: '',
@@ -58,11 +59,6 @@ export default class EditScreen extends ValidationComponent {
       senha: {minlength: 4, maxlength: 8, required: true}
     })) {}
   }
-  tornarVisivel() {
-    this.setState({
-      editable: !this.state.editable
-    });
-  }
   salvar() {
     axios.post('http://172.17.0.1:8080/user/edit/' + this.props.navigation.state.params.userId , {
       registration: this.state.registration,
@@ -77,35 +73,32 @@ export default class EditScreen extends ValidationComponent {
   render() {
     return (
       <View style={styles.container}>
-      <SmallLogo />
-      <ScrollView>
-        <AGRInput Textvalue = {this.state.Textvalue}
+        <SmallLogo/>
+        <AGRInput style={styles.input } Textvalue = {this.state.Textvalue}
           placeholder='Nome'
+          editable = {false}
+        />
+        {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <AGRInput style={styles.input}
+          placeholder='Matricula'
+          editable = {false}
+        />
+        <AGRInput style={styles.input}
+          nameLabel='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             nome: text})}
         />
-        {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput
-          placeholder='Matricula'
-          editable = {false}
-        />
-        <AGRInput
-          placeholder='Hospital'
-          editable = {this.state.editable}
-          onChangeText={(text) => this.setState({
-            hospital: text})}
-        />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput
-          placeholder='Setor'
+        <AGRInput style={styles.input}
+          nameLabel='Setor'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             setor: text})}
         />
         {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput
-          placeholder='Editar senha'
+        <AGRInput style={styles.input}
+          nameLabel='Editar senha'
           editable = {this.state.editable}
           secureTextEntry
           onChangeText={(text) => this.setState({
@@ -113,18 +106,8 @@ export default class EditScreen extends ValidationComponent {
         />
         {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
-          <TouchableHighlight
-            style= {styles.button}
-            onPress={() => {this.tornarVisivel();}}>
-            <Text>Editar perfil</Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-            style= {styles.button}
-            onPress={() => {[this.salvar(),this._onPressButton()];}}>
-            <Text>Salvar</Text>
-          </TouchableHighlight>
+          <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.salvar(),this._onPressButton()];}}/>
         </View>
-        </ScrollView>
       </View>
     );
   }

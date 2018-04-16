@@ -86,16 +86,15 @@ export class LoginScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView>
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
-          placeholder='Matricula'
-          onChangeText={(text) => this.setState({registration: text})}
+          nameLabel ='Matrícula'
+          onChangeText={(text) => this.setState({matricula: text})}
         />
 
         <AGRInput
-          placeholder='Senha'
+          nameLabel ='Senha'
           secureTextEntry
           onChangeText={(text) => {
             return this.setState({ password: text });
@@ -106,7 +105,6 @@ export class LoginScreen extends React.Component {
           onPress={this._onPressButton.bind(this)}
           text="Entrar"
         />
-        </ScrollView>
       </View>
     );
   }

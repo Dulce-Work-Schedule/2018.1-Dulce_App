@@ -8,7 +8,8 @@ const styles = {
     marginBottom: 20,
     width: 200,
     height: 100,
-    resizeMode: 'contain'
+    resizeMode: 'contain',
+    backgroundColor: 'transparent'
   }
 };
 
