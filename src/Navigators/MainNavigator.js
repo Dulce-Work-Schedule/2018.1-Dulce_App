@@ -27,34 +27,33 @@ const routes = {
       title: ' '
     }
   },
-    ProfileManager: {
-      screen: ProfileManagerScreen,
-      navigationOptions: {
-        title: 'Perfil'
-      }
-  },
-    initial : {
-      screen: InitialScreen,
-      navigationOptions: {
-          header: null
-      }
-    },
-    EmployeeProfile: {
-        screen: EmployeeProfileScreen,
-
-      },
-    newManager: {
-        screen: NewManager,
-        navigationOptions: {
-            title: 'Crie sua conta'
-        }
-    },
-      edit: {
-        screen: EditScreen,
-        navigationOptions: {
-            title: 'Editar'
-        }
+  ProfileManager: {
+    screen: ProfileManagerScreen,
+    navigationOptions: {
+      title: 'Perfil'
     }
+  },
+  initial : {
+    screen: InitialScreen,
+    navigationOptions: {
+      header: null
+    }
+  },
+  EmployeeProfile: {
+    screen: EmployeeProfileScreen,
+  },
+  newManager: {
+    screen: NewManager,
+    navigationOptions: {
+      title: 'Crie sua conta'
+    }
+  },
+  edit: {
+      screen: EditScreen,
+      navigationOptions: {
+          title: 'Editar'
+      }
+  }
 };
 
 const config = {};
