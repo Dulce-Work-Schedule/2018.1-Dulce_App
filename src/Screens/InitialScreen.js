@@ -16,7 +16,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const styles={
     text:{
-      fontSize: 24,
       marginLeft: 25
     },
     lastButton:{
@@ -59,26 +58,27 @@ class InitialScreen extends React.Component {
     this.props.navigation.dispatch(resetAction);
   }
 
-    render() {
-        return (
-            <ScrollView>
-              <SmallLogo />
-                <Container>
-                  <Content>
-                <View style={styles.btn}>
-                <Icon.Button name="edit" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('edit')}>Editar perfil</Icon.Button></View>
-                <View style={styles.btn}>
-                <Icon.Button name="users" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('list')}>Ver médicos</Icon.Button></View>
-                <View style={styles.btn}>
-                <Icon.Button name="user-plus" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('newManager')}>Criar novos gerentes</Icon.Button></View>
-                <View style={styles.btn}>
-                <Icon.Button name="user" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('EmployeeProfile')}>Employee Profile</Icon.Button></View>
-                <View style={styles.btn}>
-                <Icon.Button name="user-o" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('ProfileManager')}>Perfil gestor</Icon.Button></View>
-                <View style={styles.btn}>
-                <Icon.Button name="sign-out" style={styles.text} backgroundColor="purple" onPress={() => this._onPressLogout()}>Logout</Icon.Button></View></Content></Container></ScrollView>);
-
-}
+  render() {
+    return (
+      <ScrollView>
+        <SmallLogo />
+        <Container>
+          <Content>
+            <View style={styles.btn}>
+            <Icon.Button name="edit" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('edit')}>Editar perfil</Icon.Button></View>
+            <View style={styles.btn}>
+            <Icon.Button name="users" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('list')}>Ver médicos</Icon.Button></View>
+            <View style={styles.btn}>
+            <Icon.Button name="user-plus" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('newManager')}>Criar novos gestores</Icon.Button></View>
+            <View style={styles.btn}>
+            <Icon.Button name="user-o" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('ProfileManager')}>Perfil gestor</Icon.Button></View>
+            <View style={styles.btn}>
+            <Icon.Button name="sign-out" style={styles.text} backgroundColor="purple" onPress={() => this._onPressLogout()}>Logout</Icon.Button></View>
+          </Content>
+        </Container>
+      </ScrollView>
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
