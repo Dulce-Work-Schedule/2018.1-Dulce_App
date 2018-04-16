@@ -61,7 +61,7 @@ export class LoginScreen extends React.Component {
     if (this.state.password === '' || this.state.registration === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
-        'Para entrar preencha corretamente os campos de matrícula e senha.' + this.state.registration
+        'Para entrar preencha corretamente os campos de matrícula e senha.'
       );
 
     } else {
