@@ -61,7 +61,7 @@ export class LoginScreen extends React.Component {
     if (this.state.password === '' || this.state.registration === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
-        'Para entrar preencha corretamente os campos de matrícula e senha.'
+        'Para entrar preencha corretamente os campos de matrícula e senha.' + this.state.registration
       );
 
     } else {
@@ -90,15 +90,13 @@ export class LoginScreen extends React.Component {
         <AGRInput
           autoCapitalize='none'
           nameLabel ='Matrícula'
-          onChangeText={(text) => this.setState({matricula: text})}
+          onChangeText={(registration) => this.setState({registration})}
         />
 
         <AGRInput
           nameLabel ='Senha'
           secureTextEntry
-          onChangeText={(text) => {
-            return this.setState({ password: text });
-          }}
+          onChangeText={(password) => this.setState({password})}
         />
 
         <AGRButton
@@ -106,7 +104,9 @@ export class LoginScreen extends React.Component {
           text="Entrar"
         />
       </View>
+
     );
+  
   }
 }
 
