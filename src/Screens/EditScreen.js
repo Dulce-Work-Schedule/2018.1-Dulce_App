@@ -4,6 +4,7 @@ import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
 import ValidationComponent from 'react-native-form-validator';
+import store from '../Reducers/store';
 
 
 const styles = {
@@ -43,25 +44,25 @@ export default class EditScreen extends ValidationComponent {
     super(props);
     this.state = {
       editable: true,
-      nome: '',
-      matricula: '',
-      hospital: '',
-      setor: '',
-      senha: ''
+      name: store.getState().currentUser.name,
+      registration: store.getState().currentUser.registration,
+      hospital: store.getState().currentUser.hospital,
+      sector: store.getState().currentUser.sector,
+      password: ''
     };
   }
   _onPressButton() {
     if (this.validate({
-      nome: {required: true},
-      matricula: {numbers: true, required: true},
+      name: {required: true},
+      registration: {numbers: true, required: true},
       hospital: {required: true},
-      setor: {required: true},
-      senha: {minlength: 4, maxlength: 8, required: true}
+      sector: {required: true},
+      password: {minlength: 4, maxlength: 8, required: true}
     })) {}
   }
   salvar() {
-    axios.post('http://172.17.0.1:8080/user/edit/' + this.props.navigation.state.params.userId , {
-      registration: this.state.registration,
+    axios.post('http://172.17.0.1:8080/user/edit/' + store.getState().currentUser.id , {
+
       password: this.state.password
     })
       .then((response) => {
@@ -74,37 +75,36 @@ export default class EditScreen extends ValidationComponent {
     return (
       <View style={styles.container}>
         <SmallLogo/>
-        <AGRInput style={styles.input } Textvalue = {this.state.Textvalue}
-          placeholder='Nome'
+        <AGRInput style={styles.input } value = {this.state.name}
           editable = {false}
         />
-        {this.isFieldInError('nome') && this.getErrorsInField('nome').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput style={styles.input}
+        {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <AGRInput style={styles.input} value = {this.state.registration}
           placeholder='Matricula'
           editable = {false}
         />
-        <AGRInput style={styles.input}
+        <AGRInput style={styles.input} value = {this.state.hospital}
           nameLabel='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
-            nome: text})}
+            name: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput style={styles.input}
-          nameLabel='Setor'
+        <AGRInput style={styles.input} value = {this.state.sector}
+          nameLabel='setor'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
-            setor: text})}
+            sector: text})}
         />
-        {this.isFieldInError('setor') && this.getErrorsInField('setor').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput style={styles.input}
+        {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <AGRInput style={styles.input} 
           nameLabel='Editar senha'
           editable = {this.state.editable}
           secureTextEntry
           onChangeText={(text) => this.setState({
-            senha: text})}
+            password: text})}
         />
-        {this.isFieldInError('senha') && this.getErrorsInField('senha').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
           <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.salvar(),this._onPressButton()];}}/>
         </View>

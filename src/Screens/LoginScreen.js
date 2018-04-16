@@ -76,7 +76,7 @@ export class LoginScreen extends React.Component {
     })
       .then((response) => {
        this.props.setCurrentUser(response.data.token, response.data.id);
-       this.props.navigation.navigate('list');
+       this.props.navigation.navigate('initial');
       })
       .catch((err) => {
         console.log(err);
@@ -123,7 +123,11 @@ const mapDispatchToProps = (dispatch) => {
     setCurrentUser: (api_token, api_id) => {
       const currentUser = {
         token: api_token,
-        id: api_id
+        id: api_id,
+        name: 'John',
+        registration: '1234',
+        sector: 'Gama',
+        hospital: 'Hospital do Gama'
       };
       return dispatch(actionLogin(currentUser));
     }
