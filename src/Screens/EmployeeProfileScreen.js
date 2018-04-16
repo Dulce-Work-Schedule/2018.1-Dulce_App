@@ -43,49 +43,17 @@ export class EmployeeProfileScreen extends React.Component {
 
     const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id ;
     this.setState({loading: true});
-    fetch(url)
-    .then((response) => {return response.json();})
-    .then((json) => {this.setState({employee: json,loading: false});})
-  }
-
-  render(){
-    return(
-      <View style={styles.container}>
-      {
-        this.state.loading ? (
-
-          <Container>
-            <Content>
-          <Spinner color='purple' />
-          </Content>
-          </Container>
-
-        ) : (
-          <View style={styles.informacoes}>
-          <Text style={styles.name}>{this.state.employee[0].name}</Text>
-          <Text style={styles.text}>CRM/Matricula:</Text>
-          <Text style={styles.text}>{this.state.employee[0].address.zipcode}</Text>
-          <Text style={styles.text}>setor: Pediatria</Text>
-          <Text style={styles.text}>Cirurgião</Text>
-          <Text style={styles.text}>Hospital do Gama</Text>
-          <View style={{height: 50}} />
-          <AGRButton
-          text='Editar'
-          onPress={() => this.props.navigation.navigate('edit')} />
-          </View>
-
-
-        )
-      }
     axios.get(url, {
 
-      headers : {
+      headers: {
         'x-access-token': store.getState().currentUser.token
       }
 
     })
       .then((response) => { this.setState({employee: response.data, loading: false});});
-  )}
+  }
+
+
 
   render() {
     return (
