@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
+import {ScrollView, View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
 import ValidationComponent from 'react-native-form-validator';
 import store from '../Reducers/store';
-
+import axios from 'axios';
 
 const styles = {
   container: {
@@ -44,10 +44,7 @@ export default class EditScreen extends ValidationComponent {
     super(props);
     this.state = {
       editable: true,
-      name: store.getState().currentUser.name,
-      registration: store.getState().currentUser.registration,
-      hospital: store.getState().currentUser.hospital,
-      sector: store.getState().currentUser.sector,
+      collaborator: {},
       password: ''
     };
   }
@@ -70,34 +67,51 @@ export default class EditScreen extends ValidationComponent {
        this.props.navigation.navigate('list', {token: token});
       })
   }
+  componentDidMount(){
+    this.setState({loading: true});
+
+    const url = 'http://172.17.0.1:8080/user/view/' +  store.getState().currentUser.id ;
+
+
+    axios.get(url,{
+
+      headers: {
+        'x-access-token': store.getState().currentUser.token
+      }
+
+    })
+
+    .then((response) => {this.setState({collaborator: response.data,loading: false});})
+}
 
   render() {
     return (
       <View style={styles.container}>
         <SmallLogo/>
-        <AGRInput style={styles.input } value = {this.state.name}
+        <ScrollView>
+        <AGRInput style={styles.input } value = {this.state.collaborator.name}
           editable = {false}
         />
         {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput style={styles.input} value = {this.state.registration}
+        <AGRInput style={styles.input} value = {this.state.collaborator.registration}
           placeholder='Matricula'
           editable = {false}
         />
-        <AGRInput style={styles.input} value = {this.state.hospital}
+        <AGRInput style={styles.input} value = {this.state.collaborator.hospital}
           nameLabel='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             name: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput style={styles.input} value = {this.state.sector}
+        <AGRInput style={styles.input} value = {this.state.collaborator.sector}
           nameLabel='setor'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             sector: text})}
         />
         {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-        <AGRInput style={styles.input} 
+        <AGRInput style={styles.input}
           nameLabel='Editar senha'
           editable = {this.state.editable}
           secureTextEntry
@@ -108,6 +122,7 @@ export default class EditScreen extends ValidationComponent {
         <View style={styles.alinhar}>
           <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.salvar(),this._onPressButton()];}}/>
         </View>
+        </ScrollView>
       </View>
     );
   }

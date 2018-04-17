@@ -15,6 +15,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const styles={
+    container:{
+      backgroundColor: '#FFF'
+    },
     text:{
       marginLeft: 25
     },
@@ -60,7 +63,7 @@ class InitialScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={styles.container}>
         <SmallLogo />
         <Container>
           <Content>
