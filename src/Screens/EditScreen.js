@@ -61,9 +61,9 @@ export default class EditScreen extends ValidationComponent {
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true}
-    })) {}
+    })) {this.save();}
   }
-  salvar() {
+  save() {
     axios.post('http://172.17.0.1:8080/user/edit/' + store.getState().currentUser.id , {
       name: this.state.name,
       registration: this.state.registration,
@@ -72,8 +72,7 @@ export default class EditScreen extends ValidationComponent {
       password: this.state.password
     })
       .then((response) => {
-       const token = response.data.token;
-       this.props.navigation.navigate('list', {token: token});
+       this.props.navigation.navigate('list');
       })
   }
   componentDidMount(){
@@ -149,7 +148,7 @@ export default class EditScreen extends ValidationComponent {
         />
         {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
-          <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.salvar(),this._onPressButton()];}}/>
+          <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.save(),this._onPressButton()];}}/>
         </View>
         </ScrollView>
         </View>

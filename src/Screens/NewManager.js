@@ -1,12 +1,10 @@
 import React from 'react';
-import {Text, View, TextInput, Image, Alert, ScrollView } from 'react-native';
+import {Text, View, ScrollView} from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';
-
-const logo = require('../../assets/img/logo.png');
 
 const styles = {
   logo: {
@@ -20,7 +18,7 @@ const styles = {
     flex: 1,
     flexDirection: 'column',
     padding: 15,
-    backgroundColor: '#FFF',
+    backgroundColor: '#FFF'
     //paddingHorizontal: 50
 
   },
@@ -30,8 +28,7 @@ const styles = {
     borderBottomColor: 'grey',
     marginBottom: 10,
     width: '100%',
-    alignSelf: 'center',
-    marginBottom: 20
+    alignSelf: 'center'
   },
   button: {
     marginTop: 30
@@ -65,13 +62,12 @@ export default class NewManager extends ValidationComponent {
       confirmepassword: {required: true}
     }) && (this.state.confirmepassword == this.state.password)) {
       this.newManager();
-     }
-    };
+    }
+  }
 
+  newManager() {
 
-newManager(){
-
-  axios.post('http://172.17.0.1:8080/user/add', {
+    axios.post('http://172.17.0.1:8080/user/add', {
       registration: this.state.registration,
       password: this.state.password,
       name: this.state.name,
@@ -80,12 +76,10 @@ newManager(){
       manager: true
     })
       .then((response) => {
-       const token = response.data.token;
-       this.props.navigation.navigate('initial');
-      })
-}
-
-
+        const token = response.data.token;
+        this.props.navigation.navigate('initial');
+      });
+  }
 
   confirmepasswordErrado() {
     if (this.state.confirmepassword != this.state.password) {
@@ -101,7 +95,11 @@ newManager(){
       <View style={styles.container}>
         <SmallLogo/>
         <ScrollView>
-          <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
+          <AGRInput
+            ref='name'
+            nameLabel='Nome Completo'
+            onChangeText={(name) => this.setState({name})}
+          />
           {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
           <AGRInput ref='registration' nameLabel='Matrícula' onChangeText={(registration) => this.setState({registration})} />
           {this.isFieldInError('registration') && this.getErrorsInField('registration').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
@@ -115,5 +113,5 @@ newManager(){
           {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <AGRButton text='Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
-      </View> );}
+      </View>);}
 }
