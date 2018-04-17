@@ -13,13 +13,13 @@ const styles = {
   }
 };
 
-class SmallLogo extends React.Component{
-  render(){
-    return(
+class SmallLogo extends React.Component {
+  render() {
+    return (
       <View>
-        <Image source={logo}  style={styles.logo} />
+        <Image source={logo} style={styles.logo} />
       </View>
-    )
+    );
   }
 }
 

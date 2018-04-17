@@ -13,25 +13,24 @@ const styles = {
     fontSize: 18,
     color: 'black'
   }
-}
-
+};
 
 class SmallButton extends React.Component {
 
-  render(){
+  render() {
 
-    return(
+    return (
 
       <TouchableHighlight style={styles.container}
 
-      onPress = {() => this.props.onPress()}
+        onPress = {() => this.props.onPress()}
 
       >
 
-      <Text style = {styles.text}>{this.props.text}</Text>
+        <Text style = {styles.text}>{this.props.text}</Text>
 
       </TouchableHighlight>
-    )
+    );
   }
 }
 

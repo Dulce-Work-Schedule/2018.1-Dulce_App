@@ -12,25 +12,24 @@ const styles = {
     margin: 15
   },
   icon: {
-    justifyContent : 'center',
-    alignItems:  'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   }
-}
+};
 
 class ProfileScreen extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       collaborator: {},
       loading: true
-    }
+    };
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.setState({loading: true});
 
     const url = 'http://172.17.0.1:8080/user/view/' + this.props.navigation.state.params.userId;
-
 
     axios.get(url,{
 
@@ -40,27 +39,25 @@ class ProfileScreen extends React.Component {
 
     })
 
-    .then((response) => {this.setState({collaborator: response.data,loading: false});})
-}
-    render() {
-      return this.state.loading ? (<View />) : (
+      .then((response) => {this.setState({collaborator: response.data,loading: false});});
+  }
+  render() {
+    return this.state.loading ? (<View />) : (
 
-        <View style = {{ flex: 1 }}>
+      <View style = {{flex: 1}}>
         <Text style = {styles.text}>Nome: {this.state.collaborator.name}</Text>
         <Text style = {styles.text}>Matrícula: {this.state.collaborator.registration}</Text>
         <Text style = {styles.text}>Hospital: {this.state.collaborator.hospital}</Text>
         <Text style = {styles.text}>Setor: {this.state.collaborator.sector}</Text>
 
-
-          <View style = {styles.icon}>
-            <ScaleIcon onPress = {() => null} />
-          </View>
+        <View style = {styles.icon}>
+          <ScaleIcon onPress = {() => null} />
         </View>
-      )
-
-    }
+      </View>
+    );
 
   }
 
+}
 
 export default ProfileScreen;

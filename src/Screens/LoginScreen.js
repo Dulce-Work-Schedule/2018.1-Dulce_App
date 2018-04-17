@@ -1,11 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import {View, ScrollView, TextInput, Image, Alert} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';
-import { actionLogin } from '../Actions/currentUser';
-import { NavigationActions } from 'react-navigation';
+import {actionLogin} from '../Actions/currentUser';
+import {NavigationActions} from 'react-navigation';
 
 const logo = require('../../assets/img/DulceLogoFull.png');
 
@@ -22,7 +22,7 @@ const styles = {
     borderBottomColor: 'grey',
     marginBottom: 10,
     width: '100%',
-    alignSelf: 'center',
+    alignSelf: 'center'
   },
   text: {
     fontSize: 36,
@@ -51,8 +51,8 @@ export class LoginScreen extends React.Component {
     const resetAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({ routeName: targetRoute }),
-      ],
+        NavigationActions.navigate({routeName: targetRoute})
+      ]
     });
     this.props.navigation.dispatch(resetAction);
   }
@@ -69,53 +69,51 @@ export class LoginScreen extends React.Component {
     }
   }
 
-  login(){
+  login() {
     axios.post('http://172.17.0.1:8080/user/login', {
       registration: this.state.registration,
       password: this.state.password
     })
       .then((response) => {
-       this.props.setCurrentUser(response.data.token, response.data.id);
-       this.resetNavigation('initial');
+        this.props.setCurrentUser(response.data.token, response.data.id);
+        this.resetNavigation('initial');
       })
       .catch((err) => {
         console.log(err);
         Alert.alert('Erro!', err.response.data.message);
-      })
+      });
   }
   render() {
     return (
       <ScrollView>
-      <View style={styles.container}>
-        <Image source={logo} style={styles.logo} />
-        <AGRInput
-          autoCapitalize='none'
-          nameLabel ='Matrícula'
-          onChangeText={(registration) => this.setState({registration})}
-        />
+        <View style={styles.container}>
+          <Image source={logo} style={styles.logo} />
+          <AGRInput
+            autoCapitalize='none'
+            nameLabel ='Matrícula'
+            onChangeText={(registration) => this.setState({registration})}
+          />
 
-        <AGRInput
-          nameLabel ='Senha'
-          secureTextEntry
-          onChangeText={(password) => this.setState({password})}
-        />
+          <AGRInput
+            nameLabel ='Senha'
+            secureTextEntry
+            onChangeText={(password) => this.setState({password})}
+          />
 
-        <AGRButton
-          onPress={this._onPressButton.bind(this)}
-          text="Entrar"
-        />
-      </View>
+          <AGRButton
+            onPress={this._onPressButton.bind(this)}
+            text='Entrar'
+          />
+        </View>
       </ScrollView>
     );
 
   }
 }
 
-
-
 const mapStateToProps = (state) => {
-  return{
-    currentUser:state.currentUser
+  return {
+    currentUser: state.currentUser
   };
 };
 
