@@ -28,7 +28,8 @@ const styles = {
     borderBottomColor: 'grey',
     marginBottom: 10,
     width: '100%',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginBottom: 20
   },
   button: {
     marginTop: 30
@@ -76,13 +77,13 @@ export default class NewManager extends ValidationComponent {
       manager: true
     })
       .then((response) => {
-        const token = response.data.token;
+        console.log(response.data);
         this.props.navigation.navigate('initial');
       });
   }
 
   confirmepasswordErrado() {
-    if (this.state.confirmepassword != this.state.password) {
+    if (this.state.confirmepassword !== this.state.password) {
       return true;
     } else {
       return false;
@@ -95,11 +96,7 @@ export default class NewManager extends ValidationComponent {
       <View style={styles.container}>
         <SmallLogo/>
         <ScrollView>
-          <AGRInput
-            ref='name'
-            nameLabel='Nome Completo'
-            onChangeText={(name) => this.setState({name})}
-          />
+          <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
           {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
           <AGRInput ref='registration' nameLabel='Matrícula' onChangeText={(registration) => this.setState({registration})} />
           {this.isFieldInError('registration') && this.getErrorsInField('registration').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}

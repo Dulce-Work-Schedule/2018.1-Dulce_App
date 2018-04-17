@@ -103,11 +103,7 @@ export default class EditScreen extends ValidationComponent {
   render() {
     return this.state.loading ? (
 
-      <Container style={styles.container}>
-        <Content>
-      <Spinner color='purple'/>
-      </Content>
-      </Container>
+      <View/>
 
         ) : (
         <View style={styles.container}>
@@ -148,7 +144,7 @@ export default class EditScreen extends ValidationComponent {
         />
         {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
-          <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.save(),this._onPressButton()];}}/>
+          <AGRButton style={styles.button} text='Salvar' onPress={() => {this._onPressButton()  ;}}/>
         </View>
         </ScrollView>
         </View>
