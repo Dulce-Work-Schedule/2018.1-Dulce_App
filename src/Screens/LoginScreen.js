@@ -76,7 +76,7 @@ export class LoginScreen extends React.Component {
     })
       .then((response) => {
        this.props.setCurrentUser(response.data.token, response.data.id);
-       this.props.navigation.navigate('list');
+       this.resetNavigation('initial');
       })
       .catch((err) => {
         console.log(err);
@@ -85,20 +85,19 @@ export class LoginScreen extends React.Component {
   }
   render() {
     return (
+      <ScrollView>
       <View style={styles.container}>
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
           nameLabel ='Matrícula'
-          onChangeText={(text) => this.setState({matricula: text})}
+          onChangeText={(registration) => this.setState({registration})}
         />
 
         <AGRInput
           nameLabel ='Senha'
           secureTextEntry
-          onChangeText={(text) => {
-            return this.setState({ password: text });
-          }}
+          onChangeText={(password) => this.setState({password})}
         />
 
         <AGRButton
@@ -106,7 +105,9 @@ export class LoginScreen extends React.Component {
           text="Entrar"
         />
       </View>
+      </ScrollView>
     );
+
   }
 }
 
@@ -123,7 +124,11 @@ const mapDispatchToProps = (dispatch) => {
     setCurrentUser: (api_token, api_id) => {
       const currentUser = {
         token: api_token,
-        id: api_id
+        id: api_id,
+        name: 'John',
+        registration: '1234',
+        sector: 'Gama',
+        hospital: 'Hospital do Gama'
       };
       return dispatch(actionLogin(currentUser));
     }
