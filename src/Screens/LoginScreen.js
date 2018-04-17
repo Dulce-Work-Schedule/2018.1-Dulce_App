@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {View, ScrollView, TextInput, Image, Alert} from 'react-native';
+import {View, ScrollView, Image, Alert} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';

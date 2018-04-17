@@ -42,7 +42,6 @@ export class EmployeeProfileScreen extends React.Component {
   componentDidMount() {
 
     const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id ;
-    this.setState({loading: true});
     axios.get(url, {
 
       headers: {

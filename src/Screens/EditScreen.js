@@ -1,16 +1,23 @@
 import React from 'react';
+<<<<<<< HEAD
 import {ScrollView, View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
+=======
+import {View, Text} from 'react-native';
+>>>>>>> 5beeb69... #194 arrumando parte das telas
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
 import ValidationComponent from 'react-native-form-validator';
-import axios from 'axios';
 import store from '../Reducers/store';
+<<<<<<< HEAD
 <<<<<<< HEAD
 import axios from 'axios';
 import { Container, Header, Content, Spinner } from 'native-base';
 =======
 >>>>>>> 85748c1... #194 dando comando eslint --fix
+=======
+import axios from 'axios';
+>>>>>>> 5beeb69... #194 arrumando parte das telas
 
 const styles = {
   container: {
@@ -58,6 +65,17 @@ export default class EditScreen extends ValidationComponent {
       loading: true
     };
   }
+
+  save() {
+  axios.post('http://172.17.0.1:8080/user/edit/' + store.getState().currentUser.id , {
+
+    password: this.state.password
+  })
+    .then((response) => {
+      const token = response.data.token;
+      this.props.navigation.navigate('list', {token: token});
+    });
+}
   _onPressButton() {
     if (this.validate({
       name: {required: true},
@@ -65,6 +83,7 @@ export default class EditScreen extends ValidationComponent {
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true}
+<<<<<<< HEAD
     })) {this.save();}
   }
   save() {
@@ -112,7 +131,11 @@ export default class EditScreen extends ValidationComponent {
 
     ;})
 }
+    }))
+  { this.save()}
 
+
+}
   render() {
     return this.state.loading ? (
 
@@ -138,7 +161,7 @@ export default class EditScreen extends ValidationComponent {
           nameLabel='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
-            hospital: text})}
+            name: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <AGRInput style={styles.input} value = {this.state.sector}
@@ -157,9 +180,7 @@ export default class EditScreen extends ValidationComponent {
         />
         {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
-          <AGRButton style={styles.button} text='Salvar' onPress={() => {this._onPressButton();}}/>
-        </View>
-        </ScrollView>
+          <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();}}/>
         </View>
       );
   }
