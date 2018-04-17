@@ -65,7 +65,10 @@ export default class EditScreen extends ValidationComponent {
   }
   salvar() {
     axios.post('http://172.17.0.1:8080/user/edit/' + store.getState().currentUser.id , {
-
+      name: this.state.name,
+      registration: this.state.registration,
+      hospital: this.state.hospital,
+      sector: this.state.sector,
       password: this.state.password
     })
       .then((response) => {
@@ -92,7 +95,7 @@ export default class EditScreen extends ValidationComponent {
         name: this.state.collaborator.name,
         registration: this.state.collaborator.registration,
         hospital: this.state.collaborator.hospital,
-        sector: this.state.collaborator.name
+        sector: this.state.collaborator.sector
       });
 
     ;})
@@ -123,15 +126,15 @@ export default class EditScreen extends ValidationComponent {
           onChangeText={(text) => this.setState({
             registration: text})}
         />
-        <AGRInput style={styles.input} defaultValue = {this.state.hospital}
+        <AGRInput style={styles.input} value = {this.state.hospital}
           nameLabel='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
-            name: text})}
+            hospital: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <AGRInput style={styles.input} value = {this.state.sector}
-          nameLabel='setor'
+          nameLabel='Setor'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
             sector: text})}
