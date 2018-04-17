@@ -85,6 +85,7 @@ export class LoginScreen extends React.Component {
   }
   render() {
     return (
+      <ScrollView>
       <View style={styles.container}>
         <Image source={logo} style={styles.logo} />
         <AGRInput
@@ -104,9 +105,9 @@ export class LoginScreen extends React.Component {
           text="Entrar"
         />
       </View>
-
+      </ScrollView>
     );
-  
+
   }
 }
 
