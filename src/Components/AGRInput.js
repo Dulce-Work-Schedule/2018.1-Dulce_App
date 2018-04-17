@@ -1,6 +1,5 @@
 import React from 'react';
-import {TextInput} from 'react-native';
-import {Container, Content, Text, Input, Item, Form, Label} from 'native-base';
+import {Input, Item, Form, Label} from 'native-base';
 
 const styles = {
   textInput: {
