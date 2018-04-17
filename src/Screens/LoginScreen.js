@@ -76,7 +76,7 @@ export class LoginScreen extends React.Component {
     })
       .then((response) => {
        this.props.setCurrentUser(response.data.token, response.data.id);
-       this.props.navigation.navigate('initial');
+       this.resetNavigation('initial');
       })
       .catch((err) => {
         console.log(err);
