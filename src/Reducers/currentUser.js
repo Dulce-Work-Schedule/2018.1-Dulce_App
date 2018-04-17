@@ -5,11 +5,11 @@ const initialState = {};
 function currentUser(state = initialState,action) {
   switch (action.type) {
     case LOGIN:
-      var User = action.User;
-      return User;
+      var currentUser = action.currentUser;
+      return currentUser;
     case LOGOUT:
-      User = action.User;
-      return User;
+      currentUser = action.currentUser;
+      return currentUser;
 
     default:
       return initialState;
