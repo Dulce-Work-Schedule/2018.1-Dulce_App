@@ -1,16 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
   ScrollView,
-  View,
-  Image
+  View
 } from 'react-native';
-import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
 import {connect} from 'react-redux';
 import {actionLogout} from '../Actions/currentUser';
-import store from '../Reducers/store';
 import {NavigationActions} from 'react-navigation';
-import {Container, Header, Content, Button, Text} from 'native-base';
+import {Container, Content} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const styles = {
@@ -78,7 +75,7 @@ class InitialScreen extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = () => {
   return {
     currentUser: {}
   };

@@ -1,9 +1,9 @@
 import React from 'react';
-import {Text, FlatList, ScrollView, Alert} from 'react-native';
+import {FlatList, ScrollView, Alert} from 'react-native';
 import UserItem from '../Components/UserItem';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Header, Content, Spinner} from 'native-base';
+import {Container, Content, Spinner} from 'native-base';
 
 const styles = {
   container: {

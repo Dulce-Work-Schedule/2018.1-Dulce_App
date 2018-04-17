@@ -83,12 +83,10 @@ export default class EditScreen extends ValidationComponent {
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true}
-<<<<<<< HEAD
     })) {this.save();}
   }
   save() {
     axios.post('http://172.17.0.1:8080/user/edit/' + store.getState().currentUser.id , {
-<<<<<<< HEAD
       name: this.state.name,
       registration: this.state.registration,
       hospital: this.state.hospital,
@@ -98,14 +96,6 @@ export default class EditScreen extends ValidationComponent {
       .then((response) => {
        this.props.navigation.navigate('list');
       })
-=======
-      hospital: this.state.hospital,
-      sector: this.state.sector
-    })
-      .then((response) => {
-        this.props.navigation.navigate('list');
-      });
->>>>>>> 85748c1... #194 dando comando eslint --fix
   }
   componentDidMount(){
     this.setState({loading: true});

@@ -3,7 +3,7 @@ import {View , Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Header, Content, Spinner} from 'native-base';
+import {Container, Content, Spinner} from 'native-base';
 
 const styles = {
   container: {
