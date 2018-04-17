@@ -1,12 +1,11 @@
 import React from 'react';
-import AGRButton from '../../src/Components/SmallButton';
 import renderer from 'react-test-renderer';
-import SmallButton from '../../src/Components/SmallButton';
+import SmallLogo from '../../src/Components/SmallLogo';
 require ('bezier');
 
 it('renders correctly', () => {
     const tree = renderer
-    .create(<SmallButton />)
+    .create(<SmallLogo />)
     .toJSON();
     expect(tree).toMatchSnapshot();
   });

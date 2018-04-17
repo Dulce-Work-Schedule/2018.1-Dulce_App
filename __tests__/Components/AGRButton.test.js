@@ -4,7 +4,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import renderer from 'react-test-renderer';
-
+require ('bezier');
 Enzyme.configure({Adapter: new Adapter()});
 
 it('renders correctly', () => {
