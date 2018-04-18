@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {ScrollView, View, TextInput, Text, TouchableHighlight, Image} from 'react-native';
+import {View, Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
@@ -79,7 +79,11 @@ export default class EditScreen extends ValidationComponent {
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true}
-    })) {}
+    })) {
+
+      this.save();
+
+    }
   }
   save() {
 
@@ -89,9 +93,9 @@ export default class EditScreen extends ValidationComponent {
       password: this.state.password
     })
       .then((response) => {
-       const token = response.data.token;
-       this.props.navigation.navigate('list', {token: token});
-      })
+        const token = response.data.token;
+        this.props.navigation.navigate('list', {token: token});
+      });
   }
 
   render() {
@@ -129,7 +133,7 @@ export default class EditScreen extends ValidationComponent {
         />
         {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <View style={styles.alinhar}>
-          <AGRButton style={styles.button} text='Salvar' onPress={() => {[this.save(),this._onPressButton()];}}/>
+          <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();} }/>
         </View>
       </View>
     );
