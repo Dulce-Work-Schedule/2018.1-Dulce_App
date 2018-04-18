@@ -755,16 +755,37 @@
                                           <div name= "Representação" id= "Representação"></div>
 
                                           <h1>2. Representação da Arquitetura</h1>
-
+                                          <h3>2.1 Diagrama de relações:</h3>
+                                          <br>
+                                          <img src ="../assets/img/ArquiteturaEPS.png">
+                                            <p>
+                                              O diagrama apresenta cada etapa que será seguido para que o aplicativo DULCE funcione. Relacionando o front-end com o Back-end.
+                                            </p>
+                                          <br>
+                                          <br>
+                                          <h3>2.2 Diagrama React/Redux/API:</h3>
+                                          <br>
+                                          <img src ="../assets/img/ReactRedux.png">
+                                          <br>
+                                          <h6>React-Native</h6>
                                           <div style ="text-align: justify">
                                             <p>
-                                              <img src ="../assets/img/ArquiteturaEPS.png">
-                                            </p>
-                                            <p>
-                                              <br>
-                                              <img src ="../assets/img/reactdiagrama.png">
+                                              O front-end do aplicativo, feito em React-Native, é dividido em pastas, Screens, Navigators e Components. A pasta de Screens armazena todas as telas do aplicativo que são formadas utilizando componentes criados na pasta Components, como botões, áreas de texto e logos. A navegação de telas é feita pelo react-navigator, que utiliza da pasta Navigators para nomear e conectar as telas de acordo com o caminho estabelecido.
                                             </p>
                                           </div>
+                                          <h6>Redux</h6>
+                                          <div style ="text-align: justify">
+                                            <p>
+                                              O Redux armazena as informações obtidas no uso do aplicativo em uma store, para facilitar o acesso dessas informações em outras telas. Para a implementação do redux, dividimos os arquivos em Actions e Reducers. Um Reducer é um objeto que é salvo na store durante o uso do aplicativo de forma q possa ser chamado e modificado em toda a aplicação sem a necessidade de ser transitado entre as telas. A Store é um Reducer onde armazenamos todos os outros reducers ultilizados para facilitar o acesso. Para acrescentar ou retirar alguma informação da store, é necessário o uso das funções declaradas nas Actions que manipulam o conteúdo da Store.
+                                            </p>
+                                            </div>
+                                            <h6>API</h6>
+                                            <div style ="text-align: justify">
+                                            <p>
+                                              A API, produzida em Node.js, controla e fornece as informações visualizadas no aplicativo. Para qualquer manipulação de dados feita pelo aplicativo é necessário que ela seja chamada. A API é dividida de acordo com as funcionalidades, seguindo a arquitetura de microsserviços.
+                                            </p>
+                                            </div>
+
 
                                           <div name= "Metas" id= "Metas"></div>
 
@@ -786,13 +807,22 @@
                                           <div name= "Implementação" id= "Implementação"></div>
 
                                           <h1>4. Visão de Implementação</h1>
-                                          <h4>Diagrama de Classes</h4>
+                                          <h3>4.1 Diagrama de Classes</h3>
                                           <div style ="text-align: justify">
                                             <p>
                                               <img src="../assets/img/diagramaUML1.png">
                                             </p>
                                           </div>
+                                          <h3>4.2 Diagrama de Pacotes</h3>
+                                          <h6><b>A) Front-end</b></h6>
+                                            <p>
+                                            <img src="../assets/img/Diagrama_pacotes_react.png" width="1000" >
+                                            </p>
 
+                                          <h6><b>B) API</b></h6>
+                                          <p>
+                                          <img src="../assets/img/diagrama_pacotes_api.png">
+                                          </p>
 
                                           <div name= "Referencia" id= "referencia"></div>
 
