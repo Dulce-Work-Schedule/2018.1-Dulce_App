@@ -13,15 +13,21 @@ O Dulce é o unico APP que permite os gestores de saúde uma facil vizualizaçã
 ### Instalação
 A Instalação do App pode ser feita tanto para Android quanto para IOS nos links a seguir.
 Android APP [link play store]
-IOS APP [link apple store]
+<a href="https://play.google.com/store/apps/details?id=com.dulce"><img src="/docs/assets/img/logos/googleplay.png" width="150" height="60" title="Google Play"></a>
 
 ### Contribuir
 Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribuição](CONTRIBUTING.md) onde são explicados todos os passos para contribuir. Ahh, não esquece de ler nosso [código de conduta](CODE_OF_CONDUCT.md).   
 Caso reste duvidas você também pode entrar em contato conosco criando uma issue ou pelo email dulce.application@gmail.com.
 
-#### Instalação
+### Ambiente
+Para executar o ambiente do projeto em sua máquina:
 
-#### Docker
+Pré-requisitos
+- Node.js versão superior à 6
+- 
+
+
+
 
 ### Tecnologias
 
