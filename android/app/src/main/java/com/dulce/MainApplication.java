@@ -1,7 +1,6 @@
 package com.dulce;
 
 import android.app.Application;
-
 import com.facebook.react.ReactApplication;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
