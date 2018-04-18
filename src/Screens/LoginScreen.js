@@ -57,7 +57,7 @@ export class LoginScreen extends React.Component {
     this.props.navigation.dispatch(resetAction);
   }
 
-  _onPressButton(){
+  _onPressButton() {
     if (this.state.password === '' || this.state.registration === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
@@ -69,20 +69,14 @@ export class LoginScreen extends React.Component {
     }
   }
 
-  login(){
+  login() {
     axios.post('http://localhost:8083/api/userManager/login', {
       registration: this.state.registration,
       password: this.state.password
     })
       .then((response) => {
-        if (response.data.success){
         this.props.setCurrentUser(response.data.token, response.data.user);
         this.resetNavigation('initial');
-      }
-        else {
-          throw {response};
-        }
-
       })
       .catch((err) => {
         Alert.alert('Erro!', err.response.data.message);
