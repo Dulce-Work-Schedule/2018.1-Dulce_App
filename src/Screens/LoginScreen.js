@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import {View, ScrollView, TextInput, Image, Alert} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
-import BotaoTransparente from '../Components/BotaoTransparente';
 import axios from 'axios';
 import { actionLogin } from '../Actions/currentUser';
 import { NavigationActions } from 'react-navigation';

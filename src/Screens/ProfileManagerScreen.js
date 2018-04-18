@@ -33,7 +33,7 @@ class ProfileManagerScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: [],
+      profile: {},
       loading: true
     };
   }
@@ -66,13 +66,13 @@ class ProfileManagerScreen extends React.Component {
       ) : (
           <View style={styles.informacoes}>
           <Text style={styles.name}>{this.state.profile.name}</Text>
-          <Text style={styles.text}>Matriula:</Text>
+          <Text style={styles.text}>Matrícula:</Text>
           <Text style={styles.text}>{this.state.profile.registration}</Text>
-          <Text style={styles.text}>Setor: Pediatria</Text>
-          <Text style={styles.text}>Hospital do Gama</Text>
-         <View style={{marginTop: 60}} />
+          <Text style={styles.text}>Setor:{this.state.profile.sector}</Text>
+          <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
+         <View style={{marginTop: 20}} />
           <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
-    </View>
+          </View>
         )
       }
       </View>
