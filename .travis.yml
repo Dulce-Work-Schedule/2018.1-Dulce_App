@@ -43,7 +43,7 @@ matrix:
           - platform-tools
           - tools
       script:
-        - cd android && ./gradlew assembleDebug && ./gradlew assembleRelease
+        - utils/run_build.sh
     # - language: objective-c
     #   os: osx
     #   osx_image: xcode8.2
