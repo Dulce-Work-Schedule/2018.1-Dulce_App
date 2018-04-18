@@ -20,7 +20,27 @@
     <link href="../../assets/assets-for-demo/demo.css" rel="stylesheet" />
     <!-- iframe removal -->
 </head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+p {
+    font-size: 20px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 <body class="index-page ">
     <nav class="navbar  fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
         <div class="container">
@@ -77,25 +97,25 @@
                         <!--                 nav pills -->
                         <div id="navigation-pills">
                             <div class="title">
-                                <h3>Sprint 3</h3>
+                                <h1>Sprint 3</h1>
 
                             </div>
                             <div class="row">
                               <div class="col-lg-12 col-md-12">
-                                <h4>Duração</h4>
+                                <h2>Duração</h2>
 
                                 Data início: 01/04/2018<br>
                                 Data término: 07/03/2018<br>
                                 Duração: 7 dias<br>
                                 <br>
-                                <h4>Objetivos</h4>
+                                <h2>Objetivos</h2>
 
                                 - Aumentar o conhecimento da equipe sobre o projeto;<br>
                                 - Diminuir o risco de baixa produção da equipe;<br>
                                 - Aumentar a interação dos membros.<br>
 
                                 <br><br>
-                                <h4>Sprint Backlog</h4>
+                                <h2>Sprint Backlog</h2>
 
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/30">#30 Criar Roadmap</a><br>
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/134">Refatorar fishbone #134</a><br>
@@ -128,7 +148,7 @@
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/93">Mapa de Requisitos #93</a><br>
 
                                 <br>
-                                <h4>Papéis</h4>
+                                <h2>Papéis</h2>
 
                                 <p align = "justify">- Product Owner: <a href="https://github.com/egewarth">João Egewarth</a></p>
                                 <p align = "justify">- Scrum Master: <a href="https://github.com/alvesisaque">Isaque Alves</a></p>
@@ -141,84 +161,101 @@
                                   <a href="https://github.com/gdeusdara">Guilherme Deusdará, </a>
                                   <a href="https://github.com/vitorl-s">Vitor Leal.</a></p>
                                   <br>
-                                <h4>Pareamento</h4>
+                                <h2>Pareamento</h2>
                                 <img src="../../assets/img/sprint/pareamento_sprint_3.PNG" height="200" width="800"><br>
 
-                                <br>
-                                <h4> Burndown</h4>
+                                <h2>Pontos</h2>
+                                <h4>Planejados:</h4>
+                                - 32 Pontos
 
-                                Planejados:<br>
-                                - 29 issues<br>
-                                - 64 Pontos<br><br>
+                                <h4>Adicionados:</h4>
+                                Débito Técnico:<br>
+                                - 13 pontos<br>
+                                Viabilidade Técnica:<br>
+                                - 10 ponto.
 
-                                Executados:<br>
-                                - 32 Issues<br>
-                                - 43 pontos<br><br>
+                                <h4>Executados:</h4>
+                                - 45 pontos<br>
 
+                                <h2> Burndown</h2>
 
                                 O burndowm da sprint pode ser encontrado <a href="https://github.com/fga-gpp-mds/2018.1-Dulce_App#reports?report=burndown&milestoneId=3233099">aqui.</a>
 
                                 <br>
-                                <h4>Revisão</h4>
-                                Duração: 1 hora.<br><br>
+                                <h2>Revisão</h2>
+                                    Duração: 1 hora.<br><br>
+                                    <p align="justify">&emsp;&emsp;Nesta revisão foram apresentados todos os artefatos produzidos durante a sprint. Além disso foi definido qual grupo deveria flexibilizar os testes para esta sprint considerando a curva de aprendizagem.</p>
 
-                                Na revisão foram apresentados todos os artefatos produzidos durante a sprint.<br>
-                                Também foi definido que o grupo ia flexibilizar os testes para essa sprint, devido a curva de aprendizado.<br>
+                                <h2>Dívidas Técnicas</h2>
+                                    <a href="https://github.com/fga-gpp-mds/2018.1-dulce_app/issues/87">Criar Docker React-Native #87</a><br>
+                                    <p align="justify">&emsp;&emsp;As dificuldades encontradas para implementar o docker para a o React Native levou o time a buscar soluções no <b>Stackoverflow</b>, na comunidade de <b>Docker</b> e <b>React Native</b> do Telegram, sem obter sucesso.</p>
 
-                                <h4>Dívidas Técnicas</h4>
-                                <a href="https://github.com/fga-gpp-mds/2018.1-dulce_app/issues/87">Criar Docker React-Native #87</a>
+                                <h2> Retrospectiva</h2>
+                                Duração: 20 minutos.<br><br>
 
-                                <br><br>
-                                <h4> Retrospectiva</h4>
-                                Duração: 45 minutos.<br><br>
+                                <h3>Pontos positivos</h3>
+                                - Avanço na tecnologia necessária.<br>
+                                - Melhor visibilidade do código.<br>
+                                - Aplicação de intervenções por meio de coaches.<br>
+                                - Foi verificado a aprendizagem de API sem o intermédio de treinamentos.<br>
+                                - Houve maior auxílio no projeto por parte de colaboradores externos.<br>
+                                - Foi feito Esclarecimento junto ao cliente.<br>
+                                - Maior comunicação entre os times.<br>
 
-                                <h5>Pontos positivos</h5>
-                                  - Acanco na tecnologia<br>
-                                  - Visibi- lidade melhor do codigo<br>
-                                  - Aplicação dos coach<br>
-                                  - Aprendeu api sem Treinamentos<br>
-                                  - Colaboradores externos<br>
-                                  - Esclarecimento com o cliente<br>
-                                  - Comunicação entre os times<br>
+                                <h3>Pontos Negativos</h3>
+                                - Início tardio.<br>
+                                - Dificuldade com testes.<br>
+                                - Baixa cobertura de testes.<br>
+                                - Erros de planejamento na arquitetura.<br>
+                                - Falta de dedicação de alguns membros.<br>
+                                - Dificuldades com a nova API.<br>
+                                - Falta de maior planejamento das atividades.<br>
+                                - Comunicação entre os membros do times.<br>
 
 
-                                  <br>
-                                <h5>Pontos Negativos</h5>
-                                  - Comecou tarde<br>
-                                  - Dificuldade com testes<br>
-                                  - Baixa cobertura<br>
-                                  - Mal planejamento da arquitetura<br>
-                                  - Falta de dedicação<br>
-                                  - Dificuldade com a API nova<br>
-                                  - Falta de planejamento (das atividades)<br>
-                                  - Comunicação entre os times<br>
+                                <h3>Quadro de conhecimento</h3>
+                                  <img src="../../assets/img/sprint/conhecimento_sprint_3.PNG" height="200" width="1000">
 
-                                <h5>Quadro de conhecimento</h5>
-                                  <img src="../../assets/img/sprint/conhecimento_sprint_3.PNG" height="200" width="1000"><br><br>
-                                <h5>Velocity</h5>
-                                <img src="../../assets/img/sprint/velocity_sprint_3.PNG" height="300" width="400"><br><br>
-                                <h5>Frequência de commits</h5>
-                                <img src="../../assets/img/sprint/frequencia_commits_sprint_3.PNG" height="400" width="900"><br><br>
+                                <h3>Frequência de commits</h3>
+                                <img src="../../assets/img/sprint/frequencia_commits_sprint_3.PNG" height="400" width="900">
 
-                                <h5>Riscos</h5>
+                                <h3>Desempenho</h3>
+                                <iframe width="1053" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnJAj0qr51sf6PF1Ac_wO-YVjUMT6XrI2lQvINIsZ47OPZvH0K4mfAEH4H1CUODGh4vKKUBBFRKTtR/pubchart?oid=639597732&amp;format=interactive"></iframe>
+                                <iframe width="906" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnJAj0qr51sf6PF1Ac_wO-YVjUMT6XrI2lQvINIsZ47OPZvH0K4mfAEH4H1CUODGh4vKKUBBFRKTtR/pubchart?oid=1721484316&amp;format=interactive"></iframe>
 
-                                Houve riscos pontuais que não necessitam ser mapeados no burndowm dos riscos, são eles:<br
+                                <h3>Riscos</h3>
 
-                                - Fez partes do sistema e não integrou;<br>
-                                - Não temos produto para entregar na R1.<br><br>
+                                <table border="1">
+                                  <tr>
+                                    <td><p><b>Risco</b></td>
+                                    <td><p><b>Ação Preventiva</b></td>
+                                    <td><p><b>Ação Reativa</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td><p>Refatorar a API</td>
+                                    <td><p>Definir corretamente o escopo e as necessidades do produto, para em seguida começar o a definição da aruqitetura.</td>
+                                    <td><p>Iniciar o quanto antes para evitar impáctos maiores ao projeto.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><p>API e Front não estão ligados</td>
+                                    <td><p>Produção com soncronia entre API e front</td>
+                                    <td><p>Fazer o Barramento de serviços</td>
+                                  </tr>
+                                  <tr>
+                                    <td><p>Não entregar o produto na R1</td>
+                                    <td><p>Planejar corretamente as atividades</td>
+                                    <td><p>Aumentar o <b>ritmo de produção</b>, <b>a qualidade</b> e o <b>conhecimento da equipe</b>.</td>
+                                  </tr>
+                                </table></p>
+                                    <iframe width="957" height="591" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYfa47iyePLsUn8l3VLDiPtJe7KZhbyk5f-V1aSydvImSqtg79unk3iSkh51JhsrE4QkTOR07Qbj1X/pubchart?oid=1162260752&amp;format=interactive"></iframe><br>
+                                    Os calculos e os gráficos de burndown dos riscos podem ser encontrados <a href="https://docs.google.com/spreadsheets/d/1C29zK1kXYdSazM7WLP-rhAKcggFebR-_VK9cKAEe6ro/edit?usp=sharing">aqui!</a>
 
-                                  Os calculos e os gráficos de burndown dos riscos podem ser encontrados <a href="https://docs.google.com/spreadsheets/d/1C29zK1kXYdSazM7WLP-rhAKcggFebR-_VK9cKAEe6ro/edit?usp=sharing">aqui!</a>
-
-                                <h4>Feedback</h4>
-
-                                &emsp;&emsp;Para reduzir os riscos de interação dos times e para melhorar o quadro de conhecimento, foi definido coachs de EPS para manter uma comunicação e passar o conhecimento maior entre o time de MDS.<br>
-                                &emsp;&emsp;Houve alteração positiva no quadro de conhecimento, pois os coachs conseguiram passar o conhecimento e integrar mais com a equipe, uma vez que somente o scrum master estava executando esse papel.<br>
-                                &emsp;&emsp;Tendo em vista os problemas das reuniões passadas, onde o time perdia o foco e extrapolava o tempo máximo dos ritos definidos. Para isso houve um planejamento da equipe de gerência para entender o a causa da desorganização da reunião. Com essa ação o time já teve
-                                melhorias na reunião de finalização da sprint 3 e do planejamento da 4, onde conseguiu reduzir o tamanho dos ritos e a duração de todos os ritos.
-                                &emsp;&emsp;Outra decisão tomada para a proxima sprint foi testar uma forma melhor de aproveitar as horas documentadas. A pontuação do time é baseada em horas onde cada ponto representa o seu dobro em horas, ex: 1 pto = 2 horas de trabalho, acreditamos que isso pode ajudar a tornar mais efetiva a pontuação do time.<br>
-                                &emsp;&emsp;O time continuou buscando resolver suas duvidas em comunidades e com colaboradores tecnicos na FGA.<br>
-                                &emsp;&emsp;O time continua com dificuldade em dividir as tarefas corretamente para trabalhar durante a sprint, mas como visto na frequencia de commits nada foi deixado para ultima hora como vinha acontecendo nas ultimas sprints.<br>
-                                &emsp;&emsp;Nessa sprint foi definido pareamento entre os integrantes de EPS, para melhorar o conhecimento e dividir as tarefas.<br><br>
+                                <h2>Feedback</h2>
+                                <p align="justify">&emsp;&emsp;Para reduzir as dificuldades na interação do time e para melhorar o nível de conhecimento, foi definido <b>coachs de EPS</b> para manter uma maior comunicação e disseminar melhor o conhecimento entre o time de MDS.</p>
+                                <p align="justify">&emsp;&emsp;Houve <b>alteração positiva no quadro de conhecimento</b>, pois os coaches conseguiram transmitir melhor o conhecimento e possibilitaram uma maior integração entre os membros da equipe, uma vez que somente o scrum master estava executando estes papéis.</p>
+                                <p align="justify">&emsp;&emsp;Devido os <b>problemas das reuniões passadas</b>, nas quais <b>o time perdia o foco e excedia o tempo máximo previamente organizados para os ritos</b> foi necessário um planejamento da equipe de gerência para entender causa desta desorganização durante as reuniões. Foi necessário reduzir o tamanho e a duração de todos os ritos com estas ações o time obteve melhorias na finalização da reunião da sprint 3 e no planejamento da sprint 4. Além disso outra decisão importante para a próxima sprint é verificar uma forma melhor aproveitamento das horas que vêm sendo documentadas. Uma vez que a pontuação do time é baseada em horas onde cada ponto representa o seu dobro em tempo, por exemplo: 1 ponto equivale a 2 horas de trabalho, acreditamos que isso pode auxiliar a tornar mais efetiva a pontuação do time.</p>
+                                <p align="justify">&emsp;&emsp;Ainda existe por parte do time a consulta de <b>resoluções de dúvidas em comunidades e com os colaboradores técnicos disponíveis na FGA</b>. Persiste também a dificuldade do time em dividir as tarefas corretamente para facilitar o trabalho durante a sprint, mas como tem sido mantida a frequência de commits sendo assim não se percebe que as ações têm sido postergadas para última hora como era feito nas nas sprints anteriores. Além disso, nesta sprint foi definido o pareamento entre os integrantes de EPS para aprimorar ainda mais o conhecimento e melhor distribuir as tarefas.</p>
+                                <p align="justify">&emsp;&emsp;Um dos maiores riscos do projeto foi levantado nessa sprint, a necessidade de refatorar a API para adequart corretamente ao escopo e necessidades do projeto. A ação reativa do risco foi aplicada e acredita-se quem em 2 sprints seja finalizada.</p>
                               </div>
                             </div>
                         </div>
