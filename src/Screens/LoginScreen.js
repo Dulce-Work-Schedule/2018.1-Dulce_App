@@ -7,7 +7,7 @@ import axios from 'axios';
 import { actionLogin } from '../Actions/currentUser';
 import { NavigationActions } from 'react-navigation';
 
-const logo = require('../../assets/img/logo.png');
+const logo = require('../../assets/img/DulceLogoFull.png');
 
 const styles = {
   container: {
@@ -31,8 +31,9 @@ const styles = {
   },
   logo: {
     alignSelf: 'center',
-    marginTop: '20%',
-    marginBottom: 40
+    height: 200,
+    resizeMode: 'contain',
+    backgroundColor: 'transparent'
   }
 };
 
