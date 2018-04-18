@@ -1,7 +1,6 @@
 import React from 'react';
 import AGRButton from '../../src/Components/AGRButton';
 import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import renderer from 'react-test-renderer';
 require('bezier');
