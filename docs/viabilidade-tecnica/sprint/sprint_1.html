@@ -20,7 +20,27 @@
     <link href="../../assets/assets-for-demo/demo.css" rel="stylesheet" />
     <!-- iframe removal -->
 </head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+p {
+    font-size: 20px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 <body class="index-page ">
     <nav class="navbar  fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
         <div class="container">
@@ -77,18 +97,18 @@
                         <!--                 nav pills -->
                         <div id="navigation-pills">
                             <div class="title">
-                                <h3>Sprint 1</h3>
+                                <h1>Sprint 1</h1>
 
                             </div>
                             <div class="row">
                               <div class="col-lg-12 col-md-12">
-                                <h4>Duração</h4>
+                                <h2>Duração</h2>
 
                                 Data início: 18/03/2018<br>
                                 Data término: 24/03/2018<br>
                                 Duração: 7 dias<br>
                                 <br>
-                                <h4>Objetivos</h4>
+                                <h2>Objetivos</h2>
 
                                 - Especificação e detalhamento dos requisitos iniciais do projeto;<br>
                                 - Treinamentos das técnologias;<br>
@@ -96,7 +116,7 @@
                                 - Finalizar a adequação do projeto às diretrizes da comunidade do GitHub.
 
                                 <br><br>
-                                <h4>Sprint Backlog</h4>
+                                <h2>Sprint Backlog</h2>
 
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/9">#9 Adequar o projeto às diretrizes da comunidade do GitHub</a><br>
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/10">#10 Adicionar informações referentes ao projeto no README do projeto</a><br>
@@ -113,20 +133,19 @@
                                 <a href="https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/15">#15 Criar Docker para React Native</a><br>
                                 <a href="https://github.com/fga-gpp-mds/AGR-APP-react-native/issues/30">#30 Criar Roadmap</a><br>
                                 <br>
-                                <h4>Papéis</h4>
+                                <h2>Papéis</h2>
 
-                                <p align = "justify">- Product Owner: <a href="https://github.com/egewarth">João Egewarth</a></p>
-                                <p align = "justify">- Scrum Master: <a href="https://github.com/alvesisaque">Isaque Alves</a></p>
-                                <p align = "justify">- DevOps: <a href="https://github.com/eliseuegewarth">Eliseu Egewarth</a></p>
-                                <p align = "justify">- Arquitetura: <a href="https://github.com/gag2502">Gabriela Alves</a></p>
-                                <p align = "justify">- Desenvolvedores: <a href="https://github.com/BeatrizHanae">Beatriz Hanae, </a>
+                                - Product Owner: <a href="https://github.com/egewarth">João Egewarth</a><br>
+                                - Scrum Master: <a href="https://github.com/alvesisaque">Isaque Alves</a><br>
+                                - DevOps: <a href="https://github.com/eliseuegewarth">Eliseu Egewarth</a><br>
+                                - Arquitetura: <a href="https://github.com/gag2502">Gabriela Alves</a><br>
+                                - Desenvolvedores: <a href="https://github.com/BeatrizHanae">Beatriz Hanae, </a>
                                   <a href="https://github.com/EzequielDeOliveira">Ezequiel De Oliveira, </a>
                                   <a href="https://github.com/fepas">Felipe Campos, </a>
                                   <a href="https://github.com/gabibguedes">Gabriela Guedes, </a>
                                   <a href="https://github.com/gdeusdara">Guilherme Deusdará, </a>
-                                  <a href="https://github.com/vitorl-s">Vitor Leal.</a></p>
-                                  <br>
-                                <h4>Pareamento</h4>
+                                  <a href="https://github.com/vitorl-s">Vitor Leal.</a><br>
+                                <h2>Pareamento</h2>
 
                                 Houve um <i>super pairing</i> para fazer os documentos de Visão e Arquitetura. Para o Protótipo foi definido que todos os membros do desenvolvimento participariam.<br>
 
@@ -138,76 +157,71 @@
                                 <a href="https://github.com/vitorl-s">Vitor Leal.</a><br>
 
                                 <br>
-                                <h4> Burndown</h4>
-
-                                Planejados:<br>
-                                - 14 issues<br>
-                                - 35 Pontos<br><br>
-
-                                Executados:<br>
-                                - 12 Issues<br>
-                                - 22 pontos<br>
-
+                                <h2> Burndown</h2>
 
                                 <img src="../../assets/img/sprint/burndown_sprint_1.PNG" height="500" width="1000">
 
                                 <br>
-                                <h4>Revisão</h4>
-                                Duração: 45 minutos.<br><br>
+                                <h2>Revisão</h2>
+                                Duração total de: 45 minutos.<br><br>
+                                &emsp;&emsp;A revisão da sprint ocorreu dentro do período planejado, nesta fase toda a equipe corrigiu os documentos de referente a
+                                <b>Arquitetura</b>; <b>Visão</b>; e <b>Protótipo</b>. As correções realizadas podem ser verificadas nos comentários das issues <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/20">#20</a>, <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/21">#21</a> e <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/22">#22</a>.
+                                Também houve correções no <b>Termo de abertura do projeto (TAP)</b> e na <b>strutura analítica do projeto (EAP)</b>. Tais alterações foram
+                                submetidas a validação de toda a equipe.<br>
+                                <br>
 
-                                A revisão da sprint ocorreu dentro do tempo planejado, onde toda a equipe corrigiu os documentos de arquitetura, visão e prototipo.
-                                As correções realizadas podem ser encontradas nos comentários das issues <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/20">#20</a>,
-                                <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/21">#21</a> e <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/22">#22</a>.
-                                Também foram feitas correções no Termo de Abertura do Projeto (TAP) e na Estrutura Analítica do Projeto (EAP) e em seguida apresentado para toda a equipe validar.<br>
-
-
-                                <h4>Dívidas Técnicas</h4>
+                                <h2>Dívidas Técnicas</h2>
 
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/15">#15  Criar Docker para React Native</a><br>
-                                Devido ao mau planejamento essa tarefa ela não foi concluida, pois primeiro era necessário entender o funcionamento ambiente de aplicações do <i>React Native</i> para automatizar a configuração do ambiente via Docker.
-                                Para as próximas <i>sprints</i> ela foi replanejada e virou um épico com duas atividades:<br><br>
+                                &emsp;&emsp;Devido a uma falha no planejamento essa tarefa inicialmente não conseguiu ser concluída, pois era necessário entender o funcionamento ambiente de aplicações do React Native para automatizar a configuração do ambiente via Docker.
+                                Contudo, para as próximas sprints essa falha foi replanejada e se tornou um épico com duas atividades:<br><br>
 
                                 - <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/71">#71 Analizar configuração de ambiente React Native</a><br>
-                                - <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/87">#87 Criar Docker React-Native</a><br>
+                                - <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/87">#87 Criar Docker React-Native</a><br><br>
 
                                 A tarefa <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/87">#87</a> é dependente da <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/71">#71</a> portanto serão realizadas em duas sprints consecutivas.<br><br>
 
                                 <a href="https://github.com/fga-gpp-mds/agr-react-native/issues/30">#30 Criar Roadmap</a><br>
-                                Devido a falta de conhecimento sobre o Escopo, a tarefa não pode ser finalizada a tempo.
+                                &emsp;&emsp;Por desconhecimento sobre o escopo, esta tarefa não pode ser finalizada em tempo hábil.
 
                                 <br><br>
-                                <h4> Retrospectiva</h4>
+                                <h2> Retrospectiva</h2>
                                 Duração: 45 minutos.<br><br>
 
-                                Os pontos positivos e negativos foram apresentados e discutidos pela equipe durante a retrospectiva.<br>
+                                Para a fundamentação da retrospectiva os pontos positivos e negativos foram apresentados e discutidos pela equipe.
 
-                                <h5>Pontos positivos</h5>
-                                  - Reuniões aos sábados;<br>
-                                  - Treinamentos de React Native;<br>
-                                  - Organização do time de desenvolvimento;<br>
-                                  - Equipe integrada;<br>
-                                  - Time se comunicando pelas issues;<br>
-                                  - Issues bem documentadas;<br>
-                                  - Metodologia.<br>
-                                  <br>
-                                <h5>Pontos Negativos</h5>
-                                  - Atraso devido a curva de aprendizado;<br>
-                                  - Escopo variando muito, causando confusão no time;<br>
-                                  - Curva de aprendizagem do Fishbone;<br>
-                                  - Ferramentas para prototipação;<br>
-                                  - erros com o Teletype do atom;<br>
-                                  - Pontualidade.<br>
+                                <h3>Pontos positivos</h3>
+                                - Reuniões aos sábados;<br>
+                                - Treinamentos de React Native;<br>
+                                - Organização do time de desenvolvimento;<br>
+                                - Equipe integrada;<br>
+                                - Time realizando a comunicação por meio das issues;<br>
+                                - Issues bem documentadas;<br>
+                                - Metodologia.<br>
 
-                                <h5>Quadro de conhecimento</h5>
+                                <h3>Pontos Negativos</h3>
+                                - Atraso ocasionado pela curva de aprendizado;<br>
+                                - Escopo com muita variação, causando confusão no time;<br>
+                                - Curva de aprendizagem representada pelo Fishbone;<br>
+                                - Ferramentas necessárias para prototipação;<br>
+                                - Erros com o Teletype do atom;<br>
+                                - Pontualidade.<br>
+
+
+                                <h3>Quadro de conhecimento</h3>
                                   <img src="../../assets/img/sprint/conhecimento_sprint_1.PNG" height="200" width="1000"><br>
-                                <h5>Velocity</h5>
-                                Acesse o velocity <a href="https://github.com/fga-gpp-mds/2018.1-Dulce_App#reports?report=velocity">aqui.</a><br>
-                                <h5>Frequência de commits</h5>
+                                <h3>Frequência de commits</h3>
                                 <img src="../../assets/img/sprint/frequencia_commits_sprint_1.PNG" height="400" width="900"><br>
 
-                                <h5>Riscos</h5>
-                                <h6>Score: 185</h6>
 
+                                <h3>Desempenho</h3>
+                                <iframe width="1053" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnJAj0qr51sf6PF1Ac_wO-YVjUMT6XrI2lQvINIsZ47OPZvH0K4mfAEH4H1CUODGh4vKKUBBFRKTtR/pubchart?oid=639597732&amp;format=interactive"></iframe>
+                                <iframe width="906" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnJAj0qr51sf6PF1Ac_wO-YVjUMT6XrI2lQvINIsZ47OPZvH0K4mfAEH4H1CUODGh4vKKUBBFRKTtR/pubchart?oid=1721484316&amp;format=interactive"></iframe>
+
+                                <h3>Riscos</h3>
+
+
+                                <p>Riscos identificados nessa sprint:</p>
                                   <table border="1">
                                     <tr>
                                       <td><p><b>Risco</b></td>
@@ -225,22 +239,20 @@
                                       <td><p>Replanejar a atividade para as próximas sprints.</td>
                                     </tr>
                                   </table></p>
+
+                                  <iframe width="957" height="591" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYfa47iyePLsUn8l3VLDiPtJe7KZhbyk5f-V1aSydvImSqtg79unk3iSkh51JhsrE4QkTOR07Qbj1X/pubchart?oid=1162260752&amp;format=interactive"></iframe>
                                   Os calculos e os gráficos de burndown dos riscos podem ser encontrados <a href="https://docs.google.com/spreadsheets/d/1C29zK1kXYdSazM7WLP-rhAKcggFebR-_VK9cKAEe6ro/edit?usp=sharing">aqui!</a>
 
-                                <h4>Feedback</h4>
-
-                                  &emsp;&emsp;Durante a sprint o time apresentou uma ótima integração. Por ser o primeiro pareamento o time de desenvolvimento teve a liberdade de dividir o grupo em
-                                  2 times, um para documentar a arquitetura e outro para o visão. Para a sprint 2 os integrantes dos times serão trocados mantendo apenas um integrante
-                                  fixo que manterá a qualidade do documento e ajudará os outros com a curva de aprendizado.<br>
-                                  &emsp;&emsp;A frequência de commits durante essa sprint apresentou problemas com técnicas de não codificar depressa, para melhorar isso para as próximas sprints foi
-                                  apresentado o gráfico à equipe e discutido como ele deve ser ao final de cada sprint.<br>
-                                  &emsp;&emsp;Um dos grandes focos da sprint foi diminuir o score dos riscos priorizando os de maior impacto e aplicando a ação reativa. Temos dois exemplos que
-                                  receberam nota 5 de impacto: <b>adaptação da equipe com as técnologias</b> e <b>dividir o repositório da API com outra equipe de EPS</b>.<br>
-                                  &emsp;&emsp;A ação reativa para a <b>adaptação da equipe com as técnologias</b> foi dois treinamentos de React, e um de UML para auxiliar no documento de arquitetura. Para
-                                  o risco de <b>dividir o repositório da API com outra equipe de EPS</b> foi definido a arquitetura de microserviços, permitindo a autonomia de trabalho dos times.<br>
-                                  &emsp;&emsp;Houve uma atualização significante no conhecimento de git, scrum, kanban e React da equipe em relação à sprint 0.<br>
-                                  &emsp;&emsp;Para a sprint 2, foi definido a mudança no uso das branchs do repositório removendo a branch "development" e iniciar a aplicação de Tags para o versionamento estável do produto,
-                                  também foi definido o inicio da produção do código. Optamos por aplicar histórias de baixo grau de dificuldade, levando em consideração a curva de aprendizagem da equipe.
+                                <h2>Feedback</h2>
+                                <p align="justify">&emsp;&emsp;No decorrer da sprint o time apresentou uma ótima integração. Mesmo sendo o primeiro pareamento o time de desenvolvimento teve a liberdade de conjuntamente optar pela divisão do grupo em dois times, um para responsável em documentar a <b>Arquitetura</b> e outro para a <b>Visão</b>.</p>
+                                <p align="justify">&emsp;&emsp;No entanto, para a sprint 2 os integrantes dos times serão remanejados mantendo apenas um integrante fixo que será o ponto focal para manter a qualidade do documento e ajudar os outros com a curva de aprendizado devido o conhecimento adquirido na sprint anterior na qual fizeram parte.</p>
+                                <p align="justify">&emsp;&emsp;Contudo, a frequência de commits durante essa sprint apresentou problemas com técnicas pelo fato de codificar muito depressa, para melhorar isso nas próximas sprints foram apresentados indicadores à equipe e o planejamento com posicionamentos demonstrando como o time deve estar ao final de cada sprint.</p>
+                                <p align="justify">&emsp;&emsp;Um dos grandes focos da sprint foi diminuir o score dos riscos na busca por priorizar os de maior impacto e a aplicação de ações reativas. Para exemplificar esse procedimento temos dois pontos que receberam como nota de impacto a pontuação 5, são elas: <b>adaptação da equipe com as tecnologias necessárias</b> e <b>dividir o repositório da API com outra equipe de EPS.</b></p>
+                                <p align="justify">&emsp;&emsp;De um lado, a ação reativa devido a alta pontuação recebida pelo ponto adaptação da equipe com as tecnologias necessárias foi a realização de <b>dois treinamentos de React, e um de UML</b> para auxiliar na produção do documento de <b>Arquitetura</b>.</p>
+                                <p align="justify">&emsp;&emsp;Por outro lado para mitigar o risco de dividir o repositório da API com outra equipe de EPS foi definido a arquitetura de micro serviços, que permitiu uma maior autonomia de trabalho a cada um dos times.</p>
+                                <p align="justify">&emsp;&emsp;Apenas para conhecimento houve uma atualização considerável no conhecimento de git, scrum, kanban e React por parte de toda a equipe em relação à sprint 0.</p>
+                                <p align="justify">&emsp;&emsp;Vale reforçar que para a sprint 2 foi definida a <b>mudança no uso das branchs do repositório</b> removendo a branch "development" e a implementação da aplicação de Tags para o versionamento estável do produto. Outro importante fator foi a definição do início da produção do código. Afinal, optamos em aplicar histórias de baixo grau de dificuldade, considerando a curva de aprendizagem apresentada pela equipe até o fim da sprint 1.</p>
+                                <br><br>
 
                               </div>
                             </div>
