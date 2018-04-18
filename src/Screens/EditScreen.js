@@ -1,5 +1,6 @@
+
 import React from 'react';
-import {ScrollView, View, Text} from 'react-native';
+import {View, Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
@@ -44,13 +45,11 @@ export default class EditScreen extends ValidationComponent {
     super(props);
     this.state = {
       editable: true,
-      collaborator: {},
-      password: '',
-      name: '',
-      registration: '',
-      hospital: '',
-      sector: '',
-      loading: true
+      name: store.getState().currentUser.name,
+      registration: store.getState().currentUser.registration,
+      hospital: store.getState().currentUser.hospital,
+      sector: store.getState().currentUser.sector,
+      password: ''
     };
   }
 
@@ -80,70 +79,62 @@ export default class EditScreen extends ValidationComponent {
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true}
-    })) {this.save();}
-  }
+    })) {
 
+      this.save();
+
+    }
+  }
   save() {
-    axios.post('http://172.17.0.1:8080/user/edit/' + store.getState().currentUser.id , {
-      name: this.state.name,
+
+    axios.post('http://localhost:8080/api/userManager/editUser' + this.props.navigation.state.params.userId , {
       registration: this.state.registration,
-      hospital: this.state.hospital,
-      sector: this.state.sector,
+
       password: this.state.password
     })
       .then((response) => {
-        console.log(response.data);
-        this.props.navigation.navigate('initial');
+        const token = response.data.token;
+        this.props.navigation.navigate('list', {token: token});
       });
   }
 
   render() {
-    return this.state.loading ? (
-
-      <View/>
-
-    ) : (
+    return (
       <View style={styles.container}>
         <SmallLogo/>
-        <ScrollView>
-          <AGRInput style={styles.input } value = {this.state.name}
-            editable = {false}
-            onChangeText={(text) => this.setState({
-              name: text})}
-          />
-          {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} value = {this.state.registration}
-            placeholder='Matricula'
-            editable = {false}
-            onChangeText={(text) => this.setState({
-              registration: text})}
-          />
-          <AGRInput style={styles.input} value = {this.state.hospital}
-            nameLabel='Hospital'
-            editable = {this.state.editable}
-            onChangeText={(text) => this.setState({
-              name: text})}
-          />
-          {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} value = {this.state.sector}
-            nameLabel='Setor'
-            editable = {this.state.editable}
-            onChangeText={(text) => this.setState({
-              sector: text})}
-          />
-          {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input}
-            nameLabel='Editar senha'
-            editable = {this.state.editable}
-            secureTextEntry
-            onChangeText={(text) => this.setState({
-              password: text})}
-          />
-          {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <View style={styles.alinhar}>
-            <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();}}/>
-          </View>
-        </ScrollView>
+        <AGRInput style={styles.input } value = {this.state.name}
+          editable = {false}
+        />
+        {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <AGRInput style={styles.input} value = {this.state.registration}
+          placeholder='Matricula'
+          editable = {false}
+        />
+        <AGRInput style={styles.input} value = {this.state.hospital}
+          nameLabel='Hospital'
+          editable = {this.state.editable}
+          onChangeText={(text) => this.setState({
+            name: text})}
+        />
+        {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <AGRInput style={styles.input} value = {this.state.sector}
+          nameLabel='setor'
+          editable = {this.state.editable}
+          onChangeText={(text) => this.setState({
+            sector: text})}
+        />
+        {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <AGRInput style={styles.input}
+          nameLabel='Editar senha'
+          editable = {this.state.editable}
+          secureTextEntry
+          onChangeText={(text) => this.setState({
+            password: text})}
+        />
+        {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+        <View style={styles.alinhar}>
+          <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();} }/>
+        </View>
       </View>
     );
   }

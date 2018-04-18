@@ -70,19 +70,19 @@ export class LoginScreen extends React.Component {
   }
 
   login() {
-    axios.post('http://172.17.0.1:8080/user/login', {
+    axios.post('http://localhost:8083/api/userManager/login', {
       registration: this.state.registration,
       password: this.state.password
     })
       .then((response) => {
-        this.props.setCurrentUser(response.data.token, response.data.id);
+        this.props.setCurrentUser(response.data.token, response.data.user);
         this.resetNavigation('initial');
       })
       .catch((err) => {
-        console.log(err);
         Alert.alert('Erro!', err.response.data.message);
       });
   }
+
   render() {
     return (
       <ScrollView>
@@ -119,14 +119,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setCurrentUser: (api_token, api_id) => {
+    setCurrentUser: (api_token, api_user) => {
       const currentUser = {
         token: api_token,
-        id: api_id,
-        name: 'John',
-        registration: '1234',
-        sector: 'Gama',
-        hospital: 'Hospital do Gama'
+        id: api_user.id,
+        name: api_user.name,
+        registration: api_user.registration,
+        sector: api_user.sector,
+        hospital: api_user.hospital
       };
       return dispatch(actionLogin(currentUser));
     }
