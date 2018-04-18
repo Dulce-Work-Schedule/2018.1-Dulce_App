@@ -70,7 +70,7 @@ export class LoginScreen extends React.Component {
   }
 
   login(){
-    axios.post('http://localhost:8081/api/userManager/login', {
+    axios.post('http://localhost:8083/api/userManager/login', {
       registration: this.state.registration,
       password: this.state.password
     })
