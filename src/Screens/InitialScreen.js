@@ -80,11 +80,13 @@ onMenuItemSelected = item =>
   render() {
     const menu = <Menu onItemSelected={this.onMenuItemSelected} />;
     return (
+
       <SideMenu
         menu={menu}
         isOpen={this.state.isOpen}
         onChange={isOpen => this.updateMenuState(isOpen)}
       >
+      <Icon.Button name='navicon' onPress={() => this.toggle()}></Icon.Button>
       <ScrollView style={styles.container}>
         <SmallLogo />
         <Container>
