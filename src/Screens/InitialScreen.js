@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   ScrollView,
-  View
+  View,
+  TouchableOpacity
 } from 'react-native';
 import SmallLogo from '../Components/SmallLogo';
 import {connect} from 'react-redux';
@@ -9,6 +10,8 @@ import {actionLogout} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
 import {Container, Content} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import SideMenu from 'react-native-side-menu';
+import Menu from '../Components/SideMenu';
 
 const styles = {
   text: {
@@ -25,6 +28,9 @@ const styles = {
   btn: {
     marginBottom: 20,
     paddingHorizontal: 48
+  },
+  container:{
+    backgroundColor: '#FFF'
   }
 
 };
@@ -32,10 +38,29 @@ const styles = {
 export class InitialScreen extends React.Component {
   constructor(props) {
     super(props);
+    this.toggle = this.toggle.bind(this);
     this.state = {
-      logged: false
+      isOpen: false,
+      logged: false,
+      selectedItem: 'About'
     };
   }
+
+  toggle() {
+  this.setState({
+    isOpen: !this.state.isOpen,
+  });
+}
+
+updateMenuState(isOpen) {
+  this.setState({ isOpen });
+}
+
+onMenuItemSelected = item =>
+  this.setState({
+    isOpen: false,
+    selectedItem: item,
+  });
 
   _onPressLogout() {
     this.props.removeUser();
@@ -53,7 +78,13 @@ export class InitialScreen extends React.Component {
   }
 
   render() {
+    const menu = <Menu onItemSelected={this.onMenuItemSelected} />;
     return (
+      <SideMenu
+        menu={menu}
+        isOpen={this.state.isOpen}
+        onChange={isOpen => this.updateMenuState(isOpen)}
+      >
       <ScrollView style={styles.container}>
         <SmallLogo />
         <Container>
@@ -71,6 +102,14 @@ export class InitialScreen extends React.Component {
           </Content>
         </Container>
       </ScrollView>
+
+        <TouchableOpacity
+          onPress={this.toggle}
+          style={styles.button}
+        >
+        <SmallLogo/>
+        </TouchableOpacity>
+</SideMenu>
     );
   }
 }
