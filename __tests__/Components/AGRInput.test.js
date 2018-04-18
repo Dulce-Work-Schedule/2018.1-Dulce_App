@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SmallLogo from '../../src/Components/SmallLogo';
+import AGRInput from '../../src/Components/AGRInput';
 require('bezier');
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<SmallLogo />)
+  .create(<AGRInput />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });

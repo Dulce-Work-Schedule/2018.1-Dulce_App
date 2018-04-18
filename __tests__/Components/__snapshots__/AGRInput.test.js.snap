@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={Object {}}
+  virtual={undefined}
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "borderBottomWidth": 1,
+        "borderColor": "#D9D5DC",
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "borderTopWidth": 0,
+        "flexDirection": "row",
+        "marginLeft": 15,
+        "marginTop": 15,
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      collapsable={undefined}
+      style={
+        Object {
+          "left": 0,
+          "opacity": 1,
+          "paddingBottom": undefined,
+          "paddingTop": undefined,
+          "position": "absolute",
+          "right": 0,
+          "top": 18,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#575757",
+            "fontSize": 17,
+            "left": 0,
+            "paddingRight": 5,
+            "top": 6,
+          }
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 17,
+            }
+          }
+          virtual={undefined}
+        />
+      </Text>
+    </View>
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#575757"
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "flex": 1,
+            "fontSize": 17,
+            "height": 50,
+            "lineHeight": 24,
+            "marginLeft": null,
+            "paddingLeft": null,
+            "paddingRight": 5,
+            "top": 10,
+          },
+          Object {
+            "alignSelf": "center",
+            "borderBottomColor": "grey",
+            "borderBottomWidth": 1,
+            "height": 40,
+            "marginBottom": 10,
+            "marginTop": 30,
+            "width": "100%",
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+      virtual={undefined}
+    />
+  </View>
+</View>
+`;

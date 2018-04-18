@@ -19,8 +19,6 @@ const styles = {
     flexDirection: 'column',
     padding: 15,
     backgroundColor: '#FFF'
-    //paddingHorizontal: 50
-
   },
   input: {
     height: 36,
@@ -28,8 +26,7 @@ const styles = {
     borderBottomColor: 'grey',
     marginBottom: 10,
     width: '100%',
-    alignSelf: 'center',
-    marginBottom: 20
+    alignSelf: 'center'
   },
   button: {
     marginTop: 30
@@ -61,7 +58,7 @@ export default class NewManager extends ValidationComponent {
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true},
       confirmepassword: {required: true}
-    }) && (this.state.confirmepassword == this.state.password)) {
+    }) && (this.state.confirmepassword === this.state.password)) {
       this.newManager();
     }
   }
@@ -107,7 +104,7 @@ export default class NewManager extends ValidationComponent {
           <AGRInput ref='password' nameLabel='Senha' secureTextEntry onChangeText={(text) => this.setState({password: text})} />
           {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <AGRInput ref='confirmepassword' nameLabel='Confirme sua senha' secureTextEntry onChangeText={(text) => this.setState({confirmepassword: text})} />
-          {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+          {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
           <AGRButton text='Criar' onPress={() => this._onPressButton()} />
         </ScrollView>
       </View>);}

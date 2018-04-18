@@ -1,62 +1,53 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-    ScrollView,
-    View,
-    Image
+  ScrollView,
+  View
 } from 'react-native';
-import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
-import { connect } from 'react-redux';
-import { actionLogout } from '../Actions/currentUser';
-import store from '../Reducers/store';
-import { NavigationActions } from 'react-navigation';
-import { Container, Header, Content, Button, Text } from 'native-base';
+import {connect} from 'react-redux';
+import {actionLogout} from '../Actions/currentUser';
+import {NavigationActions} from 'react-navigation';
+import {Container, Content} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-
-const styles={
-    container:{
-      backgroundColor: '#FFF'
-    },
-    text:{
-      marginLeft: 25
-    },
-    lastButton:{
-      marginBottom: 150
-    },
-    image:{
-      height: 30,
-      width: 30,
-      paddingLeft: 5
-    },
-    btn:{
-      marginBottom: 20,
-      paddingHorizontal: 48
-    }
+const styles = {
+  text: {
+    marginLeft: 25
+  },
+  lastButton: {
+    marginBottom: 150
+  },
+  image: {
+    height: 30,
+    width: 30,
+    paddingLeft: 5
+  },
+  btn: {
+    marginBottom: 20,
+    paddingHorizontal: 48
+  }
 
 };
 
-
-
 class InitialScreen extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       logged: false
-    }
+    };
   }
 
   _onPressLogout() {
     this.props.removeUser();
-    this.resetNavigation('login')
+    this.resetNavigation('login');
   }
 
   resetNavigation(targetRoute) {
     const resetAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({ routeName: targetRoute }),
-      ],
+        NavigationActions.navigate({routeName: targetRoute})
+      ]
     });
     this.props.navigation.dispatch(resetAction);
   }
@@ -68,15 +59,15 @@ class InitialScreen extends React.Component {
         <Container>
           <Content>
             <View style={styles.btn}>
-            <Icon.Button name="edit" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('edit')}>Editar perfil</Icon.Button></View>
+              <Icon.Button name='edit' style={styles.text} backgroundColor='purple' onPress={() => this.props.navigation.navigate('edit')}>Editar perfil</Icon.Button></View>
             <View style={styles.btn}>
-            <Icon.Button name="users" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('list')}>Ver médicos</Icon.Button></View>
+              <Icon.Button name='users' style={styles.text} backgroundColor='purple' onPress={() => this.props.navigation.navigate('list')}>Ver médicos</Icon.Button></View>
             <View style={styles.btn}>
-            <Icon.Button name="user-plus" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('newManager')}>Criar novos gestores</Icon.Button></View>
+              <Icon.Button name='user-plus' style={styles.text} backgroundColor='purple' onPress={() => this.props.navigation.navigate('newManager')}>Criar novos gestores</Icon.Button></View>
             <View style={styles.btn}>
-            <Icon.Button name="user-o" style={styles.text} backgroundColor="purple" onPress={() => this.props.navigation.navigate('ProfileManager')}>Perfil gestor</Icon.Button></View>
+              <Icon.Button name='user-o' style={styles.text} backgroundColor='purple' onPress={() => this.props.navigation.navigate('ProfileManager')}>Perfil gestor</Icon.Button></View>
             <View style={styles.btn}>
-            <Icon.Button name="sign-out" style={styles.text} backgroundColor="purple" onPress={() => this._onPressLogout()}>Logout</Icon.Button></View>
+              <Icon.Button name='sign-out' style={styles.text} backgroundColor='purple' onPress={() => this._onPressLogout()}>Logout</Icon.Button></View>
           </Content>
         </Container>
       </ScrollView>
@@ -84,9 +75,9 @@ class InitialScreen extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return{
-    currentUser:{}
+const mapStateToProps = () => {
+  return {
+    currentUser: {}
   };
 };
 

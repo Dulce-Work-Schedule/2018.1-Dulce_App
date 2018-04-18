@@ -1,15 +1,13 @@
-import { LOGIN, LOGOUT } from '../Actions/currentUser';
+import {LOGIN, LOGOUT} from '../Actions/currentUser';
 
 const initialState = {};
 
-function currentUser(state=initialState,action){
+function currentUser(state = initialState,action) {
   switch (action.type) {
     case LOGIN:
-      const currentUser = action.currentUser;
-      return currentUser;
+      return action.currentUser;
     case LOGOUT:
-      currentUser = action.currentUser;
-      return currentUser;
+      return action.currentUser;
 
     default:
       return initialState;

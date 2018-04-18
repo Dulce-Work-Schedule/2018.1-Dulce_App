@@ -1,10 +1,9 @@
 import React from 'react';
-import {Text, FlatList, ScrollView, Alert} from 'react-native';
+import {FlatList, ScrollView, Alert} from 'react-native';
 import UserItem from '../Components/UserItem';
 import axios from 'axios';
 import store from '../Reducers/store';
-import { Container, Header, Content, Spinner } from 'native-base';
-
+import {Container, Content, Spinner} from 'native-base';
 
 const styles = {
   container: {
@@ -30,39 +29,38 @@ class ListScreen extends React.Component {
 
   componentDidMount() {
     const url = 'http://172.17.0.1:8080/user/all';
-    this.setState({loading: true});
     axios.get(url, {
       headers: {
         'x-access-token': store.getState().currentUser.token
       }
     })
-    .then((response) => {
-      this.setState({employees: response.data, loading: false});
-    })
-    .catch(() => {Alert.alert('ERRO');});
+      .then((response) => {
+        this.setState({employees: response.data, loading: false});
+      })
+      .catch(() => {Alert.alert('ERRO');});
   }
 
   render() {
     return (
       <ScrollView contentContainerStyle={styles.container}>
-      {
-        this.state.loading ? (
+        {
+          this.state.loading ? (
 
-              <Container>
-                <Content>
-              <Spinner color='purple'/>
+            <Container>
+              <Content>
+                <Spinner color='purple'/>
               </Content>
-              </Container>
+            </Container>
 
-        ) : (
-          <FlatList
-            data = {this.state.employees}
-            keyExtractor = {(item) => {return item._id.toString();}}
-            renderItem={(data) => {return <UserItem text={data.item.name}
-            onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})}
-              />;
+          ) : (
+            <FlatList
+              data = {this.state.employees}
+              keyExtractor = {(item) => {return item._id.toString();}}
+              renderItem={(data) => {return (<UserItem text={data.item.name}
+                onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})}
+              />);
 
-            }}
+              }}
             />
           )
         }

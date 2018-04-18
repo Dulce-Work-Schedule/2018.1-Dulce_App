@@ -16,14 +16,15 @@ exports[`renders correctly 1`] = `
       <Image
         source={
           Object {
-            "testUri": "../../../assets/img/logo.png",
+            "testUri": "../../../assets/img/DulceLogoFull.png",
           }
         }
         style={
           Object {
             "alignSelf": "center",
-            "marginBottom": 40,
-            "marginTop": "20%",
+            "backgroundColor": "transparent",
+            "height": 200,
+            "resizeMode": "contain",
           }
         }
       />

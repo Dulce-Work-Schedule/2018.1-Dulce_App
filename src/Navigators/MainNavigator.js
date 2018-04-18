@@ -12,7 +12,7 @@ const routes = {
   login: {
     screen: LoginScreen,
     navigationOptions: {
-        header: null
+      header: null
     }
   },
   list: {
@@ -23,7 +23,7 @@ const routes = {
   },
   profile: {
     screen: ProfileScreen,
-    navigationOptions:{
+    navigationOptions: {
       title: ' '
     }
   },
@@ -33,14 +33,14 @@ const routes = {
       title: 'Perfil'
     }
   },
-  initial : {
+  initial: {
     screen: InitialScreen,
     navigationOptions: {
       header: null
     }
   },
   EmployeeProfile: {
-    screen: EmployeeProfileScreen,
+    screen: EmployeeProfileScreen
   },
   newManager: {
     screen: NewManager,
@@ -49,10 +49,10 @@ const routes = {
     }
   },
   edit: {
-      screen: EditScreen,
-      navigationOptions: {
-          title: 'Editar'
-      }
+    screen: EditScreen,
+    navigationOptions: {
+      title: 'Editar'
+    }
   }
 };
 

@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {TouchableHighlight,Text,View} from 'react-native';
-import { Container, Header, Content, Button } from 'native-base';
+import React from 'react';
+import {Text} from 'react-native';
+import {Container, Content, Button} from 'native-base';
 
 const styles = {
   container: {
@@ -23,7 +23,7 @@ class AGRButton extends React.Component {
     return (
       <Container>
         <Content>
-          <Button block   style={styles.container} onPress={() => this.props.onPress()}>
+          <Button block style={styles.container} onPress={() => this.props.onPress()}>
             <Text style={styles.text}>{this.props.text}</Text>
           </Button>
         </Content>

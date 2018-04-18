@@ -1,27 +1,25 @@
 import React from 'react';
-import {View, Text, Image, TouchableHighlight} from 'react-native';
+import {Image, TouchableHighlight} from 'react-native';
 
 const styles = {
   container: {
-   marginTop: 100,
-   width: 100,
-   justifyContent: 'center',
-   alignItems: 'center'
- },
-    icon: {
+    marginTop: 100,
+    width: 100,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  icon: {
     height: 100,
     width: 100
-    }
-}
+  }
+};
 
+class ScaleIcon extends React.Component {
 
-
-class ScaleIcon extends React.Component{
-
-  render(){
+  render() {
     return (
       <TouchableHighlight onPress = {() => this.props.onPress()} style = {styles.container}>
-       <Image source={require('../../assets/img/calendarIcon.png')} style = {styles.icon}/>
+        <Image source={require('../../assets/img/calendarIcon.png')} style = {styles.icon}/>
       </TouchableHighlight>
     );
   }

@@ -3,8 +3,7 @@ import {View , Text} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
 import store from '../Reducers/store';
-import { Container, Header, Content, Spinner } from 'native-base';
-
+import {Container, Content, Spinner} from 'native-base';
 
 const styles = {
   container: {
@@ -27,7 +26,7 @@ const styles = {
   informacoes: {
     alignSelf: 'center'
   }
-}
+};
 
 class ProfileManagerScreen extends React.Component {
   constructor(props) {
@@ -50,33 +49,33 @@ class ProfileManagerScreen extends React.Component {
       }
 
     })
-    .then((response) => {this.setState({profile: response.data , loading: false});});
+      .then((response) => {this.setState({profile: response.data , loading: false});});
   }
 
   render() {
     return (
       <View style={styles.container}>
-      {
-        this.state.loading ? (
-        <Container>
-          <Content>
-        <Spinner color='purple'/>
-        </Content>
-        </Container>
-      ) : (
-          <View style={styles.informacoes}>
-          <Text style={styles.name}>{this.state.profile.name}</Text>
-          <Text style={styles.text}>Matrícula:</Text>
-          <Text style={styles.text}>{this.state.profile.registration}</Text>
-          <Text style={styles.text}>Setor:{this.state.profile.sector}</Text>
-          <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
-         <View style={{marginTop: 20}} />
-          <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
-          </View>
-        )
-      }
+        {
+          this.state.loading ? (
+            <Container>
+              <Content>
+                <Spinner color='purple'/>
+              </Content>
+            </Container>
+          ) : (
+            <View style={styles.informacoes}>
+              <Text style={styles.name}>{this.state.profile.name}</Text>
+              <Text style={styles.text}>Matriula:</Text>
+              <Text style={styles.text}>{this.state.profile.registration}</Text>
+              <Text style={styles.text}>Setor: Pediatria</Text>
+              <Text style={styles.text}>Hospital do Gama</Text>
+              <View style={{marginTop: 60}} />
+              <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
+            </View>
+          )
+        }
       </View>
-    )
+    );
   }
 }
 
