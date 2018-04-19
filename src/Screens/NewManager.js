@@ -63,7 +63,6 @@ export default class NewManager extends ValidationComponent {
     }
   }
 
-
   newManager() {
 
     axios.post('http://localhost:8080/api/userManager/create', {
@@ -78,8 +77,6 @@ export default class NewManager extends ValidationComponent {
         this.props.navigation.navigate('initial');
       });
   }
-
-
 
   confirmepasswordErrado() {
     if (this.state.confirmepassword !== this.state.password) {
