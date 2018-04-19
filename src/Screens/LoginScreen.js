@@ -70,7 +70,7 @@ export class LoginScreen extends React.Component {
   }
 
   login() {
-    axios.post('http://192.168.1.110:8086/api/userManager/login', {
+    axios.post('http://ec2-52-67-139-45.sa-east-1.compute.amazonaws.com/api/userManager/login', {
       registration: this.state.registration,
       password: this.state.password
     })

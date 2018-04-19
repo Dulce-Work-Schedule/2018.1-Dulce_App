@@ -65,7 +65,7 @@ export default class NewManager extends ValidationComponent {
 
   newManager() {
 
-    axios.post('http://192.168.1.110:8083/api/userManager/create', {
+    axios.post('http://ec2-18-231-116-217.sa-east-1.compute.amazonaws.com/api/userManager/create', {
       registration: this.state.registration,
       password: this.state.password,
       name: this.state.name,
