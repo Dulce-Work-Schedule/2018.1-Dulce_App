@@ -15,7 +15,7 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('Testing onPress' , () =>  {
+it('Testing onPress' , () => {
   const onPressMock = jest.fn();
   const wrapper = shallow(<SmallButton onPress={onPressMock}/>);
   wrapper.simulate('press');
