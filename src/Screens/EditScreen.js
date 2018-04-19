@@ -114,7 +114,7 @@ export default class EditScreen extends ValidationComponent {
           nameLabel='Hospital'
           editable = {this.state.editable}
           onChangeText={(text) => this.setState({
-            name: text})}
+            hospital: text})}
         />
         {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
         <AGRInput style={styles.input} value = {this.state.sector}

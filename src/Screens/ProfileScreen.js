@@ -27,7 +27,6 @@ class ProfileScreen extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({loading: true});
 
     const url = 'http://localhost:8080/api/userManager/listById' + this.props.navigation.state.params.userId;
 

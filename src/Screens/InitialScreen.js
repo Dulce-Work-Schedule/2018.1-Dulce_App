@@ -29,7 +29,7 @@ const styles = {
 
 };
 
-class InitialScreen extends React.Component {
+export class InitialScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
