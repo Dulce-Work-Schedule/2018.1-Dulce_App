@@ -16,7 +16,7 @@ class ListScreen extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://localhost:8080/api/userManager/listUser';
+    const url = 'http://192.168.0.17:8083/api/userManager/listUser';
     this.setState({loading: true});
     axios.get(url, {
       headers: {
@@ -44,9 +44,9 @@ class ListScreen extends React.Component {
           ) : (
             <FlatList
               data = {this.state.employees}
-              keyExtractor = {(item) => {return item._id.toString();}}
+              keyExtractor = {(item) => {return item.id.toString();}}
               renderItem={(data) => {return (
-                <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})} key={data.item.id} avatar>
+                <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item.id})} key={data.item.id} avatar>
                   <Left>
                     <UserAvatar size='50' name={data.item.name} />
                   </Left>
