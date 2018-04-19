@@ -5,7 +5,7 @@ class Logout extends React.Component {
 
   render() {
     return (
-        <LoginNavigator />
+      <LoginNavigator />
     );
   }
 }

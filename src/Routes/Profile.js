@@ -5,7 +5,7 @@ class Profile extends React.Component {
 
   render() {
     return (
-        <ProfileNavigator />
+      <ProfileNavigator />
     );
   }
 }

@@ -5,7 +5,7 @@ class NewManager extends React.Component {
 
   render() {
     return (
-        <NewManagerNavigator />
+      <NewManagerNavigator />
     );
   }
 }
