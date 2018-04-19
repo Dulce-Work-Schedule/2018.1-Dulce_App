@@ -104,7 +104,7 @@ test('save button', () => {
   const onSaveMock = jest.fn();
 
   wrapper.setState({editable: true});
-  
+
   const saveButton = wrapper.find('AGRButton').at(0);
 
   wrapper.instance().save = onSaveMock;

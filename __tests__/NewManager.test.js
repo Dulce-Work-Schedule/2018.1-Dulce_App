@@ -38,10 +38,10 @@ test('change hospital file ', () => {
 });
 
 test('change sector file ', () => {
-const wrapper = shallow(<NewManager />);
-const sectorField = wrapper.find('AGRInput').at(3);
-sectorField.simulate('changeText','text');
-expect(wrapper.state('sector')).toBe('text');
+  const wrapper = shallow(<NewManager />);
+  const sectorField = wrapper.find('AGRInput').at(3);
+  sectorField.simulate('changeText','text');
+  expect(wrapper.state('sector')).toBe('text');
 });
 
 test('change confirme password file',() => {
