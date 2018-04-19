@@ -1,21 +1,9 @@
 import React from 'react';
-import {FlatList, ScrollView, Alert} from 'react-native';
-import UserItem from '../Components/UserItem';
+import {ScrollView, Alert, FlatList} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Content, Spinner} from 'native-base';
-
-const styles = {
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    padding: 15
-  },
-  text: {
-    fontSize: 48,
-    color: 'black'
-  }
-};
+import {Container, Content, Spinner, ListItem, Left, Body, Text} from 'native-base';
+import UserAvatar from 'react-native-user-avatar';
 
 class ListScreen extends React.Component {
 
@@ -28,7 +16,7 @@ class ListScreen extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://localhost:8080/api/userManager/listUser';
+    const url = 'http://192.168.1.110:8083/api/userManager/listUser';
     this.setState({loading: true});
     axios.get(url, {
       headers: {
@@ -43,7 +31,7 @@ class ListScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView contentContainerStyle={styles.container}>
+      <ScrollView>
         {
           this.state.loading ? (
 
@@ -56,11 +44,18 @@ class ListScreen extends React.Component {
           ) : (
             <FlatList
               data = {this.state.employees}
-              keyExtractor = {(item) => {return item._id.toString();}}
-              renderItem={(data) => {return (<UserItem text={data.item.name}
-                onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})}
-              />);
-
+              keyExtractor = {(item) => {return item.id.toString();}}
+              renderItem={(data) => {return (
+                <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item.id})} key={data.item.id} avatar>
+                  <Left>
+                    <UserAvatar size='50' name={data.item.name} />
+                  </Left>
+                  <Body>
+                    <Text>{data.item.name}</Text>
+                    <Text note>Matrícula: {data.item.registration}</Text>
+                  </Body>
+                </ListItem>
+              );
               }}
             />
           )
@@ -69,5 +64,4 @@ class ListScreen extends React.Component {
     );
   }
 }
-
 export default ListScreen;

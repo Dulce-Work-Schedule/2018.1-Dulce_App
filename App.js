@@ -1,10 +1,7 @@
 import React from 'react';
-import LoginScreen from './src/Screens/LoginScreen';
-import InitialScreen from './src/Screens/InitialScreen';
-import MainNavigator from './src/Navigators/MainNavigator';
+import LoginNavigator from './src/Navigators/LoginNavigator';
 import {Provider} from 'react-redux';
 import store from './src/Reducers/store';
-
 store.subscribe(() => {
   console.log(store.getState());
 });
@@ -14,7 +11,7 @@ class App extends React.Component{
   render() {
     return(
       <Provider store={store}>
-        <MainNavigator />
+        <LoginNavigator />
       </Provider>
     );
   }

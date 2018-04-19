@@ -4,22 +4,22 @@ import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
-
+import SmallLogo from '../Components/SmallLogo';
 const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 50 ,
+    padding: 20,
     backgroundColor: '#FFF'
 
   },
   text: {
-    fontSize: 30,
+    fontSize: 20,
     marginBottom: 15,
     alignSelf: 'center'
   },
   name: {
-    fontSize: 42,
+    fontSize: 30,
     marginBottom: 15,
     alignSelf: 'center'
   },
@@ -40,7 +40,7 @@ class ProfileManagerScreen extends React.Component {
   componentDidMount() {
     this.setState({loading: true});
 
-    const url = 'http://localhost:8080/api/userManager/listById' + store.getState().currentUser.id;
+    const url = 'http://192.168.1.110:8083/api/userManager/listById/?id=' + store.getState().currentUser.id;
 
     axios.get(url,{
 
@@ -55,25 +55,25 @@ class ProfileManagerScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      {
-        this.state.loading ? (
-        <Container>
-          <Content>
-        <Spinner color='purple'/>
-        </Content>
-        </Container>
-      ) : (
-          <View style={styles.informacoes}>
-          <Text style={styles.name}>{this.state.profile.name}</Text>
-          <Text style={styles.text}>Matriula:</Text>
-          <Text style={styles.text}>{this.state.profile.registration}</Text>
-          <Text style={styles.text}>Setor: Pediatria</Text>
-          <Text style={styles.text}>Hospital do Gama</Text>
-         <View style={{marginTop: 60}} />
-          <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
-    </View>
-        )
-      }
+        {
+          this.state.loading ? (
+            <Container>
+              <Content>
+                <Spinner color='purple'/>
+              </Content>
+            </Container>
+          ) : (
+            <View style={styles.informacoes}>
+            <SmallLogo />
+              <Text style={styles.name}>{this.state.profile.name}</Text>
+              <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
+              <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
+              <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
+              <View style={{marginTop: 60}} />
+              <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
+            </View>
+          )
+        }
       </View>
     );
   }

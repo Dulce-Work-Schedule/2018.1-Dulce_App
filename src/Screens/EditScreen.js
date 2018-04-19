@@ -55,7 +55,7 @@ export default class EditScreen extends ValidationComponent {
 
   componentDidMount() {
     this.setState({loading: true});
-    const url = 'http://172.17.0.1:8080/user/view/' + store.getState().currentUser.id ;
+    const url = 'http://172.17.0.1:8083/user/view/' + store.getState().currentUser.id ;
     axios.get(url,{
       headers: {
         'x-access-token': store.getState().currentUser.token
@@ -87,14 +87,14 @@ export default class EditScreen extends ValidationComponent {
   }
   save() {
 
-    axios.post('http://localhost:8080/api/userManager/editUser' + this.props.navigation.state.params.userId , {
+    axios.post('http://192.168.0.17:8080/api/userManager/editUser/?id=' + this.props.navigation.state.params.userId , {
       registration: this.state.registration,
 
       password: this.state.password
     })
       .then((response) => {
-        const token = response.data.token;
-        this.props.navigation.navigate('list', {token: token});
+        console.log(response.data);
+        this.props.navigation.navigate('profile');
       });
   }
 
