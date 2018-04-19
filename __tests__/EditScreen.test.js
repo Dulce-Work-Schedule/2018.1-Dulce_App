@@ -41,12 +41,11 @@ test('change password file', () => {
 
 });
 
-
 test('hospital field error' , () => {
 
   const wrapper = shallow(<EditScreen />);
 
-  wrapper.setState({hospital: ""});
+  wrapper.setState({hospital: ''});
 
   wrapper.instance()._onPressButton();
 
@@ -64,8 +63,9 @@ test('sector field error', () => {
 
   const wrapper = shallow(<EditScreen />);
 
-  wrapper.setState({sector: ""});
-  
+  wrapper.setState({sector: ''});
+
+
   wrapper.instance()._onPressButton();
 
   wrapper.setProps({});
@@ -80,21 +80,21 @@ test('sector field error', () => {
 
 test('password field error', () => {
 
-    const wrapper = shallow(<EditScreen />);
+  const wrapper = shallow(<EditScreen />);
 
-    wrapper.setState({password: ""});
+  wrapper.setState({password: ''});
 
-    wrapper.instance()._onPressButton();
+  wrapper.instance()._onPressButton();
 
-    wrapper.setProps({});
+  wrapper.setProps({});
 
-    console.log(wrapper.debug());
+  console.log(wrapper.debug());
 
-    const passwordFieldError = wrapper.find('Text').at(0);
+  const passwordFieldError = wrapper.find('Text').at(0);
 
-    const fieldText = passwordFieldError.dive().text();
+  const fieldText = passwordFieldError.dive().text();
 
-    expect(fieldText).toBe('The field \"password\" length must be greater than 4.');
+  expect(fieldText).toBe('The field \"password\" length must be greater than 4.');
 
 });
 

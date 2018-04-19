@@ -1,6 +1,6 @@
 import React from 'react';
 import NewManager from '../src/Screens/NewManager';
-import Adapter from 'enzyme-adapter-react-16'
+import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
@@ -30,10 +30,10 @@ test('change registration file ', () => {
 
 test('change hospital file ', () => {
 
-const wrapper = shallow(<NewManager />);
-const hospitalField = wrapper.find('AGRInput').at(2);
-hospitalField.simulate('changeText','text');
-expect(wrapper.state('hospital')).toBe('text');
+  const wrapper = shallow(<NewManager />);
+  const hospitalField = wrapper.find('AGRInput').at(2);
+  hospitalField.simulate('changeText','text');
+  expect(wrapper.state('hospital')).toBe('text');
 
 });
 
