@@ -93,8 +93,7 @@ export default class EditScreen extends ValidationComponent {
       password: this.state.password
     })
       .then((response) => {
-        const token = response.data.token;
-        this.props.navigation.navigate('list', {token: token});
+        this.props.navigation.navigate('profile');
       });
   }
 

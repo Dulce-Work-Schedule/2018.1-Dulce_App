@@ -3,6 +3,7 @@ import NewManager from '../Screens/NewManager';
 import ListScreen from '../Screens/ListScreen';
 import Doctors from '../Routes/Doctors';
 import Logout from '../Routes/Logout';
+import Profile from '../Routes/Profile';
 import ProfileManagerScreen from '../Screens/ProfileManagerScreen';
 import {DrawerNavigator} from 'react-navigation';
 
@@ -11,10 +12,7 @@ export default DrawerNavigator({
     screen: Doctors
   },
   'Meu Perfil': {
-    screen: ProfileManagerScreen
-  },
-  'Editar Perfil': {
-    screen: EditScreen
+    screen: Profile
   },
   'Criar novo gestor': {
     screen: NewManager
