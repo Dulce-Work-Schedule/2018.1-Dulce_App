@@ -16,7 +16,7 @@ class ListScreen extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://192.168.0.17:8083/api/userManager/listUser';
+    const url = 'http://192.168.1.110:8083/api/userManager/listUser';
     this.setState({loading: true});
     axios.get(url, {
       headers: {

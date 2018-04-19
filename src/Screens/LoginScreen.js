@@ -70,13 +70,13 @@ export class LoginScreen extends React.Component {
   }
 
   login() {
-    axios.post('http://192.168.0.17:8086/api/userManager/login', {
+    axios.post('http://192.168.1.110:8086/api/userManager/login', {
       registration: this.state.registration,
       password: this.state.password
     })
       .then((response) => {
         if (!response.data.success) {
-          throw {response}
+          throw new Error('error');
         }
         this.props.setCurrentUser(response.data.token, response.data.user);
         this.resetNavigation('initial');
