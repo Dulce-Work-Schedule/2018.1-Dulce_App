@@ -2,7 +2,9 @@ import React from 'react';
 import {
   ScrollView,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  StatusBar,
+  Text
 } from 'react-native';
 import SmallLogo from '../Components/SmallLogo';
 import {connect} from 'react-redux';
@@ -11,7 +13,7 @@ import {NavigationActions} from 'react-navigation';
 import {Container, Content} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SideMenu from 'react-native-side-menu';
-import Menu from '../Components/SideMenu';
+import Router from '../Components/routes';
 
 const styles = {
   text: {
@@ -29,7 +31,7 @@ const styles = {
     marginBottom: 20,
     paddingHorizontal: 48
   },
-  container:{
+  container: {
     backgroundColor: '#FFF'
   }
 
@@ -38,55 +40,29 @@ const styles = {
 export class InitialScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false,
-      logged: false,
-      selectedItem: 'About'
+      logged: false
     };
   }
 
-  toggle() {
-  this.setState({
-    isOpen: !this.state.isOpen,
-  });
+_onPressLogout() {
+  this.props.removeUser();
+  this.resetNavigation('login');
 }
 
-updateMenuState(isOpen) {
-  this.setState({ isOpen });
+resetNavigation(targetRoute) {
+  const resetAction = NavigationActions.reset({
+    index: 0,
+    actions: [
+      NavigationActions.navigate({routeName: targetRoute})
+    ]
+  });
+  this.props.navigation.dispatch(resetAction);
 }
 
-onMenuItemSelected = item =>
-  this.setState({
-    isOpen: false,
-    selectedItem: item,
-  });
-
-  _onPressLogout() {
-    this.props.removeUser();
-    this.resetNavigation('login');
-  }
-
-  resetNavigation(targetRoute) {
-    const resetAction = NavigationActions.reset({
-      index: 0,
-      actions: [
-        NavigationActions.navigate({routeName: targetRoute})
-      ]
-    });
-    this.props.navigation.dispatch(resetAction);
-  }
-
-  render() {
-    const menu = <Menu onItemSelected={this.onMenuItemSelected} />;
-    return (
-
-      <SideMenu
-        menu={menu}
-        isOpen={this.state.isOpen}
-        onChange={isOpen => this.updateMenuState(isOpen)}
-      >
-      <Icon.Button name='navicon' onPress={() => this.toggle()}></Icon.Button>
+render() {;
+  return (
+    <Router>
       <ScrollView style={styles.container}>
         <SmallLogo />
         <Container>
@@ -104,16 +80,9 @@ onMenuItemSelected = item =>
           </Content>
         </Container>
       </ScrollView>
-
-        <TouchableOpacity
-          onPress={this.toggle}
-          style={styles.button}
-        >
-        <SmallLogo/>
-        </TouchableOpacity>
-</SideMenu>
-    );
-  }
+    </Router>
+  );
+}
 }
 
 const mapStateToProps = () => {

@@ -1,9 +1,10 @@
 import React from 'react';
-import {ScrollView, Alert, FlatList} from 'react-native';
+import {ScrollView, Alert, FlatList, View} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner, ListItem, Left, Body, Thumbnail, Text} from 'native-base';
 import UserAvatar from 'react-native-user-avatar';
+
 class ListScreen extends React.Component {
 
   constructor(props) {
@@ -41,20 +42,20 @@ class ListScreen extends React.Component {
             </Container>
 
           ) : (
-            <FlatList
-              data = {this.state.employees}
-              keyExtractor = {(item) => {return item._id.toString();}}
-              renderItem={(data) => {return (
-                <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})} key={data.item.id} avatar>
-                  <Left>
-                    <UserAvatar size='50' name={data.item.name} />
-                  </Left>
-                  <Body>
-                    <Text>{data.item.name}</Text>
-                    <Text note>Matrícula: {data.item.registration}</Text>
-                  </Body>
-                </ListItem>
-              );
+              <FlatList
+                data = {this.state.employees}
+                keyExtractor = {(item) => {return item._id.toString();}}
+                renderItem={(data) => {return (
+                  <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item._id})} key={data.item.id} avatar>
+                    <Left>
+                      <UserAvatar size='50' name={data.item.name} />
+                    </Left>
+                    <Body>
+                      <Text>{data.item.name}</Text>
+                      <Text note>Matrícula: {data.item.registration}</Text>
+                    </Body>
+                  </ListItem>
+                );
               }}
             />
           )
