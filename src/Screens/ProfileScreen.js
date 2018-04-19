@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import ScaleIcon from '../Components/ScaleIcon';
+import {View , Text, ScrollView} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import SmallLogo from '../Components/SmallLogo';
 import {Container, Content, Spinner} from 'native-base';
+import SmallLogo from '../Components/SmallLogo';
+import ScaleIcon from '../Components/ScaleIcon'
 
 const styles = {
   container: {
@@ -22,6 +22,9 @@ const styles = {
   name: {
     fontSize: 30,
     marginBottom: 15,
+    alignSelf: 'center'
+  },
+  informacoes: {
     alignSelf: 'center'
   },
   icon: {
@@ -42,17 +45,14 @@ class ProfileScreen extends React.Component {
   componentDidMount() {
     this.setState({loading: true});
     const url = 'http://192.168.1.110:8083/api/userManager/listById/?id=' + this.props.navigation.state.params.userId;
-
     axios.get(url,{
-
       headers: {
         'x-access-token': store.getState().currentUser.token
       }
-
     })
-
       .then((response) => {this.setState({profile: response.data,loading: false});});
   }
+
   render() {
     return (
       <View style={styles.container}>
@@ -76,9 +76,9 @@ class ProfileScreen extends React.Component {
             </View>
           )
         }
-       </View>
+      </View>
     );
   }
- }
+}
 
 export default ProfileScreen;
