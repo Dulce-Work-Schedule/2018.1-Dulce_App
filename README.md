@@ -1,3 +1,4 @@
+### Para mais informações visite nossa página [dulce](https://fga-gpp-mds.github.io/2018.1-Dulce_App/index.html)
 # Dulce React Native
 APP [![Build Status](https://travis-ci.org/fga-gpp-mds/2018.1-Dulce_App.svg?branch=master)](https://travis-ci.org/fga-gpp-mds/2018.1-Dulce_App) [![Maintainability](https://api.codeclimate.com/v1/badges/2446e950fda3550f98ca/maintainability)](https://codeclimate.com/github/fga-gpp-mds/2018.1-Dulce_App/maintainability) [![Coverage Status](https://coveralls.io/repos/github/fga-gpp-mds/2018.1-Dulce_App/badge.svg?branch=master)](https://coveralls.io/github/fga-gpp-mds/2018.1-Dulce_App?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 API [![Coverage Status](https://coveralls.io/repos/github/fga-gpp-mds/2018.1-Dulce_API/badge.svg?branch=master)](https://coveralls.io/github/fga-gpp-mds/2018.1-Dulce_API?branch=master)  
@@ -12,7 +13,6 @@ O Dulce é o unico APP que permite os gestores de saúde uma facil vizualizaçã
 
 ### Instalação
 A Instalação do App pode ser feita tanto para Android quanto para IOS nos links a seguir.
-Android APP [link play store]
 <a href="https://play.google.com/store/apps/details?id=com.dulce"><img src="/docs/assets/img/logos/googleplay.png" width="150" height="60" title="Google Play"></a>
 
 ### Contribuir
@@ -20,14 +20,8 @@ Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribui
 Caso reste duvidas você também pode entrar em contato conosco criando uma issue ou pelo email dulce.application@gmail.com.
 
 ### Ambiente
-Para executar o ambiente do projeto em sua máquina:
 
-Pré-requisitos
-- Node.js versão superior à 6
-- 
-
-
-
+Para executar o ambiente do projeto acesse nosso [guia de instalação](guia_de_instalacao.md)
 
 ### Tecnologias
 
@@ -35,28 +29,4 @@ Pré-requisitos
 
 
 ### Colaboradores
-#### Equipe
-
-[![Eliseu](https://avatars2.githubusercontent.com/u/5272409?v=4&s=100)](https://github.com/eliseuegewarth)
-[![Gabriela](https://avatars0.githubusercontent.com/u/15165117?s=100&v=4)](https://github.com/gag2502)
-[![Isaque](https://avatars1.githubusercontent.com/u/17963713?v=4&s=100)](https://github.com/alvesisaque)
-[![João](https://avatars3.githubusercontent.com/u/12779174?v=4&s=100)](https://github.com/egewarth)
-
-[![Hanae](https://avatars1.githubusercontent.com/u/33128970?v=4&s=100)](https://github.com/BeatrizHanae)
-[![Ezequiel](https://avatars2.githubusercontent.com/u/37127457?v=4&s=100)](https://github.com/EzequielDeOliveira)
-[![Felipe](https://avatars3.githubusercontent.com/u/29442029?v=4&s=100)](https://github.com/fepas)
-[![Gabriela](https://avatars2.githubusercontent.com/u/31254028?v=4&s=100)](https://github.com/gabibguedes)
-[![Guilherme](https://avatars0.githubusercontent.com/u/30842015?v=4&s=100)](https://github.com/gdeusdara)
-[![Vitor](https://avatars0.githubusercontent.com/u/36925258?v=4&s=100)](https://github.com/vitorl-s)
-
-#### Apoiadores
-[![Carla Rocha](https://avatars0.githubusercontent.com/u/5897389?s=100&v=4)](https://github.com/RochaCarla)
-[![Iza Cristina](https://avatars2.githubusercontent.com/u/14032043?s=100&v=4)](https://github.com/izacristina)
-[![Lucas Amoêdo](https://avatars0.githubusercontent.com/u/11811420?s=100&v=4)](https://github.com/LucasAmoedo)
-[![Fábio Teixeira](https://avatars2.githubusercontent.com/u/4295523?s=100&v=4)](https://github.com/fabio1079)
-[![Heloise Cullen](https://avatars2.githubusercontent.com/u/9471715?s=100&v=4)](https://github.com/Heloisecs)
-<a href="https://www.linkedin.com/in/fellipe-marcelino-250101149/"><img src="https://media.licdn.com/dms/image/C4E03AQEGNsJG9EtMyw/profile-displayphoto-shrink_800_800/0?e=1527958800&v=alpha&t=ZlKPVaN4JwhW3GgZeI-KwmqqPgro8JTYZYJ9yCqcztA" width="100" height="100" title="Fellipe Marcelino"></a>
-<a href="https://www.linkedin.com/in/jefferson-falc%C3%A3o-736bb570/"><img src="https://media.licdn.com/dms/image/C4D03AQGXnkV6e1uQiQ/profile-displayphoto-shrink_800_800/0?e=1527962400&v=alpha&t=WJv6r_5XRNga3-X5phqRy73fhv5vJY6gKBVny5xbP94" width="100" height="100" title="Jefferson Falcão
-"></a>
-[![Felipe Cesar](https://avatars2.githubusercontent.com/u/4176646?s=100&v=4)](https://github.com/fel-cesar)
-[![Marcelo Augusto](https://avatars2.githubusercontent.com/u/18356890?s=100&v=4)](https://github.com/maugustoo)
+ As informações dos [colaboradores](https://fga-gpp-mds.github.io/2018.1-Dulce_App/colaboradores.html) pode ser acessada na nossa página.
