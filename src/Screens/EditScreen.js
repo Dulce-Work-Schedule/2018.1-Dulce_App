@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
@@ -55,7 +55,7 @@ export default class EditScreen extends ValidationComponent {
 
   componentDidMount() {
     this.setState({loading: true});
-    const url = 'http://ec2-18-231-116-217.sa-east-1.compute.amazonaws.com/api/userManager/view/?id=' + store.getState().currentUser.id ;
+    const url = 'http://ec2-18-231-116-217.sa-east-1.compute.amazonaws.com/api/userManager/editUser/?id=' + store.getState().currentUser.id ;
     axios.get(url,{
       headers: {
         'x-access-token': store.getState().currentUser.token
@@ -101,6 +101,7 @@ export default class EditScreen extends ValidationComponent {
   render() {
     return (
       <View style={styles.container}>
+      <ScrollView>
         <SmallLogo/>
         <AGRInput style={styles.input } value = {this.state.name}
           editable = {false}
@@ -135,6 +136,7 @@ export default class EditScreen extends ValidationComponent {
         <View style={styles.alinhar}>
           <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();} }/>
         </View>
+        </ScrollView>
       </View>
     );
   }
