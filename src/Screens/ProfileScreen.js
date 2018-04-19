@@ -1,10 +1,10 @@
 import React from 'react';
-import {View , Text, ScrollView} from 'react-native';
+import {View , Text} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
-import ScaleIcon from '../Components/ScaleIcon'
+import ScaleIcon from '../Components/ScaleIcon';
 
 const styles = {
   container: {
