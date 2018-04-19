@@ -52,8 +52,6 @@ test('hospital field error' , () => {
 
   wrapper.setProps({});
 
-  console.log(wrapper.debug());
-
   const hospitalFieldError = wrapper.find('Text').at(0);
 
   const fieldText = hospitalFieldError.dive().text();
@@ -80,7 +78,7 @@ test('sector field error', () => {
 
 });
 
-test('pawword field error', () => {
+test('password field error', () => {
 
     const wrapper = shallow(<EditScreen />);
 
