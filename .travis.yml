@@ -1,19 +1,12 @@
 language: node_js
 node_js:
   - "8"
-  - "7"
 cache:
   directories:
     - "node_modules"
 script:
   - npm install -g
-  - npm install -g coveralls
   - npm run lint
-  - travis_wait 15 npm run coverage
-after_success:
-  - echo "repo_token: ${COVERALLS_REPO_TOKEN}" > .coveralls.yml
-  - cat ./coverage/lcov.info | coveralls
-
 matrix:
   include:
     - language: android
@@ -23,14 +16,10 @@ matrix:
       node_js: false
       before_install:
         - nvm install 8
-        - sudo apt-get install -y -qq inkscape
-        - node --version
-        - travis_retry curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-        - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-        - travis_retry sudo apt-get update -qq
-        - travis_retry sudo apt-get install -y -qq yarn
       install:
-        - yarn
+        - sudo apt-get install -y -qq inkscape
+        - npm install -g
+        - npm install -g coveralls
       android:
         components:
           - addon-google_apis-google-16
@@ -43,8 +32,12 @@ matrix:
           - extra-google-m2repository
           - platform-tools
           - tools
+      before_script:
+        - ./utils/write_coveralls_config.sh
       script:
-        - utils/run_build.sh
+        - npm run lint
+        - ./utils/run_build.sh
+        - travis_wait 15 npm run coverage && cat ./coverage/lcov.info | coveralls
     # - language: objective-c
     #   os: osx
     #   osx_image: xcode8.2
