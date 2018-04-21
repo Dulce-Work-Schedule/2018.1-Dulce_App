@@ -87,8 +87,6 @@ test('password field error', () => {
 
   wrapper.setProps({});
 
-  console.log(wrapper.debug());
-
   const passwordFieldError = wrapper.find('Text').at(0);
 
   const fieldText = passwordFieldError.dive().text();

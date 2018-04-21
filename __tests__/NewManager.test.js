@@ -79,8 +79,6 @@ test('change hospital file',() => {
 
   wrapper.setProps({});
 
-  console.log(wrapper.debug());
-
   const hospitalFieldError = wrapper.find('Text').at(1);
 
   const fieldText = hospitalFieldError.dive().text();

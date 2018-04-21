@@ -52,8 +52,6 @@ test('hospital field error' , () => {
 
   wrapper.setProps({});
 
-  console.log(wrapper.debug());
-
   const hospitalFieldError = wrapper.find('Text').at(0);
 
   const fieldText = hospitalFieldError.dive().text();
@@ -90,8 +88,6 @@ test('password field error', () => {
   wrapper.instance()._onPressButton();
 
   wrapper.setProps({});
-
-  console.log(wrapper.debug());
 
   const passwordFieldError = wrapper.find('Text').at(0);
 
