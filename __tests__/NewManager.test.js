@@ -51,7 +51,6 @@ test('change confirme password file',() => {
   expect(wrapper.state('confirmepassword')).toBe('');
 });
 
-
 test('name field error' , () => {
 
   const wrapper = shallow(<NewManager />);
@@ -89,7 +88,6 @@ test('change hospital file',() => {
   expect(fieldText).toBe('The field \"hospital\" is mandatory.');
 
 });
-
 
 test('change sector file',() => {
 
