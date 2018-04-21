@@ -4,7 +4,7 @@ import EditScreen from '../../src/Screens/EditScreen';
 import Adapter from 'enzyme-adapter-react-16';
 import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
-import renderer from 'react-test-renderer';   
+import renderer from 'react-test-renderer';
 
 require('bezier');
 
@@ -64,7 +64,6 @@ test('sector field error', () => {
   const wrapper = shallow(<EditScreen />);
 
   wrapper.setState({sector: ''});
-
 
   wrapper.instance()._onPressButton();
 
