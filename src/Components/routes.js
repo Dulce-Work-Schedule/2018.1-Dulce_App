@@ -4,6 +4,8 @@ import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
 import HospitalsScreen from '../Screens/HospitalsScreen';
 import {DrawerNavigator} from 'react-navigation';
+import Sectors from '../Routes/Sectors';
+import Hospitals from '../Routes/Hospitals';
 
 export default DrawerNavigator({
   'Ver Medicos': {
@@ -18,8 +20,11 @@ export default DrawerNavigator({
   Logout: {
     screen: Logout
   },
+  'Ver Setores': {
+    screen: Sectors
+  },
   'Ver Hospitais': {
-    screen: HospitalsScreen
+    screen: Hospitals
   }
 }, {
   drawerWidth: 300
