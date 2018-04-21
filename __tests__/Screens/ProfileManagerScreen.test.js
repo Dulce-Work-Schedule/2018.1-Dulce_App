@@ -1,7 +1,7 @@
 
 import React from 'react';
 import 'react-native';
-import ProfileManagerScreen from '../src/Screens/ProfileManagerScreen';
+import ProfileManagerScreen from '../../src/Screens/ProfileManagerScreen';
 
 import renderer from 'react-test-renderer';
 

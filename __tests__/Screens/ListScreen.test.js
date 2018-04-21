@@ -1,6 +1,6 @@
 import 'react-native';
 import React from 'react';
-import ListScreen from '../src/Screens/ListScreen';
+import ListScreen from '../../src/Screens/ListScreen';
 import renderer from 'react-test-renderer';
 require('bezier');
 

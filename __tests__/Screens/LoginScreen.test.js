@@ -1,5 +1,5 @@
 import React from 'react';
-import {LoginScreen} from '../src/Screens/LoginScreen';
+import {LoginScreen} from '../../src/Screens/LoginScreen';
 import adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
@@ -27,4 +27,3 @@ test('change password file ', () => {
   passwordlField.simulate('changeText','');
   expect(wrapper.state('password')).toBe('');
 });
-

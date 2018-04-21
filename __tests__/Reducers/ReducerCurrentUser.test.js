@@ -1,5 +1,5 @@
-import reducer from '../src/Reducers/currentUser';
-import {LOGIN, LOGOUT} from '../src/Actions/currentUser';
+import reducer from '../../src/Reducers/currentUser';
+import {LOGIN, LOGOUT} from '../../src/Actions/currentUser';
 
 const currentUser = {
   token: 'test'

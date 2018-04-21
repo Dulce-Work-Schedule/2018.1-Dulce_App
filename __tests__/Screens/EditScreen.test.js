@@ -1,6 +1,6 @@
 import 'react-native';
 import React from 'react';
-import EditScreen from '../src/Screens/EditScreen';
+import EditScreen from '../../src/Screens/EditScreen';
 import Adapter from 'enzyme-adapter-react-16';
 import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
@@ -65,7 +65,6 @@ test('sector field error', () => {
 
   wrapper.setState({sector: ''});
 
-
   wrapper.instance()._onPressButton();
 
   wrapper.setProps({});
@@ -87,8 +86,6 @@ test('password field error', () => {
   wrapper.instance()._onPressButton();
 
   wrapper.setProps({});
-
-  console.log(wrapper.debug());
 
   const passwordFieldError = wrapper.find('Text').at(0);
 

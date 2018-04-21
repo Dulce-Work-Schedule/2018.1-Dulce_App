@@ -1,5 +1,5 @@
-import {actionLogin, actionLogout} from '../src/Actions/currentUser';
-import {LOGIN, LOGOUT} from '../src/Actions/currentUser';
+import {actionLogin, actionLogout} from '../../src/Actions/currentUser';
+import {LOGIN, LOGOUT} from '../../src/Actions/currentUser';
 
 describe('actions', () => {
   it('should create a action to login',() => {

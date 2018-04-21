@@ -45,6 +45,7 @@ export class LoginScreen extends React.Component {
       registration: '',
       password: ''
     };
+    this._onPressButton = this._onPressButton.bind(this);
   }
 
   resetNavigation(targetRoute) {
@@ -104,7 +105,7 @@ export class LoginScreen extends React.Component {
           />
 
           <AGRButton
-            onPress={this._onPressButton.bind(this)}
+            onPress={this._onPressButton}
             text='Entrar'
           />
         </View>

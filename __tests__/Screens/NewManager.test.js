@@ -1,5 +1,5 @@
 import React from 'react';
-import NewManager from '../src/Screens/NewManager';
+import NewManager from '../../src/Screens/NewManager';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
@@ -79,8 +79,6 @@ test('change hospital file',() => {
   wrapper.instance()._onPressButton();
 
   wrapper.setProps({});
-
-  console.log(wrapper.debug());
 
   const hospitalFieldError = wrapper.find('Text').at(1);
 
