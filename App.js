@@ -6,10 +6,10 @@ store.subscribe(() => {
   console.log(store.getState());
 });
 
-class App extends React.Component{
+class App extends React.Component {
 
   render() {
-    return(
+    return (
       <Provider store={store}>
         <LoginNavigator />
       </Provider>
