@@ -2,7 +2,6 @@ import NewManager from '../Routes/NewManager';
 import Doctors from '../Routes/Doctors';
 import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
-import HospitalsScreen from '../Screens/HospitalsScreen';
 import {DrawerNavigator} from 'react-navigation';
 import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
