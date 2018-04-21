@@ -65,7 +65,6 @@ test('sector field error', () => {
 
   wrapper.setState({sector: ''});
 
-
   wrapper.instance()._onPressButton();
 
   wrapper.setProps({});
