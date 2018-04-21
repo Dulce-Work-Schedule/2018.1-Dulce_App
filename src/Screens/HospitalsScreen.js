@@ -1,6 +1,5 @@
 import React from 'react';
 import {Container, Header, Content, List, ListItem, Text, Title, Body} from 'native-base';
-import {ScrollView} from 'react-native';
 
 class HospitalsScreen extends React.Component {
 
