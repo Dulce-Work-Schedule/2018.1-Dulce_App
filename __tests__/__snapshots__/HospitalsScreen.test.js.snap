@@ -66,7 +66,7 @@ exports[`renders correctly 1`] = `
           }
           virtual={undefined}
         >
-          Hospitais
+          Setores
         </Text>
       </View>
     </View>
@@ -120,675 +120,264 @@ exports[`renders correctly 1`] = `
     virtual={undefined}
   >
     <View>
-      <View
+      <RCTScrollView
         closeOnRowBeginSwipe={false}
         closeOnRowPress={true}
         closeOnScroll={true}
+        dataArray={
+          Array [
+            "Hospital de Base",
+            "Hospital Regional de Taguatinga",
+            "Hospital da Ceilandia",
+            "Clínica",
+          ]
+        }
+        dataSource={
+          ListViewDataSource {
+            "items": 4,
+          }
+        }
         directionalDistanceChangeThreshold={2}
         disableLeftSwipe={false}
         disableRightSwipe={false}
+        enableEmptySections={true}
         leftOpenValue={0}
         previewFirstRow={false}
         recalculateHiddenLayout={false}
+        renderRow={[Function]}
+        renderScrollComponent={[Function]}
         rightOpenValue={0}
         style={Object {}}
         swipeToOpenPercent={50}
         virtual={undefined}
       >
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
+        <View>
           <View
-            itemDivider={true}
-            style={
-              Array [
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#f4f4f4",
-                  "borderBottomWidth": null,
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
                   "borderColor": "#c9c9c9",
                   "flexDirection": "row",
-                  "marginLeft": null,
-                  "paddingBottom": 10,
-                  "paddingLeft": 15,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                },
-                Object {
-                  "backgroundColor": "#a961ed",
-                },
-              ]
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
                   Object {
                     "alignSelf": "center",
                     "color": "#000",
                     "fontFamily": "System",
                     "fontSize": 16,
-                  },
-                  Object {
-                    "color": "white",
-                  },
-                ]
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Asa Norte
-            </Text>
-          </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
+                  }
                 }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Hospital de Base
-            </Text>
+                uppercase={false}
+                virtual={undefined}
+              >
+                Hospital de Base
+              </Text>
+            </View>
           </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
           <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
+              onPress={[Function]}
               style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Hospital Regional
-            </Text>
-          </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            itemDivider={true}
-            style={
-              Array [
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#f4f4f4",
-                  "borderBottomWidth": null,
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
                   "borderColor": "#c9c9c9",
                   "flexDirection": "row",
-                  "marginLeft": null,
-                  "paddingBottom": 10,
-                  "paddingLeft": 15,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                },
-                Object {
-                  "backgroundColor": "#a961ed",
-                },
-              ]
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
                   Object {
                     "alignSelf": "center",
                     "color": "#000",
                     "fontFamily": "System",
                     "fontSize": 16,
-                  },
-                  Object {
-                    "color": "white",
-                  },
-                ]
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Gama
-            </Text>
-          </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
+                  }
                 }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Hospital Gama
-            </Text>
+                uppercase={false}
+                virtual={undefined}
+              >
+                Hospital Regional de Taguatinga
+              </Text>
+            </View>
           </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
           <View
-            itemDivider={true}
-            style={
-              Array [
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#f4f4f4",
-                  "borderBottomWidth": null,
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
                   "borderColor": "#c9c9c9",
                   "flexDirection": "row",
-                  "marginLeft": null,
-                  "paddingBottom": 10,
-                  "paddingLeft": 15,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                },
-                Object {
-                  "backgroundColor": "#a961ed",
-                },
-              ]
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
                   Object {
                     "alignSelf": "center",
                     "color": "#000",
                     "fontFamily": "System",
                     "fontSize": 16,
-                  },
-                  Object {
-                    "color": "white",
-                  },
-                ]
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Guará
-            </Text>
-          </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
+                  }
                 }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Hospital Guará
-            </Text>
+                uppercase={false}
+                virtual={undefined}
+              >
+                Hospital da Ceilandia
+              </Text>
+            </View>
           </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
           <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
+              onPress={[Function]}
               style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              UPA Guará
-            </Text>
-          </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            itemDivider={true}
-            style={
-              Array [
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "#f4f4f4",
-                  "borderBottomWidth": null,
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
                   "borderColor": "#c9c9c9",
                   "flexDirection": "row",
-                  "marginLeft": null,
-                  "paddingBottom": 10,
-                  "paddingLeft": 15,
-                  "paddingRight": 10,
-                  "paddingTop": 10,
-                },
-                Object {
-                  "backgroundColor": "#a961ed",
-                },
-              ]
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
                   Object {
                     "alignSelf": "center",
                     "color": "#000",
                     "fontFamily": "System",
                     "fontSize": 16,
-                  },
-                  Object {
-                    "color": "white",
-                  },
-                ]
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Taguatinga
-            </Text>
-          </View>
-        </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
+                  }
                 }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              Hospital Taguatinga
-            </Text>
+                uppercase={false}
+                virtual={undefined}
+              >
+                Clínica
+              </Text>
+            </View>
           </View>
         </View>
-        <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={null}
-          testID={undefined}
-          tvParallaxProperties={undefined}
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderBottomWidth": 0.5,
-                "borderColor": "#c9c9c9",
-                "flexDirection": "row",
-                "marginLeft": 16,
-                "paddingBottom": 13,
-                "paddingRight": 16,
-                "paddingTop": 13,
-              }
-            }
-            virtual={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#000",
-                  "fontFamily": "System",
-                  "fontSize": 16,
-                }
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              UPA Taguatinga
-            </Text>
-          </View>
-        </View>
-      </View>
+      </RCTScrollView>
     </View>
   </RCTScrollView>
 </View>

@@ -21,7 +21,7 @@ class SectorsScreen extends React.Component {
         <Content>
           <List dataArray={this.state.sectors}
             renderRow={(item) =>
-              <ListItem>
+              <ListItem onPress={() => this.props.navigation.navigate('doctors')}>
                 <Text>{item}</Text>
               </ListItem>
             } />

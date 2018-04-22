@@ -1,12 +1,12 @@
 import React from 'react';
-import {Container, Header, Content, List, ListItem, Text, Title, Body} from 'native-base';
+import {Container, Header, Content, List, ListItem, Text, Body, Title} from 'native-base';
 
 class HospitalsScreen extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      hospitals: {}
+      Hospitals: ['Hospital de Base','Hospital Regional de Taguatinga','Hospital da Ceilandia','Clínica']
     };
   }
 
@@ -15,45 +15,16 @@ class HospitalsScreen extends React.Component {
       <Container>
         <Header style={{backgroundColor: '#430082'}}>
           <Body>
-             <Title>Hospitais</Title>
+             <Title>Setores</Title>
            </Body>
         </Header>
         <Content>
-          <List>
-            <ListItem style={{backgroundColor: '#a961ed'}} itemDivider>
-              <Text style={{color: 'white'}}>Asa Norte</Text>
-            </ListItem>
-            <ListItem>
-              <Text >Hospital de Base</Text>
-            </ListItem>
-            <ListItem>
-              <Text>Hospital Regional</Text>
-            </ListItem>
-            <ListItem style={{backgroundColor: '#a961ed'}}itemDivider>
-              <Text style={{color: 'white'}}>Gama</Text>
-            </ListItem>
-            <ListItem>
-              <Text>Hospital Gama</Text>
-            </ListItem>
-            <ListItem style={{backgroundColor: '#a961ed'}} itemDivider>
-              <Text style={{color: 'white'}}>Guará</Text>
-            </ListItem>
-            <ListItem>
-              <Text>Hospital Guará</Text>
-            </ListItem>
-            <ListItem>
-              <Text>UPA Guará</Text>
-            </ListItem>
-            <ListItem style={{backgroundColor: '#a961ed'}} itemDivider>
-              <Text style={{color: 'white'}}>Taguatinga</Text>
-            </ListItem>
-            <ListItem>
-              <Text>Hospital Taguatinga</Text>
-            </ListItem>
-            <ListItem>
-              <Text>UPA Taguatinga</Text>
-            </ListItem>
-          </List>
+          <List dataArray={this.state.Hospitals}
+            renderRow={(item) =>
+              <ListItem onPress={() => this.props.navigation.navigate('sectors')}>
+                <Text>{item}</Text>
+              </ListItem>
+            } />
         </Content>
       </Container>
     );
