@@ -2,6 +2,7 @@ import NewManager from '../Routes/NewManager';
 import Doctors from '../Routes/Doctors';
 import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
+import SideMenu from './Components';
 import {DrawerNavigator} from 'react-navigation';
 import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
@@ -26,5 +27,6 @@ export default DrawerNavigator({
     screen: Hospitals
   }
 }, {
+  contentComponent: SideMenu,
   drawerWidth: 300
 });
