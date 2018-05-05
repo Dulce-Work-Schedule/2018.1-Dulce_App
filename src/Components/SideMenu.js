@@ -18,19 +18,19 @@ class SideMenu extends Component {
         <ScrollView>
 
           <View>
-            <Text style={styles.sectionHeadingStyle} onPress={this.navigateToScreen}('Doctors')>
+            <Text style={styles.sectionHeadingStyle} onPress={this.navigateToScreen('Doctors')}>
               Ver Medicos
             </Text>
           </View>
 
           <View>
-            <Text style={styles.sectionHeadingStyle} onPress={this.navigateToScreen}('Profile')>
+            <Text style={styles.sectionHeadingStyle} onPress={this.navigateToScreen('Profile')}>
               Meu Perfil
             </Text>
           </View>
 
         </ScrollView>
-        <View style={styles.footerContainer} onPress={this.navigateToScreen}('Logout')>
+        <View style={styles.footerContainer} onPress={this.navigateToScreen('Logout')}>
           <Text>Logout</Text>
         </View>
       </View>
