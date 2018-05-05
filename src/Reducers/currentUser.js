@@ -7,7 +7,7 @@ function currentUser(state = initialState,action) {
     case LOGIN:
       return action.currentUser;
     case LOGOUT:
-      return action.currentUser;
+      return initialState;
 
     default:
       return initialState;
