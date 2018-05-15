@@ -1,13 +1,13 @@
-# Código de conduta da comunidade AGR-APP
+# Código de conduta da comunidade Dulce-App
 
 ## Propósito
-<p align="justify">&emsp;&emsp;O principal objetivo da AGR-APP é ser inclusivo, promovendo o crescimento individual e coletivo dos seus colaboradores por meio da convivência com as diferenças. Como tal, estamos empenhados em proporcionar um ambiente amigável, seguro e acolhedor para todos, independentemente de gênero, orientação sexual, etnia, status socioeconômico, religião ou quaisquer outros atributos e habilidades.</p>
+<p align="justify">&emsp;&emsp;O principal objetivo da Dulce-App é ser inclusivo, promovendo o crescimento individual e coletivo dos seus colaboradores por meio da convivência com as diferenças. Como tal, estamos empenhados em proporcionar um ambiente amigável, seguro e acolhedor para todos, independentemente de gênero, orientação sexual, etnia, status socioeconômico, religião ou quaisquer outros atributos e habilidades.</p>
 
 
 <p align="justify">&emsp;&emsp;Este código de conduta descreve as expectativas para todos aqueles que participam da nossa comunidade, bem como as consequências diante comportamentos inaceitáveis. </p>
 
 
-<p align="justify">&emsp;&emsp;Convidamos todos aqueles que participam da AGR-APP a nos ajudar a criar experiências seguras e positivas para todos.</p>
+<p align="justify">&emsp;&emsp;Convidamos todos aqueles que participam da Dulce-App a nos ajudar a criar experiências seguras e positivas para todos.</p>
 
 ## Nossas normas
 ### Comportamento esperado

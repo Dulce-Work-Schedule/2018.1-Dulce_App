@@ -1,13 +1,13 @@
 {
   "name": "Dulce",
-  "author": "gpp-mds",
-  "description": "Dulce é um aplicativo desenvolvido em react-native para análise/monitoramento de indicadores da saúde pública regional (DF)",
-  "version": "0.0.1",
+  "author": "Dulce Work Schedule",
+  "description": "Dulce é um aplicativo para gerenciamento de escalas e análise/monitoramento de indicadores de saúde",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fga-gpp-mds/agr-react-native"
+    "url": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App"
   },
-  "homepage": "https://fga-gpp-mds.github.io/agr-react-native/",
+  "homepage": "https://Dulce-Work-Schedule.github.io/2018.1-Dulce_App/",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -17,7 +17,7 @@
     "lint": "eslint src __tests__",
     "coverage": "rimraf coverage && jest --updateSnapshot --runInBand --coverage"
   },
-  "bugs": "https://github.com/fga-gpp-mds/agr-react-native/issues",
+  "bugs": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App/issues",
   "dependencies": {
     "axios": "^0.18.0",
     "bluebird": "^3.3.5",

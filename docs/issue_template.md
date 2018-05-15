@@ -38,7 +38,7 @@ Classificar na fase:
 
 ### *Labels*
 
-Você pode utilizar as [*labels*](https://github.com/fga-gpp-mds/AGR-APP-react-native/labels) para organizar as *issues* e *Pull Requests*.
+Você pode utilizar as [*labels*](https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App/labels) para organizar as *issues* e *Pull Requests*.
 
 
 ### *Milestone*

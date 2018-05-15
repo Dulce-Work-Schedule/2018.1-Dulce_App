@@ -18,11 +18,11 @@ Issue #32
 Correção de bugs
 ```
 
-O pipeline do [boards](https://github.com/fga-gpp-mds/AGR-APP-react-native/issues#boards?repos=124531192) (*Kanban*),  
+O pipeline do [boards](https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App#boards?repos=124531192,132006434,133160500,132006174,132006048,132005060,132774903,133529440) (*Kanban*),  
 os revisores (se possivel) e  
 as labels (se necessário).
 
 ![Pull request](/docs/img/pull_request_template.png)
 
 ### Requisitos
-Para ser aceito sem grandes mudanças, o pull request deve estar de acordo com as [politicas de uso do repositório.](../CONTRIBUTING.md)
+Para ser aceito sem grandes mudanças, o pull request deve estar de acordo com as [politicas de uso do repositório.](/CONTRIBUTING.md)
