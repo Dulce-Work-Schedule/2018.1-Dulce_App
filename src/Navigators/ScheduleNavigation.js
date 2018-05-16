@@ -3,11 +3,9 @@ import {StackNavigator} from 'react-navigation';
 
 const routes = {
   week: {
-    screen: WeekSchedule,
-    navigationOptions: {
-      header: null
-    }
-  };
+    screen: WeekSchedule
+  }
+}
 
 const config = {};
 
