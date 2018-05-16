@@ -26,8 +26,9 @@ export default DrawerNavigator({
   'Ver Hospitais': {
     screen: Hospitals
   },
-  'Ver escala': {
+  'Ver Escala': {
     screen: Schedule
-  }, {
+  }
+}, {
   drawerWidth: 300
 });
