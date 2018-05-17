@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {Calendar} from 'react-native-calendars';
+import {Calendar, CalendarList} from 'react-native-calendars';
 import Router from '../Components/routes'
 
 
@@ -9,16 +9,24 @@ const styles = {
     fontSize: 30,
     color: '#00F' ,
     marginBottom: 5,
-    marginTop: 5
+    marginTop: 5,
+    textAlign: 'center'
   },
   calendar: {
-    padding: 90
-  }
+    justifyContent: 'center'
+  },
+  header: {
+    backgroundColor: '#8a2be2',
+    padding: 10
+  },
   textHeader: {
-    color: '#F00',
-    backgroundColor: '#00F'
+    fontSize: 40,
+    color: 'white',
+    textAlign: 'left',
+    textAlignVertical: 'center',
+    marginLeft: 70
   }
-}
+};
 
 class MonthScheduleScreen extends React.Component {
   constructor(props){
@@ -33,10 +41,12 @@ class MonthScheduleScreen extends React.Component {
     return (
       <View>
         <Router />
-        <Text style={styles.textHeaders}>Escala</Text>
+        <View style={styles.header}>
+            <Text style={styles.textHeader}>Escala</Text>
+        </View>
         <Calendar style={styles.calendar}
           // Initially visible month. Default = Date()
-          current={'2018-05-15'}
+          current={Date()}
           // Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
           minDate={'2018-05-10'}
           // Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
@@ -49,22 +59,22 @@ class MonthScheduleScreen extends React.Component {
           // Handler which gets executed on day long press. Default = undefined
           onDayLongPress={(day) => {console.log('selected day', day)}}
           // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
-          monthFormat={'yyyy MM'}
+          monthFormat={'MM yyyy'}
           // Handler which gets executed when visible month changes in calendar. Default = undefined
-          onMonthChange={(month) => {console.log('month changed', month)}}
+          onMonthChange={() => {console.log('month changed', month)}}
           // Hide month navigation arrows. Default = false
           hideArrows={true}
           calendarHeight= {10}
           calendarWidtdh = {10}
           // Replace default arrows with custom ones (direction can be 'left' or 'right')
-          renderArrow={(direction) => (<Arrow />)}
+          renderArrow={(left) => (<Arrow />)}
           // Do not show days of other months in month page. Default = false
           hideExtraDays={true}
           // If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
           // day from another month that is visible in calendar page. Default = false
           disableMonthChange={true}
           // If firstDay=1 week starts from Monday. Note that dayNames and dayNamesShort should still start from Sunday.
-          firstDay={1}
+          firstDay={7}
           // Hide day names. Default = false
           hideDayNames={false}
           // Show week numbers to the left. Default = false
