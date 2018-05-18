@@ -11,10 +11,10 @@ export default class WeekSchedule extends Component {
     super(props);
     this.state = {
       items: {
-          '2017-05-15': [{employee: '', start_time: '', }],
-          '2017-05-16': [{text: 'item 2 - any js object'}],
-          '2017-05-17': [],
-          '2017-05-18': [{text: 'item 3 - any js object'},{text: 'any js object'}]
+          '2017-05-15': [{date:'2017-05-15', employee: "João", start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "EPS" }],
+          '2017-05-16': [{date:'2017-05-16',employee: 'q', start_time: 'q', end_time: 'q', amount_of_hours: 'q', specialty: 'q' }],
+          '2017-05-17': [{date:'2017-05-17',employee: 'w', start_time: 'w', end_time: 'w', amount_of_hours: 'w', specialty: 'w' }],
+          '2017-05-18': [{date:'2017-05-18',employee: 'e', start_time: 'e', end_time: 'e', amount_of_hours: 'e', specialty: 'e' }]
       },
       selectedDay: '2017-05-15'
     };
@@ -27,9 +27,11 @@ export default class WeekSchedule extends Component {
         loadItemsForMonth={this.loadItems.bind(this)}
         selected={this.state.selectedDay}
         renderItem={this.renderItem.bind(this)}
+        // for (var i = 1; i <= this.length; i++) {
+        // }
         renderEmptyDate={this.renderEmptyDate.bind(this)}
         rowHasChanged={this.rowHasChanged.bind(this)}
-        markingType={'period'}
+        //markingType={'period'}
         // markedDates={{
         //    '2017-05-08': {textColor: '#666'},
         //    '2017-05-09': {textColor: '#666'},
@@ -77,8 +79,10 @@ export default class WeekSchedule extends Component {
     console.log(item);
     return (
       <View style={[styles.item, {height: item.height}]}>
-        <Text>{item.name}</Text>
-        <Text>{item.text}</Text>
+        <Text>{item.employee}</Text>
+        <Text>{item.specialty}</Text>
+        <Text>{item.start_time} - {item.end_time}</Text>
+        <Text>{item.amount_of_hours}</Text>
       </View>
     );
   }
