@@ -216,7 +216,15 @@
                                           <h6>API</h6>
                                           <div style ="text-align: justify">
                                           <p>
-                                            A API, produzida em Node.js, controla e fornece as informações visualizadas no aplicativo. Para qualquer manipulação de dados feita pelo aplicativo é necessário que ela seja chamada. A API é dividida de acordo com as funcionalidades, seguindo a arquitetura de microsserviços.
+                                            A API, produzida em Node.js, controla e fornece as informações visualizadas no aplicativo.
+                                            Para qualquer manipulação de dados feita pelo aplicativo é necessário que ela seja chamada.
+                                            A API é dividida de acordo com as funcionalidades, seguindo a arquitetura de microsserviços.
+                                            Para implementar essa aquitetura de microsserviços, utilizamos a ferramenta Seneca JS, que fornece plugins que cuidam das fundações da API.
+                                          </p>
+                                          <p>
+                                            Cada microsserviço contém um Client e um Server. O Client é o intermediário entre o aplicativo e o Server.
+                                            Ele recebe as informações enviadas do aplicativo, faz os devidos tratamentos e envia para o Server.
+                                            O Server possui contato com o banco de dados e nele ocorre a manipulação dos dados a serem enviados ao aplicativo por meio do Client.
                                           </p>
                                           </div>
 
