@@ -8,7 +8,6 @@ class Schedule extends React.Component {
       <ScheduleNavigation/>
     );
   }
-
 }
 
 export default Schedule;

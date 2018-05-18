@@ -1,15 +1,14 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {Calendar, CalendarList} from 'react-native-calendars';
-import Router from '../Components/routes'
-
-
+//import {Calendar, Arrow} from 'react-native-calendars';
+import {Calendar, Arrow} from 'react-native-calendars';
+import calendarHeader from 'react-native-calendars';
 const styles = {
   text: {
     fontSize: 30,
     color: '#00F' ,
-    marginBottom: 5,
-    marginTop: 5,
+    //marginBottom: 5,
+    //marginTop: 5,
     textAlign: 'center'
   },
   header: {
@@ -20,8 +19,7 @@ const styles = {
     fontSize: 40,
     color: 'white',
     textAlign: 'left',
-    textAlignVertical: 'center',
-    marginLeft: 70
+    textAlignVertical: 'center'
   },
   day: {
     flexDirection: 'row',
@@ -31,7 +29,7 @@ const styles = {
 };
 
 class MonthScheduleScreen extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       selected_day: {
@@ -42,62 +40,56 @@ class MonthScheduleScreen extends React.Component {
   render() {
     return (
       <View>
-        <Router />
         <View style={styles.header}>
-            <Text style={styles.textHeader}>Escala</Text>
+          <Text style={styles.textHeader}>Escala</Text>
         </View>
-        <Calendar
+          <Calendar
 
-          // Initially visible month. Default = Date()
-          current={Date()}
-          // Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
-          minDate={'2018-05-01'}
-          // Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
-          maxDate={'2020-05-31'}
-          // Handler which gets executed on day press. Default = undefined
-          onDayPress={(day) => {
-            console.log('selected day', day)
-            this.setState({selected_day: day})
-          }}
-          // Handler which gets executed on day long press. Default = undefined
-          onDayLongPress={(day) => {console.log('selected day', day)}}
-          // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
-          monthFormat={'MM-yyyy'}
-          // Handler which gets executed when visible month changes in calendar. Default = undefined
-          onMonthChange={() => {console.log('month changed', month)}}
-          // Hide month navigation arrows. Default = false
-          hideArrows={true}
-          calendarHeight= {10}
-          calendarWidtdh = {10}
-          // Replace default arrows with custom ones (direction can be 'left' or 'right')
-          renderArrow={(left) => (<Arrow />)}
-          // Do not show days of other months in month page. Default = false
-          hideExtraDays={false}
-          // If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
-          // day from another month that is visible in calendar page. Default = false
-          disableMonthChange={true}
-          // If firstDay=1 week starts from Monday. Note that dayNames and dayNamesShort should still start from Sunday.
-          firstDay={7}
-          // Hide day names. Default = false
-          hideDayNames={false}
-          // Show week numbers to the left. Default = false
-          showWeekNumbers={true}
-          // Handler which gets executed when press arrow icon left. It receive a callback can go back month
-          onPressArrowLeft={substractMonth => substractMonth()}
-          // Handler which gets executed when press arrow icon left. It receive a callback can go next month
-          onPressArrowRight={addMonth => addMonth()}
+            // Initially visible month. Default = Date()
+            current={Date()}
+            // Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
+            minDate={'2018-05-01'}
+            // Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
+            maxDate={'2020-05-31'}
+            // Handler which gets executed on day press. Default = undefined
+            onDayPress={(day) => {
+              console.log('selected day', day)
+              this.setState({selected_day: day})
+            }}
+            // Handler which gets executed on day long press. Default = undefined
+            onDayLongPress={(day) => {console.log('selected day', day)}}
+            // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
+            monthFormat={'MM-yyyy'}
+            // Handler which gets executed when visible month changes in calendar. Default = undefined
+            onMonthChange={() => {console.log('month changed', month)}}
+            // Hide month navigation arrows. Default = false
+            hideArrows={false}
+            // Do not show days of other months in month page. Default = false
+            hideExtraDays={false}
+            // If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
+            // day from another month that is visible in calendar page. Default = false
+            disableMonthChange={true}
+            // If firstDay=1 week starts from Monday. Note that dayNames and dayNamesShort should still start from Sunday.
+            firstDay={7}
+            // Hide day names. Default = false
+            hideDayNames={false}
+            // Show week numbers to the left. Default = false
+            showWeekNumbers={true}
+            // Handler which gets executed when press arrow icon left. It receive a callback can go back month
+            onPressArrowLeft={substractMonth => substractMonth()}
+            // Handler which gets executed when press arrow icon left. It receive a callback can go next month
+            onPressArrowRight={addMonth => addMonth()}
 
-          pastScrollRange={24}
-          futureScrollRange={24}
-        style={{borderBottomWidth: 1, borderBottomColor: 'black'}}
-        />
-        <View style={styles.day}>
-        <Text style={styles.text}>{this.state.selected_day.dateString}</Text>
-        </View>
+            pastScrollRange={24}
+            futureScrollRange={24}
+          style={{borderBottomWidth: 1, borderBottomColor: 'black'}}
+          />
+          <View style={styles.day}>
+          <Text style={styles.text}>{this.state.selected_day.dateString}</Text>
+          </View>
       </View>
     );
   }
 }
-
 
 export default MonthScheduleScreen;
