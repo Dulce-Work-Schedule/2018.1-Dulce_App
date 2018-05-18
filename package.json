@@ -12,10 +12,10 @@
   "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest --updateSnapshot --runInBand",
-    "test:watch": "jest --updateSnapshot --watch --runInBand",
-    "lint": "eslint src __tests__",
-    "coverage": "rimraf coverage && jest --updateSnapshot --runInBand --coverage"
+    "test": "./node_modules/jest/bin/jest.js --updateSnapshot --runInBand",
+    "test:watch": "./node_modules/jest/bin/jest.js --updateSnapshot --watch --runInBand",
+    "lint": "./node_modules/eslint/bin/eslint.js src __tests__",
+    "coverage": "rimraf coverage && ./node_modules/jest/bin/jest.js --updateSnapshot --runInBand --coverage"
   },
   "bugs": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App/issues",
   "dependencies": {
