@@ -3,7 +3,10 @@ import {StackNavigator} from 'react-navigation';
 
 const routes = {
   week: {
-    screen: WeekSchedule
+    screen: WeekSchedule,
+    navigationOptions: {
+      title: 'Escalas da semana'
+    }
   }
 }
 
