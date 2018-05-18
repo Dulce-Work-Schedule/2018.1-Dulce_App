@@ -11,10 +11,14 @@ export default class WeekSchedule extends Component {
     super(props);
     this.state = {
       items: {
-          '2017-05-15': [{date:'2017-05-15', employee: "João", start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "EPS" }],
-          '2017-05-16': [{date:'2017-05-16',employee: 'q', start_time: 'q', end_time: 'q', amount_of_hours: 'q', specialty: 'q' }],
-          '2017-05-17': [{date:'2017-05-17',employee: 'w', start_time: 'w', end_time: 'w', amount_of_hours: 'w', specialty: 'w' }],
-          '2017-05-18': [{date:'2017-05-18',employee: 'e', start_time: 'e', end_time: 'e', amount_of_hours: 'e', specialty: 'e' }]
+        '2017-05-15': [
+          {date:'2017-05-15', employee: "João", start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "EPS" },
+          {date:'2017-05-15', employee: "Maria", start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "EPS" },
+          {date:'2017-05-15', employee: "José", start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "EPS" }
+        ],
+        '2017-05-16': [{date:'2017-05-16',employee: 'q', start_time: 'q', end_time: 'q', amount_of_hours: 'q', specialty: 'q' }],
+        '2017-05-17': [{date:'2017-05-17',employee: 'w', start_time: 'w', end_time: 'w', amount_of_hours: 'w', specialty: 'w' }],
+        '2017-05-18': [{date:'2017-05-18',employee: 'e', start_time: 'e', end_time: 'e', amount_of_hours: 'e', specialty: 'e' }]
       },
       selectedDay: '2017-05-15'
     };
@@ -24,7 +28,7 @@ export default class WeekSchedule extends Component {
     return (
       <Agenda
         items={this.state.items}
-        loadItemsForMonth={this.loadItems.bind(this)}
+        //loadItemsForMonth={this.loadItems.bind(this)}
         selected={this.state.selectedDay}
         renderItem={this.renderItem.bind(this)}
         // for (var i = 1; i <= this.length; i++) {
@@ -49,31 +53,31 @@ export default class WeekSchedule extends Component {
   }
 
 //Função para carregar somente os itens da lista da data selecionada
-  loadItems(day) {
-    setTimeout(() => {
-      for (let i = -15; i < 85; i++) {
-        const time = day.timestamp + i * 24 * 60 * 60 * 1000;
-        const strTime = this.timeToString(time);
-        if (!this.state.items[strTime]) {
-          this.state.items[strTime] = [];
-          const numItems = Math.floor(Math.random() * 5);
-          for (let j = 0; j < numItems; j++) {
-            this.state.items[strTime].push({
-              name: 'Item for ' + strTime,
-              height: Math.max(50, Math.floor(Math.random() * 150))
-            });
-          }
-        }
-      }
-      //console.log(this.state.items);
-      const newItems = {};
-      Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
-      this.setState({
-        items: newItems
-      });
-    }, 1000);
-    // console.log(`Load Items for ${day.year}-${day.month}`);
-  }
+  // loadItems(day) {
+  //   setTimeout(() => {
+  //     for (let i = -15; i < 85; i++) {
+  //       const time = day.timestamp + i * 24 * 60 * 60 * 1000;
+  //       const strTime = this.timeToString(time);
+  //       if (!this.state.items[strTime]) {
+  //         this.state.items[strTime] = [];
+  //         const numItems = Math.floor(Math.random() * 5);
+  //         for (let j = 0; j < numItems; j++) {
+  //           this.state.items[strTime].push({
+  //             name: 'Item for ' + strTime,
+  //             height: Math.max(50, Math.floor(Math.random() * 150))
+  //           });
+  //         }
+  //       }
+  //     }
+  //     //console.log(this.state.items);
+  //     const newItems = {};
+  //     Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
+  //     this.setState({
+  //       items: newItems
+  //     });
+  //   }, 1000);
+  //   // console.log(`Load Items for ${day.year}-${day.month}`);
+  // }
 
   renderItem(item) {
     console.log(item);
