@@ -37,7 +37,8 @@ export default class WeekSchedule extends Component {
       selectedSchedule: {},
       items: {},
       loading: true,
-      selectedDay: new Date()
+      selectedDay: new Date(),
+      itemDate: []
     };
 
   }
@@ -46,47 +47,36 @@ export default class WeekSchedule extends Component {
     this.setState({modalVisible: visible});
   }
   componentDidMount() {
-    const url = 'http://localhost:8091/api/schedule/listMonth/?day=' + this.state.selectedDay.getMonth() + '&id=' + store.getState().currentUser.id
-  axios.get(url,{
-      headers:{
+    const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
+    this.state.selectedDay.getMonth() + '&id=' +
+    store.getState().currentUser.id;
+
+    axios.get(url,{
+      headers: {
         'x-access-token': store.getState().currentUser.token
       }
     })
-    .then((response)=>{
-      this.setState({items: response.data, loading: false})
-      console.log(items)
-    })
+    .then((response) => {
+      this.setState({itemDate: response.data,loading: false});
+      console.log(response.data);
+      this.arrayToObject();
+      console.log(this.state.items);
+    });
+  }
+  arrayToObject() {
+
+    const newObj = this.state.itemDate.reduce((acc, cur) => {
+      var date = new Date(cur.date);
+      var format = (date.getFullYear() + '-' +
+      (date.getMonth() + 1).toString().padStart(2,0) + '-' +
+      (date.getDate()).toString().padStart(2,0));
+
+      acc[format] = [cur];
+      return acc;
+    }, {});
+    this.setState({items: newObj});
   }
 
-  render() {
-    return (
-      <Agenda
-        items={this.state.items}
-        loadItemsForMonth={this.loadItems.bind(this)}
-        selected={this.state.selectedDay}
-        renderItem={this.renderItem.bind(this)}
-        renderEmptyDate={this.renderEmptyDate.bind(this)}
-        rowHasChanged={this.rowHasChanged.bind(this)}
-        //markingType={'period'}
-        // markedDates={{
-        //    '2017-05-08': {textColor: '#666'},
-        //    '2017-05-09': {textColor: '#666'},
-        //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
-        //    '2017-05-21': {startingDay: true, color: 'blue'},
-        //    '2017-05-22': {endingDay: true, color: 'gray'},
-        //    '2017-05-24': {startingDay: true, color: 'gray'},
-        //    '2017-05-25': {color: 'gray'},
-        //    '2017-05-26': {endingDay: true, color: 'gray'}}}
-        //  monthFormat={'yyyy'}
-        // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
-        theme={{
-          calendarBackground: '#ffffff',
-          agendaKnobColor: '#5f4b8b',
-          selectedDayBackgroundColor:'#5f4b8b'
-        }}
-      />
-    );
-}
 //Função para criar itens para o mês inteiro
   loadItems(day) {
     setTimeout(() => {
@@ -109,9 +99,8 @@ export default class WeekSchedule extends Component {
       Object.keys(this.state.items).forEach(key => { newItems[key] = this.state.items[key]; });
       this.setState({
         items: newItems
-      });
+      }
     }, 1000);
-    // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
   requestChange() {
