@@ -5,6 +5,7 @@ import Profile from '../Routes/Profile';
 import {DrawerNavigator} from 'react-navigation';
 import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
+import Schedule from '../Routes/Schedule';
 
 export default DrawerNavigator({
   'Ver Medicos': {
@@ -24,6 +25,9 @@ export default DrawerNavigator({
   },
   'Ver Hospitais': {
     screen: Hospitals
+  },
+  'Ver Escala': {
+    screen: Schedule
   }
 }, {
   drawerWidth: 300
