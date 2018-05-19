@@ -8,7 +8,9 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
+import {Spinner, Content} from 'native-base';
 import axios from 'axios';
+import store from '../Reducers/store';
 
 const styles = StyleSheet.create({
   item: {
@@ -34,17 +36,17 @@ export default class WeekSchedule extends Component {
       currentSchedule: {},
       selectedSchedule: {},
       items: {},
-      selectedDay: new Date(),
       loading: true
     };
 
   }
-  
+
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
   }
   componentDidMount(){
-    const url = 'http://localhost:8091/api/schedule/listMonth/?day=' + this.state.selectedDay.getMonth() + '&id=' + store.getState().currentUser.id
+    var date = new Date();
+    const url = 'http://localhost:8091/api/schedule/listMonth/?day=' + date.getMonth() + '&id=' + store.getState().currentUser.id
     axios.get(url,{
       headers:{
         'x-access-token': store.getState().currentUser.token
@@ -58,39 +60,31 @@ export default class WeekSchedule extends Component {
 
   render() {
     return (
-      <View>
-      {
-        this.state.loading ? (
-          <Container>
-            <Content>
-              <Spinner color='#5f4b8b'/>
-            </Content>
-          </Container>
-        ) :(
-          <Agenda
-          items={this.state.items}
-          loadItemsForMonth={this.loadItems.bind(this)}
-          selected={this.state.selectedDay}
-          renderItem={this.renderItem.bind(this)}
-          renderEmptyDate={this.renderEmptyDate.bind(this)}
-          rowHasChanged={this.rowHasChanged.bind(this)}
-          //markingType={'period'}
-          // markedDates={{
-          //    '2017-05-08': {textColor: '#666'},
-          //    '2017-05-09': {textColor: '#666'},
-          //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
-          //    '2017-05-21': {startingDay: true, color: 'blue'},
-          //    '2017-05-22': {endingDay: true, color: 'gray'},
-          //    '2017-05-24': {startingDay: true, color: 'gray'},
-          //    '2017-05-25': {color: 'gray'},
-          //    '2017-05-26': {endingDay: true, color: 'gray'}}}
-          //  monthFormat={'yyyy'}
-          // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
-          theme={{calendarBackground: '#ffffff', agendaKnobColor: '#5f4b8b', selectedDayBackgroundColor:'#5f4b8b'}}
-          />
-        )
-      }
-      </View>
+      <Agenda
+        items={this.state.items}
+        loadItemsForMonth={this.loadItems.bind(this)}
+        selected={'2012-03-01'}
+        renderItem={this.renderItem.bind(this)}
+        renderEmptyDate={this.renderEmptyDate.bind(this)}
+        rowHasChanged={this.rowHasChanged.bind(this)}
+        //markingType={'period'}
+        // markedDates={{
+        //    '2017-05-08': {textColor: '#666'},
+        //    '2017-05-09': {textColor: '#666'},
+        //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
+        //    '2017-05-21': {startingDay: true, color: 'blue'},
+        //    '2017-05-22': {endingDay: true, color: 'gray'},
+        //    '2017-05-24': {startingDay: true, color: 'gray'},
+        //    '2017-05-25': {color: 'gray'},
+        //    '2017-05-26': {endingDay: true, color: 'gray'}}}
+        //  monthFormat={'yyyy'}
+        // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
+        theme={{
+          calendarBackground: '#ffffff',
+          agendaKnobColor: '#5f4b8b',
+          selectedDayBackgroundColor:'#5f4b8b'
+        }}
+      />
     );
 }
 //Função para criar itens para o mês inteiro
@@ -233,6 +227,7 @@ export default class WeekSchedule extends Component {
     const date = new Date(time);
     return date.toISOString().split('T')[0];
   }
+
   render() {
     return (
       <View style={{flex: 1}}>
