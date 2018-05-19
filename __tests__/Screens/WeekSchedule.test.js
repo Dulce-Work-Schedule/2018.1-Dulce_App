@@ -2,6 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import WeekSchedule from '../../src/Screens/WeekSchedule';
 
+require('bezier');
+
 const props = {
 
   navigation: {
