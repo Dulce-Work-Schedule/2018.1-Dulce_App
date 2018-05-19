@@ -36,7 +36,8 @@ export default class WeekSchedule extends Component {
       currentSchedule: {},
       selectedSchedule: {},
       items: {},
-      loading: true
+      loading: true,
+      selectedDay: new Date()
     };
 
   }
@@ -44,10 +45,9 @@ export default class WeekSchedule extends Component {
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
   }
-  componentDidMount(){
-    var date = new Date();
-    const url = 'http://localhost:8091/api/schedule/listMonth/?day=' + date.getMonth() + '&id=' + store.getState().currentUser.id
-    axios.get(url,{
+  componentDidMount() {
+    const url = 'http://localhost:8091/api/schedule/listMonth/?day=' + this.state.selectedDay.getMonth() + '&id=' + store.getState().currentUser.id
+  axios.get(url,{
       headers:{
         'x-access-token': store.getState().currentUser.token
       }
@@ -63,7 +63,7 @@ export default class WeekSchedule extends Component {
       <Agenda
         items={this.state.items}
         loadItemsForMonth={this.loadItems.bind(this)}
-        selected={'2012-03-01'}
+        selected={this.state.selectedDay}
         renderItem={this.renderItem.bind(this)}
         renderEmptyDate={this.renderEmptyDate.bind(this)}
         rowHasChanged={this.rowHasChanged.bind(this)}
