@@ -48,8 +48,9 @@ export default class WeekSchedule extends Component {
   }
   componentDidMount() {
     const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
-    this.state.selectedDay.getMonth() + '&id=' +
+    (this.state.selectedDay.getMonth()+1) + '&id=' +
     store.getState().currentUser.id;
+    console.log(url);
 
     axios.get(url,{
       headers: {
@@ -58,8 +59,10 @@ export default class WeekSchedule extends Component {
     })
     .then((response) => {
       this.setState({itemDate: response.data,loading: false});
+      console.log('RESPOSTA DA API:');
       console.log(response.data);
       this.arrayToObject();
+      console.log('NOSSA LISTA');
       console.log(this.state.items);
     });
   }
