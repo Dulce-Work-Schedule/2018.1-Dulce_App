@@ -8,7 +8,7 @@ const routes = {
       title: 'Escalas da semana'
     }
   }
-}
+};
 
 const config = {};
 

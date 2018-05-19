@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   Text,
   View,
@@ -6,48 +6,78 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 
+const styles = StyleSheet.create({
+  item: {
+    backgroundColor: 'white',
+    flex: 1,
+    borderRadius: 5,
+    padding: 10,
+    marginRight: 10,
+    marginTop: 17
+  },
+  emptyDate: {
+    height: 15,
+    flex: 1,
+    paddingTop: 30
+  }
+});
+
 export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
       items: {
         '2017-05-15': [
-          {date:'2017-05-15', employee: "Maria", start_time: "08:30", end_time: "15:00", amount_of_hours: "6.5h", specialty: "Médica" },
-          {date:'2017-05-15', employee: "José", start_time: "10:30", end_time: "17:30", amount_of_hours: "7.0h", specialty: "Médico" },
-          {date:'2017-05-15', employee: "João", start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "Médico" },
+          {
+            date: '2017-05-15',
+            employee: 'Maria',
+            start_time: '08:30',
+            end_time: '15:00',
+            amount_of_hours: '6.5h',
+            specialty: 'Médica'
+          },
+          {
+            date: '2017-05-15',
+            employee: 'José',
+            start_time: '10:30',
+            end_time: '17:30',
+            amount_of_hours: '7.0h',
+            specialty: 'Médico'
+          },
+          {
+            date: '2017-05-15',
+            employee: 'João',
+            start_time: '14:30',
+            end_time: '15:00',
+            amount_of_hours: '0.5h',
+            specialty: 'Médico'
+          }
         ],
-        '2017-05-16': [{date:'2017-05-16',employee: 'Gabriela', start_time: "08:30", end_time: "15:00", amount_of_hours: "6.5h", specialty: "Médica"}],
-        '2017-05-17': [{date:'2017-05-17',employee: 'Ezequiel',start_time: "10:30", end_time: "17:30", amount_of_hours: "7.0h", specialty: "Médico" }],
-        '2017-05-18': [{date:'2017-05-18',employee: 'Outra pessoa', start_time: "14:30", end_time: "15:00", amount_of_hours: "0.5h", specialty: "Médico" }]
+        '2017-05-16': [{
+          date: '2017-05-16',
+          employee: 'Gabriela',
+          start_time: '08:30',
+          end_time: '15:00',
+          amount_of_hours: '6.5h',
+          specialty: 'Médica'
+        }],
+        '2017-05-17': [{
+          date: '2017-05-17',
+          employee: 'Ezequiel',
+          start_time: '10:30',
+          specialty: 'Médico'
+        }],
+        '2017-05-18': [{
+          date: '2017-05-18',
+          employee: 'Outra pessoa',
+          start_time: '14:30',
+          end_time: '15:00',
+          amount_of_hours: '0.5h',
+          specialty: 'Médico'
+        }]
       },
       selectedDay: '2017-05-15'
     };
-  }
-
-  render() {
-    return (
-      <Agenda
-        items={this.state.items}
-        loadItemsForMonth={this.loadItems.bind(this)}
-        selected={this.state.selectedDay}
-        renderItem={this.renderItem.bind(this)}
-        renderEmptyDate={this.renderEmptyDate.bind(this)}
-        rowHasChanged={this.rowHasChanged.bind(this)}
-        //markingType={'period'}
-        // markedDates={{
-        //    '2017-05-08': {textColor: '#666'},
-        //    '2017-05-09': {textColor: '#666'},
-        //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
-        //    '2017-05-21': {startingDay: true, color: 'blue'},
-        //    '2017-05-22': {endingDay: true, color: 'gray'},
-        //    '2017-05-24': {startingDay: true, color: 'gray'},
-        //    '2017-05-25': {color: 'gray'},
-        //    '2017-05-26': {endingDay: true, color: 'gray'}}}
-        //  monthFormat={'yyyy'}
-        // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
-        theme={{calendarBackground: '#ffffff', agendaKnobColor: '#5f4b8b', selectedDayBackgroundColor:'#5f4b8b'}}
-      />
-    );
   }
 
 //Função para criar itens para o mês inteiro
@@ -103,20 +133,33 @@ export default class WeekSchedule extends Component {
     const date = new Date(time);
     return date.toISOString().split('T')[0];
   }
-}
-
-const styles = StyleSheet.create({
-  item: {
-    backgroundColor: 'white',
-    flex: 1,
-    borderRadius: 5,
-    padding: 10,
-    marginRight: 10,
-    marginTop: 17
-  },
-  emptyDate: {
-    height: 15,
-    flex:1,
-    paddingTop: 30
+  render() {
+    return (
+      <Agenda
+      items={this.state.items}
+      loadItemsForMonth={this.loadItems.bind(this)}
+      selected={this.state.selectedDay}
+      renderItem={this.renderItem.bind(this)}
+      renderEmptyDate={this.renderEmptyDate.bind(this)}
+      rowHasChanged={this.rowHasChanged.bind(this)}
+      //markingType={'period'}
+      // markedDates={{
+      //    '2017-05-08': {textColor: '#666'},
+      //    '2017-05-09': {textColor: '#666'},
+      //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
+      //    '2017-05-21': {startingDay: true, color: 'blue'},
+      //    '2017-05-22': {endingDay: true, color: 'gray'},
+      //    '2017-05-24': {startingDay: true, color: 'gray'},
+      //    '2017-05-25': {color: 'gray'},
+      //    '2017-05-26': {endingDay: true, color: 'gray'}}}
+      //  monthFormat={'yyyy'}
+      // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
+      theme={{
+        calendarBackground: '#ffffff',
+        agendaKnobColor: '#5f4b8b',
+        selectedDayBackgroundColor: '#5f4b8b'
+      }}
+      />
+    );
   }
-});
+}
