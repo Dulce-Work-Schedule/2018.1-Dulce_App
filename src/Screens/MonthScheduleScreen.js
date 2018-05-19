@@ -26,7 +26,7 @@ const styles = {
     backgroundColor: '#ffffff'
   },
   button: {
-    marginLeft: 350,
+    marginLeft: 300,
     backgroundColor: '#75027a'
   },
   imageEdit: {
@@ -47,6 +47,12 @@ class MonthScheduleScreen extends React.Component {
       }
     };
   }
+
+  muda_data() {
+    var dateString = new Date();
+    dateString.toDateString('mm/dd/yyy');
+  }
+
   render() {
     return (
       <View>
@@ -55,7 +61,7 @@ class MonthScheduleScreen extends React.Component {
         </View>
         <Calendar
           // Initially visible month. Default = Date()
-          current={Date()}
+          current={this.muda_data()}
           // Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
           minDate={'2018-05-01'}
           // Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
