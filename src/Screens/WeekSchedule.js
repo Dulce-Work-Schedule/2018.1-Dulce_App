@@ -48,8 +48,8 @@ export default class WeekSchedule extends Component {
   }
   componentDidMount() {
     const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
-    (this.state.selectedDay.getMonth()+1) + '&id=' +
-    store.getState().currentUser.id;
+    (this.state.selectedDay.getMonth()+1) //+ '&id=' +
+    //store.getState().currentUser.id;
     console.log(url);
 
     axios.get(url,{
@@ -71,8 +71,12 @@ export default class WeekSchedule extends Component {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
       var date = new Date(cur.date);
       var format = (date.getFullYear() + '-' +
-      (date.getMonth() + 1).toString().padStart(2,0) + '-' +
-      (date.getDate()).toString().padStart(2,0));
+        (date.getMonth() /*+ 1*/).toString().padStart(2,0) + '-' +
+        (date.getDate()).toString().padStart(2,0));
+      //O problema: o acc[format] está sempre sendo sobreescrito, logo
+      //não é possivel tes duas escalas no mesmo dia, a nova escala tem de ser
+      //Adicionada no array e não sobrescrita
+      //Ver link: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
       acc[format] = [cur];
       return acc;
@@ -88,13 +92,13 @@ export default class WeekSchedule extends Component {
         const strTime = this.timeToString(time);
         if (!this.state.items[strTime]) {
           this.state.items[strTime] = [];
-          const numItems = Math.floor(Math.random() * 5);
-          for (let j = 0; j < numItems; j++) {
-            this.state.items[strTime].push({
-              name: 'Item for ' + strTime,
-              height: Math.max(50, Math.floor(Math.random() * 150))
-            });
-          }
+          // const numItems = Math.floor(Math.random() * 5);
+          // for (let j = 0; j < numItems; j++) {
+          //   this.state.items[strTime].push({
+          //     name: 'Item for ' + strTime,
+          //     height: Math.max(50, Math.floor(Math.random() * 150))
+          //   });
+          // }
         }
       }
       //console.log(this.state.items);
