@@ -78,10 +78,8 @@ exports[`renders correctly 1`] = `
             "date": "2017-05-17T00:00:00.000Z",
             "day": "2017-05-17T00:00:00.000Z",
             "reservation": Object {
-              "amount_of_hours": "7.0h",
               "date": "2017-05-17",
               "employee": "Ezequiel",
-              "end_time": "17:30",
               "specialty": "Médico",
               "start_time": "10:30",
             },
@@ -639,15 +637,12 @@ exports[`renders correctly 1`] = `
                   >
                     10:30
                      - 
-                    17:30
                   </Text>
                   <Text
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
-                  >
-                    7.0h
-                  </Text>
+                  />
                 </View>
               </View>
             </View>
