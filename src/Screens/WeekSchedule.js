@@ -152,7 +152,6 @@ export default class WeekSchedule extends Component {
   }
 
   renderItem(item) {
-    console.log(item);
     return (
       <TouchableHighlight onPress={() => {this._alert(item);}} underlayColor='purple' style={[styles.item, {height: item.height}]}>
         <View>
