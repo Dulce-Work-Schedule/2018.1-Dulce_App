@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {Calendar, Arrow} from 'react-native-calendars';
 import CalendarHeader from 'react-native-calendars';
+import XDate from 'xdate';
 import {Button} from 'native-base';
 
 const styles = {
@@ -49,8 +50,8 @@ class MonthScheduleScreen extends React.Component {
   }
 
   muda_data() {
-    var dateString = new Date();
-    dateString.toDateString('mm/dd/yyy');
+    var dateString = new XDate();
+    dateString.toDateString('dd/MM/yyyy');
   }
 
   render() {
@@ -74,7 +75,7 @@ class MonthScheduleScreen extends React.Component {
           // Handler which gets executed on day long press. Default = undefined
           onDayLongPress={(day) => {console.log('selected day', day);}}
           // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
-          monthFormat={'MM-yyyy'}
+          monthFormat={'MM/yyyy'}
           // Handler which gets executed when visible month changes in calendar. Default = undefined
           onMonthChange={(month) => {
             console.log('month changed', month);
