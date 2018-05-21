@@ -73,13 +73,12 @@ export default class WeekSchedule extends Component {
       var format = (date.getFullYear() + '-' +
         (date.getMonth() /*+ 1*/).toString().padStart(2,0) + '-' +
         (date.getDate()).toString().padStart(2,0));
-      //O problema: o acc[format] está sempre sendo sobreescrito, logo
-      //não é possivel tes duas escalas no mesmo dia, a nova escala tem de ser
-      //Adicionada no array e não sobrescrita
-      //Ver link: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
-
-      acc[format] = [cur];
-      return acc;
+        
+      if(!crr[format]){
+        crr[format] = [];
+      }
+      crr[format].push(cur)
+      return crr;
     }, {});
     this.setState({items: newObj});
   }
