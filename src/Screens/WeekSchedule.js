@@ -1,10 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   View,
-  StyleSheet
+  StyleSheet,
+  TouchableHighlight,
+  Modal
 } from 'react-native';
-import {Agenda} from 'react-native-calendars';
+import { Agenda } from 'react-native-calendars';
 
 const styles = StyleSheet.create({
   item: {
@@ -26,6 +28,7 @@ export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      modalVisible: false,
       items: {
         '2017-05-15': [
           {
@@ -78,9 +81,14 @@ export default class WeekSchedule extends Component {
       },
       selectedDay: '2017-05-15'
     };
+
   }
 
-//Função para criar itens para o mês inteiro
+  setModalVisible(visible) {
+    this.setState({ modalVisible: visible });
+  }
+
+  //Função para criar itens para o mês inteiro
   loadItems(day) {
     setTimeout(() => {
       for (let i = -15; i < 85; i++) {
@@ -99,7 +107,7 @@ export default class WeekSchedule extends Component {
       }
       //console.log(this.state.items);
       const newItems = {};
-      Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
+      Object.keys(this.state.items).forEach(key => { newItems[key] = this.state.items[key]; });
       this.setState({
         items: newItems
       });
@@ -107,15 +115,17 @@ export default class WeekSchedule extends Component {
     // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
+
+
   renderItem(item) {
     console.log(item);
     return (
-      <View style={[styles.item, {height: item.height}]}>
+      <TouchableHighlight onLongPress={this.setModalVisible(true)} style={[styles.item, { height: item.height }]}>
         <Text>{item.employee}</Text>
         <Text>{item.specialty}</Text>
         <Text>{item.start_time} - {item.end_time}</Text>
         <Text>{item.amount_of_hours}</Text>
-      </View>
+      </TouchableHighlight>
     );
   }
 
@@ -135,31 +145,52 @@ export default class WeekSchedule extends Component {
   }
   render() {
     return (
-      <Agenda
-      items={this.state.items}
-      loadItemsForMonth={this.loadItems.bind(this)}
-      selected={this.state.selectedDay}
-      renderItem={this.renderItem.bind(this)}
-      renderEmptyDate={this.renderEmptyDate.bind(this)}
-      rowHasChanged={this.rowHasChanged.bind(this)}
-      //markingType={'period'}
-      // markedDates={{
-      //    '2017-05-08': {textColor: '#666'},
-      //    '2017-05-09': {textColor: '#666'},
-      //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
-      //    '2017-05-21': {startingDay: true, color: 'blue'},
-      //    '2017-05-22': {endingDay: true, color: 'gray'},
-      //    '2017-05-24': {startingDay: true, color: 'gray'},
-      //    '2017-05-25': {color: 'gray'},
-      //    '2017-05-26': {endingDay: true, color: 'gray'}}}
-      //  monthFormat={'yyyy'}
-      // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
-      theme={{
-        calendarBackground: '#ffffff',
-        agendaKnobColor: '#5f4b8b',
-        selectedDayBackgroundColor: '#5f4b8b'
-      }}
-      />
+      <View>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={this.state.modalVisible}
+          onRequestClose={() => {
+            alert('Modal has been closed.');
+          }}><View style={{ marginTop: 22 }}>
+            <View>
+              <Text>Hello World!</Text>
+
+              <TouchableHighlight
+                onPress={() => {
+                  this.setModalVisible(!this.state.modalVisible);
+                }}>
+                <Text>Hide Modal</Text>
+              </TouchableHighlight>
+            </View>
+          </View>
+        </Modal>
+        <Agenda
+          items={this.state.items}
+          loadItemsForMonth={this.loadItems.bind(this)}
+          selected={this.state.selectedDay}
+          renderItem={this.renderItem.bind(this)}
+          renderEmptyDate={this.renderEmptyDate.bind(this)}
+          rowHasChanged={this.rowHasChanged.bind(this)}
+          //markingType={'period'}
+          // markedDates={{
+          //    '2017-05-08': {textColor: '#666'},
+          //    '2017-05-09': {textColor: '#666'},
+          //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
+          //    '2017-05-21': {startingDay: true, color: 'blue'},
+          //    '2017-05-22': {endingDay: true, color: 'gray'},
+          //    '2017-05-24': {startingDay: true, color: 'gray'},
+          //    '2017-05-25': {color: 'gray'},
+          //    '2017-05-26': {endingDay: true, color: 'gray'}}}
+          //  monthFormat={'yyyy'}
+          // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
+          theme={{
+            calendarBackground: '#ffffff',
+            agendaKnobColor: '#5f4b8b',
+            selectedDayBackgroundColor: '#5f4b8b'
+          }}
+        />
+      </View>
     );
   }
 }
