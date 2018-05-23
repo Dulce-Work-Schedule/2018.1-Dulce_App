@@ -25,7 +25,7 @@ const styles = {
     alignSelf: 'center'
   },
   text: {
-    fontSize: 36,
+    fontSize: 10,
     color: '#039200'
 
   },
