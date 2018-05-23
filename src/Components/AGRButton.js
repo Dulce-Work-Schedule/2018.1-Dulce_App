@@ -4,7 +4,7 @@ import {Container, Content, Button} from 'native-base';
 
 const styles = {
   container: {
-    backgroundColor: 'purple',
+    backgroundColor: '#5f4b8b',
     height: 50,
     alignItems: 'center',
     marginTop: 30,
