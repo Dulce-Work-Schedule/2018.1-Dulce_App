@@ -13,12 +13,12 @@ const styles = {
     backgroundColor: '#FFF'
   },
   text: {
-    fontSize: 30,
+    fontSize: 20,
     marginBottom: 15,
     alignSelf: 'center'
   },
   name: {
-    fontSize: 40,
+    fontSize: 30,
     marginBottom: 15,
     alignSelf: 'center'
   },
