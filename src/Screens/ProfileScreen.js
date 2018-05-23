@@ -60,7 +60,7 @@ class ProfileScreen extends React.Component {
           this.state.loading ? (
             <Container>
               <Content>
-                <Spinner color='purple'/>
+                <Spinner color='#5f4b8b'/>
               </Content>
             </Container>
           ) : (
