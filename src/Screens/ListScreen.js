@@ -37,7 +37,7 @@ class ListScreen extends React.Component {
 
             <Container>
               <Content>
-                <Spinner color='purple'/>
+                <Spinner color= '#5f4b8b'/>
               </Content>
             </Container>
 
