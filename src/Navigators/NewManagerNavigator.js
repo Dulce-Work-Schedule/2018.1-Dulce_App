@@ -4,7 +4,10 @@ import {StackNavigator} from 'react-navigation';
 
 const routes = {
   new: {
-    screen: NewManager
+    screen: NewManager,
+    navigationOptions: {
+      header:null
+    }
   },
   initial: {
     screen: Doctors,
