@@ -4,9 +4,12 @@ import {
   View,
   StyleSheet,
   TouchableHighlight,
-  Modal
 } from 'react-native';
 import { Agenda } from 'react-native-calendars';
+import Modal from "react-native-modal";
+
+
+
 
 const styles = StyleSheet.create({
   item: {
@@ -120,13 +123,25 @@ export default class WeekSchedule extends Component {
   renderItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onLongPress={this.setModalVisible(true)} style={[styles.item, { height: item.height }]}>
+      <TouchableHighlight onPress={() => {this.renderModal()}} style={[styles.item, { height: item.height }]}>
+      <View>
         <Text>{item.employee}</Text>
         <Text>{item.specialty}</Text>
         <Text>{item.start_time} - {item.end_time}</Text>
         <Text>{item.amount_of_hours}</Text>
+        </View>
       </TouchableHighlight>
     );
+  }
+
+  renderModal(){
+    return(<View>
+    <Modal isVisible={true}>
+      <View style={{ flex: 1 }}>
+        <Text>I am the modal content!</Text>
+      </View>
+    </Modal>
+  </View>)
   }
 
   renderEmptyDate() {
@@ -145,27 +160,9 @@ export default class WeekSchedule extends Component {
   }
   render() {
     return (
-      <View>
-        <Modal
-          animationType="slide"
-          transparent={false}
-          visible={this.state.modalVisible}
-          onRequestClose={() => {
-            alert('Modal has been closed.');
-          }}><View style={{ marginTop: 22 }}>
-            <View>
-              <Text>Hello World!</Text>
-
-              <TouchableHighlight
-                onPress={() => {
-                  this.setModalVisible(!this.state.modalVisible);
-                }}>
-                <Text>Hide Modal</Text>
-              </TouchableHighlight>
-            </View>
-          </View>
-        </Modal>
+        <View style={{flex: 1}}>
         <Agenda
+        style={{flex:1}}
           items={this.state.items}
           loadItemsForMonth={this.loadItems.bind(this)}
           selected={this.state.selectedDay}
@@ -190,7 +187,8 @@ export default class WeekSchedule extends Component {
             selectedDayBackgroundColor: '#5f4b8b'
           }}
         />
-      </View>
+        {this.renderModal()}
+        </View>
     );
   }
 }
