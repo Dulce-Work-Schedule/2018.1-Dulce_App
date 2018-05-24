@@ -1,8 +1,7 @@
 ### Para mais informações visite nossa página [dulce](https://dulce-work-schedule.github.io/2018.1-Dulce_App/)
 # Dulce React Native
-APP [![Build Status](https://travis-ci.org/Dulce-Work-Schedule/2018.1-Dulce_App.svg?branch=master)](https://travis-ci.org/Dulce-Work-Schedule/2018.1-Dulce_App) [![Maintainability](https://api.codeclimate.com/v1/badges/2446e950fda3550f98ca/maintainability)](https://codeclimate.com/github/Dulce-Work-Schedule/2018.1-Dulce_App/maintainability) [![Coverage Status](https://coveralls.io/repos/github/Dulce-Work-Schedule/2018.1-Dulce_App/badge.svg?branch=master)](https://coveralls.io/github/Dulce-Work-Schedule/2018.1-Dulce_App?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![Build Status](https://travis-ci.org/Dulce-Work-Schedule/2018.1-Dulce_App.svg?branch=master)](https://travis-ci.org/Dulce-Work-Schedule/2018.1-Dulce_App) [![Maintainability](https://api.codeclimate.com/v1/badges/2446e950fda3550f98ca/maintainability)](https://codeclimate.com/github/Dulce-Work-Schedule/2018.1-Dulce_App/maintainability) [![Coverage Status](https://coveralls.io/repos/github/Dulce-Work-Schedule/2018.1-Dulce_App/badge.svg?branch=master)](https://coveralls.io/github/Dulce-Work-Schedule/2018.1-Dulce_App?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-API [![Coverage Status](https://coveralls.io/repos/github/Dulce-Work-Schedule/2018.1-Dulce_API/badge.svg?branch=master)](https://coveralls.io/github/Dulce-Work-Schedule/2018.1-Dulce_API?branch=master)
 
 ### Dulce
 
