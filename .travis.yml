@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "8"
 script:
-  - npm install -g
+  - npm install
   - npm run lint
 matrix:
   include:
@@ -15,8 +15,8 @@ matrix:
         - nvm install 8
       install:
         - sudo apt-get install -y -qq inkscape
-        - npm install -g
-        - npm install -g coveralls
+        - npm install
+        - npm install coveralls
       android:
         components:
           - addon-google_apis-google-16
