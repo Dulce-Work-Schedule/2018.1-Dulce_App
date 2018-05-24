@@ -1,0 +1,29 @@
+Signed-off-by: Beatriz Hanae <beatriz.hanae@gmail.com>
+Co-Authored-by: Beatriz Hanae <beatriz.hanae@gmail.com>
+
+Signed-off-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
+Co-Authored-by: Eliseu Egewarth <eliseuegewarth@gmail.com>
+
+Signed-off-by: Ezequiel de Oliveira <ezequiel1de1oliveira@gmail.com>
+Co-Authored-by: Ezequiel de Oliveira <ezequiel1de1oliveira@gmail.com>
+
+Signed-off-by: Felipe Campos <fepascampos@gmail.com>
+Co-Authored-by: Felipe Campos <fepascampos@gmail.com>
+
+Signed-off-by: Gabriela Alves da Gama <gabrielaalvesdagama@gmail.com>
+Co-Authored-by: Gabriela Alves da Gama <gabrielaalvesdagama@gmail.com>
+
+Signed-off-by: Gabriela Barrozo Guedes <gabrielabguedes@gmail.com>
+Co-Authored-by: Gabriela Barrozo Guedes <gabrielabguedes@gmail.com>
+
+Signed-off-by: Guilherme Deusdará <guibanci@gmail.com>
+Co-Authored-by: Guilherme Deusdará <guibanci@gmail.com>
+
+Signed-off-by: Isaque Alves <isaquealvesdl@gmail.com>
+Co-Authored-by: Isaque Alves <isaquealvesdl@gmail.com>
+
+Signed-off-by: João Egewarth <egewarth@gmail.com>
+Co-Authored-by: João Egewarth <egewarth@gmail.com>
+
+Signed-off-by: Vitor Leal <vitinho2201@gmail.com>
+Co-Authored-by: Vitor Leal <vitinho2201@gmail.com>
