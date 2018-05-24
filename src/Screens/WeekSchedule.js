@@ -48,9 +48,7 @@ export default class WeekSchedule extends Component {
   }
   componentDidMount() {
     const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
-    (this.state.selectedDay.getMonth()+1) //+ '&id=' +
-    //store.getState().currentUser.id;
-    console.log(url);
+    (this.state.selectedDay.getMonth() + 1);
 
     axios.get(url,{
       headers: {
@@ -59,26 +57,21 @@ export default class WeekSchedule extends Component {
     })
     .then((response) => {
       this.setState({itemDate: response.data,loading: false});
-      console.log('RESPOSTA DA API:');
-      console.log(response.data);
       this.arrayToObject();
-      console.log('NOSSA LISTA');
-      console.log(this.state.items);
     });
   }
   arrayToObject() {
-
     const newObj = this.state.itemDate.reduce((acc, cur) => {
       var date = new Date(cur.date);
       var format = (date.getFullYear() + '-' +
-        (date.getMonth() /*+ 1*/).toString().padStart(2,0) + '-' +
+        (date.getMonth()).toString().padStart(2,0) + '-' +
         (date.getDate()).toString().padStart(2,0));
-        
-      if(!crr[format]){
-        crr[format] = [];
+
+      if (!acc[format]) {
+        acc[format] = [];
       }
-      crr[format].push(cur)
-      return crr;
+      acc[format].push(cur);
+      return acc;
     }, {});
     this.setState({items: newObj});
   }
@@ -91,16 +84,8 @@ export default class WeekSchedule extends Component {
         const strTime = this.timeToString(time);
         if (!this.state.items[strTime]) {
           this.state.items[strTime] = [];
-          // const numItems = Math.floor(Math.random() * 5);
-          // for (let j = 0; j < numItems; j++) {
-          //   this.state.items[strTime].push({
-          //     name: 'Item for ' + strTime,
-          //     height: Math.max(50, Math.floor(Math.random() * 150))
-          //   });
-          // }
         }
       }
-      //console.log(this.state.items);
       const newItems = {};
       Object.keys(this.state.items).forEach(key => { newItems[key] = this.state.items[key]; });
       this.setState({
