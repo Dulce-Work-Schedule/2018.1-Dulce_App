@@ -15,7 +15,8 @@
     "test": "./node_modules/jest/bin/jest.js --updateSnapshot --runInBand",
     "test:watch": "./node_modules/jest/bin/jest.js --updateSnapshot --watch --runInBand",
     "lint": "./node_modules/eslint/bin/eslint.js src __tests__",
-    "coverage": "rimraf coverage && ./node_modules/jest/bin/jest.js --updateSnapshot --runInBand --coverage"
+    "coverage": "rimraf coverage && ./node_modules/jest/bin/jest.js --updateSnapshot --runInBand --coverage",
+    "coveralls" : "./node_modules/coveralls/bin/coveralls.js"
   },
   "bugs": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App/issues",
   "dependencies": {
