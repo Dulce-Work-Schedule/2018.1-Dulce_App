@@ -4,6 +4,7 @@ import {
   View,
   StyleSheet,
   TouchableHighlight,
+  Alert
 } from 'react-native';
 import { Agenda } from 'react-native-calendars';
 import Modal from "react-native-modal";
@@ -27,11 +28,20 @@ const styles = StyleSheet.create({
   }
 });
 
+
+
 export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
       modalVisible: false,
+      currentSchedule: '',
+      selectedSchedule: '',
+      selectedStartTime: '',
+      selectedFinalTime: '',
+      currentStartTime: '',
+      currentFinalTime: '',
+
       items: {
         '2017-05-15': [
           {
@@ -118,12 +128,53 @@ export default class WeekSchedule extends Component {
     // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
+  _alert(employee, start_time, end_time){
+    this.setState({currentSchedule: employee, currentStartTime: start_time, currentFinalTime: end_time});
+    Alert.alert(
+    'Mudar de Horário',
+    'Deseja solicitar mudança de horário?',
+    [
+      {text: 'Sim', onPress: () => {this.setModalVisible(true)}},
+      {text: 'Não', onPress: () => {}},
+    ],
+    { cancelable: true }
+  )
+  }
 
+  alert_change(employee, start_time, end_time){
+   this.setState({selectedSchedule: employee, selectedStartTime: start_time, selectedFinalTime: end_time}, () => {
+
+    Alert.alert(
+    'Mudar de Horário',
+    this.state.currentSchedule + ': ' + this.state.currentStartTime + ' - ' + this.state.currentFinalTime + '\nPor\n' +
+    this.state.selectedSchedule + ': ' + this.state.selectedStartTime + ' - ' + this.state.selectedFinalTime + '\nDeseja solicitar mudança de horário?',
+    [
+      {text: 'Sim', onPress: () => {this.setModalVisible(false)}},
+      {text: 'Não', onPress: () => {}},
+    ],
+    { cancelable: true }
+  )
+});
+}
 
   renderItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onPress={() => {this.renderModal()}} style={[styles.item, { height: item.height }]}>
+      <TouchableHighlight onPress={() => {this._alert(item.employee, item.start_time, item.end_time)}} style={[styles.item, { height: item.height }]}>
+      <View>
+        <Text>{item.employee}</Text>
+        <Text>{item.specialty}</Text>
+        <Text>{item.start_time} - {item.end_time}</Text>
+        <Text>{item.amount_of_hours}</Text>
+        </View>
+      </TouchableHighlight>
+    );
+  }
+
+  renderChangeItem(item) {
+    console.log(item);
+    return (
+      <TouchableHighlight onPress={() => {this.alert_change(item.employee, item.start_time, item.end_time)}} style={[styles.item, { height: item.height }]}>
       <View>
         <Text>{item.employee}</Text>
         <Text>{item.specialty}</Text>
@@ -136,9 +187,25 @@ export default class WeekSchedule extends Component {
 
   renderModal(){
     return(<View>
-    <Modal isVisible={true}>
-      <View style={{ flex: 1 }}>
-        <Text>I am the modal content!</Text>
+    <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor:'white'}} onBackdropPress={() => {this.setModalVisible(false)}}>
+      <View style={{ flex: 1 }} >
+      <Text>Selecione o Horário que Deseja solicitar troca</Text>
+      <View style={{flex: 1}}>
+      <Agenda
+        style={{flex:1}}
+        items={this.state.items}
+        loadItemsForMonth={this.loadItems.bind(this)}
+        selected={this.state.selectedDay}
+        renderItem={this.renderChangeItem.bind(this)}
+        renderEmptyDate={this.renderEmptyDate.bind(this)}
+        rowHasChanged={this.rowHasChanged.bind(this)}
+        theme={{
+          calendarBackground: '#ffffff',
+          agendaKnobColor: '#5f4b8b',
+          selectedDayBackgroundColor: '#5f4b8b'
+        }}
+      />
+      </View>
       </View>
     </Modal>
   </View>)
