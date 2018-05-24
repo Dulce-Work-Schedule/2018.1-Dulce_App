@@ -4,10 +4,16 @@ import {StackNavigator} from 'react-navigation';
 
 const routes = {
   profile: {
-    screen: ProfileManagerScreen
+    screen: ProfileManagerScreen,
+    navigationOptions: {
+      header: null
+    }
   },
   edit: {
-    screen: EditScreen
+    screen: EditScreen,
+    navigationOptions: {
+      header: null
+    }
   }
 };
 

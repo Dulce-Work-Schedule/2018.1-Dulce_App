@@ -5,7 +5,7 @@ const routes = {
   week: {
     screen: WeekSchedule,
     navigationOptions: {
-      title: 'Escalas da semana'
+      header: null
     }
   }
 };
