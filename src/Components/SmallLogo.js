@@ -5,7 +5,8 @@ const logo = require('../../assets/img/DulceHorizontalFull.png');
 const styles = {
   logo: {
     alignSelf: 'center',
-    marginBottom: 20,
+    marginTop: 45,
+    marginBottom: 30,
     width: 200,
     height: 100,
     resizeMode: 'contain',
