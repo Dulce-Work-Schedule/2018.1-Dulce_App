@@ -166,7 +166,7 @@ export default class WeekSchedule extends Component {
   renderItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onLongPress={() => { this._alert(item) }} style={[styles.item, { height: item.height }]}>
+      <TouchableHighlight onLongPress={() => { this._alert(item) }} underlayColor="purple" style={[styles.item, { height: item.height }]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -180,7 +180,7 @@ export default class WeekSchedule extends Component {
   renderChangeItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onPress={() => { this.alert_change(item) }} style={[styles.item, { height: item.height }]}>
+      <TouchableHighlight onPress={() => { this.alert_change(item) }} underlayColor="purple" style={[styles.item, { height: item.height }]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
