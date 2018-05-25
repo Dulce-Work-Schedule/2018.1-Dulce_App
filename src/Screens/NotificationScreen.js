@@ -56,7 +56,7 @@ export default class NotificationScreen extends Component {
             <Text>Aceitar</Text>
             </Button>
             <Button transparent danger onPress={() => {}}>
-            <Text>Não</Text>
+            <Text>Recusar</Text>
             </Button>
             </CardItem>
          </Card>

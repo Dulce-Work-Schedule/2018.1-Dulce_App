@@ -162,16 +162,26 @@ export default class WeekSchedule extends Component {
       <View>
         <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
           <View style={{flex: 1}} >
-            <Text style={{margin: 5, alignSelf: 'center'}}>Selecione o Horário que Deseja solicitar troca</Text>
+            <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
             <View style={{flex: 1}}>
               {this.renderAgenda(this.renderChangeItem)}
             </View>
+            {this.cancelChange()}
           </View>
         </Modal>
       </View>
     );
   }
 
+cancelChange(){
+  return(
+  <TouchableHighlight onPress={()=> {this.setModalVisible(false)}} style={{backgroundColor: 'purple'}}>
+    <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color:'white'}}>
+      Cancelar
+    </Text>
+  </TouchableHighlight>
+)
+}
   renderAgenda(item) {
     return (
       <Agenda
