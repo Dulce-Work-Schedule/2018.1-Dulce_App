@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Card, CardItem, Text, Body, List, Button } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Text, Body, List, Button, Icon } from 'native-base';
 
 export default class CardHeaderFooterExample extends Component {
 
@@ -36,23 +36,26 @@ export default class CardHeaderFooterExample extends Component {
             renderRow={(item) =>
           <Card>
             <CardItem header>
-              <Text>{item.name} solicitou mudança com o seu horário</Text>
+              <Text><Text style={{color:'purple'}}>{item.name}</Text> solicitou mudança com o seu horário</Text>
             </CardItem>
             <CardItem>
               <Body>
                 <Text>
-                  {item.currentDay} : {item.currentStartTime} - {item.currentEndTime}
+                   Seu Horário                    {item.name}
                 </Text>
                 <Text>
-                  {item.requestDay} : {item.requestStartTime} - {item.requestEndTime}
+                   {item.currentDay}         <Icon name='md-arrow-dropright' style={{fontSize: 40, color: 'purple'}} />         {item.requestDay}
+                </Text>
+                <Text>
+                 {item.currentStartTime} - {item.currentEndTime}                 {item.requestStartTime} - {item.requestEndTime}
                 </Text>
               </Body>
             </CardItem>
             <CardItem footer>
-            <Button transparent>
-            <Text>Sim</Text>
+            <Button transparent onPress={() => {}}>
+            <Text>Aceitar</Text>
             </Button>
-            <Button transparent danger>
+            <Button transparent danger onPress={() => {}}>
             <Text>Não</Text>
             </Button>
             </CardItem>
