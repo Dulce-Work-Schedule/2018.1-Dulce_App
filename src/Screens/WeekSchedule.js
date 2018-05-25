@@ -173,15 +173,15 @@ export default class WeekSchedule extends Component {
     );
   }
 
-cancelChange(){
-  return(
-  <TouchableHighlight onPress={()=> {this.setModalVisible(false)}} style={{backgroundColor: 'purple'}}>
-    <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color:'white'}}>
+  cancelChange() {
+    return (
+      <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: 'purple'}}>
+        <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color: 'white'}}>
       Cancelar
-    </Text>
-  </TouchableHighlight>
-)
-}
+        </Text>
+      </TouchableHighlight>
+    );
+  }
   renderAgenda(item) {
     return (
       <Agenda
