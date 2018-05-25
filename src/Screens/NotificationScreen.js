@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Body, List, Button, Icon } from 'native-base';
 
-export default class CardHeaderFooterExample extends Component {
+export default class NotificationScreen extends Component {
 
   constructor(props) {
     super(props);

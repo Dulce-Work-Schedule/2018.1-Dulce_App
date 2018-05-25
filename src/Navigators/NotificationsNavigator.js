@@ -2,10 +2,10 @@ import NotificationScreen from '../Screens/NotificationScreen';
 import {StackNavigator} from 'react-navigation';
 
 const routes = {
-  notifications: {
+  Notifications: {
     screen: NotificationScreen,
     navigationOptions: {
-      header: 'Notificações'
+      title: 'Notificações'
     }
   }
 };
