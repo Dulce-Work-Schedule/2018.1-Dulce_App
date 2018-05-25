@@ -15,15 +15,15 @@ class HospitalsScreen extends React.Component {
       <Container>
         <Header style={{backgroundColor: '#430082'}}>
           <Body>
-             <Title>Setores</Title>
-           </Body>
+            <Title>Setores</Title>
+          </Body>
         </Header>
         <Content>
           <List dataArray={this.state.Hospitals}
             renderRow={(item) =>
-              <ListItem onPress={() => this.props.navigation.navigate('sectors')}>
+              (<ListItem onPress={() => this.props.navigation.navigate('sectors')}>
                 <Text>{item}</Text>
-              </ListItem>
+              </ListItem>)
             } />
         </Content>
       </Container>

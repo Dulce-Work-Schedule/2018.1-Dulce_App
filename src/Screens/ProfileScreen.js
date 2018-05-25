@@ -65,7 +65,7 @@ class ProfileScreen extends React.Component {
             </Container>
           ) : (
             <View style={styles.informacoes}>
-            <SmallLogo />
+              <SmallLogo />
               <Text style={styles.name}>{this.state.profile.name}</Text>
               <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
               <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>

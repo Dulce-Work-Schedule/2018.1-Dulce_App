@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   Text,
   View,
@@ -6,11 +6,8 @@ import {
   TouchableHighlight,
   Alert
 } from 'react-native';
-import { Agenda } from 'react-native-calendars';
-import Modal from "react-native-modal";
-
-
-
+import {Agenda} from 'react-native-calendars';
+import Modal from 'react-native-modal';
 
 const styles = StyleSheet.create({
   item: {
@@ -28,14 +25,12 @@ const styles = StyleSheet.create({
   }
 });
 
-
-
 export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
       modalVisible: false,
-      
+
       currentSchedule: {},
       selectedSchedule: {},
 
@@ -78,7 +73,7 @@ export default class WeekSchedule extends Component {
           date: '2017-05-17',
           employee: 'Ezequiel',
           start_time: '10:30',
-          end_time: '14:30',          
+          end_time: '14:30',
           specialty: 'Médico'
         }],
         '2017-05-18': [{
@@ -96,7 +91,7 @@ export default class WeekSchedule extends Component {
   }
 
   setModalVisible(visible) {
-    this.setState({ modalVisible: visible });
+    this.setState({modalVisible: visible});
   }
 
   //Função para criar itens para o mês inteiro
@@ -126,47 +121,47 @@ export default class WeekSchedule extends Component {
     // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
-  requestChange(){
+  requestChange() {
     this.setModalVisible(false);
     Alert.alert(
       'Pedido de Alteração',
       'Solicitação de alteração de horário feita com sucesso!'
-    )
+    );
   }
 
   _alert(employee) {
-    this.setState({ currentSchedule: employee });
+    this.setState({currentSchedule: employee});
     Alert.alert(
       'Mudar de Horário',
       'Deseja solicitar mudança de horário?',
       [
-        { text: 'Sim', onPress: () => { this.setModalVisible(true) } },
-        { text: 'Não', onPress: () => { } },
+        {text: 'Sim', onPress: () => { this.setModalVisible(true); }},
+        {text: 'Não', onPress: () => {}}
       ],
-      { cancelable: true }
-    )
+      {cancelable: true}
+    );
   }
 
   alert_change(employee) {
-    this.setState({ selectedSchedule: employee }, () => {
+    this.setState({selectedSchedule: employee}, () => {
 
       Alert.alert(
         'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n ' +
-        this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + ' -> ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
+        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
+        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
         [
-          { text: 'Sim', onPress: () => { this.requestChange() } },
-          { text: 'Não', onPress: () => {} },
+          {text: 'Sim', onPress: () => {this.requestChange();}},
+          {text: 'Não', onPress: () => { }}
         ],
-        { cancelable: true }
-      )
+        {cancelable: true}
+      );
     });
   }
 
   renderItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onLongPress={() => { this._alert(item) }} underlayColor="purple" style={[styles.item, { height: item.height }]}>
+      <TouchableHighlight onPress={() => {this._alert(item);}} underlayColor='purple' style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -180,7 +175,7 @@ export default class WeekSchedule extends Component {
   renderChangeItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onPress={() => { this.alert_change(item) }} underlayColor="purple" style={[styles.item, { height: item.height }]}>
+      <TouchableHighlight onPress={() => { this.alert_change(item); }} underlayColor='purple' style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -194,47 +189,35 @@ export default class WeekSchedule extends Component {
   renderModal() {
     return (
       <View>
-        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{ backgroundColor: 'white' }} onBackdropPress={() => { this.setModalVisible(false) }}>
-          <View style={{ flex: 1 }} >
-            <Text style={{ margin: 5, alignSelf: 'center'}}>Selecione o Horário que Deseja solicitar troca</Text>
-            <View style={{ flex: 1 }}>
+        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
+          <View style={{flex: 1}} >
+            <Text style={{margin: 5, alignSelf: 'center'}}>Selecione o Horário que Deseja solicitar troca</Text>
+            <View style={{flex: 1}}>
               {this.renderAgenda(this.renderChangeItem)}
             </View>
           </View>
         </Modal>
       </View>
-    )
+    );
   }
 
   renderAgenda(item) {
     return (
       <Agenda
-        style={{ flex: 1 }}
+        style={{flex: 1}}
         items={this.state.items}
         loadItemsForMonth={this.loadItems.bind(this)}
         selected={this.state.selectedDay}
         renderItem={item.bind(this)}
         renderEmptyDate={this.renderEmptyDate.bind(this)}
         rowHasChanged={this.rowHasChanged.bind(this)}
-        //markingType={'period'}
-        // markedDates={{
-        //    '2017-05-08': {textColor: '#666'},
-        //    '2017-05-09': {textColor: '#666'},
-        //    '2017-05-14': {startingDay: true, endingDay: true, color: 'blue'},
-        //    '2017-05-21': {startingDay: true, color: 'blue'},
-        //    '2017-05-22': {endingDay: true, color: 'gray'},
-        //    '2017-05-24': {startingDay: true, color: 'gray'},
-        //    '2017-05-25': {color: 'gray'},
-        //    '2017-05-26': {endingDay: true, color: 'gray'}}}
-        //  monthFormat={'yyyy'}
-        // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
         theme={{
           calendarBackground: '#ffffff',
           agendaKnobColor: '#5f4b8b',
           selectedDayBackgroundColor: '#5f4b8b'
         }}
       />
-    )
+    );
   }
 
   renderEmptyDate() {
@@ -253,7 +236,7 @@ export default class WeekSchedule extends Component {
   }
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{flex: 1}}>
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
       </View>
