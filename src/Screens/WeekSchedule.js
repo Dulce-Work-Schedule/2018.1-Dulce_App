@@ -78,6 +78,7 @@ export default class WeekSchedule extends Component {
           date: '2017-05-17',
           employee: 'Ezequiel',
           start_time: '10:30',
+          end_time: '14:30',          
           specialty: 'Médico'
         }],
         '2017-05-18': [{
@@ -125,6 +126,14 @@ export default class WeekSchedule extends Component {
     // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
+  requestChange(){
+    this.setModalVisible(false);
+    Alert.alert(
+      'Pedido de Alteração',
+      'Solicitação de alteração de horário feita com sucesso!'
+    )
+  }
+
   _alert(employee) {
     this.setState({ currentSchedule: employee });
     Alert.alert(
@@ -146,8 +155,8 @@ export default class WeekSchedule extends Component {
         this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n ' +
         this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + ' -> ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
         [
-          { text: 'Sim', onPress: () => { this.setModalVisible(false) } },
-          { text: 'Não', onPress: () => { } },
+          { text: 'Sim', onPress: () => { this.requestChange() } },
+          { text: 'Não', onPress: () => {} },
         ],
         { cancelable: true }
       )
@@ -187,7 +196,7 @@ export default class WeekSchedule extends Component {
       <View>
         <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{ backgroundColor: 'white' }} onBackdropPress={() => { this.setModalVisible(false) }}>
           <View style={{ flex: 1 }} >
-            <Text>Selecione o Horário que Deseja solicitar troca</Text>
+            <Text style={{ margin: 5, alignSelf: 'center'}}>Selecione o Horário que Deseja solicitar troca</Text>
             <View style={{ flex: 1 }}>
               {this.renderAgenda(this.renderChangeItem)}
             </View>
