@@ -6,7 +6,7 @@ const routes = {
   new: {
     screen: NewManager,
     navigationOptions: {
-      header:null
+      header: null
     }
   },
   initial: {
