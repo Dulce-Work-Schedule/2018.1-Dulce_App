@@ -87,10 +87,10 @@ export default class WeekSchedule extends Component {
         }
       }
       const newItems = {};
-      Object.keys(this.state.items).forEach(key => { newItems[key] = this.state.items[key]; });
+      Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
       this.setState({
         items: newItems
-      }
+      });
     }, 1000);
   }
 
