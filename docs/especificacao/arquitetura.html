@@ -216,7 +216,15 @@
                                           <h6>API</h6>
                                           <div style ="text-align: justify">
                                           <p>
-                                            A API, produzida em Node.js, controla e fornece as informações visualizadas no aplicativo. Para qualquer manipulação de dados feita pelo aplicativo é necessário que ela seja chamada. A API é dividida de acordo com as funcionalidades, seguindo a arquitetura de microsserviços.
+                                            A API, produzida em Node.js, controla e fornece as informações visualizadas no aplicativo.
+                                            Para qualquer manipulação de dados feita pelo aplicativo é necessário que ela seja chamada.
+                                            A API é dividida de acordo com as funcionalidades, seguindo a arquitetura de microsserviços.
+                                            Para implementar essa aquitetura de microsserviços, utilizamos a ferramenta Seneca JS, que fornece plugins que cuidam das fundações da API.
+                                          </p>
+                                          <p>
+                                            Cada microsserviço contém um Client e um Server. O Client é o intermediário entre o aplicativo e o Server.
+                                            Ele recebe as informações enviadas do aplicativo, faz os devidos tratamentos e envia para o Server.
+                                            O Server possui contato com o banco de dados e nele ocorre a manipulação dos dados a serem enviados ao aplicativo por meio do Client.
                                           </p>
                                           </div>
 
@@ -234,7 +242,9 @@
                                         <ul>
                                         <li><a href ="https://facebook.github.io/react-native/"> React-native</a>: Utilizado para a construção do aplicativo em IOS e Android;</li>
                                         <li><a href ="https://nodejs.org/en/">Node.js</a>: Plataforma de desenvolvimento da API;</li>
-                                        <li>Base de dados fornecida pela <a href ="http://www.saude.df.gov.br/index.php">Secretaria de Saúde</a>;</li>
+                                        <li><a href ="http://senecajs.org/">SenecaJS</a>: Conjunto de ferramentas para implementação de microsserviços em Node.js;</li>
+                                        <li><a href="https://www.rabbitmq.com/">RabbitMQ</a>: Barramento de Serviços entre a API e o aplicativo;</li>
+                                        <li><a href="https://www.mongodb.com/">MongoDB</a>: Banco de Dados não relacional;</li>
                                         <li>Manutenibilidade: O código deve ser facilmente modificado e corrigido.</li>
                                         </ul>
 
