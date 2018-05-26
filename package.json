@@ -21,6 +21,7 @@
   "bugs": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App/issues",
   "dependencies": {
     "axios": "^0.18.0",
+    "axios-mock-adapter": "^1.15.0",
     "bluebird": "^3.3.5",
     "event-emitter": "^0.3.4",
     "immutable": "^3.7.6",

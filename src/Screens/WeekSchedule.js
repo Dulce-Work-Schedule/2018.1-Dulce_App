@@ -11,7 +11,6 @@ import Modal from 'react-native-modal';
 
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Content, Spinner} from 'native-base';
 
 
 
@@ -264,22 +263,10 @@ export default class WeekSchedule extends Component {
 
   render() {
     return (
-      // <View>
-      //   {
-      //     this.state.loading ? (
-      //       <Container>
-      //         <Content>
-      //           <Spinner color='#5f4b8b'/>
-      //         </Content>
-      //       </Container>
-      //     ) : (
-            <View style={{flex: 1}}>
-              {this.renderAgenda(this.renderItem)}
-              {this.renderModal()}
-            </View>
-      //     )
-      //   }
-      // </View>
+      <View style={{flex: 1}}>
+        {this.renderAgenda(this.renderItem)}
+        {this.renderModal()}
+      </View>
     );
   }
 }
