@@ -59,6 +59,7 @@ export class LoginScreen extends React.Component {
   }
 
   _onPressButton() {
+
     if (this.state.password === '' || this.state.registration === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',

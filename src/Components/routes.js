@@ -8,8 +8,8 @@ import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 
 export default DrawerNavigator({
-  'Ver Medicos': {
-    screen: Doctors
+  'Ver Escala': {
+    screen: Schedule
   },
   'Meu Perfil': {
     screen: Profile
@@ -17,17 +17,17 @@ export default DrawerNavigator({
   'Criar Novo Gerente': {
     screen: NewManager
   },
-  Logout: {
-    screen: Logout
-  },
   'Ver Setores': {
     screen: Sectors
   },
   'Ver Hospitais': {
     screen: Hospitals
   },
-  'Ver Escala': {
-    screen: Schedule
+  'Ver Medicos': {
+    screen: Doctors
+  },
+  Logout: {
+    screen: Logout
   }
 }, {
   drawerWidth: 300
