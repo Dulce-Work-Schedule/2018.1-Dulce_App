@@ -14,7 +14,8 @@ const styles = {
   },
   text: {
     color: 'white',
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: 'Raleway'
   }
 };
 

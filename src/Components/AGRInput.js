@@ -9,10 +9,14 @@ const styles = {
     marginBottom: 10,
     width: '100%',
     alignSelf: 'center',
-    marginTop: 30
+    marginTop: 30,
+    fontFamily: 'Lato'
   },
   container: {
     paddingHorizontal: 30
+  },
+  label: {
+    fontFamily: 'Lato'
   }
 };
 
@@ -21,7 +25,7 @@ class AGRInput extends React.Component {
     return (
       <Form>
         <Item floatingLabel>
-          <Label>{this.props.nameLabel}</Label>
+          <Label style={styles.label}>{this.props.nameLabel}</Label>
           <Input style={styles.textInput} underlineColorAndroid='transparent'
             {...this.props} />
         </Item>
