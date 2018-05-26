@@ -38,7 +38,7 @@ class ListScreen extends React.Component {
             <Container>
               <Header style={{backgroundColor: '#5f4b8b'}}>
                 <Body>
-                  <Title>Lista de médicos</Title>
+                  <Title style={{fontFamily: 'Raleway'}} >Lista de médicos</Title>
                 </Body>
               </Header>
               <Content>

@@ -15,7 +15,7 @@ class HospitalsScreen extends React.Component {
       <Container>
         <Header style={{backgroundColor: '#5f4b8b'}}>
           <Body>
-            <Title> Hospitais </Title>
+            <Title style={{fontFamily: 'Raleway'}} > Hospitais </Title>
           </Body>
         </Header>
         <Content>
