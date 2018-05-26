@@ -25,9 +25,6 @@ export default DrawerNavigator({
   'Ver Hospitais': {
     screen: Hospitals
   },
-  'Ver Escala': {
-    screen: Schedule
-  },
   'Notificações': {
     screen: Notifications
   },
