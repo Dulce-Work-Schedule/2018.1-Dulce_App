@@ -8,6 +8,8 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
+import axios from 'axios';
+import store from '../Reducers/store';
 
 const styles = StyleSheet.create({
   item: {
@@ -30,62 +32,12 @@ export default class WeekSchedule extends Component {
     super(props);
     this.state = {
       modalVisible: false,
-
       currentSchedule: {},
       selectedSchedule: {},
-
-      items: {
-        '2017-05-15': [
-          {
-            date: '2017-05-15',
-            employee: 'Maria',
-            start_time: '08:30',
-            end_time: '15:00',
-            amount_of_hours: '6.5h',
-            specialty: 'Médica'
-          },
-          {
-            date: '2017-05-15',
-            employee: 'José',
-            start_time: '10:30',
-            end_time: '17:30',
-            amount_of_hours: '7.0h',
-            specialty: 'Médico'
-          },
-          {
-            date: '2017-05-15',
-            employee: 'João',
-            start_time: '14:30',
-            end_time: '15:00',
-            amount_of_hours: '0.5h',
-            specialty: 'Médico'
-          }
-        ],
-        '2017-05-16': [{
-          date: '2017-05-16',
-          employee: 'Gabriela',
-          start_time: '08:30',
-          end_time: '15:00',
-          amount_of_hours: '6.5h',
-          specialty: 'Médica'
-        }],
-        '2017-05-17': [{
-          date: '2017-05-17',
-          employee: 'Ezequiel',
-          start_time: '10:30',
-          end_time: '14:30',
-          specialty: 'Médico'
-        }],
-        '2017-05-18': [{
-          date: '2017-05-18',
-          employee: 'Outra pessoa',
-          start_time: '14:30',
-          end_time: '15:00',
-          amount_of_hours: '0.5h',
-          specialty: 'Médico'
-        }]
-      },
-      selectedDay: '2017-05-15'
+      items: {},
+      loading: true,
+      selectedDay: new Date(),
+      itemDate: []
     };
 
   }
@@ -93,8 +45,37 @@ export default class WeekSchedule extends Component {
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
   }
+  componentDidMount() {
+    const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
+    (this.state.selectedDay.getMonth() + 1);
 
-  //Função para criar itens para o mês inteiro
+    axios.get(url,{
+      headers: {
+        'x-access-token': store.getState().currentUser.token
+      }
+    })
+    .then((response) => {
+      this.setState({itemDate: response.data,loading: false});
+      this.arrayToObject();
+    });
+  }
+  arrayToObject() {
+    const newObj = this.state.itemDate.reduce((acc, cur) => {
+      var date = new Date(cur.date);
+      var format = (date.getFullYear() + '-' +
+        (date.getMonth()).toString().padStart(2,0) + '-' +
+        (date.getDate()).toString().padStart(2,0));
+
+      if (!acc[format]) {
+        acc[format] = [];
+      }
+      acc[format].push(cur);
+      return acc;
+    }, {});
+    this.setState({items: newObj});
+  }
+
+//Função para criar itens para o mês inteiro
   loadItems(day) {
     setTimeout(() => {
       for (let i = -15; i < 85; i++) {
@@ -102,23 +83,14 @@ export default class WeekSchedule extends Component {
         const strTime = this.timeToString(time);
         if (!this.state.items[strTime]) {
           this.state.items[strTime] = [];
-          const numItems = Math.floor(Math.random() * 5);
-          for (let j = 0; j < numItems; j++) {
-            this.state.items[strTime].push({
-              name: 'Item for ' + strTime,
-              height: Math.max(50, Math.floor(Math.random() * 150))
-            });
-          }
         }
       }
-      //console.log(this.state.items);
       const newItems = {};
-      Object.keys(this.state.items).forEach(key => { newItems[key] = this.state.items[key]; });
+      Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
       this.setState({
         items: newItems
       });
     }, 1000);
-    // console.log(`Load Items for ${day.year}-${day.month}`);
   }
 
   requestChange() {
@@ -159,7 +131,6 @@ export default class WeekSchedule extends Component {
   }
 
   renderItem(item) {
-    console.log(item);
     return (
       <TouchableHighlight onPress={() => {this._alert(item);}} underlayColor='purple' style={[styles.item, {height: item.height}]}>
         <View>
@@ -234,6 +205,7 @@ export default class WeekSchedule extends Component {
     const date = new Date(time);
     return date.toISOString().split('T')[0];
   }
+
   render() {
     return (
       <View style={{flex: 1}}>
