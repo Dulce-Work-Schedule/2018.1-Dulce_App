@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon} from 'native-base';
 
 export default class NotificationScreen extends Component {
@@ -40,15 +41,35 @@ export default class NotificationScreen extends Component {
                 </CardItem>
                 <CardItem>
                   <Body>
-                    <Text>
-                   Seu Horário                    {item.name}
-                    </Text>
-                    <Text>
-                      {item.currentDay}         <Icon name='md-arrow-dropright' style={{fontSize: 40, color: 'purple'}} />         {item.requestDay}
-                    </Text>
-                    <Text>
-                      {item.currentStartTime} - {item.currentEndTime}                 {item.requestStartTime} - {item.requestEndTime}
-                    </Text>
+                  <View style={{flex: 1, flexDirection: 'row'}}>
+                    <View style={{flex: 1,flexDirection: 'column',alignItems: 'center'}}>
+                      <Text>
+                        Seu Horário
+                      </Text>
+                      <Text>
+                        {item.currentDay}
+                      </Text>
+                      <Text>
+                        {item.currentStartTime} - {item.currentEndTime}
+                      </Text>
+                    </View>
+                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                    <Icon name='md-arrow-dropright' style={{fontSize: 40, color: 'purple'}} />
+                    </View>
+                    <View style ={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end'}}>
+                      <Text>
+                        {item.name}
+                      </Text>
+
+                      <Text>
+                        {item.requestDay}
+                      </Text>
+
+                      <Text>
+                        {item.requestStartTime} - {item.requestEndTime}
+                      </Text>
+                    </View>
+                    </View>
                   </Body>
                 </CardItem>
                 <CardItem footer>
