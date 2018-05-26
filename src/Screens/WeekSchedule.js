@@ -11,6 +11,7 @@ import Modal from 'react-native-modal';
 
 import axios from 'axios';
 import store from '../Reducers/store';
+import {Container, Content, Spinner} from 'native-base';
 
 
 
@@ -59,11 +60,18 @@ export default class WeekSchedule extends Component {
     .then((response) => {
       this.setState({itemDate: response.data,loading: false});
       this.arrayToObject();
+      if (response.data === []) {
+        Alert.alert(
+          'Erro',
+          'Não há horários criados!'
+        );
+      }
     })
     .catch(() => {Alert.alert(
       'Erro',
       'Verifique sua conexão.'
     );});
+
   }
 
   setModalVisible(visible) {
@@ -241,7 +249,7 @@ export default class WeekSchedule extends Component {
 
   renderEmptyDate() {
     return (
-      <View style={styles.emptyDate}><Text>This is empty date!</Text></View>
+      <View style={styles.emptyDate}><Text>Nenhuma escala neste dia!</Text></View>
     );
   }
 
@@ -256,10 +264,22 @@ export default class WeekSchedule extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
-        {this.renderAgenda(this.renderItem)}
-        {this.renderModal()}
-      </View>
+      // <View>
+      //   {
+      //     this.state.loading ? (
+      //       <Container>
+      //         <Content>
+      //           <Spinner color='#5f4b8b'/>
+      //         </Content>
+      //       </Container>
+      //     ) : (
+            <View style={{flex: 1}}>
+              {this.renderAgenda(this.renderItem)}
+              {this.renderModal()}
+            </View>
+      //     )
+      //   }
+      // </View>
     );
   }
 }
