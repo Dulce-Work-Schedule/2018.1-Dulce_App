@@ -31,6 +31,6 @@ mock.onGet('/api/schedule/listMonth').reply(200,{
 });
 
 axios.get('/api/schedule/listMonth')
-.then(function(response) {
+.then(function axios_function(response) {
   console.log(response.data);
 });

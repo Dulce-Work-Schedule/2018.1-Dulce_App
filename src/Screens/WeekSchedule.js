@@ -12,7 +12,7 @@ import Modal from 'react-native-modal';
 import axios from 'axios';
 import store from '../Reducers/store';
 
-import {Header, Body, Title,Container} from 'native-base';
+import {Header, Body, Title} from 'native-base';
 
 const styles = StyleSheet.create({
   item: {
@@ -176,8 +176,8 @@ export default class WeekSchedule extends Component {
   }
 
 
-    renderModal() {
-      return (
+  renderModal() {
+    return (
         <View>
           <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
             <View style={{flex: 1}} >
@@ -189,21 +189,21 @@ export default class WeekSchedule extends Component {
             </View>
           </Modal>
         </View>
-      );
-    }
+    );
+  }
 
-    cancelChange() {
-      return (
+  cancelChange() {
+    return (
         <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: '#5f4b8b'}}>
           <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color: 'white'}}>
         Cancelar
           </Text>
         </TouchableHighlight>
-      );
-    }
+    );
+  }
 
-    renderAgenda(item) {
-      return (
+  renderAgenda(item) {
+    return (
         <Agenda
           style={{flex: 1}}
           items={this.state.items}
@@ -218,8 +218,8 @@ export default class WeekSchedule extends Component {
             selectedDayBackgroundColor: '#5f4b8b'
           }}
         />
-      );
-    }
+    );
+  }
 
   renderEmptyDate() {
     return (
