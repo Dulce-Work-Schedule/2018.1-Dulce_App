@@ -12,8 +12,6 @@ import Modal from 'react-native-modal';
 import axios from 'axios';
 import store from '../Reducers/store';
 
-
-
 import {Header, Body, Title,Container} from 'native-base';
 
 const styles = StyleSheet.create({
@@ -44,7 +42,6 @@ export default class WeekSchedule extends Component {
       selectedDay: new Date(),
       itemDate: []
     };
-
   }
 
   componentDidMount() {
@@ -137,15 +134,8 @@ export default class WeekSchedule extends Component {
 
       Alert.alert(
         'Mudar de Horário',
-        this.state.currentSchedule.employee +
-        ', deseja trocar de horario com o/a ' +
-        this.state.selectedSchedule.employee + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' +
-        this.state.selectedSchedule.date + '\n' +
-        this.state.currentSchedule.start_time + ' - ' +
-        this.state.currentSchedule.end_time + '  ->  ' +
-        this.state.selectedSchedule.start_time + ' - ' +
-        this.state.selectedSchedule.end_time,
+        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
+        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
         [
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
@@ -160,7 +150,7 @@ export default class WeekSchedule extends Component {
       <TouchableHighlight
       onPress={() => {this._alert(item);}}
       underlayColor='#5f4b8b'
-      style={[styles.item, {height: item.height}]}>
+      style={styles.item}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -174,10 +164,7 @@ export default class WeekSchedule extends Component {
   renderChangeItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight
-      onPress={() => { this.alert_change(item); }}
-      underlayColor='#5f4b8b'
-      style={[styles.item, {height: item.height}]}>
+      <TouchableHighlight onPress={() => { this.alert_change(item); }} underlayColor='#5f4b8b' style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -222,11 +209,6 @@ export default class WeekSchedule extends Component {
   renderAgenda() {
     return (
       <Container>
-        <Header style={{backgroundColor: '#5f4b8b'}}>
-          <Body>
-            <Title style={{fontFamily: 'Raleway'}}>Escalas</Title>
-          </Body>
-        </Header>
         <Agenda
           items={this.state.items}
           loadItemsForMonth={this.loadItems.bind(this)}
@@ -264,6 +246,11 @@ export default class WeekSchedule extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
+        <Header style={{backgroundColor: '#5f4b8b'}}>
+          <Body>
+            <Title style={{fontFamily: 'Raleway'}}>Escalas</Title>
+          </Body>
+        </Header>
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
       </View>
