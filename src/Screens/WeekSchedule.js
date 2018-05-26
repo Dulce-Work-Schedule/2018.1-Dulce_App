@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
-import {Spinner, Content} from 'native-base';
 import axios from 'axios';
 import store from '../Reducers/store';
 
