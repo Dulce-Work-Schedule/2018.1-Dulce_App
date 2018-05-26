@@ -8,8 +8,13 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
+
 import axios from 'axios';
 import store from '../Reducers/store';
+
+
+
+import {Header, Body, Title,Container} from 'native-base';
 
 const styles = StyleSheet.create({
   item: {
@@ -182,22 +187,30 @@ export default class WeekSchedule extends Component {
       </TouchableHighlight>
     );
   }
-  renderAgenda(item) {
+  renderAgenda() {
     return (
-      <Agenda
-        style={{flex: 1}}
-        items={this.state.items}
-        loadItemsForMonth={this.loadItems.bind(this)}
-        selected={this.state.selectedDay}
-        renderItem={item.bind(this)}
-        renderEmptyDate={this.renderEmptyDate.bind(this)}
-        rowHasChanged={this.rowHasChanged.bind(this)}
-        theme={{
-          calendarBackground: '#ffffff',
-          agendaKnobColor: '#5f4b8b',
-          selectedDayBackgroundColor: '#5f4b8b'
-        }}
-      />
+      <Container>
+        <Header style={{backgroundColor: '#5f4b8b'}}>
+          <Body>
+            <Title style={{fontFamily: 'Raleway'}}>Escalas</Title>
+          </Body>
+        </Header>
+        <Agenda
+          items={this.state.items}
+          loadItemsForMonth={this.loadItems.bind(this)}
+          selected={this.state.selectedDay}
+          renderItem={this.renderItem.bind(this)}
+          renderEmptyDate={this.renderEmptyDate.bind(this)}
+          rowHasChanged={this.rowHasChanged.bind(this)}
+
+          // renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
+          theme={{
+            calendarBackground: '#ffffff',
+            agendaKnobColor: '#5f4b8b',
+            selectedDayBackgroundColor: '#5f4b8b'
+          }}
+        />
+      </Container>
     );
   }
 

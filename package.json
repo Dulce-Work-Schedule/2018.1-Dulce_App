@@ -75,5 +75,10 @@
     "transformIgnorePatterns": [
       "!node_modules/react-runtime"
     ]
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
   }
 }

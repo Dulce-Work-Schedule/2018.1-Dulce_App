@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, Alert, FlatList} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Content, Spinner, ListItem, Left, Body, Text} from 'native-base';
+import {Container, Content, Spinner, ListItem, Left, Body, Text, Title, Header} from 'native-base';
 import UserAvatar from 'react-native-user-avatar';
 
 class ListScreen extends React.Component {
@@ -36,8 +36,13 @@ class ListScreen extends React.Component {
           this.state.loading ? (
 
             <Container>
+              <Header style={{backgroundColor: '#5f4b8b'}}>
+                <Body>
+                  <Title style={{fontFamily: 'Raleway'}} >Lista de médicos</Title>
+                </Body>
+              </Header>
               <Content>
-                <Spinner color='purple'/>
+                <Spinner color= '#5f4b8b'/>
               </Content>
             </Container>
 

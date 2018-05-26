@@ -3,6 +3,7 @@ import {Text, View, ScrollView} from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
+import {Header, Body, Title, Container} from 'native-base';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';
 
@@ -17,7 +18,7 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 15,
+    padding: 0,
     backgroundColor: '#FFF'
   },
   input: {
@@ -29,7 +30,7 @@ const styles = {
     alignSelf: 'center'
   },
   button: {
-    marginTop: 30
+    marginTop: 50
   },
   error: {
     color: 'red',
@@ -90,21 +91,34 @@ export default class NewManager extends ValidationComponent {
   render() {
     return (
       <View style={styles.container}>
-        <SmallLogo/>
-        <ScrollView>
-          <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
-          {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <AGRInput ref='registration' nameLabel='Matrícula' onChangeText={(registration) => this.setState({registration})} />
-          {this.isFieldInError('registration') && this.getErrorsInField('registration').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <AGRInput ref='hospital' nameLabel='Hospital' onChangeText={(text) => this.setState({hospital: text})} />
-          {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput ref='sector' nameLabel='Setor' onChangeText={(text) => this.setState({sector: text})} />
-          {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput ref='password' nameLabel='Senha' secureTextEntry onChangeText={(text) => this.setState({password: text})} />
-          {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput ref='confirmepassword' nameLabel='Confirme sua senha' secureTextEntry onChangeText={(text) => this.setState({confirmepassword: text})} />
-          {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-          <AGRButton text='Criar' onPress={() => this._onPressButton()} />
-        </ScrollView>
-      </View>);}
+        <Container>
+          <Header style={{backgroundColor: '#5f4b8b'}}>
+            <Body>
+              <Title style={{fontFamily: 'Raleway'}}>Novo gerente</Title>
+            </Body>
+          </Header>
+        </Container>
+        <SmallLogo />
+        <View>
+          <ScrollView>
+            <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
+            {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+            <AGRInput ref='registration' nameLabel='Matrícula' onChangeText={(registration) => this.setState({registration})} />
+            {this.isFieldInError('registration') && this.getErrorsInField('registration').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+            <AGRInput ref='hospital' nameLabel='Hospital' onChangeText={(text) => this.setState({hospital: text})} />
+            {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+            <AGRInput ref='sector' nameLabel='Setor' onChangeText={(text) => this.setState({sector: text})} />
+            {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+            <AGRInput ref='password' nameLabel='Senha' secureTextEntry onChangeText={(text) => this.setState({password: text})} />
+            {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+            <AGRInput ref='confirmepassword' nameLabel='Confirme sua senha' secureTextEntry onChangeText={(text) => this.setState({confirmepassword: text})} />
+            {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
+            <View>
+              <AGRButton text='Criar' onPress={() => this._onPressButton()} />
+            </View>
+          </ScrollView>
+        </View>
+      </View>
+    );
+  }
 }

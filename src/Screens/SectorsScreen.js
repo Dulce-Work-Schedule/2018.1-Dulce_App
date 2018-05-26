@@ -13,9 +13,9 @@ class SectorsScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Header style={{backgroundColor: '#430082'}}>
+        <Header style={{backgroundColor: '#5f4b8b'}}>
           <Body>
-            <Title>Setores</Title>
+            <Title style={{fontFamily: 'Raleway'}} >Setores</Title>
           </Body>
         </Header>
         <Content>

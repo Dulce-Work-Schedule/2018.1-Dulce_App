@@ -6,11 +6,15 @@ const routes = {
   list: {
     screen: ListScreen,
     navigationOptions: {
-      title: 'Lista de Médicos'
+      header: null
     }
   },
   profile: {
-    screen: ProfileScreen
+    screen: ProfileScreen,
+    navigationOptions: {
+      title: 'Perfil',
+      backgroundColor: '#5f4b8b'
+    }
   }
 };
 

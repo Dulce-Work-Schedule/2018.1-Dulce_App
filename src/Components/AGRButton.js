@@ -4,7 +4,7 @@ import {Container, Content, Button} from 'native-base';
 
 const styles = {
   container: {
-    backgroundColor: 'purple',
+    backgroundColor: '#5f4b8b',
     height: 50,
     alignItems: 'center',
     marginTop: 30,
@@ -14,7 +14,8 @@ const styles = {
   },
   text: {
     color: 'white',
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: 'Raleway'
   }
 };
 
