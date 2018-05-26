@@ -107,8 +107,8 @@ export default class WeekSchedule extends Component {
       'Mudar de Horário',
       'Deseja solicitar mudança de horário?',
       [
-        {text: 'Sim', onPress: () => { this.setModalVisible(true); }},
-        {text: 'Não', onPress: () => {}}
+        {text: 'Não', onPress: () => {}},
+        {text: 'Sim', onPress: () => { this.setModalVisible(true); }}
       ],
       {cancelable: true}
     );
@@ -122,8 +122,8 @@ export default class WeekSchedule extends Component {
         this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
         this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
         [
-          {text: 'Sim', onPress: () => {this.requestChange();}},
-          {text: 'Não', onPress: () => { }}
+          {text: 'Não', onPress: () => { }},
+          {text: 'Sim', onPress: () => {this.requestChange();}}
         ],
         {cancelable: true}
       );
@@ -132,7 +132,7 @@ export default class WeekSchedule extends Component {
 
   renderItem(item) {
     return (
-      <TouchableHighlight onPress={() => {this._alert(item);}} underlayColor='purple' style={[styles.item, {height: item.height}]}>
+      <TouchableHighlight onPress={() => {this._alert(item);}} underlayColor='#5f4b8b' style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -146,7 +146,7 @@ export default class WeekSchedule extends Component {
   renderChangeItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onPress={() => { this.alert_change(item); }} underlayColor='purple' style={[styles.item, {height: item.height}]}>
+      <TouchableHighlight onPress={() => { this.alert_change(item); }} underlayColor='#5f4b8b' style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -175,7 +175,7 @@ export default class WeekSchedule extends Component {
 
   cancelChange() {
     return (
-      <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: 'purple'}}>
+      <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: '#5f4b8b'}}>
         <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color: 'white'}}>
       Cancelar
         </Text>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon} from 'native-base';
+import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon, Right} from 'native-base';
 
 export default class NotificationScreen extends Component {
 
@@ -37,7 +37,7 @@ export default class NotificationScreen extends Component {
             renderRow={(item) =>
               (<Card>
                 <CardItem header>
-                  <Text><Text style={{color: 'purple'}}>{item.name}</Text> solicitou mudança com o seu horário</Text>
+                  <Text><Text style={{color: '#5f4b8b'}}>{item.name}</Text> solicitou mudança com o seu horário</Text>
                 </CardItem>
                 <CardItem>
                   <Body>
@@ -54,7 +54,7 @@ export default class NotificationScreen extends Component {
                       </Text>
                     </View>
                     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                    <Icon name='md-arrow-dropright' style={{fontSize: 40, color: 'purple'}} />
+                    <Icon name='md-arrow-dropright' style={{fontSize: 40, color: '#5f4b8b'}} />
                     </View>
                     <View style ={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end'}}>
                       <Text>
@@ -73,12 +73,16 @@ export default class NotificationScreen extends Component {
                   </Body>
                 </CardItem>
                 <CardItem footer>
+
+                  <View style={{flexDirection:'row', marginLeft: 180}}>
+                  <Button transparent  onPress={() => {}}>
+                  <Text style={{color: '#fd7d01'}}>Recusar</Text>
+                  </Button>
                   <Button transparent onPress={() => {}}>
-                    <Text>Aceitar</Text>
+                    <Text style={{color: '#5f4b8b'}}>Aceitar</Text>
                   </Button>
-                  <Button transparent danger onPress={() => {}}>
-                    <Text>Recusar</Text>
-                  </Button>
+                  </View>
+
                 </CardItem>
               </Card>)
             } />
