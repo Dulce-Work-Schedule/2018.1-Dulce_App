@@ -47,9 +47,6 @@ export default class WeekSchedule extends Component {
 
   }
 
-  setModalVisible(visible) {
-    this.setState({modalVisible: visible});
-  }
   componentDidMount() {
     const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
     (this.state.selectedDay.getMonth() + 1);
@@ -62,8 +59,17 @@ export default class WeekSchedule extends Component {
     .then((response) => {
       this.setState({itemDate: response.data,loading: false});
       this.arrayToObject();
-    });
+    })
+    .catch(() => {Alert.alert(
+      'Erro',
+      'Verifique sua conexão.'
+    );});
   }
+
+  setModalVisible(visible) {
+    this.setState({modalVisible: visible});
+  }
+
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
       var date = new Date(cur.date);
@@ -124,8 +130,15 @@ export default class WeekSchedule extends Component {
 
       Alert.alert(
         'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
+        this.state.currentSchedule.employee +
+        ', deseja trocar de horario com o/a ' +
+        this.state.selectedSchedule.employee + '?\n\n ' +
+        this.state.currentSchedule.date + '    ->   ' +
+        this.state.selectedSchedule.date + '\n' +
+        this.state.currentSchedule.start_time + ' - ' +
+        this.state.currentSchedule.end_time + '  ->  ' +
+        this.state.selectedSchedule.start_time + ' - ' +
+        this.state.selectedSchedule.end_time,
         [
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
@@ -137,7 +150,10 @@ export default class WeekSchedule extends Component {
 
   renderItem(item) {
     return (
-      <TouchableHighlight onPress={() => {this._alert(item);}} underlayColor='#5f4b8b' style={[styles.item, {height: item.height}]}>
+      <TouchableHighlight
+      onPress={() => {this._alert(item);}}
+      underlayColor='#5f4b8b'
+      style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -151,7 +167,10 @@ export default class WeekSchedule extends Component {
   renderChangeItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onPress={() => { this.alert_change(item); }} underlayColor='#5f4b8b' style={[styles.item, {height: item.height}]}>
+      <TouchableHighlight
+      onPress={() => { this.alert_change(item); }}
+      underlayColor='#5f4b8b'
+      style={[styles.item, {height: item.height}]}>
         <View>
           <Text>{item.employee}</Text>
           <Text>{item.specialty}</Text>
@@ -165,9 +184,15 @@ export default class WeekSchedule extends Component {
   renderModal() {
     return (
       <View>
-        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
+        <Modal
+        isVisible={this.state.modalVisible}
+        backdropOpacity={0.2}
+        style={{backgroundColor: 'white'}}
+        onBackdropPress={() => {this.setModalVisible(false);}}>
           <View style={{flex: 1}} >
-            <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
+            <Text style={{margin: 5, alignSelf: 'center'}}>
+              Selecione o Horário que Deseja solicitar troca
+            </Text>
             <View style={{flex: 1}}>
               {this.renderAgenda(this.renderChangeItem)}
             </View>
