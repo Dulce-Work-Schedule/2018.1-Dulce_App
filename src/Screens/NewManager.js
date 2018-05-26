@@ -94,7 +94,7 @@ export default class NewManager extends ValidationComponent {
         <Container>
           <Header style={{backgroundColor: '#5f4b8b'}}>
             <Body>
-              <Title>Novo gerente</Title>
+              <Title style={{fontFamily: 'Raleway'}}>Novo gerente</Title>
             </Body>
           </Header>
         </Container>
