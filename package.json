@@ -7,7 +7,6 @@
     "type": "git",
     "url": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App"
   },
-
   "homepage": "https://Dulce-Work-Schedule.github.io/2018.1-Dulce_App/",
   "license": "MIT",
   "private": false,
@@ -68,10 +67,6 @@
     "remote-redux-devtools": "^0.5.7",
     "rimraf": "^2.5.2"
   },
-
-  “rnpm”: {
-   “assets”: [“./assets/fonts”]
-},
   "jest": {
     "preset": "react-native",
     "transform": {
@@ -79,6 +74,11 @@
     },
     "transformIgnorePatterns": [
       "!node_modules/react-runtime"
+    ]
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
     ]
   }
 }
