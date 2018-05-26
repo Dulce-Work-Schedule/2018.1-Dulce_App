@@ -7,14 +7,14 @@ import {
   Alert
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
-
 import Modal from 'react-native-modal';
+
 import axios from 'axios';
 import store from '../Reducers/store';
 
+
+
 import {Header, Body, Title,Container} from 'native-base';
-
-
 
 const styles = StyleSheet.create({
   item: {
@@ -187,12 +187,12 @@ export default class WeekSchedule extends Component {
       </TouchableHighlight>
     );
   }
-  renderAgenda(item) {
+  renderAgenda() {
     return (
       <Container>
         <Header style={{backgroundColor: '#5f4b8b'}}>
           <Body>
-            <Title>Escalas</Title>
+            <Title style={{fontFamily: 'Raleway'}}>Escalas</Title>
           </Body>
         </Header>
         <Agenda
@@ -207,7 +207,7 @@ export default class WeekSchedule extends Component {
           theme={{
             calendarBackground: '#ffffff',
             agendaKnobColor: '#5f4b8b',
-            selectedDayBackgroundColor: 'red'
+            selectedDayBackgroundColor: '#5f4b8b'
           }}
         />
       </Container>
