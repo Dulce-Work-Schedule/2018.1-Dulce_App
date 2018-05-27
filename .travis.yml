@@ -40,10 +40,12 @@ matrix:
         - travis_wait 15 npm run coverage && cat ./coverage/lcov.info | npm run coveralls
       deploy:
         - provider: script
+          skip_cleanup: true
           on:
             branch: master
           script: ./utils/run_deploy.sh beta
         - provider: script
+          skip_cleanup: true
           on:
             tags: true
           script: ./utils/run_deploy.sh production
