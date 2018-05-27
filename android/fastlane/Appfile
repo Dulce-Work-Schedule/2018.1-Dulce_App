@@ -1,0 +1,2 @@
+json_key_file("fastlane/playstore_key.json")
+package_name("com.dulce")
