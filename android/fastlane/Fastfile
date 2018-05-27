@@ -1,0 +1,39 @@
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Generate Build"
+  lane :build do
+    gradle(task: "clean assembleRelease")
+  end
+
+  desc "Generate Degub Build"
+  lane :debug_build do
+    gradle(task: "clean assembleRelease")
+  end
+
+  desc "Increment Version Code"
+  lane :update_version do
+    increment_version_code(gradle_file_path: "app/build.gradle")
+  end
+
+  desc "Deploy a new production version to the Google Play"
+  lane :playstore_production do
+    upload_to_play_store(
+      track: 'production',
+      apk: 'app/build/outputs/apk/app-release.apk'
+    )
+  end
+
+  desc "Deploy a new Beta version to the Google Play"
+  lane :playstore_beta do
+    upload_to_play_store(
+      track: 'beta',
+      apk: 'app/build/outputs/apk/app-release.apk'
+    )
+  end
+end

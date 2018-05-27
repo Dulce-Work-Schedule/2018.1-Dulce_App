@@ -13,10 +13,13 @@ matrix:
       node_js: false
       before_install:
         - nvm install 8
+        - rvm install 2.3
+        - rvm install 2.3-dev
       install:
         - sudo apt-get install -y -qq inkscape
         - npm install
         - npm install coveralls
+        - gem install fastlane
       android:
         components:
           - addon-google_apis-google-16
@@ -35,3 +38,12 @@ matrix:
         - npm run lint
         - ./utils/run_build.sh
         - travis_wait 15 npm run coverage && cat ./coverage/lcov.info | npm run coveralls
+      deploy:
+        - provider: beta_script
+          on:
+            branch: master
+          script: ./utils/run_deploy.sh beta
+        - provider: production_script
+          on:
+            tags: true
+          script: ./utils/run_deploy.sh production

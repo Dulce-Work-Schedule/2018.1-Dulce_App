@@ -1,0 +1,1 @@
+Dulce (Dispositivo Unificado de Colaboração para Construção de Escala) tem o propósito de auxiliar o gerenciamento de escalas, promovendo uma interface entre gestor e plantonistas, auxiliando os gestores a gerenciar escalas dos plantonistas.
