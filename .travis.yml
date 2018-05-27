@@ -35,3 +35,12 @@ matrix:
         - npm run lint
         - ./utils/run_build.sh
         - travis_wait 15 npm run coverage && cat ./coverage/lcov.info | npm run coveralls
+      deploy:
+        - provider: beta_script
+          on:
+            branch: master
+          script: ./utils/run_deploy.sh beta
+        - provider: production_script
+          on:
+            tags: true
+          script: ./utils/run_deploy.sh production
