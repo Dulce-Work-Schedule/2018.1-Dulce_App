@@ -17,6 +17,8 @@ matrix:
         - sudo apt-get install -y -qq inkscape
         - npm install
         - npm install coveralls
+        - sudo apt-get install -y -qq lib32stdc++6 lib32z1 ruby ruby-dev rubygems build-essential
+        - sudo gem install fastlane -NV
       android:
         components:
           - addon-google_apis-google-16
