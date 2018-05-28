@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container, Header, Content, List, ListItem, Text, Body, Title} from 'native-base';
-
+import {Container, Content, List, ListItem, Text} from 'native-base';
+import ScreenHeader from '../Components/ScreenHeader';
 class HospitalsScreen extends React.Component {
 
   constructor(props) {
@@ -13,11 +13,9 @@ class HospitalsScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Header style={{backgroundColor: '#5f4b8b'}}>
-          <Body>
-            <Title style={{fontFamily: 'Raleway'}} > Hospitais </Title>
-          </Body>
-        </Header>
+      <ScreenHeader
+        title='Hospitais'
+      />
         <Content>
           <List dataArray={this.state.Hospitals}
             renderRow={(item) =>

@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Header, Content, List, ListItem, Text, Body, Title} from 'native-base';
+import {Container,Content, List, ListItem, Text} from 'native-base';
+import ScreenHeader from '../Components/ScreenHeader';
 
 class SectorsScreen extends React.Component {
 
@@ -13,11 +14,9 @@ class SectorsScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Header style={{backgroundColor: '#5f4b8b'}}>
-          <Body>
-            <Title style={{fontFamily: 'Raleway'}} >Setores</Title>
-          </Body>
-        </Header>
+        <ScreenHeader
+          title='Setores'
+        />
         <Content>
           <List dataArray={this.state.sectors}
             renderRow={(item) =>

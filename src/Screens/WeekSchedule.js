@@ -11,8 +11,7 @@ import Modal from 'react-native-modal';
 
 import axios from 'axios';
 import store from '../Reducers/store';
-
-import {Header, Body, Title} from 'native-base';
+import ScreenHeader from '../Components/ScreenHeader';
 
 const styles = StyleSheet.create({
   item: {
@@ -239,11 +238,9 @@ export default class WeekSchedule extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <Header style={{backgroundColor: '#5f4b8b'}}>
-          <Body>
-            <Title style={{fontFamily: 'Raleway'}}>Escalas</Title>
-          </Body>
-        </Header>
+      <ScreenHeader
+        title='Escalas'
+      />
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
       </View>

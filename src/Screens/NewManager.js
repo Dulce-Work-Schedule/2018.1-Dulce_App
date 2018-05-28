@@ -3,8 +3,9 @@ import {Text, View, ScrollView} from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
-import {Header, Body, Title, Container} from 'native-base';
+import {Container} from 'native-base';
 import AGRInput from '../Components/AGRInput';
+import ScreenHeader from '../Components/ScreenHeader';
 import axios from 'axios';
 
 const styles = {
@@ -92,11 +93,9 @@ export default class NewManager extends ValidationComponent {
     return (
       <View style={styles.container}>
         <Container>
-          <Header style={{backgroundColor: '#5f4b8b'}}>
-            <Body>
-              <Title style={{fontFamily: 'Raleway'}}>Novo gerente</Title>
-            </Body>
-          </Header>
+        <ScreenHeader
+          title='Criar Conta'
+        />
         </Container>
         <SmallLogo />
         <View>

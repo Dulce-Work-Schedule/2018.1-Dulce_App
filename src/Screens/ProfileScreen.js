@@ -2,9 +2,10 @@ import React from 'react';
 import {View , Text} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Header, Content, Body, Title, Spinner} from 'native-base';
+import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScaleIcon from '../Components/ScaleIcon';
+import ScreenHeader from '../Components/ScreenHeader';
 
 const styles = {
   container: {
@@ -59,11 +60,9 @@ class ProfileScreen extends React.Component {
         {
           this.state.loading ? (
             <Container>
-              <Header style={{backgroundColor: '#5f4b8b'}}>
-                <Body>
-                  <Title>Meu perfil</Title>
-                </Body>
-              </Header>
+            <ScreenHeader
+              title='Meu perfil'
+            />
               <Content>
                 <Spinner color='#5f4b8b'/>
               </Content>
