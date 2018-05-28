@@ -91,15 +91,12 @@ export default class NewManager extends ValidationComponent {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Container>
-        <ScreenHeader
+      <View style={styles.container}> <Container>
+         <ScreenHeader
           title='Criar Conta'
         />
-        </Container>
-        <SmallLogo />
-        <View>
-          <ScrollView>
+	       </Container> <SmallLogo />
+        <View> <ScrollView>
             <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
             {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
             <AGRInput ref='registration' nameLabel='Matrícula' onChangeText={(registration) => this.setState({registration})} />
@@ -114,10 +111,7 @@ export default class NewManager extends ValidationComponent {
             {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
             <View>
               <AGRButton text='Criar' onPress={() => this._onPressButton()} />
-            </View>
-          </ScrollView>
-        </View>
-      </View>
+            </View> </ScrollView> </View> </View>
     );
   }
 }
