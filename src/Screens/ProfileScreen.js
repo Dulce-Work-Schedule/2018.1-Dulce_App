@@ -60,13 +60,10 @@ class ProfileScreen extends React.Component {
         {
           this.state.loading ? (
             <Container>
-            <ScreenHeader
-              title='Meu perfil'
-            />
+              <ScreenHeader title='Meu perfil' />
               <Content>
                 <Spinner color='#5f4b8b'/>
-              </Content>
-            </Container>
+              </Content> </Container>
           ) : (
             <View style={styles.informacoes}>
               <SmallLogo />
@@ -84,5 +81,3 @@ class ProfileScreen extends React.Component {
     );
   }
 }
-
-export default ProfileScreen;
