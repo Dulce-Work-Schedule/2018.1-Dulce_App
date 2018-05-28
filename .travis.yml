@@ -13,12 +13,10 @@ matrix:
       node_js: false
       before_install:
         - nvm install 8
-        - rvm install 2.3
         - rvm install 2.3-dev
       install:
         - sudo apt-get install -y -qq inkscape
         - npm install
-        - npm install coveralls
         - gem install fastlane
       android:
         components:
@@ -36,8 +34,8 @@ matrix:
         - ./utils/write_coveralls_config.sh
       script:
         - npm run lint
-        - ./utils/run_build.sh
         - travis_wait 15 npm run coverage && cat ./coverage/lcov.info | npm run coveralls
-      after_sucess:
+        - ./utils/run_build.sh
+      after_success:
         - test $TRAVIS_BRANCH = "master" && ./utils/run_deploy.sh beta && exit 0
         - ./utils/run_test_tag_version.sh $TRAVIS_TAG && ./utils/run_deploy.sh production && exit 0
