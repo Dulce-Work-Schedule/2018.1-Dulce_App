@@ -34,41 +34,27 @@ class ListScreen extends React.Component {
   }
 
   render() {
-    return (
-      <ScrollView>
-        {
-          this.state.loading ? (
-
-            <Container>
-              <ScreenHeader
-                title='Lista de Médicos'
-              />
-              <Content>
-                <Spinner color= '#5f4b8b'/>
-              </Content>
-            </Container>
-
-          ) : (
-            <FlatList
-              data = {this.state.employees}
-              keyExtractor = {(item) => {return item.id.toString();}}
-              renderItem={(data) => {return (
-                <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item.id})} key={data.item.id} avatar>
-                  <Left>
-                    <UserAvatar size='50' name={data.item.name} />
-                  </Left>
-                  <Body>
-                    <Text>{data.item.name}</Text>
-                    <Text note>Matrícula: {data.item.registration}</Text>
-                  </Body>
-                </ListItem>
-              );
-              }}
-            />
-          )
-        }
-      </ScrollView>
-    );
-  }
+   return (
+     <ScrollView>
+       { this.state.loading ? (
+           <Container>
+   <ScreenHeader title='Lista de Médicos' />
+                <Content>
+               <Spinner color= '#5f4b8b'/> </Content>
+           </Container>
+         ) : (
+           <FlatList
+             data = {this.state.employees} keyExtractor = {(item) => {return item.id.toString();}} renderItem={(data) => {return (
+               <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item.id})} key={data.item.id} avatar>
+                 <Left> <UserAvatar size='50' name={data.item.name} /> </Left>
+                 <Body> <Text>{data.item.name}</Text> <Text note>Matrícula: {data.item.registration}</Text> </Body>
+               </ListItem>
+             );
+             }} />
+         )
+       }
+     </ScrollView>
+   );
+ }
 }
 export default ListScreen;
