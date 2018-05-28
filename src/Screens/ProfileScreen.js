@@ -57,10 +57,10 @@ class ProfileScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <ScreenHeader title='Meu perfil' />
         {
           this.state.loading ? (
             <Container>
-              <ScreenHeader title='Meu perfil' />
               <Content>
                 <Spinner color='#5f4b8b'/>
               </Content> </Container>

@@ -5,11 +5,12 @@ import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
+import ScreenHeader from '../Components/ScreenHeader';
+
 const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
-    padding: 20,
     backgroundColor: '#FFF'
 
   },
@@ -55,6 +56,7 @@ class ProfileManagerScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <ScreenHeader title='Meu Perfil'/>
         {
           this.state.loading ? (
             <Container>

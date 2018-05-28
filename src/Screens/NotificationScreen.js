@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon} from 'native-base';
-
+import ScreenHeader from '../Components/ScreenHeader';
 const styles = {
   view1: {
     flex: 1,
@@ -90,6 +90,9 @@ export default class NotificationScreen extends Component {
   render() {
     return (
       <Container>
+        <ScreenHeader
+          title = 'Notificações'
+        />
         <Content>
           <List dataArray={this.state.notifications}
             renderRow={(item) => (
