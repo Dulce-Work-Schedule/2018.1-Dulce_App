@@ -4,6 +4,7 @@ import {
   View,
   StyleSheet,
   TouchableHighlight,
+  TouchableOpacity,
   Alert
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
@@ -14,6 +15,7 @@ import store from '../Reducers/store';
 import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
 import {Header, Body, Title, Container,Button, Icon, Fab} from 'native-base';
+import DateTimePicker from 'react-native-modal-datetime-picker';
 
 const styles = StyleSheet.create({
   item: {
@@ -35,6 +37,7 @@ export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isDateTimePickerVisible: false,
       selfChange: false,
       modalVisible: false,
       currentSchedule: {},
@@ -75,10 +78,18 @@ export default class WeekSchedule extends Component {
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
   }
+
+  selfChangeVisible(visible){
+    this.setState({selfChange: visible});
+  }
+
+  timePickerVisible(visible){
+    this.setState({isDateTimePickerVisible: visible});
+  }
   selfChange() {
     return (
       <View>
-        <Modal isVisible={this.state.selfChange} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setState({selfChange: false}); }}>
+        <Modal isVisible={this.state.selfChange} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.selfChangeVisible(false); }}>
           <View style={{flex: 1}} >
             <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
             <View style={{flex: 1}}>
@@ -99,11 +110,27 @@ export default class WeekSchedule extends Component {
         containerStyle={{ }}
         style={{ backgroundColor: '#5067FF' }}
         position="bottomRight"
-        onPress={() => {this.setState({selfChange: true})}}>
+        onPress={() => {this.timePickerVisible(true)}}>
         <Icon type='MaterialIcons'  name ='edit'/>
       </Fab>
     );
   }
+
+  _handleDatePicked = (date) => {
+    console.log('A date has been picked: ', date);
+    this.isDateTimePickerVisible(false);
+  };
+
+  timePicker(){
+    return (
+        <DateTimePicker
+          isVisible={this.state.isDateTimePickerVisible}
+          onConfirm={this._handleDatePicked}
+          onCancel={this._hideDateTimePicker}
+        />
+    );
+  }
+
 
 
   arrayToObject() {
@@ -265,7 +292,7 @@ export default class WeekSchedule extends Component {
       />
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
-        {this.selfChange()}
+        {this.timePicker()}
         {this.fab()}
       </View>
     );
