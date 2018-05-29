@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, Alert, FlatList} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Content, Spinner, ListItem, Left, Body, Text, Title, Header} from 'native-base';
+import {Container, Content, Spinner, ListItem, Left, Body, Text} from 'native-base';
 import UserAvatar from 'react-native-user-avatar';
 import ScreenHeader from '../Components/ScreenHeader';
 

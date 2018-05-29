@@ -79,10 +79,77 @@ exports[`renders correctly 1`] = `
               "backgroundColor": "#FFF",
               "flex": 1,
               "flexDirection": "column",
-              "padding": 20,
             }
           }
         >
+          <View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "#F8F8F8",
+                    "borderBottomColor": "#a7a6ab",
+                    "borderBottomWidth": 0.5,
+                    "elevation": 3,
+                    "flexDirection": "row",
+                    "height": 64,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                    "paddingTop": 15,
+                    "right": 0,
+                    "shadowColor": undefined,
+                    "shadowOffset": undefined,
+                    "shadowOpacity": undefined,
+                    "shadowRadius": undefined,
+                    "top": 0,
+                  },
+                  Object {
+                    "backgroundColor": "#5f4b8b",
+                  },
+                ]
+              }
+              virtual={undefined}
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flex": 1,
+                  }
+                }
+                virtual={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000",
+                        "fontFamily": "System",
+                        "fontSize": 17,
+                        "fontWeight": "600",
+                        "textAlign": "center",
+                      },
+                      Object {
+                        "fontFamily": "Raleway",
+                      },
+                    ]
+                  }
+                  virtual={undefined}
+                >
+                   
+                  Meu Perfil
+                   
+                </Text>
+              </View>
+            </View>
+          </View>
           <View
             style={
               Object {
@@ -143,7 +210,7 @@ exports[`renders correctly 1`] = `
               <View>
                 <ActivityIndicator
                   animating={true}
-                  color="purple"
+                  color="#5f4b8b"
                   hidesWhenStopped={true}
                   size="large"
                   style={
@@ -155,93 +222,6 @@ exports[`renders correctly 1`] = `
                 />
               </View>
             </RCTScrollView>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View
-      collapsable={undefined}
-      onLayout={[Function]}
-      pointerEvents="box-none"
-      style={
-        Object {
-          "backgroundColor": "#F7F7F7",
-          "borderBottomColor": "#A7A7AA",
-          "borderBottomWidth": 0.5,
-          "height": 64,
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 20,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "bottom": 0,
-              "flexDirection": "row",
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
-          }
-        >
-          <View
-            collapsable={undefined}
-            pointerEvents="box-none"
-            style={
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "transparent",
-                "bottom": 0,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "left": 0,
-                "opacity": 1,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              }
-            }
-          >
-            <Text
-              accessibilityTraits="header"
-              accessible={true}
-              allowFontScaling={true}
-              collapsable={undefined}
-              ellipsizeMode="tail"
-              numberOfLines={1}
-              onLayout={[Function]}
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, .9)",
-                  "fontSize": 17,
-                  "fontWeight": "700",
-                  "marginHorizontal": 16,
-                  "textAlign": "center",
-                }
-              }
-            />
           </View>
         </View>
       </View>

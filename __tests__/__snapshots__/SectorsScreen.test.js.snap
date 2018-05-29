@@ -11,63 +11,72 @@ exports[`renders correctly 1`] = `
   virtual={undefined}
 >
   <View>
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#F8F8F8",
-            "borderBottomColor": "#a7a6ab",
-            "borderBottomWidth": 0.5,
-            "elevation": 3,
-            "flexDirection": "row",
-            "height": 64,
-            "justifyContent": "center",
-            "left": 0,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-            "right": 0,
-            "shadowColor": undefined,
-            "shadowOffset": undefined,
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
-            "top": 0,
-          },
-          Object {
-            "backgroundColor": "#430082",
-          },
-        ]
-      }
-      virtual={undefined}
-    >
+    <View>
       <View
         style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "flex": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#F8F8F8",
+              "borderBottomColor": "#a7a6ab",
+              "borderBottomWidth": 0.5,
+              "elevation": 3,
+              "flexDirection": "row",
+              "height": 64,
+              "justifyContent": "center",
+              "left": 0,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+              "right": 0,
+              "shadowColor": undefined,
+              "shadowOffset": undefined,
+              "shadowOpacity": undefined,
+              "shadowRadius": undefined,
+              "top": 0,
+            },
+            Object {
+              "backgroundColor": "#5f4b8b",
+            },
+          ]
         }
         virtual={undefined}
       >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          numberOfLines={1}
+        <View
           style={
             Object {
-              "color": "#000",
-              "fontFamily": "System",
-              "fontSize": 17,
-              "fontWeight": "600",
-              "textAlign": "center",
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flex": 1,
             }
           }
           virtual={undefined}
         >
-          Setores
-        </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "#000",
+                  "fontFamily": "System",
+                  "fontSize": 17,
+                  "fontWeight": "600",
+                  "textAlign": "center",
+                },
+                Object {
+                  "fontFamily": "Raleway",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+             
+            Setores
+             
+          </Text>
+        </View>
       </View>
     </View>
   </View>

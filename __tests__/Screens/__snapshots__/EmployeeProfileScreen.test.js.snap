@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignSelf": "center",
-        "fontSize": 30,
+        "fontSize": 20,
         "marginBottom": 15,
       }
     }

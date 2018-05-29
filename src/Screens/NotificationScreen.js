@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon} from 'native-base';
+import {Container, Content, Card, CardItem, Text, Body, List, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
 
