@@ -35,7 +35,7 @@ export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: 'true',
+      selfChange: false,
       modalVisible: false,
       currentSchedule: {},
       selectedSchedule: {},
@@ -78,11 +78,11 @@ export default class WeekSchedule extends Component {
   selfChange() {
     return (
       <View>
-        <Modal isVisible={this.state.selfChangeModal} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
+        <Modal isVisible={this.state.selfChange} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setState({selfChange: false}); }}>
           <View style={{flex: 1}} >
             <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
             <View style={{flex: 1}}>
-              //{this.renderAgenda(this.renderChangeItem)}
+              {this.renderAgenda(this.renderChangeItem)}
             </View>
             {this.cancelChange()}
           </View>
@@ -99,7 +99,7 @@ export default class WeekSchedule extends Component {
         containerStyle={{ }}
         style={{ backgroundColor: '#5067FF' }}
         position="bottomRight"
-        onPress={() => this.setState({active: !this.state.active})}>
+        onPress={() => {this.setState({selfChange: true})}}>
         <Icon type='MaterialIcons'  name ='edit'/>
       </Fab>
     );
@@ -265,6 +265,7 @@ export default class WeekSchedule extends Component {
       />
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
+        {this.selfChange()}
         {this.fab()}
       </View>
     );
