@@ -8,11 +8,12 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
-
 import axios from 'axios';
 import store from '../Reducers/store';
+
 import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
+import {Header, Body, Title, Container,Button, Icon, Fab} from 'native-base';
 
 const styles = StyleSheet.create({
   item: {
@@ -34,6 +35,7 @@ export default class WeekSchedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      active: 'true',
       modalVisible: false,
       currentSchedule: {},
       selectedSchedule: {},
@@ -53,26 +55,56 @@ export default class WeekSchedule extends Component {
         'x-access-token': store.getState().currentUser.token
       }
     })
-    .then((response) => {
-      this.setState({itemDate: response.data,loading: false});
-      this.arrayToObject();
-      if (response.data === []) {
-        Alert.alert(
-          'Erro',
-          'Não há horários criados!'
-        );
-      }
-    })
-    .catch(() => {Alert.alert(
-      'Erro',
-      'Verifique sua conexão.'
-    );});
+      .then((response) => {
+        this.setState({itemDate: response.data,loading: false});
+        this.arrayToObject();
+        if (response.data === []) {
+          Alert.alert(
+            'Erro',
+            'Não há horários criados!'
+          );
+        }
+      })
+      .catch(() => {Alert.alert(
+        'Erro',
+        'Verifique sua conexão.'
+      );});
 
   }
 
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
   }
+  selfChange() {
+    return (
+      <View>
+        <Modal isVisible={this.state.selfChangeModal} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
+          <View style={{flex: 1}} >
+            <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
+            <View style={{flex: 1}}>
+              //{this.renderAgenda(this.renderChangeItem)}
+            </View>
+            {this.cancelChange()}
+          </View>
+        </Modal>
+      </View>
+    );
+  }
+
+  fab() {
+    return (
+      <Fab
+        active={this.state.active}
+        direction="up"
+        containerStyle={{ }}
+        style={{ backgroundColor: '#5067FF' }}
+        position="bottomRight"
+        onPress={() => this.setState({active: !this.state.active})}>
+        <Icon type='MaterialIcons'  name ='edit'/>
+      </Fab>
+    );
+  }
+
 
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
@@ -167,46 +199,46 @@ export default class WeekSchedule extends Component {
 
   renderModal() {
     return (
-        <View>
-          <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
-            <View style={{flex: 1}} >
-              <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
-              <View style={{flex: 1}}>
-                {this.renderAgenda(this.renderChangeItem)}
-              </View>
-              {this.cancelChange()}
+      <View>
+        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
+          <View style={{flex: 1}} >
+            <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
+            <View style={{flex: 1}}>
+              {this.renderAgenda(this.renderChangeItem)}
             </View>
-          </Modal>
-        </View>
+            {this.cancelChange()}
+          </View>
+        </Modal>
+      </View>
     );
   }
 
   cancelChange() {
     return (
-        <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: '#5f4b8b'}}>
-          <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color: 'white'}}>
-        Cancelar
-          </Text>
-        </TouchableHighlight>
+      <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: '#5f4b8b'}}>
+        <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color: 'white'}}>
+      Cancelar
+        </Text>
+      </TouchableHighlight>
     );
   }
 
   renderAgenda(item) {
     return (
-        <Agenda
-          style={{flex: 1}}
-          items={this.state.items}
-          loadItemsForMonth={this.loadItems.bind(this)}
-          selected={this.state.selectedDay}
-          renderItem={item.bind(this)}
-          renderEmptyDate={this.renderEmptyDate.bind(this)}
-          rowHasChanged={this.rowHasChanged.bind(this)}
-          theme={{
-            calendarBackground: '#ffffff',
-            agendaKnobColor: '#5f4b8b',
-            selectedDayBackgroundColor: '#5f4b8b'
-          }}
-        />
+      <Agenda
+        style={{flex: 1}}
+        items={this.state.items}
+        loadItemsForMonth={this.loadItems.bind(this)}
+        selected={this.state.selectedDay}
+        renderItem={item.bind(this)}
+        renderEmptyDate={this.renderEmptyDate.bind(this)}
+        rowHasChanged={this.rowHasChanged.bind(this)}
+        theme={{
+          calendarBackground: '#ffffff',
+          agendaKnobColor: '#5f4b8b',
+          selectedDayBackgroundColor: '#5f4b8b'
+        }}
+      />
     );
   }
 
@@ -233,6 +265,7 @@ export default class WeekSchedule extends Component {
       />
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
+        {this.fab()}
       </View>
     );
   }
