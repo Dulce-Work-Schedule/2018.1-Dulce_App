@@ -5,7 +5,7 @@ const routes = {
   Notifications: {
     screen: NotificationScreen,
     navigationOptions: {
-      title: 'Notificações'
+      header: null
     }
   }
 };

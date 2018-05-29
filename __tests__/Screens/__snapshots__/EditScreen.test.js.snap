@@ -26,7 +26,8 @@ exports[`renders correctly 1`] = `
               "alignSelf": "center",
               "backgroundColor": "transparent",
               "height": 100,
-              "marginBottom": 20,
+              "marginBottom": 30,
+              "marginTop": 45,
               "resizeMode": "contain",
               "width": 200,
             }
@@ -91,13 +92,18 @@ exports[`renders correctly 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#575757",
-                  "fontSize": 17,
-                  "left": 0,
-                  "paddingRight": 5,
-                  "top": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#575757",
+                    "fontSize": 17,
+                    "left": 0,
+                    "paddingRight": 5,
+                    "top": 6,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                  },
+                ]
               }
               virtual={undefined}
             >
@@ -106,9 +112,14 @@ exports[`renders correctly 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "fontSize": 17,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 17,
+                    },
+                    Object {
+                      "fontFamily": "Lato",
+                    },
+                  ]
                 }
                 virtual={undefined}
               />
@@ -209,13 +220,18 @@ exports[`renders correctly 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#575757",
-                  "fontSize": 17,
-                  "left": 0,
-                  "paddingRight": 5,
-                  "top": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#575757",
+                    "fontSize": 17,
+                    "left": 0,
+                    "paddingRight": 5,
+                    "top": 6,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                  },
+                ]
               }
               virtual={undefined}
             >
@@ -224,9 +240,14 @@ exports[`renders correctly 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "fontSize": 17,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 17,
+                    },
+                    Object {
+                      "fontFamily": "Lato",
+                    },
+                  ]
                 }
                 virtual={undefined}
               />
@@ -328,13 +349,18 @@ exports[`renders correctly 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#575757",
-                  "fontSize": 17,
-                  "left": 0,
-                  "paddingRight": 5,
-                  "top": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#575757",
+                    "fontSize": 17,
+                    "left": 0,
+                    "paddingRight": 5,
+                    "top": 6,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                  },
+                ]
               }
               virtual={undefined}
             >
@@ -343,9 +369,14 @@ exports[`renders correctly 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "fontSize": 17,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 17,
+                    },
+                    Object {
+                      "fontFamily": "Lato",
+                    },
+                  ]
                 }
                 virtual={undefined}
               >
@@ -449,13 +480,18 @@ exports[`renders correctly 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#575757",
-                  "fontSize": 17,
-                  "left": 0,
-                  "paddingRight": 5,
-                  "top": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#575757",
+                    "fontSize": 17,
+                    "left": 0,
+                    "paddingRight": 5,
+                    "top": 6,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                  },
+                ]
               }
               virtual={undefined}
             >
@@ -464,9 +500,14 @@ exports[`renders correctly 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "fontSize": 17,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 17,
+                    },
+                    Object {
+                      "fontFamily": "Lato",
+                    },
+                  ]
                 }
                 virtual={undefined}
               >
@@ -570,13 +611,18 @@ exports[`renders correctly 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "color": "#575757",
-                  "fontSize": 17,
-                  "left": 0,
-                  "paddingRight": 5,
-                  "top": 6,
-                }
+                Array [
+                  Object {
+                    "color": "#575757",
+                    "fontSize": 17,
+                    "left": 0,
+                    "paddingRight": 5,
+                    "top": 6,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                  },
+                ]
               }
               virtual={undefined}
             >
@@ -585,9 +631,14 @@ exports[`renders correctly 1`] = `
                 allowFontScaling={true}
                 ellipsizeMode="tail"
                 style={
-                  Object {
-                    "fontSize": 17,
-                  }
+                  Array [
+                    Object {
+                      "fontSize": 17,
+                    },
+                    Object {
+                      "fontFamily": "Lato",
+                    },
+                  ]
                 }
                 virtual={undefined}
               >
@@ -721,7 +772,7 @@ exports[`renders correctly 1`] = `
                   Object {
                     "alignItems": "center",
                     "alignSelf": "center",
-                    "backgroundColor": "purple",
+                    "backgroundColor": "#5f4b8b",
                     "borderBottomWidth": null,
                     "borderColor": "#007aff",
                     "borderLeftWidth": null,
@@ -750,6 +801,7 @@ exports[`renders correctly 1`] = `
                   style={
                     Object {
                       "color": "white",
+                      "fontFamily": "Raleway",
                       "fontSize": 20,
                     }
                   }

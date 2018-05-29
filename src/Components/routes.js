@@ -8,7 +8,6 @@ import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
 
-
 export default DrawerNavigator({
   'Ver Escala': {
     screen: Schedule

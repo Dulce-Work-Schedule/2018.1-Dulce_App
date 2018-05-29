@@ -80,7 +80,7 @@ exports[`renders correctly 1`] = `
           Object {
             "alignItems": "center",
             "alignSelf": "center",
-            "backgroundColor": "purple",
+            "backgroundColor": "#5f4b8b",
             "borderBottomWidth": null,
             "borderColor": "#007aff",
             "borderLeftWidth": null,
@@ -109,6 +109,7 @@ exports[`renders correctly 1`] = `
           style={
             Object {
               "color": "white",
+              "fontFamily": "Raleway",
               "fontSize": 20,
             }
           }

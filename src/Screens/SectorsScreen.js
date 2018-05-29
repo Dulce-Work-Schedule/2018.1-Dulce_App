@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Header, Content, List, ListItem, Text, Body, Title} from 'native-base';
+import ListElements from '../Components/ListElements';
 
 class SectorsScreen extends React.Component {
 
@@ -10,23 +10,17 @@ class SectorsScreen extends React.Component {
     };
   }
 
+  _onPressButton() {
+    this.props.navigation.navigate('doctors');
+  }
+
   render() {
     return (
-      <Container>
-        <Header style={{backgroundColor: '#5f4b8b'}}>
-          <Body>
-            <Title style={{fontFamily: 'Raleway'}} >Setores</Title>
-          </Body>
-        </Header>
-        <Content>
-          <List dataArray={this.state.sectors}
-            renderRow={(item) =>
-              (<ListItem onPress={() => this.props.navigation.navigate('doctors')}>
-                <Text>{item}</Text>
-              </ListItem>)
-            } />
-        </Content>
-      </Container>
+      <ListElements
+        onPress = {this._onPressButton.bind(this)}
+        title='Setores'
+        list = {this.state.sectors}
+      />
     );
   }
 }

@@ -10,6 +10,74 @@ exports[`renders correctly 1`] = `
   }
   virtual={undefined}
 >
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F8F8F8",
+            "borderBottomColor": "#a7a6ab",
+            "borderBottomWidth": 0.5,
+            "elevation": 3,
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+            "right": 0,
+            "shadowColor": undefined,
+            "shadowOffset": undefined,
+            "shadowOpacity": undefined,
+            "shadowRadius": undefined,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "#5f4b8b",
+          },
+        ]
+      }
+      virtual={undefined}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "flex": 1,
+          }
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 17,
+                "fontWeight": "600",
+                "textAlign": "center",
+              },
+              Object {
+                "fontFamily": "Raleway",
+              },
+            ]
+          }
+          virtual={undefined}
+        >
+           
+          Notificações
+           
+        </Text>
+      </View>
+    </View>
+  </View>
   <RCTScrollView
     automaticallyAdjustContentInsets={false}
     contentContainerStyle={
@@ -177,7 +245,8 @@ exports[`renders correctly 1`] = `
                         "fontSize": 16,
                       },
                       Object {
-                        "color": "purple",
+                        "color": "#5f4b8b",
+                        "fontSize": 15,
                       },
                     ]
                   }
@@ -214,99 +283,181 @@ exports[`renders correctly 1`] = `
                 }
                 virtual={undefined}
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <View
                   style={
                     Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
+                      "flex": 1,
+                      "flexDirection": "row",
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
                 >
-                  Seu Horário                    
-                  Guilherme
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
-                    }
-                  }
-                  uppercase={false}
-                  virtual={undefined}
-                >
-                  2018-04-28
-                           
-                  <Text
-                    accessible={true}
-                    allowFontScaling={false}
-                    ellipsizeMode="tail"
+                  <View
                     style={
-                      Array [
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "column",
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
                         Object {
-                          "color": undefined,
-                          "fontSize": 12,
-                        },
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Seu Horário
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      2018-04-28
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      10:30
+                       - 
+                      12:00
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "justifyContent": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={false}
+                      ellipsizeMode="tail"
+                      style={
                         Array [
                           Object {
-                            "color": "#000",
-                            "fontSize": 30,
+                            "color": undefined,
+                            "fontSize": 12,
                           },
+                          Array [
+                            Object {
+                              "color": "#000",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "color": "#000",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "color": "#5f4b8b",
+                              "fontSize": 40,
+                            },
+                          ],
                           Object {
-                            "color": "#000",
-                            "fontSize": 30,
+                            "fontFamily": "Ionicons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
                           },
-                          Object {
-                            "color": "purple",
-                            "fontSize": 40,
-                          },
-                        ],
-                        Object {
-                          "fontFamily": "Ionicons",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                        },
-                      ]
+                        ]
+                      }
+                      virtual={undefined}
+                    >
+                      
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "justifyContent": "flex-end",
+                      }
                     }
-                    virtual={undefined}
                   >
-                    
-                  </Text>
-                           
-                  2018-05-12
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
-                    }
-                  }
-                  uppercase={false}
-                  virtual={undefined}
-                >
-                  10:30
-                   - 
-                  12:00
-                                   
-                  10:30
-                   - 
-                  12:00
-                </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Guilherme
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      2018-05-12
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      10:30
+                       - 
+                      12:00
+                    </Text>
+                  </View>
+                </View>
               </View>
             </View>
             <View
@@ -327,138 +478,131 @@ exports[`renders correctly 1`] = `
               virtual={undefined}
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
-                accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
-                isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "transparent",
-                    "borderBottomWidth": null,
-                    "borderColor": "#007aff",
-                    "borderLeftWidth": null,
-                    "borderRadius": 5,
-                    "borderRightWidth": null,
-                    "borderTopWidth": null,
-                    "elevation": 0,
                     "flexDirection": "row",
-                    "height": 45,
-                    "justifyContent": "space-between",
-                    "opacity": 1,
-                    "paddingBottom": 6,
-                    "paddingTop": 6,
-                    "shadowColor": null,
-                    "shadowOffset": null,
-                    "shadowOpacity": null,
-                    "shadowRadius": null,
+                    "marginLeft": 220,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
-                <Text
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
                   accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                  collapsable={undefined}
+                  hasTVPreferredFocus={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
+                      "alignItems": "center",
+                      "alignSelf": "flex-start",
                       "backgroundColor": "transparent",
-                      "color": "#007aff",
-                      "fontFamily": "System",
-                      "fontSize": 16.5,
-                      "lineHeight": 19,
-                      "marginLeft": 0,
-                      "marginRight": 0,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
+                      "borderBottomWidth": null,
+                      "borderColor": "#007aff",
+                      "borderLeftWidth": null,
+                      "borderRadius": 5,
+                      "borderRightWidth": null,
+                      "borderTopWidth": null,
+                      "elevation": 0,
+                      "flexDirection": "row",
+                      "height": 45,
+                      "justifyContent": "space-between",
+                      "opacity": 1,
+                      "padding": 8,
+                      "paddingBottom": 6,
+                      "paddingTop": 6,
+                      "shadowColor": null,
+                      "shadowOffset": null,
+                      "shadowOpacity": null,
+                      "shadowRadius": null,
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
                 >
-                  Aceitar
-                </Text>
-              </View>
-              <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
-                accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
-                isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "backgroundColor": null,
-                    "borderBottomWidth": null,
-                    "borderColor": "#007aff",
-                    "borderLeftWidth": null,
-                    "borderRadius": 5,
-                    "borderRightWidth": null,
-                    "borderTopWidth": null,
-                    "elevation": 0,
-                    "flexDirection": "row",
-                    "height": 45,
-                    "justifyContent": "space-between",
-                    "opacity": 1,
-                    "paddingBottom": 6,
-                    "paddingTop": 6,
-                    "shadowColor": null,
-                    "shadowOffset": null,
-                    "shadowOpacity": null,
-                    "shadowRadius": null,
-                  }
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}
-              >
-                <Text
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#fd7d01",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Recusar
+                  </Text>
+                </View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
                   accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                  collapsable={undefined}
+                  hasTVPreferredFocus={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
+                      "alignItems": "center",
+                      "alignSelf": "flex-start",
                       "backgroundColor": "transparent",
-                      "color": "#d9534f",
-                      "fontFamily": "System",
-                      "fontSize": 16.5,
-                      "lineHeight": 19,
-                      "marginLeft": 0,
-                      "marginRight": 0,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
+                      "borderBottomWidth": null,
+                      "borderColor": "#007aff",
+                      "borderLeftWidth": null,
+                      "borderRadius": 5,
+                      "borderRightWidth": null,
+                      "borderTopWidth": null,
+                      "elevation": 0,
+                      "flexDirection": "row",
+                      "height": 45,
+                      "justifyContent": "space-between",
+                      "opacity": 1,
+                      "padding": 8,
+                      "paddingBottom": 6,
+                      "paddingTop": 6,
+                      "shadowColor": null,
+                      "shadowOffset": null,
+                      "shadowOpacity": null,
+                      "shadowRadius": null,
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
                 >
-                  Recusar
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#5f4b8b",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Aceitar
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -534,7 +678,8 @@ exports[`renders correctly 1`] = `
                         "fontSize": 16,
                       },
                       Object {
-                        "color": "purple",
+                        "color": "#5f4b8b",
+                        "fontSize": 15,
                       },
                     ]
                   }
@@ -571,99 +716,181 @@ exports[`renders correctly 1`] = `
                 }
                 virtual={undefined}
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <View
                   style={
                     Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
+                      "flex": 1,
+                      "flexDirection": "row",
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
                 >
-                  Seu Horário                    
-                  Ezequiel
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
-                    }
-                  }
-                  uppercase={false}
-                  virtual={undefined}
-                >
-                  2018-04-28
-                           
-                  <Text
-                    accessible={true}
-                    allowFontScaling={false}
-                    ellipsizeMode="tail"
+                  <View
                     style={
-                      Array [
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "column",
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
                         Object {
-                          "color": undefined,
-                          "fontSize": 12,
-                        },
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Seu Horário
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      2018-04-28
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      10:30
+                       - 
+                      12:00
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "justifyContent": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={false}
+                      ellipsizeMode="tail"
+                      style={
                         Array [
                           Object {
-                            "color": "#000",
-                            "fontSize": 30,
+                            "color": undefined,
+                            "fontSize": 12,
                           },
+                          Array [
+                            Object {
+                              "color": "#000",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "color": "#000",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "color": "#5f4b8b",
+                              "fontSize": 40,
+                            },
+                          ],
                           Object {
-                            "color": "#000",
-                            "fontSize": 30,
+                            "fontFamily": "Ionicons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
                           },
-                          Object {
-                            "color": "purple",
-                            "fontSize": 40,
-                          },
-                        ],
-                        Object {
-                          "fontFamily": "Ionicons",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                        },
-                      ]
+                        ]
+                      }
+                      virtual={undefined}
+                    >
+                      
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "justifyContent": "flex-end",
+                      }
                     }
-                    virtual={undefined}
                   >
-                    
-                  </Text>
-                           
-                  2018-03-30
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
-                    }
-                  }
-                  uppercase={false}
-                  virtual={undefined}
-                >
-                  10:30
-                   - 
-                  12:00
-                                   
-                  10:30
-                   - 
-                  12:00
-                </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Ezequiel
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      2018-03-30
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        }
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      10:30
+                       - 
+                      12:00
+                    </Text>
+                  </View>
+                </View>
               </View>
             </View>
             <View
@@ -684,138 +911,131 @@ exports[`renders correctly 1`] = `
               virtual={undefined}
             >
               <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
-                accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
-                isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "backgroundColor": "transparent",
-                    "borderBottomWidth": null,
-                    "borderColor": "#007aff",
-                    "borderLeftWidth": null,
-                    "borderRadius": 5,
-                    "borderRightWidth": null,
-                    "borderTopWidth": null,
-                    "elevation": 0,
                     "flexDirection": "row",
-                    "height": 45,
-                    "justifyContent": "space-between",
-                    "opacity": 1,
-                    "paddingBottom": 6,
-                    "paddingTop": 6,
-                    "shadowColor": null,
-                    "shadowOffset": null,
-                    "shadowOpacity": null,
-                    "shadowRadius": null,
+                    "marginLeft": 220,
                   }
                 }
-                testID={undefined}
-                tvParallaxProperties={undefined}
               >
-                <Text
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
                   accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                  collapsable={undefined}
+                  hasTVPreferredFocus={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
+                      "alignItems": "center",
+                      "alignSelf": "flex-start",
                       "backgroundColor": "transparent",
-                      "color": "#007aff",
-                      "fontFamily": "System",
-                      "fontSize": 16.5,
-                      "lineHeight": 19,
-                      "marginLeft": 0,
-                      "marginRight": 0,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
+                      "borderBottomWidth": null,
+                      "borderColor": "#007aff",
+                      "borderLeftWidth": null,
+                      "borderRadius": 5,
+                      "borderRightWidth": null,
+                      "borderTopWidth": null,
+                      "elevation": 0,
+                      "flexDirection": "row",
+                      "height": 45,
+                      "justifyContent": "space-between",
+                      "opacity": 1,
+                      "padding": 8,
+                      "paddingBottom": 6,
+                      "paddingTop": 6,
+                      "shadowColor": null,
+                      "shadowOffset": null,
+                      "shadowOpacity": null,
+                      "shadowRadius": null,
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
                 >
-                  Aceitar
-                </Text>
-              </View>
-              <View
-                accessibilityComponentType={undefined}
-                accessibilityLabel={undefined}
-                accessibilityTraits={undefined}
-                accessible={true}
-                collapsable={undefined}
-                hasTVPreferredFocus={undefined}
-                hitSlop={undefined}
-                isTVSelectable={true}
-                nativeID={undefined}
-                onLayout={undefined}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "backgroundColor": null,
-                    "borderBottomWidth": null,
-                    "borderColor": "#007aff",
-                    "borderLeftWidth": null,
-                    "borderRadius": 5,
-                    "borderRightWidth": null,
-                    "borderTopWidth": null,
-                    "elevation": 0,
-                    "flexDirection": "row",
-                    "height": 45,
-                    "justifyContent": "space-between",
-                    "opacity": 1,
-                    "paddingBottom": 6,
-                    "paddingTop": 6,
-                    "shadowColor": null,
-                    "shadowOffset": null,
-                    "shadowOpacity": null,
-                    "shadowRadius": null,
-                  }
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}
-              >
-                <Text
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#fd7d01",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Recusar
+                  </Text>
+                </View>
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
                   accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                  collapsable={undefined}
+                  hasTVPreferredFocus={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
                   style={
                     Object {
+                      "alignItems": "center",
+                      "alignSelf": "flex-start",
                       "backgroundColor": "transparent",
-                      "color": "#d9534f",
-                      "fontFamily": "System",
-                      "fontSize": 16.5,
-                      "lineHeight": 19,
-                      "marginLeft": 0,
-                      "marginRight": 0,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
+                      "borderBottomWidth": null,
+                      "borderColor": "#007aff",
+                      "borderLeftWidth": null,
+                      "borderRadius": 5,
+                      "borderRightWidth": null,
+                      "borderTopWidth": null,
+                      "elevation": 0,
+                      "flexDirection": "row",
+                      "height": 45,
+                      "justifyContent": "space-between",
+                      "opacity": 1,
+                      "padding": 8,
+                      "paddingBottom": 6,
+                      "paddingTop": 6,
+                      "shadowColor": null,
+                      "shadowOffset": null,
+                      "shadowOpacity": null,
+                      "shadowRadius": null,
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
                 >
-                  Recusar
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#5f4b8b",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Aceitar
+                  </Text>
+                </View>
               </View>
             </View>
           </View>

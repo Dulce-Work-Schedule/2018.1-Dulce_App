@@ -59,13 +59,18 @@ exports[`renders correctly 1`] = `
         allowFontScaling={true}
         ellipsizeMode="tail"
         style={
-          Object {
-            "color": "#575757",
-            "fontSize": 17,
-            "left": 0,
-            "paddingRight": 5,
-            "top": 6,
-          }
+          Array [
+            Object {
+              "color": "#575757",
+              "fontSize": 17,
+              "left": 0,
+              "paddingRight": 5,
+              "top": 6,
+            },
+            Object {
+              "fontFamily": "Lato",
+            },
+          ]
         }
         virtual={undefined}
       >
@@ -74,9 +79,14 @@ exports[`renders correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Object {
-              "fontSize": 17,
-            }
+            Array [
+              Object {
+                "fontSize": 17,
+              },
+              Object {
+                "fontFamily": "Lato",
+              },
+            ]
           }
           virtual={undefined}
         />
@@ -106,6 +116,7 @@ exports[`renders correctly 1`] = `
             "alignSelf": "center",
             "borderBottomColor": "grey",
             "borderBottomWidth": 1,
+            "fontFamily": "Lato",
             "height": 40,
             "marginBottom": 10,
             "marginTop": 30,

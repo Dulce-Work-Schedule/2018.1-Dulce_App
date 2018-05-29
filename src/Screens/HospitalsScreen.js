@@ -1,6 +1,5 @@
 import React from 'react';
-import {Container, Header, Content, List, ListItem, Text, Body, Title} from 'native-base';
-
+import ListElements from '../Components/ListElements';
 class HospitalsScreen extends React.Component {
 
   constructor(props) {
@@ -10,23 +9,17 @@ class HospitalsScreen extends React.Component {
     };
   }
 
+  onPressItem() {
+    this.props.navigation.navigate('sectors');
+  }
+
   render() {
     return (
-      <Container>
-        <Header style={{backgroundColor: '#5f4b8b'}}>
-          <Body>
-            <Title style={{fontFamily: 'Raleway'}} > Hospitais </Title>
-          </Body>
-        </Header>
-        <Content>
-          <List dataArray={this.state.Hospitals}
-            renderRow={(item) =>
-              (<ListItem onPress={() => this.props.navigation.navigate('sectors')}>
-                <Text>{item}</Text>
-              </ListItem>)
-            } />
-        </Content>
-      </Container>
+      <ListElements
+      list = {this.state.Hospitals}
+      title='Hospitais'
+      onPress={this.onPressItem.bind(this)}
+      />
     );
   }
 }

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import LoginNavigator from './src/Navigators/LoginNavigator';
 import {Provider} from 'react-redux';

@@ -1,7 +1,47 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon} from 'native-base';
+import {Container, Content, Card, CardItem, Text, Body, List, Icon} from 'native-base';
+import ScreenHeader from '../Components/ScreenHeader';
+import ValidateButton from '../Components/ValidateButton';
 
+const styles = {
+  view1: {
+    flex: 1,
+    flexDirection: 'row'
+  },
+  view2: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center'
+  },
+  view3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  view4: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-end'
+  },
+  buttonView: {
+    flexDirection: 'row',
+    marginLeft: 220
+  },
+  colorPurple: {
+    color: '#5f4b8b',
+    fontSize: 15
+  },
+  colorOrange: {
+    color: '#fd7d01',
+    fontSize: 15
+  },
+  icon: {
+    fontSize: 40,
+    color: '#5f4b8b'
+  }
+};
 export default class NotificationScreen extends Component {
 
   constructor(props) {
@@ -29,62 +69,44 @@ export default class NotificationScreen extends Component {
     };
   }
 
+  renderCard(item) {
+    return (
+      <Card>
+      <CardItem header><Text><Text style={styles.colorPurple}>{item.name}</Text> solicitou mudança com o seu horário</Text></CardItem>
+        <CardItem>
+          <Body>
+            <View style={styles.view1}>
+              <View style={styles.view2}>
+                <Text>Seu Horário</Text><Text>{item.currentDay}</Text><Text>{item.currentStartTime} - {item.currentEndTime}</Text>
+              </View>
+              <View style={styles.view3}><Icon name='md-arrow-dropright' style={styles.icon} /></View>
+              <View style ={styles.view4}>
+                <Text>{item.name}</Text><Text>{item.requestDay}</Text><Text>{item.requestStartTime} - {item.requestEndTime}</Text>
+              </View>
+            </View>
+          </Body>
+        </CardItem>
+        <CardItem footer>
+        <View style={styles.buttonView}>
+          <ValidateButton text='Recusar' textStyle={styles.colorOrange}/>
+          <ValidateButton text='Aceitar' textStyle={styles.colorPurple}/>
+        </View>
+        </CardItem>
+      </Card>
+    );
+  }
+
   render() {
     return (
       <Container>
+        <ScreenHeader
+          title = 'Notificações'
+        />
         <Content>
           <List dataArray={this.state.notifications}
-            renderRow={(item) =>
-              (<Card>
-                <CardItem header>
-                  <Text><Text style={{color: '#5f4b8b'}}>{item.name}</Text> solicitou mudança com o seu horário</Text>
-                </CardItem>
-                <CardItem>
-                  <Body>
-                    <View style={{flex: 1, flexDirection: 'row'}}>
-                      <View style={{flex: 1,flexDirection: 'column',alignItems: 'center'}}>
-                        <Text>
-                        Seu Horário
-                        </Text>
-                        <Text>
-                          {item.currentDay}
-                        </Text>
-                        <Text>
-                          {item.currentStartTime} - {item.currentEndTime}
-                        </Text>
-                      </View>
-                      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                        <Icon name='md-arrow-dropright' style={{fontSize: 40, color: '#5f4b8b'}} />
-                      </View>
-                      <View style ={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end'}}>
-                        <Text>
-                          {item.name}
-                        </Text>
-
-                        <Text>
-                          {item.requestDay}
-                        </Text>
-
-                        <Text>
-                          {item.requestStartTime} - {item.requestEndTime}
-                        </Text>
-                      </View>
-                    </View>
-                  </Body>
-                </CardItem>
-                <CardItem footer>
-
-                  <View style={{flexDirection: 'row', marginLeft: 180}}>
-                    <Button transparent onPress={() => {}}>
-                      <Text style={{color: '#fd7d01'}}>Recusar</Text>
-                    </Button>
-                    <Button transparent onPress={() => {}}>
-                      <Text style={{color: '#5f4b8b'}}>Aceitar</Text>
-                    </Button>
-                  </View>
-
-                </CardItem>
-              </Card>)
+            renderRow={(item) => (
+              this.renderCard(item)
+              )
             } />
         </Content>
       </Container>

@@ -3,8 +3,9 @@ import {Text, View, ScrollView} from 'react-native';
 import ValidationComponent from 'react-native-form-validator';
 import AGRButton from '../Components/AGRButton';
 import SmallLogo from '../Components/SmallLogo';
-import {Header, Body, Title, Container} from 'native-base';
+import {Container} from 'native-base';
 import AGRInput from '../Components/AGRInput';
+import ScreenHeader from '../Components/ScreenHeader';
 import axios from 'axios';
 
 const styles = {
@@ -85,21 +86,14 @@ export default class NewManager extends ValidationComponent {
     } else {
       return false;
     }
-
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Container>
-          <Header style={{backgroundColor: '#5f4b8b'}}>
-            <Body>
-              <Title style={{fontFamily: 'Raleway'}}>Novo gerente</Title>
-            </Body>
-          </Header>
-        </Container>
-        <SmallLogo />
+        <Container><ScreenHeader title = 'Criar nova conta' /></Container>
         <View>
+          <SmallLogo />
           <ScrollView>
             <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
             {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
@@ -113,9 +107,7 @@ export default class NewManager extends ValidationComponent {
             {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
             <AGRInput ref='confirmepassword' nameLabel='Confirme sua senha' secureTextEntry onChangeText={(text) => this.setState({confirmepassword: text})} />
             {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
-            <View>
-              <AGRButton text='Criar' onPress={() => this._onPressButton()} />
-            </View>
+            <AGRButton text='Criar' onPress={() => this._onPressButton()} />
           </ScrollView>
         </View>
       </View>

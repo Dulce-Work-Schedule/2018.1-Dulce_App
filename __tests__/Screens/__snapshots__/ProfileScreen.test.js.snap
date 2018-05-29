@@ -11,6 +11,74 @@ exports[`renders correctly 1`] = `
     }
   }
 >
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F8F8F8",
+            "borderBottomColor": "#a7a6ab",
+            "borderBottomWidth": 0.5,
+            "elevation": 3,
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+            "right": 0,
+            "shadowColor": undefined,
+            "shadowOffset": undefined,
+            "shadowOpacity": undefined,
+            "shadowRadius": undefined,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "#5f4b8b",
+          },
+        ]
+      }
+      virtual={undefined}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "flex": 1,
+          }
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 17,
+                "fontWeight": "600",
+                "textAlign": "center",
+              },
+              Object {
+                "fontFamily": "Raleway",
+              },
+            ]
+          }
+          virtual={undefined}
+        >
+           
+          Meu perfil
+           
+        </Text>
+      </View>
+    </View>
+  </View>
   <View
     style={
       Object {
@@ -71,7 +139,7 @@ exports[`renders correctly 1`] = `
       <View>
         <ActivityIndicator
           animating={true}
-          color="purple"
+          color="#5f4b8b"
           hidesWhenStopped={true}
           size="large"
           style={
@@ -83,6 +151,7 @@ exports[`renders correctly 1`] = `
         />
       </View>
     </RCTScrollView>
+     
   </View>
 </View>
 `;
