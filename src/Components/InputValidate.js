@@ -13,6 +13,10 @@ const styles = {
     alignSelf: 'center',
     width: '80%',
     marginTop: 10
+  },
+  error: {
+    color: 'red',
+    alignSelf: 'center'
   }
 };
 

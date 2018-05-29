@@ -1,9 +1,11 @@
 
 import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
+import {Container} from 'native-base';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import InputValidate from '../Components/InputValidate';
+import ScreenHeader from '../Components/ScreenHeader';
 import SmallLogo from '../Components/SmallLogo';
 import ValidationComponent from 'react-native-form-validator';
 import store from '../Reducers/store';
@@ -100,13 +102,15 @@ export default class EditScreen extends ValidationComponent {
 
   render() {
     return (
+      <Container>
+      <ScreenHeader title = 'Editar Conta' />
       <View style={styles.container}>
         <ScrollView>
           <SmallLogo/>
           <InputValidate item={this.state.name} item_string='name' editable={false}
           label = 'Nome'/>
           <InputValidate item={this.state.registration} editable={false}
-          label = 'Nome'/>
+          label = 'Matrícula'/>
           <InputValidate item={this.state.hospital} item_string = 'hospital' editable={true}
             label='Hospital' onChange={(text) => this.setState({hospital: text})}/>
           <InputValidate item={this.state.sector} item_string = 'sector' ditable={true}
@@ -120,6 +124,7 @@ export default class EditScreen extends ValidationComponent {
           </View>
         </ScrollView>
       </View>
+      </Container>
     );
   }
 }
