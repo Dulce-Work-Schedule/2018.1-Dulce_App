@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Button, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
+import ValidateButton from '../Components/ValidateButton';
+
 const styles = {
   view1: {
     flex: 1,
@@ -23,11 +25,17 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'flex-end'
   },
+  buttonView: {
+    flexDirection: 'row',
+    marginLeft: 220
+  },
   colorPurple: {
-    color: '#5f4b8b'
+    color: '#5f4b8b',
+    fontSize: 15
   },
   colorOrange: {
-    color: '#fd7d01'
+    color: '#fd7d01',
+    fontSize: 15
   },
   icon: {
     fontSize: 40,
@@ -79,8 +87,9 @@ export default class NotificationScreen extends Component {
           </Body>
         </CardItem>
         <CardItem footer>
-        <View style={{flexDirection: 'row', marginLeft: 180}}>
-        <Button transparent onPress={() => {}}><Text style={styles.colorOrange}>Recusar</Text></Button><Button transparent onPress={() => {}}><Text style={styles.colorPurple}>Aceitar</Text></Button>
+        <View style={styles.buttonView}>
+          <ValidateButton text='Recusar' textStyle={styles.colorOrange}/>
+          <ValidateButton text='Aceitar' textStyle={styles.colorPurple}/>
         </View>
         </CardItem>
       </Card>
