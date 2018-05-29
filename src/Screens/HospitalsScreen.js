@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Content, List, ListItem, Text} from 'native-base';
 import {View} from 'react-native';
-import ScreenHeader from '../Components/ScreenHeader';
+import ListScreen from '../Components/ListScreen';
 class HospitalsScreen extends React.Component {
 
   constructor(props) {
@@ -11,23 +11,17 @@ class HospitalsScreen extends React.Component {
     };
   }
 
+  onPressItem() {
+    this.props.navigation.navigate('sectors');
+  }
+
   render() {
     return (
-      <Container>
-      <View>
-      <ScreenHeader
-        title='Hospitais'
+      <ListScreen
+      title='Hospitais'
+      list = {this.state.Hospitals}
+      onPress={this.onPressItem.bind(this)}
       />
-      </View>
-        <Content>
-          <List dataArray={this.state.Hospitals}
-            renderRow={(item) =>
-              (<ListItem onPress={() => this.props.navigation.navigate('sectors')}>
-                <Text>{item}</Text>
-              </ListItem>)
-            } />
-        </Content>
-      </Container>
     );
   }
 }
