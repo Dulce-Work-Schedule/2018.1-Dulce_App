@@ -3,6 +3,7 @@ import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
+import InputValidate from '../Components/InputValidate';
 import SmallLogo from '../Components/SmallLogo';
 import ValidationComponent from 'react-native-form-validator';
 import store from '../Reducers/store';
@@ -102,18 +103,17 @@ export default class EditScreen extends ValidationComponent {
       <View style={styles.container}>
         <ScrollView>
           <SmallLogo/>
-          <AGRInput style={styles.input } value = {this.state.name} editable = {false} />
-          {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} value = {this.state.registration}
-            placeholder='Matricula' editable = {false}/>
-          <AGRInput style={styles.input} value = {this.state.hospital}
-            nameLabel='Hospital' editable = {this.state.editable} onChangeText={(text) => this.setState({hospital: text})}/>
-          {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} value = {this.state.sector}
-            nameLabel='setor' editable = {this.state.editable} onChangeText={(text) => this.setState({sector: text})}/>
-          {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input}
-            nameLabel='Editar senha' editable = {this.state.editable} secureTextEntry onChangeText={(text) => this.setState({password: text})}/>
+          <InputValidate item={this.state.name} item_string='name' editable={false}
+          label = 'Nome'/>
+          <InputValidate item={this.state.registration} editable={false}
+          label = 'Nome'/>
+          <InputValidate item={this.state.hospital} item_string = 'hospital' editable={true}
+            label='Hospital' onChange={(text) => this.setState({hospital: text})}/>
+          <InputValidate item={this.state.sector} item_string = 'sector' ditable={true}
+            label='Setor' onChange={(text) => this.setState({hospital: text})}/>
+          <AGRInput style={styles.input} nameLabel='Editar senha'
+            editable = {this.state.editable} secureTextEntry
+            onChangeText={(text) => this.setState({password: text})}/>
           {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <View style={styles.alinhar}>
             <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();} }/>
