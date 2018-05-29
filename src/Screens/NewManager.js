@@ -96,15 +96,15 @@ export default class NewManager extends ValidationComponent {
           <SmallLogo />
           <ScrollView>
             <AGRInput ref='name' nameLabel='Nome Completo' onChangeText={(name) => this.setState({name})}/>
-            {this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) && this.isFieldInError('name')}
+            {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
             <AGRInput ref='registration' nameLabel='Matrícula' onChangeText={(registration) => this.setState({registration})} />
             {this.isFieldInError('registration') && this.getErrorsInField('registration').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
             <AGRInput ref='hospital' nameLabel='Hospital' onChangeText={(text) => this.setState({hospital: text})} />
-            {this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) && this.isFieldInError('hospital')}
+            {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
             <AGRInput ref='sector' nameLabel='Setor' onChangeText={(text) => this.setState({sector: text})} />
             {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
             <AGRInput ref='password' nameLabel='Senha' secureTextEntry onChangeText={(text) => this.setState({password: text})} />
-            {this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) && this.isFieldInError('password')}
+            {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
             <AGRInput ref='confirmepassword' nameLabel='Confirme sua senha' secureTextEntry onChangeText={(text) => this.setState({confirmepassword: text})} />
             {this.isFieldInError('confirmepassword') && this.getErrorsInField('confirmepassword').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>)}
             <AGRButton text='Criar' onPress={() => this._onPressButton()} />
