@@ -1,5 +1,5 @@
 import React from 'react';
-import List from '../Components/List';
+import ListElements from '../Components/ListElements';
 class HospitalsScreen extends React.Component {
 
   constructor(props) {
@@ -15,7 +15,7 @@ class HospitalsScreen extends React.Component {
 
   render() {
     return (
-      <List
+      <ListElements
       list = {this.state.Hospitals}
       title='Hospitais'
       onPress={this.onPressItem.bind(this)}

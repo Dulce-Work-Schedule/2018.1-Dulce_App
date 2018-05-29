@@ -1,5 +1,5 @@
 import React from 'react';
-import List from '../Components/List';
+import ListElements from '../Components/ListElements';
 
 class SectorsScreen extends React.Component {
 
@@ -16,7 +16,7 @@ class SectorsScreen extends React.Component {
 
   render() {
     return (
-      <List
+      <ListElements
         onPress = {this._onPressButton.bind(this)}
         title='Setores'
         list = {this.state.sectors}

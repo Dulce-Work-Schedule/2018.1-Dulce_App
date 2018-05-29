@@ -3,7 +3,7 @@ import {Container, Content, List, ListItem, Text} from 'native-base';
 import {View} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 
-class List extends React.Component {
+class ListElements extends React.Component {
 
   render() {
     return (
@@ -27,4 +27,4 @@ class List extends React.Component {
   }
 }
 
-export default List;
+export default ListElements;
