@@ -37,5 +37,5 @@ matrix:
         - travis_wait 15 npm run coverage && cat ./coverage/lcov.info | npm run coveralls
         - ./utils/run_build.sh
       after_success:
-        - test $TRAVIS_BRANCH = "master" && ./utils/run_deploy.sh beta && exit 0
+        - ./utils/run_build_in_branch.sh master && ./utils/run_deploy.sh beta && exit 0
         - ./utils/run_test_tag_version.sh $TRAVIS_TAG && ./utils/run_deploy.sh production && exit 0
