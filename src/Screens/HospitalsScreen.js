@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Content, List, ListItem, Text} from 'native-base';
+import {View} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 class HospitalsScreen extends React.Component {
 
@@ -13,9 +14,11 @@ class HospitalsScreen extends React.Component {
   render() {
     return (
       <Container>
+      <View>
       <ScreenHeader
         title='Hospitais'
       />
+      </View>
         <Content>
           <List dataArray={this.state.Hospitals}
             renderRow={(item) =>
