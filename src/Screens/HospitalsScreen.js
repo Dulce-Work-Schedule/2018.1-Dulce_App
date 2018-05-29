@@ -1,6 +1,4 @@
 import React from 'react';
-import {Container, Content, List, ListItem, Text} from 'native-base';
-import {View} from 'react-native';
 import ListScreen from '../Components/ListScreen';
 class HospitalsScreen extends React.Component {
 
@@ -18,8 +16,8 @@ class HospitalsScreen extends React.Component {
   render() {
     return (
       <ListScreen
-      title='Hospitais'
       list = {this.state.Hospitals}
+      title='Hospitais'
       onPress={this.onPressItem.bind(this)}
       />
     );

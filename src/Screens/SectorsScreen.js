@@ -17,9 +17,9 @@ class SectorsScreen extends React.Component {
   render() {
     return (
       <ListScreen
+        onPress = {this._onPressButton.bind(this)}
         title='Setores'
         list = {this.state.sectors}
-        onPress = {this._onPressButton.bind(this)}
       />
     );
   }
