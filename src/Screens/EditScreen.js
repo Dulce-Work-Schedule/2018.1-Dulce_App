@@ -113,8 +113,8 @@ export default class EditScreen extends ValidationComponent {
           label = 'Matrícula'/>
           <InputValidate item={this.state.hospital} item_string = 'hospital' editable={true}
             label='Hospital' onChange={(text) => this.setState({hospital: text})}/>
-          <InputValidate item={this.state.sector} item_string = 'sector' ditable={true}
-            label='Setor' onChange={(text) => this.setState({hospital: text})}/>
+          <InputValidate editable={true} item_string = 'sector' label='Setor'
+           item={this.state.sector} onChange={(text) => this.setState({hospital: text})}/>
           <AGRInput style={styles.input} nameLabel='Editar senha'
             editable = {this.state.editable} secureTextEntry
             onChangeText={(text) => this.setState({password: text})}/>
