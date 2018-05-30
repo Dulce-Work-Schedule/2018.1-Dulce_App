@@ -28,7 +28,7 @@ cd ${repo}/android;
 
 git checkout -b update_version;
 git branch --set-upstream-to=origin/master
-
+git pull --rebase origin master
 git branch;
 
 echo "fastlane update_version" ;
