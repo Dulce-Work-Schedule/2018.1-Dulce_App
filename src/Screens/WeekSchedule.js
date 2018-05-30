@@ -4,7 +4,6 @@ import {
   View,
   StyleSheet,
   TouchableHighlight,
-  TouchableOpacity,
   Alert
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
@@ -45,7 +44,8 @@ export default class WeekSchedule extends Component {
       items: {},
       loading: true,
       selectedDay: new Date(),
-      itemDate: []
+      itemDate: [] ,
+      changeDay: new Date()
     };
   }
 
@@ -79,59 +79,47 @@ export default class WeekSchedule extends Component {
     this.setState({modalVisible: visible});
   }
 
-  selfChangeVisible(visible){
-    this.setState({selfChange: visible});
-  }
-
-  timePickerVisible(visible){
+  timePickerVisible(visible) {
     this.setState({isDateTimePickerVisible: visible});
-  }
-  selfChange() {
-    return (
-      <View>
-        <Modal isVisible={this.state.selfChange} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.selfChangeVisible(false); }}>
-          <View style={{flex: 1}} >
-            <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
-            <View style={{flex: 1}}>
-              {this.renderAgenda(this.renderChangeItem)}
-            </View>
-            {this.cancelChange()}
-          </View>
-        </Modal>
-      </View>
-    );
   }
 
   fab() {
     return (
       <Fab
         active={this.state.active}
-        direction="up"
+        direction='up'
         containerStyle={{ }}
-        style={{ backgroundColor: '#5067FF' }}
-        position="bottomRight"
-        onPress={() => {this.timePickerVisible(true)}}>
-        <Icon type='MaterialIcons'  name ='edit'/>
+        style={{backgroundColor: '#5f4b8b'}}
+        position='bottomRight'
+        onPress={() => {this.timePickerVisible(true);}}>
+        <Icon type='MaterialIcons' name ='edit'/>
       </Fab>
     );
   }
 
   _handleDatePicked = (date) => {
     console.log('A date has been picked: ', date);
-    this.isDateTimePickerVisible(false);
+    this.setState({changeDay: date});
+    console.log('a data eh:' ,this.state.changeDay);
+    this.setState({isDateTimePickerVisible: false});
   };
 
-  timePicker(){
-    return (
+
+    _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
+
+    _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
+
+    timePicker() {
+      return (
         <DateTimePicker
           isVisible={this.state.isDateTimePickerVisible}
           onConfirm={this._handleDatePicked}
           onCancel={this._hideDateTimePicker}
+          mode= 'datetime'
+          style={{backgroundColor: '#5f4b8b' ,borderColor: '#5f4b8b',underlayColor: '#5f4b8b'}}
         />
-    );
-  }
-
-
+      );
+    }
 
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
@@ -150,30 +138,30 @@ export default class WeekSchedule extends Component {
   }
 
 //Função para criar itens para o mês inteiro
-  loadItems(day) {
-    setTimeout(() => {
-      for (let i = -15; i < 85; i++) {
-        const time = day.timestamp + i * 24 * 60 * 60 * 1000;
-        const strTime = this.timeToString(time);
-        if (!this.state.items[strTime]) {
-          this.state.items[strTime] = [];
+    loadItems(day) {
+      setTimeout(() => {
+        for (let i = -15; i < 85; i++) {
+          const time = day.timestamp + i * 24 * 60 * 60 * 1000;
+          const strTime = this.timeToString(time);
+          if (!this.state.items[strTime]) {
+            this.state.items[strTime] = [];
+          }
         }
-      }
-      const newItems = {};
-      Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
-      this.setState({
-        items: newItems
-      });
-    }, 1000);
-  }
+        const newItems = {};
+        Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
+        this.setState({
+          items: newItems
+        });
+      }, 1000);
+    }
 
-  requestChange() {
-    this.setModalVisible(false);
-    Alert.alert(
-      'Pedido de Alteração',
-      'Solicitação de alteração de horário feita com sucesso!'
-    );
-  }
+    requestChange() {
+      this.setModalVisible(false);
+      Alert.alert(
+        'Pedido de Alteração',
+        'Solicitação de alteração de horário feita com sucesso!'
+      );
+    }
 
   _alert(employee) {
     this.setState({currentSchedule: employee});
