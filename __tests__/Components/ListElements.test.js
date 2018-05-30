@@ -1,15 +1,15 @@
 import React from 'react';
-import 'react-native';
-import HospitalsScreen from '../src/Screens/HospitalsScreen';
-import renderer from 'react-test-renderer';
+import ListElements from '../../src/Components/ListElements';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
+import renderer from 'react-test-renderer';
+require('bezier');
 
 Enzyme.configure({adapter: new Adapter()});
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<HospitalsScreen />)
+  .create(<ListElements />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });

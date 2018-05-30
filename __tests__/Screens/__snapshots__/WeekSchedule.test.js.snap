@@ -194,9 +194,9 @@ exports[`renders correctly 1`] = `
               "Jan 2018",
               "Feb 2018",
               "Mar 2018",
-              "2018-04-29T00:00:00.000Z",
-              "2018-05-29T00:00:00.000Z",
-              "2018-06-29T00:00:00.000Z",
+              "2018-04-30T00:00:00.000Z",
+              "2018-05-30T00:00:00.000Z",
+              "2018-06-30T00:00:00.000Z",
               "Jul 2018",
               "Aug 2018",
               "Sep 2018",
@@ -2048,8 +2048,6 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
-                          "backgroundColor": "#5f4b8b",
-                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -2071,9 +2069,6 @@ exports[`renders correctly 1`] = `
                               "fontSize": 16,
                               "fontWeight": "300",
                               "marginTop": 6,
-                            },
-                            Object {
-                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -2101,6 +2096,8 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
+                          "backgroundColor": "#5f4b8b",
+                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -2122,6 +2119,9 @@ exports[`renders correctly 1`] = `
                               "fontSize": 16,
                               "fontWeight": "300",
                               "marginTop": 6,
+                            },
+                            Object {
+                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -2638,8 +2638,6 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
-                          "backgroundColor": "#5f4b8b",
-                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -2663,7 +2661,7 @@ exports[`renders correctly 1`] = `
                               "marginTop": 6,
                             },
                             Object {
-                              "color": "#ffffff",
+                              "color": "#d9e1e8",
                             },
                           ]
                         }
@@ -2691,6 +2689,8 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
+                          "backgroundColor": "#5f4b8b",
+                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -2714,7 +2714,7 @@ exports[`renders correctly 1`] = `
                               "marginTop": 6,
                             },
                             Object {
-                              "color": "#d9e1e8",
+                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -4964,9 +4964,9 @@ exports[`renders correctly 1`] = `
                         "Jan 2018",
                         "Feb 2018",
                         "Mar 2018",
-                        "2018-04-29T00:00:00.000Z",
-                        "2018-05-29T00:00:00.000Z",
-                        "2018-06-29T00:00:00.000Z",
+                        "2018-04-30T00:00:00.000Z",
+                        "2018-05-30T00:00:00.000Z",
+                        "2018-06-30T00:00:00.000Z",
                         "Jul 2018",
                         "Aug 2018",
                         "Sep 2018",
@@ -6818,8 +6818,6 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
-                                    "backgroundColor": "#5f4b8b",
-                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -6841,9 +6839,6 @@ exports[`renders correctly 1`] = `
                                         "fontSize": 16,
                                         "fontWeight": "300",
                                         "marginTop": 6,
-                                      },
-                                      Object {
-                                        "color": "#ffffff",
                                       },
                                     ]
                                   }
@@ -6871,6 +6866,8 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
+                                    "backgroundColor": "#5f4b8b",
+                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -6892,6 +6889,9 @@ exports[`renders correctly 1`] = `
                                         "fontSize": 16,
                                         "fontWeight": "300",
                                         "marginTop": 6,
+                                      },
+                                      Object {
+                                        "color": "#ffffff",
                                       },
                                     ]
                                   }
@@ -7408,8 +7408,6 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
-                                    "backgroundColor": "#5f4b8b",
-                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -7433,7 +7431,7 @@ exports[`renders correctly 1`] = `
                                         "marginTop": 6,
                                       },
                                       Object {
-                                        "color": "#ffffff",
+                                        "color": "#d9e1e8",
                                       },
                                     ]
                                   }
@@ -7461,6 +7459,8 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
+                                    "backgroundColor": "#5f4b8b",
+                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -7484,7 +7484,7 @@ exports[`renders correctly 1`] = `
                                         "marginTop": 6,
                                       },
                                       Object {
-                                        "color": "#d9e1e8",
+                                        "color": "#ffffff",
                                       },
                                     ]
                                   }

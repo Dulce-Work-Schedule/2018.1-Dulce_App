@@ -1,5 +1,6 @@
 import React from 'react';
 import NewManager from '../../src/Screens/NewManager';
+import AGRButton from '../../src/Components/AGRButton';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
@@ -141,4 +142,12 @@ test('change confirmepassword file',() => {
 
   expect(fieldText).toBe('The field \"password\" is mandatory.');
 
+});
+
+it('Testing onPress', () => {
+  const onPressMock = jest.fn();
+  const wrapper = shallow(<AGRButton onPress = {onPressMock}/>);
+  const button = wrapper.find('Styled(Button)').at(0);
+  button.simulate('press');
+  expect(onPressMock).toBeCalled();
 });

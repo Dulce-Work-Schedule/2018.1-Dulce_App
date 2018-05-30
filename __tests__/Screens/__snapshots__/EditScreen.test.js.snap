@@ -5,13 +5,78 @@ exports[`renders correctly 1`] = `
   style={
     Object {
       "backgroundColor": "#FFF",
-      "flex": 1,
       "flexDirection": "column",
-      "padding": 15,
-      "paddingHorizontal": 20,
     }
   }
 >
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F8F8F8",
+            "borderBottomColor": "#a7a6ab",
+            "borderBottomWidth": 0.5,
+            "elevation": 3,
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "center",
+            "left": 0,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 15,
+            "right": 0,
+            "shadowColor": undefined,
+            "shadowOffset": undefined,
+            "shadowOpacity": undefined,
+            "shadowRadius": undefined,
+            "top": 0,
+          },
+          Object {
+            "backgroundColor": "#5f4b8b",
+          },
+        ]
+      }
+      virtual={undefined}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "flex": 1,
+          }
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 17,
+                "fontWeight": "600",
+                "textAlign": "center",
+              },
+              Object {
+                "fontFamily": "Raleway",
+              },
+            ]
+          }
+          virtual={undefined}
+        >
+           
+          Editar Perfil
+           
+        </Text>
+      </View>
+    </View>
+  </View>
   <RCTScrollView>
     <View>
       <View>
@@ -122,12 +187,15 @@ exports[`renders correctly 1`] = `
                   ]
                 }
                 virtual={undefined}
-              />
+              >
+                Nome
+              </Text>
             </Text>
           </View>
           <TextInput
             allowFontScaling={true}
             editable={false}
+            nameLabel="Nome"
             onBlur={[Function]}
             onChangeText={[Function]}
             onFocus={[Function]}
@@ -250,12 +318,15 @@ exports[`renders correctly 1`] = `
                   ]
                 }
                 virtual={undefined}
-              />
+              >
+                Matrícula
+              </Text>
             </Text>
           </View>
           <TextInput
             allowFontScaling={true}
             editable={false}
+            nameLabel="Matrícula"
             onBlur={[Function]}
             onChangeText={[Function]}
             onFocus={[Function]}
