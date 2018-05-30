@@ -12,6 +12,7 @@ import Modal from 'react-native-modal';
 import axios from 'axios';
 import store from '../Reducers/store';
 import ScreenHeader from '../Components/ScreenHeader';
+import ScheduleItem from '../Components/ScheduleItem';
 
 const styles = StyleSheet.create({
   item: {
@@ -146,31 +147,20 @@ export default class WeekSchedule extends Component {
 
   renderItem(item) {
     return (
-      <TouchableHighlight
-      onPress={() => {this._alert(item);}}
-      underlayColor='#5f4b8b'
-      style={styles.item}>
-        <View>
-          <Text>{item.employee}</Text>
-          <Text>{item.specialty}</Text>
-          <Text>{item.start_time} - {item.end_time}</Text>
-          <Text>{item.amount_of_hours}</Text>
-        </View>
-      </TouchableHighlight>
+      <ScheduleItem
+        item={item}
+        onPress={() => {this._alert(item);}}
+      />
     );
   }
 
   renderChangeItem(item) {
     console.log(item);
     return (
-      <TouchableHighlight onPress={() => { this.alert_change(item); }} underlayColor='#5f4b8b' style={[styles.item, {height: item.height}]}>
-        <View>
-          <Text>{item.employee}</Text>
-          <Text>{item.specialty}</Text>
-          <Text>{item.start_time} - {item.end_time}</Text>
-          <Text>{item.amount_of_hours}</Text>
-        </View>
-      </TouchableHighlight>
+      <ScheduleItem
+        onPress={() => { this.alert_change(item); }}
+        item={item}
+      />
     );
   }
 
