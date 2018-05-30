@@ -96,12 +96,12 @@ export default class EditScreen extends ValidationComponent {
       });
   }
 
-  returnErrorField(item) {
+  errorFieldSelected(item) {
     return (
       this.isFieldInError(item)
     );
   }
-  returnMessageError(item) {
+  problemMessage(item) {
     return (
       this.getErrorsInField(item)
     );
@@ -118,13 +118,13 @@ export default class EditScreen extends ValidationComponent {
           placeholder='Matricula'/>
           <AGRInput value = {this.state.hospital} style={styles.input} nameLabel='Hospital'
           editable = {this.state.editable} onChangeText={(text) => this.setState({hospital: text})}/>
-          {this.isFieldInError('hospital') && this.returnMessageError('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+          {this.isFieldInError('hospital') && this.problemMessage('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <AGRInput style={styles.input} editable = {this.state.editable} nameLabel='setor'
           value = {this.state.sector} onChangeText={(text) => this.setState({sector: text})}/>
-          {this.returnErrorField('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+          {this.errorFieldSelected('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <AGRInput editable = {this.state.editable} nameLabel='Editar senha' secureTextEntry
           style={styles.input} onChangeText={(text) => this.setState({password: text})}/>
-          {this.returnErrorField('password') && this.returnMessageError('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
+          {this.errorFieldSelected('password') && this.problemMessage('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <View style={styles.alinhar}>
             <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();} }/>
           </View>
