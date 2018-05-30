@@ -29,86 +29,73 @@ test('change sector file', () => {
   const sectorField = wrapper.find('AGRInput').at(3);
   sectorField.simulate('changeText' , 'text');
   expect(wrapper.state('sector')).toBe('text');
-
 });
 
 test('change password file', () => {
-
   const wrapper = shallow(<EditScreen />);
   const passwordField = wrapper.find('AGRInput').at(4);
   passwordField.simulate('changeText','text');
   expect(wrapper.state('password')).toBe('text');
-
 });
 
 test('hospital field error' , () => {
-
   const wrapper = shallow(<EditScreen />);
 
   wrapper.setState({hospital: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const hospitalFieldError = wrapper.find('Text').at(0);
-
   const fieldText = hospitalFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"hospital\" is mandatory.');
-
 });
 
 test('sector field error', () => {
-
   const wrapper = shallow(<EditScreen />);
 
   wrapper.setState({sector: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const sectorFieldError = wrapper.find('Text').at(0);
-
   const fieldText = sectorFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"sector\" is mandatory.');
-
 });
 
 test('password field error', () => {
-
   const wrapper = shallow(<EditScreen />);
-
   wrapper.setState({password: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const passwordFieldError = wrapper.find('Text').at(0);
-
   const fieldText = passwordFieldError.dive().text();
-
   expect(fieldText).toBe('The field \"password\" length must be greater than 4.');
-
 });
 
 test('save button', () => {
   const wrapper = shallow(<EditScreen />);
-
   const onSaveMock = jest.fn();
-
-  wrapper.setState({editable: true});
-
   const saveButton = wrapper.find('AGRButton').at(0);
 
+  wrapper.setState({editable: true});
   wrapper.instance().save = onSaveMock;
+  wrapper.setProps({});
+  saveButton.simulate('press');
+  expect(onSaveMock).toBeCalled();
+});
 
+test('save button if name is not validated', () => {
+  const wrapper = shallow(<EditScreen />);
+  const onSaveMock = jest.fn();
+  const saveButton = wrapper.find('AGRButton').at(1);
+
+  wrapper.setState({name: ''});
+  wrapper.instance().save = onSaveMock;
   wrapper.setProps({});
 
   saveButton.simulate('press');
-
-  expect(onSaveMock).toBeCalled();
+  expect(!onSaveMock).toBeCalled();
 });

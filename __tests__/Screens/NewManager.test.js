@@ -1,6 +1,5 @@
 import React from 'react';
 import NewManager from '../../src/Screens/NewManager';
-import AGRButton from '../../src/Components/AGRButton';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
@@ -54,100 +53,66 @@ test('change confirme password file',() => {
 
 
 test('name field error' , () => {
-
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({name: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const nameFieldError = wrapper.find('Text').at(0);
-
   const fieldText = nameFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"name\" is mandatory.');
-
 });
 
 test('change hospital file',() => {
-
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({hospital: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const hospitalFieldError = wrapper.find('Text').at(1);
-
   const fieldText = hospitalFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"hospital\" is mandatory.');
-
 });
 
-
 test('change sector file',() => {
-
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({sector: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const sectorFieldError = wrapper.find('Text').at(2);
-
   const fieldText = sectorFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"sector\" is mandatory.');
-
 });
 
 test('change password file',() => {
-
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({password: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const passwordFieldError = wrapper.find('Text').at(3);
-
   const fieldText = passwordFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"password\" length must be greater than 4.');
-
 });
 
 test('change confirmepassword file',() => {
-
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({confirmepassword: ''});
-
   wrapper.instance()._onPressButton();
-
   wrapper.setProps({});
 
   const confirmepasswordFieldError = wrapper.find('Text').at(4);
-
   const fieldText = confirmepasswordFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"password\" is mandatory.');
-
-});
-
-it('Testing onPress', () => {
-  const onPressMock = jest.fn();
-  const wrapper = shallow(<AGRButton onPress = {onPressMock}/>);
-  const button = wrapper.find('Styled(Button)').at(0);
-  button.simulate('press');
-  expect(onPressMock).toBeCalled();
 });

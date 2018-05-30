@@ -15,7 +15,8 @@ const props = {
     state: {
       params: {
         userId: 1
-      }
+      },
+      visible: false
     }
   }
 };
@@ -39,4 +40,3 @@ test('axios schedule request', async () => {
   .reply(200,{response});
 
 });
-
