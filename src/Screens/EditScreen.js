@@ -3,17 +3,15 @@ import {View, Text, ScrollView} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import SmallLogo from '../Components/SmallLogo';
+import ScreenHeader from '../Components/ScreenHeader';
 import ValidationComponent from 'react-native-form-validator';
 import store from '../Reducers/store';
 import axios from 'axios';
 
 const styles = {
   container: {
-    flex: 1,
     flexDirection: 'column',
-    padding: 15,
-    backgroundColor: '#FFF',
-    paddingHorizontal: 20
+    backgroundColor: '#FFF'
   },
   input: {
     height: 40,
@@ -99,12 +97,13 @@ export default class EditScreen extends ValidationComponent {
   render() {
     return (
       <View style={styles.container}>
+      <ScreenHeader title='Editar Perfil'/>
         <ScrollView>
           <SmallLogo/>
-          <AGRInput style={styles.input} value = {this.state.name} editable = {false} />
+          <AGRInput style={styles.input} value = {this.state.name} editable = {false} nameLabel='Nome'/>
           {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
           <AGRInput style={styles.input} value = {this.state.registration} editable = {false}
-            placeholder='Matricula'/>
+            placeholder='Matricula' nameLabel='Matrícula'/>
           <AGRInput value = {this.state.hospital} style={styles.input} editable = {this.state.editable}
             nameLabel='Hospital' onChangeText={(text) => this.setState({hospital: text})}/>
           {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
