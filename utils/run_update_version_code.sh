@@ -29,12 +29,13 @@ git config credential.helper store;
 echo "cd ${repo}/android" ;
 cd ${repo}/android;
 
-# git checkout -b update_version;
-# git branch --set-upstream-to=origin/master
-git pull --rebase origin master
+git checkout .
+git pull --rebase origin master;
 git branch;
 
-echo "fastlane update_version" ;
+echo "fastlane update_version";
+
+fastlane install_plugins;
 fastlane update_version;
 
 echo "version_code=" ;
