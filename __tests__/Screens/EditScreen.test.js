@@ -38,6 +38,18 @@ test('change password file', () => {
   expect(wrapper.state('password')).toBe('text');
 });
 
+test('name field error' , () => {
+  const wrapper = shallow(<EditScreen />);
+
+  wrapper.setState({name: ''});
+  wrapper.instance()._onPressButton();
+  wrapper.setProps({});
+
+  const hospitalFieldError = wrapper.find('Text').at(0);
+  const fieldText = hospitalFieldError.dive().text();
+
+  expect(fieldText).toBe('The field \"name\" is mandatory.');
+});
 test('hospital field error' , () => {
   const wrapper = shallow(<EditScreen />);
 
