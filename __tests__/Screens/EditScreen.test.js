@@ -86,16 +86,3 @@ test('save button', () => {
   saveButton.simulate('press');
   expect(onSaveMock).toBeCalled();
 });
-
-test('save button if name is not validated', () => {
-  const wrapper = shallow(<EditScreen />);
-  const onSaveMock = jest.fn();
-  const saveButton = wrapper.find('AGRButton').at(1);
-
-  wrapper.setState({name: ''});
-  wrapper.instance().save = onSaveMock;
-  wrapper.setProps({});
-
-  saveButton.simulate('press');
-  expect(!onSaveMock).toBeCalled();
-});
