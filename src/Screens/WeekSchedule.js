@@ -45,13 +45,13 @@ export default class WeekSchedule extends Component {
       loading: true,
       selectedDay: new Date(),
       itemDate: [] ,
-      changeDay: new Date()
+      changeDay: new Date(),
+      dateString: {}
     };
   }
 
   componentDidMount() {
-    const url = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=' +
-    (this.state.selectedDay.getMonth() + 1);
+    const url = 'http://172.18.0.1:8091/api/schedule/listYear'
 
     axios.get(url,{
       headers: {
@@ -59,6 +59,7 @@ export default class WeekSchedule extends Component {
       }
     })
       .then((response) => {
+        console.log(response.data)
         this.setState({itemDate: response.data,loading: false});
         this.arrayToObject();
         if (response.data === []) {
@@ -113,7 +114,7 @@ export default class WeekSchedule extends Component {
       return (
         <DateTimePicker
           isVisible={this.state.isDateTimePickerVisible}
-          onConfirm={this._handleDatePicked}
+          onConfirm={() => {this.alert_Selfchange()}}
           onCancel={this._hideDateTimePicker}
           mode= 'datetime'
           style={{backgroundColor: '#5f4b8b' ,borderColor: '#5f4b8b',underlayColor: '#5f4b8b'}}
@@ -156,6 +157,7 @@ export default class WeekSchedule extends Component {
     }
 
     requestChange() {
+      this.timePickerVisible(false);
       this.setModalVisible(false);
       Alert.alert(
         'Pedido de Alteração',
@@ -183,6 +185,21 @@ export default class WeekSchedule extends Component {
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
         this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
+        [
+          {text: 'Não', onPress: () => { }},
+          {text: 'Sim', onPress: () => {this.requestChange();}}
+        ],
+        {cancelable: true}
+      );
+    });
+  }
+
+  alert_Selfchange(schedule) {
+    this.setState({selectedSchedule: schedule}, () => {
+
+      Alert.alert(
+        'a',
+        'b',
         [
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
@@ -220,6 +237,7 @@ export default class WeekSchedule extends Component {
             <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
             <View style={{flex: 1}}>
               {this.renderAgenda(this.renderChangeItem)}
+              {this.fab()}
             </View>
             {this.cancelChange()}
           </View>
@@ -248,6 +266,8 @@ export default class WeekSchedule extends Component {
         renderItem={item.bind(this)}
         renderEmptyDate={this.renderEmptyDate.bind(this)}
         rowHasChanged={this.rowHasChanged.bind(this)}
+        onDayChange={(day)=>{this.setState({dateString: day})}}
+        onDayPress={(day)=>{this.setState({dateString: day})}}
         theme={{
           calendarBackground: '#ffffff',
           agendaKnobColor: '#5f4b8b',
@@ -281,7 +301,6 @@ export default class WeekSchedule extends Component {
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
         {this.timePicker()}
-        {this.fab()}
       </View>
     );
   }
