@@ -37,6 +37,7 @@ export default class WeekSchedule extends Component {
     super(props);
     this.state = {
       isDateTimePickerVisible: false,
+      endDateTimePickerVisible: false,
       selfChange: false,
       modalVisible: false,
       currentSchedule: {},
@@ -46,7 +47,8 @@ export default class WeekSchedule extends Component {
       selectedDay: new Date(),
       itemDate: [] ,
       changeDay: new Date(),
-      dateString: {}
+      dateString: {},
+      finaldateString: new Date()
     };
   }
 
@@ -108,13 +110,36 @@ export default class WeekSchedule extends Component {
 
     _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
 
+    showEndDateTimePicker = () => this.setState({ endDateTimePickerVisible: true });
+
+    hideEndDateTimePicker = () => this.setState({ endDateTimePickerVisible: false });
+
+
+    handleEndDatePicked = (date) => {
+      this.setState({finaldateString: date});
+      this.hideEndDateTimePicker();
+    };   
+
+
     timePicker() {
       return (
         <DateTimePicker
           isVisible={this.state.isDateTimePickerVisible}
-          onConfirm={() => {this.alert_Selfchange()}}
+          onConfirm={() => {this.showEndDateTimePicker()}}
           onCancel={this._hideDateTimePicker}
           mode= 'datetime'
+          style={{backgroundColor: '#5f4b8b' ,borderColor: '#5f4b8b',underlayColor: '#5f4b8b'}}
+        />
+      );
+    }
+
+    finalPicker(){
+      return (
+        <DateTimePicker
+          isVisible={this.state.endDateTimePickerVisible}
+          onConfirm={() => {this.alert_Selfchange()}}
+          onCancel={() => {this.timePickerVisible(false),this.hideEndDateTimePicker()}}
+          mode= 'time'
           style={{backgroundColor: '#5f4b8b' ,borderColor: '#5f4b8b',underlayColor: '#5f4b8b'}}
         />
       );
@@ -198,9 +223,9 @@ export default class WeekSchedule extends Component {
       Alert.alert(
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth()+1)  +'/'+ this.state.changeDay.getDate() +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' -> ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' + 'this.state.selectedSchedule.end_time',
+        this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth()+1)  +'/'+ this.state.changeDay.getDate() +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' +  this.state.finaldateString.getHours() + ':' + this.state.finaldateString.getMinutes(),
         [
-          {text: 'Não', onPress: () => { }},
+          {text: 'Não', onPress: () => {this.handleEndDatePicked}},
           {text: 'Sim', onPress: () => {this.requestChange();}}
         ],
         {cancelable: true}
@@ -300,6 +325,7 @@ export default class WeekSchedule extends Component {
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
         {this.timePicker()}
+        {this.finalPicker()}
       </View>
     );
   }
