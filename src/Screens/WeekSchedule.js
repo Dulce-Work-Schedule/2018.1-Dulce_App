@@ -99,9 +99,7 @@ export default class WeekSchedule extends Component {
   }
 
   _handleDatePicked = (date) => {
-    console.log('A date has been picked: ', date);
     this.setState({changeDay: date});
-    console.log('a data eh:' ,this.state.changeDay);
     this.setState({isDateTimePickerVisible: false});
   };
 
@@ -198,8 +196,9 @@ export default class WeekSchedule extends Component {
     this.setState({selectedSchedule: schedule}, () => {
 
       Alert.alert(
-        'a',
-        'b',
+        'Mudar de Horário',
+        this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
+        this.state.currentSchedule.date + '    ->   ' + ((this.state.changeDay.getMonth()+1).toString().padStart(2,0))+'/'+ (this.state.changeDay.getDate())) +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + 'this.state.selectedSchedule.start_time' + ' - ' + 'this.state.selectedSchedule.end_time',
         [
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
