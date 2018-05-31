@@ -1,4 +1,5 @@
 #!/bin/bash
+# checking whether the variable exists
 if [ -z $1 ]; then
   echo "Usage: $0 [beta | production]"
   exit 1
@@ -12,12 +13,14 @@ else
   ${repo}/utils/run_decrypt_keystore.sh && \
   ${repo}/utils/run_decrypt_playstore_json.sh && \
   cd ${repo}/android && \
+  # build beta version
   if [[ $1 == "beta" ]]; then
     echo "Deploying Beta Version"
     ${repo}/utils/run_update_version_code.sh && \
     fastlane debug_build && \
     fastlane playstore_beta && \
     exit 0
+  # build production version
   elif [[ $1 == "production" ]]; then
     echo "Deploying Production Version"
     fastlane build && \

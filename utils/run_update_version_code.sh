@@ -23,35 +23,14 @@ else
 	echo "$git_credentials" > ~/.git-credentials;
 fi
 
-echo "git config credential.helper store" ;
 git config credential.helper store;
-
-echo "cd ${repo}/android" ;
+git pull --rebase origin master
 cd ${repo}/android;
-
-git checkout .
-git pull --rebase origin master;
-git branch;
-
-echo "fastlane update_version";
-
-fastlane install_plugins;
+# Increasing build version code
 fastlane update_version;
-
-echo "version_code=" ;
 version_code=$(cat ${repo}/android/app/build.gradle | grep " versionCode "  | tr -s '[:space:]');
 
-git branch;
-
-echo "git add ${repo}/android/app/build.gradle" ;
+# Submitting build gradle
 git add ${repo}/android/app/build.gradle;
-
-git log -n 1;
-
-echo "git commit -m [ci skip] Updating to ${version_code}." ;
 git commit -m"[ci skip] Updating to ${version_code}.";
-
-git log -n 1;
-
-echo "git push origin master";
 git push origin master
