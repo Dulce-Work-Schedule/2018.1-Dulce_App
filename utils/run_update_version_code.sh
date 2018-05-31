@@ -1,17 +1,20 @@
 #!/bin/bash
 repo=$(git rev-parse --show-toplevel);
+# Verify git user
 if [ -z $git_user_name ]; then
 	echo -e "\033[0;31mEmpty env git_user_name...\033[0m";
 	exit 1;
 else
 	git config --local user.name "$git_user_name"
 fi
+# Verify git email
 if [ -z $git_user_email ]; then
 	echo -e "\033[0;31mEmpty env git_user_email...\033[0m";
 	exit 1;
 else
 	git config --local user.email "$git_user_email"
 fi
+# Verify git credentials
 if [ -z $git_credentials ]; then
 	echo -e "\033[0;31mEmpty env git_credentials...\033[0m";
 	exit 1;
@@ -26,8 +29,8 @@ git config credential.helper store;
 echo "cd ${repo}/android" ;
 cd ${repo}/android;
 
-git checkout -b update_version;
-git branch --set-upstream-to=origin/master
+# git checkout -b update_version;
+# git branch --set-upstream-to=origin/master
 git pull --rebase origin master
 git branch;
 
