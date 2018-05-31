@@ -23,6 +23,7 @@
     "axios": "^0.18.0",
     "axios-mock-adapter": "^1.15.0",
     "bluebird": "^3.3.5",
+    "chai": "^4.1.2",
     "event-emitter": "^0.3.4",
     "immutable": "^3.7.6",
     "lodash": "^4.11.0",
