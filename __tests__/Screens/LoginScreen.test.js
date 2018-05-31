@@ -5,6 +5,8 @@ import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 import {Alert} from 'react-native';
+import expect from 'expect';
+
 require('bezier');
 
 Enzyme.configure({adapter: new adapter()});
@@ -36,9 +38,25 @@ test('change password file ', () => {
 
 test('test alert empty password', () => {
   const wrapper = shallow(<LoginScreen />);
-  const passwordlField = wrapper.find('AGRInput').at(1);
-  passwordlField.simulate('changeText','');
+  //Registration preenchido
+  const registrationField = wrapper.find('AGRInput').at(0);
+  registrationField.simulate('changeText','123456');
+  //Password vazio
+  const passwordField = wrapper.find('AGRInput').at(1);
+  passwordField.simulate('changeText','');
+
   wrapper.findWhere(n => n.props().text === 'Entrar').simulate('Press');
   expect(Alert.alert).toHaveBeenCalled();
+});
 
+test('test alert empty regitration', () => {
+  const wrapper = shallow(<LoginScreen />);
+  //Registration vazio
+  const registrationField = wrapper.find('AGRInput').at(0);
+  registrationField.simulate('changeText','');
+  //Password preenchido
+  const passwordField = wrapper.find('AGRInput').at(1);
+  passwordField.simulate('changeText','123456');
+  wrapper.findWhere(n => n.props().text === 'Entrar').simulate('Press');
+  expect(Alert.alert).toHaveBeenCalled();
 });
