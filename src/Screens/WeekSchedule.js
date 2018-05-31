@@ -198,7 +198,7 @@ export default class WeekSchedule extends Component {
       Alert.alert(
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + ((this.state.changeDay.getMonth()+1).toString().padStart(2,0))+'/'+ (this.state.changeDay.getDate())) +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + 'this.state.selectedSchedule.start_time' + ' - ' + 'this.state.selectedSchedule.end_time',
+        this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth()+1)  +'/'+ this.state.changeDay.getDate() +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' -> ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' + 'this.state.selectedSchedule.end_time',
         [
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
