@@ -39,3 +39,12 @@ test('render data',() => {
   expect(sectorFieldText).toBe('setor: ' + employee_example.sector);
 
 });
+
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('UserList snapshot test', async () => {
+  const wrapper = shallow(<EmployeeProfileScreen />);
+  await flushPromises();
+  wrapper.update();
+  expect(wrapper).toMatchSnapshot();
+});
