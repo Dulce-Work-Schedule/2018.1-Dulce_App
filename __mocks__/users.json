@@ -1,0 +1,24 @@
+{
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "name": "User Example Name",
+        "registration": "123456",
+        "password": "123456",
+        "sector": "Example Sector",
+        "hospital": "Example Hospital",
+        "manager": "true"
+      },
+      {
+        "id": 2,
+        "name": "Other User Example Name",
+        "registration": "12345678",
+        "password": "12345678",
+        "sector": "Example Sector 2",
+        "hospital": "Example Hospital 2",
+        "manager": "true"
+      }
+    ]
+  }
+}

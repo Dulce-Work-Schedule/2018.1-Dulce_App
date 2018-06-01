@@ -1,13 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import WeekSchedule from '../../src/Screens/WeekSchedule';
-import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 
 require('bezier');
-var mock = new MockAdapter(axios);
 Enzyme.configure({adapter: new Adapter()});
 
 const props = {
