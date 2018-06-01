@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import WeekSchedule from '../../src/Screens/WeekSchedule';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
+import {shallow} from 'enzyme';
 
 require('bezier');
 Enzyme.configure({adapter: new Adapter()});
@@ -35,5 +36,13 @@ test('axios schedule request', async () => {
 
   mock.onGet('http://172.18.0.1:8091/api/schedule/listYear')
   .reply(200,{response});
+});
 
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('testing axios', async () => {
+  const wrapper = shallow(<WeekSchedule/>);
+  await flushPromises();
+  wrapper.update();
+  expect(wrapper).toMatchSnapshot();
 });

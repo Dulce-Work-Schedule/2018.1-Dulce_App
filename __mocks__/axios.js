@@ -1,8 +1,11 @@
 import {data as users} from './users.json';
+import {data as schedules} from './users.json';
 
 const USERS_LIST_ENDPOINT = 'http://localhost:8083/api/userManager/listUser';
-const EMPLOYEE_PROFILE_ENDPOINT = 'http://localhost:8083/api/userManager/listById/?id=1';
-const EDIT_USER_ENDPOINT = 'http://172.18.0.1:8083/api/userManager/editUser/?id=1';
+const EMPLOYEE_PROFILE_ENDPOINT = 'http://localhost:8083/api/userManager/listById/?id=';
+const EDIT_USER_ENDPOINT = 'http://172.18.0.1:8083/api/userManager/editUser/?id=';
+const LOGIN_ENDPOINT = 'http://172.18.0.1:8086/api/userManager/login';
+const SCHEDULES_ENDPOINT = 'http://172.18.0.1:8091/api/schedule/listMonth/?month=';
 
 module.exports = {
   get: jest.fn((url) => {
@@ -11,13 +14,21 @@ module.exports = {
         return Promise.resolve({
           data: users
         });
+      case LOGIN_ENDPOINT:
+        return Promise.resolve({
+          data: users
+        });
       case EMPLOYEE_PROFILE_ENDPOINT:
         return Promise.resolve({
-          data: users.id(1)
+          data: users
         });
       case EDIT_USER_ENDPOINT:
         return Promise.resolve({
-          data: users.id(1)
+          data: users
+        });
+      case SCHEDULES_ENDPOINT:
+        return Promise.resolve({
+          data: schedules
         });
       default:
         return Promise.resolve({
