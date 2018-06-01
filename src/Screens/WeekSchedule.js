@@ -197,19 +197,20 @@ export default class WeekSchedule extends Component {
     );
   }
 
-  alert_change() {
-   
+  alert_change(employee) {
+    this.setState({selectedSchedule: employee}, () => {
 
-    Alert.alert(
-      'Mudar de Horário',
-      this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
-      this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
-      [
-        { text: 'Não', onPress: () => { } },
-        { text: 'Sim', onPress: () => { this.requestChange(); } }
-      ],
-      { cancelable: true }
-    );
+      Alert.alert(
+        'Mudar de Horário',
+        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
+        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
+        [
+          {text: 'Não', onPress: () => { }},
+          {text: 'Sim', onPress: () => {this.requestChange();}}
+        ],
+        {cancelable: true}
+      );
+    });
   }
 
   alert_Selfchange(date) {
