@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   Text,
   View,
@@ -6,14 +6,13 @@ import {
   TouchableHighlight,
   Alert
 } from 'react-native';
-import { Agenda } from 'react-native-calendars';
+import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
 import axios from 'axios';
 import store from '../Reducers/store';
-
 import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
-import { Header, Body, Title, Container, Button, Icon, Fab } from 'native-base';
+import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 
 const styles = StyleSheet.create({
@@ -53,7 +52,7 @@ export default class WeekSchedule extends Component {
   }
 
   componentDidMount() {
-    const url = 'http://172.18.0.1:8091/api/schedule/listYear'
+    const url = 'http://172.18.0.1:8091/api/schedule/listYear';
 
     axios.get(url, {
       headers: {
@@ -61,8 +60,8 @@ export default class WeekSchedule extends Component {
       }
     })
       .then((response) => {
-        console.log(response.data)
-        this.setState({ itemDate: response.data, loading: false });
+        console.log(response.data);
+        this.setState({itemDate: response.data, loading: false});
         this.arrayToObject();
         if (response.data === []) {
           Alert.alert(
