@@ -80,11 +80,11 @@ export default class WeekSchedule extends Component {
   }
 
   setModalVisible(visible) {
-    this.setState({ modalVisible: visible });
+    this.setState({modalVisible: visible});
   }
 
   timePickerVisible(visible) {
-    this.setState({ isDateTimePickerVisible: visible });
+    this.setState({isDateTimePickerVisible: visible});
   }
 
   fab() {
@@ -93,7 +93,7 @@ export default class WeekSchedule extends Component {
         active={this.state.active}
         direction='up'
         containerStyle={{}}
-        style={{ backgroundColor: '#5f4b8b' }}
+        style={{backgroundColor: '#5f4b8b'}}
         position='bottomRight'
         onPress={() => { this.timePickerVisible(true); }}>
         <Icon type='MaterialIcons' name='edit' />
@@ -101,19 +101,18 @@ export default class WeekSchedule extends Component {
     );
   }
 
+  _showDateTimePicker = () => this.setState({isDateTimePickerVisible: true});
 
-  _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
-
-  _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
+  _hideDateTimePicker = () => this.setState({isDateTimePickerVisible: false});
 
   showEndDateTimePicker = (date) => {
     this.setState({
       endDateTimePickerVisible: true,
       changeDay: date
-    })
+    });
   };
 
-  hideEndDateTimePicker = () => this.setState({ endDateTimePickerVisible: false });
+  hideEndDateTimePicker = () => this.setState({endDateTimePickerVisible: false});
 
   timePicker() {
     return (
@@ -122,7 +121,7 @@ export default class WeekSchedule extends Component {
         onConfirm={(date) => this.showEndDateTimePicker(date)}
         onCancel={this._hideDateTimePicker}
         mode='datetime'
-        style={{ backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b' }}
+        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}
       />
     );
   }
@@ -132,9 +131,9 @@ export default class WeekSchedule extends Component {
       <DateTimePicker
         isVisible={this.state.endDateTimePickerVisible}
         onConfirm={(date) => this.alert_Selfchange(date)}
-        onCancel={() => { this.timePickerVisible(false), this.hideEndDateTimePicker() }}
+        onCancel={() => { this.timePickerVisible(false),this.hideEndDateTimePicker();}}
         mode='time'
-        style={{ backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b' }}
+        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b' }}
       />
     );
   }
@@ -152,7 +151,7 @@ export default class WeekSchedule extends Component {
       acc[format].push(cur);
       return acc;
     }, {});
-    this.setState({ items: newObj });
+    this.setState({items: newObj});
   }
 
   //Função para criar itens para o mês inteiro
@@ -184,15 +183,15 @@ export default class WeekSchedule extends Component {
   }
 
   _alert(employee) {
-    this.setState({ currentSchedule: employee });
+    this.setState({currentSchedule: employee});
     Alert.alert(
       'Mudar de Horário',
       'Deseja solicitar mudança de horário?',
       [
-        { text: 'Não', onPress: () => { } },
-        { text: 'Sim', onPress: () => { this.setModalVisible(true); } }
+        {text: 'Não', onPress: () => { }},
+        {text: 'Sim', onPress: () => { this.setModalVisible(true); }}
       ],
-      { cancelable: true }
+      {cancelable: true}
     );
   }
 
@@ -213,24 +212,24 @@ export default class WeekSchedule extends Component {
   }
 
   alert_Selfchange(date) {
-    this.setState({ finalDateString: date })
+    this.setState({finalDateString: date});
     if (!this.state.finalDateString) {
-      this.setState({ finalDateString: new Date() });
+      this.setState({finalDateString: new Date()});
 
     }
 
     console.log('c', this.state.changeDay);
-    console.log('f', this.state.finalDateString)
+    console.log('f', this.state.finalDateString);
 
     Alert.alert(
       'Mudar de Horário',
       this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
       this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' + (this.state.changeDay.getDate()).toString().padStart(2,0) + '/' + this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + (this.state.changeDay.getHours()).toString().padStart(2 , 0) + ':' + (this.state.changeDay.getMinutes()).toString().padStart(2,0) + ' - ' + (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' + (this.state.finalDateString.getMinutes()).toString().padStart(2,0),
       [
-        { text: 'Não', onPress: () => { this.timePickerVisible(false),this.hideEndDateTimePicker() } },
-        { text: 'Sim', onPress: () => { this.requestChange(); } }
+        {text: 'Não', onPress: () => { this.timePickerVisible(false),this.hideEndDateTimePicker();}},
+        {text: 'Sim', onPress: () => { this.requestChange(); }}
       ],
-      { cancelable: true }
+      {cancelable: true}
     );
   }
 
