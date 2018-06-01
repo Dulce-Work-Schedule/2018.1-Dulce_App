@@ -4,6 +4,8 @@ import Adapter from 'enzyme-adapter-react-16';
 // import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import renderer from 'react-test-renderer';
+// import {ListItem} from 'native-base';
+
 require('bezier');
 
 Enzyme.configure({adapter: new Adapter()});
@@ -20,8 +22,7 @@ it('renders correctly', () => {
 
 // it('Testing onPress', () => {
 //   const onPressMock = jest.fn();
-//   const wrapper = shallow(<ListElements title={title} list={list} onPress = {onPressMock}/>);
-//   const list_item = wrapper.find('Styled(List)').first().at(0);
-//   list_item.simulate('press');
+//   const wrapper = shallow(<ListElements title={title} list={list} onPress={onPressMock}/>);
+//   wrapper.find(ListItem).first().prop('onPress');
 //   expect(onPressMock).toBeCalled();
 // });

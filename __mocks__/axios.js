@@ -1,5 +1,5 @@
-import {data as users} from './users.json';
-import {data as schedules} from './users.json';
+import {data as users} from './api_data.json';
+import {data as schedules} from './api_data.json';
 
 const USERS_LIST_ENDPOINT = 'http://localhost:8083/api/userManager/listUser';
 const EMPLOYEE_PROFILE_ENDPOINT = 'http://localhost:8083/api/userManager/listById/?id=';

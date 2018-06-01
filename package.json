@@ -21,7 +21,6 @@
   "bugs": "https://github.com/Dulce-Work-Schedule/2018.1-Dulce_App/issues",
   "dependencies": {
     "axios": "^0.18.0",
-    "axios-mock-adapter": "^1.15.0",
     "bluebird": "^3.3.5",
     "chai": "^4.1.2",
     "event-emitter": "^0.3.4",
@@ -46,6 +45,7 @@
     "standard-http-error": "^2.0.0"
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
     "babel-core": "^6.9.0",
     "babel-eslint": "^7.1.0",
     "babel-jest": "^22.4.1",
