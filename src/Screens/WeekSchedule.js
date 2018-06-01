@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   View,
@@ -6,14 +6,14 @@ import {
   TouchableHighlight,
   Alert
 } from 'react-native';
-import {Agenda} from 'react-native-calendars';
+import { Agenda } from 'react-native-calendars';
 import Modal from 'react-native-modal';
 import axios from 'axios';
 import store from '../Reducers/store';
 
 import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
-import {Header, Body, Title, Container,Button, Icon, Fab} from 'native-base';
+import { Header, Body, Title, Container, Button, Icon, Fab } from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 
 const styles = StyleSheet.create({
@@ -45,7 +45,7 @@ export default class WeekSchedule extends Component {
       items: {},
       loading: true,
       selectedDay: new Date(),
-      itemDate: [] ,
+      itemDate: [],
       changeDay: new Date(),
       dateString: {},
       finalDateString: new Date()
@@ -55,14 +55,14 @@ export default class WeekSchedule extends Component {
   componentDidMount() {
     const url = 'http://172.18.0.1:8091/api/schedule/listYear'
 
-    axios.get(url,{
+    axios.get(url, {
       headers: {
         'x-access-token': store.getState().currentUser.token
       }
     })
       .then((response) => {
         console.log(response.data)
-        this.setState({itemDate: response.data,loading: false});
+        this.setState({ itemDate: response.data, loading: false });
         this.arrayToObject();
         if (response.data === []) {
           Alert.alert(
@@ -71,19 +71,21 @@ export default class WeekSchedule extends Component {
           );
         }
       })
-      .catch(() => {Alert.alert(
-        'Erro',
-        'Verifique sua conexão.'
-      );});
+      .catch(() => {
+        Alert.alert(
+          'Erro',
+          'Verifique sua conexão.'
+        );
+      });
 
   }
 
   setModalVisible(visible) {
-    this.setState({modalVisible: visible});
+    this.setState({ modalVisible: visible });
   }
 
   timePickerVisible(visible) {
-    this.setState({isDateTimePickerVisible: visible});
+    this.setState({ isDateTimePickerVisible: visible });
   }
 
   fab() {
@@ -91,66 +93,59 @@ export default class WeekSchedule extends Component {
       <Fab
         active={this.state.active}
         direction='up'
-        containerStyle={{ }}
-        style={{backgroundColor: '#5f4b8b'}}
+        containerStyle={{}}
+        style={{ backgroundColor: '#5f4b8b' }}
         position='bottomRight'
-        onPress={() => {this.timePickerVisible(true);}}>
-        <Icon type='MaterialIcons' name ='edit'/>
+        onPress={() => { this.timePickerVisible(true); }}>
+        <Icon type='MaterialIcons' name='edit' />
       </Fab>
     );
   }
 
-  _handleDatePicked = (date) => {
-    this.setState({changeDay: date});
-    this.setState({isDateTimePickerVisible: false});
+
+  _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
+
+  _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
+
+  showEndDateTimePicker = (date) => {
+    this.setState({
+      endDateTimePickerVisible: true,
+      changeDay: date
+    })
   };
 
+  hideEndDateTimePicker = () => this.setState({ endDateTimePickerVisible: false });
 
-    _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
+  timePicker() {
+    return (
+      <DateTimePicker
+        isVisible={this.state.isDateTimePickerVisible}
+        onConfirm={(date) => this.showEndDateTimePicker(date)}
+        onCancel={this._hideDateTimePicker}
+        mode='datetime'
+        style={{ backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b' }}
+      />
+    );
+  }
 
-    _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
-
-    showEndDateTimePicker = () => this.setState({ endDateTimePickerVisible: true });
-
-    hideEndDateTimePicker = () => this.setState({ endDateTimePickerVisible: false });
-
-
-    handleEndDatePicked = (date) => {
-      this.setState({finalDateString: date});
-      this.hideEndDateTimePicker();
-    };   
-
-
-    timePicker() {
-      return (
-        <DateTimePicker
-          isVisible={this.state.isDateTimePickerVisible}
-          onConfirm={() => {this.showEndDateTimePicker()}}
-          onCancel={this._hideDateTimePicker}
-          mode= 'datetime'
-          style={{backgroundColor: '#5f4b8b' ,borderColor: '#5f4b8b',underlayColor: '#5f4b8b'}}
-        />
-      );
-    }
-
-    finalPicker(){
-      return (
-        <DateTimePicker
-          isVisible={this.state.endDateTimePickerVisible}
-          onConfirm={() => {this.alert_Selfchange()}}
-          onCancel={() => {this.timePickerVisible(false),this.hideEndDateTimePicker()}}
-          mode= 'time'
-          style={{backgroundColor: '#5f4b8b' ,borderColor: '#5f4b8b',underlayColor: '#5f4b8b'}}
-        />
-      );
-    }
+  finalPicker() {
+    return (
+      <DateTimePicker
+        isVisible={this.state.endDateTimePickerVisible}
+        onConfirm={(date) => this.alert_Selfchange(date)}
+        onCancel={() => { this.timePickerVisible(false), this.hideEndDateTimePicker() }}
+        mode='time'
+        style={{ backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b' }}
+      />
+    );
+  }
 
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
       var date = new Date(cur.date);
       var format = (date.getFullYear() + '-' +
-        (date.getMonth()).toString().padStart(2,0) + '-' +
-        (date.getDate()).toString().padStart(2,0));
+        (date.getMonth()).toString().padStart(2, 0) + '-' +
+        (date.getDate()).toString().padStart(2, 0));
 
       if (!acc[format]) {
         acc[format] = [];
@@ -158,89 +153,92 @@ export default class WeekSchedule extends Component {
       acc[format].push(cur);
       return acc;
     }, {});
-    this.setState({items: newObj});
+    this.setState({ items: newObj });
   }
 
-//Função para criar itens para o mês inteiro
-    loadItems(day) {
-      setTimeout(() => {
-        for (let i = -15; i < 85; i++) {
-          const time = day.timestamp + i * 24 * 60 * 60 * 1000;
-          const strTime = this.timeToString(time);
-          if (!this.state.items[strTime]) {
-            this.state.items[strTime] = [];
-          }
+  //Função para criar itens para o mês inteiro
+  loadItems(day) {
+    setTimeout(() => {
+      for (let i = -15; i < 85; i++) {
+        const time = day.timestamp + i * 24 * 60 * 60 * 1000;
+        const strTime = this.timeToString(time);
+        if (!this.state.items[strTime]) {
+          this.state.items[strTime] = [];
         }
-        const newItems = {};
-        Object.keys(this.state.items).forEach(key => {newItems[key] = this.state.items[key];});
-        this.setState({
-          items: newItems
-        });
-      }, 1000);
-    }
+      }
+      const newItems = {};
+      Object.keys(this.state.items).forEach(key => { newItems[key] = this.state.items[key]; });
+      this.setState({
+        items: newItems
+      });
+    }, 1000);
+  }
 
-    requestChange() {
-      this.hideEndDateTimePicker();
-      this.timePickerVisible(false);
-      this.setModalVisible(false);
-      Alert.alert(
-        'Pedido de Alteração',
-        'Solicitação de alteração de horário feita com sucesso!'
-      );
-    }
+  requestChange() {
+    this.hideEndDateTimePicker();
+    this.timePickerVisible(false);
+    this.setModalVisible(false);
+    Alert.alert(
+      'Pedido de Alteração',
+      'Solicitação de alteração de horário feita com sucesso!'
+    );
+  }
 
   _alert(employee) {
-    this.setState({currentSchedule: employee});
+    this.setState({ currentSchedule: employee });
     Alert.alert(
       'Mudar de Horário',
       'Deseja solicitar mudança de horário?',
       [
-        {text: 'Não', onPress: () => {}},
-        {text: 'Sim', onPress: () => { this.setModalVisible(true); }}
+        { text: 'Não', onPress: () => { } },
+        { text: 'Sim', onPress: () => { this.setModalVisible(true); } }
       ],
-      {cancelable: true}
+      { cancelable: true }
     );
   }
 
-  alert_change(employee) {
-      Alert.alert(
-        'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
-        [
-          {text: 'Não', onPress: () => { }},
-          {text: 'Sim', onPress: () => {this.requestChange();}}
-        ],
-        {cancelable: true}
-      );
+  alert_change() {
+   
+
+    Alert.alert(
+      'Mudar de Horário',
+      this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
+      this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
+      [
+        { text: 'Não', onPress: () => { } },
+        { text: 'Sim', onPress: () => { this.requestChange(); } }
+      ],
+      { cancelable: true }
+    );
   }
 
-  alert_Selfchange() {
-    if(!this.state.finalDateString){   
-      this.setState({finalDateString: new Date()});
-    
-      }
-     
-    console.log('c',this.state.changeDay);
-    console.log('f',this.state.finalDateString)
+  alert_Selfchange(date) {
+    this.setState({ finalDateString: date })
+    if (!this.state.finalDateString) {
+      this.setState({ finalDateString: new Date() });
 
-      Alert.alert(
-        'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth()+1)  +'/'+ this.state.changeDay.getDate() +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' +  this.state.finalDateString.getHours() + ':' + this.state.finalDateString.getMinutes(),
-        [
-          {text: 'Não', onPress: () => {this.handleEndDatePicked(),this.timePickerVisible(false)}},
-          {text: 'Sim', onPress: () => {this.requestChange();}}
-        ],
-        {cancelable: true}
-      );
+    }
+
+    console.log('c', this.state.changeDay);
+    console.log('f', this.state.finalDateString)
+
+    Alert.alert(
+      'Mudar de Horário',
+      this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
+      this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth() + 1) + '/' + this.state.changeDay.getDate() + '/' + this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' + this.state.finalDateString.getHours() + ':' + this.state.finalDateString.getMinutes(),
+      [
+        { text: 'Não', onPress: () => { this.handleEndDatePicked(), this.timePickerVisible(false) } },
+        { text: 'Sim', onPress: () => { this.requestChange(); } }
+      ],
+      { cancelable: true }
+    );
   }
 
   renderItem(item) {
     return (
       <ScheduleItem
         item={item}
-        onPress={() => {this._alert(item);}}
+        onPress={() => { this._alert(item); }}
       />
     );
   }
@@ -259,10 +257,10 @@ export default class WeekSchedule extends Component {
   renderModal() {
     return (
       <View>
-        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
-          <View style={{flex: 1}} >
-            <Text style={{margin: 5, alignSelf: 'center',fontSize: 15}}>Selecione o Horário que Deseja solicitar troca</Text>
-            <View style={{flex: 1}}>
+        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{ backgroundColor: 'white' }} onBackdropPress={() => { this.setModalVisible(false); }}>
+          <View style={{ flex: 1 }} >
+            <Text style={{ margin: 5, alignSelf: 'center', fontSize: 15 }}>Selecione o Horário que Deseja solicitar troca</Text>
+            <View style={{ flex: 1 }}>
               {this.renderAgenda(this.renderChangeItem)}
               {this.fab()}
             </View>
@@ -275,9 +273,9 @@ export default class WeekSchedule extends Component {
 
   cancelChange() {
     return (
-      <TouchableHighlight onPress={() => {this.setModalVisible(false);}} style={{backgroundColor: '#5f4b8b'}}>
-        <Text style={{margin: 5, alignSelf: 'center',fontSize: 18,color: 'white'}}>
-      Cancelar
+      <TouchableHighlight onPress={() => { this.setModalVisible(false); }} style={{ backgroundColor: '#5f4b8b' }}>
+        <Text style={{ margin: 5, alignSelf: 'center', fontSize: 18, color: 'white' }}>
+          Cancelar
         </Text>
       </TouchableHighlight>
     );
@@ -286,15 +284,15 @@ export default class WeekSchedule extends Component {
   renderAgenda(item) {
     return (
       <Agenda
-        style={{flex: 1}}
+        style={{ flex: 1 }}
         items={this.state.items}
         loadItemsForMonth={this.loadItems.bind(this)}
         selected={this.state.selectedDay}
         renderItem={item.bind(this)}
         renderEmptyDate={this.renderEmptyDate.bind(this)}
         rowHasChanged={this.rowHasChanged.bind(this)}
-        onDayChange={(day)=>{this.setState({dateString: day})}}
-        onDayPress={(day)=>{this.setState({dateString: day})}}
+        onDayChange={(day) => { this.setState({ dateString: day }) }}
+        onDayPress={(day) => { this.setState({ dateString: day }) }}
         theme={{
           calendarBackground: '#ffffff',
           agendaKnobColor: '#5f4b8b',
@@ -321,10 +319,10 @@ export default class WeekSchedule extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
-      <ScreenHeader
-        title='Escalas'
-      />
+      <View style={{ flex: 1 }}>
+        <ScreenHeader
+          title='Escalas'
+        />
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}
         {this.timePicker()}
