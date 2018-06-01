@@ -131,9 +131,9 @@ export default class WeekSchedule extends Component {
       <DateTimePicker
         isVisible={this.state.endDateTimePickerVisible}
         onConfirm={(date) => this.alert_Selfchange(date)}
-        onCancel={() => { this.timePickerVisible(false),this.hideEndDateTimePicker();}}
+        onCancel={() => this.timePickerVisible(false),this.hideEndDateTimePicker()}
         mode='time'
-        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b' }}
+        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}
       />
     );
   }
@@ -200,8 +200,11 @@ export default class WeekSchedule extends Component {
 
       Alert.alert(
         'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
+        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' +
+        this.state.selectedSchedule.employee + '?\n\n ' +
+        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date +
+        '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time +
+        '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
         [
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
@@ -224,9 +227,17 @@ export default class WeekSchedule extends Component {
     Alert.alert(
       'Mudar de Horário',
       this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
-      this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' + (this.state.changeDay.getDate()).toString().padStart(2,0) + '/' + this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + (this.state.changeDay.getHours()).toString().padStart(2 , 0) + ':' + (this.state.changeDay.getMinutes()).toString().padStart(2,0) + ' - ' + (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' + (this.state.finalDateString.getMinutes()).toString().padStart(2,0),
+      this.state.currentSchedule.date + '    ->   ' +
+      (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' +
+      (this.state.changeDay.getDate()).toString().padStart(2,0) + '/' +
+      this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time +
+       ' - ' + this.state.currentSchedule.end_time + '  ->  ' +
+      (this.state.changeDay.getHours()).toString().padStart(2 , 0) + ':' +
+      (this.state.changeDay.getMinutes()).toString().padStart(2,0) + ' - ' +
+      (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' +
+      (this.state.finalDateString.getMinutes()).toString().padStart(2,0),
       [
-        {text: 'Não', onPress: () => { this.timePickerVisible(false),this.hideEndDateTimePicker();}},
+        {text: 'Não', onPress: () => {this.timePickerVisible(false),this.hideEndDateTimePicker()}},
         {text: 'Sim', onPress: () => { this.requestChange(); }}
       ],
       {cancelable: true}
@@ -252,14 +263,15 @@ export default class WeekSchedule extends Component {
     );
   }
 
-
   renderModal() {
     return (
       <View>
-        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2} style={{ backgroundColor: 'white' }} onBackdropPress={() => { this.setModalVisible(false); }}>
-          <View style={{ flex: 1 }} >
-            <Text style={{ margin: 5, alignSelf: 'center', fontSize: 15 }}>Selecione o Horário que Deseja solicitar troca</Text>
-            <View style={{ flex: 1 }}>
+        <Modal isVisible={this.state.modalVisible} backdropOpacity={0.2}
+          style={{backgroundColor: 'white'}} onBackdropPress={() => { this.setModalVisible(false); }}>
+          <View style={{flex: 1}} >
+            <Text style={{margin: 5, alignSelf: 'center', fontSize: 15}}>
+            Selecione o Horário que Deseja solicitar troca</Text>
+            <View style={{flex: 1}}>
               {this.renderAgenda(this.renderChangeItem)}
               {this.fab()}
             </View>
@@ -272,8 +284,9 @@ export default class WeekSchedule extends Component {
 
   cancelChange() {
     return (
-      <TouchableHighlight onPress={() => { this.setModalVisible(false); }} style={{ backgroundColor: '#5f4b8b' }}>
-        <Text style={{ margin: 5, alignSelf: 'center', fontSize: 18, color: 'white' }}>
+      <TouchableHighlight onPress={() => { this.setModalVisible(false); }}
+        style={{backgroundColor: '#5f4b8b'}}>
+        <Text style={{margin: 5, alignSelf: 'center', fontSize: 18, color: 'white'}}>
           Cancelar
         </Text>
       </TouchableHighlight>
@@ -283,15 +296,15 @@ export default class WeekSchedule extends Component {
   renderAgenda(item) {
     return (
       <Agenda
-        style={{ flex: 1 }}
+        style={{flex: 1}}
         items={this.state.items}
         loadItemsForMonth={this.loadItems.bind(this)}
         selected={this.state.selectedDay}
         renderItem={item.bind(this)}
         renderEmptyDate={this.renderEmptyDate.bind(this)}
         rowHasChanged={this.rowHasChanged.bind(this)}
-        onDayChange={(day) => { this.setState({ dateString: day }) }}
-        onDayPress={(day) => { this.setState({ dateString: day }) }}
+        onDayChange={(day) => { this.setState({dateString: day});}}
+        onDayPress={(day) => { this.setState({dateString: day});}}
         theme={{
           calendarBackground: '#ffffff',
           agendaKnobColor: '#5f4b8b',
@@ -318,7 +331,7 @@ export default class WeekSchedule extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{flex: 1}}>
         <ScreenHeader
           title='Escalas'
         />
