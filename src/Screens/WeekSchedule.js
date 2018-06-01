@@ -48,7 +48,7 @@ export default class WeekSchedule extends Component {
       itemDate: [] ,
       changeDay: new Date(),
       dateString: {},
-      finaldateString: new Date()
+      finalDateString: new Date()
     };
   }
 
@@ -116,7 +116,7 @@ export default class WeekSchedule extends Component {
 
 
     handleEndDatePicked = (date) => {
-      this.setState({finaldateString: date});
+      this.setState({finalDateString: date});
       this.hideEndDateTimePicker();
     };   
 
@@ -180,6 +180,7 @@ export default class WeekSchedule extends Component {
     }
 
     requestChange() {
+      this.hideEndDateTimePicker();
       this.timePickerVisible(false);
       this.setModalVisible(false);
       Alert.alert(
@@ -202,8 +203,6 @@ export default class WeekSchedule extends Component {
   }
 
   alert_change(employee) {
-    this.setState({selectedSchedule: employee}, () => {
-
       Alert.alert(
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' + this.state.selectedSchedule.employee + '?\n\n ' +
@@ -214,23 +213,27 @@ export default class WeekSchedule extends Component {
         ],
         {cancelable: true}
       );
-    });
   }
 
-  alert_Selfchange(schedule) {
-    this.setState({selectedSchedule: schedule}, () => {
+  alert_Selfchange() {
+    if(!this.state.finalDateString){   
+      this.setState({finalDateString: new Date()});
+    
+      }
+     
+    console.log('c',this.state.changeDay);
+    console.log('f',this.state.finalDateString)
 
       Alert.alert(
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth()+1)  +'/'+ this.state.changeDay.getDate() +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' +  this.state.finaldateString.getHours() + ':' + this.state.finaldateString.getMinutes(),
+        this.state.currentSchedule.date + '    ->   ' + (this.state.changeDay.getMonth()+1)  +'/'+ this.state.changeDay.getDate() +'/'+ this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time + '  ->  ' + this.state.changeDay.getHours() + ':' + this.state.changeDay.getMinutes() + ' - ' +  this.state.finalDateString.getHours() + ':' + this.state.finalDateString.getMinutes(),
         [
-          {text: 'Não', onPress: () => {this.handleEndDatePicked}},
+          {text: 'Não', onPress: () => {this.handleEndDatePicked(),this.timePickerVisible(false)}},
           {text: 'Sim', onPress: () => {this.requestChange();}}
         ],
         {cancelable: true}
       );
-    });
   }
 
   renderItem(item) {
