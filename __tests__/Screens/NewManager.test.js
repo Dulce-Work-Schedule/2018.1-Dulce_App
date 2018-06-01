@@ -65,6 +65,19 @@ test('name field error' , () => {
   expect(fieldText).toBe('The field \"name\" is mandatory.');
 });
 
+test('registration field error' , () => {
+  const wrapper = shallow(<NewManager />);
+
+  wrapper.setState({regitration: ''});
+  wrapper.instance()._onPressButton();
+  wrapper.setProps({});
+
+  const registrationFieldError = wrapper.find('Text').at(1);
+  const fieldText = registrationFieldError.dive().text();
+
+  expect(fieldText).toBe('The field \"registration\" is mandatory.');
+});
+
 test('change hospital file',() => {
   const wrapper = shallow(<NewManager />);
 
@@ -72,7 +85,7 @@ test('change hospital file',() => {
   wrapper.instance()._onPressButton();
   wrapper.setProps({});
 
-  const hospitalFieldError = wrapper.find('Text').at(1);
+  const hospitalFieldError = wrapper.find('Text').at(2);
   const fieldText = hospitalFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"hospital\" is mandatory.');
@@ -85,34 +98,47 @@ test('change sector file',() => {
   wrapper.instance()._onPressButton();
   wrapper.setProps({});
 
-  const sectorFieldError = wrapper.find('Text').at(2);
+  const sectorFieldError = wrapper.find('Text').at(3);
   const fieldText = sectorFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"sector\" is mandatory.');
 });
 
-test('change password file',() => {
+test('change password file length',() => {
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({password: ''});
   wrapper.instance()._onPressButton();
   wrapper.setProps({});
 
-  const passwordFieldError = wrapper.find('Text').at(3);
+  const passwordFieldError = wrapper.find('Text').at(4);
   const fieldText = passwordFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"password\" length must be greater than 4.');
 });
 
-test('change confirmepassword file',() => {
+test('change password file',() => {
   const wrapper = shallow(<NewManager />);
 
   wrapper.setState({confirmepassword: ''});
   wrapper.instance()._onPressButton();
   wrapper.setProps({});
 
-  const confirmepasswordFieldError = wrapper.find('Text').at(4);
+  const confirmepasswordFieldError = wrapper.find('Text').at(5);
   const fieldText = confirmepasswordFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"password\" is mandatory.');
+});
+
+test('confirm password error' , () => {
+  const wrapper = shallow(<NewManager />);
+
+  wrapper.setState({confirmepassword: ''});
+  wrapper.instance()._onPressButton();
+  wrapper.setProps({});
+
+  const confirmepasswordFieldError = wrapper.find('Text').at(6);
+  const fieldText = confirmepasswordFieldError.dive().text();
+
+  expect(fieldText).toBe('The field \"confirmepassword\" is mandatory.');
 });

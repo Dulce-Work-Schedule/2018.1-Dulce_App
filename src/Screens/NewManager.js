@@ -56,6 +56,7 @@ export default class NewManager extends ValidationComponent {
   _onPressButton() {
     if (this.validate({
       name: {required: true},
+      registration: {required: true},
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true},

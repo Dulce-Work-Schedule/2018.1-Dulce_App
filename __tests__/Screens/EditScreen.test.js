@@ -45,8 +45,8 @@ test('name field error' , () => {
   wrapper.instance()._onPressButton();
   wrapper.setProps({});
 
-  const hospitalFieldError = wrapper.find('Text').at(0);
-  const fieldText = hospitalFieldError.dive().text();
+  const nameFieldError = wrapper.find('Text').at(0);
+  const fieldText = nameFieldError.dive().text();
 
   expect(fieldText).toBe('The field \"name\" is mandatory.');
 });
