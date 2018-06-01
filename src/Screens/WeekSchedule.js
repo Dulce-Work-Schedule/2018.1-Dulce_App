@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  TouchableHighlight,
-  Alert
-} from 'react-native';
+import {Text,View,StyleSheet,TouchableHighlight,Alert} from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
 import axios from 'axios';
@@ -14,7 +8,6 @@ import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
 import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-
 const styles = StyleSheet.create({
   item: {
     backgroundColor: 'white',
@@ -53,7 +46,6 @@ export default class WeekSchedule extends Component {
 
   componentDidMount() {
     const url = 'http://172.18.0.1:8091/api/schedule/listYear';
-
     axios.get(url, {
       headers: {
         'x-access-token': store.getState().currentUser.token
@@ -66,17 +58,13 @@ export default class WeekSchedule extends Component {
         if (response.data === []) {
           Alert.alert(
             'Erro',
-            'Não há horários criados!'
-          );
-        }
+            'Não há horários criados!');}
       })
       .catch(() => {
         Alert.alert(
           'Erro',
-          'Verifique sua conexão.'
-        );
+          'Verifique sua conexão.');
       });
-
   }
 
   setModalVisible(visible) {
@@ -97,8 +85,7 @@ export default class WeekSchedule extends Component {
         position='bottomRight'
         onPress={() => { this.timePickerVisible(true); }}>
         <Icon type='MaterialIcons' name='edit' />
-      </Fab>
-    );
+      </Fab>);
   }
 
   _showDateTimePicker = () => this.setState({isDateTimePickerVisible: true});
@@ -108,8 +95,7 @@ export default class WeekSchedule extends Component {
   showEndDateTimePicker = (date) => {
     this.setState({
       endDateTimePickerVisible: true,
-      changeDay: date
-    });
+      changeDay: date});
   };
 
   hideEndDateTimePicker = () => this.setState({endDateTimePickerVisible: false});
@@ -121,9 +107,7 @@ export default class WeekSchedule extends Component {
         onConfirm={(date) => this.showEndDateTimePicker(date)}
         onCancel={this._hideDateTimePicker}
         mode='datetime'
-        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}
-      />
-    );
+        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}/>);
   }
 
   finalPicker() {
@@ -131,20 +115,16 @@ export default class WeekSchedule extends Component {
       <DateTimePicker
         isVisible={this.state.endDateTimePickerVisible}
         onConfirm={(date) => this.alert_Selfchange(date)}
-        onCancel={() => this.timePickerVisible(false),this.hideEndDateTimePicker()}
+        onCancel={() => {this.timePickerVisible(false);this.hideEndDateTimePicker();}}
         mode='time'
-        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}
-      />
-    );
+        style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}/>);
   }
-
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
       var date = new Date(cur.date);
       var format = (date.getFullYear() + '-' +
         (date.getMonth()).toString().padStart(2, 0) + '-' +
         (date.getDate()).toString().padStart(2, 0));
-
       if (!acc[format]) {
         acc[format] = [];
       }
@@ -153,7 +133,6 @@ export default class WeekSchedule extends Component {
     }, {});
     this.setState({items: newObj});
   }
-
   //Função para criar itens para o mês inteiro
   loadItems(day) {
     setTimeout(() => {
@@ -178,8 +157,7 @@ export default class WeekSchedule extends Component {
     this.setModalVisible(false);
     Alert.alert(
       'Pedido de Alteração',
-      'Solicitação de alteração de horário feita com sucesso!'
-    );
+      'Solicitação de alteração de horário feita com sucesso!');
   }
 
   _alert(employee) {
@@ -191,13 +169,11 @@ export default class WeekSchedule extends Component {
         {text: 'Não', onPress: () => { }},
         {text: 'Sim', onPress: () => { this.setModalVisible(true); }}
       ],
-      {cancelable: true}
-    );
+      {cancelable: true});
   }
 
   alert_change(employee) {
     this.setState({selectedSchedule: employee}, () => {
-
       Alert.alert(
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' +
@@ -209,18 +185,14 @@ export default class WeekSchedule extends Component {
           {text: 'Não', onPress: () => { }},
           {text: 'Sim', onPress: () => {this.requestChange();}}
         ],
-        {cancelable: true}
-      );
-    });
+        {cancelable: true});});
   }
 
   alert_Selfchange(date) {
     this.setState({finalDateString: date});
     if (!this.state.finalDateString) {
       this.setState({finalDateString: new Date()});
-
     }
-
     console.log('c', this.state.changeDay);
     console.log('f', this.state.finalDateString);
 
@@ -237,32 +209,25 @@ export default class WeekSchedule extends Component {
       (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' +
       (this.state.finalDateString.getMinutes()).toString().padStart(2,0),
       [
-        {text: 'Não', onPress: () => {this.timePickerVisible(false),this.hideEndDateTimePicker()}},
-        {text: 'Sim', onPress: () => { this.requestChange(); }}
+        {text: 'Não', onPress: () => {this.timePickerVisible(false);this.hideEndDateTimePicker();}},
+        {text: 'Sim', onPress: () => {this.requestChange(); }}
       ],
-      {cancelable: true}
-    );
+      {cancelable: true});
   }
 
   renderItem(item) {
     return (
       <ScheduleItem
         item={item}
-        onPress={() => { this._alert(item); }}
-      />
-    );
+        onPress={() => { this._alert(item); }}/>);
   }
-
   renderChangeItem(item) {
     console.log(item);
     return (
       <ScheduleItem
         onPress={() => { this.alert_change(item); }}
-        item={item}
-      />
-    );
+        item={item}/>);
   }
-
   renderModal() {
     return (
       <View>
@@ -278,10 +243,8 @@ export default class WeekSchedule extends Component {
             {this.cancelChange()}
           </View>
         </Modal>
-      </View>
-    );
+      </View>);
   }
-
   cancelChange() {
     return (
       <TouchableHighlight onPress={() => { this.setModalVisible(false); }}
@@ -289,10 +252,8 @@ export default class WeekSchedule extends Component {
         <Text style={{margin: 5, alignSelf: 'center', fontSize: 18, color: 'white'}}>
           Cancelar
         </Text>
-      </TouchableHighlight>
-    );
+      </TouchableHighlight>);
   }
-
   renderAgenda(item) {
     return (
       <Agenda
@@ -308,22 +269,15 @@ export default class WeekSchedule extends Component {
         theme={{
           calendarBackground: '#ffffff',
           agendaKnobColor: '#5f4b8b',
-          selectedDayBackgroundColor: '#5f4b8b'
-        }}
-      />
-    );
+          selectedDayBackgroundColor: '#5f4b8b'}}/>);
   }
-
   renderEmptyDate() {
     return (
-      <View style={styles.emptyDate}><Text>Nenhuma escala neste dia!</Text></View>
-    );
+      <View style={styles.emptyDate}><Text>Nenhuma escala neste dia!</Text></View>);
   }
-
   rowHasChanged(r1, r2) {
     return r1.name !== r2.name;
   }
-
   timeToString(time) {
     const date = new Date(time);
     return date.toISOString().split('T')[0];
@@ -339,7 +293,5 @@ export default class WeekSchedule extends Component {
         {this.renderModal()}
         {this.timePicker()}
         {this.finalPicker()}
-      </View>
-    );
-  }
+      </View>);}
 }
