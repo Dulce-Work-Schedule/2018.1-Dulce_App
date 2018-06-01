@@ -42,7 +42,7 @@ test('render data',() => {
 
 const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 
-it('UserList snapshot test', async () => {
+it('testing axios', async () => {
   const wrapper = shallow(<EmployeeProfileScreen />);
   await flushPromises();
   wrapper.update();

@@ -98,3 +98,12 @@ test('save button', () => {
   saveButton.simulate('press');
   expect(onSaveMock).toBeCalled();
 });
+
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('testing axios', async () => {
+  const wrapper = shallow(<EditScreen />);
+  await flushPromises();
+  wrapper.update();
+  expect(wrapper).toMatchSnapshot();
+});
