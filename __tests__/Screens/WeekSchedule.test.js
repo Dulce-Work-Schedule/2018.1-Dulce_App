@@ -26,11 +26,17 @@ test('renders correctly' , () => {
   expect(tree).toMatchSnapshot();
 });
 
-mock.onGet('/api/schedule/listMonth').reply(200,{
-  items: [{employee: '160119316',start_time: '13:00',end_time: '19:00',amount_of_hours: '06'}]
+test('axios schedule request', async () => {
+
+  const response = {
+    employee: 'employee',
+    start_time: '1:00',
+    end_time: '1:00',
+    amount_of_hours: '12'
+  };
+
+  mock.onGet('http://172.18.0.1:8091/api/schedule/listYear')
+  .reply(200,{response});
+
 });
 
-axios.get('/api/schedule/listMonth')
-.then(function axios_function(response) {
-  console.log(response.data);
-});
