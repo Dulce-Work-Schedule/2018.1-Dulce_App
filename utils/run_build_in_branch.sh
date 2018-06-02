@@ -1,10 +1,16 @@
 #!/bin/bash
 if [ -z $1 ]; then
 	echo "USAGE: $0 BRANCH"
-	exit 1;
 elif [ "$1" = "$TRAVIS_BRANCH" ]; then
-	exit 0;
+	if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+		repo=$(git rev-parse --show-toplevel) && \
+		git checkout -qf master
+		echo "Estamos num TRAVIS_PULL_REQUEST? a resposta é @$TRAVIS_PULL_REQUEST@"
+		${repo}/utils/run_deploy.sh beta && exit 0;
+	else
+		echo "Não estamos num TRAVIS_PULL_REQUEST? a resposta é @$TRAVIS_PULL_REQUEST@"
+	fi
 else
 		echo "Branch $TRAVIS_BRANCH is different of the branch $1..."
-		exit 1;
 fi
+exit 1;
