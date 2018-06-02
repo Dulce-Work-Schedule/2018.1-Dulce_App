@@ -44,13 +44,19 @@ test('change sector file ', () => {
   expect(wrapper.state('sector')).toBe('text');
 });
 
-test('change confirme password file',() => {
+test('change password file',() => {
   const wrapper = shallow(<NewManager/>);
-  const confirmePasswordField = wrapper.find('AGRInput').at(4);
-  confirmePasswordField.simulate('changeText','');
-  expect(wrapper.state('confirmepassword')).toBe('');
+  const passwordField = wrapper.find('AGRInput').at(4);
+  passwordField.simulate('changeText','text');
+  expect(wrapper.state('password')).toBe('text');
 });
 
+test('change confirme password file',() => {
+  const wrapper = shallow(<NewManager/>);
+  const confirmePasswordField = wrapper.find('AGRInput').at(5);
+  confirmePasswordField.simulate('changeText','text');
+  expect(wrapper.state('confirmepassword')).toBe('text');
+});
 
 test('name field error' , () => {
   const wrapper = shallow(<NewManager />);
