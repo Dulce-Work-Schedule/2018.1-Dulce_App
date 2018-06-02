@@ -7,7 +7,8 @@ else
 	tag_latest="$(version=$(curl -s ${tags_url} | grep \"name\" | cut -f 2 -d':' | cut -f 2 -d'"'); echo $version | cut -f 1 -d' ')"
 	if [ "$tag_latest" = "$1" ];
 	then
-		exit 0;
+		repo=$(git rev-parse --show-toplevel) && \
+		${repo}/utils/run_deploy.sh production && exit 0
 	else
 		echo "Tag $1 is different of the Latest tag ${tag_latest}..."
 		exit 1;
