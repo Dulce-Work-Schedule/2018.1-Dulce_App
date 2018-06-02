@@ -81,14 +81,6 @@ export default class NewManager extends ValidationComponent {
       });
   }
 
-  confirmepasswordErrado() {
-    if (this.state.confirmepassword !== this.state.password) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   render() {
     return (
       <View style={styles.container}>

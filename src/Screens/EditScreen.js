@@ -60,10 +60,10 @@ export default class EditScreen extends ValidationComponent {
     })
       .then((response) => {this.setState({collaborator: response.data,loading: false});
         this.setState({
-          name: this.state.collaborator.name,
-          registration: this.state.collaborator.registration,
-          hospital: this.state.collaborator.hospital,
-          sector: this.state.collaborator.sector
+          name: this.state.name,
+          registration: this.state.registration,
+          hospital: this.state.hospital,
+          sector: this.state.sector
         });
 
       });
