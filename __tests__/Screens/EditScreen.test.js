@@ -107,21 +107,3 @@ it('testing axios', async () => {
   wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
-
-
-//Edit Screen não funciona, logo o teste tamem não.
-//
-// it('Should call save function', async() => {
-//   const spy = jest.spyOn(EditScreen.prototype, 'save');
-//   const wrapper = shallow(<EditScreen />);
-//   wrapper.setState({name: 'Update User Test'});
-//   wrapper.setState({registration: '123456'});
-//   wrapper.setState({password: '123456'});
-//   wrapper.setState({hospital: 'Axios Post Medical Center'});
-//   wrapper.setState({sector: 'Testing'});
-//   await flushPromises();
-//   wrapper.update();
-//   const saveButton = wrapper.find('AGRButton').at(0);
-//   saveButton.simulate('press');
-//   expect(spy).toHaveBeenCalled();
-// });

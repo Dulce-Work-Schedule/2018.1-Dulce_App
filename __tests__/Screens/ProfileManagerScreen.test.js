@@ -1,4 +1,3 @@
-
 import React from 'react';
 import 'react-native';
 import ProfileManagerScreen from '../../src/Screens/ProfileManagerScreen';

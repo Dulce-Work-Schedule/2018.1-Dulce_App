@@ -1,14 +1,11 @@
 import React from 'react';
 import {LoginScreen} from '../../src/Screens/LoginScreen';
-// import {AGRButton} from '../../src/Components/AGRButton';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 import {Alert} from 'react-native';
 import expect from 'expect';
-// import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
 
 require('bezier');
 
@@ -77,19 +74,3 @@ it('Should call login function', async() => {
   enterButton.simulate('press');
   expect(spy).toHaveBeenCalled();
 });
-
-//FAZER COM POST
-//
-// const flushPromises = () => new Promise(resolve => setImmediate(resolve));
-//
-// it('Should change screen when Enter button is pressed', async() => {
-//   const login = jest.fn();
-//   const wrapper = shallow(<LoginScreen />);
-//   await flushPromises();
-//   wrapper.update();
-//   wrapper.setState({registration: '123456'});
-//   wrapper.setState({password: '123456'});
-//   const registerButton = wrapper.find('AGRButton').at(0);
-//   registerButton.simulate('press');
-//   expect(login.mock.calls.length).toBe(1);
-// });
