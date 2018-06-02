@@ -142,3 +142,21 @@ test('confirm password error' , () => {
 
   expect(fieldText).toBe('The field \"confirmepassword\" is mandatory.');
 });
+
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('Should call newManager function', async() => {
+  const spy = jest.spyOn(NewManager.prototype, 'newManager');
+  const wrapper = shallow(<NewManager />);
+  wrapper.setState({name: 'New User Test'});
+  wrapper.setState({registration: '123456789'});
+  wrapper.setState({password: '123456'});
+  wrapper.setState({confirmepassword: '123456'});
+  wrapper.setState({hospital: 'Axios Post Medical Center'});
+  wrapper.setState({sector: 'Testing'});
+  await flushPromises();
+  wrapper.update();
+  const saveButton = wrapper.find('AGRButton').at(0);
+  saveButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});

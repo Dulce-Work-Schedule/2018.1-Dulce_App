@@ -64,17 +64,18 @@ test('test alert empty regitration', () => {
   expect(Alert.alert).toHaveBeenCalled();
 });
 
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 
-it('Should return data from response', () => {
-  let mockAdapter = new MockAdapter();
-  mockAdapter.onPost('http://localhost:8086/api/userManager/login').reply(200);
-  const login = jest.fn();
+it('Should call login function', async() => {
+  const spy = jest.spyOn(LoginScreen.prototype, 'login');
   const wrapper = shallow(<LoginScreen />);
   wrapper.setState({registration: '123456'});
   wrapper.setState({password: '123456'});
-  const registerButton = wrapper.find('AGRButton').at(0);
-  registerButton.simulate('press');
-  expect(login.mock.calls.length).toBe(1);
+  await flushPromises();
+  wrapper.update();
+  const enterButton = wrapper.find('AGRButton').at(0);
+  enterButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
 });
 
 //FAZER COM POST
