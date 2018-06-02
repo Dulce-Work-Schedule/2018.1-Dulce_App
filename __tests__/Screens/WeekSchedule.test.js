@@ -38,5 +38,5 @@ test('axios schedule request', async () => {
   mock.onGet('http://172.18.0.1:8091/api/schedule/listYear')
   .reply(200,{response});
 
-})
+});
 

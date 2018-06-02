@@ -100,7 +100,7 @@ export default class WeekSchedule extends Component {
       <DateTimePicker
         isVisible={this.state.isDateTimePickerVisible}
         onConfirm={(date) => this.showEndDateTimePicker(date)}
-        onCancel={() => {this.timePickerVisible(false)}}
+        onCancel={() => {this.timePickerVisible(false);}}
         mode='datetime'
         style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}/>);
   }
