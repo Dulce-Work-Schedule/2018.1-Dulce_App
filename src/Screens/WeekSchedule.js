@@ -87,10 +87,6 @@ export default class WeekSchedule extends Component {
       </Fab>);
   }
 
-  _showDateTimePicker = () => this.setState({isDateTimePickerVisible: true});
-
-  _hideDateTimePicker = () => this.setState({isDateTimePickerVisible: false});
-
   showEndDateTimePicker = (date) => {
     this.setState({
       endDateTimePickerVisible: true,
@@ -104,7 +100,7 @@ export default class WeekSchedule extends Component {
       <DateTimePicker
         isVisible={this.state.isDateTimePickerVisible}
         onConfirm={(date) => this.showEndDateTimePicker(date)}
-        onCancel={this._hideDateTimePicker}
+        onCancel={() => {this.timePickerVisible(false)}}
         mode='datetime'
         style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}/>);
   }
