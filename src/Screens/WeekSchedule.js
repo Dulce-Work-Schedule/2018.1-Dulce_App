@@ -52,7 +52,6 @@ export default class WeekSchedule extends Component {
       }
     })
       .then((response) => {
-        console.log(response.data);
         this.setState({itemDate: response.data, loading: false});
         this.arrayToObject();
         if (response.data === []) {
@@ -193,8 +192,6 @@ export default class WeekSchedule extends Component {
     if (!this.state.finalDateString) {
       this.setState({finalDateString: new Date()});
     }
-    console.log('c', this.state.changeDay);
-    console.log('f', this.state.finalDateString);
 
     Alert.alert(
       'Mudar de Horário',
@@ -222,7 +219,6 @@ export default class WeekSchedule extends Component {
         onPress={() => { this._alert(item); }}/>);
   }
   renderChangeItem(item) {
-    console.log(item);
     return (
       <ScheduleItem
         onPress={() => { this.alert_change(item); }}
