@@ -51,3 +51,38 @@ it('testing axios', async () => {
   wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
+
+it('should test rowHasChanged correctly', () => {
+  // This is to test component functions
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(true)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.rowHasChanged(1,2);
+});
+
+it('should test timeToString correctly', () => {
+  // This is to test component functions
+  const date_string = '06/03/2018 08:00';
+  const retrun_string = '2018-06-03';
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(retrun_string)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.timeToString(date_string);
+});
