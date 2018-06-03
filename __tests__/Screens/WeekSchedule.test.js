@@ -1,10 +1,10 @@
-
 import React from 'react';
 import renderer from 'react-test-renderer';
 import WeekSchedule from '../../src/Screens/WeekSchedule';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
+import {View} from 'react-native';
 // import axios from 'axios';
 // import MockAdapter from 'axios-mock-adapter';
 
@@ -66,6 +66,22 @@ it('should test rowHasChanged correctly', () => {
     .getInstance();
 
   weekSchedule.rowHasChanged(1,2);
+});
+
+it('should test renderEmptyDate correctly', () => {
+  // This is to test component functions
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(<View/>)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.renderEmptyDate();
 });
 
 it('should test timeToString correctly', () => {
