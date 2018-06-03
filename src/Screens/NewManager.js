@@ -56,6 +56,7 @@ export default class NewManager extends ValidationComponent {
   _onPressButton() {
     if (this.validate({
       name: {required: true},
+      registration: {required: true},
       hospital: {required: true},
       sector: {required: true},
       password: {minlength: 4, maxlength: 8, required: true},
@@ -78,14 +79,6 @@ export default class NewManager extends ValidationComponent {
       .then(() => {
         this.props.navigation.navigate('initial');
       });
-  }
-
-  confirmepasswordErrado() {
-    if (this.state.confirmepassword !== this.state.password) {
-      return true;
-    } else {
-      return false;
-    }
   }
 
   render() {

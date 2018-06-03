@@ -1,6 +1,6 @@
 import 'react-native';
 import React from 'react';
-import SectorsScreen from '../src/Screens/SectorsScreen';
+import SectorsScreen from '../../src/Screens/SectorsScreen';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {

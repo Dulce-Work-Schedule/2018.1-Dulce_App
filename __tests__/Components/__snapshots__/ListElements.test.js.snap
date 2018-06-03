@@ -73,6 +73,7 @@ exports[`renders correctly 1`] = `
             virtual={undefined}
           >
              
+            Title Example
              
           </Text>
         </View>
@@ -128,23 +129,93 @@ exports[`renders correctly 1`] = `
     virtual={undefined}
   >
     <View>
-      <View
+      <RCTScrollView
         closeOnRowBeginSwipe={false}
         closeOnRowPress={true}
         closeOnScroll={true}
-        dataArray={undefined}
+        dataArray={
+          Array [
+            "Exemple1",
+          ]
+        }
+        dataSource={
+          ListViewDataSource {
+            "items": 1,
+          }
+        }
         directionalDistanceChangeThreshold={2}
         disableLeftSwipe={false}
         disableRightSwipe={false}
+        enableEmptySections={true}
         leftOpenValue={0}
         previewFirstRow={false}
         recalculateHiddenLayout={false}
         renderRow={[Function]}
+        renderScrollComponent={[Function]}
         rightOpenValue={0}
         style={Object {}}
         swipeToOpenPercent={50}
         virtual={undefined}
-      />
+      >
+        <View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  }
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                Exemple1
+              </Text>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
     </View>
   </RCTScrollView>
 </View>
