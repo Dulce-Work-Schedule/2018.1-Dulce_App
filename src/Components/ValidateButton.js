@@ -13,11 +13,4 @@ class ValidateButton extends React.Component {
     );
   }
 }
-/*renderButton(text, style_color) {
-  return (
-    <Button transparent onPress={() => {}}>
-      <Text style={style_color}>{text}</Text>
-    </Button>
-  );
-}*/
 export default ValidateButton;

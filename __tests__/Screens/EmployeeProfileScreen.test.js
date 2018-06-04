@@ -48,3 +48,21 @@ it('testing axios', async () => {
   wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
+
+it('should test goToEditScreen correctly', () => {
+  // This is to test component functions
+  const navigation = {navigate: jest.fn()};
+  let employeeScreen = renderer
+    .create(
+      <EmployeeProfileScreen
+      navigation={navigation}
+        dispatch={action =>
+          expect(action)
+          .toEqual(navigation.navigate)
+        }
+      />
+    )
+    .getInstance();
+
+  employeeScreen.goToEditScreen();
+});

@@ -52,6 +52,9 @@ class ProfileManagerScreen extends React.Component {
     })
       .then((response) => {this.setState({profile: response.data , loading: false});});
   }
+  navigateToEditScreen(){
+    this.props.navigation.navigate('edit');
+  }
 
   render() {
     return (
@@ -72,7 +75,7 @@ class ProfileManagerScreen extends React.Component {
               <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
               <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
               <View style={{marginTop: 60}} />
-              <AGRButton text='Editar'onPress = {() => this.props.navigation.navigate('edit')}/>
+              <AGRButton text='Editar'onPress = {() => this.navigateToEditScreen()}/>
             </View>
           )
         }

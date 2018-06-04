@@ -72,7 +72,7 @@ class ProfileScreen extends React.Component {
               <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
               <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
               <View style = {styles.icon}>
-                <ScaleIcon onPress = {() => null} />
+                <ScaleIcon onPress = {() => {}} />
               </View>
             </View>
           )

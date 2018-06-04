@@ -51,6 +51,10 @@ export class EmployeeProfileScreen extends React.Component {
       .then((response) => { this.setState({employee: response.data, loading: false});});
   }
 
+  goToEditScreen() {
+    this.props.navigation.navigate('edit');
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -65,7 +69,7 @@ export class EmployeeProfileScreen extends React.Component {
               <View style={{height: 50}} />
               <AGRButton
                 text='editar'
-                onPress={() => this.props.navigation.navigate('edit')} />
+                onPress={() => this.goToEditScreen()} />
             </View>
           )
         }

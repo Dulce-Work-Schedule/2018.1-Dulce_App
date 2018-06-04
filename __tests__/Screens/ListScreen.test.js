@@ -24,3 +24,21 @@ it('UserList snapshot test', async () => {
   wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
+
+// it('should test navigateToProfileScreen correctly', () => {
+//   // This is to test component functions
+//   const navigation = {navigate: jest.fn()};
+//   let listScreen = renderer
+//     .create(
+//       <ListScreen
+//       navigation={navigation}
+//         dispatch={action =>
+//           expect(action)
+//           .toEqual(navigation.navigate)
+//         }
+//       />
+//     )
+//     .getInstance();
+//
+//   listScreen.navigateToProfileScreen();
+// });
