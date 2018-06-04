@@ -5,6 +5,8 @@ import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
 import {View} from 'react-native';
+import {Alert} from 'react-native';
+import ScheduleItem from '../../src/Components/ScheduleItem';
 // import axios from 'axios';
 // import MockAdapter from 'axios-mock-adapter';
 
@@ -101,4 +103,142 @@ it('should test timeToString correctly', () => {
     .getInstance();
 
   weekSchedule.timeToString(date_string);
+});
+it('should test renderChangeItem correctly', () => {
+  // This is to test component functions
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(<ScheduleItem/>)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.renderChangeItem();
+});
+it('should test renderItem correctly', () => {
+  // This is to test component functions
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(<ScheduleItem/>)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.renderItem();
+});
+
+it('should test alert_change correctly', () => {
+  // This is to test component functions
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(Alert.alert)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.alert_change('Employee Example');
+});
+
+it('should test _alert correctly', () => {
+  // This is to test component functions
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(Alert.alert)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule._alert('Employee Example');
+});
+
+it('should test arrayToObject correctly', () => {
+  // This is to test component functions
+
+  const itemDateResponse = [{
+    'date': '06/18/2018',
+    'start_time': '08:00',
+    'end_time': '18:00',
+    'sector': 'Sector Example',
+    'employee': 'Employee Example',
+    'specialty': 'Specialty Example',
+    'amount_of_hours': '10h'
+  }];
+  const item = {
+    '06/18/2018': {
+      'date': '06/18/2018',
+      'start_time': '08:00',
+      'end_time': '18:00',
+      'sector': 'Sector Example',
+      'employee': 'Employee Example',
+      'specialty': 'Specialty Example',
+      'amount_of_hours': '10h'
+    }};
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(item)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.setState({itemDate: itemDateResponse});
+  weekSchedule.arrayToObject();
+});
+
+it('should test setModalVisible correctly', () => {
+  // This is to test component functions
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(true)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.setModalVisible(true);
+});
+
+it('should test requestChange correctly', () => {
+  // This is to test component functions
+
+  let weekSchedule = renderer
+    .create(
+      <WeekSchedule
+        dispatch={action =>
+          expect(action)
+          .toEqual(Alert.alert)
+        }
+      />
+    )
+    .getInstance();
+
+  weekSchedule.requestChange();
 });
