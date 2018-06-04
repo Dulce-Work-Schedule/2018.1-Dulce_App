@@ -30,6 +30,10 @@ class ListScreen extends React.Component {
       .catch(() => {Alert.alert('ERRO');});
   }
 
+  navigateToUserProfile(user) {
+    this.props.navigation.navigate('profile', {userId: user});
+  }
+
   render() {
     return (
       <ScrollView>
@@ -45,7 +49,7 @@ class ListScreen extends React.Component {
               data = {this.state.employees}
               keyExtractor = {(item) => {return item.id.toString();}}
               renderItem={(data) => {return (
-                <ListItem onPress={() => this.props.navigation.navigate('profile', {userId: data.item.id})} key={data.item.id} avatar>
+                <ListItem onPress={() => this.navigateToUserProfile(data.item.id).bind(this)} key={data.item.id} avatar>
                   <Left> <UserAvatar size='50' name={data.item.name} /></Left>
                   <Body><Text>{data.item.name}</Text>
                     <Text note>Matrícula: {data.item.registration}</Text></Body>

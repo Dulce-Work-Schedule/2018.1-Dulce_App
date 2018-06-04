@@ -1,8 +1,15 @@
 import React from 'react';
 import 'react-native';
 import ProfileManagerScreen from '../../src/Screens/ProfileManagerScreen';
-
+import Adapter from 'enzyme-adapter-react-16';
+import Enzyme from 'enzyme';
+// import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
+import expect from 'expect';
+
+require('bezier');
+
+Enzyme.configure({adapter: new Adapter()});
 
 it('renders correctly', () => {
   const tree = renderer
