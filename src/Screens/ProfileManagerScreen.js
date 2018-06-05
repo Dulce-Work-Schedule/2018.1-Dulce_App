@@ -52,7 +52,7 @@ class ProfileManagerScreen extends React.Component {
     })
       .then((response) => {this.setState({profile: response.data , loading: false});});
   }
-  navigateToEditScreen(){
+  navigateToEditScreen() {
     this.props.navigation.navigate('edit');
   }
 
