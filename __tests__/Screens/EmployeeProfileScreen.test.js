@@ -66,3 +66,14 @@ it('should test goToEditScreen correctly', () => {
 
   employeeScreen.goToEditScreen();
 });
+
+it('Should call function when button is pressed', async() => {
+  const navigation = {navigate: jest.fn()};
+  const spy = jest.spyOn(EmployeeProfileScreen.prototype, 'goToEditScreen');
+  const wrapper = shallow(<EmployeeProfileScreen navigation={navigation} />);
+  await flushPromises();
+  wrapper.update();
+  const enterButton = wrapper.find('AGRButton').at(0);
+  enterButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});

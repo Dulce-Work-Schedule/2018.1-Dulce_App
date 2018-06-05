@@ -16,7 +16,7 @@ class ListElements extends React.Component {
         <Content>
           <List dataArray={this.props.list}
             renderRow={(item) => (
-              <ListItem onPress={() => this.props.onPress()}>
+              <ListItem onPress={() => this.props.onPress()} testID={this.props.testID}>
                 <Text>{item}</Text>
               </ListItem>
             )}
