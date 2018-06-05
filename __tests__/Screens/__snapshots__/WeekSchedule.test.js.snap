@@ -9771,7 +9771,11 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
+<<<<<<< HEAD
               date={1528338488812}
+=======
+              date={1528222385114}
+>>>>>>> 5f86d10... #392 testando fab
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10002,7 +10006,11 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
+<<<<<<< HEAD
               date={1528338488812}
+=======
+              date={1528222385114}
+>>>>>>> 5f86d10... #392 testando fab
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10152,7 +10160,11 @@ ShallowWrapper {
           renderEmptyDate={[Function]}
           renderItem={[Function]}
           rowHasChanged={[Function]}
+<<<<<<< HEAD
           selected={2018-06-07T02:28:10.162Z}
+=======
+          selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
           style={
             Object {
               "flex": 1,
@@ -10230,7 +10242,11 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
+<<<<<<< HEAD
                   selected={2018-06-07T02:28:10.162Z}
+=======
+                  selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                   style={
                     Object {
                       "flex": 1,
@@ -10297,7 +10313,11 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
+<<<<<<< HEAD
           date={2018-06-07T02:28:08.812Z}
+=======
+          date={2018-06-05T18:13:05.114Z}
+>>>>>>> 5f86d10... #392 testando fab
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10318,7 +10338,11 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
+<<<<<<< HEAD
           date={2018-06-07T02:28:08.812Z}
+=======
+          date={2018-06-05T18:13:05.114Z}
+>>>>>>> 5f86d10... #392 testando fab
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10366,7 +10390,11 @@ ShallowWrapper {
           "renderEmptyDate": [Function],
           "renderItem": [Function],
           "rowHasChanged": [Function],
+<<<<<<< HEAD
           "selected": 2018-06-07T02:28:10.162Z,
+=======
+          "selected": 2018-06-05T18:13:05.959Z,
+>>>>>>> 5f86d10... #392 testando fab
           "style": Object {
             "flex": 1,
           },
@@ -10448,7 +10476,11 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
+<<<<<<< HEAD
                   selected={2018-06-07T02:28:10.162Z}
+=======
+                  selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                   style={
                     Object {
                       "flex": 1,
@@ -10563,7 +10595,11 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
+<<<<<<< HEAD
                   selected={2018-06-07T02:28:10.162Z}
+=======
+                  selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                   style={
                     Object {
                       "flex": 1,
@@ -10676,7 +10712,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-07T02:28:10.162Z}
+=======
+                    selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                     style={
                       Object {
                         "flex": 1,
@@ -10777,7 +10817,11 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-07T02:28:10.162Z}
+=======
+                      selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                       style={
                         Object {
                           "flex": 1,
@@ -10829,7 +10873,11 @@ ShallowWrapper {
                       "renderEmptyDate": [Function],
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
+<<<<<<< HEAD
                       "selected": 2018-06-07T02:28:10.162Z,
+=======
+                      "selected": 2018-06-05T18:13:05.959Z,
+>>>>>>> 5f86d10... #392 testando fab
                       "style": Object {
                         "flex": 1,
                       },
@@ -10947,7 +10995,11 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
           "date": 2018-06-07T02:28:08.812Z,
+=======
+          "date": 2018-06-05T18:13:05.114Z,
+>>>>>>> 5f86d10... #392 testando fab
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -10974,7 +11026,11 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
           "date": 2018-06-07T02:28:08.812Z,
+=======
+          "date": 2018-06-05T18:13:05.114Z,
+>>>>>>> 5f86d10... #392 testando fab
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11015,7 +11071,11 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
+<<<<<<< HEAD
             selected={2018-06-07T02:28:10.162Z}
+=======
+            selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
             style={
               Object {
                 "flex": 1,
@@ -11093,7 +11153,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-07T02:28:10.162Z}
+=======
+                    selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                     style={
                       Object {
                         "flex": 1,
@@ -11160,7 +11224,11 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
+<<<<<<< HEAD
             date={2018-06-07T02:28:08.812Z}
+=======
+            date={2018-06-05T18:13:05.114Z}
+>>>>>>> 5f86d10... #392 testando fab
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11181,7 +11249,11 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
+<<<<<<< HEAD
             date={2018-06-07T02:28:08.812Z}
+=======
+            date={2018-06-05T18:13:05.114Z}
+>>>>>>> 5f86d10... #392 testando fab
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11229,7 +11301,11 @@ ShallowWrapper {
             "renderEmptyDate": [Function],
             "renderItem": [Function],
             "rowHasChanged": [Function],
+<<<<<<< HEAD
             "selected": 2018-06-07T02:28:10.162Z,
+=======
+            "selected": 2018-06-05T18:13:05.959Z,
+>>>>>>> 5f86d10... #392 testando fab
             "style": Object {
               "flex": 1,
             },
@@ -11311,7 +11387,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-07T02:28:10.162Z}
+=======
+                    selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                     style={
                       Object {
                         "flex": 1,
@@ -11426,7 +11506,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-07T02:28:10.162Z}
+=======
+                    selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                     style={
                       Object {
                         "flex": 1,
@@ -11539,7 +11623,11 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-07T02:28:10.162Z}
+=======
+                      selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                       style={
                         Object {
                           "flex": 1,
@@ -11640,7 +11728,11 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
+<<<<<<< HEAD
                         selected={2018-06-07T02:28:10.162Z}
+=======
+                        selected={2018-06-05T18:13:05.959Z}
+>>>>>>> 5f86d10... #392 testando fab
                         style={
                           Object {
                             "flex": 1,
@@ -11692,7 +11784,11 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
+<<<<<<< HEAD
                         "selected": 2018-06-07T02:28:10.162Z,
+=======
+                        "selected": 2018-06-05T18:13:05.959Z,
+>>>>>>> 5f86d10... #392 testando fab
                         "style": Object {
                           "flex": 1,
                         },
@@ -11810,7 +11906,11 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
             "date": 2018-06-07T02:28:08.812Z,
+=======
+            "date": 2018-06-05T18:13:05.114Z,
+>>>>>>> 5f86d10... #392 testando fab
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -11837,7 +11937,11 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
             "date": 2018-06-07T02:28:08.812Z,
+=======
+            "date": 2018-06-05T18:13:05.114Z,
+>>>>>>> 5f86d10... #392 testando fab
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

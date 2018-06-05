@@ -9843,7 +9843,11 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
+<<<<<<< HEAD
                       date={1528338497995}
+=======
+                      date={1528222390748}
+>>>>>>> 5f86d10... #392 testando fab
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10074,7 +10078,11 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
+<<<<<<< HEAD
                       date={1528338497995}
+=======
+                      date={1528222390748}
+>>>>>>> 5f86d10... #392 testando fab
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

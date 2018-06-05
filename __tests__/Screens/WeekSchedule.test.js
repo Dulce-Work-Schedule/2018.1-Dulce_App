@@ -255,3 +255,12 @@ it('should test the alert when there is no schedule created', async() => {
   wrapper.update();
   expect(Alert.alert).toHaveBeenCalled();
 });
+
+it('Testing fab',() => {
+    const spy = jest.spyOn(WeekSchedule.prototype, 'timePickerVisible');
+    const wrapper = shallow(<WeekSchedule />);
+    wrapper.setState({active: true});
+    const fab = shallow(wrapper.instance().fab());
+    fab.simulate('press');
+    expect(spy).toHaveBeenCalled();
+    });
