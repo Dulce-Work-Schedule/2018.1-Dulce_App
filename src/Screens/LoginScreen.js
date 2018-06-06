@@ -1,11 +1,12 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {View, ScrollView, Image, Alert} from 'react-native';
+import { connect } from 'react-redux';
+import { View, ScrollView, Image, Alert } from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import axios from 'axios';
-import {actionLogin} from '../Actions/currentUser';
-import {NavigationActions} from 'react-navigation';
+import { actionLogin } from '../Actions/currentUser';
+import { NavigationActions } from 'react-navigation';
+
 
 const logo = require('../../assets/img/DulceLogoFull.png');
 
@@ -52,7 +53,7 @@ export class LoginScreen extends React.Component {
     const resetAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({routeName: targetRoute})
+        NavigationActions.navigate({ routeName: targetRoute })
       ]
     });
     this.props.navigation.dispatch(resetAction);
@@ -97,20 +98,33 @@ export class LoginScreen extends React.Component {
           <Image source={logo} style={styles.logo} />
           <AGRInput
             autoCapitalize='none'
-            nameLabel ='Matrícula'
-            onChangeText={(registration) => this.setState({registration})}
+            nameLabel='Matrícula'
+            onChangeText={(registration) => this.setState({ registration })}
           />
 
           <AGRInput
-            nameLabel ='Senha'
+            nameLabel='Senha'
             secureTextEntry
-            onChangeText={(password) => this.setState({password})}
+            onChangeText={(password) => this.setState({ password })}
           />
 
-          <AGRButton
-            onPress={this._onPressButton}
-            text='Entrar'
-          />
+          <View style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+          }}>
+
+            <AGRButton
+              onPress={() => {}}
+              text='Cadastro'
+              />
+
+            <AGRButton
+              onPress={this._onPressButton}
+              text='Entrar'
+            />
+
+          </View>
+
         </View>
       </ScrollView>
     );
