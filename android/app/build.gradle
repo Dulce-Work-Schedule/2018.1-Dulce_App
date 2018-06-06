@@ -20,7 +20,7 @@ android {
         applicationId "com.dulce"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 17
+        versionCode 18
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
