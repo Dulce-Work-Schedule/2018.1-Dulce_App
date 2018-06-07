@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, Image} from 'react-native';
-import {Container, Header, Content, Button, Icon} from 'native-base';
+import {Container, Content, Button} from 'native-base';
 
 const styles = {
   container: {
