@@ -22,3 +22,11 @@ it('Testing onPress', () => {
   button.simulate('press');
   expect(onPressMock).toBeCalled();
 });
+
+it('Testing onPress', () => {
+  const onPressMock = jest.fn();
+  const wrapper = shallow(<ValidateButton />);
+  const button = wrapper.find('Styled(Button)').at(0);
+  button.simulate('press');
+  expect(onPressMock).toHaveBeenCalledTimes(0);
+});
