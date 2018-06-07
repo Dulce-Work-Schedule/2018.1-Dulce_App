@@ -268,6 +268,7 @@ exports[`renders correctly 1`] = `
                           "paddingTop": 13,
                         }
                       }
+                      testID={undefined}
                       virtual={undefined}
                     >
                       <Text
@@ -324,6 +325,7 @@ exports[`renders correctly 1`] = `
                           "paddingTop": 13,
                         }
                       }
+                      testID={undefined}
                       virtual={undefined}
                     >
                       <Text
@@ -380,6 +382,7 @@ exports[`renders correctly 1`] = `
                           "paddingTop": 13,
                         }
                       }
+                      testID={undefined}
                       virtual={undefined}
                     >
                       <Text
@@ -436,6 +439,7 @@ exports[`renders correctly 1`] = `
                           "paddingTop": 13,
                         }
                       }
+                      testID={undefined}
                       virtual={undefined}
                     >
                       <Text

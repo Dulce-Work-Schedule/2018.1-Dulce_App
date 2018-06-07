@@ -74,3 +74,21 @@ it('Should call login function', async() => {
   enterButton.simulate('press');
   expect(spy).toHaveBeenCalled();
 });
+
+it('should test resetNavigation correctly', () => {
+  // This is to test component functions
+  const navigation = {dispatch: jest.fn()};
+  let loginScreen = renderer
+    .create(
+      <LoginScreen
+        navigation={navigation}
+        dispatch={action =>
+          expect(action)
+          .toEqual(Alert.alert)
+        }
+      />
+    )
+    .getInstance();
+
+  loginScreen.resetNavigation(navigation.dispatch);
+});

@@ -1,5 +1,4 @@
 import NewManager from '../Routes/NewManager';
-import Doctors from '../Routes/Doctors';
 import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
 import {DrawerNavigator} from 'react-navigation';
@@ -26,9 +25,6 @@ export default DrawerNavigator({
   },
   'Notificações': {
     screen: Notifications
-  },
-  'Ver Medicos': {
-    screen: Doctors
   },
   Logout: {
     screen: Logout

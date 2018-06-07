@@ -20,19 +20,6 @@
         "manager": "true"
       }
     ],
-    "schedules":[
-      {
-        "id":1,
-        "date":"01/06/2018",
-        "start_time":"09:00",
-        "end_time":"17:00",
-        "sector":"Sector Example",
-        "employee":"Doctor Example",
-        "specialty":"Passing Tests",
-        "amount_of_hours":"8h",
-        "year":"2018",
-        "month":"6"
-      }
-    ]
+    "schedules":[]
   }
 }

@@ -1,5 +1,4 @@
-import {data as users} from './api_data.json';
-import {data as schedules} from './api_data.json';
+import {data} from './api_data.json';
 
 const USERS_LIST_ENDPOINT = 'http://localhost:8083/api/userManager/listUser';
 const EMPLOYEE_PROFILE_ENDPOINT = 'http://localhost:8083/api/userManager/listById/?id=';
@@ -14,23 +13,23 @@ module.exports = {
     switch (url) {
       case USERS_LIST_ENDPOINT:
         return Promise.resolve({
-          data: users
+          data: data.users
         });
       case LOGIN_ENDPOINT:
         return Promise.resolve({
-          data: users
+          data: data.users
         });
       case EMPLOYEE_PROFILE_ENDPOINT:
         return Promise.resolve({
-          data: users
+          data: data.users
         });
       case EDIT_USER_ENDPOINT:
         return Promise.resolve({
-          data: users
+          data: data.users
         });
       case SCHEDULES_ENDPOINT:
         return Promise.resolve({
-          data: schedules
+          data: data.schedules
         });
       default:
         return Promise.resolve({
@@ -42,7 +41,7 @@ module.exports = {
     switch (url) {
       case LOGIN_ENDPOINT:
         return Promise.resolve({
-          data: users
+          data: data.users
         });
       case NEW_MANAGER_ENDPOINT:
         return Promise.resolve({});

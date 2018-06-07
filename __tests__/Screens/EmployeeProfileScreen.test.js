@@ -48,3 +48,32 @@ it('testing axios', async () => {
   wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
+
+it('should test goToEditScreen correctly', () => {
+  // This is to test component functions
+  const navigation = {navigate: jest.fn()};
+  let employeeScreen = renderer
+    .create(
+      <EmployeeProfileScreen
+      navigation={navigation}
+        dispatch={action =>
+          expect(action)
+          .toEqual(navigation.navigate)
+        }
+      />
+    )
+    .getInstance();
+
+  employeeScreen.goToEditScreen();
+});
+
+it('Should call function when button is pressed', async() => {
+  const navigation = {navigate: jest.fn()};
+  const spy = jest.spyOn(EmployeeProfileScreen.prototype, 'goToEditScreen');
+  const wrapper = shallow(<EmployeeProfileScreen navigation={navigation} />);
+  await flushPromises();
+  wrapper.update();
+  const enterButton = wrapper.find('AGRButton').at(0);
+  enterButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});

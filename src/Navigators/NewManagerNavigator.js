@@ -1,5 +1,5 @@
 import NewManager from '../Screens/NewManager';
-import Doctors from '../Routes/Doctors';
+import Schedule from '../Routes/Schedule';
 import {StackNavigator} from 'react-navigation';
 
 const routes = {
@@ -10,7 +10,7 @@ const routes = {
     }
   },
   initial: {
-    screen: Doctors,
+    screen: Schedule,
     navigationOptions: {
       header: null
     }
