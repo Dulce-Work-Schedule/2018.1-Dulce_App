@@ -14,10 +14,10 @@ export default class DateRangePicker extends Component {
       this.setupStartMarker(day);
     } else if (!this.state.isToDatePicked) {
       let markedDates = {...this.state.markedDates};
-      let [mMarkedDates, range] = this.setupMarkedDates(this.state.fromDate, day.dateString, markedDates);
+      let [mMarkedDates, range] = this.setupMarkedDates(this.state.fromDate.dateString, day.dateString, markedDates);
       if (range >= 0) {
         this.setState({isFromDatePicked: true, isToDatePicked: true, markedDates: mMarkedDates});
-        this.props.onSuccess(this.state.fromDate, day.dateString);
+        this.props.onSuccess(this.state.fromDate, day);
       } else {
         this.setupStartMarker(day);
       }
@@ -26,7 +26,7 @@ export default class DateRangePicker extends Component {
 
   setupStartMarker = (day) => {
     let markedDates = {[day.dateString]: {startingDay: true, color: this.props.theme.markColor, textColor: this.props.theme.markTextColor}};
-    this.setState({isFromDatePicked: true, isToDatePicked: false, fromDate: day.dateString, markedDates: markedDates});
+    this.setState({isFromDatePicked: true, isToDatePicked: false, fromDate: day, markedDates: markedDates});
   }
 
   setupMarkedDates = (fromDate, toDate, markedDates) => {
