@@ -184,7 +184,7 @@ it('should test arrayToObject correctly', () => {
     'amount_of_hours': '10h'
   }];
   const item = {
-    '06/18/2018': {
+    '06-18-2018': {
       'date': '06/18/2018',
       'start_time': '08:00',
       'end_time': '18:00',
@@ -241,4 +241,17 @@ it('should test requestChange correctly', () => {
     .getInstance();
 
   weekSchedule.requestChange();
+});
+
+jest.mock('Alert', () => {
+  return {
+    alert: jest.fn()
+  };
+});
+
+it('should test the alert when there is no schedule created', async() => {
+  const wrapper = shallow(<WeekSchedule/>);
+  await flushPromises();
+  wrapper.update();
+  expect(Alert.alert).toHaveBeenCalled();
 });

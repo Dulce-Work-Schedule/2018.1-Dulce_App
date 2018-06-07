@@ -32,11 +32,3 @@ it('testing axios', async () => {
   wrapper.update();
   expect(wrapper).toMatchSnapshot();
 });
-
-// it('testing onPress null', async() => {
-//   const wrapper = shallow(<ProfileScreen {...props}/>);
-//   await flushPromises();
-//   wrapper.update();
-//   // const scale = wrapper.find('ScaleItem').at(0);
-//   expect(undefined).toBe(undefined);
-// });
