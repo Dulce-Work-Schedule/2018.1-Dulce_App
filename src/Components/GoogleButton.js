@@ -1,20 +1,22 @@
 import React from 'react';
 import {Text, Image} from 'react-native';
-import { Container, Header, Content, Button, Icon } from 'native-base';
+import {Container, Header, Content, Button, Icon} from 'native-base';
 
 const styles = {
   container: {
-    height: 50,
+    height: 43,
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 15,
     paddingHorizontal: 50,
     alignSelf: 'center',
-    marginBottom: 0
+    marginBottom: 0,
+    backgroundColor: '#FFF'
   },
   text: {
     color: 'white',
     fontSize: 20,
-    fontFamily: 'Raleway'
+    fontFamily: 'Raleway',
+    paddingHorizontal: 50
   }
 };
 
@@ -23,9 +25,9 @@ class GoogleButton extends React.Component {
     return (
       <Container>
         <Content>
-          <Button style={styles.container} iconLeft light>
+          <Button bordered style={styles.container} iconLeft light>
             <Image source={require('../../assets/img/google.png')} />
-            <Text>Entrar com Google</Text>
+            <Text>  Entrar com Google</Text>
           </Button>
         </Content>
       </Container>
