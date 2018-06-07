@@ -87,11 +87,11 @@ export default class WeekSchedule extends Component {
       </Fab>);
   }
 
-  showEndDateTimePicker(date){
+  showEndDateTimePicker(date) {
     this.setState({
       endDateTimePickerVisible: true,
       changeDay: date});
-  };
+  }
 
   hideEndDateTimePicker = () => this.setState({endDateTimePickerVisible: false});
 
