@@ -101,7 +101,7 @@ export class LoginScreen extends React.Component {
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
-          nameLabel='Matrícula'
+          nameLabel='Email'
           onChangeText={(registration) => this.setState({registration})}
         />
 
