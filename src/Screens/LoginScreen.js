@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { View, ScrollView, Image, Alert } from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
+import GoogleButton from '../Components/GoogleButton';
 import axios from 'axios';
 import { actionLogin } from '../Actions/currentUser';
 import { NavigationActions } from 'react-navigation';
@@ -99,24 +100,24 @@ export class LoginScreen extends React.Component {
           <AGRInput
             autoCapitalize='none'
             nameLabel='Matrícula'
-            onChangeText={(registration) => this.setState({ registration })}
+            onChangeText={(registration) => this.setState({registration})}
           />
 
           <AGRInput
             nameLabel='Senha'
             secureTextEntry
-            onChangeText={(password) => this.setState({ password })}
+            onChangeText={(password) => this.setState({password})}
           />
 
           <View style={{
             flexDirection: 'row',
-            justifyContent: 'space-between',
+            justifyContent: 'space-between'
           }}>
 
             <AGRButton
               onPress={() => {}}
               text='Cadastro'
-              />
+            />
 
             <AGRButton
               onPress={this._onPressButton}
@@ -124,6 +125,9 @@ export class LoginScreen extends React.Component {
             />
 
           </View>
+
+          <GoogleButton
+          />
 
         </View>
       </ScrollView>
