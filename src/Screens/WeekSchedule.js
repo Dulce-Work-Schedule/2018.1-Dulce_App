@@ -93,7 +93,9 @@ export default class WeekSchedule extends Component {
       changeDay: date});
   }
 
-  hideEndDateTimePicker = () => this.setState({endDateTimePickerVisible: false});
+  hideEndDateTimePicker() {
+    this.setState({endDateTimePickerVisible: false});
+  }
 
   timePicker() {
     return (
