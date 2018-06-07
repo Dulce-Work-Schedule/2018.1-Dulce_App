@@ -194,9 +194,9 @@ exports[`renders correctly 1`] = `
               "Feb 2018",
               "Mar 2018",
               "Apr 2018",
-              "2018-05-06T00:00:00.000Z",
-              "2018-06-06T00:00:00.000Z",
-              "2018-07-06T00:00:00.000Z",
+              "2018-05-07T00:00:00.000Z",
+              "2018-06-07T00:00:00.000Z",
+              "2018-07-07T00:00:00.000Z",
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -1064,8 +1064,6 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
-                          "backgroundColor": "#5f4b8b",
-                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -1087,9 +1085,6 @@ exports[`renders correctly 1`] = `
                               "fontSize": 16,
                               "fontWeight": "300",
                               "marginTop": 6,
-                            },
-                            Object {
-                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -1117,6 +1112,8 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
+                          "backgroundColor": "#5f4b8b",
+                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -1138,6 +1135,9 @@ exports[`renders correctly 1`] = `
                               "fontSize": 16,
                               "fontWeight": "300",
                               "marginTop": 6,
+                            },
+                            Object {
+                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -4962,9 +4962,9 @@ exports[`renders correctly 1`] = `
                         "Feb 2018",
                         "Mar 2018",
                         "Apr 2018",
-                        "2018-05-06T00:00:00.000Z",
-                        "2018-06-06T00:00:00.000Z",
-                        "2018-07-06T00:00:00.000Z",
+                        "2018-05-07T00:00:00.000Z",
+                        "2018-06-07T00:00:00.000Z",
+                        "2018-07-07T00:00:00.000Z",
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -5832,8 +5832,6 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
-                                    "backgroundColor": "#5f4b8b",
-                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -5855,9 +5853,6 @@ exports[`renders correctly 1`] = `
                                         "fontSize": 16,
                                         "fontWeight": "300",
                                         "marginTop": 6,
-                                      },
-                                      Object {
-                                        "color": "#ffffff",
                                       },
                                     ]
                                   }
@@ -5885,6 +5880,8 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
+                                    "backgroundColor": "#5f4b8b",
+                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -5906,6 +5903,9 @@ exports[`renders correctly 1`] = `
                                         "fontSize": 16,
                                         "fontWeight": "300",
                                         "marginTop": 6,
+                                      },
+                                      Object {
+                                        "color": "#ffffff",
                                       },
                                     ]
                                   }
@@ -9771,11 +9771,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
-<<<<<<< HEAD
-              date={1528338488812}
-=======
-              date={1528222385114}
->>>>>>> 5f86d10... #392 testando fab
+              date={1528385636696}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10006,11 +10002,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
-<<<<<<< HEAD
-              date={1528338488812}
-=======
-              date={1528222385114}
->>>>>>> 5f86d10... #392 testando fab
+              date={1528385636696}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10160,11 +10152,7 @@ ShallowWrapper {
           renderEmptyDate={[Function]}
           renderItem={[Function]}
           rowHasChanged={[Function]}
-<<<<<<< HEAD
-          selected={2018-06-07T02:28:10.162Z}
-=======
-          selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+          selected={2018-06-07T15:33:58.103Z}
           style={
             Object {
               "flex": 1,
@@ -10242,11 +10230,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-                  selected={2018-06-07T02:28:10.162Z}
-=======
-                  selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                  selected={2018-06-07T15:33:58.103Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10313,11 +10297,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-<<<<<<< HEAD
-          date={2018-06-07T02:28:08.812Z}
-=======
-          date={2018-06-05T18:13:05.114Z}
->>>>>>> 5f86d10... #392 testando fab
+          date={2018-06-07T15:33:56.696Z}
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10338,11 +10318,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-<<<<<<< HEAD
-          date={2018-06-07T02:28:08.812Z}
-=======
-          date={2018-06-05T18:13:05.114Z}
->>>>>>> 5f86d10... #392 testando fab
+          date={2018-06-07T15:33:56.696Z}
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10390,11 +10366,7 @@ ShallowWrapper {
           "renderEmptyDate": [Function],
           "renderItem": [Function],
           "rowHasChanged": [Function],
-<<<<<<< HEAD
-          "selected": 2018-06-07T02:28:10.162Z,
-=======
-          "selected": 2018-06-05T18:13:05.959Z,
->>>>>>> 5f86d10... #392 testando fab
+          "selected": 2018-06-07T15:33:58.103Z,
           "style": Object {
             "flex": 1,
           },
@@ -10476,11 +10448,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-                  selected={2018-06-07T02:28:10.162Z}
-=======
-                  selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                  selected={2018-06-07T15:33:58.103Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10595,11 +10563,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-                  selected={2018-06-07T02:28:10.162Z}
-=======
-                  selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                  selected={2018-06-07T15:33:58.103Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10712,11 +10676,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-                    selected={2018-06-07T02:28:10.162Z}
-=======
-                    selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                    selected={2018-06-07T15:33:58.103Z}
                     style={
                       Object {
                         "flex": 1,
@@ -10817,11 +10777,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-                      selected={2018-06-07T02:28:10.162Z}
-=======
-                      selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                      selected={2018-06-07T15:33:58.103Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10873,11 +10829,7 @@ ShallowWrapper {
                       "renderEmptyDate": [Function],
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
-<<<<<<< HEAD
-                      "selected": 2018-06-07T02:28:10.162Z,
-=======
-                      "selected": 2018-06-05T18:13:05.959Z,
->>>>>>> 5f86d10... #392 testando fab
+                      "selected": 2018-06-07T15:33:58.103Z,
                       "style": Object {
                         "flex": 1,
                       },
@@ -10995,11 +10947,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-          "date": 2018-06-07T02:28:08.812Z,
-=======
-          "date": 2018-06-05T18:13:05.114Z,
->>>>>>> 5f86d10... #392 testando fab
+          "date": 2018-06-07T15:33:56.696Z,
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11026,11 +10974,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-          "date": 2018-06-07T02:28:08.812Z,
-=======
-          "date": 2018-06-05T18:13:05.114Z,
->>>>>>> 5f86d10... #392 testando fab
+          "date": 2018-06-07T15:33:56.696Z,
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11071,11 +11015,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-<<<<<<< HEAD
-            selected={2018-06-07T02:28:10.162Z}
-=======
-            selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+            selected={2018-06-07T15:33:58.103Z}
             style={
               Object {
                 "flex": 1,
@@ -11153,11 +11093,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-                    selected={2018-06-07T02:28:10.162Z}
-=======
-                    selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                    selected={2018-06-07T15:33:58.103Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11224,11 +11160,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-            date={2018-06-07T02:28:08.812Z}
-=======
-            date={2018-06-05T18:13:05.114Z}
->>>>>>> 5f86d10... #392 testando fab
+            date={2018-06-07T15:33:56.696Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11249,11 +11181,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-            date={2018-06-07T02:28:08.812Z}
-=======
-            date={2018-06-05T18:13:05.114Z}
->>>>>>> 5f86d10... #392 testando fab
+            date={2018-06-07T15:33:56.696Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11301,11 +11229,7 @@ ShallowWrapper {
             "renderEmptyDate": [Function],
             "renderItem": [Function],
             "rowHasChanged": [Function],
-<<<<<<< HEAD
-            "selected": 2018-06-07T02:28:10.162Z,
-=======
-            "selected": 2018-06-05T18:13:05.959Z,
->>>>>>> 5f86d10... #392 testando fab
+            "selected": 2018-06-07T15:33:58.103Z,
             "style": Object {
               "flex": 1,
             },
@@ -11387,11 +11311,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-                    selected={2018-06-07T02:28:10.162Z}
-=======
-                    selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                    selected={2018-06-07T15:33:58.103Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11506,11 +11426,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-                    selected={2018-06-07T02:28:10.162Z}
-=======
-                    selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                    selected={2018-06-07T15:33:58.103Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11623,11 +11539,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-                      selected={2018-06-07T02:28:10.162Z}
-=======
-                      selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                      selected={2018-06-07T15:33:58.103Z}
                       style={
                         Object {
                           "flex": 1,
@@ -11728,11 +11640,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-                        selected={2018-06-07T02:28:10.162Z}
-=======
-                        selected={2018-06-05T18:13:05.959Z}
->>>>>>> 5f86d10... #392 testando fab
+                        selected={2018-06-07T15:33:58.103Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11784,11 +11692,7 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
-<<<<<<< HEAD
-                        "selected": 2018-06-07T02:28:10.162Z,
-=======
-                        "selected": 2018-06-05T18:13:05.959Z,
->>>>>>> 5f86d10... #392 testando fab
+                        "selected": 2018-06-07T15:33:58.103Z,
                         "style": Object {
                           "flex": 1,
                         },
@@ -11906,11 +11810,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-            "date": 2018-06-07T02:28:08.812Z,
-=======
-            "date": 2018-06-05T18:13:05.114Z,
->>>>>>> 5f86d10... #392 testando fab
+            "date": 2018-06-07T15:33:56.696Z,
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -11937,11 +11837,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-            "date": 2018-06-07T02:28:08.812Z,
-=======
-            "date": 2018-06-05T18:13:05.114Z,
->>>>>>> 5f86d10... #392 testando fab
+            "date": 2018-06-07T15:33:56.696Z,
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

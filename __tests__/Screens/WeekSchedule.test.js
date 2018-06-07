@@ -264,3 +264,30 @@ it('Testing fab',() => {
     fab.simulate('press');
     expect(spy).toHaveBeenCalled();
     });
+
+    
+it('Testing timePicker onConfirm', () => {
+
+ const spy = jest.spyOn(WeekSchedule.prototype, 'showEndDateTimePicker');
+const wrapper = shallow(<WeekSchedule/>);
+wrapper.setState({isDateTimePickerVisible: true});
+const timePicker = shallow(wrapper.instance().timePicker());
+const onConfirm = timePicker.find('TouchableHighlight').at(0);
+onConfirm.simulate('press');
+expect(spy).toHaveBeenCalled(); 
+
+
+});    
+
+it('Testing timePicker onCancel', () => {
+
+  const spy = jest.spyOn(WeekSchedule.prototype, 'showEndDateTimePicker');
+ const wrapper = shallow(<WeekSchedule/>);
+ wrapper.setState({isDateTimePickerVisible: true});
+ const timePicker = shallow(wrapper.instance().timePicker());
+ const onConfirm = timePicker.find('TouchableHighlight').at(1);
+ onConfirm.simulate('press');
+ expect(spy).toHaveBeenCalled(); 
+ 
+ 
+ });
