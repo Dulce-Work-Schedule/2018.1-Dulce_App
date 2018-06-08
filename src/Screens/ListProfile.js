@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Icon} from 'native-base';
+import {Container, Content, Card, CardItem, Text, Body, List, Icon, Fab} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
 
@@ -69,6 +69,21 @@ export default class NotificationScreen extends Component {
     };
   }
 
+
+  fab() {
+    return (
+      <Fab
+        active={this.state.active}
+        direction='up'
+        containerStyle={{}}
+        style={{backgroundColor: '#5f4b8b'}}
+        position='bottomRight'
+        onPress={() => { this.timePickerVisible(true); }}>
+        <Icon type='MaterialIcons' name='edit' />
+      </Fab>);
+  }
+
+
   renderCard(item) {
     return (
       <Card>
@@ -110,6 +125,7 @@ export default class NotificationScreen extends Component {
             } />
         </Content>
       </Container>
+    {this.fab()}
     );
   }
 }
