@@ -847,19 +847,20 @@ exports[`renders correctly 1`] = `
                     "borderBottomWidth": null,
                     "borderColor": "#007aff",
                     "borderLeftWidth": null,
-                    "borderRadius": 5,
+                    "borderRadius": 57,
                     "borderRightWidth": null,
                     "borderTopWidth": null,
                     "elevation": 2,
                     "flexDirection": "row",
-                    "height": 50,
-                    "justifyContent": "center",
+                    "height": 45,
+                    "justifyContent": "space-between",
                     "marginBottom": 0,
                     "marginTop": 30,
                     "opacity": 1,
                     "paddingBottom": 6,
                     "paddingHorizontal": 50,
                     "paddingTop": 6,
+                    "width": 140,
                   }
                 }
                 testID={undefined}
@@ -871,9 +872,10 @@ exports[`renders correctly 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
+                      "alignItems": "center",
                       "color": "white",
                       "fontFamily": "Raleway",
-                      "fontSize": 20,
+                      "fontSize": 14,
                     }
                   }
                 >
@@ -1471,17 +1473,18 @@ ShallowWrapper {
               Object {
                 "automaticallyAdjustContentInsets": false,
                 "children": <Styled(Button)
-                  block={true}
                   onPress={[Function]}
+                  rounded={true}
                   style={
                     Object {
                       "alignItems": "center",
                       "alignSelf": "center",
                       "backgroundColor": "#5f4b8b",
-                      "height": 50,
+                      "height": 45,
                       "marginBottom": 0,
                       "marginTop": 30,
                       "paddingHorizontal": 50,
+                      "width": 140,
                     }
                   }
                   virtual={undefined}
@@ -1492,9 +1495,10 @@ ShallowWrapper {
                     ellipsizeMode="tail"
                     style={
                       Object {
+                        "alignItems": "center",
                         "color": "white",
                         "fontFamily": "Raleway",
-                        "fontSize": 20,
+                        "fontSize": 14,
                       }
                     }
                   >
@@ -2118,17 +2122,18 @@ ShallowWrapper {
                 Object {
                   "automaticallyAdjustContentInsets": false,
                   "children": <Styled(Button)
-                    block={true}
                     onPress={[Function]}
+                    rounded={true}
                     style={
                       Object {
                         "alignItems": "center",
                         "alignSelf": "center",
                         "backgroundColor": "#5f4b8b",
-                        "height": 50,
+                        "height": 45,
                         "marginBottom": 0,
                         "marginTop": 30,
                         "paddingHorizontal": 50,
+                        "width": 140,
                       }
                     }
                     virtual={undefined}
@@ -2139,9 +2144,10 @@ ShallowWrapper {
                       ellipsizeMode="tail"
                       style={
                         Object {
+                          "alignItems": "center",
                           "color": "white",
                           "fontFamily": "Raleway",
-                          "fontSize": 20,
+                          "fontSize": 14,
                         }
                       }
                     >

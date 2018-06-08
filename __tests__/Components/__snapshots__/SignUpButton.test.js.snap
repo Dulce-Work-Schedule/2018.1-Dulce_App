@@ -92,12 +92,12 @@ exports[`renders correctly 1`] = `
             "height": 45,
             "justifyContent": "space-between",
             "marginBottom": 0,
-            "marginTop": 30,
+            "marginTop": 0,
             "opacity": 1,
             "paddingBottom": 6,
             "paddingHorizontal": 50,
             "paddingTop": 6,
-            "width": 140,
+            "width": 175,
           }
         }
         testID={undefined}
@@ -112,7 +112,7 @@ exports[`renders correctly 1`] = `
               "alignItems": "center",
               "color": "white",
               "fontFamily": "Raleway",
-              "fontSize": 14,
+              "fontSize": 16,
             }
           }
         />

@@ -80,42 +80,61 @@ exports[`renders correctly 1`] = `
           Object {
             "alignItems": "center",
             "alignSelf": "center",
-            "backgroundColor": "#5f4b8b",
-            "borderBottomWidth": null,
+            "backgroundColor": "#FFF",
+            "borderBottomWidth": 1,
             "borderColor": "#007aff",
-            "borderLeftWidth": null,
+            "borderLeftWidth": 1,
             "borderRadius": 57,
-            "borderRightWidth": null,
-            "borderTopWidth": null,
-            "elevation": 2,
+            "borderRightWidth": 1,
+            "borderTopWidth": 1,
+            "borderWidth": 1,
+            "elevation": null,
             "flexDirection": "row",
-            "height": 45,
+            "height": 43,
             "justifyContent": "space-between",
             "marginBottom": 0,
-            "marginTop": 30,
+            "marginTop": 15,
             "opacity": 1,
             "paddingBottom": 6,
-            "paddingHorizontal": 50,
+            "paddingHorizontal": 20,
             "paddingTop": 6,
-            "width": 140,
+            "shadowColor": null,
+            "shadowOffset": null,
+            "shadowOpacity": null,
+            "shadowRadius": null,
+            "width": 280,
           }
         }
         testID={undefined}
         tvParallaxProperties={undefined}
       >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../assets/img/google.png",
+            }
+          }
+          style={
+            Object {
+              "height": 40,
+              "resizeMode": "contain",
+            }
+          }
+        />
         <Text
           accessible={true}
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
             Object {
-              "alignItems": "center",
-              "color": "white",
+              "alignSelf": "center",
               "fontFamily": "Raleway",
-              "fontSize": 14,
+              "fontSize": 20,
             }
           }
-        />
+        >
+           Entrar com Google
+        </Text>
       </View>
     </View>
   </RCTScrollView>

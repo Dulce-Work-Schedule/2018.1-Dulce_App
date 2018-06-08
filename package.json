@@ -42,7 +42,8 @@
     "react-navigation": "^1.5.9",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
-    "standard-http-error": "^2.0.0"
+    "standard-http-error": "^2.0.0",
+    "tcomb-form-native": "^0.6.13"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.15.0",
