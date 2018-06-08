@@ -9880,6 +9880,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -9903,7 +9904,13 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528500432684}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                      date={1528501924490}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10139,6 +10146,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -10162,7 +10170,13 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528500432684}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                      date={1528501924490}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

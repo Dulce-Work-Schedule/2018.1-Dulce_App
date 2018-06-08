@@ -9808,6 +9808,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
@@ -9831,7 +9832,13 @@ exports[`renders correctly 1`] = `
 =======
               date={1528500398465}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+              date={1528501917052}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10067,6 +10074,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
@@ -10090,7 +10098,13 @@ exports[`renders correctly 1`] = `
 =======
               date={1528500398465}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+              date={1528501917052}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10245,6 +10259,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-07T23:15:33.615Z}
 =======
           selected={2018-06-08T15:05:59.219Z}
@@ -10268,7 +10283,13 @@ ShallowWrapper {
 =======
           selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+          selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
           style={
             Object {
               "flex": 1,
@@ -10351,6 +10372,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10374,7 +10396,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                  selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                   style={
                     Object {
                       "flex": 1,
@@ -10446,6 +10474,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
@@ -10469,7 +10498,13 @@ ShallowWrapper {
 =======
           date={2018-06-08T23:26:38.465Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+          date={2018-06-08T23:51:57.052Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10495,6 +10530,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
@@ -10518,7 +10554,13 @@ ShallowWrapper {
 =======
           date={2018-06-08T23:26:38.465Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+          date={2018-06-08T23:51:57.052Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10571,6 +10613,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-07T23:15:33.615Z,
 =======
           "selected": 2018-06-08T15:05:59.219Z,
@@ -10594,7 +10637,13 @@ ShallowWrapper {
 =======
           "selected": 2018-06-08T23:26:54.837Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+          "selected": 2018-06-08T23:51:58.163Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
           "style": Object {
             "flex": 1,
           },
@@ -10681,6 +10730,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10704,7 +10754,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                  selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                   style={
                     Object {
                       "flex": 1,
@@ -10824,6 +10880,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10847,7 +10904,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                  selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                   style={
                     Object {
                       "flex": 1,
@@ -10965,6 +11028,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -10988,7 +11052,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                    selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                     style={
                       Object {
                         "flex": 1,
@@ -11094,6 +11164,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
@@ -11117,7 +11188,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                      selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                       style={
                         Object {
                           "flex": 1,
@@ -11174,6 +11251,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-07T23:15:33.615Z,
 =======
                       "selected": 2018-06-08T15:05:59.219Z,
@@ -11197,7 +11275,13 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-08T23:26:54.837Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                      "selected": 2018-06-08T23:51:58.163Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                       "style": Object {
                         "flex": 1,
                       },
@@ -11320,6 +11404,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
@@ -11343,7 +11428,13 @@ ShallowWrapper {
 =======
           "date": 2018-06-08T23:26:38.465Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+          "date": 2018-06-08T23:51:57.052Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11375,6 +11466,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
@@ -11398,7 +11490,13 @@ ShallowWrapper {
 =======
           "date": 2018-06-08T23:26:38.465Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+          "date": 2018-06-08T23:51:57.052Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11444,6 +11542,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-07T23:15:33.615Z}
 =======
             selected={2018-06-08T15:05:59.219Z}
@@ -11467,7 +11566,13 @@ ShallowWrapper {
 =======
             selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+            selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
             style={
               Object {
                 "flex": 1,
@@ -11550,6 +11655,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11573,7 +11679,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                    selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                     style={
                       Object {
                         "flex": 1,
@@ -11645,6 +11757,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
@@ -11668,7 +11781,13 @@ ShallowWrapper {
 =======
             date={2018-06-08T23:26:38.465Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+            date={2018-06-08T23:51:57.052Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11694,6 +11813,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
@@ -11717,7 +11837,13 @@ ShallowWrapper {
 =======
             date={2018-06-08T23:26:38.465Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+            date={2018-06-08T23:51:57.052Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11770,6 +11896,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-07T23:15:33.615Z,
 =======
             "selected": 2018-06-08T15:05:59.219Z,
@@ -11793,7 +11920,13 @@ ShallowWrapper {
 =======
             "selected": 2018-06-08T23:26:54.837Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+            "selected": 2018-06-08T23:51:58.163Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
             "style": Object {
               "flex": 1,
             },
@@ -11880,6 +12013,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11903,7 +12037,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                    selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                     style={
                       Object {
                         "flex": 1,
@@ -12023,6 +12163,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -12046,7 +12187,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                    selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                     style={
                       Object {
                         "flex": 1,
@@ -12164,6 +12311,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
@@ -12187,7 +12335,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                      selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                       style={
                         Object {
                           "flex": 1,
@@ -12293,6 +12447,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-07T23:15:33.615Z}
 =======
                         selected={2018-06-08T15:05:59.219Z}
@@ -12316,7 +12471,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-08T23:26:54.837Z}
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                        selected={2018-06-08T23:51:58.163Z}
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                         style={
                           Object {
                             "flex": 1,
@@ -12373,6 +12534,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-07T23:15:33.615Z,
 =======
                         "selected": 2018-06-08T15:05:59.219Z,
@@ -12396,7 +12558,13 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-08T23:26:54.837Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+                        "selected": 2018-06-08T23:51:58.163Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
                         "style": Object {
                           "flex": 1,
                         },
@@ -12519,6 +12687,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
@@ -12542,7 +12711,13 @@ ShallowWrapper {
 =======
             "date": 2018-06-08T23:26:38.465Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+            "date": 2018-06-08T23:51:57.052Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12574,6 +12749,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
@@ -12597,7 +12773,13 @@ ShallowWrapper {
 =======
             "date": 2018-06-08T23:26:38.465Z,
 >>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+<<<<<<< HEAD
 >>>>>>> d06467f... Fix #381 arrumando duplicação de código
+=======
+=======
+            "date": 2018-06-08T23:51:57.052Z,
+>>>>>>> e67635c... Fix #381 diminuindo linhas do render
+>>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

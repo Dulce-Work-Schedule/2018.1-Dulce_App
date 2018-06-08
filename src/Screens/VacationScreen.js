@@ -93,10 +93,39 @@ export default class VacationScreen extends Component {
   onSelectDates(startDay, endDay) {
     this.setState({
       startDay: startDay,
-      endDay: endDay,
-      justification: ''
+      endDay: endDay
     });
   }
+
+  renderCard() {
+    return (
+      <View style={styles.container}>
+        <Card>
+          <CardItem header bordered>
+            <View style={styles.view1}><Text style={styles.date}>{this.state.startDay.day}/{this.state.startDay.month}/{this.state.startDay.year}</Text></View>
+            <View style={styles.view2}><Icon name='md-arrow-dropright-circle' style={styles.icon} /></View>
+            <View style={styles.view3}><Text style={styles.date}>{this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}</Text></View>
+          </CardItem>
+          <CardItem bordered>
+            <Body>
+              <Form style={styles.form}>
+                <Textarea rowSpan={5} bordered placeholder='Justificativa' />
+              </Form>
+            </Body>
+          </CardItem>
+
+          <CardItem footer bordered>
+            <AGRButton
+              style={styles.button}
+              onPress={() => {}}
+              text='Selecionar'
+            />
+          </CardItem>
+        </Card>
+      </View>
+    );
+  }
+
   render() {
     return (
       <ScrollView style={{flex: 1}}>
@@ -110,30 +139,7 @@ export default class VacationScreen extends Component {
           onSuccess={(startDay, endDay) => this.onSelectDates(startDay, endDay)}
           theme={{markColor: '#5f4b8b', markTextColor: 'white'}}
         />
-        <View style={styles.container}>
-          <Card>
-            <CardItem header bordered>
-            <View style={styles.view1}><Text style={styles.date}>{this.state.startDay.day}/{this.state.startDay.month}/{this.state.startDay.year}</Text></View>
-            <View style={styles.view2}><Icon name='md-arrow-dropright-circle' style={styles.icon} /></View>
-            <View style={styles.view3}><Text style={styles.date}>{this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}</Text></View>
-            </CardItem>
-            <CardItem bordered>
-              <Body>
-                <Form style={styles.form}>
-                  <Textarea rowSpan={5} bordered placeholder='Justificativa' />
-                </Form>
-              </Body>
-            </CardItem>
-
-            <CardItem footer bordered>
-              <AGRButton
-                style={styles.button}
-                onPress={() => {}}
-                text='Selecionar'
-              />
-            </CardItem>
-          </Card>
-        </View>
+        {this.renderCard()}
       </ScrollView>
     );
   }
