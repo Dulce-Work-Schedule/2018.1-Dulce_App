@@ -24,7 +24,7 @@ it('Testing ListElements', () => {
 
   const onPressMock = jest.fn();
   const wrapper = shallow(<ListElements onPress={onPressMock}/>);
-  const List = wrapper.find('Styled(List)').at(0); 
+  const List = wrapper.find('Styled(List)').at(0);
   const renderR = shallow(List.props().renderRow());
   renderR.props().onPress();
   expect(onPressMock).toBeCalled();

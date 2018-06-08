@@ -344,7 +344,7 @@ it('testing renderChangeItem function', () => {
 
 });
 
- it('Testing renderModal function',() => {
+it('Testing renderModal function',() => {
   const spy = jest.spyOn(WeekSchedule.prototype, 'setModalVisible');
   const wrapper = shallow(<WeekSchedule/>);
   wrapper.setState({modalVisible: true});
