@@ -6,33 +6,33 @@ import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
 import t from 'tcomb-form-native';
-import {Alert} from 'react-native';
 
 require('bezier');
 Enzyme.configure({adapter: new Adapter()});
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<NewUser />)
-  .toJSON();
+    .create(<NewUser />)
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it('test onChange value',() => {
-const wrapper = shallow(<NewUser/>);
-const onChange = wrapper.instance().onChange();
+  const wrapper = shallow(<NewUser/>);
+  const onChange = wrapper.instance().onChange();
+  console.log(onChange);
 });
 
 it('testing onChange container',() => {
- const type = t.struct({
+  const type = t.struct({
     nome: t.String,
     email: t.String,
     senha: t.String,
     confirmarSenha: t.String
   });
-const wrapper = shallow(<NewUser type={type}/>);
-const container = wrapper.find('Styled(Container)').at(0);
-const form = container.find('Form').at(0);
+  const wrapper = shallow(<NewUser type={type}/>);
+  const container = wrapper.find('Styled(Container)').at(0);
+  const form = container.find('Form').at(0);
   form.props().onChange();
 });
 
@@ -62,11 +62,12 @@ it('testing function _onPress',() => {
     email: '@',
     senha: '123',
     confirmarSenha: '123'
-  }
+  };
   const wrapper = shallow(<NewUser type={type}/>);
-  wrapper.setState({value:value});
+  wrapper.setState({value: value});
   const onPressF = wrapper.instance()._onPress();
   console.log(wrapper.debug());
+  console.log(onPressF);
 });
 
 it('testing function _onPress error',() => {
@@ -81,9 +82,10 @@ it('testing function _onPress error',() => {
     email: '@',
     senha: '123',
     confirmarSenha: '132'
-  }
+  };
   const wrapper = shallow(<NewUser type={type}/>);
-  wrapper.setState({value:value});
+  wrapper.setState({value: value});
   const onPressF = wrapper.instance()._onPress();
   console.log(wrapper.debug());
+  console.log(onPressF);
 });
