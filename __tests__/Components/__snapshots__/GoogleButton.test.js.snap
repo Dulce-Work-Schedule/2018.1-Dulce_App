@@ -90,7 +90,7 @@ exports[`renders correctly 1`] = `
             "borderWidth": 1,
             "elevation": null,
             "flexDirection": "row",
-            "height": 43,
+            "height": 45,
             "justifyContent": "space-between",
             "marginBottom": 0,
             "marginTop": 15,

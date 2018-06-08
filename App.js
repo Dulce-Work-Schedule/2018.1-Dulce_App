@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginNavigator from './src/Navigators/LoginNavigator';
+import VacationScreen from './src/Screens/VacationScreen';
 import {Provider} from 'react-redux';
 import store from './src/Reducers/store';
 store.subscribe(() => {
@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <LoginNavigator />
+        <VacationScreen />
       </Provider>
     );
   }

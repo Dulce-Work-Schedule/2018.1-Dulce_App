@@ -9879,6 +9879,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -9896,7 +9897,13 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528496004099}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                      date={1528500432684}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10131,6 +10138,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -10148,7 +10156,13 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528496004099}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                      date={1528500432684}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

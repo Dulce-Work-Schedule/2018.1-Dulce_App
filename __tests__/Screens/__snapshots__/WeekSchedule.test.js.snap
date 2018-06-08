@@ -9807,6 +9807,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
@@ -9824,7 +9825,13 @@ exports[`renders correctly 1`] = `
 =======
               date={1528495998379}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+              date={1528500398465}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10059,6 +10066,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
@@ -10076,7 +10084,13 @@ exports[`renders correctly 1`] = `
 =======
               date={1528495998379}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+              date={1528500398465}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10230,6 +10244,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-07T23:15:33.615Z}
 =======
           selected={2018-06-08T15:05:59.219Z}
@@ -10247,7 +10262,13 @@ ShallowWrapper {
 =======
           selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+          selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
           style={
             Object {
               "flex": 1,
@@ -10329,6 +10350,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10346,7 +10368,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                  selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                   style={
                     Object {
                       "flex": 1,
@@ -10417,6 +10445,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
@@ -10434,7 +10463,13 @@ ShallowWrapper {
 =======
           date={2018-06-08T22:13:18.379Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+          date={2018-06-08T23:26:38.465Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10459,6 +10494,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
@@ -10476,7 +10512,13 @@ ShallowWrapper {
 =======
           date={2018-06-08T22:13:18.379Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+          date={2018-06-08T23:26:38.465Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10528,6 +10570,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-07T23:15:33.615Z,
 =======
           "selected": 2018-06-08T15:05:59.219Z,
@@ -10545,7 +10588,13 @@ ShallowWrapper {
 =======
           "selected": 2018-06-08T22:13:19.228Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+          "selected": 2018-06-08T23:26:54.837Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
           "style": Object {
             "flex": 1,
           },
@@ -10631,6 +10680,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10648,7 +10698,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                  selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                   style={
                     Object {
                       "flex": 1,
@@ -10767,6 +10823,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10784,7 +10841,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                  selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                   style={
                     Object {
                       "flex": 1,
@@ -10901,6 +10964,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -10918,7 +10982,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                    selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                     style={
                       Object {
                         "flex": 1,
@@ -11023,6 +11093,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
@@ -11040,7 +11111,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                      selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                       style={
                         Object {
                           "flex": 1,
@@ -11096,6 +11173,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-07T23:15:33.615Z,
 =======
                       "selected": 2018-06-08T15:05:59.219Z,
@@ -11113,7 +11191,13 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-08T22:13:19.228Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                      "selected": 2018-06-08T23:26:54.837Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                       "style": Object {
                         "flex": 1,
                       },
@@ -11235,6 +11319,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
@@ -11252,7 +11337,13 @@ ShallowWrapper {
 =======
           "date": 2018-06-08T22:13:18.379Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+          "date": 2018-06-08T23:26:38.465Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11283,6 +11374,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
@@ -11300,7 +11392,13 @@ ShallowWrapper {
 =======
           "date": 2018-06-08T22:13:18.379Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+          "date": 2018-06-08T23:26:38.465Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11345,6 +11443,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-07T23:15:33.615Z}
 =======
             selected={2018-06-08T15:05:59.219Z}
@@ -11362,7 +11461,13 @@ ShallowWrapper {
 =======
             selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+            selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
             style={
               Object {
                 "flex": 1,
@@ -11444,6 +11549,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11461,7 +11567,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                    selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                     style={
                       Object {
                         "flex": 1,
@@ -11532,6 +11644,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
@@ -11549,7 +11662,13 @@ ShallowWrapper {
 =======
             date={2018-06-08T22:13:18.379Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+            date={2018-06-08T23:26:38.465Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11574,6 +11693,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
@@ -11591,7 +11711,13 @@ ShallowWrapper {
 =======
             date={2018-06-08T22:13:18.379Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+            date={2018-06-08T23:26:38.465Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11643,6 +11769,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-07T23:15:33.615Z,
 =======
             "selected": 2018-06-08T15:05:59.219Z,
@@ -11660,7 +11787,13 @@ ShallowWrapper {
 =======
             "selected": 2018-06-08T22:13:19.228Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+            "selected": 2018-06-08T23:26:54.837Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
             "style": Object {
               "flex": 1,
             },
@@ -11746,6 +11879,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11763,7 +11897,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                    selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                     style={
                       Object {
                         "flex": 1,
@@ -11882,6 +12022,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11899,7 +12040,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                    selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                     style={
                       Object {
                         "flex": 1,
@@ -12016,6 +12163,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
@@ -12033,7 +12181,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                      selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                       style={
                         Object {
                           "flex": 1,
@@ -12138,6 +12292,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-07T23:15:33.615Z}
 =======
                         selected={2018-06-08T15:05:59.219Z}
@@ -12155,7 +12310,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-08T22:13:19.228Z}
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                        selected={2018-06-08T23:26:54.837Z}
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                         style={
                           Object {
                             "flex": 1,
@@ -12211,6 +12372,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-07T23:15:33.615Z,
 =======
                         "selected": 2018-06-08T15:05:59.219Z,
@@ -12228,7 +12390,13 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-08T22:13:19.228Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+                        "selected": 2018-06-08T23:26:54.837Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
                         "style": Object {
                           "flex": 1,
                         },
@@ -12350,6 +12518,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
@@ -12367,7 +12536,13 @@ ShallowWrapper {
 =======
             "date": 2018-06-08T22:13:18.379Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+            "date": 2018-06-08T23:26:38.465Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12398,6 +12573,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
@@ -12415,7 +12591,13 @@ ShallowWrapper {
 =======
             "date": 2018-06-08T22:13:18.379Z,
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
+<<<<<<< HEAD
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+=======
+            "date": 2018-06-08T23:26:38.465Z,
+>>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
+>>>>>>> d06467f... Fix #381 arrumando duplicação de código
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

@@ -74,21 +74,19 @@ const styles = {
   }
 };
 
+const currentDay = {
+  year: new XDate().getFullYear(),
+  month: new XDate().getMonth() + 1,
+  day: new XDate().getDate()
+};
+
 export default class VacationScreen extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      startDay: {
-        year: new XDate().getFullYear(),
-        month: new XDate().getMonth() + 1,
-        day: new XDate().getDate()
-      },
-      endDay: {
-        year: new XDate().getFullYear(),
-        month: new XDate().getMonth() + 1,
-        day: new XDate().getDate()
-      }
+      startDay: currentDay,
+      endDay: currentDay
     };
   }
 
