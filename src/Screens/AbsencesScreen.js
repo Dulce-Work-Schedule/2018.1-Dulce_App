@@ -5,9 +5,11 @@ import {
   View,
   PixelRatio,
   TouchableOpacity,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
-
+import ScreenHeader from '../Components/ScreenHeader';
+import DateRangePicker from '../Components/DateRangePicker';
 import ImagePicker from 'react-native-image-picker';
 
 export default class AbsencesScreen extends React.Component {
@@ -51,16 +53,37 @@ export default class AbsencesScreen extends React.Component {
     });
   }
 
+  onSelectDates(startDay, endDay) {
+    this.setState({
+      startDay: startDay,
+      endDay: endDay
+    });
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-          <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
-          { this.state.documentSource === null ? <Text>Select a Photo</Text>
-            : <Image style={styles.document} source={this.state.documentSource} />
-          }
+      <View style={{flex: 1}}>
+        <ScreenHeader
+          title='Abono de Faltas'
+        />
+        <ScrollView>
+          <Text style={styles.title}>
+                Selecione o período de abono
+          </Text>
+          <DateRangePicker
+            onSuccess={(startDay, endDay) => this.onSelectDates(startDay, endDay)}
+            theme={{markColor: '#5f4b8b', markTextColor: 'white'}}
+          />
+          <View style={styles.container}>
+          <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
+            <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
+            { this.state.documentSource === null ? <Text>Select a Photo</Text>
+              : <Image style={styles.document} source={this.state.documentSource} />
+            }
+            </View>
+          </TouchableOpacity>
           </View>
-        </TouchableOpacity>
+        </ScrollView>
       </View>
     );
   }
@@ -84,5 +107,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     width: 150,
     height: 150
+  },
+  title: {
+    margin: 5,
+    alignSelf: 'center',
+    fontSize: 15,
+    color: '#5f4b8b',
+    backgroundColor: 'white'
   }
 });
