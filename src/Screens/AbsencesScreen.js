@@ -11,7 +11,7 @@ import ScreenHeader from '../Components/ScreenHeader';
 import DateRangePicker from '../Components/DateRangePicker';
 import AGRButton from '../Components/AGRButton';
 import ImagePicker from 'react-native-image-picker';
-import {Icon, Card, CardItem, Text, Body, Form, Textarea} from 'native-base';
+import {Icon, Card, CardItem, Text, Body, Form, Textarea, Picker, Right, Left} from 'native-base';
 
 const XDate = require('xdate');
 
@@ -21,6 +21,7 @@ export default class AbsencesScreen extends React.Component {
     super(props);
     this.state = {
       documentSource: null,
+      absenceOption: '',
       startDay: {
         year: new XDate().getFullYear(),
         month: new XDate().getMonth() + 1,
@@ -76,6 +77,12 @@ export default class AbsencesScreen extends React.Component {
     });
   }
 
+  onSelectAbsence(value) {
+    this.setState({
+      absenceOption: value
+    });
+  }
+
   render() {
     return (
       <View style={{flex: 1}}>
@@ -98,6 +105,25 @@ export default class AbsencesScreen extends React.Component {
             </CardItem>
 
             <CardItem bordered>
+              <Body style={{flexDirection: 'row'}}>
+                <Left>
+                  <Text>
+                    Selecione o abono:
+                  </Text>
+                </Left>
+                <Right>
+                  <Picker
+                    selectedValue={this.state.absenceOption}
+                    style={styles.picker}
+                    onValueChange={(itemValue) => this.onSelectAbsence(itemValue)}>
+                    <Picker.Item label='Atestado' value='medical leave' />
+                    <Picker.Item label='Maternidade' value='maternity leave' />
+                    <Picker.Item label='Paternidade' value='paternity leave' />
+                  </Picker>
+                </Right>
+              </Body>
+            </CardItem>
+            <CardItem bordered>
               <Body style={styles.container}>
                   <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
                     <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
@@ -108,7 +134,7 @@ export default class AbsencesScreen extends React.Component {
                   </TouchableOpacity>
               </Body>
             </CardItem>
-            
+
             <CardItem bordered>
               <Body>
                 <Form style={styles.form}>
@@ -131,7 +157,6 @@ export default class AbsencesScreen extends React.Component {
   }
 
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -209,5 +234,9 @@ const styles = StyleSheet.create({
   },
   form: {
     width: 375
+  },
+  picker: {
+    height: 50,
+    width: 170
   }
 });
