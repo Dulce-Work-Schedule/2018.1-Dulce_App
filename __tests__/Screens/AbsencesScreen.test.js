@@ -2,7 +2,7 @@ import 'react-native';
 import React from 'react';
 import AbsencesScreen from '../../src/Screens/AbsencesScreen';
 import Adapter from 'enzyme-adapter-react-16';
-import {shallow} from 'enzyme';
+// import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import renderer from 'react-test-renderer';
 
