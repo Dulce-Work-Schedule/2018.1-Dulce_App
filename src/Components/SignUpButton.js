@@ -7,7 +7,7 @@ const styles = {
     backgroundColor: '#5f4b8b',
     height: 45,
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 0,
     paddingHorizontal: 50,
     alignSelf: 'center',
     marginBottom: 0,

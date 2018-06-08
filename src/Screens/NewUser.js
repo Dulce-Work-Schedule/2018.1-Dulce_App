@@ -13,9 +13,9 @@ import SignUpButton from '../Components/SignUpButton';
 const styles = {
   container: {
     justifyContent: 'center',
-    marginTop: 50,
-    padding: 20,
-    backgroundColor: 'white'
+    marginTop: 5,
+    padding: 10,
+    backgroundColor: '#FFF'
   },
   title: {
     fontSize: 30,
@@ -42,14 +42,16 @@ const Form = t.form.Form;
 class NewUser extends React.Component {
   constructor(props) {
     super(props);
-
     this.Service = t.struct({
-      Nome: t.String,
-      Email: t.String,
+      nome: t.String,
+      email: t.String,
       senha: t.String,
       confirmarSenha: t.String
     });
-
+    this.state = {
+      senha: t.senha,
+      confirmarSenha: t.confirmarSenha
+    };
     this.options = {
       fields: {
         Nome: {
@@ -59,9 +61,11 @@ class NewUser extends React.Component {
           error: 'Campo obrigatório'
         },
         senha: {
+          secureTextEntry: true,
           error: 'Campo obrigatório'
         },
         confirmarSenha: {
+          secureTextEntry: true,
           error: 'Campo obrigatório'
         }
       },
@@ -69,27 +73,40 @@ class NewUser extends React.Component {
     };
   }
 
-  _onPressButton() {
-
+  onChange(value) {
+    this.setState({value});
   }
 
+  onPress() {
+    const senha = this.refs.form.getComponent('senha').refs.input.focus();
+    const confirmarSenha = this.refs.form.getComponent('confirmarSenha').refs.input.focus();
+    if (this.state.senha === this.state.confirmarSenha) {
+      Alert.alert('Cadastro feito com sucesso!');
+    }
+    else {
+      Alert.alert('As senhas devem ser iguais!');
+    }
+  }
   render() {
+
     return (
-      <ScrollView >
-          <ScreenHeader title = 'Criar nova conta' />
+      <Container style={{backgroundColor: '#FFF'}}>
+        <ScreenHeader title = 'Criar nova conta' />
         <View style={styles.container}>
           <Form
             ref='form'
             type={this.Service}
             options={this.options}
+            value={this.state.value}
           />
-          </View>
-          <View style={{flex:1}}>
-            <SignUpButton
+        </View>
+        <View style={{flex: 1}}>
+          <SignUpButton
             text = 'Cadastrar'
-            />
-            </View>
-      </ScrollView>
+            onPress = {() => {this.onPress();}}
+          />
+        </View>
+      </Container>
     );
   }
 }
