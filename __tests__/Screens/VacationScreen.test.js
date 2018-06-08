@@ -17,9 +17,38 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('justification file', () => {
+it('should test onSelectDates correctly', () => {
+  // This is to test component functions
+  const start = {
+    year: '2018',
+    month: '06',
+    day: '03',
+    dateString: '2018-06-03'
+  };
+  const end = {
+    year: '2018',
+    month: '06',
+    day: '04',
+    dateString: '2018-06-04'
+  };
+  const spy = jest.spyOn(VacationScreen.prototype,'setState');
+
+  let vacationScreen = renderer
+    .create(
+      <VacationScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(spy)
+        }
+      />
+    )
+    .getInstance();
+
+  vacationScreen.onSelectDates(start, end);
+});
+
+it('should press the useless button', () => {
   const wrapper = shallow(<VacationScreen />);
-  const justificationField = wrapper.find('TextInput').at(0);
-  justificationField.simulate('changeText','text');
-  expect(wrapper.state('justification')).toBe('text');
+  const button = wrapper.find('AGRButton').at(0);
+  button.simulate('press');
 });

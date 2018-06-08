@@ -7,9 +7,7 @@ export default class DateRangePicker extends Component {
 
   state = {isFromDatePicked: false, isToDatePicked: false, markedDates: {}}
 
-  componentDidMount() { this.setupInitialRange(); }
-
-  onDayPress = (day) => {
+  onDayPress(day) {
     if (!this.state.isFromDatePicked || (this.state.isFromDatePicked && this.state.isToDatePicked)) {
       this.setupStartMarker(day);
     } else if (!this.state.isToDatePicked) {
@@ -24,12 +22,12 @@ export default class DateRangePicker extends Component {
     }
   }
 
-  setupStartMarker = (day) => {
+  setupStartMarker(day) {
     let markedDates = {[day.dateString]: {startingDay: true, color: this.props.theme.markColor, textColor: this.props.theme.markTextColor}};
     this.setState({isFromDatePicked: true, isToDatePicked: false, fromDate: day, markedDates: markedDates});
   }
 
-  setupMarkedDates = (fromDate, toDate, markedDates) => {
+  setupMarkedDates(fromDate, toDate, markedDates) {
     let mFromDate = new XDate(fromDate);
     let mToDate = new XDate(toDate);
     let range = mFromDate.diffDays(mToDate);
@@ -47,17 +45,9 @@ export default class DateRangePicker extends Component {
         }
       }
     }
+    console.log(markedDates);
     return [markedDates, range];
   }
-
-  setupInitialRange = () => {
-    if (!this.props.initialRange) {return;}
-    let [fromDate, toDate] = this.props.initialRange;
-    let markedDates = {[fromDate]: {startingDay: true, color: this.props.theme.markColor, textColor: this.props.theme.markTextColor}};
-    let [mMarkedDates, range] = this.setupMarkedDates(fromDate, toDate, markedDates);
-    console.log(range);
-    this.setState({markedDates: mMarkedDates, fromDate: fromDate});
-  };
 
   render() {
     return (
