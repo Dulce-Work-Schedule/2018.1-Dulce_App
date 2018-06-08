@@ -9795,6 +9795,7 @@ exports[`renders correctly 1`] = `
             <RCTDatePicker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
@@ -9802,6 +9803,9 @@ exports[`renders correctly 1`] = `
 =======
               date={1528488169592}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+              date={1528492020724}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10034,6 +10038,7 @@ exports[`renders correctly 1`] = `
             <RCTDatePicker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
@@ -10041,6 +10046,9 @@ exports[`renders correctly 1`] = `
 =======
               date={1528488169592}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+              date={1528492020724}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10192,6 +10200,7 @@ ShallowWrapper {
           rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-07T23:15:33.615Z}
 =======
           selected={2018-06-08T15:05:59.219Z}
@@ -10199,6 +10208,9 @@ ShallowWrapper {
 =======
           selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+          selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
           style={
             Object {
               "flex": 1,
@@ -10278,6 +10290,7 @@ ShallowWrapper {
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10285,6 +10298,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                  selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                   style={
                     Object {
                       "flex": 1,
@@ -10353,6 +10369,7 @@ ShallowWrapper {
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
@@ -10360,6 +10377,9 @@ ShallowWrapper {
 =======
           date={2018-06-08T20:02:49.592Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+          date={2018-06-08T21:07:00.724Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10382,6 +10402,7 @@ ShallowWrapper {
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
@@ -10389,6 +10410,9 @@ ShallowWrapper {
 =======
           date={2018-06-08T20:02:49.592Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+          date={2018-06-08T21:07:00.724Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10438,6 +10462,7 @@ ShallowWrapper {
           "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-07T23:15:33.615Z,
 =======
           "selected": 2018-06-08T15:05:59.219Z,
@@ -10445,6 +10470,9 @@ ShallowWrapper {
 =======
           "selected": 2018-06-08T20:02:50.673Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+          "selected": 2018-06-08T21:07:01.769Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
           "style": Object {
             "flex": 1,
           },
@@ -10528,6 +10556,7 @@ ShallowWrapper {
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10535,6 +10564,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                  selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                   style={
                     Object {
                       "flex": 1,
@@ -10651,6 +10683,7 @@ ShallowWrapper {
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
@@ -10658,6 +10691,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                  selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                   style={
                     Object {
                       "flex": 1,
@@ -10772,6 +10808,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -10779,6 +10816,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                    selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                     style={
                       Object {
                         "flex": 1,
@@ -10881,6 +10921,7 @@ ShallowWrapper {
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
@@ -10888,6 +10929,9 @@ ShallowWrapper {
 =======
                       selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                      selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                       style={
                         Object {
                           "flex": 1,
@@ -10941,6 +10985,7 @@ ShallowWrapper {
                       "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-07T23:15:33.615Z,
 =======
                       "selected": 2018-06-08T15:05:59.219Z,
@@ -10948,6 +10993,9 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-08T20:02:50.673Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                      "selected": 2018-06-08T21:07:01.769Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                       "style": Object {
                         "flex": 1,
                       },
@@ -11067,6 +11115,7 @@ ShallowWrapper {
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
@@ -11074,6 +11123,9 @@ ShallowWrapper {
 =======
           "date": 2018-06-08T20:02:49.592Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+          "date": 2018-06-08T21:07:00.724Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11102,6 +11154,7 @@ ShallowWrapper {
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
@@ -11109,6 +11162,9 @@ ShallowWrapper {
 =======
           "date": 2018-06-08T20:02:49.592Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+          "date": 2018-06-08T21:07:00.724Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11151,6 +11207,7 @@ ShallowWrapper {
             rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-07T23:15:33.615Z}
 =======
             selected={2018-06-08T15:05:59.219Z}
@@ -11158,6 +11215,9 @@ ShallowWrapper {
 =======
             selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+            selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
             style={
               Object {
                 "flex": 1,
@@ -11237,6 +11297,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11244,6 +11305,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                    selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                     style={
                       Object {
                         "flex": 1,
@@ -11312,6 +11376,7 @@ ShallowWrapper {
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
@@ -11319,6 +11384,9 @@ ShallowWrapper {
 =======
             date={2018-06-08T20:02:49.592Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+            date={2018-06-08T21:07:00.724Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11341,6 +11409,7 @@ ShallowWrapper {
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
@@ -11348,6 +11417,9 @@ ShallowWrapper {
 =======
             date={2018-06-08T20:02:49.592Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+            date={2018-06-08T21:07:00.724Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11397,6 +11469,7 @@ ShallowWrapper {
             "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-07T23:15:33.615Z,
 =======
             "selected": 2018-06-08T15:05:59.219Z,
@@ -11404,6 +11477,9 @@ ShallowWrapper {
 =======
             "selected": 2018-06-08T20:02:50.673Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+            "selected": 2018-06-08T21:07:01.769Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
             "style": Object {
               "flex": 1,
             },
@@ -11487,6 +11563,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11494,6 +11571,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                    selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                     style={
                       Object {
                         "flex": 1,
@@ -11610,6 +11690,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
@@ -11617,6 +11698,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                    selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                     style={
                       Object {
                         "flex": 1,
@@ -11731,6 +11815,7 @@ ShallowWrapper {
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
@@ -11738,6 +11823,9 @@ ShallowWrapper {
 =======
                       selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                      selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                       style={
                         Object {
                           "flex": 1,
@@ -11840,6 +11928,7 @@ ShallowWrapper {
                         rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-07T23:15:33.615Z}
 =======
                         selected={2018-06-08T15:05:59.219Z}
@@ -11847,6 +11936,9 @@ ShallowWrapper {
 =======
                         selected={2018-06-08T20:02:50.673Z}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                        selected={2018-06-08T21:07:01.769Z}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                         style={
                           Object {
                             "flex": 1,
@@ -11900,6 +11992,7 @@ ShallowWrapper {
                         "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-07T23:15:33.615Z,
 =======
                         "selected": 2018-06-08T15:05:59.219Z,
@@ -11907,6 +12000,9 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-08T20:02:50.673Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                        "selected": 2018-06-08T21:07:01.769Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                         "style": Object {
                           "flex": 1,
                         },
@@ -12026,6 +12122,7 @@ ShallowWrapper {
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
@@ -12033,6 +12130,9 @@ ShallowWrapper {
 =======
             "date": 2018-06-08T20:02:49.592Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+            "date": 2018-06-08T21:07:00.724Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12061,6 +12161,7 @@ ShallowWrapper {
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
@@ -12068,6 +12169,9 @@ ShallowWrapper {
 =======
             "date": 2018-06-08T20:02:49.592Z,
 >>>>>>> 85922d5... #389 realizando testes
+=======
+            "date": 2018-06-08T21:07:00.724Z,
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

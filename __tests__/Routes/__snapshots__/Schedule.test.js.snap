@@ -9867,6 +9867,7 @@ exports[`renders correctly 1`] = `
                     <RCTDatePicker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -9874,6 +9875,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528488176367}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                      date={1528492029158}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10106,6 +10110,7 @@ exports[`renders correctly 1`] = `
                     <RCTDatePicker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -10113,6 +10118,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528488176367}
 >>>>>>> 85922d5... #389 realizando testes
+=======
+                      date={1528492029158}
+>>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

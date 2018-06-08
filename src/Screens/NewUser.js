@@ -76,7 +76,7 @@ class NewUser extends React.Component {
     this.setState({value});
   }
 
-  onPress() {
+  _onPress() {
     if (this.state.value.nome !== '' && this.state.value.email !== '') {
       if (this.state.value.senha === this.state.value.confirmarSenha) {
         Alert.alert('Cadastro feito com sucesso!');
@@ -106,7 +106,7 @@ class NewUser extends React.Component {
         <View style={{flex: 1}}>
           <SignUpButton
             text = 'Cadastrar'
-            onPress = {(v) => this.onPress(v)}
+            onPress = {(v) => this._onPress(v)}
           />
         </View>
       </Container>
