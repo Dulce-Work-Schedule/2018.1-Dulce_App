@@ -73,13 +73,13 @@ export default class NotificationScreen extends Component {
   fab() {
     return (
       <Fab
-        active={this.state.active}
+        active={true}
         direction='up'
         containerStyle={{}}
         style={{backgroundColor: '#5f4b8b'}}
         position='bottomRight'
-        onPress={() => { this.timePickerVisible(true); }}>
-        <Icon type='MaterialIcons' name='edit' />
+        onPress={() => {}}>
+        <Icon type='MaterialIcons' name='add' />
       </Fab>);
   }
 
@@ -113,6 +113,7 @@ export default class NotificationScreen extends Component {
 
   render() {
     return (
+      <View style={{flex:1}}>
       <Container>
         <ScreenHeader
           title = 'Notificações'
@@ -126,6 +127,7 @@ export default class NotificationScreen extends Component {
         </Content>
       </Container>
     {this.fab()}
+    </View>
     );
   }
 }
