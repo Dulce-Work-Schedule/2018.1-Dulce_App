@@ -3,6 +3,7 @@ import {View, Text, TextInput} from 'react-native';
 import DateRangePicker from '../Components/DateRangePicker';
 import ScreenHeader from '../Components/ScreenHeader';
 import AGRButton from '../Components/AGRButton';
+import {Icon} from 'native-base';
 
 const XDate = require('xdate');
 
@@ -11,7 +12,8 @@ const styles = {
     margin: 5,
     alignSelf: 'center',
     fontSize: 15,
-    backgroundColor: '#fff'
+    color: '#5f4b8b',
+    backgroundColor: 'white'
   },
   container: {
     flex: 1,
@@ -19,24 +21,60 @@ const styles = {
     justifyContent: 'space-around'
   },
   date: {
-    color: '#5f4b8b',
-    fontSize: 25
+    margin: 5,
+    alignSelf: 'center',
+    fontSize: 25,
+    marginLeft: 5,
+    color: '#5f4b8b'
+    // underlayColor: '#5f4b8b'
   },
   dates: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: 'blue'
+    marginRight: 5,
+    marginLeft: 5,
+    marginTop: 10,
+    borderColor: '#5f4b8b',
+    borderWidth: 2,
+    borderRadius: 5
   },
   justify: {
-    flex: 2,
-    backgroundColor: 'red'
+    flex: 1.5,
+    backgroundColor: '#ede8f7',
+    marginLeft: 5,
+    marginRight: 5,
+    marginTop: 10,
+    borderColor: '#5f4b8b',
+    borderWidth: 2,
+    borderRadius: 5
   },
   button: {
+    alignItems: 'center',
+    backgroundColor: '#5f4b8b',
+    width: 140,
+    height: 40,
+    marginTop: 15,
+    marginRight: 5,
+    marginLeft: 10
+  },
+  icon: {
+    fontSize: 40,
+    color: '#5f4b8b'
+  },
+  view1: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
+    alignItems: 'center'
+  },
+  view2: {
+    flex: 1,
     justifyContent: 'center',
-    backgroundColor: 'blue'
+    alignItems: 'center'
+  },
+  view3: {
+    flex: 1,
+    alignItems: 'center'
   }
 };
 
@@ -61,7 +99,8 @@ export default class VacationScreen extends Component {
   onSelectDates(startDay, endDay) {
     this.setState({
       startDay: startDay,
-      endDay: endDay
+      endDay: endDay,
+      justification: ''
     });
   }
   render() {
@@ -79,16 +118,23 @@ export default class VacationScreen extends Component {
         />
         <View style={styles.container}>
           <View style={styles.dates}>
-            <Text style={styles.date}>Data de inicio: {this.state.startDay.day}/{this.state.startDay.month}/{this.state.startDay.year} </Text>
-            <Text style={styles.date}>fim: {this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}</Text>
+            <View style={styles.view1}><Text style={styles.date}>{this.state.startDay.day}/{this.state.startDay.month}/{this.state.startDay.year}</Text></View>
+            <View style={styles.view2}><Icon name='md-arrow-dropright-circle' style={styles.icon} /></View>
+            <View style={styles.view3}><Text style={styles.date}>{this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}</Text></View>
           </View>
           <View style={styles.justify}>
           <TextInput
-            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+            placeholder='Justificativa'
+            maxLength = {350}
+            multiline = {true}
+            onChangeText={(justification) => this.setState({justification})}
+            value={this.state.justification}
+            underlineColorAndroid='transparent'
           />
           </View>
-          <View style={styles.button}>
+          <View style={{flex: 2}}>
           <AGRButton
+            style={styles.button}
             onPress={() => {}}
             text='Escolher férias'
           />
