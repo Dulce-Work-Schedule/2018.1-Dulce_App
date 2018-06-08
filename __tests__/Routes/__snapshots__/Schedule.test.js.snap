@@ -9866,10 +9866,14 @@ exports[`renders correctly 1`] = `
                   >
                     <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                      date={1528488176367}
+>>>>>>> 85922d5... #389 realizando testes
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10101,10 +10105,14 @@ exports[`renders correctly 1`] = `
                   >
                     <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                      date={1528488176367}
+>>>>>>> 85922d5... #389 realizando testes
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

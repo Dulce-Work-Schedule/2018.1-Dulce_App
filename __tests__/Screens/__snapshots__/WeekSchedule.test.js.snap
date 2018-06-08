@@ -9794,10 +9794,14 @@ exports[`renders correctly 1`] = `
           >
             <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+              date={1528488169592}
+>>>>>>> 85922d5... #389 realizando testes
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10029,10 +10033,14 @@ exports[`renders correctly 1`] = `
           >
             <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528413332676}
 =======
               date={1528470357446}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+              date={1528488169592}
+>>>>>>> 85922d5... #389 realizando testes
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10183,10 +10191,14 @@ ShallowWrapper {
           renderItem={[Function]}
           rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-07T23:15:33.615Z}
 =======
           selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+          selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
           style={
             Object {
               "flex": 1,
@@ -10265,10 +10277,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                  selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                   style={
                     Object {
                       "flex": 1,
@@ -10336,10 +10352,14 @@ ShallowWrapper {
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+          date={2018-06-08T20:02:49.592Z}
+>>>>>>> 85922d5... #389 realizando testes
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10361,10 +10381,14 @@ ShallowWrapper {
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-07T23:15:32.676Z}
 =======
           date={2018-06-08T15:05:57.446Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+          date={2018-06-08T20:02:49.592Z}
+>>>>>>> 85922d5... #389 realizando testes
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10413,10 +10437,14 @@ ShallowWrapper {
           "renderItem": [Function],
           "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-07T23:15:33.615Z,
 =======
           "selected": 2018-06-08T15:05:59.219Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+          "selected": 2018-06-08T20:02:50.673Z,
+>>>>>>> 85922d5... #389 realizando testes
           "style": Object {
             "flex": 1,
           },
@@ -10499,10 +10527,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                  selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                   style={
                     Object {
                       "flex": 1,
@@ -10618,10 +10650,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-07T23:15:33.615Z}
 =======
                   selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                  selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                   style={
                     Object {
                       "flex": 1,
@@ -10735,10 +10771,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                    selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                     style={
                       Object {
                         "flex": 1,
@@ -10840,10 +10880,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                      selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                       style={
                         Object {
                           "flex": 1,
@@ -10896,10 +10940,14 @@ ShallowWrapper {
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-07T23:15:33.615Z,
 =======
                       "selected": 2018-06-08T15:05:59.219Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                      "selected": 2018-06-08T20:02:50.673Z,
+>>>>>>> 85922d5... #389 realizando testes
                       "style": Object {
                         "flex": 1,
                       },
@@ -11018,10 +11066,14 @@ ShallowWrapper {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+          "date": 2018-06-08T20:02:49.592Z,
+>>>>>>> 85922d5... #389 realizando testes
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11049,10 +11101,14 @@ ShallowWrapper {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-07T23:15:32.676Z,
 =======
           "date": 2018-06-08T15:05:57.446Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+          "date": 2018-06-08T20:02:49.592Z,
+>>>>>>> 85922d5... #389 realizando testes
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11094,10 +11150,14 @@ ShallowWrapper {
             renderItem={[Function]}
             rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-07T23:15:33.615Z}
 =======
             selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+            selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
             style={
               Object {
                 "flex": 1,
@@ -11176,10 +11236,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                    selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                     style={
                       Object {
                         "flex": 1,
@@ -11247,10 +11311,14 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+            date={2018-06-08T20:02:49.592Z}
+>>>>>>> 85922d5... #389 realizando testes
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11272,10 +11340,14 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-07T23:15:32.676Z}
 =======
             date={2018-06-08T15:05:57.446Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+            date={2018-06-08T20:02:49.592Z}
+>>>>>>> 85922d5... #389 realizando testes
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11324,10 +11396,14 @@ ShallowWrapper {
             "renderItem": [Function],
             "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-07T23:15:33.615Z,
 =======
             "selected": 2018-06-08T15:05:59.219Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+            "selected": 2018-06-08T20:02:50.673Z,
+>>>>>>> 85922d5... #389 realizando testes
             "style": Object {
               "flex": 1,
             },
@@ -11410,10 +11486,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                    selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                     style={
                       Object {
                         "flex": 1,
@@ -11529,10 +11609,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-07T23:15:33.615Z}
 =======
                     selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                    selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                     style={
                       Object {
                         "flex": 1,
@@ -11646,10 +11730,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-07T23:15:33.615Z}
 =======
                       selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                      selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                       style={
                         Object {
                           "flex": 1,
@@ -11751,10 +11839,14 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-07T23:15:33.615Z}
 =======
                         selected={2018-06-08T15:05:59.219Z}
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                        selected={2018-06-08T20:02:50.673Z}
+>>>>>>> 85922d5... #389 realizando testes
                         style={
                           Object {
                             "flex": 1,
@@ -11807,10 +11899,14 @@ ShallowWrapper {
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-07T23:15:33.615Z,
 =======
                         "selected": 2018-06-08T15:05:59.219Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+                        "selected": 2018-06-08T20:02:50.673Z,
+>>>>>>> 85922d5... #389 realizando testes
                         "style": Object {
                           "flex": 1,
                         },
@@ -11929,10 +12025,14 @@ ShallowWrapper {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+            "date": 2018-06-08T20:02:49.592Z,
+>>>>>>> 85922d5... #389 realizando testes
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -11960,10 +12060,14 @@ ShallowWrapper {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-07T23:15:32.676Z,
 =======
             "date": 2018-06-08T15:05:57.446Z,
 >>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
+=======
+            "date": 2018-06-08T20:02:49.592Z,
+>>>>>>> 85922d5... #389 realizando testes
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

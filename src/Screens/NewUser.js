@@ -74,7 +74,6 @@ class NewUser extends React.Component {
 
   onChange(value) {
     this.setState({value});
-    console.log({value});
   }
 
   onPress() {
