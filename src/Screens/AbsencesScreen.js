@@ -10,7 +10,7 @@ import {
 
 import ImagePicker from 'react-native-image-picker';
 
-export default class App extends React.Component {
+export default class AbsencesScreen extends React.Component {
 
   state = {
     documentSource: null
