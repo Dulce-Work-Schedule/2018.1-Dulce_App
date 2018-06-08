@@ -52,3 +52,18 @@ it('should press the useless button', () => {
   const button = wrapper.find('AGRButton').at(0);
   button.simulate('press');
 });
+
+// it('should test call to onSelectDates', () => {
+//   const spy = jest.spyOn(VacationScreen.prototype, 'onSelectDates');
+//   const wrapper = shallow(<VacationScreen />);
+//
+//   const datePicker = wrapper.find('DateRangePicker').at(0);
+//   const dayButton1 = datePicker.find('Day').at(0);
+//   const dayButton2 = datePicker.find('Day').at(1);
+//
+//   console.log(dayButton1.simulate('press'));
+//   console.log(dayButton2.simulate('press'));
+//
+//   // expect(spy).toHaveBeenCalled();
+//
+// });

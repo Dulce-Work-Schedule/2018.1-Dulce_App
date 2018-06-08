@@ -208,7 +208,11 @@ exports[`renders correctly 1`] = `
               "2018-05-08T00:00:00.000Z",
               "2018-06-08T00:00:00.000Z",
               "2018-07-08T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4988,7 +4992,11 @@ exports[`renders correctly 1`] = `
                         "2018-05-08T00:00:00.000Z",
                         "2018-06-08T00:00:00.000Z",
                         "2018-07-08T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9810,8 +9818,13 @@ exports[`renders correctly 1`] = `
               date={1528492020724}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
               date={1528511850578}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+              date={1528495998379}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10057,8 +10070,13 @@ exports[`renders correctly 1`] = `
               date={1528492020724}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
               date={1528511850578}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+              date={1528495998379}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10223,8 +10241,13 @@ ShallowWrapper {
           selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
           selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+          selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
           style={
             Object {
               "flex": 1,
@@ -10317,8 +10340,13 @@ ShallowWrapper {
                   selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                   selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                  selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                   style={
                     Object {
                       "flex": 1,
@@ -10400,8 +10428,13 @@ ShallowWrapper {
           date={2018-06-08T21:07:00.724Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
           date={2018-06-09T02:37:30.578Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+          date={2018-06-08T22:13:18.379Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10437,8 +10470,13 @@ ShallowWrapper {
           date={2018-06-08T21:07:00.724Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
           date={2018-06-09T02:37:30.578Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+          date={2018-06-08T22:13:18.379Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10501,8 +10539,13 @@ ShallowWrapper {
           "selected": 2018-06-08T21:07:01.769Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
           "selected": 2018-06-09T02:37:31.743Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+          "selected": 2018-06-08T22:13:19.228Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
           "style": Object {
             "flex": 1,
           },
@@ -10599,8 +10642,13 @@ ShallowWrapper {
                   selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                   selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                  selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                   style={
                     Object {
                       "flex": 1,
@@ -10730,8 +10778,13 @@ ShallowWrapper {
                   selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                   selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                  selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                   style={
                     Object {
                       "flex": 1,
@@ -10859,8 +10912,13 @@ ShallowWrapper {
                     selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                     selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                    selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                     style={
                       Object {
                         "flex": 1,
@@ -10976,8 +11034,13 @@ ShallowWrapper {
                       selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                       selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                      selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                       style={
                         Object {
                           "flex": 1,
@@ -11044,8 +11107,13 @@ ShallowWrapper {
                       "selected": 2018-06-08T21:07:01.769Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                       "selected": 2018-06-09T02:37:31.743Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                      "selected": 2018-06-08T22:13:19.228Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                       "style": Object {
                         "flex": 1,
                       },
@@ -11178,8 +11246,13 @@ ShallowWrapper {
           "date": 2018-06-08T21:07:00.724Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
           "date": 2018-06-09T02:37:30.578Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+          "date": 2018-06-08T22:13:18.379Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11221,8 +11294,13 @@ ShallowWrapper {
           "date": 2018-06-08T21:07:00.724Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
           "date": 2018-06-09T02:37:30.578Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+          "date": 2018-06-08T22:13:18.379Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11278,8 +11356,13 @@ ShallowWrapper {
             selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
             selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+            selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
             style={
               Object {
                 "flex": 1,
@@ -11372,8 +11455,13 @@ ShallowWrapper {
                     selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                     selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                    selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                     style={
                       Object {
                         "flex": 1,
@@ -11455,8 +11543,13 @@ ShallowWrapper {
             date={2018-06-08T21:07:00.724Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
             date={2018-06-09T02:37:30.578Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+            date={2018-06-08T22:13:18.379Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11492,8 +11585,13 @@ ShallowWrapper {
             date={2018-06-08T21:07:00.724Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
             date={2018-06-09T02:37:30.578Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+            date={2018-06-08T22:13:18.379Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11556,8 +11654,13 @@ ShallowWrapper {
             "selected": 2018-06-08T21:07:01.769Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
             "selected": 2018-06-09T02:37:31.743Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+            "selected": 2018-06-08T22:13:19.228Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
             "style": Object {
               "flex": 1,
             },
@@ -11654,8 +11757,13 @@ ShallowWrapper {
                     selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                     selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                    selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                     style={
                       Object {
                         "flex": 1,
@@ -11785,8 +11893,13 @@ ShallowWrapper {
                     selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                     selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                    selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                     style={
                       Object {
                         "flex": 1,
@@ -11914,8 +12027,13 @@ ShallowWrapper {
                       selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                       selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                      selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                       style={
                         Object {
                           "flex": 1,
@@ -12031,8 +12149,13 @@ ShallowWrapper {
                         selected={2018-06-08T21:07:01.769Z}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                         selected={2018-06-09T02:37:31.743Z}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                        selected={2018-06-08T22:13:19.228Z}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                         style={
                           Object {
                             "flex": 1,
@@ -12099,8 +12222,13 @@ ShallowWrapper {
                         "selected": 2018-06-08T21:07:01.769Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                         "selected": 2018-06-09T02:37:31.743Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                        "selected": 2018-06-08T22:13:19.228Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                         "style": Object {
                           "flex": 1,
                         },
@@ -12233,8 +12361,13 @@ ShallowWrapper {
             "date": 2018-06-08T21:07:00.724Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
             "date": 2018-06-09T02:37:30.578Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+            "date": 2018-06-08T22:13:18.379Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12276,8 +12409,13 @@ ShallowWrapper {
             "date": 2018-06-08T21:07:00.724Z,
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
             "date": 2018-06-09T02:37:30.578Z,
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+            "date": 2018-06-08T22:13:18.379Z,
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

@@ -56,5 +56,56 @@ it('should test onPress day call to on', () => {
 
   console.log(wrapper.instance().onDayPress(day));
   // const press = shallow(wrapper.instance().onDayPress(day));
+});
+
+it('should test onPress day call to have more than one date', () => {
+  const success = jest.fn();
+  const day = {
+    year: '2018',
+    month: '06',
+    day: '03',
+    dateString: '2018-06-03'
+  };
+  const day2 = {
+    year: '2018',
+    month: '06',
+    day: '05',
+    dateString: '2018-06-05'
+  };
+
+
+  const wrapper = shallow(<DateRangePicker onSuccess={success}/>);
+  wrapper.setState({isFromDatePicked: true});
+  wrapper.setState({isToDatePicked: false});
+  wrapper.setState({fromDate: day});
+  wrapper.setState({toDate: day2});
+
+  console.log(wrapper.instance().onDayPress(day2));
+
+});
+
+it('should test onPress day call when end date is before the start date', () => {
+  const success = jest.fn();
+  const day = {
+    year: '2018',
+    month: '06',
+    day: '03',
+    dateString: '2018-06-03'
+  };
+  const day2 = {
+    year: '2018',
+    month: '06',
+    day: '01',
+    dateString: '2018-06-01'
+  };
+
+
+  const wrapper = shallow(<DateRangePicker onSuccess={success}/>);
+  wrapper.setState({isFromDatePicked: true});
+  wrapper.setState({isToDatePicked: false});
+  wrapper.setState({fromDate: day});
+  wrapper.setState({toDate: day2});
+
+  console.log(wrapper.instance().onDayPress(day2));
 
 });

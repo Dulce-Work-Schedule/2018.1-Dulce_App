@@ -280,7 +280,11 @@ exports[`renders correctly 1`] = `
                       "2018-05-08T00:00:00.000Z",
                       "2018-06-08T00:00:00.000Z",
                       "2018-07-08T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -5060,7 +5064,11 @@ exports[`renders correctly 1`] = `
                                 "2018-05-08T00:00:00.000Z",
                                 "2018-06-08T00:00:00.000Z",
                                 "2018-07-08T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -9882,8 +9890,13 @@ exports[`renders correctly 1`] = `
                       date={1528492029158}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                       date={1528511861250}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                      date={1528496004099}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10129,8 +10142,13 @@ exports[`renders correctly 1`] = `
                       date={1528492029158}
 >>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
 =======
+<<<<<<< HEAD
                       date={1528511861250}
 >>>>>>> d491e63... FIX #376 Adicionando testes
+=======
+                      date={1528496004099}
+>>>>>>> aa9daad... FIX #381 Testando 92,23%.
+>>>>>>> 59b20a5... FIX #381 Testando 92,23%.
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
