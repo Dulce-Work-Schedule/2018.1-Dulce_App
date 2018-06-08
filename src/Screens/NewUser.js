@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
-import {Text,View,ScrollView,StyleSheet,TouchableHighlight,Alert
-} from 'react-native';
+import {Text,
+         View,
+         ScrollView,
+         StyleSheet,
+         TouchableHighlight,
+         Alert} from 'react-native';
+import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
+import {Container,Content,Button} from 'native-base';
+import SignUpButton from '../Components/SignUpButton';
 
 const styles = {
   container: {
     justifyContent: 'center',
     marginTop: 50,
     padding: 20,
-    backgroundColor: '#ffffff'
+    backgroundColor: 'white'
   },
   title: {
     fontSize: 30,
@@ -20,18 +27,8 @@ const styles = {
     color: 'white',
     alignSelf: 'center'
   },
-  button: {
-    height: 36,
-    backgroundColor: '#48BBEC',
-    borderColor: '#48BBEC',
-    borderWidth: 1,
-    borderRadius: 8,
-    marginBottom: 10,
-    alignSelf: 'stretch',
-    justifyContent: 'center'
-  },
   item: {
-    borderBottomWidth: 1,
+    borderBottomWidth: 1
   },
   errorTextStyle: {
     fontSize: 20,
@@ -40,60 +37,58 @@ const styles = {
   }
 };
 
-
 const Form = t.form.Form;
 
-class ServiceForm extends Component {
+class NewUser extends React.Component {
   constructor(props) {
     super(props);
 
     this.Service = t.struct({
-      nomeDoServiço: t.String,
-      descriçãoDoServiço: t.String,
-      estado: t.String,
-      cidade: t.String,
-      bairro: t.String
+      Nome: t.String,
+      Email: t.String,
+      senha: t.String,
+      confirmarSenha: t.String
     });
 
     this.options = {
       fields: {
-        estado: {
-          error: 'Digite um estado'
+        Nome: {
+          error: 'Campo obrigatório'
         },
-        cidade: {
-          error: 'Digite uma cidade'
+        Email: {
+          error: 'Campo obrigatório'
         },
-        bairro: {
-          error: 'Digite um bairro'
+        senha: {
+          error: 'Campo obrigatório'
         },
-        nomeDoServiço: {
-          error: 'Digite um nome do serviço'
-        },
-        descriçãoDoServiço: {
-          error: 'Digite uma descrição do serviço'
+        confirmarSenha: {
+          error: 'Campo obrigatório'
         }
       },
       stylesheet: formStyles
     };
   }
 
-  onPress() {
+  _onPressButton() {
 
   }
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView >
+          <ScreenHeader title = 'Criar nova conta' />
         <View style={styles.container}>
           <Form
             ref='form'
             type={this.Service}
             options={this.options}
           />
-          <TouchableHighlight style={styles.button} onPress={this.onPress.bind(this)} underlayColor='#99d9f4'>
-            <Text style={styles.buttonText}>Cadastrar</Text>
-          </TouchableHighlight>
-        </View>
+          </View>
+          <View style={{flex:1}}>
+            <SignUpButton
+            text = 'Cadastrar'
+            />
+            </View>
       </ScrollView>
     );
   }
@@ -101,13 +96,12 @@ class ServiceForm extends Component {
 
 const formStyles = {
   ...Form.stylesheet,
-    error: {
-      color: 'red',
-      fontSize: 18,
-      marginBottom: 7,
-      fontWeight: '600'
-    }
-  };
+  error: {
+    color: 'red',
+    fontSize: 18,
+    marginBottom: 7,
+    fontWeight: '600'
+  }
+};
 
-
-export default ServiceForm;
+export default NewUser;
