@@ -1,20 +1,15 @@
-import React, {Component} from 'react';
-import {Text,
-         View,
-         ScrollView,
-         StyleSheet,
-         TouchableHighlight,
-         Alert} from 'react-native';
+import React from 'react';
+import {View,Alert} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
-import {Container,Content,Button} from 'native-base';
+import {Container} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
 
 const styles = {
   container: {
     justifyContent: 'center',
-    marginTop: 5,
-    padding: 10,
+    marginTop: 10,
+    padding: 15,
     backgroundColor: '#FFF'
   },
   title: {
@@ -49,8 +44,12 @@ class NewUser extends React.Component {
       confirmarSenha: t.String
     });
     this.state = {
-      senha: t.senha,
-      confirmarSenha: t.confirmarSenha
+      value: {
+        nome: '',
+        email: '',
+        senha: '',
+        confirmarSenha: ''
+      }
     };
     this.options = {
       fields: {
@@ -75,18 +74,22 @@ class NewUser extends React.Component {
 
   onChange(value) {
     this.setState({value});
+    console.log({value});
   }
 
   onPress() {
-    const senha = this.refs.form.getComponent('senha').refs.input.focus();
-    const confirmarSenha = this.refs.form.getComponent('confirmarSenha').refs.input.focus();
-    if (this.state.senha === this.state.confirmarSenha) {
-      Alert.alert('Cadastro feito com sucesso!');
-    }
-    else {
-      Alert.alert('As senhas devem ser iguais!');
+    if (this.state.value.nome !== '' && this.state.value.email !== '') {
+      if (this.state.value.senha === this.state.value.confirmarSenha) {
+        Alert.alert('Cadastro feito com sucesso!');
+      }
+      else {
+        Alert.alert('As senhas devem ser iguais!');
+      }
+    } else {
+      Alert.alert('Os campos não podem estar vazios!');
     }
   }
+
   render() {
 
     return (
@@ -96,14 +99,15 @@ class NewUser extends React.Component {
           <Form
             ref='form'
             type={this.Service}
-            options={this.options}
             value={this.state.value}
+            options={this.options}
+            onChange={(v) => this.onChange(v)}
           />
         </View>
         <View style={{flex: 1}}>
           <SignUpButton
             text = 'Cadastrar'
-            onPress = {() => {this.onPress();}}
+            onPress = {(v) => this.onPress(v)}
           />
         </View>
       </Container>
@@ -115,8 +119,8 @@ const formStyles = {
   ...Form.stylesheet,
   error: {
     color: 'red',
-    fontSize: 18,
-    marginBottom: 7,
+    fontSize: 14,
+    marginBottom: 3,
     fontWeight: '600'
   }
 };
