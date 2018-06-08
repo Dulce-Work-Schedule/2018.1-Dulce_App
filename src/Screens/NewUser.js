@@ -49,28 +49,16 @@ class NewUser extends React.Component {
         email: '',
         senha: '',
         confirmarSenha: ''
-      }
-    };
+      }};
     this.options = {
-      fields: {
-        Nome: {
-          error: 'Campo obrigatório'
-        },
-        Email: {
-          error: 'Campo obrigatório'
-        },
-        senha: {
-          secureTextEntry: true,
-          error: 'Campo obrigatório'
-        },
-        confirmarSenha: {
-          secureTextEntry: true,
-          error: 'Campo obrigatório'
-        }
+      senha: {
+        secureTextEntry: true
+      },
+      confirmarSenha: {
+        secureTextEntry: true
       },
       stylesheet: formStyles
-    };
-  }
+    };}
 
   onChange(value) {
     this.setState({value});

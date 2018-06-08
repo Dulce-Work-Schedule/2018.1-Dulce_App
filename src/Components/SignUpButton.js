@@ -4,12 +4,12 @@ import {Container, Content, Button} from 'native-base';
 
 const styles = {
   container: {
-    backgroundColor: '#5f4b8b',
     height: 45,
-    alignItems: 'center',
     marginTop: 0,
     paddingHorizontal: 50,
+    backgroundColor: '#5f4b8b',
     alignSelf: 'center',
+    alignItems: 'center',
     marginBottom: 0,
     width: 175
   },
