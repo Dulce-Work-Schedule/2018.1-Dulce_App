@@ -255,3 +255,102 @@ it('should test the alert when there is no schedule created', async() => {
   wrapper.update();
   expect(Alert.alert).toHaveBeenCalled();
 });
+
+it('Testing fab',() => {
+  const spy = jest.spyOn(WeekSchedule.prototype, 'timePickerVisible');
+  const wrapper = shallow(<WeekSchedule />);
+  wrapper.setState({active: true});
+  const fab = shallow(wrapper.instance().fab());
+  fab.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('Testing timePicker onConfirm', () => {
+
+  const spy = jest.spyOn(WeekSchedule.prototype, 'showEndDateTimePicker');
+  const wrapper = shallow(<WeekSchedule/>);
+  wrapper.setState({isDateTimePickerVisible: true});
+  const timePicker = shallow(wrapper.instance().timePicker());
+  const onConfirm = timePicker.find('TouchableHighlight').at(0);
+  onConfirm.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('Testing timePicker onCancel', () => {
+
+  const spy = jest.spyOn(WeekSchedule.prototype, 'showEndDateTimePicker');
+  const wrapper = shallow(<WeekSchedule/>);
+  wrapper.setState({isDateTimePickerVisible: true});
+  const timePicker = shallow(wrapper.instance().timePicker());
+  const onCancel = timePicker.find('TouchableHighlight').at(1);
+  onCancel.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('Testing finalPicker onConfirm', () => {
+
+  const spy = jest.spyOn(WeekSchedule.prototype, 'alert_Selfchange');
+  const wrapper = shallow(<WeekSchedule/>);
+  wrapper.setState({isDateTimePickerVisible: true});
+  const finalPicker = shallow(wrapper.instance().finalPicker());
+  const onConfirm = finalPicker.find('TouchableHighlight').at(0);
+  onConfirm.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('Testing finalPicker onCancel', () => {
+
+  const spy = jest.spyOn(WeekSchedule.prototype, 'timePickerVisible');
+  const wrapper = shallow(<WeekSchedule/>);
+  wrapper.setState({isDateTimePickerVisible: true});
+  const finalPicker = shallow(wrapper.instance().finalPicker());
+  const onCancel = finalPicker.find('TouchableHighlight').at(1);
+  onCancel.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('testing renderItem function', () => {
+  const item = {
+    employee: 'Ezequiel',
+    specialty: 'Making tests',
+    start_time: '08:00',
+    end_time: '10:00',
+    amount_of_hours: '2h'
+  };
+  const spy = jest.spyOn(WeekSchedule.prototype, '_alert');
+  const wrapper = shallow(<WeekSchedule/>);
+  const renderI = shallow(wrapper.instance().renderItem(item));
+  renderI.simulate('press');
+  expect(spy).toHaveBeenCalled();
+
+
+});
+
+
+it('testing renderChangeItem function', () => {
+  const item = {
+    employee: 'Ezequiel',
+    specialty: 'Making tests',
+    start_time: '08:00',
+    end_time: '10:00',
+    amount_of_hours: '2h'
+  };
+  const spy = jest.spyOn(WeekSchedule.prototype, 'alert_change');
+  const wrapper = shallow(<WeekSchedule/>);
+  const renderC = shallow(wrapper.instance().renderChangeItem(item));
+  renderC.simulate('press');
+  expect(spy).toHaveBeenCalled();
+
+
+});
+
+it('Testing renderModal function',() => {
+  const spy = jest.spyOn(WeekSchedule.prototype, 'setModalVisible');
+  const wrapper = shallow(<WeekSchedule/>);
+  wrapper.setState({modalVisible: true});
+  const Modal = shallow(wrapper.instance().renderModal());
+  const button = Modal.find('ReactNativeModal').at(0).dive();
+  const backButton = button.find('TouchableWithoutFeedback').at(0);
+  backButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
