@@ -9894,6 +9894,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -9927,6 +9928,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528547976036}
 >>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
+=======
+                      date={1528549776047}
+>>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10164,6 +10168,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -10197,6 +10202,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528547976036}
 >>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
+=======
+                      date={1528549776047}
+>>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
