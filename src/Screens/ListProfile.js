@@ -46,7 +46,6 @@ export default class ListProfile extends Component {
       containerStyle={{}}
       style={{backgroundColor: '#5f4b8b'}}
       position='bottomRight'
-        onPress={() => { this.timePickerVisible(true); }}>
         onPress={() => {}}>
         <Icon type='MaterialIcons' name='add' />
     </Fab>);
