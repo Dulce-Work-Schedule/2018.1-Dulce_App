@@ -31,7 +31,28 @@ const styles = {
     color: 'red'
   }
 };
-
+const default_state = {
+  nome: '',
+  email: '',
+  senha: '',
+  confirmarSenha: ''
+};
+const default_field_options = {
+  Nome: {
+    error: 'Campo obrigatório'
+  },
+  Email: {
+    error: 'Campo obrigatório'
+  },
+  senha: {
+    secureTextEntry: true,
+    error: 'Campo obrigatório'
+  },
+  confirmarSenha: {
+    secureTextEntry: true,
+    error: 'Campo obrigatório'
+  }
+};
 const Form = t.form.Form;
 
 class NewUser extends React.Component {
@@ -44,29 +65,10 @@ class NewUser extends React.Component {
       confirmarSenha: t.String
     });
     this.state = {
-      value: {
-        nome: '',
-        email: '',
-        senha: '',
-        confirmarSenha: ''
-      }};
+      value: default_state
+    };
     this.options = {
-      fields: {
-        Nome: {
-          error: 'Campo obrigatório'
-        },
-        Email: {
-          error: 'Campo obrigatório'
-        },
-        senha: {
-          secureTextEntry: true,
-          error: 'Campo obrigatório'
-        },
-        confirmarSenha: {
-          secureTextEntry: true,
-          error: 'Campo obrigatório'
-        }
-      },
+      fields: default_field_options,
       stylesheet: formStyles
     };
   }
