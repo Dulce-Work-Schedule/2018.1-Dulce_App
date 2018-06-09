@@ -1,8 +1,8 @@
 import React from 'react';
-import {View,Alert} from 'react-native';
+import {View,Text} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
-import {Container} from 'native-base';
+import {Container, CheckBox,ListItem,Body,Content,Header,Right,Radio} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
 
 
@@ -40,16 +40,16 @@ const styles = {
       super(props);
       this.Service = t.struct({
         nome: t.String,
-        email: t.String,
-        senha: t.String,
-        confirmarSenha: t.String
+        setor: t.String,
+        matricula: t.String,
+        hospital: t.String
       });
       this.state = {
         value: {
           nome: '',
-          email: '',
-          senha: '',
-          confirmarSenha: ''
+          setor: '',
+          matricula: '',
+          hospital: ''
         }
       };
       this.options = {
@@ -72,22 +72,31 @@ const styles = {
         stylesheet: formStyles
       };
     }
+
+    radioButton(){
+        return (
+          <Container>
+          <Content>
+            <ListItem>
+              <Text>Daily Stand Up</Text>
+              <Right>
+                <Radio selected={true} />
+                <Radio selected={false} />
+              </Right>
+            </ListItem>
+            <ListItem>
+              <Text>Discussion with Client</Text>
+              <Right>
+                <Radio selected={true} />
+              </Right>
+            </ListItem>
+          </Content>
+        </Container>
+        );
+    }
   
     onChange(value) {
       this.setState({value});
-    }
-  
-    _onPress() {
-      if (this.state.value.nome !== '' && this.state.value.email !== '') {
-        if (this.state.value.senha === this.state.value.confirmarSenha) {
-          Alert.alert('Cadastro feito com sucesso!');
-        }
-        else {
-          Alert.alert('As senhas devem ser iguais!');
-        }
-      } else {
-        Alert.alert('Os campos não podem estar vazios!');
-      }
     }
   
     render() {
@@ -104,12 +113,13 @@ const styles = {
               onChange={(v) => this.onChange(v)}
             />
           </View>
-          <View style={{flex: 1}}>
+          {this.radioButton()}
+          {/* <View style={{flex: 1}}>
             <SignUpButton
               text = 'Cadastrar'
-              onPress = {(v) => this._onPress(v)}
+              onPress = {() => {}}
             />
-          </View>
+          </View> */}
         </Container>
       );
     }
