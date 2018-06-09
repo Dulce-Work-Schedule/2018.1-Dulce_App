@@ -194,31 +194,9 @@ exports[`renders correctly 1`] = `
               "Feb 2018",
               "Mar 2018",
               "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "2018-05-07T00:00:00.000Z",
-              "2018-06-07T00:00:00.000Z",
-              "2018-07-07T00:00:00.000Z",
-=======
-              "2018-05-08T00:00:00.000Z",
-              "2018-06-08T00:00:00.000Z",
-              "2018-07-08T00:00:00.000Z",
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-              "2018-05-08T00:00:00.000Z",
-              "2018-06-08T00:00:00.000Z",
-              "2018-07-08T00:00:00.000Z",
-<<<<<<< HEAD
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
               "2018-05-09T00:00:00.000Z",
               "2018-06-09T00:00:00.000Z",
               "2018-07-09T00:00:00.000Z",
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4984,31 +4962,9 @@ exports[`renders correctly 1`] = `
                         "Feb 2018",
                         "Mar 2018",
                         "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        "2018-05-07T00:00:00.000Z",
-                        "2018-06-07T00:00:00.000Z",
-                        "2018-07-07T00:00:00.000Z",
-=======
-                        "2018-05-08T00:00:00.000Z",
-                        "2018-06-08T00:00:00.000Z",
-                        "2018-07-08T00:00:00.000Z",
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                        "2018-05-08T00:00:00.000Z",
-                        "2018-06-08T00:00:00.000Z",
-                        "2018-07-08T00:00:00.000Z",
-<<<<<<< HEAD
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
                         "2018-05-09T00:00:00.000Z",
                         "2018-06-09T00:00:00.000Z",
                         "2018-07-09T00:00:00.000Z",
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9815,50 +9771,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={1528413332676}
-=======
-              date={1528470357446}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-              date={1528488169592}
->>>>>>> 85922d5... #389 realizando testes
-=======
-              date={1528492020724}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-              date={1528511850578}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-              date={1528495998379}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-              date={1528500398465}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-              date={1528501917052}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-              date={1528547970105}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-              date={1528549770471}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+              date={1528551459939}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10089,50 +10002,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={1528413332676}
-=======
-              date={1528470357446}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-              date={1528488169592}
->>>>>>> 85922d5... #389 realizando testes
-=======
-              date={1528492020724}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-              date={1528511850578}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-              date={1528495998379}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-              date={1528500398465}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-              date={1528501917052}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-              date={1528547970105}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-              date={1528549770471}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+              date={1528551459939}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10282,50 +10152,7 @@ ShallowWrapper {
           renderEmptyDate={[Function]}
           renderItem={[Function]}
           rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          selected={2018-06-07T23:15:33.615Z}
-=======
-          selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-          selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-          selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-          selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-          selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-          selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-          selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-          selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-          selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+          selected={2018-06-09T13:37:57.381Z}
           style={
             Object {
               "flex": 1,
@@ -10403,50 +10230,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  selected={2018-06-07T23:15:33.615Z}
-=======
-                  selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                  selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                  selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                  selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                  selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                  selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                  selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                  selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                  selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                  selected={2018-06-09T13:37:57.381Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10513,50 +10297,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          date={2018-06-07T23:15:32.676Z}
-=======
-          date={2018-06-08T15:05:57.446Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-          date={2018-06-08T20:02:49.592Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-          date={2018-06-08T21:07:00.724Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-          date={2018-06-09T02:37:30.578Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-          date={2018-06-08T22:13:18.379Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-          date={2018-06-08T23:26:38.465Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-          date={2018-06-08T23:51:57.052Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-          date={2018-06-09T12:39:30.105Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-          date={2018-06-09T13:09:30.471Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+          date={2018-06-09T13:37:39.939Z}
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10577,50 +10318,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          date={2018-06-07T23:15:32.676Z}
-=======
-          date={2018-06-08T15:05:57.446Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-          date={2018-06-08T20:02:49.592Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-          date={2018-06-08T21:07:00.724Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-          date={2018-06-09T02:37:30.578Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-          date={2018-06-08T22:13:18.379Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-          date={2018-06-08T23:26:38.465Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-          date={2018-06-08T23:51:57.052Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-          date={2018-06-09T12:39:30.105Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-          date={2018-06-09T13:09:30.471Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+          date={2018-06-09T13:37:39.939Z}
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10668,50 +10366,7 @@ ShallowWrapper {
           "renderEmptyDate": [Function],
           "renderItem": [Function],
           "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "selected": 2018-06-07T23:15:33.615Z,
-=======
-          "selected": 2018-06-08T15:05:59.219Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-          "selected": 2018-06-08T20:02:50.673Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-          "selected": 2018-06-08T21:07:01.769Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-          "selected": 2018-06-09T02:37:31.743Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-          "selected": 2018-06-08T22:13:19.228Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-          "selected": 2018-06-08T23:26:54.837Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-          "selected": 2018-06-08T23:51:58.163Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-          "selected": 2018-06-09T12:39:30.972Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-          "selected": 2018-06-09T13:09:31.327Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+          "selected": 2018-06-09T13:37:57.381Z,
           "style": Object {
             "flex": 1,
           },
@@ -10793,50 +10448,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  selected={2018-06-07T23:15:33.615Z}
-=======
-                  selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                  selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                  selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                  selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                  selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                  selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                  selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                  selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                  selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                  selected={2018-06-09T13:37:57.381Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10951,50 +10563,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  selected={2018-06-07T23:15:33.615Z}
-=======
-                  selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                  selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                  selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                  selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                  selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                  selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                  selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                  selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                  selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                  selected={2018-06-09T13:37:57.381Z}
                   style={
                     Object {
                       "flex": 1,
@@ -11107,50 +10676,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-07T23:15:33.615Z}
-=======
-                    selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                    selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                    selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                    selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                    selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                    selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                    selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                    selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                    selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                    selected={2018-06-09T13:37:57.381Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11251,50 +10777,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-07T23:15:33.615Z}
-=======
-                      selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                      selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                      selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                      selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                      selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                      selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                      selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                      selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                      selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                      selected={2018-06-09T13:37:57.381Z}
                       style={
                         Object {
                           "flex": 1,
@@ -11346,50 +10829,7 @@ ShallowWrapper {
                       "renderEmptyDate": [Function],
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "selected": 2018-06-07T23:15:33.615Z,
-=======
-                      "selected": 2018-06-08T15:05:59.219Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                      "selected": 2018-06-08T20:02:50.673Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-                      "selected": 2018-06-08T21:07:01.769Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                      "selected": 2018-06-09T02:37:31.743Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                      "selected": 2018-06-08T22:13:19.228Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                      "selected": 2018-06-08T23:26:54.837Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                      "selected": 2018-06-08T23:51:58.163Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                      "selected": 2018-06-09T12:39:30.972Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                      "selected": 2018-06-09T13:09:31.327Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                      "selected": 2018-06-09T13:37:57.381Z,
                       "style": Object {
                         "flex": 1,
                       },
@@ -11507,50 +10947,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "date": 2018-06-07T23:15:32.676Z,
-=======
-          "date": 2018-06-08T15:05:57.446Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-          "date": 2018-06-08T20:02:49.592Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-          "date": 2018-06-08T21:07:00.724Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-          "date": 2018-06-09T02:37:30.578Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-          "date": 2018-06-08T22:13:18.379Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-          "date": 2018-06-08T23:26:38.465Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-          "date": 2018-06-08T23:51:57.052Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-          "date": 2018-06-09T12:39:30.105Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-          "date": 2018-06-09T13:09:30.471Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+          "date": 2018-06-09T13:37:39.939Z,
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11577,50 +10974,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "date": 2018-06-07T23:15:32.676Z,
-=======
-          "date": 2018-06-08T15:05:57.446Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-          "date": 2018-06-08T20:02:49.592Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-          "date": 2018-06-08T21:07:00.724Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-          "date": 2018-06-09T02:37:30.578Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-          "date": 2018-06-08T22:13:18.379Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-          "date": 2018-06-08T23:26:38.465Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-          "date": 2018-06-08T23:51:57.052Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-          "date": 2018-06-09T12:39:30.105Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-          "date": 2018-06-09T13:09:30.471Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+          "date": 2018-06-09T13:37:39.939Z,
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11661,50 +11015,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            selected={2018-06-07T23:15:33.615Z}
-=======
-            selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-            selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-            selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-            selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-            selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-            selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-            selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-            selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-            selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+            selected={2018-06-09T13:37:57.381Z}
             style={
               Object {
                 "flex": 1,
@@ -11782,50 +11093,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-07T23:15:33.615Z}
-=======
-                    selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                    selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                    selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                    selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                    selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                    selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                    selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                    selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                    selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                    selected={2018-06-09T13:37:57.381Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11892,50 +11160,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            date={2018-06-07T23:15:32.676Z}
-=======
-            date={2018-06-08T15:05:57.446Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-            date={2018-06-08T20:02:49.592Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-            date={2018-06-08T21:07:00.724Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-            date={2018-06-09T02:37:30.578Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-            date={2018-06-08T22:13:18.379Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-            date={2018-06-08T23:26:38.465Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-            date={2018-06-08T23:51:57.052Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-            date={2018-06-09T12:39:30.105Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-            date={2018-06-09T13:09:30.471Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+            date={2018-06-09T13:37:39.939Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11956,50 +11181,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            date={2018-06-07T23:15:32.676Z}
-=======
-            date={2018-06-08T15:05:57.446Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-            date={2018-06-08T20:02:49.592Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-            date={2018-06-08T21:07:00.724Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-            date={2018-06-09T02:37:30.578Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-            date={2018-06-08T22:13:18.379Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-            date={2018-06-08T23:26:38.465Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-            date={2018-06-08T23:51:57.052Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-            date={2018-06-09T12:39:30.105Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-            date={2018-06-09T13:09:30.471Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+            date={2018-06-09T13:37:39.939Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -12047,50 +11229,7 @@ ShallowWrapper {
             "renderEmptyDate": [Function],
             "renderItem": [Function],
             "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "selected": 2018-06-07T23:15:33.615Z,
-=======
-            "selected": 2018-06-08T15:05:59.219Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-            "selected": 2018-06-08T20:02:50.673Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-            "selected": 2018-06-08T21:07:01.769Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-            "selected": 2018-06-09T02:37:31.743Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-            "selected": 2018-06-08T22:13:19.228Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-            "selected": 2018-06-08T23:26:54.837Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-            "selected": 2018-06-08T23:51:58.163Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-            "selected": 2018-06-09T12:39:30.972Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-            "selected": 2018-06-09T13:09:31.327Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+            "selected": 2018-06-09T13:37:57.381Z,
             "style": Object {
               "flex": 1,
             },
@@ -12172,50 +11311,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-07T23:15:33.615Z}
-=======
-                    selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                    selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                    selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                    selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                    selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                    selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                    selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                    selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                    selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                    selected={2018-06-09T13:37:57.381Z}
                     style={
                       Object {
                         "flex": 1,
@@ -12330,50 +11426,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-07T23:15:33.615Z}
-=======
-                    selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                    selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                    selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                    selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                    selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                    selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                    selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                    selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                    selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                    selected={2018-06-09T13:37:57.381Z}
                     style={
                       Object {
                         "flex": 1,
@@ -12486,50 +11539,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-07T23:15:33.615Z}
-=======
-                      selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                      selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                      selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                      selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                      selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                      selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                      selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                      selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                      selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                      selected={2018-06-09T13:37:57.381Z}
                       style={
                         Object {
                           "flex": 1,
@@ -12630,50 +11640,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        selected={2018-06-07T23:15:33.615Z}
-=======
-                        selected={2018-06-08T15:05:59.219Z}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                        selected={2018-06-08T20:02:50.673Z}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                        selected={2018-06-08T21:07:01.769Z}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                        selected={2018-06-09T02:37:31.743Z}
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                        selected={2018-06-08T22:13:19.228Z}
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                        selected={2018-06-08T23:26:54.837Z}
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                        selected={2018-06-08T23:51:58.163Z}
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                        selected={2018-06-09T12:39:30.972Z}
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                        selected={2018-06-09T13:09:31.327Z}
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                        selected={2018-06-09T13:37:57.381Z}
                         style={
                           Object {
                             "flex": 1,
@@ -12725,50 +11692,7 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        "selected": 2018-06-07T23:15:33.615Z,
-=======
-                        "selected": 2018-06-08T15:05:59.219Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                        "selected": 2018-06-08T20:02:50.673Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-                        "selected": 2018-06-08T21:07:01.769Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-                        "selected": 2018-06-09T02:37:31.743Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-                        "selected": 2018-06-08T22:13:19.228Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-                        "selected": 2018-06-08T23:26:54.837Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-                        "selected": 2018-06-08T23:51:58.163Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-                        "selected": 2018-06-09T12:39:30.972Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-                        "selected": 2018-06-09T13:09:31.327Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+                        "selected": 2018-06-09T13:37:57.381Z,
                         "style": Object {
                           "flex": 1,
                         },
@@ -12886,50 +11810,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "date": 2018-06-07T23:15:32.676Z,
-=======
-            "date": 2018-06-08T15:05:57.446Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-            "date": 2018-06-08T20:02:49.592Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-            "date": 2018-06-08T21:07:00.724Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-            "date": 2018-06-09T02:37:30.578Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-            "date": 2018-06-08T22:13:18.379Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-            "date": 2018-06-08T23:26:38.465Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-            "date": 2018-06-08T23:51:57.052Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-            "date": 2018-06-09T12:39:30.105Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-            "date": 2018-06-09T13:09:30.471Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+            "date": 2018-06-09T13:37:39.939Z,
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12956,50 +11837,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "date": 2018-06-07T23:15:32.676Z,
-=======
-            "date": 2018-06-08T15:05:57.446Z,
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-            "date": 2018-06-08T20:02:49.592Z,
->>>>>>> 85922d5... #389 realizando testes
-=======
-            "date": 2018-06-08T21:07:00.724Z,
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-<<<<<<< HEAD
-            "date": 2018-06-09T02:37:30.578Z,
->>>>>>> d491e63... FIX #376 Adicionando testes
-=======
-            "date": 2018-06-08T22:13:18.379Z,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-<<<<<<< HEAD
->>>>>>> 59b20a5... FIX #381 Testando 92,23%.
-=======
-=======
-            "date": 2018-06-08T23:26:38.465Z,
->>>>>>> 2e862b2... Fix #381 arrumando duplicação de código
-<<<<<<< HEAD
->>>>>>> d06467f... Fix #381 arrumando duplicação de código
-=======
-=======
-            "date": 2018-06-08T23:51:57.052Z,
->>>>>>> e67635c... Fix #381 diminuindo linhas do render
->>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
-=======
-            "date": 2018-06-09T12:39:30.105Z,
->>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
-=======
-            "date": 2018-06-09T13:09:30.471Z,
->>>>>>> ae5c31c... Fix #381 arrumando build.grandle e snapshots
+            "date": 2018-06-09T13:37:39.939Z,
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
