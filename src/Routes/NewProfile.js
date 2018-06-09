@@ -1,13 +1,13 @@
 import React from 'react';
-import HospitalsNavigation from '../Navigators/HospitalsNavigation';
+import NewProfileNavigator from '../Navigators/NewProfileNavigator';
 
-class Hospitals extends React.Component {
+class NewProfile extends React.Component {
 
   render() {
     return (
-      <HospitalsNavigation />
+      <NewProfileNavigator />
     );
   }
 }
 
-export default Hospitals;
+export default NewProfile;

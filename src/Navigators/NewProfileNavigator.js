@@ -12,6 +12,6 @@ const routes = {
 
 const config = {};
 
-const ScheduleNavigation = StackNavigator(routes, config);
+const NewProfileNavigator = StackNavigator(routes, config);
 
-export default ScheduleNavigation;
+export default NewProfileNavigator;

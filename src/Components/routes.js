@@ -6,7 +6,7 @@ import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
-import NewProfile from '../Routes/NewProfileNavigator';
+import NewProfile from '../Routes/NewProfile';
 
 export default DrawerNavigator({
   'Ver Escala': {
