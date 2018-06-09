@@ -49,7 +49,7 @@ export default class NotificationScreen extends Component {
     this.state = {
       notifications: [
         {
-          name: 'Guilherme',
+          name: 'Hospital Regional Do Gama',
           currentDay: '2018-04-28',
           currentStartTime: '10:30',
           currentEndTime: '12:00',
@@ -57,7 +57,7 @@ export default class NotificationScreen extends Component {
           requestStartTime: '10:30',
           requestEndTime: '12:00'
         },{
-          name: 'Ezequiel',
+          name: 'EzequielGOD',
           currentDay: '2018-04-28',
           currentStartTime: '10:30',
           currentEndTime: '12:00',
@@ -87,25 +87,18 @@ export default class NotificationScreen extends Component {
   renderCard(item) {
     return (
       <Card>
-      <CardItem header><Text><Text style={styles.colorPurple}>{item.name}</Text> solicitou mudança com o seu horário</Text></CardItem>
+      <CardItem header><Text style={styles.colorPurple}>{item.name}</Text></CardItem>
         <CardItem>
           <Body>
-            <View style={styles.view1}>
-              <View style={styles.view2}>
-                <Text>Seu Horário</Text><Text>{item.currentDay}</Text><Text>{item.currentStartTime} - {item.currentEndTime}</Text>
-              </View>
-              <View style={styles.view3}><Icon name='md-arrow-dropright' style={styles.icon} /></View>
-              <View style ={styles.view4}>
-                <Text>{item.name}</Text><Text>{item.requestDay}</Text><Text>{item.requestStartTime} - {item.requestEndTime}</Text>
-              </View>
-            </View>
+          <View>
+          <Text> </Text>
+          <Text> Setor: </Text>
+          <Text> Matricula: </Text>
+          </View>
+
           </Body>
         </CardItem>
         <CardItem footer>
-        <View style={styles.buttonView}>
-          <ValidateButton text='Recusar' textStyle={styles.colorOrange}/>
-          <ValidateButton text='Aceitar' textStyle={styles.colorPurple}/>
-        </View>
         </CardItem>
       </Card>
     );
@@ -126,7 +119,7 @@ export default class NotificationScreen extends Component {
             } />
         </Content>
       </Container>
-    {this.fab()}
+      {this.fab()}
     </View>
     );
   }
