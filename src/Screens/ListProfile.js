@@ -19,7 +19,7 @@ const styles = {
     fontFamily: 'Raleway'
   }
 };
-export default class NotificationScreen extends Component {
+export default class ListProfile extends Component {
 
   constructor(props) {
     super(props);
@@ -59,14 +59,11 @@ export default class NotificationScreen extends Component {
       <View style={{flex: 1}}>
         <Container>
           <ScreenHeader
-            title = 'Notificações'
-          />
+            title = 'Lista de Perfis'/>
           <Content>
             <List dataArray={this.state.notifications}
               renderRow={(item) => (
-                this.renderCard(item)
-              )
-              } />
+                this.renderCard(item))} />
           </Content>
         </Container>
       </View>
