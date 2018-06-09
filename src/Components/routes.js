@@ -6,6 +6,7 @@ import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
+import NewProfile from '../Routes/NewProfile';
 
 export default DrawerNavigator({
   'Ver Escala': {
@@ -25,6 +26,9 @@ export default DrawerNavigator({
   },
   'Notificações': {
     screen: Notifications
+  },
+  'Criar Perfil': {
+    screen: NewProfile
   },
   Logout: {
     screen: Logout
