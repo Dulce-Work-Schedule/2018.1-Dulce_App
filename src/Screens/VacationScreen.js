@@ -3,7 +3,7 @@ import {View, ScrollView} from 'react-native';
 import DateRangePicker from '../Components/DateRangePicker';
 import ScreenHeader from '../Components/ScreenHeader';
 import AGRButton from '../Components/AGRButton';
-import {Icon, Card, CardItem, Text, Body, Form, Textarea} from 'native-base';
+import {Card, CardItem, Text, Body, Form, Textarea} from 'native-base';
 
 const XDate = require('xdate');
 
@@ -102,11 +102,14 @@ export default class VacationScreen extends Component {
       <View style={styles.container}>
         <Card>
           <CardItem header bordered>
-            <View style={styles.view1}><Text style={styles.date}>{this.state.startDay.day}/{this.state.startDay.month}/{this.state.startDay.year}</Text></View>
-            <View style={styles.view2}><Icon name='md-arrow-dropright-circle' style={styles.icon} /></View>
-            <View style={styles.view3}><Text style={styles.date}>{this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}</Text></View>
+            <View style={styles.view1}>
+              <Text style={styles.date}>
+                {this.state.startDay.day}/{this.state.startDay.month}/
+                {this.state.startDay.year} até {this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}
+              </Text>
+            </View>
           </CardItem>
-          <CardItem bordered>
+          <CardItem>
             <Body>
               <Form style={styles.form}>
                 <Textarea rowSpan={5} bordered placeholder='Justificativa' />
@@ -114,7 +117,7 @@ export default class VacationScreen extends Component {
             </Body>
           </CardItem>
 
-          <CardItem footer bordered>
+          <CardItem footer>
             <AGRButton
               style={styles.button}
               onPress={() => {}}
