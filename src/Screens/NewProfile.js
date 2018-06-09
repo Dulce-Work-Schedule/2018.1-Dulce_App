@@ -2,9 +2,8 @@ import React from 'react';
 import {View,Text, Picker} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
-import {Container, Icon,Title,Body,Content,Header,Right,Left,Button} from 'native-base';
+import {Container} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
-
 
 const styles = {
   container: {
@@ -58,7 +57,7 @@ class NewProfile extends React.Component {
         matricula: '',
         hospital: ''
       },
-      language: undefined
+      userType: ''
     };
     this.options = {
       fields: {
@@ -90,12 +89,12 @@ class NewProfile extends React.Component {
   pickerButton() {
     return (
       <Picker
-        selectedValue={this.state.language}
+        selectedValue={this.state.userType}
         style={{height: 50, width: 200,marginBottom: 5,marginLeft: 10}}
-        onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
-        <Picker.Item label="Funcionário" value="employee" />
-        <Picker.Item label="Gestor do setor" value="sector_manager" />
-        <Picker.Item label="gestor da instituição" value="institution_manager" />
+        onValueChange={(itemValue) => this.setState({userType: itemValue})}>
+        <Picker.Item label='Funcionário' value='employee' />
+        <Picker.Item label='Gestor do setor' value='sector_manager' />
+        <Picker.Item label='gestor da instituição' value='institution_manager' />
       </Picker>
     );
   }
