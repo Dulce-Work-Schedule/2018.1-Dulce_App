@@ -40,15 +40,15 @@ export default class ListProfile extends Component {
 
   fab() {
     return (
-    <Fab
-       active={true}
-      direction='up'
-      containerStyle={{}}
-      style={{backgroundColor: '#5f4b8b'}}
-      position='bottomRight'
+      <Fab
+        active={true}
+        direction='up'
+        containerStyle={{}}
+        style={{backgroundColor: '#5f4b8b'}}
+        position='bottomRight'
         onPress={() => {}}>
         <Icon type='MaterialIcons' name='add' />
-    </Fab>);
+      </Fab>);
   }
 
   renderCard(item) {
