@@ -268,6 +268,7 @@ exports[`renders correctly 1`] = `
                       "Apr 2018",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "2018-05-07T00:00:00.000Z",
                       "2018-06-07T00:00:00.000Z",
                       "2018-07-07T00:00:00.000Z",
@@ -285,6 +286,11 @@ exports[`renders correctly 1`] = `
 =======
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+                      "2018-05-09T00:00:00.000Z",
+                      "2018-06-09T00:00:00.000Z",
+                      "2018-07-09T00:00:00.000Z",
+>>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -1248,8 +1254,6 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
-                                  "backgroundColor": "#5f4b8b",
-                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1271,9 +1275,6 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
-                                    },
-                                    Object {
-                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -1301,6 +1302,8 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
+                                  "backgroundColor": "#5f4b8b",
+                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1322,6 +1325,9 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
+                                    },
+                                    Object {
+                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -5052,6 +5058,7 @@ exports[`renders correctly 1`] = `
                                 "Apr 2018",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 "2018-05-07T00:00:00.000Z",
                                 "2018-06-07T00:00:00.000Z",
                                 "2018-07-07T00:00:00.000Z",
@@ -5069,6 +5076,11 @@ exports[`renders correctly 1`] = `
 =======
 >>>>>>> aa9daad... FIX #381 Testando 92,23%.
 >>>>>>> 59b20a5... FIX #381 Testando 92,23%.
+=======
+                                "2018-05-09T00:00:00.000Z",
+                                "2018-06-09T00:00:00.000Z",
+                                "2018-07-09T00:00:00.000Z",
+>>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -6032,8 +6044,6 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
-                                            "backgroundColor": "#5f4b8b",
-                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6055,9 +6065,6 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
-                                              },
-                                              Object {
-                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -6085,6 +6092,8 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
+                                            "backgroundColor": "#5f4b8b",
+                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6106,6 +6115,9 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
+                                              },
+                                              Object {
+                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -9881,6 +9893,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -9911,6 +9924,9 @@ exports[`renders correctly 1`] = `
                       date={1528501924490}
 >>>>>>> e67635c... Fix #381 diminuindo linhas do render
 >>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
+=======
+                      date={1528547976036}
+>>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10147,6 +10163,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528413340163}
 =======
                       date={1528470371919}
@@ -10177,6 +10194,9 @@ exports[`renders correctly 1`] = `
                       date={1528501924490}
 >>>>>>> e67635c... Fix #381 diminuindo linhas do render
 >>>>>>> 02bbd8e... Fix #381 diminuindo linhas do render
+=======
+                      date={1528547976036}
+>>>>>>> 78bc9a4... Fix #381 ajustando de acordo com os problemas apontados
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

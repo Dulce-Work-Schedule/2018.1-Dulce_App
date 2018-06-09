@@ -852,23 +852,15 @@ exports[`renders correctly 1`] = `
                     "borderTopWidth": null,
                     "elevation": 2,
                     "flexDirection": "row",
-<<<<<<< HEAD
-                    "height": 45,
-=======
                     "height": 50,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
-                    "justifyContent": "space-between",
+                    "justifyContent": "center",
                     "marginBottom": 0,
                     "marginTop": 30,
                     "opacity": 1,
                     "paddingBottom": 6,
                     "paddingHorizontal": 50,
                     "paddingTop": 6,
-<<<<<<< HEAD
-                    "width": 140,
-=======
                     "width": 170,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
                   }
                 }
                 testID={undefined}
@@ -1488,15 +1480,12 @@ ShallowWrapper {
                       "alignItems": "center",
                       "alignSelf": "center",
                       "backgroundColor": "#5f4b8b",
-                      "height": 45,
+                      "height": 50,
+                      "justifyContent": "center",
                       "marginBottom": 0,
                       "marginTop": 30,
                       "paddingHorizontal": 50,
-<<<<<<< HEAD
-                      "width": 140,
-=======
                       "width": 170,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
                     }
                   }
                   virtual={undefined}
@@ -2141,15 +2130,12 @@ ShallowWrapper {
                         "alignItems": "center",
                         "alignSelf": "center",
                         "backgroundColor": "#5f4b8b",
-                        "height": 45,
+                        "height": 50,
+                        "justifyContent": "center",
                         "marginBottom": 0,
                         "marginTop": 30,
                         "paddingHorizontal": 50,
-<<<<<<< HEAD
-                        "width": 140,
-=======
                         "width": 170,
->>>>>>> aa9daad... FIX #381 Testando 92,23%.
                       }
                     }
                     virtual={undefined}

@@ -8,17 +8,18 @@ export default class DateRangePicker extends Component {
   state = {isFromDatePicked: false, isToDatePicked: false, markedDates: {}}
 
   onDayPress(day) {
-    if (!this.state.isFromDatePicked || (this.state.isFromDatePicked && this.state.isToDatePicked)) {
-      this.setupStartMarker(day);
-    } else if (!this.state.isToDatePicked) {
+    var range = -1;
+    if (!this.state.isToDatePicked && this.state.isFromDatePicked) {
       let markedDates = {...this.state.markedDates};
-      let [mMarkedDates, range] = this.setupMarkedDates(this.state.fromDate.dateString, day.dateString, markedDates);
+      let mMarkedDates = 0;
+      [mMarkedDates, range] = this.setupMarkedDates(this.state.fromDate.dateString, day.dateString, markedDates);
       if (range >= 0) {
         this.setState({isFromDatePicked: true, isToDatePicked: true, markedDates: mMarkedDates});
         this.props.onSuccess(this.state.fromDate, day);
-      } else {
-        this.setupStartMarker(day);
       }
+    }
+    if ((this.state.isFromDatePicked && this.state.isToDatePicked) || !this.state.isFromDatePicked || (range < 0)) {
+      this.setupStartMarker(day);
     }
   }
 
@@ -31,20 +32,19 @@ export default class DateRangePicker extends Component {
     let mFromDate = new XDate(fromDate);
     let mToDate = new XDate(toDate);
     let range = mFromDate.diffDays(mToDate);
-    if (range >= 0) {
-      if (range === 0) {
-        markedDates.prop = {[toDate]: {color: this.props.theme.markColor, textColor: this.props.theme.markTextColor}};
-      } else {
-        for (var i = 1; i <= range; i++) {
-          let tempDate = mFromDate.addDays(1).toString('yyyy-MM-dd');
-          if (i < range) {
-            markedDates[tempDate] = {color: this.props.theme.markColor, textColor: this.props.theme.markTextColor};
-          } else {
-            markedDates[tempDate] = {endingDay: true, color: this.props.theme.markColor, textColor: this.props.theme.markTextColor};
-          }
+    if (range === 0) {
+      markedDates.prop = {[toDate]: {color: this.props.theme.markColor, textColor: this.props.theme.markTextColor}};
+    } else if (range > 0) {
+      for (var i = 1; i <= range; i++) {
+        let tempDate = mFromDate.addDays(1).toString('yyyy-MM-dd');
+        if (i < range) {
+          markedDates[tempDate] = {color: this.props.theme.markColor, textColor: this.props.theme.markTextColor};
+        } else {
+          markedDates[tempDate] = {endingDay: true, color: this.props.theme.markColor, textColor: this.props.theme.markTextColor};
         }
       }
     }
+
     console.log(markedDates);
     return [markedDates, range];
   }

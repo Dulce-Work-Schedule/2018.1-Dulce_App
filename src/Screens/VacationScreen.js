@@ -118,11 +118,7 @@ export default class VacationScreen extends Component {
           </CardItem>
 
           <CardItem footer>
-            <AGRButton
-              style={styles.button}
-              onPress={() => {}}
-              text='Selecionar'
-            />
+            <AGRButton style={styles.button} onPress={() => {}} text='Selecionar' />
           </CardItem>
         </Card>
       </View>

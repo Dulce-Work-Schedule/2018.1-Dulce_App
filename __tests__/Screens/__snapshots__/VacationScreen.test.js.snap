@@ -1769,10 +1769,6 @@ exports[`renders correctly 1`] = `
                       "fontWeight": "300",
                       "marginTop": 7,
                     },
-                    Object {
-                      "color": "#2d4150",
-                      "fontWeight": "500",
-                    },
                     Object {},
                   ]
                 }
@@ -1875,6 +1871,10 @@ exports[`renders correctly 1`] = `
                       "fontSize": 16,
                       "fontWeight": "300",
                       "marginTop": 7,
+                    },
+                    Object {
+                      "color": "#2d4150",
+                      "fontWeight": "500",
                     },
                     Object {},
                   ]
@@ -4169,89 +4169,13 @@ exports[`renders correctly 1`] = `
               uppercase={false}
               virtual={undefined}
             >
-              8
+              9
               /
               6
               /
               2018
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-                "justifyContent": "center",
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={false}
-              ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": undefined,
-                    "fontSize": 12,
-                  },
-                  Array [
-                    Object {
-                      "color": "#000",
-                      "fontSize": 30,
-                    },
-                    Object {
-                      "color": "#000",
-                      "fontSize": 28,
-                      "width": 35,
-                    },
-                    Object {
-                      "color": "#5f4b8b",
-                      "fontSize": 40,
-                    },
-                  ],
-                  Object {
-                    "fontFamily": "Ionicons",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                ]
-              }
-              virtual={undefined}
-            >
-              
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "flex": 1,
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#007aff",
-                    "fontFamily": "System",
-                    "fontSize": 16,
-                    "fontWeight": "600",
-                  },
-                  Object {
-                    "color": "#5f4b8b",
-                    "fontSize": 20,
-                  },
-                ]
-              }
-              uppercase={false}
-              virtual={undefined}
-            >
-              8
+               até 
+              9
               /
               6
               /
@@ -4260,13 +4184,10 @@ exports[`renders correctly 1`] = `
           </View>
         </View>
         <View
-          bordered={true}
           style={
             Object {
               "alignItems": "center",
               "backgroundColor": "#fff",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#ccc",
               "borderRadius": 2,
               "flexDirection": "row",
               "paddingBottom": 10,
@@ -4328,16 +4249,13 @@ exports[`renders correctly 1`] = `
           </View>
         </View>
         <View
-          bordered={true}
           footer={true}
           style={
             Object {
               "alignItems": "center",
               "backgroundColor": "#fff",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#ccc",
+              "borderBottomWidth": null,
               "borderRadius": 2,
-              "borderTopWidth": 0.5,
               "flexDirection": "row",
               "paddingBottom": 10,
               "paddingLeft": 15,
@@ -4436,7 +4354,7 @@ exports[`renders correctly 1`] = `
                       "elevation": 2,
                       "flexDirection": "row",
                       "height": 50,
-                      "justifyContent": "space-between",
+                      "justifyContent": "center",
                       "marginBottom": 0,
                       "marginTop": 30,
                       "opacity": 1,
