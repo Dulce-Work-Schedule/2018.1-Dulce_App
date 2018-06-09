@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {View, TouchableHighlight,Alert} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Icon, Fab,Button} from 'native-base';
+import {View} from 'react-native';
+import {Container, Content, Card, CardItem, Text, Body, List} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 
 const styles = {
