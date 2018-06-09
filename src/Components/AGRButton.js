@@ -5,13 +5,14 @@ import {Container, Content, Button} from 'native-base';
 const styles = {
   container: {
     backgroundColor: '#5f4b8b',
-    height: 45,
+    height: 50,
     alignItems: 'center',
+    justifyContent: 'center',
     marginTop: 30,
     paddingHorizontal: 50,
     alignSelf: 'center',
     marginBottom: 0,
-    width: 140
+    width: 170
   },
   text: {
     color: 'white',

@@ -4,7 +4,7 @@ import {Container, Content, Button} from 'native-base';
 
 const styles = {
   container: {
-    height: 43,
+    height: 45,
     marginTop: 15,
     paddingHorizontal: 20,
     alignSelf: 'center',

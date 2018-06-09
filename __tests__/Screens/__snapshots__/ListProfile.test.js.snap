@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
             virtual={undefined}
           >
              
-            Notificações
+            Lista de Perfis
              
           </Text>
         </View>

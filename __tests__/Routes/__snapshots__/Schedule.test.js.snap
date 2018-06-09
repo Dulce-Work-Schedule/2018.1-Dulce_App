@@ -266,21 +266,9 @@ exports[`renders correctly 1`] = `
                       "Feb 2018",
                       "Mar 2018",
                       "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "2018-05-07T00:00:00.000Z",
-                      "2018-06-07T00:00:00.000Z",
-                      "2018-07-07T00:00:00.000Z",
-=======
-                      "2018-05-08T00:00:00.000Z",
-                      "2018-06-08T00:00:00.000Z",
-                      "2018-07-08T00:00:00.000Z",
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                      "2018-05-08T00:00:00.000Z",
-                      "2018-06-08T00:00:00.000Z",
-                      "2018-07-08T00:00:00.000Z",
->>>>>>> d491e63... FIX #376 Adicionando testes
+                      "2018-05-09T00:00:00.000Z",
+                      "2018-06-09T00:00:00.000Z",
+                      "2018-07-09T00:00:00.000Z",
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -1244,8 +1232,6 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
-                                  "backgroundColor": "#5f4b8b",
-                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1267,9 +1253,6 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
-                                    },
-                                    Object {
-                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -1297,6 +1280,8 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
+                                  "backgroundColor": "#5f4b8b",
+                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1318,6 +1303,9 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
+                                    },
+                                    Object {
+                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -5046,21 +5034,9 @@ exports[`renders correctly 1`] = `
                                 "Feb 2018",
                                 "Mar 2018",
                                 "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                "2018-05-07T00:00:00.000Z",
-                                "2018-06-07T00:00:00.000Z",
-                                "2018-07-07T00:00:00.000Z",
-=======
-                                "2018-05-08T00:00:00.000Z",
-                                "2018-06-08T00:00:00.000Z",
-                                "2018-07-08T00:00:00.000Z",
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                                "2018-05-08T00:00:00.000Z",
-                                "2018-06-08T00:00:00.000Z",
-                                "2018-07-08T00:00:00.000Z",
->>>>>>> d491e63... FIX #376 Adicionando testes
+                                "2018-05-09T00:00:00.000Z",
+                                "2018-06-09T00:00:00.000Z",
+                                "2018-07-09T00:00:00.000Z",
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -6024,8 +6000,6 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
-                                            "backgroundColor": "#5f4b8b",
-                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6047,9 +6021,6 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
-                                              },
-                                              Object {
-                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -6077,6 +6048,8 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
+                                            "backgroundColor": "#5f4b8b",
+                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6098,6 +6071,9 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
+                                              },
+                                              Object {
+                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -9867,23 +9843,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      date={1528413340163}
-=======
-                      date={1528470371919}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                      date={1528488176367}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                      date={1528492029158}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-                      date={1528511861250}
->>>>>>> d491e63... FIX #376 Adicionando testes
+                      date={1528551497800}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10114,23 +10074,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      date={1528413340163}
-=======
-                      date={1528470371919}
->>>>>>> ca3bdf2... #389 Iniciando testes na NewUser.js
-=======
-                      date={1528488176367}
->>>>>>> 85922d5... #389 realizando testes
-=======
-                      date={1528492029158}
->>>>>>> 0fa0aef...  FIX #389 finalizando cobertura de teste da tela
-=======
-                      date={1528511861250}
->>>>>>> d491e63... FIX #376 Adicionando testes
+                      date={1528551497800}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

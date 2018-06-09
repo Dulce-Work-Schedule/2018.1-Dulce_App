@@ -852,15 +852,15 @@ exports[`renders correctly 1`] = `
                     "borderTopWidth": null,
                     "elevation": 2,
                     "flexDirection": "row",
-                    "height": 45,
-                    "justifyContent": "space-between",
+                    "height": 50,
+                    "justifyContent": "center",
                     "marginBottom": 0,
                     "marginTop": 30,
                     "opacity": 1,
                     "paddingBottom": 6,
                     "paddingHorizontal": 50,
                     "paddingTop": 6,
-                    "width": 140,
+                    "width": 170,
                   }
                 }
                 testID={undefined}
@@ -1480,11 +1480,12 @@ ShallowWrapper {
                       "alignItems": "center",
                       "alignSelf": "center",
                       "backgroundColor": "#5f4b8b",
-                      "height": 45,
+                      "height": 50,
+                      "justifyContent": "center",
                       "marginBottom": 0,
                       "marginTop": 30,
                       "paddingHorizontal": 50,
-                      "width": 140,
+                      "width": 170,
                     }
                   }
                   virtual={undefined}
@@ -2129,11 +2130,12 @@ ShallowWrapper {
                         "alignItems": "center",
                         "alignSelf": "center",
                         "backgroundColor": "#5f4b8b",
-                        "height": 45,
+                        "height": 50,
+                        "justifyContent": "center",
                         "marginBottom": 0,
                         "marginTop": 30,
                         "paddingHorizontal": 50,
-                        "width": 140,
+                        "width": 170,
                       }
                     }
                     virtual={undefined}
