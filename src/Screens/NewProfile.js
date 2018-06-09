@@ -38,9 +38,35 @@ const styles = {
     fontFamily: 'Raleway'
   }
 };
-
+const default_profile_state_value = {
+  value: {
+    nome: '',
+    setor: '',
+    matricula: '',
+    hospital: ''
+  },
+  userType: ''
+};
 const Form = t.form.Form;
-
+const default_profile_options = {
+  fields: {
+    Nome: {
+      error: 'Campo obrigatório'
+    },
+    Email: {
+      error: 'Campo obrigatório'
+    },
+    senha: {
+      secureTextEntry: true,
+      error: 'Campo obrigatório'
+    },
+    confirmarSenha: {
+      secureTextEntry: true,
+      error: 'Campo obrigatório'
+    }
+  },
+  stylesheet: formStyles
+};
 class NewProfile extends React.Component {
   constructor(props) {
     super(props);
@@ -50,34 +76,8 @@ class NewProfile extends React.Component {
       matricula: t.String,
       hospital: t.String
     });
-    this.state = {
-      value: {
-        nome: '',
-        setor: '',
-        matricula: '',
-        hospital: ''
-      },
-      userType: ''
-    };
-    this.options = {
-      fields: {
-        Nome: {
-          error: 'Campo obrigatório'
-        },
-        Email: {
-          error: 'Campo obrigatório'
-        },
-        senha: {
-          secureTextEntry: true,
-          error: 'Campo obrigatório'
-        },
-        confirmarSenha: {
-          secureTextEntry: true,
-          error: 'Campo obrigatório'
-        }
-      },
-      stylesheet: formStyles
-    };
+    this.state = default_profile_state_value;
+    this.options = default_profile_options;
   }
 
   onValueChange(value) {
