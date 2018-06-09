@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List} from 'native-base';
+import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 
 const styles = {
@@ -38,6 +38,20 @@ export default class ListProfile extends Component {
     };
   }
 
+  fab() {
+    return (
+    <Fab
+       active={true}
+      direction='up'
+      containerStyle={{}}
+      style={{backgroundColor: '#5f4b8b'}}
+      position='bottomRight'
+        onPress={() => { this.timePickerVisible(true); }}>
+        onPress={() => {}}>
+        <Icon type='MaterialIcons' name='add' />
+    </Fab>);
+  }
+
   renderCard(item) {
     return (
       <Card>
@@ -66,6 +80,7 @@ export default class ListProfile extends Component {
                 this.renderCard(item))} />
           </Content>
         </Container>
+        {this.fab()}
       </View>
     );
   }
