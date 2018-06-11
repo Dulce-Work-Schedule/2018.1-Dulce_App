@@ -9799,10 +9799,14 @@ exports[`renders correctly 1`] = `
           >
             <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528818269860}
 =======
               date={1528750921200}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+              date={1528758522618}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10034,10 +10038,14 @@ exports[`renders correctly 1`] = `
           >
             <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528818269860}
 =======
               date={1528750921200}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+              date={1528758522618}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10188,10 +10196,14 @@ ShallowWrapper {
           renderItem={[Function]}
           rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-12T15:45:24.218Z}
 =======
           selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+          selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
           style={
             Object {
               "flex": 1,
@@ -10270,10 +10282,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
 =======
                   selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                  selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                   style={
                     Object {
                       "flex": 1,
@@ -10341,10 +10357,14 @@ ShallowWrapper {
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-12T15:44:29.860Z}
 =======
           date={2018-06-11T21:02:01.200Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+          date={2018-06-11T23:08:42.618Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10366,10 +10386,14 @@ ShallowWrapper {
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-12T15:44:29.860Z}
 =======
           date={2018-06-11T21:02:01.200Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+          date={2018-06-11T23:08:42.618Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10418,10 +10442,14 @@ ShallowWrapper {
           "renderItem": [Function],
           "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-12T15:45:24.218Z,
 =======
           "selected": 2018-06-11T21:03:32.782Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+          "selected": 2018-06-11T23:08:43.577Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
           "style": Object {
             "flex": 1,
           },
@@ -10504,10 +10532,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
 =======
                   selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                  selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                   style={
                     Object {
                       "flex": 1,
@@ -10623,10 +10655,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
 =======
                   selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                  selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                   style={
                     Object {
                       "flex": 1,
@@ -10740,10 +10776,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                    selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                     style={
                       Object {
                         "flex": 1,
@@ -10845,10 +10885,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-12T15:45:24.218Z}
 =======
                       selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                      selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                       style={
                         Object {
                           "flex": 1,
@@ -10901,10 +10945,14 @@ ShallowWrapper {
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-12T15:45:24.218Z,
 =======
                       "selected": 2018-06-11T21:03:32.782Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                      "selected": 2018-06-11T23:08:43.577Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                       "style": Object {
                         "flex": 1,
                       },
@@ -11023,10 +11071,14 @@ ShallowWrapper {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-12T15:44:29.860Z,
 =======
           "date": 2018-06-11T21:02:01.200Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+          "date": 2018-06-11T23:08:42.618Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11054,10 +11106,14 @@ ShallowWrapper {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-12T15:44:29.860Z,
 =======
           "date": 2018-06-11T21:02:01.200Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+          "date": 2018-06-11T23:08:42.618Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11099,10 +11155,14 @@ ShallowWrapper {
             renderItem={[Function]}
             rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-12T15:45:24.218Z}
 =======
             selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+            selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
             style={
               Object {
                 "flex": 1,
@@ -11181,10 +11241,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                    selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                     style={
                       Object {
                         "flex": 1,
@@ -11252,10 +11316,14 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-12T15:44:29.860Z}
 =======
             date={2018-06-11T21:02:01.200Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+            date={2018-06-11T23:08:42.618Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11277,10 +11345,14 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-12T15:44:29.860Z}
 =======
             date={2018-06-11T21:02:01.200Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+            date={2018-06-11T23:08:42.618Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11329,10 +11401,14 @@ ShallowWrapper {
             "renderItem": [Function],
             "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-12T15:45:24.218Z,
 =======
             "selected": 2018-06-11T21:03:32.782Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+            "selected": 2018-06-11T23:08:43.577Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
             "style": Object {
               "flex": 1,
             },
@@ -11415,10 +11491,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                    selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                     style={
                       Object {
                         "flex": 1,
@@ -11534,10 +11614,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                    selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                     style={
                       Object {
                         "flex": 1,
@@ -11651,10 +11735,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-12T15:45:24.218Z}
 =======
                       selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                      selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                       style={
                         Object {
                           "flex": 1,
@@ -11756,10 +11844,14 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-12T15:45:24.218Z}
 =======
                         selected={2018-06-11T21:03:32.782Z}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                        selected={2018-06-11T23:08:43.577Z}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                         style={
                           Object {
                             "flex": 1,
@@ -11812,10 +11904,14 @@ ShallowWrapper {
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-12T15:45:24.218Z,
 =======
                         "selected": 2018-06-11T21:03:32.782Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                        "selected": 2018-06-11T23:08:43.577Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                         "style": Object {
                           "flex": 1,
                         },
@@ -11934,10 +12030,14 @@ ShallowWrapper {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-12T15:44:29.860Z,
 =======
             "date": 2018-06-11T21:02:01.200Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+            "date": 2018-06-11T23:08:42.618Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -11965,10 +12065,14 @@ ShallowWrapper {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-12T15:44:29.860Z,
 =======
             "date": 2018-06-11T21:02:01.200Z,
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+            "date": 2018-06-11T23:08:42.618Z,
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

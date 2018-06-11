@@ -9871,10 +9871,14 @@ exports[`renders correctly 1`] = `
                   >
                     <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528818366500}
 =======
                       date={1528751073737}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                      date={1528758532053}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10106,10 +10110,14 @@ exports[`renders correctly 1`] = `
                   >
                     <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528818366500}
 =======
                       date={1528751073737}
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+                      date={1528758532053}
+>>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

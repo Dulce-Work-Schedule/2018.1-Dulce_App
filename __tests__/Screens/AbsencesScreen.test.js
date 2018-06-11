@@ -180,3 +180,13 @@ it(' testing onsucess DateRangePicker', () => {
   const onSucess = calendar.props().onSuccess(startDay,endDay);
   console.log(onSucess);
   });
+
+  it(' testing onPress CardItem', () => {
+ 
+    const wrapper = shallow(<AbsencesScreen/>);
+    const cardItem = wrapper.find('Styled(CardItem)').at(4);
+    const button = cardItem.find('AGRButton').at(0);
+    button.simulate('press');
+    console.log(cardItem.debug());
+
+    });
