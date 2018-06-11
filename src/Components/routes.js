@@ -1,6 +1,7 @@
 import NewManager from '../Routes/NewManager';
 import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
+import Profiles from '../Routes/Profiles';
 import {DrawerNavigator} from 'react-navigation';
 import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
@@ -12,7 +13,10 @@ export default DrawerNavigator({
   'Ver Escala': {
     screen: Schedule
   },
-  'Meu Perfil': {
+  'Todos os perfis': {
+    screen: Profiles
+  },
+  'Meu Perfil atual': {
     screen: Profile
   },
   'Criar Novo Gerente': {
