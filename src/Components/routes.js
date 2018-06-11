@@ -7,7 +7,6 @@ import Sectors from '../Routes/Sectors';
 import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
-import NewProfile from '../Routes/NewProfile';
 import Vacation from '../Routes/Vacation';
 
 export default DrawerNavigator({
@@ -31,9 +30,6 @@ export default DrawerNavigator({
   },
   'Notificações': {
     screen: Notifications
-  },
-  'Criar Perfil': {
-    screen: NewProfile
   },
   'Solicitar Férias': {
     screen: Vacation

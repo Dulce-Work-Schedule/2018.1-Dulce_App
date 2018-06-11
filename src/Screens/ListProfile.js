@@ -46,7 +46,7 @@ export default class ListProfile extends Component {
         containerStyle={{}}
         style={{backgroundColor: '#5f4b8b'}}
         position='bottomRight'
-        onPress={() => {}}>
+        onPress={() => {this.props.navigation.navigate('profile');}}>
         <Icon type='MaterialIcons' name='add' />
       </Fab>);
   }

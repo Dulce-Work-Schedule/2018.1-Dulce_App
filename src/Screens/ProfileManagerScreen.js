@@ -59,7 +59,7 @@ class ProfileManagerScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      <ScreenHeader title='Meu Perfil'/>
+        <ScreenHeader title='Meu Perfil'/>
         {
           this.state.loading ? (
             <Container>
