@@ -6,6 +6,7 @@ import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
 import Vacation from '../Routes/Vacation';
 import Absences from '../Routes/Absences';
+import SideMenu from './SideMenu';
 
 export default DrawerNavigator({
   'Ver Escala': {
@@ -30,5 +31,6 @@ export default DrawerNavigator({
     screen: Logout
   }
 }, {
+  contentComponent: SideMenu,
   drawerWidth: 300
 });
