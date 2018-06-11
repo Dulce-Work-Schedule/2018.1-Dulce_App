@@ -132,6 +132,21 @@ Para aceitar o PullRequest, deve-se usar a opção *merge* no Github.
 
 ![Merge](/docs/assets/img/merges.png)
 
+##### Cobertura de testes
+A Cobertura de código é avaliada constantemente e o objetivo é que a mesma nunca diminua. "Código testado gera menos retrabalho e mais qualidade de vida".
+
+OBS: linhas de `console.log()` costumam não ser contabilizadas na cobertura de código. E geralmente não devem. Para resolver este problema, você pode adicionar o seguinte comentário na linha anterior ao `console.log()`:
+
+```
+/* istanbul ignore next */
+```
+
+Exemplo:
+```nodejs
+/* istanbul ignore next */
+console.log("Mensagem de Checkpoint");
+```
+
 #### Tag's
 
 <!-- Explicar tag's -->
