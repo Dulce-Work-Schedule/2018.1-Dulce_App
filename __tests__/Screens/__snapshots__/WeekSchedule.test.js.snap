@@ -199,9 +199,15 @@ exports[`renders correctly 1`] = `
               "Feb 2018",
               "Mar 2018",
               "Apr 2018",
+<<<<<<< HEAD
               "2018-05-12T00:00:00.000Z",
               "2018-06-12T00:00:00.000Z",
               "2018-07-12T00:00:00.000Z",
+=======
+              "2018-05-11T00:00:00.000Z",
+              "2018-06-11T00:00:00.000Z",
+              "2018-07-11T00:00:00.000Z",
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -1320,6 +1326,8 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
+                          "backgroundColor": "#5f4b8b",
+                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -1341,6 +1349,9 @@ exports[`renders correctly 1`] = `
                               "fontSize": 16,
                               "fontWeight": "300",
                               "marginTop": 6,
+                            },
+                            Object {
+                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -4967,9 +4978,15 @@ exports[`renders correctly 1`] = `
                         "Feb 2018",
                         "Mar 2018",
                         "Apr 2018",
+<<<<<<< HEAD
                         "2018-05-12T00:00:00.000Z",
                         "2018-06-12T00:00:00.000Z",
                         "2018-07-12T00:00:00.000Z",
+=======
+                        "2018-05-11T00:00:00.000Z",
+                        "2018-06-11T00:00:00.000Z",
+                        "2018-07-11T00:00:00.000Z",
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -6088,6 +6105,8 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
+                                    "backgroundColor": "#5f4b8b",
+                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -6109,6 +6128,9 @@ exports[`renders correctly 1`] = `
                                         "fontSize": 16,
                                         "fontWeight": "300",
                                         "marginTop": 6,
+                                      },
+                                      Object {
+                                        "color": "#ffffff",
                                       },
                                     ]
                                   }
@@ -9776,7 +9798,11 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
+<<<<<<< HEAD
               date={1528818269860}
+=======
+              date={1528750921200}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10007,7 +10033,11 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
+<<<<<<< HEAD
               date={1528818269860}
+=======
+              date={1528750921200}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10157,7 +10187,11 @@ ShallowWrapper {
           renderEmptyDate={[Function]}
           renderItem={[Function]}
           rowHasChanged={[Function]}
+<<<<<<< HEAD
           selected={2018-06-12T15:45:24.218Z}
+=======
+          selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
           style={
             Object {
               "flex": 1,
@@ -10235,7 +10269,11 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
+=======
+                  selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                   style={
                     Object {
                       "flex": 1,
@@ -10302,7 +10340,11 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
+<<<<<<< HEAD
           date={2018-06-12T15:44:29.860Z}
+=======
+          date={2018-06-11T21:02:01.200Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10323,7 +10365,11 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
+<<<<<<< HEAD
           date={2018-06-12T15:44:29.860Z}
+=======
+          date={2018-06-11T21:02:01.200Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10371,7 +10417,11 @@ ShallowWrapper {
           "renderEmptyDate": [Function],
           "renderItem": [Function],
           "rowHasChanged": [Function],
+<<<<<<< HEAD
           "selected": 2018-06-12T15:45:24.218Z,
+=======
+          "selected": 2018-06-11T21:03:32.782Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
           "style": Object {
             "flex": 1,
           },
@@ -10453,7 +10503,11 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
+=======
+                  selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                   style={
                     Object {
                       "flex": 1,
@@ -10568,7 +10622,11 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
+=======
+                  selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                   style={
                     Object {
                       "flex": 1,
@@ -10681,7 +10739,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                     style={
                       Object {
                         "flex": 1,
@@ -10782,7 +10844,11 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-12T15:45:24.218Z}
+=======
+                      selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                       style={
                         Object {
                           "flex": 1,
@@ -10834,7 +10900,11 @@ ShallowWrapper {
                       "renderEmptyDate": [Function],
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
+<<<<<<< HEAD
                       "selected": 2018-06-12T15:45:24.218Z,
+=======
+                      "selected": 2018-06-11T21:03:32.782Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                       "style": Object {
                         "flex": 1,
                       },
@@ -10952,7 +11022,11 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
           "date": 2018-06-12T15:44:29.860Z,
+=======
+          "date": 2018-06-11T21:02:01.200Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -10979,7 +11053,11 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
           "date": 2018-06-12T15:44:29.860Z,
+=======
+          "date": 2018-06-11T21:02:01.200Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11020,7 +11098,11 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
+<<<<<<< HEAD
             selected={2018-06-12T15:45:24.218Z}
+=======
+            selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
             style={
               Object {
                 "flex": 1,
@@ -11098,7 +11180,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                     style={
                       Object {
                         "flex": 1,
@@ -11165,7 +11251,11 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
+<<<<<<< HEAD
             date={2018-06-12T15:44:29.860Z}
+=======
+            date={2018-06-11T21:02:01.200Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11186,7 +11276,11 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
+<<<<<<< HEAD
             date={2018-06-12T15:44:29.860Z}
+=======
+            date={2018-06-11T21:02:01.200Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11234,7 +11328,11 @@ ShallowWrapper {
             "renderEmptyDate": [Function],
             "renderItem": [Function],
             "rowHasChanged": [Function],
+<<<<<<< HEAD
             "selected": 2018-06-12T15:45:24.218Z,
+=======
+            "selected": 2018-06-11T21:03:32.782Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
             "style": Object {
               "flex": 1,
             },
@@ -11316,7 +11414,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                     style={
                       Object {
                         "flex": 1,
@@ -11431,7 +11533,11 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                     style={
                       Object {
                         "flex": 1,
@@ -11544,7 +11650,11 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-12T15:45:24.218Z}
+=======
+                      selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                       style={
                         Object {
                           "flex": 1,
@@ -11645,7 +11755,11 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
+<<<<<<< HEAD
                         selected={2018-06-12T15:45:24.218Z}
+=======
+                        selected={2018-06-11T21:03:32.782Z}
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                         style={
                           Object {
                             "flex": 1,
@@ -11697,7 +11811,11 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
+<<<<<<< HEAD
                         "selected": 2018-06-12T15:45:24.218Z,
+=======
+                        "selected": 2018-06-11T21:03:32.782Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
                         "style": Object {
                           "flex": 1,
                         },
@@ -11815,7 +11933,11 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
             "date": 2018-06-12T15:44:29.860Z,
+=======
+            "date": 2018-06-11T21:02:01.200Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -11842,7 +11964,11 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
             "date": 2018-06-12T15:44:29.860Z,
+=======
+            "date": 2018-06-11T21:02:01.200Z,
+>>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
