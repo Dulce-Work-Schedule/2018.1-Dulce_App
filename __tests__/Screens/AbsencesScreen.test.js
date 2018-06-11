@@ -2,7 +2,7 @@ import 'react-native';
 import React from 'react';
 import AbsencesScreen from '../../src/Screens/AbsencesScreen';
 import Adapter from 'enzyme-adapter-react-16';
-// import {shallow} from 'enzyme';
+import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import renderer from 'react-test-renderer';
 
@@ -17,14 +17,146 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-// test('save button', () => {
-//   const wrapper = shallow(<AbsencesScreen />);
-//   const onPickImage = jest.fn();
-//   const pickerButton = wrapper.find('TouchableOpacity').at(0);
+it('should test onSelectDates correctly', () => {
+  // This is to test component functions
+  const start = {
+    year: '2018',
+    month: '06',
+    day: '03',
+    dateString: '2018-06-03'
+  };
+  const end = {
+    year: '2018',
+    month: '06',
+    day: '04',
+    dateString: '2018-06-04'
+  };
+  const spy = jest.spyOn(AbsencesScreen.prototype,'setState');
 
-//   wrapper.setState({editable: true});
-//   wrapper.instance().save = onPickImage;
-//   wrapper.setProps({});
-//   pickerButton.simulate('press');
-//   expect(onPickImage).toBeCalled();
-// });
+  let absencesScreen = renderer
+    .create(
+      <AbsencesScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(spy)
+        }
+      />
+    )
+    .getInstance();
+
+  absencesScreen.onSelectDates(start, end);
+});
+
+it('should test onSelectDates correctly', () => {
+
+  const spy = jest.spyOn(AbsencesScreen.prototype,'setState');
+
+  let absencesScreen = renderer
+    .create(
+      <AbsencesScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(spy)
+        }
+      />
+    )
+    .getInstance();
+
+  absencesScreen.onSelectAbsence('absence');
+});
+
+it('should press the useless button', () => {
+  const wrapper = shallow(<AbsencesScreen />);
+  const button = wrapper.find('AGRButton').at(0);
+  button.simulate('press');
+});
+
+it('should test onSelectDates correctly', () => {
+
+  const response = {
+    didCancel: true,
+    error: false,
+    customButton: false
+  };
+
+  let absencesScreen = renderer
+    .create(
+      <AbsencesScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(true)
+        }
+      />
+    )
+    .getInstance();
+
+  absencesScreen.getDocument(response);
+});
+
+it('should test onSelectDates correctly', () => {
+
+  const response = {
+    didCancel: false,
+    error: true,
+    customButton: false
+  };
+
+  let absencesScreen = renderer
+    .create(
+      <AbsencesScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(true)
+        }
+      />
+    )
+    .getInstance();
+
+  absencesScreen.getDocument(response);
+});
+
+it('should test onSelectDates correctly', () => {
+
+  const response = {
+    didCancel: false,
+    error: false,
+    customButton: true
+  };
+
+  let absencesScreen = renderer
+    .create(
+      <AbsencesScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(true)
+        }
+      />
+    )
+    .getInstance();
+
+  absencesScreen.getDocument(response);
+});
+
+it('should test onSelectDates correctly', () => {
+  const spy = jest.spyOn(AbsencesScreen.prototype,'setState');
+
+  const response = {
+    didCancel: false,
+    error: false,
+    customButton: false
+  };
+
+  let absencesScreen = renderer
+    .create(
+      <AbsencesScreen
+        dispatch={action =>
+          expect(action)
+          .toEqual(spy)
+        }
+      />
+    )
+    .getInstance();
+
+  absencesScreen.getDocument(response);
+});
+
