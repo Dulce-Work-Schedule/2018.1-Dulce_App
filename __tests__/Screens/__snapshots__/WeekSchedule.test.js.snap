@@ -209,8 +209,13 @@ exports[`renders correctly 1`] = `
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
 >>>>>>> a268625... #432 Excluindo rotas e telas.
 =======
+<<<<<<< HEAD
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4996,8 +5001,13 @@ exports[`renders correctly 1`] = `
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
 >>>>>>> a268625... #432 Excluindo rotas e telas.
 =======
+<<<<<<< HEAD
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9830,9 +9840,15 @@ exports[`renders correctly 1`] = `
 =======
               date={1528853079777}
 =======
+<<<<<<< HEAD
               date={1528770936911}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+              date={1528768138083}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10084,9 +10100,15 @@ exports[`renders correctly 1`] = `
 =======
               date={1528853079777}
 =======
+<<<<<<< HEAD
               date={1528770936911}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+              date={1528768138083}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10257,9 +10279,15 @@ ShallowWrapper {
 =======
           selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
           selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+          selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
           style={
             Object {
               "flex": 1,
@@ -10358,9 +10386,15 @@ ShallowWrapper {
 =======
                   selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                   selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                  selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                   style={
                     Object {
                       "flex": 1,
@@ -10448,9 +10482,15 @@ ShallowWrapper {
 =======
           date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
           date={2018-06-12T02:35:36.911Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+          date={2018-06-12T01:48:58.083Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10492,9 +10532,15 @@ ShallowWrapper {
 =======
           date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
           date={2018-06-12T02:35:36.911Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+          date={2018-06-12T01:48:58.083Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10563,9 +10609,15 @@ ShallowWrapper {
 =======
           "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
           "selected": 2018-06-12T02:35:38.113Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+          "selected": 2018-06-12T01:48:58.904Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
           "style": Object {
             "flex": 1,
           },
@@ -10668,9 +10720,15 @@ ShallowWrapper {
 =======
                   selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                   selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                  selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                   style={
                     Object {
                       "flex": 1,
@@ -10806,9 +10864,15 @@ ShallowWrapper {
 =======
                   selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                   selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                  selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                   style={
                     Object {
                       "flex": 1,
@@ -10942,9 +11006,15 @@ ShallowWrapper {
 =======
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                    selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                     style={
                       Object {
                         "flex": 1,
@@ -11066,9 +11136,15 @@ ShallowWrapper {
 =======
                       selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                       selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                      selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                       style={
                         Object {
                           "flex": 1,
@@ -11141,9 +11217,15 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
                       "selected": 2018-06-12T02:35:38.113Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                      "selected": 2018-06-12T01:48:58.904Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                       "style": Object {
                         "flex": 1,
                       },
@@ -11282,9 +11364,15 @@ ShallowWrapper {
 =======
           "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
           "date": 2018-06-12T02:35:36.911Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+          "date": 2018-06-12T01:48:58.083Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11332,9 +11420,15 @@ ShallowWrapper {
 =======
           "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
           "date": 2018-06-12T02:35:36.911Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+          "date": 2018-06-12T01:48:58.083Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11396,9 +11490,15 @@ ShallowWrapper {
 =======
             selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
             selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+            selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
             style={
               Object {
                 "flex": 1,
@@ -11497,9 +11597,15 @@ ShallowWrapper {
 =======
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                    selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                     style={
                       Object {
                         "flex": 1,
@@ -11587,9 +11693,15 @@ ShallowWrapper {
 =======
             date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
             date={2018-06-12T02:35:36.911Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+            date={2018-06-12T01:48:58.083Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11631,9 +11743,15 @@ ShallowWrapper {
 =======
             date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
             date={2018-06-12T02:35:36.911Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+            date={2018-06-12T01:48:58.083Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11702,9 +11820,15 @@ ShallowWrapper {
 =======
             "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
             "selected": 2018-06-12T02:35:38.113Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+            "selected": 2018-06-12T01:48:58.904Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
             "style": Object {
               "flex": 1,
             },
@@ -11807,9 +11931,15 @@ ShallowWrapper {
 =======
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                    selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                     style={
                       Object {
                         "flex": 1,
@@ -11945,9 +12075,15 @@ ShallowWrapper {
 =======
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                    selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                     style={
                       Object {
                         "flex": 1,
@@ -12081,9 +12217,15 @@ ShallowWrapper {
 =======
                       selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                       selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                      selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                       style={
                         Object {
                           "flex": 1,
@@ -12205,9 +12347,15 @@ ShallowWrapper {
 =======
                         selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                         selected={2018-06-12T02:35:38.113Z}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                        selected={2018-06-12T01:48:58.904Z}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                         style={
                           Object {
                             "flex": 1,
@@ -12280,9 +12428,15 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
                         "selected": 2018-06-12T02:35:38.113Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                        "selected": 2018-06-12T01:48:58.904Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                         "style": Object {
                           "flex": 1,
                         },
@@ -12421,9 +12575,15 @@ ShallowWrapper {
 =======
             "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
             "date": 2018-06-12T02:35:36.911Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+            "date": 2018-06-12T01:48:58.083Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12471,9 +12631,15 @@ ShallowWrapper {
 =======
             "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
             "date": 2018-06-12T02:35:36.911Z,
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+            "date": 2018-06-12T01:48:58.083Z,
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
