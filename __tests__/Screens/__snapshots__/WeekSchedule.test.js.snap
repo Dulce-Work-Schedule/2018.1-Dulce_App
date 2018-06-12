@@ -194,10 +194,10 @@ exports[`renders correctly 1`] = `
               "Feb 2018",
               "Mar 2018",
               "Apr 2018",
-<<<<<<< HEAD
               "2018-05-12T00:00:00.000Z",
               "2018-06-12T00:00:00.000Z",
               "2018-07-12T00:00:00.000Z",
+<<<<<<< HEAD
 =======
               "2018-05-11T00:00:00.000Z",
               "2018-06-11T00:00:00.000Z",
@@ -220,6 +220,8 @@ exports[`renders correctly 1`] = `
 =======
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -1338,8 +1340,6 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
-                          "backgroundColor": "#5f4b8b",
-                          "borderRadius": 16,
                           "height": 32,
                           "opacity": 1,
                           "width": 32,
@@ -1361,9 +1361,6 @@ exports[`renders correctly 1`] = `
                               "fontSize": 16,
                               "fontWeight": "300",
                               "marginTop": 6,
-                            },
-                            Object {
-                              "color": "#ffffff",
                             },
                           ]
                         }
@@ -4990,10 +4987,10 @@ exports[`renders correctly 1`] = `
                         "Feb 2018",
                         "Mar 2018",
                         "Apr 2018",
-<<<<<<< HEAD
                         "2018-05-12T00:00:00.000Z",
                         "2018-06-12T00:00:00.000Z",
                         "2018-07-12T00:00:00.000Z",
+<<<<<<< HEAD
 =======
                         "2018-05-11T00:00:00.000Z",
                         "2018-06-11T00:00:00.000Z",
@@ -5016,6 +5013,8 @@ exports[`renders correctly 1`] = `
 =======
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -6134,8 +6133,6 @@ exports[`renders correctly 1`] = `
                                 style={
                                   Object {
                                     "alignItems": "center",
-                                    "backgroundColor": "#5f4b8b",
-                                    "borderRadius": 16,
                                     "height": 32,
                                     "opacity": 1,
                                     "width": 32,
@@ -6157,9 +6154,6 @@ exports[`renders correctly 1`] = `
                                         "fontSize": 16,
                                         "fontWeight": "300",
                                         "marginTop": 6,
-                                      },
-                                      Object {
-                                        "color": "#ffffff",
                                       },
                                     ]
                                   }
@@ -9831,6 +9825,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -9864,6 +9859,9 @@ exports[`renders correctly 1`] = `
               date={1528760052453}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+              date={1528826771901}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10098,6 +10096,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -10131,6 +10130,9 @@ exports[`renders correctly 1`] = `
               date={1528760052453}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+              date={1528826771901}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10284,6 +10286,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10317,6 +10320,9 @@ ShallowWrapper {
           selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+          selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
           style={
             Object {
               "flex": 1,
@@ -10398,6 +10404,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10431,6 +10438,9 @@ ShallowWrapper {
                   selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                  selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                   style={
                     Object {
                       "flex": 1,
@@ -10501,6 +10511,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10534,6 +10545,9 @@ ShallowWrapper {
           date={2018-06-11T23:34:12.453Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+          date={2018-06-12T18:06:11.901Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10558,6 +10572,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10591,6 +10606,9 @@ ShallowWrapper {
           date={2018-06-11T23:34:12.453Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+          date={2018-06-12T18:06:11.901Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10642,6 +10660,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -10675,6 +10694,9 @@ ShallowWrapper {
           "selected": 2018-06-11T23:34:13.421Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+          "selected": 2018-06-12T18:06:17.641Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
           "style": Object {
             "flex": 1,
           },
@@ -10760,6 +10782,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10793,6 +10816,9 @@ ShallowWrapper {
                   selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                  selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                   style={
                     Object {
                       "flex": 1,
@@ -10911,6 +10937,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10944,6 +10971,9 @@ ShallowWrapper {
                   selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                  selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                   style={
                     Object {
                       "flex": 1,
@@ -11060,6 +11090,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11093,6 +11124,9 @@ ShallowWrapper {
                     selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                    selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                     style={
                       Object {
                         "flex": 1,
@@ -11197,6 +11231,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11230,6 +11265,9 @@ ShallowWrapper {
                       selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                      selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                       style={
                         Object {
                           "flex": 1,
@@ -11285,6 +11323,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11318,6 +11357,9 @@ ShallowWrapper {
                       "selected": 2018-06-11T23:34:13.421Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                      "selected": 2018-06-12T18:06:17.641Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                       "style": Object {
                         "flex": 1,
                       },
@@ -11439,6 +11481,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11472,6 +11515,9 @@ ShallowWrapper {
           "date": 2018-06-11T23:34:12.453Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+          "date": 2018-06-12T18:06:11.901Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11502,6 +11548,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11535,6 +11582,9 @@ ShallowWrapper {
           "date": 2018-06-11T23:34:12.453Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+          "date": 2018-06-12T18:06:11.901Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11579,6 +11629,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11612,6 +11663,9 @@ ShallowWrapper {
             selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+            selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
             style={
               Object {
                 "flex": 1,
@@ -11693,6 +11747,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11726,6 +11781,9 @@ ShallowWrapper {
                     selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                    selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                     style={
                       Object {
                         "flex": 1,
@@ -11796,6 +11854,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11829,6 +11888,9 @@ ShallowWrapper {
             date={2018-06-11T23:34:12.453Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+            date={2018-06-12T18:06:11.901Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11853,6 +11915,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11886,6 +11949,9 @@ ShallowWrapper {
             date={2018-06-11T23:34:12.453Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+            date={2018-06-12T18:06:11.901Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11937,6 +12003,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11970,6 +12037,9 @@ ShallowWrapper {
             "selected": 2018-06-11T23:34:13.421Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+            "selected": 2018-06-12T18:06:17.641Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
             "style": Object {
               "flex": 1,
             },
@@ -12055,6 +12125,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12088,6 +12159,9 @@ ShallowWrapper {
                     selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                    selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                     style={
                       Object {
                         "flex": 1,
@@ -12206,6 +12280,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12239,6 +12314,9 @@ ShallowWrapper {
                     selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                    selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                     style={
                       Object {
                         "flex": 1,
@@ -12355,6 +12433,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12388,6 +12467,9 @@ ShallowWrapper {
                       selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                      selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                       style={
                         Object {
                           "flex": 1,
@@ -12492,6 +12574,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12525,6 +12608,9 @@ ShallowWrapper {
                         selected={2018-06-11T23:34:13.421Z}
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                        selected={2018-06-12T18:06:17.641Z}
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                         style={
                           Object {
                             "flex": 1,
@@ -12580,6 +12666,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -12613,6 +12700,9 @@ ShallowWrapper {
                         "selected": 2018-06-11T23:34:13.421Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+                        "selected": 2018-06-12T18:06:17.641Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                         "style": Object {
                           "flex": 1,
                         },
@@ -12734,6 +12824,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12767,6 +12858,9 @@ ShallowWrapper {
             "date": 2018-06-11T23:34:12.453Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+            "date": 2018-06-12T18:06:11.901Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12797,6 +12891,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12830,6 +12925,9 @@ ShallowWrapper {
             "date": 2018-06-11T23:34:12.453Z,
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+            "date": 2018-06-12T18:06:11.901Z,
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

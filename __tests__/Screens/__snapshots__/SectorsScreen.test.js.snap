@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "height": 1334,
+    }
+  }
+  virtual={undefined}
+>
+  <View>
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F8F8F8",
+              "borderBottomColor": "#a7a6ab",
+              "borderBottomWidth": 0.5,
+              "elevation": 3,
+              "flexDirection": "row",
+              "height": 64,
+              "justifyContent": "center",
+              "left": 0,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+              "right": 0,
+              "shadowColor": undefined,
+              "shadowOffset": undefined,
+              "shadowOpacity": undefined,
+              "shadowRadius": undefined,
+              "top": 0,
+            },
+            Object {
+              "backgroundColor": "#5f4b8b",
+            },
+          ]
+        }
+        virtual={undefined}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flex": 1,
+            }
+          }
+          virtual={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "#000",
+                  "fontFamily": "System",
+                  "fontSize": 17,
+                  "fontWeight": "600",
+                  "textAlign": "center",
+                },
+                Object {
+                  "fontFamily": "Raleway",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+             
+            Setores
+             
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "padding": undefined,
+        },
+        undefined,
+      ]
+    }
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutomaticScroll={true}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    getScrollResponder={[Function]}
+    handleOnScroll={[Function]}
+    keyboardDismissMode="interactive"
+    keyboardOpeningTime={250}
+    keyboardShouldPersistTaps="handled"
+    keyboardSpace={0}
+    onScroll={[Function]}
+    resetKeyboardSpace={[Function]}
+    resetScrollToCoords={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    scrollEventThrottle={1}
+    scrollForExtraHeightOnAndroid={[Function]}
+    scrollToEnd={[Function]}
+    scrollToFocusedInput={[Function]}
+    scrollToPosition={[Function]}
+    showsVerticalScrollIndicator={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      }
+    }
+    viewIsInsideTabBar={false}
+    virtual={undefined}
+  >
+    <View>
+      <RCTScrollView
+        closeOnRowBeginSwipe={false}
+        closeOnRowPress={true}
+        closeOnScroll={true}
+        dataArray={
+          Array [
+            "UTI",
+            "Pediatria",
+            "Centro de Internações",
+            "Salas cirúrgicas",
+            "Unidades de Hemodialise",
+          ]
+        }
+        dataSource={
+          ListViewDataSource {
+            "items": 5,
+          }
+        }
+        directionalDistanceChangeThreshold={2}
+        disableLeftSwipe={false}
+        disableRightSwipe={false}
+        enableEmptySections={true}
+        leftOpenValue={0}
+        previewFirstRow={false}
+        recalculateHiddenLayout={false}
+        renderRow={[Function]}
+        renderScrollComponent={[Function]}
+        rightOpenValue={0}
+        style={Object {}}
+        swipeToOpenPercent={50}
+        virtual={undefined}
+      >
+        <View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              testID={undefined}
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  }
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                UTI
+              </Text>
+            </View>
+          </View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              testID={undefined}
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  }
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                Pediatria
+              </Text>
+            </View>
+          </View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              testID={undefined}
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  }
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                Centro de Internações
+              </Text>
+            </View>
+          </View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              testID={undefined}
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  }
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                Salas cirúrgicas
+              </Text>
+            </View>
+          </View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={null}
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderBottomWidth": 0.5,
+                  "borderColor": "#c9c9c9",
+                  "flexDirection": "row",
+                  "marginLeft": 16,
+                  "paddingBottom": 13,
+                  "paddingRight": 16,
+                  "paddingTop": 13,
+                }
+              }
+              testID={undefined}
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  }
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                Unidades de Hemodialise
+              </Text>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </RCTScrollView>
+</View>
+`;

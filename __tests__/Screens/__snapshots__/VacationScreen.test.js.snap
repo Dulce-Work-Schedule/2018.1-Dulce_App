@@ -9,7 +9,82 @@ exports[`renders correctly 1`] = `
   }
 >
   <View>
+<<<<<<< HEAD
     <View
+=======
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F8F8F8",
+              "borderBottomColor": "#a7a6ab",
+              "borderBottomWidth": 0.5,
+              "elevation": 3,
+              "flexDirection": "row",
+              "height": 64,
+              "justifyContent": "center",
+              "left": 0,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+              "right": 0,
+              "shadowColor": undefined,
+              "shadowOffset": undefined,
+              "shadowOpacity": undefined,
+              "shadowRadius": undefined,
+              "top": 0,
+            },
+            Object {
+              "backgroundColor": "#5f4b8b",
+            },
+          ]
+        }
+        virtual={undefined}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flex": 1,
+            }
+          }
+          virtual={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "#000",
+                  "fontFamily": "System",
+                  "fontSize": 17,
+                  "fontWeight": "600",
+                  "textAlign": "center",
+                },
+                Object {
+                  "fontFamily": "Raleway",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+             
+            Férias
+             
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
       style={
         Array [
           Object {
@@ -1100,11 +1175,14 @@ exports[`renders correctly 1`] = `
                       "backgroundColor": undefined,
                     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     Object {
                       "color": "#2d4150",
                       "fontWeight": "500",
                     },
+=======
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
                     Object {},
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
                   ]
@@ -4206,8 +4284,8 @@ exports[`renders correctly 1`] = `
               uppercase={false}
               virtual={undefined}
             >
-<<<<<<< HEAD
               12
+<<<<<<< HEAD
 =======
               11
 <<<<<<< HEAD
@@ -4228,13 +4306,15 @@ exports[`renders correctly 1`] = `
 =======
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
               /
               6
               /
               2018
                até 
-<<<<<<< HEAD
               12
+<<<<<<< HEAD
 =======
               11
 <<<<<<< HEAD
@@ -4255,6 +4335,8 @@ exports[`renders correctly 1`] = `
 =======
 >>>>>>> dfddc51... #386 Adicionando icons às rotas
 >>>>>>> adaa5f2... #386 Adicionando icons às rotas
+=======
+>>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
               /
               6
               /

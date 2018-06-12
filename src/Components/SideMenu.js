@@ -47,12 +47,11 @@ const styles = {
     color: '#fff'
   },
   route: {
-    paddingVertical: 10,
+    paddingVertical: 7,
     paddingHorizontal: 5,
     flexDirection: 'row',
     alignItems: 'center',
-    marginLeft: 10,
-    marginTop: 6
+    marginLeft: 10
   },
   footerContainer: {
     padding: 20,
@@ -101,9 +100,11 @@ export default class SideMenu extends React.Component {
             </View>
           </View>
           <View style={styles.routesContainer}>
-            {this.renderRoute('Notificações', 'md-notifications')}
             {this.renderRoute('Ver Escala', 'md-calendar')}
-            {this.renderRoute('Meu Perfil', 'md-person')}
+            {this.renderRoute('Notificações', 'md-notifications')}
+            {this.renderRoute('Meu Perfil atual', 'md-person')}
+            {this.renderRoute('Todos os perfis', 'md-list')}
+            {this.renderRoute('Solicitar Férias', 'md-plane')}
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
