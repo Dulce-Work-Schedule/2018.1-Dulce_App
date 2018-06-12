@@ -4,7 +4,6 @@ import Profile from '../Routes/Profile';
 import Profiles from '../Routes/Profiles';
 import {DrawerNavigator} from 'react-navigation';
 import Sectors from '../Routes/Sectors';
-import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
 import Vacation from '../Routes/Vacation';
@@ -24,9 +23,6 @@ export default DrawerNavigator({
   },
   'Ver Setores': {
     screen: Sectors
-  },
-  'Ver Hospitais': {
-    screen: Hospitals
   },
   'Notificações': {
     screen: Notifications

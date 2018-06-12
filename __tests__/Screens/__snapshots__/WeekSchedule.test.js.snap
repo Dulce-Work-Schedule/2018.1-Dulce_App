@@ -202,7 +202,11 @@ exports[`renders correctly 1`] = `
               "2018-05-11T00:00:00.000Z",
               "2018-06-11T00:00:00.000Z",
               "2018-07-11T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4981,7 +4985,11 @@ exports[`renders correctly 1`] = `
                         "2018-05-11T00:00:00.000Z",
                         "2018-06-11T00:00:00.000Z",
                         "2018-07-11T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9796,8 +9804,13 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
               date={1528853079777}
 =======
+<<<<<<< HEAD
               date={1528765111776}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+              date={1528762908523}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10031,8 +10044,13 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
               date={1528853079777}
 =======
+<<<<<<< HEAD
               date={1528765111776}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+              date={1528762908523}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10185,8 +10203,13 @@ ShallowWrapper {
 <<<<<<< HEAD
           selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
           selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+          selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
           style={
             Object {
               "flex": 1,
@@ -10267,8 +10290,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                   selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                  selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                   style={
                     Object {
                       "flex": 1,
@@ -10338,8 +10366,13 @@ ShallowWrapper {
 <<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
           date={2018-06-12T00:58:31.776Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+          date={2018-06-12T00:21:48.523Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10363,8 +10396,13 @@ ShallowWrapper {
 <<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
           date={2018-06-12T00:58:31.776Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+          date={2018-06-12T00:21:48.523Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10415,8 +10453,13 @@ ShallowWrapper {
 <<<<<<< HEAD
           "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
           "selected": 2018-06-12T00:58:32.594Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+          "selected": 2018-06-12T00:23:12.445Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
           "style": Object {
             "flex": 1,
           },
@@ -10501,8 +10544,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                   selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                  selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                   style={
                     Object {
                       "flex": 1,
@@ -10620,8 +10668,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                   selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                  selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                   style={
                     Object {
                       "flex": 1,
@@ -10737,8 +10790,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                    selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                     style={
                       Object {
                         "flex": 1,
@@ -10842,8 +10900,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                       selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                      selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                       style={
                         Object {
                           "flex": 1,
@@ -10898,8 +10961,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
                       "selected": 2018-06-12T00:58:32.594Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                      "selected": 2018-06-12T00:23:12.445Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                       "style": Object {
                         "flex": 1,
                       },
@@ -11020,8 +11088,13 @@ ShallowWrapper {
 <<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
           "date": 2018-06-12T00:58:31.776Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+          "date": 2018-06-12T00:21:48.523Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11051,8 +11124,13 @@ ShallowWrapper {
 <<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
           "date": 2018-06-12T00:58:31.776Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+          "date": 2018-06-12T00:21:48.523Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11096,8 +11174,13 @@ ShallowWrapper {
 <<<<<<< HEAD
             selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
             selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+            selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
             style={
               Object {
                 "flex": 1,
@@ -11178,8 +11261,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                    selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                     style={
                       Object {
                         "flex": 1,
@@ -11249,8 +11337,13 @@ ShallowWrapper {
 <<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
             date={2018-06-12T00:58:31.776Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+            date={2018-06-12T00:21:48.523Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11274,8 +11367,13 @@ ShallowWrapper {
 <<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
+<<<<<<< HEAD
             date={2018-06-12T00:58:31.776Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+            date={2018-06-12T00:21:48.523Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11326,8 +11424,13 @@ ShallowWrapper {
 <<<<<<< HEAD
             "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
             "selected": 2018-06-12T00:58:32.594Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+            "selected": 2018-06-12T00:23:12.445Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
             "style": Object {
               "flex": 1,
             },
@@ -11412,8 +11515,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                    selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                     style={
                       Object {
                         "flex": 1,
@@ -11531,8 +11639,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                     selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                    selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                     style={
                       Object {
                         "flex": 1,
@@ -11648,8 +11761,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                       selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                      selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                       style={
                         Object {
                           "flex": 1,
@@ -11753,8 +11871,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                         selected={2018-06-13T01:24:40.913Z}
 =======
+<<<<<<< HEAD
                         selected={2018-06-12T00:58:32.594Z}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                        selected={2018-06-12T00:23:12.445Z}
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                         style={
                           Object {
                             "flex": 1,
@@ -11809,8 +11932,13 @@ ShallowWrapper {
 <<<<<<< HEAD
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
+<<<<<<< HEAD
                         "selected": 2018-06-12T00:58:32.594Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                        "selected": 2018-06-12T00:23:12.445Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
                         "style": Object {
                           "flex": 1,
                         },
@@ -11931,8 +12059,13 @@ ShallowWrapper {
 <<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
             "date": 2018-06-12T00:58:31.776Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+            "date": 2018-06-12T00:21:48.523Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -11962,8 +12095,13 @@ ShallowWrapper {
 <<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
+<<<<<<< HEAD
             "date": 2018-06-12T00:58:31.776Z,
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+            "date": 2018-06-12T00:21:48.523Z,
+>>>>>>> f881a08... #432 Excluindo rotas e telas.
+>>>>>>> a268625... #432 Excluindo rotas e telas.
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
