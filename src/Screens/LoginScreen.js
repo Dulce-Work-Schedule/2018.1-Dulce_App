@@ -95,6 +95,10 @@ export class LoginScreen extends React.Component {
       });
   }
 
+  register() {
+    this.props.navigation.navigate('newUser');
+  }
+
   render() {
     return (
       <Container style={styles.container}>
@@ -116,7 +120,7 @@ export class LoginScreen extends React.Component {
         />
         <GoogleButton/>
 
-        <Button transparent style={styles.buttonRegister}>
+        <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
           <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
         </Button>
 

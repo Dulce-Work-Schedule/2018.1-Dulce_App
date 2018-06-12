@@ -600,7 +600,7 @@ exports[`renders correctly 1`] = `
         "shadowRadius": null,
       }
     }
-    testID={undefined}
+    testID="register"
     tvParallaxProperties={undefined}
   >
     <Text
