@@ -2094,10 +2094,6 @@ exports[`renders correctly 1`] = `
                       "fontWeight": "300",
                       "marginTop": 7,
                     },
-                    Object {
-                      "color": "#2d4150",
-                      "fontWeight": "500",
-                    },
                     Object {},
                   ]
                 }
@@ -4179,20 +4175,28 @@ exports[`renders correctly 1`] = `
               virtual={undefined}
             >
 <<<<<<< HEAD
+<<<<<<< HEAD
               12
 =======
               11
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+              12
+>>>>>>> a9998c9... #382_383 testando component DaterangerPicker
               /
               6
               /
               2018
                até 
 <<<<<<< HEAD
+<<<<<<< HEAD
               12
 =======
               11
 >>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
+=======
+              12
+>>>>>>> a9998c9... #382_383 testando component DaterangerPicker
               /
               6
               /

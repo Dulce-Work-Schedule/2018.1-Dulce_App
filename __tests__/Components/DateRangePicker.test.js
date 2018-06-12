@@ -109,3 +109,16 @@ it('should test onPress day call when end date is before the start date', () => 
   console.log(wrapper.instance().onDayPress(day2));
 
 });
+
+it('should test onDayPress on  render',() => {
+
+  const day = {
+    year: '2018',
+    month: '06',
+    day: '03',
+    dateString: '2018-06-03'
+  };
+  const wrapper = shallow(<DateRangePicker/>);
+  const onDayPress = wrapper.props().onDayPress(day);
+  console.log(onDayPress);
+});
