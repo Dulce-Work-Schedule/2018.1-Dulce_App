@@ -161,17 +161,17 @@ it('should test onSelectDates correctly', () => {
 });
 
 it(' testing onsucess DateRangePicker', () => {
-  const startDay =  {
+  const startDay = {
     year: 2018,
     month: 6,
     day: 11
   };
-  const endDay =  {
+  const endDay = {
     year: 2018,
     month: 6,
     day: 11
   };
- 
+
   const wrapper = shallow(<AbsencesScreen/>);
   wrapper.setState({startDay: startDay});
   wrapper.setState({endDay: endDay});
@@ -179,14 +179,14 @@ it(' testing onsucess DateRangePicker', () => {
   const calendar = dateRanger.find('Calendar').at(0);
   const onSucess = calendar.props().onSuccess(startDay,endDay);
   console.log(onSucess);
-  });
+});
 
-  it(' testing onPress CardItem', () => {
- 
-    const wrapper = shallow(<AbsencesScreen/>);
-    const cardItem = wrapper.find('Styled(CardItem)').at(4);
-    const button = cardItem.find('AGRButton').at(0);
-    button.simulate('press');
-    console.log(cardItem.debug());
+it(' testing onPress CardItem', () => {
 
-    });
+  const wrapper = shallow(<AbsencesScreen/>);
+  const cardItem = wrapper.find('Styled(CardItem)').at(4);
+  const button = cardItem.find('AGRButton').at(0);
+  button.simulate('press');
+  console.log(cardItem.debug());
+
+});

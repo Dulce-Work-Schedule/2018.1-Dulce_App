@@ -9875,6 +9875,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528818366500}
 =======
                       date={1528751073737}
@@ -9885,6 +9886,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528808148509}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                      date={1528809331784}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10118,6 +10122,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528818366500}
 =======
                       date={1528751073737}
@@ -10128,6 +10133,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528808148509}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                      date={1528809331784}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

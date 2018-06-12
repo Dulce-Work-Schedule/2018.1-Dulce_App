@@ -9803,6 +9803,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528818269860}
 =======
               date={1528750921200}
@@ -9813,6 +9814,9 @@ exports[`renders correctly 1`] = `
 =======
               date={1528808138144}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+              date={1528809323245}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10046,6 +10050,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528818269860}
 =======
               date={1528750921200}
@@ -10056,6 +10061,9 @@ exports[`renders correctly 1`] = `
 =======
               date={1528808138144}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+              date={1528809323245}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10208,6 +10216,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-12T15:45:24.218Z}
 =======
           selected={2018-06-11T21:03:32.782Z}
@@ -10218,6 +10227,9 @@ ShallowWrapper {
 =======
           selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+          selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
           style={
             Object {
               "flex": 1,
@@ -10298,6 +10310,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
 =======
                   selected={2018-06-11T21:03:32.782Z}
@@ -10308,6 +10321,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                  selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                   style={
                     Object {
                       "flex": 1,
@@ -10377,6 +10393,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-12T15:44:29.860Z}
 =======
           date={2018-06-11T21:02:01.200Z}
@@ -10387,6 +10404,9 @@ ShallowWrapper {
 =======
           date={2018-06-12T12:55:38.144Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+          date={2018-06-12T13:15:23.245Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10410,6 +10430,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-12T15:44:29.860Z}
 =======
           date={2018-06-11T21:02:01.200Z}
@@ -10420,6 +10441,9 @@ ShallowWrapper {
 =======
           date={2018-06-12T12:55:38.144Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+          date={2018-06-12T13:15:23.245Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10470,6 +10494,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-12T15:45:24.218Z,
 =======
           "selected": 2018-06-11T21:03:32.782Z,
@@ -10480,6 +10505,9 @@ ShallowWrapper {
 =======
           "selected": 2018-06-12T12:55:39.084Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+          "selected": 2018-06-12T13:15:24.109Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
           "style": Object {
             "flex": 1,
           },
@@ -10564,6 +10592,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
 =======
                   selected={2018-06-11T21:03:32.782Z}
@@ -10574,6 +10603,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                  selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                   style={
                     Object {
                       "flex": 1,
@@ -10691,6 +10723,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-12T15:45:24.218Z}
 =======
                   selected={2018-06-11T21:03:32.782Z}
@@ -10701,6 +10734,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                  selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                   style={
                     Object {
                       "flex": 1,
@@ -10816,6 +10852,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
@@ -10826,6 +10863,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                    selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                     style={
                       Object {
                         "flex": 1,
@@ -10929,6 +10969,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-12T15:45:24.218Z}
 =======
                       selected={2018-06-11T21:03:32.782Z}
@@ -10939,6 +10980,9 @@ ShallowWrapper {
 =======
                       selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                      selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                       style={
                         Object {
                           "flex": 1,
@@ -10993,6 +11037,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-12T15:45:24.218Z,
 =======
                       "selected": 2018-06-11T21:03:32.782Z,
@@ -11003,6 +11048,9 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-12T12:55:39.084Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                      "selected": 2018-06-12T13:15:24.109Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                       "style": Object {
                         "flex": 1,
                       },
@@ -11123,6 +11171,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-12T15:44:29.860Z,
 =======
           "date": 2018-06-11T21:02:01.200Z,
@@ -11133,6 +11182,9 @@ ShallowWrapper {
 =======
           "date": 2018-06-12T12:55:38.144Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+          "date": 2018-06-12T13:15:23.245Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11162,6 +11214,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-12T15:44:29.860Z,
 =======
           "date": 2018-06-11T21:02:01.200Z,
@@ -11172,6 +11225,9 @@ ShallowWrapper {
 =======
           "date": 2018-06-12T12:55:38.144Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+          "date": 2018-06-12T13:15:23.245Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11215,6 +11271,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-12T15:45:24.218Z}
 =======
             selected={2018-06-11T21:03:32.782Z}
@@ -11225,6 +11282,9 @@ ShallowWrapper {
 =======
             selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+            selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
             style={
               Object {
                 "flex": 1,
@@ -11305,6 +11365,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
@@ -11315,6 +11376,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                    selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                     style={
                       Object {
                         "flex": 1,
@@ -11384,6 +11448,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-12T15:44:29.860Z}
 =======
             date={2018-06-11T21:02:01.200Z}
@@ -11394,6 +11459,9 @@ ShallowWrapper {
 =======
             date={2018-06-12T12:55:38.144Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+            date={2018-06-12T13:15:23.245Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11417,6 +11485,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-12T15:44:29.860Z}
 =======
             date={2018-06-11T21:02:01.200Z}
@@ -11427,6 +11496,9 @@ ShallowWrapper {
 =======
             date={2018-06-12T12:55:38.144Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+            date={2018-06-12T13:15:23.245Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11477,6 +11549,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-12T15:45:24.218Z,
 =======
             "selected": 2018-06-11T21:03:32.782Z,
@@ -11487,6 +11560,9 @@ ShallowWrapper {
 =======
             "selected": 2018-06-12T12:55:39.084Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+            "selected": 2018-06-12T13:15:24.109Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
             "style": Object {
               "flex": 1,
             },
@@ -11571,6 +11647,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
@@ -11581,6 +11658,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                    selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                     style={
                       Object {
                         "flex": 1,
@@ -11698,6 +11778,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-12T15:45:24.218Z}
 =======
                     selected={2018-06-11T21:03:32.782Z}
@@ -11708,6 +11789,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                    selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                     style={
                       Object {
                         "flex": 1,
@@ -11823,6 +11907,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-12T15:45:24.218Z}
 =======
                       selected={2018-06-11T21:03:32.782Z}
@@ -11833,6 +11918,9 @@ ShallowWrapper {
 =======
                       selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                      selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                       style={
                         Object {
                           "flex": 1,
@@ -11936,6 +12024,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-12T15:45:24.218Z}
 =======
                         selected={2018-06-11T21:03:32.782Z}
@@ -11946,6 +12035,9 @@ ShallowWrapper {
 =======
                         selected={2018-06-12T12:55:39.084Z}
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                        selected={2018-06-12T13:15:24.109Z}
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                         style={
                           Object {
                             "flex": 1,
@@ -12000,6 +12092,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-12T15:45:24.218Z,
 =======
                         "selected": 2018-06-11T21:03:32.782Z,
@@ -12010,6 +12103,9 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-12T12:55:39.084Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+                        "selected": 2018-06-12T13:15:24.109Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
                         "style": Object {
                           "flex": 1,
                         },
@@ -12130,6 +12226,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-12T15:44:29.860Z,
 =======
             "date": 2018-06-11T21:02:01.200Z,
@@ -12140,6 +12237,9 @@ ShallowWrapper {
 =======
             "date": 2018-06-12T12:55:38.144Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+            "date": 2018-06-12T13:15:23.245Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12169,6 +12269,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-12T15:44:29.860Z,
 =======
             "date": 2018-06-11T21:02:01.200Z,
@@ -12179,6 +12280,9 @@ ShallowWrapper {
 =======
             "date": 2018-06-12T12:55:38.144Z,
 >>>>>>> a9998c9... #382_383 testando component DaterangerPicker
+=======
+            "date": 2018-06-12T13:15:23.245Z,
+>>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
