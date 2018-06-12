@@ -204,6 +204,7 @@ exports[`renders correctly 1`] = `
               "2018-07-11T00:00:00.000Z",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
@@ -216,6 +217,9 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4996,6 +5000,7 @@ exports[`renders correctly 1`] = `
                         "2018-07-11T00:00:00.000Z",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
@@ -5008,6 +5013,9 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9822,6 +9830,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -9849,6 +9858,12 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+              date={1528818269860}
+=======
+              date={1528760052453}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10082,6 +10097,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -10109,6 +10125,12 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+              date={1528818269860}
+=======
+              date={1528760052453}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10261,6 +10283,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10288,6 +10311,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+          selected={2018-06-12T15:45:24.218Z}
+=======
+          selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
           style={
             Object {
               "flex": 1,
@@ -10368,6 +10397,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10395,6 +10425,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                  selected={2018-06-12T15:45:24.218Z}
+=======
+                  selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                   style={
                     Object {
                       "flex": 1,
@@ -10464,6 +10500,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10491,6 +10528,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+          date={2018-06-12T15:44:29.860Z}
+=======
+          date={2018-06-11T23:34:12.453Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10514,6 +10557,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10541,6 +10585,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+          date={2018-06-12T15:44:29.860Z}
+=======
+          date={2018-06-11T23:34:12.453Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10591,6 +10641,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -10618,6 +10669,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+          "selected": 2018-06-12T15:45:24.218Z,
+=======
+          "selected": 2018-06-11T23:34:13.421Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
           "style": Object {
             "flex": 1,
           },
@@ -10702,6 +10759,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10729,6 +10787,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                  selected={2018-06-12T15:45:24.218Z}
+=======
+                  selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                   style={
                     Object {
                       "flex": 1,
@@ -10846,6 +10910,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10873,6 +10938,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                  selected={2018-06-12T15:45:24.218Z}
+=======
+                  selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                   style={
                     Object {
                       "flex": 1,
@@ -10988,6 +11059,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11015,6 +11087,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                    selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                     style={
                       Object {
                         "flex": 1,
@@ -11118,6 +11196,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11145,6 +11224,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                      selected={2018-06-12T15:45:24.218Z}
+=======
+                      selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                       style={
                         Object {
                           "flex": 1,
@@ -11199,6 +11284,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11226,6 +11312,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                      "selected": 2018-06-12T15:45:24.218Z,
+=======
+                      "selected": 2018-06-11T23:34:13.421Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                       "style": Object {
                         "flex": 1,
                       },
@@ -11346,6 +11438,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11373,6 +11466,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+          "date": 2018-06-12T15:44:29.860Z,
+=======
+          "date": 2018-06-11T23:34:12.453Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11402,6 +11501,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11429,6 +11529,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+          "date": 2018-06-12T15:44:29.860Z,
+=======
+          "date": 2018-06-11T23:34:12.453Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11472,6 +11578,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11499,6 +11606,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+            selected={2018-06-12T15:45:24.218Z}
+=======
+            selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
             style={
               Object {
                 "flex": 1,
@@ -11579,6 +11692,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11606,6 +11720,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                    selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                     style={
                       Object {
                         "flex": 1,
@@ -11675,6 +11795,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11702,6 +11823,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+            date={2018-06-12T15:44:29.860Z}
+=======
+            date={2018-06-11T23:34:12.453Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11725,6 +11852,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11752,6 +11880,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+            date={2018-06-12T15:44:29.860Z}
+=======
+            date={2018-06-11T23:34:12.453Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11802,6 +11936,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11829,6 +11964,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+            "selected": 2018-06-12T15:45:24.218Z,
+=======
+            "selected": 2018-06-11T23:34:13.421Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
             "style": Object {
               "flex": 1,
             },
@@ -11913,6 +12054,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11940,6 +12082,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                    selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                     style={
                       Object {
                         "flex": 1,
@@ -12057,6 +12205,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12084,6 +12233,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                    selected={2018-06-12T15:45:24.218Z}
+=======
+                    selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                     style={
                       Object {
                         "flex": 1,
@@ -12199,6 +12354,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12226,6 +12382,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                      selected={2018-06-12T15:45:24.218Z}
+=======
+                      selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                       style={
                         Object {
                           "flex": 1,
@@ -12329,6 +12491,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12356,6 +12519,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                        selected={2018-06-12T15:45:24.218Z}
+=======
+                        selected={2018-06-11T23:34:13.421Z}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                         style={
                           Object {
                             "flex": 1,
@@ -12410,6 +12579,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -12437,6 +12607,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                        "selected": 2018-06-12T15:45:24.218Z,
+=======
+                        "selected": 2018-06-11T23:34:13.421Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                         "style": Object {
                           "flex": 1,
                         },
@@ -12557,6 +12733,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12584,6 +12761,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+            "date": 2018-06-12T15:44:29.860Z,
+=======
+            "date": 2018-06-11T23:34:12.453Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12613,6 +12796,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12640,6 +12824,12 @@ ShallowWrapper {
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+            "date": 2018-06-12T15:44:29.860Z,
+=======
+            "date": 2018-06-11T23:34:12.453Z,
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

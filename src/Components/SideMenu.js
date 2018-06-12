@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {NavigationActions} from 'react-navigation';
 import {ScrollView, Text, View, Image} from 'react-native';
-// import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+const purple = '#5f4b8b';
 
 const styles = {
   header: {
@@ -43,16 +45,18 @@ const styles = {
   navItemStyle: {
     padding: 10
   },
-  navSectionStyle: {
-    backgroundColor: 'lightgrey'
-  },
   sectionHeadingStyle: {
     paddingVertical: 10,
-    paddingHorizontal: 5
+    paddingHorizontal: 5,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 10
   },
   footerContainer: {
     padding: 20,
-    backgroundColor: 'lightgrey'
+    backgroundColor: purple,
+    flexDirection: 'row',
+    alignItems: 'center'
   }
 };
 
@@ -81,17 +85,20 @@ export default class SideMenu extends React.Component {
             </View>
           </View>
           <View>
-            <View style={styles.sectionHeadingStyle}>
-              <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Ver Escala')}>
-                Ver Escala
-              </Text>
-            </View>
-            <View style={styles.sectionHeadingStyle}>
+            <View style={[styles.sectionHeadingStyle, {marginTop: 4}]}>
+              <Icon name='md-notifications' size={25} color={purple} />
               <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Notificações')}>
                 Notificações
               </Text>
             </View>
             <View style={styles.sectionHeadingStyle}>
+              <Icon name='md-calendar' size={25} color={purple} />
+              <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Ver Escala')}>
+                Ver Escala
+              </Text>
+            </View>
+            <View style={styles.sectionHeadingStyle}>
+              <Icon name='md-person' size={25} color={purple} />
               <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Meu Perfil')}>
                 Meu Perfil
               </Text>
@@ -99,7 +106,8 @@ export default class SideMenu extends React.Component {
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
-          <Text onPress={this.navigateToScreen('Logout')}>Logout</Text>
+          <Icon name='md-exit' size={30} color='#fff' style={{marginRight: 6}} />
+          <Text onPress={this.navigateToScreen('Logout')} style={{color: '#fff'}}>Logout</Text>
         </View>
       </View>
     );

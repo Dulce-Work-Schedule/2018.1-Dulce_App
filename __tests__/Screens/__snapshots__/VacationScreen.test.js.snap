@@ -1099,6 +1099,14 @@ exports[`renders correctly 1`] = `
                     Object {
                       "backgroundColor": undefined,
                     },
+<<<<<<< HEAD
+=======
+                    Object {
+                      "color": "#2d4150",
+                      "fontWeight": "500",
+                    },
+                    Object {},
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                   ]
                 }
               >
@@ -4204,6 +4212,7 @@ exports[`renders correctly 1`] = `
               11
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
@@ -4216,6 +4225,9 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
               /
               6
               /
@@ -4227,6 +4239,7 @@ exports[`renders correctly 1`] = `
               11
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
@@ -4239,6 +4252,9 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
               /
               6
               /

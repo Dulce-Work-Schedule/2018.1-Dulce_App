@@ -276,6 +276,7 @@ exports[`renders correctly 1`] = `
                       "2018-07-11T00:00:00.000Z",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
@@ -288,6 +289,9 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -5068,6 +5072,7 @@ exports[`renders correctly 1`] = `
                                 "2018-07-11T00:00:00.000Z",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
@@ -5080,6 +5085,9 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -9892,6 +9900,7 @@ exports[`renders correctly 1`] = `
                   >
                     <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528853088247}
 =======
 <<<<<<< HEAD
@@ -9912,6 +9921,12 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                      date={1528818366500}
+=======
+                      date={1528760059732}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10143,6 +10158,7 @@ exports[`renders correctly 1`] = `
                   >
                     <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528853088247}
 =======
 <<<<<<< HEAD
@@ -10163,6 +10179,12 @@ exports[`renders correctly 1`] = `
 >>>>>>> d3c08c8... FIX #427 Excluindo testes.
 >>>>>>> 74c95cc... FIX #427 Excluindo testes.
 >>>>>>> 92a8291... FIX #427 Excluindo testes.
+=======
+                      date={1528818366500}
+=======
+                      date={1528760059732}
+>>>>>>> dfddc51... #386 Adicionando icons às rotas
+>>>>>>> adaa5f2... #386 Adicionando icons às rotas
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
