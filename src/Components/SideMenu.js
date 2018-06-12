@@ -9,7 +9,7 @@ const purple = '#5f4b8b';
 const styles = {
   header: {
     flexDirection: 'column',
-    paddingTop: 40, // 24dp (Space for the translucent StatusBar) plus 16dp Android Header paddingTop
+    paddingTop: 45,
     paddingLeft: 16,
     height: 170,
     backgroundColor: '#5f4b8b'
@@ -43,20 +43,25 @@ const styles = {
     flex: 1
   },
   navItemStyle: {
-    padding: 10
+    padding: 10,
+    color: '#fff'
   },
-  sectionHeadingStyle: {
+  route: {
     paddingVertical: 10,
     paddingHorizontal: 5,
     flexDirection: 'row',
     alignItems: 'center',
-    marginLeft: 10
+    marginLeft: 10,
+    marginTop: 6
   },
   footerContainer: {
     padding: 20,
     backgroundColor: purple,
     flexDirection: 'row',
     alignItems: 'center'
+  },
+  routesContainer: {
+    marginTop: 20
   }
 };
 
@@ -68,10 +73,21 @@ export default class SideMenu extends React.Component {
     this.props.navigation.dispatch(navigateAction);
   }
 
+  renderRoute(route, iconName) {
+    return (
+      <View style={styles.route}>
+        <Icon name={iconName} size={25} color='#fff' />
+        <Text style={styles.navItemStyle} onPress={this.navigateToScreen(route)}>
+          {route}
+        </Text>
+      </View>
+    );
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView>
+        <ScrollView style={{backgroundColor: purple}}>
           <View style={styles.header}>
             <View style={styles.headerLogo}>
             <Image
@@ -84,25 +100,10 @@ export default class SideMenu extends React.Component {
               <Text style={styles.drawerEmail}> user.dulce@gmail.com</Text>
             </View>
           </View>
-          <View>
-            <View style={[styles.sectionHeadingStyle, {marginTop: 4}]}>
-              <Icon name='md-notifications' size={25} color={purple} />
-              <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Notificações')}>
-                Notificações
-              </Text>
-            </View>
-            <View style={styles.sectionHeadingStyle}>
-              <Icon name='md-calendar' size={25} color={purple} />
-              <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Ver Escala')}>
-                Ver Escala
-              </Text>
-            </View>
-            <View style={styles.sectionHeadingStyle}>
-              <Icon name='md-person' size={25} color={purple} />
-              <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Meu Perfil')}>
-                Meu Perfil
-              </Text>
-            </View>
+          <View style={styles.routesContainer}>
+            {this.renderRoute('Notificações', 'md-notifications')}
+            {this.renderRoute('Ver Escala', 'md-calendar')}
+            {this.renderRoute('Meu Perfil', 'md-person')}
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
