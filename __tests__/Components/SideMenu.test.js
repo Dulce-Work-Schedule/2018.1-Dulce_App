@@ -8,7 +8,7 @@ require('bezier');
 
 Enzyme.configure({adapter: new Adapter()});
 
-it('renders correctly', () => {
+it('renders sideMenu correctly', () => {
   const tree = renderer
   .create(<AGRButton />)
   .toJSON();

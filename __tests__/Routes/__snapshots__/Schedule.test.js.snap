@@ -9896,6 +9896,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528853088247}
 =======
 <<<<<<< HEAD
@@ -9925,6 +9926,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528826792767}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                      date={1528828160918}
+>>>>>>> 02500c0... #386 Adicionando teste
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10158,6 +10162,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       date={1528853088247}
 =======
 <<<<<<< HEAD
@@ -10187,6 +10192,9 @@ exports[`renders correctly 1`] = `
 =======
                       date={1528826792767}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                      date={1528828160918}
+>>>>>>> 02500c0... #386 Adicionando teste
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

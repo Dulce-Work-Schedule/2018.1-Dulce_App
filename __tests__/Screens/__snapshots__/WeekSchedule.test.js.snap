@@ -9826,6 +9826,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -9862,6 +9863,9 @@ exports[`renders correctly 1`] = `
 =======
               date={1528826771901}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+              date={1528828141367}
+>>>>>>> 02500c0... #386 Adicionando teste
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10097,6 +10101,7 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -10133,6 +10138,9 @@ exports[`renders correctly 1`] = `
 =======
               date={1528826771901}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+              date={1528828141367}
+>>>>>>> 02500c0... #386 Adicionando teste
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10287,6 +10295,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10323,6 +10332,9 @@ ShallowWrapper {
 =======
           selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+          selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
           style={
             Object {
               "flex": 1,
@@ -10405,6 +10417,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10441,6 +10454,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                  selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                   style={
                     Object {
                       "flex": 1,
@@ -10512,6 +10528,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10548,6 +10565,9 @@ ShallowWrapper {
 =======
           date={2018-06-12T18:06:11.901Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+          date={2018-06-12T18:29:01.367Z}
+>>>>>>> 02500c0... #386 Adicionando teste
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10573,6 +10593,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10609,6 +10630,9 @@ ShallowWrapper {
 =======
           date={2018-06-12T18:06:11.901Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+          date={2018-06-12T18:29:01.367Z}
+>>>>>>> 02500c0... #386 Adicionando teste
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10661,6 +10685,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -10697,6 +10722,9 @@ ShallowWrapper {
 =======
           "selected": 2018-06-12T18:06:17.641Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+          "selected": 2018-06-12T18:29:06.161Z,
+>>>>>>> 02500c0... #386 Adicionando teste
           "style": Object {
             "flex": 1,
           },
@@ -10783,6 +10811,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10819,6 +10848,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                  selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                   style={
                     Object {
                       "flex": 1,
@@ -10938,6 +10970,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10974,6 +11007,9 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                  selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                   style={
                     Object {
                       "flex": 1,
@@ -11091,6 +11127,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11127,6 +11164,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                    selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                     style={
                       Object {
                         "flex": 1,
@@ -11232,6 +11272,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11268,6 +11309,9 @@ ShallowWrapper {
 =======
                       selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                      selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                       style={
                         Object {
                           "flex": 1,
@@ -11324,6 +11368,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11360,6 +11405,9 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-12T18:06:17.641Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                      "selected": 2018-06-12T18:29:06.161Z,
+>>>>>>> 02500c0... #386 Adicionando teste
                       "style": Object {
                         "flex": 1,
                       },
@@ -11482,6 +11530,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11518,6 +11567,9 @@ ShallowWrapper {
 =======
           "date": 2018-06-12T18:06:11.901Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+          "date": 2018-06-12T18:29:01.367Z,
+>>>>>>> 02500c0... #386 Adicionando teste
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11549,6 +11601,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11585,6 +11638,9 @@ ShallowWrapper {
 =======
           "date": 2018-06-12T18:06:11.901Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+          "date": 2018-06-12T18:29:01.367Z,
+>>>>>>> 02500c0... #386 Adicionando teste
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11630,6 +11686,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11666,6 +11723,9 @@ ShallowWrapper {
 =======
             selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+            selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
             style={
               Object {
                 "flex": 1,
@@ -11748,6 +11808,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11784,6 +11845,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                    selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                     style={
                       Object {
                         "flex": 1,
@@ -11855,6 +11919,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11891,6 +11956,9 @@ ShallowWrapper {
 =======
             date={2018-06-12T18:06:11.901Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+            date={2018-06-12T18:29:01.367Z}
+>>>>>>> 02500c0... #386 Adicionando teste
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11916,6 +11984,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11952,6 +12021,9 @@ ShallowWrapper {
 =======
             date={2018-06-12T18:06:11.901Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+            date={2018-06-12T18:29:01.367Z}
+>>>>>>> 02500c0... #386 Adicionando teste
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -12004,6 +12076,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -12040,6 +12113,9 @@ ShallowWrapper {
 =======
             "selected": 2018-06-12T18:06:17.641Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+            "selected": 2018-06-12T18:29:06.161Z,
+>>>>>>> 02500c0... #386 Adicionando teste
             "style": Object {
               "flex": 1,
             },
@@ -12126,6 +12202,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12162,6 +12239,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                    selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                     style={
                       Object {
                         "flex": 1,
@@ -12281,6 +12361,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12317,6 +12398,9 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                    selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                     style={
                       Object {
                         "flex": 1,
@@ -12434,6 +12518,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12470,6 +12555,9 @@ ShallowWrapper {
 =======
                       selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                      selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                       style={
                         Object {
                           "flex": 1,
@@ -12575,6 +12663,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12611,6 +12700,9 @@ ShallowWrapper {
 =======
                         selected={2018-06-12T18:06:17.641Z}
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                        selected={2018-06-12T18:29:06.161Z}
+>>>>>>> 02500c0... #386 Adicionando teste
                         style={
                           Object {
                             "flex": 1,
@@ -12667,6 +12759,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -12703,6 +12796,9 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-12T18:06:17.641Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+                        "selected": 2018-06-12T18:29:06.161Z,
+>>>>>>> 02500c0... #386 Adicionando teste
                         "style": Object {
                           "flex": 1,
                         },
@@ -12825,6 +12921,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12861,6 +12958,9 @@ ShallowWrapper {
 =======
             "date": 2018-06-12T18:06:11.901Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+            "date": 2018-06-12T18:29:01.367Z,
+>>>>>>> 02500c0... #386 Adicionando teste
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12892,6 +12992,7 @@ ShallowWrapper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12928,6 +13029,9 @@ ShallowWrapper {
 =======
             "date": 2018-06-12T18:06:11.901Z,
 >>>>>>> 4b3387c... #386 Adicionando rotas ao sidemenu
+=======
+            "date": 2018-06-12T18:29:01.367Z,
+>>>>>>> 02500c0... #386 Adicionando teste
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
