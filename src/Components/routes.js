@@ -8,6 +8,7 @@ import Hospitals from '../Routes/Hospitals';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
 import NewProfile from '../Routes/NewProfile';
+import Vacation from '../Routes/Vacation';
 
 export default DrawerNavigator({
   'Ver Escala': {
@@ -33,6 +34,9 @@ export default DrawerNavigator({
   },
   'Criar Perfil': {
     screen: NewProfile
+  },
+  'Solicitar Férias': {
+    screen: Vacation
   },
   Logout: {
     screen: Logout
