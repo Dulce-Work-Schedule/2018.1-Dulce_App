@@ -92,3 +92,32 @@ it('should test resetNavigation correctly', () => {
 
   loginScreen.resetNavigation(navigation.dispatch);
 });
+
+it('should test function register correctly', () => {
+  // This is to test component functions
+  const navigation = {navigate: jest.fn()};
+  let loginScreen = renderer
+    .create(
+      <LoginScreen
+        navigation={navigation}
+        dispatch={action =>
+          expect(action)
+          .toEqual(navigation.navigate)
+        }
+      />
+    )
+    .getInstance();
+
+  loginScreen.register();
+});
+
+it('Should call register function', () => {
+  const navigation = {navigate: jest.fn()};
+  const spy = jest.spyOn(LoginScreen.prototype, 'register');
+  const wrapper = shallow(<LoginScreen navigation={navigation}/>);
+  console.log(wrapper.debug());
+  const registerButton = wrapper.findWhere(n => n.props().testID === 'register');
+  console.log(registerButton);
+  registerButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});

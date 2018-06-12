@@ -120,7 +120,7 @@ export class LoginScreen extends React.Component {
         />
         <GoogleButton/>
 
-        <Button transparent style={styles.buttonRegister} onPress = {() => this.register()}>
+        <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
           <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
         </Button>
 
