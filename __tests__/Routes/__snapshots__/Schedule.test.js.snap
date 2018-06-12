@@ -80,9 +80,7 @@ exports[`renders correctly 1`] = `
             }
           }
         >
-          <View
-            onLayout={[Function]}
-          >
+          <View>
             <View
               style={
                 Array [
@@ -95,9 +93,9 @@ exports[`renders correctly 1`] = `
                     "height": 64,
                     "justifyContent": "center",
                     "left": 0,
-                    "paddingLeft": 6,
+                    "paddingLeft": 10,
                     "paddingRight": 10,
-                    "paddingTop": 18,
+                    "paddingTop": 15,
                     "right": 0,
                     "shadowColor": undefined,
                     "shadowOffset": undefined,
@@ -133,10 +131,7 @@ exports[`renders correctly 1`] = `
                         "color": "#000",
                         "fontFamily": "System",
                         "fontSize": 17,
-                        "fontWeight": "700",
-                        "marginLeft": undefined,
-                        "paddingLeft": 4,
-                        "paddingTop": 1,
+                        "fontWeight": "600",
                         "textAlign": "center",
                       },
                       Object {
@@ -271,21 +266,9 @@ exports[`renders correctly 1`] = `
                       "Feb 2018",
                       "Mar 2018",
                       "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
                       "2018-05-12T00:00:00.000Z",
                       "2018-06-12T00:00:00.000Z",
                       "2018-07-12T00:00:00.000Z",
-=======
-                      "2018-05-11T00:00:00.000Z",
-                      "2018-06-11T00:00:00.000Z",
-                      "2018-07-11T00:00:00.000Z",
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                      "2018-05-12T00:00:00.000Z",
-                      "2018-06-12T00:00:00.000Z",
-                      "2018-07-12T00:00:00.000Z",
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -5051,21 +5034,9 @@ exports[`renders correctly 1`] = `
                                 "Feb 2018",
                                 "Mar 2018",
                                 "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
                                 "2018-05-12T00:00:00.000Z",
                                 "2018-06-12T00:00:00.000Z",
                                 "2018-07-12T00:00:00.000Z",
-=======
-                                "2018-05-11T00:00:00.000Z",
-                                "2018-06-11T00:00:00.000Z",
-                                "2018-07-11T00:00:00.000Z",
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                                "2018-05-12T00:00:00.000Z",
-                                "2018-06-12T00:00:00.000Z",
-                                "2018-07-12T00:00:00.000Z",
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -9872,23 +9843,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      date={1528818366500}
-=======
-                      date={1528751073737}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                      date={1528758532053}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                      date={1528808148509}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                      date={1528809331784}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                      date={1528823627116}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10119,23 +10074,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      date={1528818366500}
-=======
-                      date={1528751073737}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                      date={1528758532053}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                      date={1528808148509}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                      date={1528809331784}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                      date={1528823627116}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

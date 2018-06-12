@@ -92,9 +92,7 @@ exports[`renders correctly 1`] = `
             }
             virtual={undefined}
           >
-            <View
-              onLayout={[Function]}
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -107,9 +105,9 @@ exports[`renders correctly 1`] = `
                       "height": 64,
                       "justifyContent": "center",
                       "left": 0,
-                      "paddingLeft": 6,
+                      "paddingLeft": 10,
                       "paddingRight": 10,
-                      "paddingTop": 18,
+                      "paddingTop": 15,
                       "right": 0,
                       "shadowColor": undefined,
                       "shadowOffset": undefined,
@@ -145,10 +143,7 @@ exports[`renders correctly 1`] = `
                           "color": "#000",
                           "fontFamily": "System",
                           "fontSize": 17,
-                          "fontWeight": "700",
-                          "marginLeft": undefined,
-                          "paddingLeft": 4,
-                          "paddingTop": 1,
+                          "fontWeight": "600",
                           "textAlign": "center",
                         },
                         Object {
@@ -297,11 +292,10 @@ exports[`renders correctly 1`] = `
                             "flex": 1,
                             "fontSize": 17,
                             "height": 50,
+                            "lineHeight": 24,
                             "marginLeft": null,
-                            "paddingBottom": 7,
                             "paddingLeft": null,
                             "paddingRight": 5,
-                            "paddingTop": 3,
                             "top": 10,
                           },
                           Object {
@@ -430,11 +424,10 @@ exports[`renders correctly 1`] = `
                             "flex": 1,
                             "fontSize": 17,
                             "height": 50,
+                            "lineHeight": 24,
                             "marginLeft": null,
-                            "paddingBottom": 7,
                             "paddingLeft": null,
                             "paddingRight": 5,
-                            "paddingTop": 3,
                             "top": 10,
                           },
                           Object {
@@ -563,11 +556,10 @@ exports[`renders correctly 1`] = `
                             "flex": 1,
                             "fontSize": 17,
                             "height": 50,
+                            "lineHeight": 24,
                             "marginLeft": null,
-                            "paddingBottom": 7,
                             "paddingLeft": null,
                             "paddingRight": 5,
-                            "paddingTop": 3,
                             "top": 10,
                           },
                           Object {
@@ -696,11 +688,10 @@ exports[`renders correctly 1`] = `
                             "flex": 1,
                             "fontSize": 17,
                             "height": 50,
+                            "lineHeight": 24,
                             "marginLeft": null,
-                            "paddingBottom": 7,
                             "paddingLeft": null,
                             "paddingRight": 5,
-                            "paddingTop": 3,
                             "top": 10,
                           },
                           Object {
@@ -830,11 +821,10 @@ exports[`renders correctly 1`] = `
                             "flex": 1,
                             "fontSize": 17,
                             "height": 50,
+                            "lineHeight": 24,
                             "marginLeft": null,
-                            "paddingBottom": 7,
                             "paddingLeft": null,
                             "paddingRight": 5,
-                            "paddingTop": 3,
                             "top": 10,
                           },
                           Object {
@@ -964,11 +954,10 @@ exports[`renders correctly 1`] = `
                             "flex": 1,
                             "fontSize": 17,
                             "height": 50,
+                            "lineHeight": 24,
                             "marginLeft": null,
-                            "paddingBottom": 7,
                             "paddingLeft": null,
                             "paddingRight": 5,
-                            "paddingTop": 3,
                             "top": 10,
                           },
                           Object {

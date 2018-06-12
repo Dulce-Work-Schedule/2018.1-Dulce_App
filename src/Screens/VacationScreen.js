@@ -4,75 +4,9 @@ import DateRangePicker from '../Components/DateRangePicker';
 import ScreenHeader from '../Components/ScreenHeader';
 import AGRButton from '../Components/AGRButton';
 import {Card, CardItem, Text, Body, Form, Textarea} from 'native-base';
+import styles from '../Styles/styles';
 
 const XDate = require('xdate');
-
-const styles = {
-  title: {
-    margin: 5,
-    alignSelf: 'center',
-    fontSize: 15,
-    color: '#5f4b8b',
-    backgroundColor: 'white'
-  },
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-around'
-  },
-  date: {
-    color: '#5f4b8b',
-    fontSize: 20
-  },
-  dates: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginRight: 5,
-    marginLeft: 5,
-    marginTop: 10,
-    borderColor: '#5f4b8b',
-    borderWidth: 2,
-    borderRadius: 5
-  },
-  justify: {
-    flex: 1.5,
-    backgroundColor: '#ede8f7',
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10,
-    borderColor: '#5f4b8b',
-    borderWidth: 2,
-    borderRadius: 5
-  },
-  button: {
-    width: 200,
-    marginTop: 15,
-    marginRight: 5,
-    marginLeft: 10
-  },
-  icon: {
-    fontSize: 40,
-    color: '#5f4b8b'
-  },
-  view1: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  view2: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  view3: {
-    flex: 1,
-    alignItems: 'center'
-  },
-  form: {
-    width: 375
-  }
-};
 
 const currentDay = {
   year: new XDate().getFullYear(),
@@ -99,7 +33,7 @@ export default class VacationScreen extends Component {
 
   renderCard() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container1}>
         <Card>
           <CardItem header bordered>
             <View style={styles.view1}>

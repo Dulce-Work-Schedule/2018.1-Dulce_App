@@ -8,9 +8,7 @@ exports[`renders correctly 1`] = `
     }
   }
 >
-  <View
-    onLayout={[Function]}
-  >
+  <View>
     <View
       style={
         Array [
@@ -23,9 +21,9 @@ exports[`renders correctly 1`] = `
             "height": 64,
             "justifyContent": "center",
             "left": 0,
-            "paddingLeft": 6,
+            "paddingLeft": 10,
             "paddingRight": 10,
-            "paddingTop": 18,
+            "paddingTop": 15,
             "right": 0,
             "shadowColor": undefined,
             "shadowOffset": undefined,
@@ -61,10 +59,7 @@ exports[`renders correctly 1`] = `
                 "color": "#000",
                 "fontFamily": "System",
                 "fontSize": 17,
-                "fontWeight": "700",
-                "marginLeft": undefined,
-                "paddingLeft": 4,
-                "paddingTop": 1,
+                "fontWeight": "600",
                 "textAlign": "center",
               },
               Object {
@@ -199,21 +194,9 @@ exports[`renders correctly 1`] = `
               "Feb 2018",
               "Mar 2018",
               "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
               "2018-05-12T00:00:00.000Z",
               "2018-06-12T00:00:00.000Z",
               "2018-07-12T00:00:00.000Z",
-=======
-              "2018-05-11T00:00:00.000Z",
-              "2018-06-11T00:00:00.000Z",
-              "2018-07-11T00:00:00.000Z",
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-              "2018-05-12T00:00:00.000Z",
-              "2018-06-12T00:00:00.000Z",
-              "2018-07-12T00:00:00.000Z",
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4979,21 +4962,9 @@ exports[`renders correctly 1`] = `
                         "Feb 2018",
                         "Mar 2018",
                         "Apr 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
                         "2018-05-12T00:00:00.000Z",
                         "2018-06-12T00:00:00.000Z",
                         "2018-07-12T00:00:00.000Z",
-=======
-                        "2018-05-11T00:00:00.000Z",
-                        "2018-06-11T00:00:00.000Z",
-                        "2018-07-11T00:00:00.000Z",
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                        "2018-05-12T00:00:00.000Z",
-                        "2018-06-12T00:00:00.000Z",
-                        "2018-07-12T00:00:00.000Z",
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9800,23 +9771,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={1528818269860}
-=======
-              date={1528750921200}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-              date={1528758522618}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-              date={1528808138144}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-              date={1528809323245}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+              date={1528823589903}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10047,23 +10002,7 @@ exports[`renders correctly 1`] = `
             }
           >
             <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={1528818269860}
-=======
-              date={1528750921200}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-              date={1528758522618}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-              date={1528808138144}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-              date={1528809323245}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+              date={1528823589903}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10213,23 +10152,7 @@ ShallowWrapper {
           renderEmptyDate={[Function]}
           renderItem={[Function]}
           rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          selected={2018-06-12T15:45:24.218Z}
-=======
-          selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-          selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-          selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-          selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+          selected={2018-06-12T17:13:26.296Z}
           style={
             Object {
               "flex": 1,
@@ -10307,23 +10230,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  selected={2018-06-12T15:45:24.218Z}
-=======
-                  selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                  selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                  selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                  selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                  selected={2018-06-12T17:13:26.296Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10390,23 +10297,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          date={2018-06-12T15:44:29.860Z}
-=======
-          date={2018-06-11T21:02:01.200Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-          date={2018-06-11T23:08:42.618Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-          date={2018-06-12T12:55:38.144Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-          date={2018-06-12T13:15:23.245Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+          date={2018-06-12T17:13:09.903Z}
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10427,23 +10318,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          date={2018-06-12T15:44:29.860Z}
-=======
-          date={2018-06-11T21:02:01.200Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-          date={2018-06-11T23:08:42.618Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-          date={2018-06-12T12:55:38.144Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-          date={2018-06-12T13:15:23.245Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+          date={2018-06-12T17:13:09.903Z}
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10491,23 +10366,7 @@ ShallowWrapper {
           "renderEmptyDate": [Function],
           "renderItem": [Function],
           "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "selected": 2018-06-12T15:45:24.218Z,
-=======
-          "selected": 2018-06-11T21:03:32.782Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-          "selected": 2018-06-11T23:08:43.577Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-          "selected": 2018-06-12T12:55:39.084Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-          "selected": 2018-06-12T13:15:24.109Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+          "selected": 2018-06-12T17:13:26.296Z,
           "style": Object {
             "flex": 1,
           },
@@ -10589,23 +10448,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  selected={2018-06-12T15:45:24.218Z}
-=======
-                  selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                  selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                  selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                  selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                  selected={2018-06-12T17:13:26.296Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10720,23 +10563,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  selected={2018-06-12T15:45:24.218Z}
-=======
-                  selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                  selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                  selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                  selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                  selected={2018-06-12T17:13:26.296Z}
                   style={
                     Object {
                       "flex": 1,
@@ -10849,23 +10676,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-12T15:45:24.218Z}
-=======
-                    selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                    selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                    selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                    selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                    selected={2018-06-12T17:13:26.296Z}
                     style={
                       Object {
                         "flex": 1,
@@ -10966,23 +10777,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-12T15:45:24.218Z}
-=======
-                      selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                      selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                      selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                      selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                      selected={2018-06-12T17:13:26.296Z}
                       style={
                         Object {
                           "flex": 1,
@@ -11034,23 +10829,7 @@ ShallowWrapper {
                       "renderEmptyDate": [Function],
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      "selected": 2018-06-12T15:45:24.218Z,
-=======
-                      "selected": 2018-06-11T21:03:32.782Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                      "selected": 2018-06-11T23:08:43.577Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                      "selected": 2018-06-12T12:55:39.084Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                      "selected": 2018-06-12T13:15:24.109Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                      "selected": 2018-06-12T17:13:26.296Z,
                       "style": Object {
                         "flex": 1,
                       },
@@ -11168,23 +10947,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "date": 2018-06-12T15:44:29.860Z,
-=======
-          "date": 2018-06-11T21:02:01.200Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-          "date": 2018-06-11T23:08:42.618Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-          "date": 2018-06-12T12:55:38.144Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-          "date": 2018-06-12T13:15:23.245Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+          "date": 2018-06-12T17:13:09.903Z,
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11211,23 +10974,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "date": 2018-06-12T15:44:29.860Z,
-=======
-          "date": 2018-06-11T21:02:01.200Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-          "date": 2018-06-11T23:08:42.618Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-          "date": 2018-06-12T12:55:38.144Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-          "date": 2018-06-12T13:15:23.245Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+          "date": 2018-06-12T17:13:09.903Z,
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11268,23 +11015,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            selected={2018-06-12T15:45:24.218Z}
-=======
-            selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-            selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-            selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-            selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+            selected={2018-06-12T17:13:26.296Z}
             style={
               Object {
                 "flex": 1,
@@ -11362,23 +11093,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-12T15:45:24.218Z}
-=======
-                    selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                    selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                    selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                    selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                    selected={2018-06-12T17:13:26.296Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11445,23 +11160,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            date={2018-06-12T15:44:29.860Z}
-=======
-            date={2018-06-11T21:02:01.200Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-            date={2018-06-11T23:08:42.618Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-            date={2018-06-12T12:55:38.144Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-            date={2018-06-12T13:15:23.245Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+            date={2018-06-12T17:13:09.903Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11482,23 +11181,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            date={2018-06-12T15:44:29.860Z}
-=======
-            date={2018-06-11T21:02:01.200Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-            date={2018-06-11T23:08:42.618Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-            date={2018-06-12T12:55:38.144Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-            date={2018-06-12T13:15:23.245Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+            date={2018-06-12T17:13:09.903Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11546,23 +11229,7 @@ ShallowWrapper {
             "renderEmptyDate": [Function],
             "renderItem": [Function],
             "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "selected": 2018-06-12T15:45:24.218Z,
-=======
-            "selected": 2018-06-11T21:03:32.782Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-            "selected": 2018-06-11T23:08:43.577Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-            "selected": 2018-06-12T12:55:39.084Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-            "selected": 2018-06-12T13:15:24.109Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+            "selected": 2018-06-12T17:13:26.296Z,
             "style": Object {
               "flex": 1,
             },
@@ -11644,23 +11311,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-12T15:45:24.218Z}
-=======
-                    selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                    selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                    selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                    selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                    selected={2018-06-12T17:13:26.296Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11775,23 +11426,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-12T15:45:24.218Z}
-=======
-                    selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                    selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                    selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                    selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                    selected={2018-06-12T17:13:26.296Z}
                     style={
                       Object {
                         "flex": 1,
@@ -11904,23 +11539,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-12T15:45:24.218Z}
-=======
-                      selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                      selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                      selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                      selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                      selected={2018-06-12T17:13:26.296Z}
                       style={
                         Object {
                           "flex": 1,
@@ -12021,23 +11640,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        selected={2018-06-12T15:45:24.218Z}
-=======
-                        selected={2018-06-11T21:03:32.782Z}
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                        selected={2018-06-11T23:08:43.577Z}
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                        selected={2018-06-12T12:55:39.084Z}
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                        selected={2018-06-12T13:15:24.109Z}
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                        selected={2018-06-12T17:13:26.296Z}
                         style={
                           Object {
                             "flex": 1,
@@ -12089,23 +11692,7 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        "selected": 2018-06-12T15:45:24.218Z,
-=======
-                        "selected": 2018-06-11T21:03:32.782Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-                        "selected": 2018-06-11T23:08:43.577Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-                        "selected": 2018-06-12T12:55:39.084Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-                        "selected": 2018-06-12T13:15:24.109Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+                        "selected": 2018-06-12T17:13:26.296Z,
                         "style": Object {
                           "flex": 1,
                         },
@@ -12223,23 +11810,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "date": 2018-06-12T15:44:29.860Z,
-=======
-            "date": 2018-06-11T21:02:01.200Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-            "date": 2018-06-11T23:08:42.618Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-            "date": 2018-06-12T12:55:38.144Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-            "date": 2018-06-12T13:15:23.245Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+            "date": 2018-06-12T17:13:09.903Z,
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12266,23 +11837,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "date": 2018-06-12T15:44:29.860Z,
-=======
-            "date": 2018-06-11T21:02:01.200Z,
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-            "date": 2018-06-11T23:08:42.618Z,
->>>>>>> 8deab94... #382_382 realizando teste do onPress do cardItem
-=======
-            "date": 2018-06-12T12:55:38.144Z,
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
-=======
-            "date": 2018-06-12T13:15:23.245Z,
->>>>>>> 4d4e939... Fix #382 #383 testando DateRangerPicker no vacationScreen
+            "date": 2018-06-12T17:13:09.903Z,
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

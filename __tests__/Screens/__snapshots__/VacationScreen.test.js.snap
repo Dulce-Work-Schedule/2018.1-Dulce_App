@@ -9,9 +9,7 @@ exports[`renders correctly 1`] = `
   }
 >
   <View>
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Array [
@@ -24,9 +22,9 @@ exports[`renders correctly 1`] = `
               "height": 64,
               "justifyContent": "center",
               "left": 0,
-              "paddingLeft": 6,
+              "paddingLeft": 10,
               "paddingRight": 10,
-              "paddingTop": 18,
+              "paddingTop": 15,
               "right": 0,
               "shadowColor": undefined,
               "shadowOffset": undefined,
@@ -62,10 +60,7 @@ exports[`renders correctly 1`] = `
                   "color": "#000",
                   "fontFamily": "System",
                   "fontSize": 17,
-                  "fontWeight": "700",
-                  "marginLeft": undefined,
-                  "paddingLeft": 4,
-                  "paddingTop": 1,
+                  "fontWeight": "600",
                   "textAlign": "center",
                 },
                 Object {
@@ -95,7 +90,6 @@ exports[`renders correctly 1`] = `
           },
           Object {
             "alignSelf": "center",
-            "backgroundColor": "white",
             "color": "#5f4b8b",
             "fontSize": 15,
             "margin": 5,
@@ -4174,29 +4168,13 @@ exports[`renders correctly 1`] = `
               uppercase={false}
               virtual={undefined}
             >
-<<<<<<< HEAD
-<<<<<<< HEAD
               12
-=======
-              11
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-              12
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
               /
               6
               /
               2018
                até 
-<<<<<<< HEAD
-<<<<<<< HEAD
               12
-=======
-              11
->>>>>>> f6a0f99... #382_383 realizando teste no DateRangePicker
-=======
-              12
->>>>>>> a9998c9... #382_383 testando component DaterangerPicker
               /
               6
               /

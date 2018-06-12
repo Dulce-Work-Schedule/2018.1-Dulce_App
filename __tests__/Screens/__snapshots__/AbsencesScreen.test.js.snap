@@ -91,7 +91,6 @@ exports[`renders correctly 1`] = `
             },
             Object {
               "alignSelf": "center",
-              "backgroundColor": "white",
               "color": "#5f4b8b",
               "fontSize": 15,
               "margin": 5,
@@ -4176,13 +4175,10 @@ exports[`renders correctly 1`] = `
           </View>
         </View>
         <View
-          bordered={true}
           style={
             Object {
               "alignItems": "center",
               "backgroundColor": "#fff",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#ccc",
               "borderRadius": 2,
               "flexDirection": "row",
               "paddingBottom": 10,
@@ -4232,7 +4228,7 @@ exports[`renders correctly 1`] = `
                 uppercase={false}
                 virtual={undefined}
               >
-                Selecione o abono:
+                Tipo de abono:
               </Text>
             </View>
             <View
@@ -4278,6 +4274,7 @@ exports[`renders correctly 1`] = `
                       "flexDirection": "row",
                       "height": 50,
                       "justifyContent": "space-between",
+                      "marginLeft": 10,
                       "opacity": 1,
                       "paddingBottom": 6,
                       "paddingTop": 6,
@@ -4897,114 +4894,10 @@ exports[`renders correctly 1`] = `
           </View>
         </View>
         <View
-          bordered={true}
           style={
             Object {
               "alignItems": "center",
               "backgroundColor": "#fff",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#ccc",
-              "borderRadius": 2,
-              "flexDirection": "row",
-              "paddingBottom": 10,
-              "paddingLeft": 15,
-              "paddingRight": 15,
-              "paddingTop": 10,
-            }
-          }
-          virtual={undefined}
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "alignItems": "flex-start",
-                  "alignSelf": "stretch",
-                  "flex": 1,
-                },
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F5FCFF",
-                  "flex": 1,
-                  "justifyContent": "center",
-                },
-              ]
-            }
-            virtual={undefined}
-          >
-            <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
-              accessible={true}
-              collapsable={undefined}
-              hasTVPreferredFocus={undefined}
-              hitSlop={undefined}
-              isTVSelectable={true}
-              nativeID={undefined}
-              onLayout={undefined}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "opacity": 1,
-                }
-              }
-              testID={undefined}
-              tvParallaxProperties={undefined}
-            >
-              <View
-                style={
-                  Array [
-                    Object {
-                      "borderRadius": 5,
-                      "height": 150,
-                      "width": 150,
-                    },
-                    Object {
-                      "alignItems": "center",
-                      "borderColor": "#9B9B9B",
-                      "borderWidth": 0.5,
-                      "justifyContent": "center",
-                    },
-                    Object {
-                      "marginBottom": 20,
-                    },
-                  ]
-                }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#000",
-                      "fontFamily": "System",
-                      "fontSize": 16,
-                    }
-                  }
-                  uppercase={false}
-                  virtual={undefined}
-                >
-                  Selecione uma Foto
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          bordered={true}
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#fff",
-              "borderBottomWidth": 0.5,
-              "borderColor": "#ccc",
               "borderRadius": 2,
               "flexDirection": "row",
               "paddingBottom": 10,
@@ -5062,6 +4955,105 @@ exports[`renders correctly 1`] = `
                 underlineColorAndroid="rgba(0,0,0,0)"
                 virtual={undefined}
               />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fff",
+              "borderRadius": 2,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+            }
+          }
+          virtual={undefined}
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-start",
+                  "alignSelf": "stretch",
+                  "flex": 1,
+                },
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fff",
+                  "flex": 1,
+                  "justifyContent": "center",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hasTVPreferredFocus={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "borderRadius": 5,
+                      "height": 180,
+                      "width": 180,
+                    },
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#fff",
+                      "borderColor": "#9B9B9B",
+                      "borderWidth": 0.5,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "marginBottom": 20,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#000",
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                    }
+                  }
+                  uppercase={false}
+                  virtual={undefined}
+                >
+                  Selecione uma Foto
+                </Text>
+              </View>
             </View>
           </View>
         </View>

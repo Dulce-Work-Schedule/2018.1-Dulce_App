@@ -12,8 +12,15 @@ import DateRangePicker from '../Components/DateRangePicker';
 import AGRButton from '../Components/AGRButton';
 import ImagePicker from 'react-native-image-picker';
 import {Card, CardItem, Text, Body, Form, Textarea, Picker, Right, Left} from 'native-base';
+import styles from '../Styles/styles';
 
 const XDate = require('xdate');
+
+const currentDate = {
+  year: new XDate().getFullYear(),
+  month: new XDate().getMonth() + 1,
+  day: new XDate().getDate()
+};
 
 export default class AbsencesScreen extends React.Component {
 
@@ -22,16 +29,8 @@ export default class AbsencesScreen extends React.Component {
     this.state = {
       documentSource: null,
       absenceOption: '',
-      startDay: {
-        year: new XDate().getFullYear(),
-        month: new XDate().getMonth() + 1,
-        day: new XDate().getDate()
-      },
-      endDay: {
-        year: new XDate().getFullYear(),
-        month: new XDate().getMonth() + 1,
-        day: new XDate().getDate()
-      }
+      startDay: currentDate,
+      endDay: currentDate
     };
   }
 
@@ -113,17 +112,17 @@ export default class AbsencesScreen extends React.Component {
             </View>
             </CardItem>
 
-            <CardItem bordered>
+            <CardItem>
               <Body style={{flexDirection: 'row'}}>
                 <Left>
                   <Text>
-                    Selecione o abono:
+                    Tipo de abono:
                   </Text>
                 </Left>
                 <Right>
                   <Picker
                     selectedValue={this.state.absenceOption}
-                    style={styles.picker}
+                    style={stylesAbsences.picker}
                     onValueChange={(itemValue) => this.onSelectAbsence(itemValue)}>
                     <Picker.Item label='Atestado' value='medical leave' />
                     <Picker.Item label='Maternidade' value='maternity leave' />
@@ -132,24 +131,24 @@ export default class AbsencesScreen extends React.Component {
                 </Right>
               </Body>
             </CardItem>
-            <CardItem bordered>
-              <Body style={styles.container}>
-                  <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-                    <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
-                      { this.state.documentSource === null ? <Text>Selecione uma Foto</Text>
-                        : <Image style={styles.document} source={this.state.documentSource} />
-                      }
-                    </View>
-                  </TouchableOpacity>
-              </Body>
-            </CardItem>
 
-            <CardItem bordered>
+            <CardItem>
               <Body>
                 <Form style={styles.form}>
                   <Textarea rowSpan={5} bordered placeholder='Justificativa' />
                 </Form>
               </Body>
+            </CardItem>
+            <CardItem>
+            <Body style={styles.container2}>
+            <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
+            <View style={[stylesAbsences.document, stylesAbsences.documentContainer, {marginBottom: 20}]}>
+            { this.state.documentSource === null ? <Text>Selecione uma Foto</Text>
+              : <Image style={stylesAbsences.document} source={this.state.documentSource} />
+            }
+            </View>
+            </TouchableOpacity>
+            </Body>
             </CardItem>
 
             <CardItem footer bordered>
@@ -167,85 +166,22 @@ export default class AbsencesScreen extends React.Component {
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
+const stylesAbsences = StyleSheet.create({
   documentContainer: {
     borderColor: '#9B9B9B',
+    backgroundColor: '#fff',
     borderWidth: 1 / PixelRatio.get(),
     justifyContent: 'center',
     alignItems: 'center'
   },
   document: {
     borderRadius: 5,
-    width: 150,
-    height: 150
-  },
-  title: {
-    margin: 5,
-    alignSelf: 'center',
-    fontSize: 15,
-    color: '#5f4b8b',
-    backgroundColor: 'white'
-  },
-  date: {
-    color: '#5f4b8b',
-    fontSize: 20
-  },
-  dates: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginRight: 5,
-    marginLeft: 5,
-    marginTop: 10,
-    borderColor: '#5f4b8b',
-    borderWidth: 2,
-    borderRadius: 5
-  },
-  justify: {
-    flex: 1.5,
-    backgroundColor: '#ede8f7',
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10,
-    borderColor: '#5f4b8b',
-    borderWidth: 2,
-    borderRadius: 5
-  },
-  button: {
-    width: 200,
-    marginTop: 15,
-    marginRight: 5,
-    marginLeft: 10
-  },
-  icon: {
-    fontSize: 40,
-    color: '#5f4b8b'
-  },
-  view1: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  view2: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  view3: {
-    flex: 1,
-    alignItems: 'center'
-  },
-  form: {
-    width: 375
+    width: 180,
+    height: 180
   },
   picker: {
     height: 50,
-    width: 170
+    width: 170,
+    marginLeft: 10
   }
 });
