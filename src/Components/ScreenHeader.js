@@ -1,5 +1,6 @@
 import React from 'react';
 import {Header, Body, Title} from 'native-base';
+import {StatusBar} from 'react-native';
 
 const styles = {
   header: {
@@ -14,6 +15,9 @@ class ScreenHeader extends React.Component {
   render() {
     return (
         <Header style={styles.header}>
+        <StatusBar
+            backgroundColor='#5f4b79'
+        />
           <Body>
             <Title style={styles.text} > {this.props.title} </Title>
           </Body>

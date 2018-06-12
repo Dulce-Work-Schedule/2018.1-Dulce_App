@@ -8,6 +8,7 @@ import axios from 'axios';
 import {actionLogin} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
 import {Container ,Button} from 'native-base';
+import {StatusBar} from 'react-native';
 
 const logo = require('../../assets/img/logo.png');
 
@@ -102,6 +103,9 @@ export class LoginScreen extends React.Component {
   render() {
     return (
       <Container style={styles.container}>
+      <StatusBar
+          backgroundColor='#5f4b79'
+      />
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
