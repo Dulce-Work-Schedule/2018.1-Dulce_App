@@ -266,9 +266,15 @@ exports[`renders correctly 1`] = `
                       "Feb 2018",
                       "Mar 2018",
                       "Apr 2018",
+<<<<<<< HEAD
                       "2018-05-12T00:00:00.000Z",
                       "2018-06-12T00:00:00.000Z",
                       "2018-07-12T00:00:00.000Z",
+=======
+                      "2018-05-11T00:00:00.000Z",
+                      "2018-06-11T00:00:00.000Z",
+                      "2018-07-11T00:00:00.000Z",
+>>>>>>> FIX #408 Arrumando o codeclimate
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -1387,6 +1393,8 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
+                                  "backgroundColor": "#5f4b8b",
+                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1408,6 +1416,9 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
+                                    },
+                                    Object {
+                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -5034,9 +5045,15 @@ exports[`renders correctly 1`] = `
                                 "Feb 2018",
                                 "Mar 2018",
                                 "Apr 2018",
+<<<<<<< HEAD
                                 "2018-05-12T00:00:00.000Z",
                                 "2018-06-12T00:00:00.000Z",
                                 "2018-07-12T00:00:00.000Z",
+=======
+                                "2018-05-11T00:00:00.000Z",
+                                "2018-06-11T00:00:00.000Z",
+                                "2018-07-11T00:00:00.000Z",
+>>>>>>> FIX #408 Arrumando o codeclimate
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -6155,6 +6172,8 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
+                                            "backgroundColor": "#5f4b8b",
+                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6176,6 +6195,9 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
+                                              },
+                                              Object {
+                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -9843,7 +9865,11 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
+<<<<<<< HEAD
                       date={1528777039080}
+=======
+                      date={1528767241862}
+>>>>>>> FIX #408 Arrumando o codeclimate
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10074,7 +10100,11 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
+<<<<<<< HEAD
                       date={1528777039080}
+=======
+                      date={1528767241862}
+>>>>>>> FIX #408 Arrumando o codeclimate
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

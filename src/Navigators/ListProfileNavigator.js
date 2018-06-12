@@ -3,7 +3,7 @@ import NewProfile from '../Screens/NewProfile';
 import {StackNavigator} from 'react-navigation';
 
 const routes = {
-  list: {
+  listProfiles: {
     screen: ListProfile,
     navigationOptions: {
       header: null
