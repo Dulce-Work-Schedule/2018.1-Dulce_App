@@ -274,7 +274,11 @@ exports[`renders correctly 1`] = `
                       "2018-05-11T00:00:00.000Z",
                       "2018-06-11T00:00:00.000Z",
                       "2018-07-11T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -5053,7 +5057,11 @@ exports[`renders correctly 1`] = `
                                 "2018-05-11T00:00:00.000Z",
                                 "2018-06-11T00:00:00.000Z",
                                 "2018-07-11T00:00:00.000Z",
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -9868,8 +9876,13 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
                       date={1528853088247}
 =======
+<<<<<<< HEAD
                       date={1528765117387}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                      date={1528763165336}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10103,8 +10116,13 @@ exports[`renders correctly 1`] = `
 <<<<<<< HEAD
                       date={1528853088247}
 =======
+<<<<<<< HEAD
                       date={1528765117387}
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+                      date={1528763165336}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

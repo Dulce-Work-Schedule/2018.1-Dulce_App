@@ -9802,6 +9802,7 @@ exports[`renders correctly 1`] = `
           >
             <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -9810,7 +9811,13 @@ exports[`renders correctly 1`] = `
 =======
               date={1528762908523}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+              date={1528763157639}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10042,6 +10049,7 @@ exports[`renders correctly 1`] = `
           >
             <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -10050,7 +10058,13 @@ exports[`renders correctly 1`] = `
 =======
               date={1528762908523}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+              date={1528763157639}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10201,6 +10215,7 @@ ShallowWrapper {
           renderItem={[Function]}
           rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10209,7 +10224,13 @@ ShallowWrapper {
 =======
           selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+          selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
           style={
             Object {
               "flex": 1,
@@ -10288,6 +10309,7 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10296,7 +10318,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                  selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                   style={
                     Object {
                       "flex": 1,
@@ -10364,6 +10392,7 @@ ShallowWrapper {
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10372,7 +10401,13 @@ ShallowWrapper {
 =======
           date={2018-06-12T00:21:48.523Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+          date={2018-06-12T00:25:57.639Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10394,6 +10429,7 @@ ShallowWrapper {
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10402,7 +10438,13 @@ ShallowWrapper {
 =======
           date={2018-06-12T00:21:48.523Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+          date={2018-06-12T00:25:57.639Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10451,6 +10493,7 @@ ShallowWrapper {
           "renderItem": [Function],
           "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -10459,7 +10502,13 @@ ShallowWrapper {
 =======
           "selected": 2018-06-12T00:23:12.445Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+          "selected": 2018-06-12T00:25:58.572Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
           "style": Object {
             "flex": 1,
           },
@@ -10542,6 +10591,7 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10550,7 +10600,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                  selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                   style={
                     Object {
                       "flex": 1,
@@ -10666,6 +10722,7 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10674,7 +10731,13 @@ ShallowWrapper {
 =======
                   selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                  selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                   style={
                     Object {
                       "flex": 1,
@@ -10788,6 +10851,7 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10796,7 +10860,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                    selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                     style={
                       Object {
                         "flex": 1,
@@ -10898,6 +10968,7 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10906,7 +10977,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                      selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                       style={
                         Object {
                           "flex": 1,
@@ -10959,6 +11036,7 @@ ShallowWrapper {
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -10967,7 +11045,13 @@ ShallowWrapper {
 =======
                       "selected": 2018-06-12T00:23:12.445Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                      "selected": 2018-06-12T00:25:58.572Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                       "style": Object {
                         "flex": 1,
                       },
@@ -11086,6 +11170,7 @@ ShallowWrapper {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11094,7 +11179,13 @@ ShallowWrapper {
 =======
           "date": 2018-06-12T00:21:48.523Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+          "date": 2018-06-12T00:25:57.639Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11122,6 +11213,7 @@ ShallowWrapper {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11130,7 +11222,13 @@ ShallowWrapper {
 =======
           "date": 2018-06-12T00:21:48.523Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+          "date": 2018-06-12T00:25:57.639Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11172,6 +11270,7 @@ ShallowWrapper {
             renderItem={[Function]}
             rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11180,7 +11279,13 @@ ShallowWrapper {
 =======
             selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+            selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
             style={
               Object {
                 "flex": 1,
@@ -11259,6 +11364,7 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11267,7 +11373,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                    selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                     style={
                       Object {
                         "flex": 1,
@@ -11335,6 +11447,7 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11343,7 +11456,13 @@ ShallowWrapper {
 =======
             date={2018-06-12T00:21:48.523Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+            date={2018-06-12T00:25:57.639Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11365,6 +11484,7 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11373,7 +11493,13 @@ ShallowWrapper {
 =======
             date={2018-06-12T00:21:48.523Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+            date={2018-06-12T00:25:57.639Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11422,6 +11548,7 @@ ShallowWrapper {
             "renderItem": [Function],
             "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11430,7 +11557,13 @@ ShallowWrapper {
 =======
             "selected": 2018-06-12T00:23:12.445Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+            "selected": 2018-06-12T00:25:58.572Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
             "style": Object {
               "flex": 1,
             },
@@ -11513,6 +11646,7 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11521,7 +11655,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                    selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                     style={
                       Object {
                         "flex": 1,
@@ -11637,6 +11777,7 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11645,7 +11786,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                    selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                     style={
                       Object {
                         "flex": 1,
@@ -11759,6 +11906,7 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11767,7 +11915,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                      selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                       style={
                         Object {
                           "flex": 1,
@@ -11869,6 +12023,7 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11877,7 +12032,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-12T00:23:12.445Z}
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                        selected={2018-06-12T00:25:58.572Z}
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                         style={
                           Object {
                             "flex": 1,
@@ -11930,6 +12091,7 @@ ShallowWrapper {
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11938,7 +12100,13 @@ ShallowWrapper {
 =======
                         "selected": 2018-06-12T00:23:12.445Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+                        "selected": 2018-06-12T00:25:58.572Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                         "style": Object {
                           "flex": 1,
                         },
@@ -12057,6 +12225,7 @@ ShallowWrapper {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12065,7 +12234,13 @@ ShallowWrapper {
 =======
             "date": 2018-06-12T00:21:48.523Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+            "date": 2018-06-12T00:25:57.639Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12093,6 +12268,7 @@ ShallowWrapper {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12101,7 +12277,13 @@ ShallowWrapper {
 =======
             "date": 2018-06-12T00:21:48.523Z,
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
+<<<<<<< HEAD
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+=======
+            "date": 2018-06-12T00:25:57.639Z,
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,
