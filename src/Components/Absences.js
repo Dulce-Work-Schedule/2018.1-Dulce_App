@@ -1,18 +1,16 @@
 import React from 'react';
 import {
-  StyleSheet,
   View,
   PixelRatio,
   TouchableOpacity,
   Image,
   ScrollView
 } from 'react-native';
-import ScreenHeader from '../Components/ScreenHeader';
 import DateRangePicker from '../Components/DateRangePicker';
 import AGRButton from '../Components/AGRButton';
 import ImagePicker from 'react-native-image-picker';
 import {Card, CardItem, Text, Body, Form, Textarea, Picker, Right, Left} from 'native-base';
-import styles from '../Styles/styles';
+
 
 const XDate = require('xdate');
 
@@ -22,7 +20,7 @@ const currentDate = {
   day: new XDate().getDate()
 };
 
-export default class AbsencesScreen extends React.Component {
+export default class Absences extends React.Component {
 
   constructor(props) {
     super(props);
@@ -100,7 +98,7 @@ export default class AbsencesScreen extends React.Component {
                 <Right>
                 <Picker
                     selectedValue={this.state.absenceOption}
-                    style={stylesAbsences.picker}
+                    style={styles.picker}
                     onValueChange={(itemValue) => this.onSelectAbsence(itemValue)}>
                     <Picker.Item label='Atestado' value='medical leave' />
                     <Picker.Item label='Maternidade' value='maternity leave' />
@@ -117,9 +115,9 @@ export default class AbsencesScreen extends React.Component {
         <CardItem>
             <Body style={styles.container2}>
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-                    <View style={[stylesAbsences.document, stylesAbsences.documentContainer, {marginBottom: 20}]}>
+                    <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
                         { this.state.documentSource === null ? <Text>Selecione uma Foto</Text>
-                        : <Image style={stylesAbsences.document} source={this.state.documentSource} />
+                        : <Image style={styles.document} source={this.state.documentSource} />
                         }
                     </View>
                 </TouchableOpacity>
@@ -168,12 +166,9 @@ export default class AbsencesScreen extends React.Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <ScreenHeader
-          title='Abono de Faltas'
-        />
         <ScrollView>
           <Text style={styles.title}>
-                Selecione o período de abono
+                {this.props.title}
           </Text>
           <DateRangePicker
             onSuccess={(startDay, endDay) => this.onSelectDates(startDay, endDay)}
@@ -186,8 +181,63 @@ export default class AbsencesScreen extends React.Component {
   }
 
 }
-
-const stylesAbsences = StyleSheet.create({
+const styles = {
+  title: {
+    margin: 5,
+    alignSelf: 'center',
+    fontSize: 15,
+    color: '#5f4b8b'
+  },
+  container1: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-around'
+  },
+  date: {
+    color: '#5f4b8b',
+    fontSize: 20
+  },
+  dates: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginRight: 5,
+    marginLeft: 5,
+    marginTop: 10,
+    borderColor: '#5f4b8b',
+    borderWidth: 2,
+    borderRadius: 5
+  },
+  justify: {
+    flex: 1.5,
+    backgroundColor: '#ede8f7',
+    marginLeft: 5,
+    marginRight: 5,
+    marginTop: 10,
+    borderColor: '#5f4b8b',
+    borderWidth: 2,
+    borderRadius: 5
+  },
+  button: {
+    width: 200,
+    marginTop: 15,
+    marginRight: 5,
+    marginLeft: 10
+  },
+  view1: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center'
+  },
+  form: {
+    width: 375
+  },
+  container2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff'
+  },
   documentContainer: {
     borderColor: '#9B9B9B',
     backgroundColor: '#fff',
@@ -205,4 +255,4 @@ const stylesAbsences = StyleSheet.create({
     width: 170,
     marginLeft: 10
   }
-});
+};
