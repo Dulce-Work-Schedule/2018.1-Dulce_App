@@ -917,7 +917,11 @@ exports[`renders correctly 1`] = `
                     },
 =======
                     Object {},
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                   ]
                 }
               >
@@ -1310,7 +1314,11 @@ exports[`renders correctly 1`] = `
                       "fontWeight": "500",
                     },
                     Object {},
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
                   ]
                 }
               >
@@ -4176,7 +4184,11 @@ exports[`renders correctly 1`] = `
               12
 =======
               11
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
               /
               6
               /
@@ -4186,7 +4198,11 @@ exports[`renders correctly 1`] = `
               12
 =======
               11
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
+=======
+>>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
+>>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
               /
               6
               /
