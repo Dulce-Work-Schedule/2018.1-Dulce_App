@@ -3,17 +3,17 @@ import Absences from '../Components/Absences';
 import ScreenHeader from '../Components/ScreenHeader';
 import {View} from 'react-native';
 
-export default class VacationScreen extends React.Component {
+export default class AbsencesScreen extends React.Component {
 
   render() {
     return (
       <View style={{flex: 1}}>
         <ScreenHeader
-          title='Férias'
+          title='Abono'
         />
         <Absences
-          type='vacation'
-          title='Selecione o período de férias'
+          type='complete'
+          title='Selecione o período de abono'
         />
       </View>
     );

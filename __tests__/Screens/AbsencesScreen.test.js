@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import VacationScreen from '../../src/Screens/VacationScreen';
+import AbsencesScreen from '../../src/Screens/AbsencesScreen';
 require('bezier');
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<VacationScreen />)
+  .create(<AbsencesScreen />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -80,9 +80,7 @@ exports[`renders correctly 1`] = `
             }
           }
         >
-          <View
-            onLayout={[Function]}
-          >
+          <View>
             <View
               style={
                 Array [
@@ -95,9 +93,9 @@ exports[`renders correctly 1`] = `
                     "height": 64,
                     "justifyContent": "center",
                     "left": 0,
-                    "paddingLeft": 6,
+                    "paddingLeft": 10,
                     "paddingRight": 10,
-                    "paddingTop": 18,
+                    "paddingTop": 15,
                     "right": 0,
                     "shadowColor": undefined,
                     "shadowOffset": undefined,
@@ -133,10 +131,7 @@ exports[`renders correctly 1`] = `
                         "color": "#000",
                         "fontFamily": "System",
                         "fontSize": 17,
-                        "fontWeight": "700",
-                        "marginLeft": undefined,
-                        "paddingLeft": 4,
-                        "paddingTop": 1,
+                        "fontWeight": "600",
                         "textAlign": "center",
                       },
                       Object {
@@ -9848,7 +9843,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-                      date={1528818366500}
+                      date={1528853088247}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10079,7 +10074,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-                      date={1528818366500}
+                      date={1528853088247}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
