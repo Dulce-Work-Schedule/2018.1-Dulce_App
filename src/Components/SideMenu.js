@@ -75,7 +75,7 @@ export default class SideMenu extends React.Component {
   renderRoute(route, iconName) {
     return (
       <View style={styles.route}>
-        <Icon name={iconName} size={25} color='#fff' />
+        <Icon name={iconName} size={25} style={{paddingHorizontal: 15}} color='#fff' />
         <Text style={styles.navItemStyle} onPress={this.navigateToScreen(route)}>
           {route}
         </Text>
@@ -108,7 +108,7 @@ export default class SideMenu extends React.Component {
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
-          <Icon name='md-exit' size={30} color='#fff' style={{marginRight: 6}} />
+          <Icon name='md-exit' size={30} color='#fff' style={{paddingHorizontal: 15}} />
           <Text onPress={this.navigateToScreen('Logout')} style={{color: '#fff'}}>Logout</Text>
         </View>
       </View>
