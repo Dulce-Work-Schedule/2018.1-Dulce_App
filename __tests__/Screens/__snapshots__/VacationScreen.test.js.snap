@@ -911,9 +911,13 @@ exports[`renders correctly 1`] = `
                       "height": 34,
                       "width": 38,
                     },
+<<<<<<< HEAD
                     Object {
                       "borderRadius": 17,
                     },
+=======
+                    Object {},
+>>>>>>> 33bd1d0... FIX #425 Excluindo testes.
                   ]
                 }
               >
@@ -1299,6 +1303,14 @@ exports[`renders correctly 1`] = `
                     Object {
                       "backgroundColor": undefined,
                     },
+<<<<<<< HEAD
+=======
+                    Object {
+                      "color": "#2d4150",
+                      "fontWeight": "500",
+                    },
+                    Object {},
+>>>>>>> 33bd1d0... FIX #425 Excluindo testes.
                   ]
                 }
               >
@@ -4160,13 +4172,21 @@ exports[`renders correctly 1`] = `
               uppercase={false}
               virtual={undefined}
             >
+<<<<<<< HEAD
               12
+=======
+              11
+>>>>>>> 33bd1d0... FIX #425 Excluindo testes.
               /
               6
               /
               2018
                até 
+<<<<<<< HEAD
               12
+=======
+              11
+>>>>>>> 33bd1d0... FIX #425 Excluindo testes.
               /
               6
               /
