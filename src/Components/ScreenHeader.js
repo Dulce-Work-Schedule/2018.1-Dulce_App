@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Body, Title} from 'native-base';
+import {Header, Left, Body, Button, Icon, Title} from 'native-base';
 import {StatusBar} from 'react-native';
 
 const styles = {
@@ -18,6 +18,11 @@ class ScreenHeader extends React.Component {
         <StatusBar
             backgroundColor='#5f4b79'
         />
+          <Left>
+            <Button transparent>
+            <Icon name={this.props.icon} />
+            </Button>
+            </Left>
           <Body>
             <Title style={styles.text} > {this.props.title} </Title>
           </Body>

@@ -282,6 +282,8 @@ export default class WeekSchedule extends Component {
       <View style={{flex: 1}}>
         <ScreenHeader
           title='Escalas'
+          icon='menu'
+          onPress={() => this.props.navigation.navigate('DrawerOpen')}
         />
         {this.renderAgenda(this.renderItem)}
         {this.renderModal()}

@@ -107,7 +107,7 @@ class NewProfile extends React.Component {
 
     return (
       <Container style={{backgroundColor: '#FFF'}}>
-        <ScreenHeader title = 'Criar novo perfil' />
+        <ScreenHeader title = 'Criar novo perfil' icon='arrow-back' />
         <View style={styles.container}>
           <Form
             ref='form'

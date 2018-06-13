@@ -1,16 +1,17 @@
 import React from 'react';
 import {View , Text} from 'react-native';
-import AGRButton from '../Components/AGRButton';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
+import ScaleIcon from '../Components/ScaleIcon';
 import ScreenHeader from '../Components/ScreenHeader';
 
 const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
+    padding: 20,
     backgroundColor: '#FFF'
 
   },
@@ -26,47 +27,43 @@ const styles = {
   },
   informacoes: {
     alignSelf: 'center'
+  },
+  icon: {
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 };
 
-class ProfileManagerScreen extends React.Component {
+class ProfileScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: [],
+      profile: {},
       loading: true
     };
   }
 
   componentDidMount() {
     this.setState({loading: true});
-
-    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=' + store.getState().currentUser.id;
-
+    const url = 'http://172.18.0.1:8083/api/userManager/listById/?id=' + this.props.navigation.state.params.userId;
     axios.get(url,{
-
       headers: {
         'x-access-token': store.getState().currentUser.token
       }
-
     })
-      .then((response) => {this.setState({profile: response.data , loading: false});});
-  }
-  navigateToEditScreen() {
-    this.props.navigation.navigate('edit');
+      .then((response) => {this.setState({profile: response.data,loading: false});});
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
+      <ScreenHeader title='Meu perfil' icon='arrow-back'/>
         {
           this.state.loading ? (
             <Container>
               <Content>
                 <Spinner color='#5f4b8b'/>
-              </Content>
-            </Container>
+              </Content> </Container>
           ) : (
             <View style={styles.informacoes}>
               <SmallLogo />
@@ -74,8 +71,9 @@ class ProfileManagerScreen extends React.Component {
               <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
               <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
               <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
-              <View style={{marginTop: 60}} />
-              <AGRButton text='Editar'onPress = {() => this.navigateToEditScreen()}/>
+              <View style = {styles.icon}>
+                <ScaleIcon onPress = {() => {}} />
+              </View>
             </View>
           )
         }
@@ -83,5 +81,4 @@ class ProfileManagerScreen extends React.Component {
     );
   }
 }
-
-export default ProfileManagerScreen;
+export default ProfileScreen;
