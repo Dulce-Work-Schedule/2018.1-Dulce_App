@@ -34,6 +34,7 @@ const styles = {
   }
 };
 
+
 export default class EditScreen extends ValidationComponent {
   constructor(props) {
     super(props);
@@ -52,6 +53,9 @@ export default class EditScreen extends ValidationComponent {
     };
   }
 
+  onChange(value) {
+    this.setState({value});
+  }
   render() {
     return (
       <Container>
