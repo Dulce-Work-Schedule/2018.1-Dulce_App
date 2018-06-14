@@ -101,6 +101,7 @@ export default class NotificationScreen extends Component {
       <Container>
         <ScreenHeader
           title = 'Notificações'
+          icon='arrow-back'
         />
         <Content>
           <List dataArray={this.state.notifications}

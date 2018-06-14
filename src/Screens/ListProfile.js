@@ -72,7 +72,8 @@ export default class ListProfile extends Component {
       <View style={{flex: 1}}>
         <Container>
           <ScreenHeader
-            title = 'Lista de Perfis'/>
+            title = 'Perfis'
+            icon='arrow-back'/>
           <Content>
             <List dataArray={this.state.notifications}
               renderRow={(item) => (

@@ -10,6 +10,7 @@ export default class VacationScreen extends React.Component {
       <View style={{flex: 1}}>
         <ScreenHeader
           title='Férias'
+          icon='arrow-back'
         />
         <Absences
           type='vacation'

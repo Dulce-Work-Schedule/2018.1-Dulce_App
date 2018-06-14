@@ -599,6 +599,7 @@
 				E426CD405F3E4B7FB8D97C47 /* MaterialCommunityIcons.ttf */,
 				95ACB0449E5B4D409CD5BAD5 /* Lato.ttf */,
 				DE27CB99F5D247CE9DA125D9 /* Raleway.ttf */,
+				2DA644F074BD4EECB289CCAF /* Poiret One.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1010,6 +1011,7 @@
 				C847FCC95B77495184275255 /* MaterialCommunityIcons.ttf in Resources */,
 				226953DE56C1422AA05F71BA /* Lato.ttf in Resources */,
 				6EBA2C108BCE4601A20C2842 /* Raleway.ttf in Resources */,
+				8A65EA50FCD24B46BEEA352A /* Poiret One.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

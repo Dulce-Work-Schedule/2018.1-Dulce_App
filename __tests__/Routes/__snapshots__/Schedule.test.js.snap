@@ -112,14 +112,103 @@ exports[`renders correctly 1`] = `
             >
               <View
                 style={
-                  Object {
-                    "alignItems": "center",
-                    "alignSelf": "center",
-                    "flex": 1,
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "flex-start",
+                      "alignSelf": "center",
+                      "flex": 1,
+                    },
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    },
+                  ]
                 }
                 virtual={undefined}
               >
+                <View
+                  accessibilityComponentType={undefined}
+                  accessibilityLabel={undefined}
+                  accessibilityTraits={undefined}
+                  accessible={true}
+                  collapsable={undefined}
+                  hasTVPreferredFocus={undefined}
+                  hitSlop={undefined}
+                  isTVSelectable={true}
+                  nativeID={undefined}
+                  onLayout={undefined}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "alignSelf": null,
+                      "backgroundColor": "transparent",
+                      "borderBottomWidth": null,
+                      "borderColor": null,
+                      "borderLeftWidth": null,
+                      "borderRadius": 5,
+                      "borderRightWidth": null,
+                      "borderTopWidth": null,
+                      "elevation": 0,
+                      "flexDirection": "row",
+                      "height": 45,
+                      "justifyContent": "space-between",
+                      "marginLeft": -3,
+                      "opacity": 1,
+                      "paddingBottom": 6,
+                      "paddingLeft": 6,
+                      "paddingRight": 6,
+                      "paddingTop": 6,
+                      "shadowColor": null,
+                      "shadowOffset": null,
+                      "shadowOpacity": null,
+                      "shadowRadius": null,
+                    }
+                  }
+                  testID={undefined}
+                  tvParallaxProperties={undefined}
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": undefined,
+                          "fontSize": 12,
+                        },
+                        Array [
+                          Object {
+                            "color": "#000",
+                            "fontSize": 30,
+                          },
+                          Object {
+                            "color": "#007aff",
+                            "fontSize": 30,
+                            "marginLeft": 2,
+                            "marginRight": 2,
+                            "marginTop": 0,
+                            "paddingTop": 2,
+                          },
+                        ],
+                        Object {
+                          "fontFamily": "Ionicons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                      ]
+                    }
+                    virtual={undefined}
+                  >
+                    
+                  </Text>
+                </View>
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -146,6 +235,16 @@ exports[`renders correctly 1`] = `
                    
                 </Text>
               </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "flex": 1,
+                  }
+                }
+                virtual={undefined}
+              />
             </View>
           </View>
           <View
@@ -266,28 +365,9 @@ exports[`renders correctly 1`] = `
                       "Feb 2018",
                       "Mar 2018",
                       "Apr 2018",
-<<<<<<< HEAD
-                      "2018-05-12T00:00:00.000Z",
-                      "2018-06-12T00:00:00.000Z",
-                      "2018-07-12T00:00:00.000Z",
-=======
-                      "2018-05-11T00:00:00.000Z",
-                      "2018-06-11T00:00:00.000Z",
-                      "2018-07-11T00:00:00.000Z",
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 33bd1d0... FIX #425 Excluindo testes.
-=======
->>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
->>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
-=======
-<<<<<<< HEAD
->>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
->>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
-=======
->>>>>>> d3c08c8... FIX #427 Excluindo testes.
->>>>>>> 74c95cc... FIX #427 Excluindo testes.
->>>>>>> 92a8291... FIX #427 Excluindo testes.
+                      "2018-05-14T00:00:00.000Z",
+                      "2018-06-14T00:00:00.000Z",
+                      "2018-07-14T00:00:00.000Z",
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -1406,8 +1486,6 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
-                                  "backgroundColor": "#5f4b8b",
-                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1429,9 +1507,6 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
-                                    },
-                                    Object {
-                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -1459,8 +1534,6 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
-                                  "backgroundColor": "#5f4b8b",
-                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1482,9 +1555,6 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
-                                    },
-                                    Object {
-                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -1560,6 +1630,8 @@ exports[`renders correctly 1`] = `
                               style={
                                 Object {
                                   "alignItems": "center",
+                                  "backgroundColor": "#5f4b8b",
+                                  "borderRadius": 16,
                                   "height": 32,
                                   "opacity": 1,
                                   "width": 32,
@@ -1581,6 +1653,9 @@ exports[`renders correctly 1`] = `
                                       "fontSize": 16,
                                       "fontWeight": "300",
                                       "marginTop": 6,
+                                    },
+                                    Object {
+                                      "color": "#ffffff",
                                     },
                                   ]
                                 }
@@ -5058,28 +5133,9 @@ exports[`renders correctly 1`] = `
                                 "Feb 2018",
                                 "Mar 2018",
                                 "Apr 2018",
-<<<<<<< HEAD
-                                "2018-05-12T00:00:00.000Z",
-                                "2018-06-12T00:00:00.000Z",
-                                "2018-07-12T00:00:00.000Z",
-=======
-                                "2018-05-11T00:00:00.000Z",
-                                "2018-06-11T00:00:00.000Z",
-                                "2018-07-11T00:00:00.000Z",
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 33bd1d0... FIX #425 Excluindo testes.
-=======
->>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
->>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
-=======
-<<<<<<< HEAD
->>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
->>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
-=======
->>>>>>> d3c08c8... FIX #427 Excluindo testes.
->>>>>>> 74c95cc... FIX #427 Excluindo testes.
->>>>>>> 92a8291... FIX #427 Excluindo testes.
+                                "2018-05-14T00:00:00.000Z",
+                                "2018-06-14T00:00:00.000Z",
+                                "2018-07-14T00:00:00.000Z",
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -6198,8 +6254,6 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
-                                            "backgroundColor": "#5f4b8b",
-                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6221,9 +6275,6 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
-                                              },
-                                              Object {
-                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -6251,8 +6302,6 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
-                                            "backgroundColor": "#5f4b8b",
-                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6274,9 +6323,6 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
-                                              },
-                                              Object {
-                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -6352,6 +6398,8 @@ exports[`renders correctly 1`] = `
                                         style={
                                           Object {
                                             "alignItems": "center",
+                                            "backgroundColor": "#5f4b8b",
+                                            "borderRadius": 16,
                                             "height": 32,
                                             "opacity": 1,
                                             "width": 32,
@@ -6373,6 +6421,9 @@ exports[`renders correctly 1`] = `
                                                 "fontSize": 16,
                                                 "fontWeight": "300",
                                                 "marginTop": 6,
+                                              },
+                                              Object {
+                                                "color": "#ffffff",
                                               },
                                             ]
                                           }
@@ -9891,27 +9942,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-<<<<<<< HEAD
-                      date={1528853088247}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      date={1528765117387}
->>>>>>> 33bd1d0... FIX #425 Excluindo testes.
-=======
-                      date={1528763165336}
->>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
->>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
-=======
-<<<<<<< HEAD
-                      date={1528770944709}
->>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
->>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
-=======
-                      date={1528768144484}
->>>>>>> d3c08c8... FIX #427 Excluindo testes.
->>>>>>> 74c95cc... FIX #427 Excluindo testes.
->>>>>>> 92a8291... FIX #427 Excluindo testes.
+                      date={1528949967350}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10142,27 +10173,7 @@ exports[`renders correctly 1`] = `
                     }
                   >
                     <RCTDatePicker
-<<<<<<< HEAD
-                      date={1528853088247}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      date={1528765117387}
->>>>>>> 33bd1d0... FIX #425 Excluindo testes.
-=======
-                      date={1528763165336}
->>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
->>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
-=======
-<<<<<<< HEAD
-                      date={1528770944709}
->>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
->>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
-=======
-                      date={1528768144484}
->>>>>>> d3c08c8... FIX #427 Excluindo testes.
->>>>>>> 74c95cc... FIX #427 Excluindo testes.
->>>>>>> 92a8291... FIX #427 Excluindo testes.
+                      date={1528949967350}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
