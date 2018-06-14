@@ -21,12 +21,16 @@ const styles = {
   }
 };
 
+//this.props.onPress ? this.props.onPress() : {}
+
 class SignUp extends React.Component {
   render() {
     return (
       <Container>
         <Content>
-          <Button rounded style={styles.container} onPress={() => this.props.onPress()}>
+          <Button rounded
+            style={this.props.style ? this.props.style : styles.container}
+            onPress={() => this.props.onPress()}>
             <Text style={styles.text}>{this.props.text}</Text>
           </Button>
         </Content>
