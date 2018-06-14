@@ -281,8 +281,13 @@ exports[`renders correctly 1`] = `
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
 =======
+<<<<<<< HEAD
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                       "Aug 2018",
                       "Sep 2018",
                       "Oct 2018",
@@ -5068,8 +5073,13 @@ exports[`renders correctly 1`] = `
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
 =======
+<<<<<<< HEAD
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                                 "Aug 2018",
                                 "Sep 2018",
                                 "Oct 2018",
@@ -9893,9 +9903,15 @@ exports[`renders correctly 1`] = `
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
 =======
+<<<<<<< HEAD
                       date={1528770944709}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                      date={1528768144484}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -10138,9 +10154,15 @@ exports[`renders correctly 1`] = `
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
 =======
+<<<<<<< HEAD
                       date={1528770944709}
 >>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
 >>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
+=======
+                      date={1528768144484}
+>>>>>>> d3c08c8... FIX #427 Excluindo testes.
+>>>>>>> 74c95cc... FIX #427 Excluindo testes.
+>>>>>>> 92a8291... FIX #427 Excluindo testes.
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
