@@ -5,6 +5,7 @@ import {DrawerNavigator} from 'react-navigation';
 import Schedule from '../Routes/Schedule';
 import Notifications from '../Routes/Notifications';
 import Vacation from '../Routes/Vacation';
+import Absences from '../Routes/Absences';
 
 export default DrawerNavigator({
   'Ver Escala': {
@@ -21,6 +22,9 @@ export default DrawerNavigator({
   },
   'Solicitar Férias': {
     screen: Vacation
+  },
+  'Solicitar Abono de Faltas': {
+    screen: Absences
   },
   Logout: {
     screen: Logout
