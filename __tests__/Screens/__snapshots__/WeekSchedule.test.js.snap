@@ -203,10 +203,14 @@ exports[`renders correctly 1`] = `
               "2018-06-11T00:00:00.000Z",
               "2018-07-11T00:00:00.000Z",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
               "Aug 2018",
               "Sep 2018",
               "Oct 2018",
@@ -4986,10 +4990,14 @@ exports[`renders correctly 1`] = `
                         "2018-06-11T00:00:00.000Z",
                         "2018-07-11T00:00:00.000Z",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> f881a08... #432 Excluindo rotas e telas.
 >>>>>>> a268625... #432 Excluindo rotas e telas.
+=======
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                         "Aug 2018",
                         "Sep 2018",
                         "Oct 2018",
@@ -9803,6 +9811,7 @@ exports[`renders correctly 1`] = `
             <RCTDatePicker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -9818,6 +9827,12 @@ exports[`renders correctly 1`] = `
               date={1528763157639}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+              date={1528853079777}
+=======
+              date={1528770936911}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10050,6 +10065,7 @@ exports[`renders correctly 1`] = `
             <RCTDatePicker
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={1528853079777}
 =======
 <<<<<<< HEAD
@@ -10065,6 +10081,12 @@ exports[`renders correctly 1`] = `
               date={1528763157639}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+              date={1528853079777}
+=======
+              date={1528770936911}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -10216,6 +10238,7 @@ ShallowWrapper {
           rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10231,6 +10254,12 @@ ShallowWrapper {
           selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+          selected={2018-06-13T01:24:40.913Z}
+=======
+          selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
           style={
             Object {
               "flex": 1,
@@ -10310,6 +10339,7 @@ ShallowWrapper {
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10325,6 +10355,12 @@ ShallowWrapper {
                   selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                  selected={2018-06-13T01:24:40.913Z}
+=======
+                  selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                   style={
                     Object {
                       "flex": 1,
@@ -10393,6 +10429,7 @@ ShallowWrapper {
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10408,6 +10445,12 @@ ShallowWrapper {
           date={2018-06-12T00:25:57.639Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+          date={2018-06-13T01:24:39.777Z}
+=======
+          date={2018-06-12T02:35:36.911Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -10430,6 +10473,7 @@ ShallowWrapper {
           confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -10445,6 +10489,12 @@ ShallowWrapper {
           date={2018-06-12T00:25:57.639Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+          date={2018-06-13T01:24:39.777Z}
+=======
+          date={2018-06-12T02:35:36.911Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -10494,6 +10544,7 @@ ShallowWrapper {
           "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -10509,6 +10560,12 @@ ShallowWrapper {
           "selected": 2018-06-12T00:25:58.572Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+          "selected": 2018-06-13T01:24:40.913Z,
+=======
+          "selected": 2018-06-12T02:35:38.113Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
           "style": Object {
             "flex": 1,
           },
@@ -10592,6 +10649,7 @@ ShallowWrapper {
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10607,6 +10665,12 @@ ShallowWrapper {
                   selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                  selected={2018-06-13T01:24:40.913Z}
+=======
+                  selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                   style={
                     Object {
                       "flex": 1,
@@ -10723,6 +10787,7 @@ ShallowWrapper {
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10738,6 +10803,12 @@ ShallowWrapper {
                   selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                  selected={2018-06-13T01:24:40.913Z}
+=======
+                  selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                   style={
                     Object {
                       "flex": 1,
@@ -10852,6 +10923,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10867,6 +10939,12 @@ ShallowWrapper {
                     selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                    selected={2018-06-13T01:24:40.913Z}
+=======
+                    selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                     style={
                       Object {
                         "flex": 1,
@@ -10969,6 +11047,7 @@ ShallowWrapper {
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -10984,6 +11063,12 @@ ShallowWrapper {
                       selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                      selected={2018-06-13T01:24:40.913Z}
+=======
+                      selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                       style={
                         Object {
                           "flex": 1,
@@ -11037,6 +11122,7 @@ ShallowWrapper {
                       "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11052,6 +11138,12 @@ ShallowWrapper {
                       "selected": 2018-06-12T00:25:58.572Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                      "selected": 2018-06-13T01:24:40.913Z,
+=======
+                      "selected": 2018-06-12T02:35:38.113Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                       "style": Object {
                         "flex": 1,
                       },
@@ -11171,6 +11263,7 @@ ShallowWrapper {
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11186,6 +11279,12 @@ ShallowWrapper {
           "date": 2018-06-12T00:25:57.639Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+          "date": 2018-06-13T01:24:39.777Z,
+=======
+          "date": 2018-06-12T02:35:36.911Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -11214,6 +11313,7 @@ ShallowWrapper {
           "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -11229,6 +11329,12 @@ ShallowWrapper {
           "date": 2018-06-12T00:25:57.639Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+          "date": 2018-06-13T01:24:39.777Z,
+=======
+          "date": 2018-06-12T02:35:36.911Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -11271,6 +11377,7 @@ ShallowWrapper {
             rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11286,6 +11393,12 @@ ShallowWrapper {
             selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+            selected={2018-06-13T01:24:40.913Z}
+=======
+            selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
             style={
               Object {
                 "flex": 1,
@@ -11365,6 +11478,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11380,6 +11494,12 @@ ShallowWrapper {
                     selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                    selected={2018-06-13T01:24:40.913Z}
+=======
+                    selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                     style={
                       Object {
                         "flex": 1,
@@ -11448,6 +11568,7 @@ ShallowWrapper {
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11463,6 +11584,12 @@ ShallowWrapper {
             date={2018-06-12T00:25:57.639Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+            date={2018-06-13T01:24:39.777Z}
+=======
+            date={2018-06-12T02:35:36.911Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -11485,6 +11612,7 @@ ShallowWrapper {
             confirmTextIOS="Confirm"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-13T01:24:39.777Z}
 =======
 <<<<<<< HEAD
@@ -11500,6 +11628,12 @@ ShallowWrapper {
             date={2018-06-12T00:25:57.639Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+            date={2018-06-13T01:24:39.777Z}
+=======
+            date={2018-06-12T02:35:36.911Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -11549,6 +11683,7 @@ ShallowWrapper {
             "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -11564,6 +11699,12 @@ ShallowWrapper {
             "selected": 2018-06-12T00:25:58.572Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+            "selected": 2018-06-13T01:24:40.913Z,
+=======
+            "selected": 2018-06-12T02:35:38.113Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
             "style": Object {
               "flex": 1,
             },
@@ -11647,6 +11788,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11662,6 +11804,12 @@ ShallowWrapper {
                     selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                    selected={2018-06-13T01:24:40.913Z}
+=======
+                    selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                     style={
                       Object {
                         "flex": 1,
@@ -11778,6 +11926,7 @@ ShallowWrapper {
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11793,6 +11942,12 @@ ShallowWrapper {
                     selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                    selected={2018-06-13T01:24:40.913Z}
+=======
+                    selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                     style={
                       Object {
                         "flex": 1,
@@ -11907,6 +12062,7 @@ ShallowWrapper {
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -11922,6 +12078,12 @@ ShallowWrapper {
                       selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                      selected={2018-06-13T01:24:40.913Z}
+=======
+                      selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                       style={
                         Object {
                           "flex": 1,
@@ -12024,6 +12186,7 @@ ShallowWrapper {
                         rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-13T01:24:40.913Z}
 =======
 <<<<<<< HEAD
@@ -12039,6 +12202,12 @@ ShallowWrapper {
                         selected={2018-06-12T00:25:58.572Z}
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                        selected={2018-06-13T01:24:40.913Z}
+=======
+                        selected={2018-06-12T02:35:38.113Z}
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                         style={
                           Object {
                             "flex": 1,
@@ -12092,6 +12261,7 @@ ShallowWrapper {
                         "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-13T01:24:40.913Z,
 =======
 <<<<<<< HEAD
@@ -12107,6 +12277,12 @@ ShallowWrapper {
                         "selected": 2018-06-12T00:25:58.572Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+                        "selected": 2018-06-13T01:24:40.913Z,
+=======
+                        "selected": 2018-06-12T02:35:38.113Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                         "style": Object {
                           "flex": 1,
                         },
@@ -12226,6 +12402,7 @@ ShallowWrapper {
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12241,6 +12418,12 @@ ShallowWrapper {
             "date": 2018-06-12T00:25:57.639Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+            "date": 2018-06-13T01:24:39.777Z,
+=======
+            "date": 2018-06-12T02:35:36.911Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -12269,6 +12452,7 @@ ShallowWrapper {
             "confirmTextIOS": "Confirm",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "date": 2018-06-13T01:24:39.777Z,
 =======
 <<<<<<< HEAD
@@ -12284,6 +12468,12 @@ ShallowWrapper {
             "date": 2018-06-12T00:25:57.639Z,
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+            "date": 2018-06-13T01:24:39.777Z,
+=======
+            "date": 2018-06-12T02:35:36.911Z,
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

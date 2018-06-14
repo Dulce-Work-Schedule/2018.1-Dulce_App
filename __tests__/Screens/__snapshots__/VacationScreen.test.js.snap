@@ -918,10 +918,14 @@ exports[`renders correctly 1`] = `
 =======
                     Object {},
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                   ]
                 }
               >
@@ -1315,10 +1319,14 @@ exports[`renders correctly 1`] = `
                     },
                     Object {},
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
                   ]
                 }
               >
@@ -4185,10 +4193,14 @@ exports[`renders correctly 1`] = `
 =======
               11
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
               /
               6
               /
@@ -4199,10 +4211,14 @@ exports[`renders correctly 1`] = `
 =======
               11
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 33bd1d0... FIX #425 Excluindo testes.
 =======
 >>>>>>> 615ae88... #432 Excluindo testes referentes ao hospital.
 >>>>>>> 61d48c6... #432 Excluindo testes referentes ao hospital.
+=======
+>>>>>>> 21d66de... FIX #426 excluindo mençao no navigator
+>>>>>>> d82d7c2... FIX #426 excluindo mençao no navigator
               /
               6
               /
