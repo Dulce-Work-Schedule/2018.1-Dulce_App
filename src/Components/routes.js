@@ -1,4 +1,3 @@
-import NewManager from '../Routes/NewManager';
 import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
 import Profiles from '../Routes/Profiles';
@@ -17,9 +16,6 @@ export default DrawerNavigator({
   },
   'Meu Perfil atual': {
     screen: Profile
-  },
-  'Criar Novo Gerente': {
-    screen: NewManager
   },
   'Ver Setores': {
     screen: Sectors
