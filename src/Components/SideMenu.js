@@ -83,28 +83,34 @@ export default class SideMenu extends React.Component {
     );
   }
 
+  renderDrawerHeader() {
+    return (
+      <View style={styles.header}>
+        <View style={styles.headerLogo}>
+        <Image
+          style={{width: 65, height: 65}}
+          source={require('../../assets/img/dulceHeader.png')}
+        />
+        </View>
+        <View style={styles.subTitle}>
+          <Text style={styles.drawerTitle}> dulce</Text>
+          <Text style={styles.drawerEmail}> user.dulce@gmail.com</Text>
+        </View>
+      </View>
+    );
+  }
   render() {
     return (
       <View style={styles.container}>
         <ScrollView style={{backgroundColor: purple}}>
-          <View style={styles.header}>
-            <View style={styles.headerLogo}>
-            <Image
-              style={{width: 65, height: 65}}
-              source={require('../../assets/img/dulceHeader.png')}
-            />
-            </View>
-            <View style={styles.subTitle}>
-              <Text style={styles.drawerTitle}> dulce</Text>
-              <Text style={styles.drawerEmail}> user.dulce@gmail.com</Text>
-            </View>
-          </View>
+          {this.renderDrawerHeader()}
           <View style={styles.routesContainer}>
             {this.renderRoute('Ver Escala', 'md-calendar')}
             {this.renderRoute('Notificações', 'md-notifications')}
             {this.renderRoute('Meu Perfil atual', 'md-person')}
             {this.renderRoute('Todos os perfis', 'md-list')}
             {this.renderRoute('Solicitar Férias', 'md-plane')}
+            {this.renderRoute('Solicitar Abono de Faltas', 'md-paper')}
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>

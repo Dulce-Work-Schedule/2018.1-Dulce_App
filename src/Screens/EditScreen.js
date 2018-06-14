@@ -58,7 +58,6 @@ export default class EditScreen extends ValidationComponent {
   }
   render() {
     return (
-<<<<<<< HEAD
       <Container>
         <ScreenHeader title='Editar conta' />
         <View style={styles.container}>
@@ -76,30 +75,6 @@ export default class EditScreen extends ValidationComponent {
           style = {styles.button}
         />
       </Container>
-=======
-      <View style={styles.container}>
-      <ScreenHeader title='Editar Perfil' icon='arrow-back'/>
-        <ScrollView>
-          <SmallLogo/>
-          <AGRInput style={styles.input} value = {this.state.name} editable = {false} nameLabel='Nome'/>
-          {this.isFieldInError('name') && this.getErrorsInField('name').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} value = {this.state.registration} editable = {false}
-            placeholder='Matricula' nameLabel='Matrícula'/>
-          <AGRInput value = {this.state.hospital} style={styles.input} editable = {this.state.editable}
-            nameLabel='Hospital' onChangeText={(text) => this.setState({hospital: text})}/>
-          {this.isFieldInError('hospital') && this.getErrorsInField('hospital').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} value = {this.state.sector} editable = {this.state.editable}
-            nameLabel='setor' onChangeText={(text) => this.setState({sector: text})}/>
-          {this.isFieldInError('sector') && this.getErrorsInField('sector').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <AGRInput style={styles.input} editable = {this.state.editable} nameLabel='Editar senha'
-            secureTextEntry onChangeText={(text) => this.setState({password: text})}/>
-          {this.isFieldInError('password') && this.getErrorsInField('password').map(errorMessage => <Text style={styles.error}>{errorMessage}</Text>) }
-          <View style={styles.alinhar}>
-            <AGRButton style={styles.button} text='Salvar' onPress={() => {this.save(); this._onPressButton();} }/>
-          </View>
-        </ScrollView>
-      </View>
->>>>>>> 9930bc4... #386 Adicionando botões nas telas
     );
   }
 }
