@@ -4,18 +4,18 @@ import InitialScreen from '../Screens/InitialScreen';
 import {StackNavigator} from 'react-navigation';
 
 const routes = {
-  // login: {
-  //   screen: LoginScreen,
-  //   navigationOptions: {
-  //     header: null
-  //   }
-  // },
-  // newUser: {
-  //   screen: NewUser,
-  //   navigationOptions: {
-  //     header: null
-  //   }
-  // },
+  login: {
+    screen: LoginScreen,
+    navigationOptions: {
+      header: null
+    }
+  },
+  newUser: {
+    screen: NewUser,
+    navigationOptions: {
+      header: null
+    }
+  },
   initial: {
     screen: InitialScreen,
     navigationOptions: {

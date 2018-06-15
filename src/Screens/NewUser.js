@@ -4,7 +4,6 @@ import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
 import {Container} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
-import SideBar from '../Components/SideBar';
 
 const styles = {
   container: {
@@ -94,27 +93,24 @@ class NewUser extends React.Component {
   render() {
 
     return (
-      <View style={{flexDirection: 'row', flex: 1}}>
-        <SideBar />
-        <Container style={{backgroundColor: '#FFF', flex: 8}}>
-          <ScreenHeader title = 'Criar nova conta' />
-          <View style={styles.container}>
-            <Form
-              ref='form'
-              type={this.Service}
-              value={this.state.value}
-              options={this.options}
-              onChange={(v) => this.onChange(v)}
-            />
-          </View>
-          <View style={{flex: 1}}>
-            <SignUpButton
-              text = 'Cadastrar'
-              onPress = {(v) => this._onPress(v)}
-            />
-          </View>
-        </Container>
-      </View>
+      <Container style={{backgroundColor: '#FFF'}}>
+        <ScreenHeader title = 'Criar nova conta'/>
+        <View style={styles.container}>
+          <Form
+            ref='form'
+            type={this.Service}
+            value={this.state.value}
+            options={this.options}
+            onChange={(v) => this.onChange(v)}
+          />
+        </View>
+        <View style={{flex: 1}}>
+          <SignUpButton
+            text = 'Cadastrar'
+            onPress = {(v) => this._onPress(v)}
+          />
+        </View>
+      </Container>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Left, Body, Button, Icon, Title} from 'native-base';
+import {Header, Body, Title} from 'native-base';
 import {StatusBar} from 'react-native';
 
 const styles = {
