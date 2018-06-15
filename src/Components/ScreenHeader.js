@@ -18,13 +18,9 @@ class ScreenHeader extends React.Component {
         <StatusBar
             backgroundColor='#5f4b79'
         />
-          <Left style={{flexDirection: 'row', alignItems: 'center'}}>
-            <Button transparent>
-            <Icon name={this.props.icon} />
-            </Button>
+          <Body>
             <Title style={styles.text} > {this.props.title} </Title>
-            </Left>
-          <Body />
+          </Body>
         </Header>
     );
   }

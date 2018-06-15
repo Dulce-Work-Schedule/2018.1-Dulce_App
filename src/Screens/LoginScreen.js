@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Image, Alert ,Text} from 'react-native';
+import {Image, Alert ,Text, View} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import GoogleButton from '../Components/GoogleButton';
@@ -9,12 +9,13 @@ import {actionLogin} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
 import {Container ,Button} from 'native-base';
 import {StatusBar} from 'react-native';
+import SideBar from '../Components/SideBar';
 
 const logo = require('../../assets/img/logo.png');
 
 const styles = {
   container: {
-    flex: 1,
+    flex: 8,
     flexDirection: 'column',
     padding: 15,
     backgroundColor: '#FFF'
@@ -102,28 +103,31 @@ export class LoginScreen extends React.Component {
 
   render() {
     return (
-      <Container style={styles.container}>
-      <StatusBar backgroundColor='#5f4b79' />
-        <Image source={logo} style={styles.logo} />
-        <AGRInput
-          autoCapitalize='none'
-          nameLabel='Email'
-          onChangeText={(registration) => this.setState({registration})}
-        />
-        <AGRInput
-          nameLabel='Senha'
-          secureTextEntry
-          onChangeText={(password) => this.setState({password})}
-        />
-        <AGRButton
-          onPress={this._onPressButton}
-          text='Entrar'
-        />
-        <GoogleButton/>
-        <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
-          <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
-        </Button>
-      </Container>
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <Container style={styles.container}>
+        <StatusBar backgroundColor='#5f4b79' />
+          <Image source={logo} style={styles.logo} />
+          <AGRInput
+            autoCapitalize='none'
+            nameLabel='Email'
+            onChangeText={(registration) => this.setState({registration})}
+          />
+          <AGRInput
+            nameLabel='Senha'
+            secureTextEntry
+            onChangeText={(password) => this.setState({password})}
+          />
+          <AGRButton
+            onPress={this._onPressButton}
+            text='Entrar'
+          />
+          <GoogleButton/>
+          <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
+            <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
+          </Button>
+        </Container>
+      </View>
     );
 
   }

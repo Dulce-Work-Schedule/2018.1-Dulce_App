@@ -6,8 +6,10 @@ import axios from 'axios';
 import store from '../Reducers/store';
 import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
+import SideBar from '../Components/SideBar';
 import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
+
 const styles = StyleSheet.create({
   item: {
     backgroundColor: 'white',
@@ -279,14 +281,18 @@ export default class WeekSchedule extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
-        <ScreenHeader
-          title='Escalas'
-          icon='menu'
-        />
-        {this.renderAgenda(this.renderItem)}
-        {this.renderModal()}
-        {this.timePicker()}
-        {this.finalPicker()}
-      </View>);}
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <View style={{flex: 8}}>
+          <ScreenHeader
+            title='Escalas'
+          />
+          {this.renderAgenda(this.renderItem)}
+          {this.renderModal()}
+          {this.timePicker()}
+          {this.finalPicker()}
+        </View>
+      </View>
+    );
+  }
 }

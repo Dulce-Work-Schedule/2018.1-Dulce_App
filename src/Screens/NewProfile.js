@@ -3,6 +3,7 @@ import {View,Text, Picker} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
 import {Container} from 'native-base';
+import SideBar from '../Components/SideBar';
 import SignUpButton from '../Components/SignUpButton';
 
 const styles = {
@@ -106,26 +107,29 @@ class NewProfile extends React.Component {
   render() {
 
     return (
-      <Container style={{backgroundColor: '#FFF'}}>
-        <ScreenHeader title = 'Criar novo perfil' icon='arrow-back' />
-        <View style={styles.container}>
-          <Form
-            ref='form'
-            type={this.Service}
-            value={this.state.value}
-            options={this.options}
-            onChange={(v) => this.onChange(v)}
-          />
-        </View>
-        <Text style={styles.text}> Selecione o tipo de Funcionário que deseja criar </Text>
-        {this.pickerButton()}
-        <View style={{flex: 1}}>
-          <SignUpButton
-            text = 'Cadastrar'
-            onPress = {() => {}}
-          />
-        </View>
-      </Container>
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <Container style={{backgroundColor: '#FFF', flex: 8}}>
+          <ScreenHeader title = 'Criar novo perfil' />
+          <View style={styles.container}>
+            <Form
+              ref='form'
+              type={this.Service}
+              value={this.state.value}
+              options={this.options}
+              onChange={(v) => this.onChange(v)}
+            />
+          </View>
+          <Text style={styles.text}> Selecione o tipo de Funcionário que deseja criar </Text>
+          {this.pickerButton()}
+          <View style={{flex: 1}}>
+            <SignUpButton
+              text = 'Cadastrar'
+              onPress = {() => {}}
+            />
+          </View>
+        </Container>
+      </View>
     );
   }
 }

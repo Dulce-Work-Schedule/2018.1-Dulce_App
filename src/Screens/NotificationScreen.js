@@ -3,6 +3,7 @@ import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
+import SideBar from '../Components/SideBar';
 
 const styles = {
   view1: {
@@ -98,19 +99,21 @@ export default class NotificationScreen extends Component {
 
   render() {
     return (
-      <Container>
-        <ScreenHeader
-          title = 'Notificações'
-          icon='arrow-back'
-        />
-        <Content>
-          <List dataArray={this.state.notifications}
-            renderRow={(item) => (
-              this.renderCard(item)
-              )
-            } />
-        </Content>
-      </Container>
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <Container style={{flex: 8}}>
+          <ScreenHeader
+            title = 'Notificações'
+          />
+          <Content>
+            <List dataArray={this.state.notifications}
+              renderRow={(item) => (
+                this.renderCard(item)
+                )
+              } />
+          </Content>
+        </Container>
+      </View>
     );
   }
 }

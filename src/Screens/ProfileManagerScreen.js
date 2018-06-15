@@ -6,10 +6,11 @@ import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
+import SideBar from '../Components/SideBar';
 
 const styles = {
   container: {
-    flex: 1,
+    flex: 8,
     flexDirection: 'column',
     backgroundColor: '#FFF'
 
@@ -58,27 +59,30 @@ class ProfileManagerScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
-        {
-          this.state.loading ? (
-            <Container>
-              <Content>
-                <Spinner color='#5f4b8b'/>
-              </Content>
-            </Container>
-          ) : (
-            <View style={styles.informacoes}>
-              <SmallLogo />
-              <Text style={styles.name}>{this.state.profile.name}</Text>
-              <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
-              <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
-              <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
-              <View style={{marginTop: 60}} />
-              <AGRButton text='Editar'onPress = {() => this.navigateToEditScreen()}/>
-            </View>
-          )
-        }
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <View style={styles.container}>
+          <ScreenHeader title='Meu Perfil' />
+          {
+            this.state.loading ? (
+              <Container>
+                <Content>
+                  <Spinner color='#5f4b8b'/>
+                </Content>
+              </Container>
+            ) : (
+              <View style={styles.informacoes}>
+                <SmallLogo />
+                <Text style={styles.name}>{this.state.profile.name}</Text>
+                <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
+                <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
+                <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
+                <View style={{marginTop: 60}} />
+                <AGRButton text='Editar'onPress = {() => this.navigateToEditScreen()}/>
+              </View>
+            )
+          }
+        </View>
       </View>
     );
   }
