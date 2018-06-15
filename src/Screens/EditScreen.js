@@ -7,6 +7,8 @@ import ValidationComponent from 'react-native-form-validator';
 import {Container} from 'native-base';
 import t from 'tcomb-form-native';
 import SignUpButton from '../Components/SignUpButton';
+import SideBar from '../Components/SideBar';
+
 
 const Form = t.form.Form;
 
@@ -58,23 +60,26 @@ export default class EditScreen extends ValidationComponent {
   }
   render() {
     return (
-      <Container>
-        <ScreenHeader title='Editar conta' />
-        <View style={styles.container}>
-          <Form
-            ref='form'
-            options={this.options}
-            value={this.state.value}
-            type={this.Service}
-            onChange={(v) => this.onChange(v)}
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <Container style={{flex: 8}}>
+          <ScreenHeader title='Editar conta' />
+          <View style={styles.container}>
+            <Form
+              ref='form'
+              options={this.options}
+              value={this.state.value}
+              type={this.Service}
+              onChange={(v) => this.onChange(v)}
+            />
+          </View>
+          <SignUpButton
+            text = 'Editar'
+            onPress = {() => {}}
+            style = {styles.button}
           />
-        </View>
-        <SignUpButton
-          text = 'Editar'
-          onPress = {() => {}}
-          style = {styles.button}
-        />
-      </Container>
+        </Container>
+      </View>
     );
   }
 }

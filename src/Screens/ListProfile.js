@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
+import SideBar from '../Components/SideBar';
+
 
 const styles = {
   center: {
@@ -69,18 +71,21 @@ export default class ListProfile extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
-        <Container>
-          <ScreenHeader
-            title = 'Perfis'
-            icon='arrow-back'/>
-          <Content>
-            <List dataArray={this.state.notifications}
-              renderRow={(item) => (
-                this.renderCard(item))} />
-          </Content>
-        </Container>
-        {this.fab()}
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <View style={{flex: 8}}>
+          <Container>
+            <ScreenHeader
+              title = 'Perfis'
+            />
+            <Content>
+              <List dataArray={this.state.notifications}
+                renderRow={(item) => (
+                  this.renderCard(item))} />
+            </Content>
+          </Container>
+          {this.fab()}
+        </View>
       </View>
     );
   }

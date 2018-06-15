@@ -2328,10 +2328,6 @@ exports[`renders correctly 1`] = `
                         "fontWeight": "300",
                         "marginTop": 7,
                       },
-                      Object {
-                        "color": "#2d4150",
-                        "fontWeight": "500",
-                      },
                       Object {},
                     ]
                   }
@@ -2434,6 +2430,10 @@ exports[`renders correctly 1`] = `
                         "fontSize": 16,
                         "fontWeight": "300",
                         "marginTop": 7,
+                      },
+                      Object {
+                        "color": "#2d4150",
+                        "fontWeight": "500",
                       },
                       Object {},
                     ]
@@ -4090,13 +4090,13 @@ exports[`renders correctly 1`] = `
               uppercase={false}
               virtual={undefined}
             >
-              14
+              15
               /
               6
               /
               2018
                até 
-              14
+              15
               /
               6
               /

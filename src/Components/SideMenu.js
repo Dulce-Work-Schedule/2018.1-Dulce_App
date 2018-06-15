@@ -40,7 +40,7 @@ const styles = {
     fontSize: 14
   },
   container: {
-    flex: 1
+    flex: 8
   },
   navItemStyle: {
     padding: 10,
@@ -101,21 +101,26 @@ export default class SideMenu extends React.Component {
   }
   render() {
     return (
-      <View style={styles.container}>
-        <ScrollView style={{backgroundColor: purple}}>
-          {this.renderDrawerHeader()}
-          <View style={styles.routesContainer}>
-            {this.renderRoute('Ver Escala', 'md-calendar')}
-            {this.renderRoute('Notificações', 'md-notifications')}
-            {this.renderRoute('Meu Perfil atual', 'md-person')}
-            {this.renderRoute('Todos os perfis', 'md-list')}
-            {this.renderRoute('Solicitar Férias', 'md-plane')}
-            {this.renderRoute('Solicitar Abono de Faltas', 'md-paper')}
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <View style={styles.container}>
+          <ScrollView style={{backgroundColor: purple}}>
+            {this.renderDrawerHeader()}
+            <View style={styles.routesContainer}>
+              {this.renderRoute('Ver Escala', 'md-calendar')}
+              {this.renderRoute('Notificações', 'md-notifications')}
+              {this.renderRoute('Meu Perfil atual', 'md-person')}
+              {this.renderRoute('Todos os perfis', 'md-list')}
+              {this.renderRoute('Solicitar Férias', 'md-plane')}
+              {this.renderRoute('Solicitar Abono de Faltas', 'md-paper')}
+            </View>
+          </ScrollView>
+          <View style={styles.footerContainer}>
+            <Icon name='md-exit' size={30} color='#fff' style={{paddingHorizontal: 15}} />
+            <Text onPress={this.navigateToScreen('Logout')} style={{color: '#fff'}}>Logout</Text>
           </View>
-        </ScrollView>
-        <View style={styles.footerContainer}>
-          <Icon name='md-exit' size={30} color='#fff' style={{paddingHorizontal: 15}} />
-          <Text onPress={this.navigateToScreen('Logout')} style={{color: '#fff'}}>Logout</Text>
+        </View>
+        <View style={{flex: 0.35, backgroundColor: '#fd7d01', alignItems: 'center', justifyContent: 'center'}}>
+          <View style={{backgroundColor: '#f1f1f1', alignItems: 'center', margin: 1, borderRadius: 5, width: 7.5, height: 40}} />
         </View>
       </View>
     );

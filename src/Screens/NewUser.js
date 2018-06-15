@@ -94,7 +94,7 @@ class NewUser extends React.Component {
 
     return (
       <Container style={{backgroundColor: '#FFF'}}>
-        <ScreenHeader title = 'Criar nova conta' icon='arrow-back'/>
+        <ScreenHeader title = 'Criar nova conta'/>
         <View style={styles.container}>
           <Form
             ref='form'
