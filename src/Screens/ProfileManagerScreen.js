@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View,Alert} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
@@ -109,11 +109,12 @@ class ProfileManagerScreen extends React.Component {
             <IconButton 
             Icon = 'edit'
             text = 'Editar'
-            onPress = {this.navigateToEditScreen()}
+            onPress={() => this.navigateToEditScreen()}
             />
             <IconButton 
             Icon = 'clear'
             text = 'Excluir conta'
+            onPress={() => this._alert()}
             />
             </View>
            </View>

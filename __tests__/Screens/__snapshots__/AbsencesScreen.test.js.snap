@@ -1891,8 +1891,46 @@ exports[`renders correctly 1`] = `
                           "width": 38,
                         },
                         Object {
+<<<<<<< HEAD
                           "borderRadius": 17,
                         },
+=======
+                          "backgroundColor": undefined,
+                        },
+                      ]
+                    }
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "height": 34,
+                        "width": 38,
+                      },
+                      Object {
+                        "borderRadius": 17,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "rgba(255, 255, 255, 0)",
+                          "color": "#2d4150",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                          "fontWeight": "300",
+                          "marginTop": 7,
+                        },
+                        Object {},
+>>>>>>> b5f447a... #418 testes
                       ]
                     }
                   >
@@ -2007,6 +2045,14 @@ exports[`renders correctly 1`] = `
                         Object {
                           "borderRadius": 17,
                         },
+<<<<<<< HEAD
+=======
+                        Object {
+                          "color": "#2d4150",
+                          "fontWeight": "500",
+                        },
+                        Object {},
+>>>>>>> b5f447a... #418 testes
                       ]
                     }
                   >
@@ -4165,6 +4211,53 @@ exports[`renders correctly 1`] = `
                   "paddingRight": 15,
                   "paddingTop": 15,
                 }
+<<<<<<< HEAD
+=======
+                uppercase={false}
+                virtual={undefined}
+              >
+                15
+                /
+                6
+                /
+                2018
+                 até 
+                15
+                /
+                6
+                /
+                2018
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "borderRadius": 2,
+                "flexDirection": "row",
+                "paddingBottom": 10,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 10,
+              }
+            }
+            virtual={undefined}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "alignSelf": "stretch",
+                    "flex": 1,
+                  },
+                  Object {
+                    "flexDirection": "row",
+                  },
+                ]
+>>>>>>> b5f447a... #418 testes
               }
               virtual={undefined}
             >

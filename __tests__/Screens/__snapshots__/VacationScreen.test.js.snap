@@ -1684,9 +1684,13 @@ exports[`renders correctly 1`] = `
                           "height": 34,
                           "width": 38,
                         },
+<<<<<<< HEAD
                         Object {
                           "borderRadius": 17,
                         },
+=======
+                        Object {},
+>>>>>>> b5f447a... #418 testes
                       ]
                     }
                   >
@@ -1790,6 +1794,14 @@ exports[`renders correctly 1`] = `
                         Object {
                           "borderRadius": 17,
                         },
+<<<<<<< HEAD
+=======
+                        Object {
+                          "color": "#2d4150",
+                          "fontWeight": "500",
+                        },
+                        Object {},
+>>>>>>> b5f447a... #418 testes
                       ]
                     }
                   >
@@ -4177,6 +4189,7 @@ exports[`renders correctly 1`] = `
                   }
                 }
               >
+<<<<<<< HEAD
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -4211,6 +4224,20 @@ exports[`renders correctly 1`] = `
                   2018
                 </Text>
               </View>
+=======
+                15
+                /
+                6
+                /
+                2018
+                 até 
+                15
+                /
+                6
+                /
+                2018
+              </Text>
+>>>>>>> b5f447a... #418 testes
             </View>
             <View />
             <View
