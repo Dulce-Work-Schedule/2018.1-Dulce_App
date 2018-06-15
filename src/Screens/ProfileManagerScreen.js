@@ -57,6 +57,16 @@ class ProfileManagerScreen extends React.Component {
     this.props.navigation.navigate('edit');
   }
 
+  renderSpinner() {
+    return (
+      <Container>
+        <Content>
+          <Spinner color='#5f4b8b'/>
+        </Content>
+      </Container>
+    );
+  }
+
   render() {
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
@@ -65,11 +75,7 @@ class ProfileManagerScreen extends React.Component {
           <ScreenHeader title='Meu Perfil' />
           {
             this.state.loading ? (
-              <Container>
-                <Content>
-                  <Spinner color='#5f4b8b'/>
-                </Content>
-              </Container>
+              this.renderSpinner()
             ) : (
               <View style={styles.informacoes}>
                 <SmallLogo />
