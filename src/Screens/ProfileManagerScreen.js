@@ -1,13 +1,17 @@
 import React from 'react';
-import {View , Text} from 'react-native';
-import AGRButton from '../Components/AGRButton';
+import {View} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
+<<<<<<< HEAD
 import SideBar from '../Components/SideBar';
 
+=======
+import {Card , CardItem , Body, Text} from 'native-base';
+import IconButton from '../Components/IconButton';
+>>>>>>> eeb080c... #418 começando refatoraçao da profileManagerScreen
 const styles = {
   container: {
     flex: 8,
@@ -17,8 +21,7 @@ const styles = {
   },
   text: {
     fontSize: 20,
-    marginBottom: 15,
-    alignSelf: 'center'
+    marginBottom: 15
   },
   name: {
     fontSize: 30,
@@ -26,7 +29,8 @@ const styles = {
     alignSelf: 'center'
   },
   informacoes: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginRight: 100
   }
 };
 
@@ -71,24 +75,51 @@ class ProfileManagerScreen extends React.Component {
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
         <SideBar />
-        <View style={styles.container}>
-          <ScreenHeader title='Meu Perfil' />
-          {
-            this.state.loading ? (
-              this.renderSpinner()
-            ) : (
-              <View style={styles.informacoes}>
-                <SmallLogo />
-                <Text style={styles.name}>{this.state.profile.name}</Text>
-                <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
-                <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
-                <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
-                <View style={{marginTop: 60}} />
-                <AGRButton text='Editar'onPress = {() => this.navigateToEditScreen()}/>
-              </View>
-            )
-          }
-        </View>
+      <View style={styles.container}>
+        <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
+        {
+          this.state.loading ? (
+            this.renderSpinner()
+          ) : (
+            <View style={{flex: 1}}>
+            <View style={{flex: 1}}>
+            <SmallLogo />
+             <Container>
+              <Content>
+                <Card>
+                  <CardItem>
+                    <Body>
+                      <Text style={styles.text}>
+                         Nome:{'\t'}{'\t'}{this.state.profile.name}
+                      </Text>
+                    </Body>
+                  </CardItem>
+                  <CardItem>
+                    <Body>
+                      <Text style={styles.text}>
+                         Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com
+                      </Text>
+                    </Body>
+                  </CardItem>
+                </Card>
+              </Content>
+            </Container>
+            </View>
+            <View style={{flex:1,alignContent: 'space-between',flexDirection: 'row'}}>
+            <IconButton 
+            Icon = 'edit'
+            text = 'Editar'
+            onPress = {this.navigateToEditScreen()}
+            />
+            <IconButton 
+            Icon = 'clear'
+            text = 'Excluir conta'
+            />
+            </View>
+           </View>
+          )
+        }
+      </View>
       </View>
     );
   }
