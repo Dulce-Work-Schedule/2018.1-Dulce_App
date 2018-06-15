@@ -23,7 +23,7 @@ export default class EditScreen extends ValidationComponent {
       confirmarSenha: t.String
     });
     this.state = {
-      value: default_state,
+      value: {},
       profile: {},
       loading: true
     };
@@ -35,16 +35,22 @@ export default class EditScreen extends ValidationComponent {
 
   componentDidMount() {
     this.setState({loading: true});
-    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=5b230757b27c31001d178b3f'; //+ store.getState().currentUser.id;
+    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=' + store.getState().currentUser.id;
     console.log(url);
     console.log(store.getState().currentUser.token);
     axios.get(url,{
       headers: {
-        'x-access-token': store.getState().currentUser.token
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
       }
     })
     .then((response) => {
-      this.setState({profile: response.data , loading: false});
+      const default_state = {
+        nome: response.data.name,
+        email: response.data.registration,
+        senha: '',
+        confirmarSenha: ''
+      };
+      this.setState({profile: response.data, value: default_state , loading: false});
       console.log(this.state.profile);
     });
   }
@@ -113,11 +119,4 @@ const default_field_options = {
     secureTextEntry: true,
     error: 'Campo obrigatório'
   }
-};
-
-const default_state = {
-  nome: 'Testando o',
-  email: 'valor inicial',
-  senha: '',
-  confirmarSenha: ''
 };
