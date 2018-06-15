@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Image} from 'react-native';
-const logo = require('../../assets/img/DulceHorizontalFull.png');
+const logo = require('../../assets/img/logo.png');
 
 const styles = {
   logo: {
