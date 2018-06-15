@@ -1,6 +1,6 @@
 import {editScreen as styles} from './styles' ;
 import React from 'react';
-import {View} from 'react-native';
+import {View, Alert} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidationComponent from 'react-native-form-validator';
 import store from '../Reducers/store';
@@ -24,7 +24,11 @@ export default class EditScreen extends ValidationComponent {
     });
     this.state = {
       value: {},
-      profile: {},
+      profile: {
+        name: '',
+        registration: '',
+        password: ''
+      },
       loading: true
     };
     this.options = {
@@ -35,7 +39,7 @@ export default class EditScreen extends ValidationComponent {
 
   componentDidMount() {
     this.setState({loading: true});
-    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=' + store.getState().currentUser.id;
+    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=5b230757b27c31001d178b3f'; //+ store.getState().currentUser.id;
     console.log(url);
     console.log(store.getState().currentUser.token);
     axios.get(url,{
@@ -57,6 +61,36 @@ export default class EditScreen extends ValidationComponent {
 
   onChange(value) {
     this.setState({value});
+  }
+
+  edit() {
+    const url = 'http://18.231.9.190:8083/api/userManager/editUser/?id=5b230757b27c31001d178b3f'; //+ store.getState().currentUser.id;
+    console.log(url);
+    console.log(store.getState().currentUser.token);
+    this.setProfile();
+    axios.put(url,{
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      },
+      data: this.state.profile
+    })
+    .then((response) => {
+      console.log(response.data);
+      Alert.alert(
+        'Sua conta foi editada com sucesso!',
+        {text: 'ok', onPress: () => { this.props.navigation.navigate('profile'); }}
+      );
+    });
+  }
+
+  setProfile() {
+    this.setState({
+      profile: {
+        name: this.state.value.nome,
+        registration: this.state.value.email,
+        password: this.state.value.password
+      }
+    });
   }
   render() {
     const {goBack} = this.props.navigation;
@@ -85,7 +119,7 @@ export default class EditScreen extends ValidationComponent {
               </View>
               <IconButton
                 text = 'Editar'
-                onPress = {() => {}}
+                onPress = {() => {this.edit()}}
                 style = {styles.button}
               />
           </Container>
