@@ -157,7 +157,7 @@ export default class Absences extends React.Component {
             ? this.renderPhotoPicker()
             : <View/>}
             <CardItem footer bordered>
-                <AGRButton style={styles.button} onPress={() => {}} text='Selecionar' />
+                <AGRButton style={styles.button} onPress={() => {}} text='Solicitar' />
             </CardItem>
         </Card>
     );
