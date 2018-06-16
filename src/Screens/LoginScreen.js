@@ -58,7 +58,7 @@ export class LoginScreen extends React.Component {
 
   alert() {
     Toast.show({
-      text: 'Funcionalidade não disponivel'})
+      text: 'Funcionalidade não disponivel'});
   }
   resetNavigation(targetRoute) {
     const resetAction = NavigationActions.reset({
