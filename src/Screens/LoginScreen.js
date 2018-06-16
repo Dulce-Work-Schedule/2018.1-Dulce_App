@@ -7,7 +7,7 @@ import GoogleButton from '../Components/GoogleButton';
 import axios from 'axios';
 import {actionLogin} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
-import {Container ,Button} from 'native-base';
+import {Container ,Button, Toast,Content} from 'native-base';
 import {StatusBar} from 'react-native';
 
 const logo = require('../../assets/img/logo.png');
@@ -45,15 +45,21 @@ const styles = {
 
 export class LoginScreen extends React.Component {
 
+
   constructor(props) {
     super(props);
     this.state = {
       registration: '',
-      password: ''
+      password: '',
+      showToast: false
     };
     this._onPressButton = this._onPressButton.bind(this);
   }
 
+  alert() {
+    Toast.show({
+      text: 'Funcionalidade não disponivel'});
+  }
   resetNavigation(targetRoute) {
     const resetAction = NavigationActions.reset({
       index: 0,
@@ -103,23 +109,22 @@ export class LoginScreen extends React.Component {
   render() {
     return (
       <Container style={styles.container}>
-      <StatusBar backgroundColor='#5f4b79' />
+        <StatusBar backgroundColor='#5f4b79' />
         <Image source={logo} style={styles.logo} />
         <AGRInput
           autoCapitalize='none'
           nameLabel='Email'
-          onChangeText={(registration) => this.setState({registration})}
-        />
+          onChangeText={(registration) => this.setState({registration})}/>
         <AGRInput
           nameLabel='Senha'
           secureTextEntry
-          onChangeText={(password) => this.setState({password})}
-        />
+          onChangeText={(password) => this.setState({password})}/>
         <AGRButton
           onPress={this._onPressButton}
-          text='Entrar'
-        />
-        <GoogleButton/>
+          text='Entrar'/>
+        <Content padder>
+          <GoogleButton onPress={() => this.alert()}/>
+        </Content>
         <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
           <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
         </Button>

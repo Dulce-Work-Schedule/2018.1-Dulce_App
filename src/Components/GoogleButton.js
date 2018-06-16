@@ -24,11 +24,16 @@ const styles = {
 };
 
 class GoogleButton extends React.Component {
+
   render() {
     return (
       <Container>
         <Content>
-          <Button rounded bordered style={styles.container} iconLeft>
+          <Button
+            rounded bordered iconLeft
+            style={styles.container}
+            onPress={() => this.props.onPress()}
+          >
             <Image style = {styles.img} source={require('../../assets/img/google.png')} />
             <Text style = {styles.text}> Entrar com Google</Text>
           </Button>
