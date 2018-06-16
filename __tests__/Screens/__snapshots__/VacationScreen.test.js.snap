@@ -1861,9 +1861,13 @@ exports[`renders correctly 1`] = `
                           "position": "absolute",
                           "right": 0,
                         },
+<<<<<<< HEAD
                         Object {
                           "backgroundColor": undefined,
                         },
+=======
+                        Object {},
+>>>>>>> e919b53... #418 atualizando requisiçoes
                       ]
                     }
                   >
@@ -2081,6 +2085,14 @@ exports[`renders correctly 1`] = `
                         Object {
                           "backgroundColor": undefined,
                         },
+<<<<<<< HEAD
+=======
+                        Object {
+                          "color": "#2d4150",
+                          "fontWeight": "500",
+                        },
+                        Object {},
+>>>>>>> e919b53... #418 atualizando requisiçoes
                       ]
                     }
                   >
@@ -4190,6 +4202,7 @@ exports[`renders correctly 1`] = `
                 }
               >
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -4226,12 +4239,15 @@ exports[`renders correctly 1`] = `
               </View>
 =======
                 15
+=======
+                16
+>>>>>>> e919b53... #418 atualizando requisiçoes
                 /
                 6
                 /
                 2018
                  até 
-                15
+                16
                 /
                 6
                 /

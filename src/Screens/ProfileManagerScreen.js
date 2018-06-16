@@ -1,13 +1,17 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View, Alert } from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Content, Spinner} from 'native-base';
+import { Container, Content, Spinner } from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
+<<<<<<< HEAD
 import SideBar from '../Components/SideBar';
 import {Card , CardItem , Body, Text} from 'native-base';
 import {Text} from 'native-base';
+=======
+import { Card, CardItem, Body, Text } from 'native-base';
+>>>>>>> e919b53... #418 atualizando requisiçoes
 import IconButton from '../Components/IconButton';
 const styles = {
   container: {
@@ -36,29 +40,34 @@ class ProfileManagerScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: [],
-      loading: false
+      profile: {},
+      loading: true
     };
   }
 
   componentDidMount() {
     this.setState({loading: true});
-
-    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=' + store.getState().currentUser.id;
-
+    const url = 'http://18.231.9.190:8083/api/userManager/listByid/?id=' + store.getState().currentUser.id;
+    console.log(url);
+    console.log(store.getState().currentUser.token);
     axios.get(url,{
-
       headers: {
-        'x-access-token': store.getState().currentUser.token
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
       }
-
     })
-      .then((response) => {this.setState({profile: response.data , loading: false});});
+    .then((response) => {
+      this.setState({profile: response.data, loading: false});
+    })
+    .catch(() => {
+      Alert.alert(
+        'Erro',
+        'Verifique sua conexão.');
+    });
   }
+
   navigateToEditScreen() {
     this.props.navigation.navigate('edit');
   }
-
   renderSpinner() {
     return (
       <Container>
@@ -72,7 +81,7 @@ class ProfileManagerScreen extends React.Component {
   render() {
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
-        <SideBar />
+      <SideBar />
       <View style={styles.container}>
         <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
         {
@@ -108,6 +117,5 @@ class ProfileManagerScreen extends React.Component {
       </View>
     );
   }
-}
 
-export default ProfileManagerScreen;
+  export default ProfileManagerScreen;

@@ -2051,6 +2051,10 @@ exports[`renders correctly 1`] = `
                           "color": "#2d4150",
                           "fontWeight": "500",
                         },
+                        Object {
+                          "color": "#2d4150",
+                          "fontWeight": "500",
+                        },
                         Object {},
 >>>>>>> b5f447a... #418 testes
                       ]
@@ -4216,13 +4220,13 @@ exports[`renders correctly 1`] = `
                 uppercase={false}
                 virtual={undefined}
               >
-                15
+                16
                 /
                 6
                 /
                 2018
                  até 
-                15
+                16
                 /
                 6
                 /
