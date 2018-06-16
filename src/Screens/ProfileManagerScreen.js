@@ -1,17 +1,14 @@
 import React from 'react';
-import {View,Alert} from 'react-native';
+import {View} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
-<<<<<<< HEAD
 import SideBar from '../Components/SideBar';
-
-=======
 import {Card , CardItem , Body, Text} from 'native-base';
+import {Text} from 'native-base';
 import IconButton from '../Components/IconButton';
->>>>>>> eeb080c... #418 começando refatoraçao da profileManagerScreen
 const styles = {
   container: {
     flex: 8,
@@ -21,7 +18,8 @@ const styles = {
   },
   text: {
     fontSize: 20,
-    marginBottom: 15
+    marginBottom: 15,
+    alignSelf: 'center'
   },
   name: {
     fontSize: 30,
@@ -39,7 +37,7 @@ class ProfileManagerScreen extends React.Component {
     super(props);
     this.state = {
       profile: [],
-      loading: true
+      loading: false
     };
   }
 
@@ -84,37 +82,23 @@ class ProfileManagerScreen extends React.Component {
             <View style={{flex: 1}}>
             <View style={{flex: 1}}>
             <SmallLogo />
-             <Container>
-              <Content>
-                <Card>
-                  <CardItem>
-                    <Body>
-                      <Text style={styles.text}>
-                         Nome:{'\t'}{'\t'}{this.state.profile.name}
-                      </Text>
-                    </Body>
-                  </CardItem>
-                  <CardItem>
-                    <Body>
-                      <Text style={styles.text}>
-                         Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com
-                      </Text>
-                    </Body>
-                  </CardItem>
-                </Card>
-              </Content>
-            </Container>
+              <Text style={styles.text}>
+               Nome:{'\t'}{'\t'}{this.state.profile.name}
+              </Text>
+              <Text style={styles.text}>
+               Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com
+              </Text>
             </View>
-            <View style={{flex:1,alignContent: 'space-between',flexDirection: 'row'}}>
-            <IconButton 
+            <View style={{flex: 1 ,alignContent: 'space-between',flexDirection: 'row'}}>
+            <IconButton
             Icon = 'edit'
             text = 'Editar'
             onPress={() => this.navigateToEditScreen()}
             />
-            <IconButton 
+            <IconButton
             Icon = 'clear'
             text = 'Excluir conta'
-            onPress={() => this._alert()}
+            onPress={() => {}}
             />
             </View>
            </View>

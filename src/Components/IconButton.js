@@ -1,25 +1,31 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {Container, Content, Button,Icon} from 'native-base';
+import {Text, Container, Content, Button,Icon} from 'native-base';
 
 const styles = {
   container: {
-    //backgroundColor: '#5f4b8b',
+    backgroundColor: '#5f4b8b',
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
-    paddingHorizontal: 50,
+    paddingHorizontal: 20,
     alignSelf: 'center',
     marginBottom: 0,
     width: 170,
     borderColor: '#5f4b8b'
   },
   text: {
-    color: '#5f4b8b',
-    fontSize: 20,
+    marginLeft: 35,
+    color: '#ffffff',
+    fontSize: 15,
     fontFamily: 'Raleway',
     alignItems: 'center'
+  },
+  icon: {
+    color: '#ffffff',
+    marginRight: 40,
+    height: 25,
+    width: 25
   }
 };
 
@@ -28,9 +34,9 @@ class IconButton extends React.Component {
     return (
       <Container>
         <Content>
-          <Button iconLeft bordered primary style={styles.container} onPress={() => this.props.onPress()}>
+          <Button rounded light style={styles.container} onPress={() => this.props.onPress()}>
             <Text style={styles.text}>{this.props.text}</Text>
-            <Icon type='MaterialIcons' name={this.props.Icon} />
+            <Icon type='MaterialIcons' style={styles.icon} name={this.props.Icon} />
           </Button>
         </Content>
       </Container>
