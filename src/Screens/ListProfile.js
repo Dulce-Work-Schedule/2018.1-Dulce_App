@@ -56,9 +56,9 @@ export default class ListProfile extends Component {
   renderCard(item) {
     return (
       <Card>
-        <CardItem header><Text style={styles.colorPurple}>{item.name}</Text></CardItem>
         <CardItem style={styles.center} button onPress={() => {}}>
           <Body>
+          <Text style={styles.colorPurple}>{item.name}</Text>
             <View >
               <Text> Setor: <Text style={styles.colorPurple}>{item.setor}</Text></Text>
               <Text> Matricula: <Text style={styles.colorPurple}>{item.matricula}</Text></Text>
