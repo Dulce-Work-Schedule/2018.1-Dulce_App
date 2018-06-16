@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Alert} from 'react-native';
+import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
