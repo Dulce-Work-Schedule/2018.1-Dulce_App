@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
+import {View, Alert} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
@@ -56,9 +56,9 @@ export default class ListProfile extends Component {
   renderCard(item) {
     return (
       <Card>
-        <CardItem header><Text style={styles.colorPurple}>{item.name}</Text></CardItem>
         <CardItem style={styles.center} button onPress={() => {}}>
           <Body>
+          <Text style={styles.colorPurple}>{item.name}</Text>
             <View >
               <Text> Setor: <Text style={styles.colorPurple}>{item.setor}</Text></Text>
               <Text> Matricula: <Text style={styles.colorPurple}>{item.matricula}</Text></Text>
