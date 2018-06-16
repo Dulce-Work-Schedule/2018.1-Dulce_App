@@ -54,6 +54,7 @@
 		226953DE56C1422AA05F71BA /* Lato.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95ACB0449E5B4D409CD5BAD5 /* Lato.ttf */; };
 		6EBA2C108BCE4601A20C2842 /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE27CB99F5D247CE9DA125D9 /* Raleway.ttf */; };
 		C8AD33C97B374A61A3711A72 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5A8A512A7F454BBDF24FE3 /* libRNImagePicker.a */; };
+		76FF6343353B409699E1B39B /* Poiret One.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D117E03749B6BCB9DFAA /* Poiret One.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,6 +324,7 @@
 		DE27CB99F5D247CE9DA125D9 /* Raleway.ttf */ = {isa = PBXFileReference; name = "Raleway.ttf"; path = "../assets/fonts/Raleway.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		EA9651741FE3430B96BCC94B /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		9D5A8A512A7F454BBDF24FE3 /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		79C6D117E03749B6BCB9DFAA /* Poiret One.ttf */ = {isa = PBXFileReference; name = "Poiret One.ttf"; path = "../assets/fonts/Poiret One.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -600,6 +602,7 @@
 				95ACB0449E5B4D409CD5BAD5 /* Lato.ttf */,
 				DE27CB99F5D247CE9DA125D9 /* Raleway.ttf */,
 				2DA644F074BD4EECB289CCAF /* Poiret One.ttf */,
+				79C6D117E03749B6BCB9DFAA /* Poiret One.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1012,6 +1015,7 @@
 				226953DE56C1422AA05F71BA /* Lato.ttf in Resources */,
 				6EBA2C108BCE4601A20C2842 /* Raleway.ttf in Resources */,
 				8A65EA50FCD24B46BEEA352A /* Poiret One.ttf in Resources */,
+				76FF6343353B409699E1B39B /* Poiret One.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
