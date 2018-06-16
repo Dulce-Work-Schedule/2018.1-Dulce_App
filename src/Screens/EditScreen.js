@@ -27,15 +27,14 @@ const styles = {
     fontFamily: 'Raleway'
   },
   button: {
-    height: 45,
-    paddingHorizontal: 50,
+    height: 50,
+    paddingHorizontal: 30,
     backgroundColor: '#5f4b8b',
     alignSelf: 'center',
     alignItems: 'center',
-    width: 145
+    width: 180
   }
 };
-
 
 export default class EditScreen extends ValidationComponent {
   constructor(props) {
@@ -62,7 +61,7 @@ export default class EditScreen extends ValidationComponent {
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
         <SideBar />
-        <Container style={{flex: 8}}>
+        <Container style={{flex: 8, backgroundColor: '#FFF'}}>
           <ScreenHeader title='Editar conta' />
           <View style={styles.container}>
             <Form
@@ -74,9 +73,10 @@ export default class EditScreen extends ValidationComponent {
             />
           </View>
           <SignUpButton
-            text = 'Editar'
+            text = 'Salvar'
             onPress = {() => {}}
             style = {styles.button}
+            icon= 'save'
           />
         </Container>
       </View>

@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 import {Container, Content, Button} from 'native-base';
-
+import Icon from 'react-native-vector-icons/Entypo';
 const styles = {
   container: {
     height: 45,
@@ -21,8 +21,6 @@ const styles = {
   }
 };
 
-//this.props.onPress ? this.props.onPress() : {}
-
 class SignUp extends React.Component {
   render() {
     return (
@@ -31,7 +29,12 @@ class SignUp extends React.Component {
           <Button rounded
             style={this.props.style ? this.props.style : styles.container}
             onPress={() => this.props.onPress()}>
-            <Text style={styles.text}>{this.props.text}</Text>
+            {this.props.icon ? <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <Icon name={this.props.icon} size={25} style={{paddingHorizontal: 15}} color='#fff' />
+              <Text style={styles.text}>{this.props.text}</Text>
+              </View>
+              : <Text style={styles.text}>{this.props.text}</Text>
+            }
           </Button>
         </Content>
       </Container>
