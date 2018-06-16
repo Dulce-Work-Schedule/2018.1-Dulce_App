@@ -1,6 +1,6 @@
 import React from 'react';
-import {Text, Image} from 'react-native';
-import {Container, Content, Button} from 'native-base';
+import {Text, Image, Alert} from 'react-native';
+import {Container, Content, Button, Toast} from 'native-base';
 
 const styles = {
   container: {
@@ -24,11 +24,22 @@ const styles = {
 };
 
 class GoogleButton extends React.Component {
+  alert(){
+    Toast.show({
+            text: 'Wrong password!',
+            buttonText: 'Okay'
+          })
+  }
+
   render() {
     return (
       <Container>
         <Content>
-          <Button rounded bordered style={styles.container} iconLeft>
+          <Button
+            rounded bordered iconLeft
+            style={styles.container}
+            onPress={this.alert()}
+          >
             <Image style = {styles.img} source={require('../../assets/img/google.png')} />
             <Text style = {styles.text}> Entrar com Google</Text>
           </Button>
