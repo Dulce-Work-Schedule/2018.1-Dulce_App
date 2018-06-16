@@ -14885,7 +14885,7 @@ exports[`renders correctly 1`] = `
                       ellipsizeMode="tail"
 =======
                     <RCTDatePicker
-                      date={1529122959108}
+                      date={1529124519926}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}
@@ -15129,7 +15129,7 @@ exports[`renders correctly 1`] = `
                       ellipsizeMode="tail"
 =======
                     <RCTDatePicker
-                      date={1529122959108}
+                      date={1529124519926}
                       locale={undefined}
                       maximumDate={undefined}
                       minimumDate={undefined}

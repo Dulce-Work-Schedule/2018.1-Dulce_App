@@ -14706,7 +14706,7 @@ exports[`renders correctly 1`] = `
               ellipsizeMode="tail"
 =======
             <RCTDatePicker
-              date={1529122784257}
+              date={1529124513616}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -14950,7 +14950,7 @@ exports[`renders correctly 1`] = `
               ellipsizeMode="tail"
 =======
             <RCTDatePicker
-              date={1529122784257}
+              date={1529124513616}
               locale={undefined}
               maximumDate={undefined}
               minimumDate={undefined}
@@ -15067,11 +15067,15 @@ ShallowWrapper {
           renderItem={[Function]}
           rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
           selected={2018-06-15T03:30:14.296Z}
 >>>>>>> b5f447a... #418 testes
 =======
           selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+          selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
           style={
             Object {
               "flex": 8,
@@ -15153,11 +15157,15 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-15T03:30:14.296Z}
 >>>>>>> b5f447a... #418 testes
 =======
                   selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                  selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                   style={
                     Object {
                       "alignSelf": "center",
@@ -15297,7 +15305,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-          date={2018-06-16T04:19:44.257Z}
+          date={2018-06-16T04:48:33.616Z}
           isVisible={false}
           mode="datetime"
           neverDisableConfirmIOS={false}
@@ -15318,7 +15326,7 @@ ShallowWrapper {
         <CustomDatePickerIOS
           cancelTextIOS="Cancel"
           confirmTextIOS="Confirm"
-          date={2018-06-16T04:19:44.257Z}
+          date={2018-06-16T04:48:33.616Z}
           isVisible={false}
           mode="time"
           neverDisableConfirmIOS={false}
@@ -15372,7 +15380,7 @@ ShallowWrapper {
           "renderEmptyDate": [Function],
           "renderItem": [Function],
           "rowHasChanged": [Function],
-          "selected": 2018-06-16T04:21:35.300Z,
+          "selected": 2018-06-16T04:48:34.253Z,
           "style": Object {
             "flex": 1,
           },
@@ -15458,10 +15466,14 @@ ShallowWrapper {
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                   selected={2018-06-15T03:30:14.296Z}
 >>>>>>> b5f447a... #418 testes
 =======
                   selected={2018-06-16T04:21:35.300Z}
+=======
+                  selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                   style={
                     Object {
                       "flex": 1,
@@ -15680,7 +15692,7 @@ ShallowWrapper {
                   renderEmptyDate={[Function]}
                   renderItem={[Function]}
                   rowHasChanged={[Function]}
-                  selected={2018-06-16T04:21:35.300Z}
+                  selected={2018-06-16T04:48:34.253Z}
                   style={
                     Object {
                       "flex": 1,
@@ -15825,11 +15837,15 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-15T03:30:14.296Z}
 >>>>>>> b5f447a... #418 testes
 =======
                     selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                    selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                     style={
                       Object {
                         "alignSelf": "center",
@@ -15972,10 +15988,14 @@ ShallowWrapper {
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-15T05:23:17.868Z}
 =======
                       selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                      selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                       style={
                         Object {
                           "flex": 1,
@@ -16178,11 +16198,15 @@ ShallowWrapper {
                       "renderItem": [Function],
                       "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                       "selected": 2018-06-15T03:30:14.296Z,
 >>>>>>> b5f447a... #418 testes
 =======
                       "selected": 2018-06-16T04:21:35.300Z,
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                      "selected": 2018-06-16T04:48:34.253Z,
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                       "style": Object {
                         "alignSelf": "center",
                         "fontSize": 15,
@@ -16343,7 +16367,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-          "date": 2018-06-16T04:19:44.257Z,
+          "date": 2018-06-16T04:48:33.616Z,
           "isVisible": false,
           "mode": "datetime",
           "neverDisableConfirmIOS": false,
@@ -16370,7 +16394,7 @@ ShallowWrapper {
         "props": Object {
           "cancelTextIOS": "Cancel",
           "confirmTextIOS": "Confirm",
-          "date": 2018-06-16T04:19:44.257Z,
+          "date": 2018-06-16T04:48:33.616Z,
           "isVisible": false,
           "mode": "time",
           "neverDisableConfirmIOS": false,
@@ -16412,7 +16436,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-            selected={2018-06-16T04:21:35.300Z}
+            selected={2018-06-16T04:48:34.253Z}
             style={
               Object {
                 "flex": 1,
@@ -16490,7 +16514,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-                    selected={2018-06-16T04:21:35.300Z}
+                    selected={2018-06-16T04:48:34.253Z}
                     style={
                       Object {
 >>>>>>> b5f447a... #418 testes
@@ -16717,7 +16741,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-            date={2018-06-16T04:19:44.257Z}
+            date={2018-06-16T04:48:33.616Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -16738,7 +16762,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-            date={2018-06-16T04:19:44.257Z}
+            date={2018-06-16T04:48:33.616Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -16787,7 +16811,7 @@ ShallowWrapper {
             "renderEmptyDate": [Function],
             "renderItem": [Function],
             "rowHasChanged": [Function],
-            "selected": 2018-06-16T04:21:35.300Z,
+            "selected": 2018-06-16T04:48:34.253Z,
             "style": Object {
               "flex": 1,
             },
@@ -16892,7 +16916,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-                    selected={2018-06-16T04:21:35.300Z}
+                    selected={2018-06-16T04:48:34.253Z}
                     style={
                       Object {
                         "flex": 1,
@@ -17011,11 +17035,15 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-15T03:30:14.296Z}
 >>>>>>> b5f447a... #418 testes
 =======
                     selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                    selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                     style={
                       Object {
                         "flex": 1,
@@ -17453,11 +17481,15 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-15T03:30:14.296Z}
 >>>>>>> b5f447a... #418 testes
 =======
                       selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                      selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                       style={
                         Object {
                           "alignSelf": "center",
@@ -17600,6 +17632,7 @@ ShallowWrapper {
                         rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-15T05:23:17.868Z}
 =======
                         selected={2018-06-15T03:30:14.296Z}
@@ -17607,6 +17640,9 @@ ShallowWrapper {
 =======
                         selected={2018-06-16T04:21:35.300Z}
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                        selected={2018-06-16T04:48:34.253Z}
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                         style={
                           Object {
                             "flex": 1,
@@ -17806,11 +17842,15 @@ ShallowWrapper {
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "selected": 2018-06-15T03:30:14.296Z,
 >>>>>>> b5f447a... #418 testes
 =======
                         "selected": 2018-06-16T04:21:35.300Z,
 >>>>>>> e919b53... #418 atualizando requisiçoes
+=======
+                        "selected": 2018-06-16T04:48:34.253Z,
+>>>>>>> 38ae626... #418 atualizando requisiçoes e tirando alert
                         "style": Object {
                           "alignSelf": "center",
                           "fontSize": 15,
@@ -18064,7 +18104,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-            "date": 2018-06-16T04:19:44.257Z,
+            "date": 2018-06-16T04:48:33.616Z,
             "isVisible": false,
             "mode": "datetime",
             "neverDisableConfirmIOS": false,
@@ -18091,7 +18131,7 @@ ShallowWrapper {
           "props": Object {
             "cancelTextIOS": "Cancel",
             "confirmTextIOS": "Confirm",
-            "date": 2018-06-16T04:19:44.257Z,
+            "date": 2018-06-16T04:48:33.616Z,
             "isVisible": false,
             "mode": "time",
             "neverDisableConfirmIOS": false,

@@ -53,14 +53,11 @@ it('testing edit button',() => {
 it('testing delete button',() => {
   
   const navigation  = {navigate: jest.fn()};
-  const spy = jest.spyOn(ProfileManagerScreen.prototype, '_alert');
   const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
   wrapper.update();
   wrapper.setState({loading: false});
   const edit = wrapper.find('IconButton').at(1);
   edit.simulate('press');
-  expect(spy).toHaveBeenCalled();
-  console.log(edit);
 });
 
 const flushPromises = () => new Promise(resolve => setImmediate(resolve));

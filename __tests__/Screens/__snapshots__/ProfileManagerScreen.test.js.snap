@@ -223,61 +223,35 @@ ShallowWrapper {
             }
           >
             <SmallLogo />
-            <Styled(Container)
+            <Styled(Text)
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "fontSize": 20,
+                  "marginBottom": 15,
+                }
+              }
               virtual={undefined}
             >
-              <Styled(Content)
-                virtual={undefined}
-              >
-                <Styled(Card)
-                  virtual={undefined}
-                >
-                  <Styled(CardItem)
-                    virtual={undefined}
-                  >
-                    <Styled(Body)
-                      virtual={undefined}
-                    >
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "fontSize": 20,
-                            "marginBottom": 15,
-                          }
-                        }
-                        virtual={undefined}
-                      >
-                        Nome:
-                        	
-                        	
-                      </Styled(Text)>
-                    </Styled(Body)>
-                  </Styled(CardItem)>
-                  <Styled(CardItem)
-                    virtual={undefined}
-                  >
-                    <Styled(Body)
-                      virtual={undefined}
-                    >
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "fontSize": 20,
-                            "marginBottom": 15,
-                          }
-                        }
-                        virtual={undefined}
-                      >
-                        Email:
-                        	
-                        	
-                        @gmail.com
-                      </Styled(Text)>
-                    </Styled(Body)>
-                  </Styled(CardItem)>
-                </Styled(Card)>
-              </Styled(Content)>
-            </Styled(Container)>
+              Nome:
+              	
+              	
+            </Styled(Text)>
+            <Styled(Text)
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "fontSize": 20,
+                  "marginBottom": 15,
+                }
+              }
+              virtual={undefined}
+            >
+              Email:
+              	
+              	
+              @gmail.com
+            </Styled(Text)>
           </View>
           <View
             style={
@@ -335,61 +309,35 @@ ShallowWrapper {
               }
             >
               <SmallLogo />
-              <Styled(Container)
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
                 virtual={undefined}
               >
-                <Styled(Content)
-                  virtual={undefined}
-                >
-                  <Styled(Card)
-                    virtual={undefined}
-                  >
-                    <Styled(CardItem)
-                      virtual={undefined}
-                    >
-                      <Styled(Body)
-                        virtual={undefined}
-                      >
-                        <Styled(Text)
-                          style={
-                            Object {
-                              "fontSize": 20,
-                              "marginBottom": 15,
-                            }
-                          }
-                          virtual={undefined}
-                        >
-                          Nome:
-                          	
-                          	
-                        </Styled(Text)>
-                      </Styled(Body)>
-                    </Styled(CardItem)>
-                    <Styled(CardItem)
-                      virtual={undefined}
-                    >
-                      <Styled(Body)
-                        virtual={undefined}
-                      >
-                        <Styled(Text)
-                          style={
-                            Object {
-                              "fontSize": 20,
-                              "marginBottom": 15,
-                            }
-                          }
-                          virtual={undefined}
-                        >
-                          Email:
-                          	
-                          	
-                          @gmail.com
-                        </Styled(Text)>
-                      </Styled(Body)>
-                    </Styled(CardItem)>
-                  </Styled(Card)>
-                </Styled(Content)>
-              </Styled(Container)>
+                Nome:
+                	
+                	
+              </Styled(Text)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
+                virtual={undefined}
+              >
+                Email:
+                	
+                	
+                @gmail.com
+              </Styled(Text)>
             </View>,
             <View
               style={
@@ -425,61 +373,35 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <SmallLogo />,
-                <Styled(Container)
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
                   virtual={undefined}
                 >
-                  <Styled(Content)
-                    virtual={undefined}
-                  >
-                    <Styled(Card)
-                      virtual={undefined}
-                    >
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Nome:
-                            	
-                            	
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Email:
-                            	
-                            	
-                            @gmail.com
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                    </Styled(Card)>
-                  </Styled(Content)>
-                </Styled(Container)>,
+                  Nome:
+                  	
+                  	
+                </Styled(Text)>,
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                  Email:
+                  	
+                  	
+                  @gmail.com
+                </Styled(Text)>,
               ],
               "style": Object {
                 "flex": 1,
@@ -501,330 +423,55 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": <Styled(Content)
-                    virtual={undefined}
-                  >
-                    <Styled(Card)
-                      virtual={undefined}
-                    >
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Nome:
-                            	
-                            	
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Email:
-                            	
-                            	
-                            @gmail.com
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                    </Styled(Card)>
-                  </Styled(Content)>,
+                  "children": Array [
+                    "Nome:",
+                    "	",
+                    "	",
+                    undefined,
+                  ],
+                  "style": Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  },
                   "virtual": undefined,
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Styled(Card)
-                      virtual={undefined}
-                    >
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Nome:
-                            	
-                            	
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Email:
-                            	
-                            	
-                            @gmail.com
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                    </Styled(Card)>,
-                    "virtual": undefined,
+                "rendered": Array [
+                  "Nome:",
+                  "	",
+                  "	",
+                  undefined,
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "Email:",
+                    "	",
+                    "	",
+                    undefined,
+                    "@gmail.com",
+                  ],
+                  "style": Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
                   },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Nome:
-                              	
-                              	
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>,
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Email:
-                              	
-                              	
-                              @gmail.com
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>,
-                      ],
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "children": <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Nome:
-                              	
-                              	
-                            </Styled(Text)>
-                          </Styled(Body)>,
-                          "virtual": undefined,
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Nome:
-                              	
-                              	
-                            </Styled(Text)>,
-                            "virtual": undefined,
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": Array [
-                                "Nome:",
-                                "	",
-                                "	",
-                                undefined,
-                              ],
-                              "style": Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              },
-                              "virtual": undefined,
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              "Nome:",
-                              "	",
-                              "	",
-                              undefined,
-                            ],
-                            "type": [Function],
-                          },
-                          "type": [Function],
-                        },
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "children": <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Email:
-                              	
-                              	
-                              @gmail.com
-                            </Styled(Text)>
-                          </Styled(Body)>,
-                          "virtual": undefined,
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Email:
-                              	
-                              	
-                              @gmail.com
-                            </Styled(Text)>,
-                            "virtual": undefined,
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": Array [
-                                "Email:",
-                                "	",
-                                "	",
-                                undefined,
-                                "@gmail.com",
-                              ],
-                              "style": Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              },
-                              "virtual": undefined,
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              "Email:",
-                              "	",
-                              "	",
-                              undefined,
-                              "@gmail.com",
-                            ],
-                            "type": [Function],
-                          },
-                          "type": [Function],
-                        },
-                        "type": [Function],
-                      },
-                    ],
-                    "type": [Function],
-                  },
-                  "type": [Function],
+                  "virtual": undefined,
                 },
+                "ref": null,
+                "rendered": Array [
+                  "Email:",
+                  "	",
+                  "	",
+                  undefined,
+                  "@gmail.com",
+                ],
                 "type": [Function],
               },
             ],
@@ -916,61 +563,35 @@ ShallowWrapper {
               }
             >
               <SmallLogo />
-              <Styled(Container)
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
                 virtual={undefined}
               >
-                <Styled(Content)
-                  virtual={undefined}
-                >
-                  <Styled(Card)
-                    virtual={undefined}
-                  >
-                    <Styled(CardItem)
-                      virtual={undefined}
-                    >
-                      <Styled(Body)
-                        virtual={undefined}
-                      >
-                        <Styled(Text)
-                          style={
-                            Object {
-                              "fontSize": 20,
-                              "marginBottom": 15,
-                            }
-                          }
-                          virtual={undefined}
-                        >
-                          Nome:
-                          	
-                          	
-                        </Styled(Text)>
-                      </Styled(Body)>
-                    </Styled(CardItem)>
-                    <Styled(CardItem)
-                      virtual={undefined}
-                    >
-                      <Styled(Body)
-                        virtual={undefined}
-                      >
-                        <Styled(Text)
-                          style={
-                            Object {
-                              "fontSize": 20,
-                              "marginBottom": 15,
-                            }
-                          }
-                          virtual={undefined}
-                        >
-                          Email:
-                          	
-                          	
-                          @gmail.com
-                        </Styled(Text)>
-                      </Styled(Body)>
-                    </Styled(CardItem)>
-                  </Styled(Card)>
-                </Styled(Content)>
-              </Styled(Container)>
+                Nome:
+                	
+                	
+              </Styled(Text)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
+                virtual={undefined}
+              >
+                Email:
+                	
+                	
+                @gmail.com
+              </Styled(Text)>
             </View>
             <View
               style={
@@ -1028,61 +649,35 @@ ShallowWrapper {
                 }
               >
                 <SmallLogo />
-                <Styled(Container)
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
                   virtual={undefined}
                 >
-                  <Styled(Content)
-                    virtual={undefined}
-                  >
-                    <Styled(Card)
-                      virtual={undefined}
-                    >
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Nome:
-                            	
-                            	
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                      <Styled(CardItem)
-                        virtual={undefined}
-                      >
-                        <Styled(Body)
-                          virtual={undefined}
-                        >
-                          <Styled(Text)
-                            style={
-                              Object {
-                                "fontSize": 20,
-                                "marginBottom": 15,
-                              }
-                            }
-                            virtual={undefined}
-                          >
-                            Email:
-                            	
-                            	
-                            @gmail.com
-                          </Styled(Text)>
-                        </Styled(Body)>
-                      </Styled(CardItem)>
-                    </Styled(Card)>
-                  </Styled(Content)>
-                </Styled(Container)>
+                  Nome:
+                  	
+                  	
+                </Styled(Text)>
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                  Email:
+                  	
+                  	
+                  @gmail.com
+                </Styled(Text)>
               </View>,
               <View
                 style={
@@ -1118,61 +713,35 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <SmallLogo />,
-                  <Styled(Container)
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
+                    }
                     virtual={undefined}
                   >
-                    <Styled(Content)
-                      virtual={undefined}
-                    >
-                      <Styled(Card)
-                        virtual={undefined}
-                      >
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Nome:
-                              	
-                              	
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Email:
-                              	
-                              	
-                              @gmail.com
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>
-                      </Styled(Card)>
-                    </Styled(Content)>
-                  </Styled(Container)>,
+                    Nome:
+                    	
+                    	
+                  </Styled(Text)>,
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Email:
+                    	
+                    	
+                    @gmail.com
+                  </Styled(Text)>,
                 ],
                 "style": Object {
                   "flex": 1,
@@ -1194,330 +763,55 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <Styled(Content)
-                      virtual={undefined}
-                    >
-                      <Styled(Card)
-                        virtual={undefined}
-                      >
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Nome:
-                              	
-                              	
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Email:
-                              	
-                              	
-                              @gmail.com
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>
-                      </Styled(Card)>
-                    </Styled(Content)>,
+                    "children": Array [
+                      "Nome:",
+                      "	",
+                      "	",
+                      undefined,
+                    ],
+                    "style": Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    },
                     "virtual": undefined,
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <Styled(Card)
-                        virtual={undefined}
-                      >
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Nome:
-                              	
-                              	
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>
-                        <Styled(CardItem)
-                          virtual={undefined}
-                        >
-                          <Styled(Body)
-                            virtual={undefined}
-                          >
-                            <Styled(Text)
-                              style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                }
-                              }
-                              virtual={undefined}
-                            >
-                              Email:
-                              	
-                              	
-                              @gmail.com
-                            </Styled(Text)>
-                          </Styled(Body)>
-                        </Styled(CardItem)>
-                      </Styled(Card)>,
-                      "virtual": undefined,
+                  "rendered": Array [
+                    "Nome:",
+                    "	",
+                    "	",
+                    undefined,
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      "Email:",
+                      "	",
+                      "	",
+                      undefined,
+                      "@gmail.com",
+                    ],
+                    "style": Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
                     },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": Array [
-                          <Styled(CardItem)
-                            virtual={undefined}
-                          >
-                            <Styled(Body)
-                              virtual={undefined}
-                            >
-                              <Styled(Text)
-                                style={
-                                  Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                  }
-                                }
-                                virtual={undefined}
-                              >
-                                Nome:
-                                	
-                                	
-                              </Styled(Text)>
-                            </Styled(Body)>
-                          </Styled(CardItem)>,
-                          <Styled(CardItem)
-                            virtual={undefined}
-                          >
-                            <Styled(Body)
-                              virtual={undefined}
-                            >
-                              <Styled(Text)
-                                style={
-                                  Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                  }
-                                }
-                                virtual={undefined}
-                              >
-                                Email:
-                                	
-                                	
-                                @gmail.com
-                              </Styled(Text)>
-                            </Styled(Body)>
-                          </Styled(CardItem)>,
-                        ],
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": <Styled(Body)
-                              virtual={undefined}
-                            >
-                              <Styled(Text)
-                                style={
-                                  Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                  }
-                                }
-                                virtual={undefined}
-                              >
-                                Nome:
-                                	
-                                	
-                              </Styled(Text)>
-                            </Styled(Body)>,
-                            "virtual": undefined,
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": <Styled(Text)
-                                style={
-                                  Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                  }
-                                }
-                                virtual={undefined}
-                              >
-                                Nome:
-                                	
-                                	
-                              </Styled(Text)>,
-                              "virtual": undefined,
-                            },
-                            "ref": null,
-                            "rendered": Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "children": Array [
-                                  "Nome:",
-                                  "	",
-                                  "	",
-                                  undefined,
-                                ],
-                                "style": Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                },
-                                "virtual": undefined,
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                "Nome:",
-                                "	",
-                                "	",
-                                undefined,
-                              ],
-                              "type": [Function],
-                            },
-                            "type": [Function],
-                          },
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "children": <Styled(Body)
-                              virtual={undefined}
-                            >
-                              <Styled(Text)
-                                style={
-                                  Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                  }
-                                }
-                                virtual={undefined}
-                              >
-                                Email:
-                                	
-                                	
-                                @gmail.com
-                              </Styled(Text)>
-                            </Styled(Body)>,
-                            "virtual": undefined,
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {
-                              "children": <Styled(Text)
-                                style={
-                                  Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                  }
-                                }
-                                virtual={undefined}
-                              >
-                                Email:
-                                	
-                                	
-                                @gmail.com
-                              </Styled(Text)>,
-                              "virtual": undefined,
-                            },
-                            "ref": null,
-                            "rendered": Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "class",
-                              "props": Object {
-                                "children": Array [
-                                  "Email:",
-                                  "	",
-                                  "	",
-                                  undefined,
-                                  "@gmail.com",
-                                ],
-                                "style": Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 15,
-                                },
-                                "virtual": undefined,
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                "Email:",
-                                "	",
-                                "	",
-                                undefined,
-                                "@gmail.com",
-                              ],
-                              "type": [Function],
-                            },
-                            "type": [Function],
-                          },
-                          "type": [Function],
-                        },
-                      ],
-                      "type": [Function],
-                    },
-                    "type": [Function],
+                    "virtual": undefined,
                   },
+                  "ref": null,
+                  "rendered": Array [
+                    "Email:",
+                    "	",
+                    "	",
+                    undefined,
+                    "@gmail.com",
+                  ],
                   "type": [Function],
                 },
               ],

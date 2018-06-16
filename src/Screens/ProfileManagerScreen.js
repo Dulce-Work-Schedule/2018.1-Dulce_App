@@ -1,17 +1,15 @@
 import React from 'react';
-import { View, Alert } from 'react-native';
+import {View, Alert} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
-import { Container, Content, Spinner } from 'native-base';
+import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
-<<<<<<< HEAD
 import SideBar from '../Components/SideBar';
 import {Card , CardItem , Body, Text} from 'native-base';
 import {Text} from 'native-base';
-=======
 import { Card, CardItem, Body, Text } from 'native-base';
->>>>>>> e919b53... #418 atualizando requisiçoes
+import {Card, CardItem, Body, Text} from 'native-base';
 import IconButton from '../Components/IconButton';
 const styles = {
   container: {
@@ -58,11 +56,11 @@ class ProfileManagerScreen extends React.Component {
     .then((response) => {
       this.setState({profile: response.data, loading: false});
     })
-    .catch(() => {
+    /* .catch(() => {
       Alert.alert(
         'Erro',
         'Verifique sua conexão.');
-    });
+    }); */
   }
 
   navigateToEditScreen() {
@@ -118,4 +116,4 @@ class ProfileManagerScreen extends React.Component {
     );
   }
 
-  export default ProfileManagerScreen;
+export default ProfileManagerScreen;

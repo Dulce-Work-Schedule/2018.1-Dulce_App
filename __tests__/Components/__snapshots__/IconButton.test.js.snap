@@ -80,15 +80,14 @@ exports[`renders correctly 1`] = `
           Object {
             "alignItems": "center",
             "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderBottomWidth": 1,
+            "backgroundColor": "#5f4b8b",
+            "borderBottomWidth": null,
             "borderColor": "#5f4b8b",
-            "borderLeftWidth": 1,
-            "borderRadius": 5,
-            "borderRightWidth": 1,
-            "borderTopWidth": 1,
-            "borderWidth": 1,
-            "elevation": null,
+            "borderLeftWidth": null,
+            "borderRadius": 57,
+            "borderRightWidth": null,
+            "borderTopWidth": null,
+            "elevation": 2,
             "flexDirection": "row",
             "height": 50,
             "justifyContent": "center",
@@ -96,12 +95,8 @@ exports[`renders correctly 1`] = `
             "marginTop": 30,
             "opacity": 1,
             "paddingBottom": 6,
-            "paddingHorizontal": 50,
+            "paddingHorizontal": 20,
             "paddingTop": 6,
-            "shadowColor": null,
-            "shadowOffset": null,
-            "shadowOpacity": null,
-            "shadowRadius": null,
             "width": 170,
           }
         }
@@ -113,13 +108,29 @@ exports[`renders correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-            Object {
-              "alignItems": "center",
-              "color": "#5f4b8b",
-              "fontFamily": "Raleway",
-              "fontSize": 20,
-            }
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16.5,
+                "lineHeight": 19,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+              },
+              Object {
+                "alignItems": "center",
+                "color": "#ffffff",
+                "fontFamily": "Raleway",
+                "fontSize": 15,
+                "marginLeft": 35,
+              },
+            ]
           }
+          uppercase={false}
+          virtual={undefined}
         />
         <Text
           accessible={true}
@@ -137,11 +148,17 @@ exports[`renders correctly 1`] = `
                   "fontSize": 30,
                 },
                 Object {
-                  "color": "#007aff",
+                  "color": "#000",
                   "fontSize": 24,
                   "marginLeft": 16,
-                  "marginRight": 0,
+                  "marginRight": 16,
                   "paddingTop": 2,
+                },
+                Object {
+                  "color": "#ffffff",
+                  "height": 25,
+                  "marginRight": 40,
+                  "width": 25,
                 },
               ],
               Object {
