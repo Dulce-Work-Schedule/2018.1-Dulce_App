@@ -56,12 +56,10 @@ export class LoginScreen extends React.Component {
     this._onPressButton = this._onPressButton.bind(this);
   }
 
-  // alert() {
-  //   Toast.show({
-  //     text: 'Wrong password!',
-  //     buttonText: 'Okay'
-  //   })
-  // }
+  alert() {
+    Toast.show({
+      text: 'Funcionalidade não disponivel'})
+  }
   resetNavigation(targetRoute) {
     const resetAction = NavigationActions.reset({
       index: 0,
@@ -125,8 +123,7 @@ export class LoginScreen extends React.Component {
           onPress={this._onPressButton}
           text='Entrar'/>
         <Content padder>
-          <GoogleButton onPress={() => Toast.show({
-            text: 'Funcionalidade não disponivel'})}/>
+          <GoogleButton onPress={() => this.alert()}/>
         </Content>
         <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
           <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
