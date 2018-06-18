@@ -4,13 +4,13 @@ import {
   PixelRatio,
   TouchableOpacity,
   Image,
-  ScrollView
+  ScrollView,
+  Alert
 } from 'react-native';
-import DateRangePicker from '../Components/DateRangePicker';
-import AGRButton from '../Components/AGRButton';
+import DateRangePicker from './DateRangePicker';
+import AGRButton from './AGRButton';
 import ImagePicker from 'react-native-image-picker';
 import {Card, CardItem, Text, Body, Form, Textarea, Picker, Right, Left} from 'native-base';
-
 
 const XDate = require('xdate');
 
@@ -88,78 +88,89 @@ export default class Absences extends React.Component {
 
   renderPicker() {
     return (
-        <CardItem>
-            <Body style={{flexDirection: 'row'}}>
-                <Left>
-                <Text>
-                    Tipo de abono:
-                </Text>
-                </Left>
-                <Right>
-                <Picker
-                    selectedValue={this.state.absenceOption}
-                    style={styles.picker}
-                    onValueChange={(itemValue) => this.onSelectAbsence(itemValue)}>
-                    <Picker.Item label='Atestado' value='medical leave' />
-                    <Picker.Item label='Maternidade' value='maternity leave' />
-                    <Picker.Item label='Paternidade' value='paternity leave' />
-                </Picker>
-                </Right>
-            </Body>
-        </CardItem>
+      <CardItem>
+        <Body style={{flexDirection: 'row'}}>
+          <Left>
+            <Text>
+                  Tipo de abono:
+            </Text>
+          </Left>
+          <Right>
+            <Picker
+              selectedValue={this.state.absenceOption}
+              style={styles.picker}
+              onValueChange={(itemValue) => this.onSelectAbsence(itemValue)}>
+              <Picker.Item label='Atestado' value='medical leave' />
+              <Picker.Item label='Maternidade' value='maternity leave' />
+              <Picker.Item label='Paternidade' value='paternity leave' />
+            </Picker>
+          </Right>
+        </Body>
+      </CardItem>
     );
   }
 
   renderPhotoPicker() {
     return (
-        <CardItem>
-            <Body style={styles.container2}>
-                <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-                    <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
-                        { this.state.documentSource === null ? <Text>Selecione uma Foto</Text>
-                        : <Image style={styles.document} source={this.state.documentSource} />
-                        }
-                    </View>
-                </TouchableOpacity>
-            </Body>
-        </CardItem>
+      <CardItem>
+        <Body style={styles.container2}>
+          <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
+            <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
+              { this.state.documentSource === null ? <Text>Selecione uma Foto</Text>
+                : <Image style={styles.document} source={this.state.documentSource} />
+              }
+            </View>
+          </TouchableOpacity>
+        </Body>
+      </CardItem>
     );
   }
 
   renderSelectedDates() {
     return (
-        <CardItem header bordered>
-            <View style={styles.view1}>
-                <Text style={styles.date}>
-                    {this.state.startDay.day}/{this.state.startDay.month}/
-                    {this.state.startDay.year} até {this.state.endDay.day}/{this.state.endDay.month}/{this.state.endDay.year}
-                </Text>
-            </View>
-        </CardItem>
+      <CardItem header bordered>
+        <View style={styles.view1}>
+          <Text style={styles.date}>
+            {this.state.startDay.day}/{this.state.startDay.month}/
+            {this.state.startDay.year} até {this.state.endDay.day}/{this.state.endDay.month}
+            /{this.state.endDay.year}
+          </Text>
+        </View>
+      </CardItem>
+    );
+  }
+
+  _onPress() {
+    Alert.alert(
+      'Solicitação enviada',
+      'Periodo solicitado: ' +
+      this.state.startDay.day + '/' + this.state.startDay.month + '/' +
+      this.state.startDay.year + ' até ' + this.state.endDay.day + '/' + this.state.endDay.month +
+      '/' + this.state.endDay.year
     );
   }
 
   renderCard() {
     return (
-        <Card>
-            {this.renderSelectedDates()}
-            {this.props.type === 'complete'
-                ? this.renderPicker()
-            : <View />}
-            <CardItem>
-                <Body>
-                    <Form style={styles.form}>
-                        <Textarea rowSpan={5} bordered placeholder='Justificativa' />
-                    </Form>
-                </Body>
-            </CardItem>
-            {this.props.type === 'complete'
-            ? this.renderPhotoPicker()
-            : <View/>}
-            <CardItem footer bordered>
-                <AGRButton style={styles.button} onPress={() => {}} text='Solicitar' />
-            </CardItem>
-        </Card>
+      <Card>
+        {this.renderSelectedDates()}
+        {this.props.type === 'complete'
+          ? this.renderPicker()
+          : <View />}
+        <CardItem>
+          <Body>
+            <Form style={styles.form}>
+              <Textarea rowSpan={5} bordered placeholder='Justificativa' />
+            </Form>
+          </Body>
+        </CardItem>
+        {this.props.type === 'complete'
+          ? this.renderPhotoPicker()
+          : <View/>}
+        <CardItem footer bordered>
+          <AGRButton style={styles.button} onPress={() => {this._onPress();}} text='Solicitar' />
+        </CardItem>
+      </Card>
     );
   }
 
@@ -168,7 +179,7 @@ export default class Absences extends React.Component {
       <View style={{flex: 1}}>
         <ScrollView>
           <Text style={styles.title}>
-                {this.props.title}
+            {this.props.title}
           </Text>
           <DateRangePicker
             onSuccess={(startDay, endDay) => this.onSelectDates(startDay, endDay)}
