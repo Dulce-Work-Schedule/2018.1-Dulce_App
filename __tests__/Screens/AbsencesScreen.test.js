@@ -5,7 +5,7 @@ require('bezier');
 
 it('renders correctly', () => {
   const tree = renderer
-  .create(<AbsencesScreen />)
-  .toJSON();
+    .create(<AbsencesScreen />)
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });

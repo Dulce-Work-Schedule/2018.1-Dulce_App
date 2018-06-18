@@ -88,10 +88,10 @@ export default class NotificationScreen extends Component {
           </Body>
         </CardItem>
         <CardItem footer>
-        <View style={styles.buttonView}>
-          <ValidateButton text='Recusar' textStyle={styles.colorOrange}/>
-          <ValidateButton text='Aceitar' textStyle={styles.colorPurple}/>
-        </View>
+          <View style={styles.buttonView}>
+            <ValidateButton text='Recusar' textStyle={styles.colorOrange}/>
+            <ValidateButton text='Aceitar' textStyle={styles.colorPurple}/>
+          </View>
         </CardItem>
       </Card>
     );
