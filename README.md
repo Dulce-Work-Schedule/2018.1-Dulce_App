@@ -1,5 +1,5 @@
-### Para mais informações visite nossa página [dulce-work-schedule.github.io](https://dulce-work-schedule.github.io)
-# Dulce React Native
+[<img src="assets/img/DulceHorizontal.svg" width="1300" title="">](https://dulce-work-schedule.github.io/)
+# Dulce App
  [![Build Status](https://travis-ci.org/Dulce-Work-Schedule/2018.1-Dulce_App.svg?branch=master)](https://travis-ci.org/Dulce-Work-Schedule/2018.1-Dulce_App) [![Maintainability](https://api.codeclimate.com/v1/badges/b674488b430f6922207e/maintainability)](https://codeclimate.com/github/Dulce-Work-Schedule/2018.1-Dulce_App/maintainability) [![Coverage Status](https://coveralls.io/repos/github/Dulce-Work-Schedule/2018.1-Dulce_App/badge.svg?branch=master)](https://coveralls.io/github/Dulce-Work-Schedule/2018.1-Dulce_App?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -13,8 +13,8 @@ Dulce tem o propósito de auxiliar a gestão no sistema de saúde do DF, promove
 O Dulce é o unico APP que permite os gestores de saúde uma facil vizualização das escalas dos médicos ligados a Secretaria de Saúde do Distrito Federal.
 
 ### Instalação
-A Instalação do App pode ser feita tanto para Android quanto para IOS nos links a seguir.  
-<a href="https://play.google.com/store/apps/details?id=com.dulce"><img src="/docs/assets/img/logos/googleplay.png" width="150" height="60" title="Google Play"></a>
+A Instalação do App pode ser feita para Android em breve será lançada a versão para IOs.  
+<a href="https://play.google.com/store/apps/details?id=com.dulce"><img src="/assets/img/googleplay.png" width="150" height="60" title="Google Play"></a>
 
 ### Contribuir
 Você quer contribuir com nosso projeto? É simples! Temos um [guia de contribuição](CONTRIBUTING.md) onde são explicados todos os passos para contribuir. Ahh, não esquece de ler nosso [código de conduta](CODE_OF_CONDUCT.md).   
@@ -25,11 +25,11 @@ Para contribuir com os microserviços acesse nossa organização:[Dulce Work Sch
 
 Para executar o ambiente do projeto acesse nosso [guia de instalação](guia_de_instalacao.md)
 
-Para acessar o ambiente de desenvolvimento da API acesse:  https://github.com/Dulce-Work-Schedule/2018.1-Dulce_API
+Para acessar o ambiente de desenvolvimento acesse:  https://github.com/Dulce-Work-Schedule/
 
-### Tecnologias
+### Documentação
 
-<img src="docs/assets/img/logos/codeclimate.png" width="100" height="100" title="CodeClimate"> <img src="docs/assets/img/logos/telegram.png" width="100" height="100" title="Telegram"> <img src="docs/assets/img/logos/travis.gif" width="110" height="100" title="Travis"> <img src="docs/assets/img/logos/zenhub.png" width="100" height="100" title="Zen Hub"> <img src="docs/assets/img/logos/slack.gif" width="115" height="100" title="Slack"> <img src="docs/assets/img/logos/GitHub.gif" width="110" height="100" title="GitHub"> <img src="docs/assets/img/logos/drive.gif" width="110" height="100" title="Drive"> <img src="docs/assets/img/logos/atom.png" width="100" height="100" title="Atom"> <img src="docs/assets/img/logos/docker.gif" width="100" height="100" title="Docker"> <img src="docs/assets/img/logos/whatsapp.png" width="100" height="100" title="Whatsapp"> <img src="docs/assets/img/logos/protoio.png" width="100" height="100" title="Proto.io"> <img src="docs/assets/img/logos/node.png" width="130" height="100" title="Node.js"> <img src="docs/assets/img/logos/mongodb.png" width="100" height="100" title="MongoDB"> <img src="docs/assets/img/logos/js.png" width="100" height="100" title="JS"> <img src="docs/assets/img/logos/graphql.png" width="100" height="100" title="GraphQL"> <img src="docs/assets/img/logos/jest.png" width="100" height="100" title="Jtest"> <img src="docs/assets/img/logos/android.gif" width="130" height="100" title="Android"> <img src="docs/assets/img/logos/react-native.png" width="100" height="100" title="React Native"> <img src="docs/assets/img/logos/facebook.gif" width="100" height="100" title="Facebook">  <img src="docs/assets/img/logos/apple.png" width="100" height="100" title="Apple"> <img src="docs/assets/img/logos/babel.png" width="100" height="100" title="Babel"> <img src="docs/assets/img/logos/RabbitMQ.png" width="100" height="100" title="RabbitMQ">
+A documentação do projeto pode ser acessada pelo nosso site em https://dulce-work-schedule.github.io/ ou você pode acessar pela [Dulce Documentação](https://github.com/Dulce-Work-Schedule/Dulce-Work-Schedule.github.io)
 
 
 ### Colaboradores
