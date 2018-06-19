@@ -95,37 +95,26 @@ class ProfileManagerScreen extends React.Component {
       <SideBar />
       <View style={styles.container}>
         <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
-        {
-          this.state.loading ? (
-            this.renderSpinner()
-          ) : (
-            <View style={{flex: 1}}>
-            <View style={{flex: 1}}>
+        {this.state.loading ? (
+            this.renderSpinner()) : (
+            <View style={{flex: 1}}><View style={{flex: 1}}>
             <SmallLogo />
-              <Text style={styles.text}>
-               Nome:{'\t'}{'\t'}{this.state.profile.name}
-              </Text>
-              <Text style={styles.text}>
-               Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com
-              </Text>
+              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.name}</Text>
+              <Text style={styles.text}> Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com</Text>
             </View>
             <View style={{flex: 1 ,alignItems: 'center'}}>
             <IconButton
             Icon = 'edit'
             text = 'Editar'
-            onPress={() => this.navigateToEditScreen()}
-            />
+            onPress={() => this.navigateToEditScreen()}/>
               <Button transparent warning style={styles.transparentButton}>
-            <Text  style={styles.textButtonTrasparent}>Excluir conta</Text>
+            <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
             </Button>
-            </View>
-           </View>
-          )
-        }
+            </View></View>
+          )}
       </View>
       </View>
-    );
-  }
+    );}
 }
 
 export default ProfileManagerScreen;

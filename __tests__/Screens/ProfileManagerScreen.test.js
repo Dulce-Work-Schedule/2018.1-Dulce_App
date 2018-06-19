@@ -36,10 +36,8 @@ it('should test navigateToEditScreen correctly', () => {
   profileScreen.navigateToEditScreen();
 });
 
-
 it('testing edit button',() => {
-  
-  const navigation  = {navigate: jest.fn()};
+  const navigation = {navigate: jest.fn()};
   const spy = jest.spyOn(ProfileManagerScreen.prototype, 'navigateToEditScreen');
   const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
   wrapper.update();
@@ -51,7 +49,7 @@ it('testing edit button',() => {
 });
 
 /* it('testing delete button',() => {
-  
+
   const navigation  = {navigate: jest.fn()};
   const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
   wrapper.update();

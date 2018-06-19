@@ -16,7 +16,6 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-
 it('testing onPressG ',() => {
   const onPress = jest.fn();
   const wrapper = shallow(<GoogleButton onPress={onPress}/>);
