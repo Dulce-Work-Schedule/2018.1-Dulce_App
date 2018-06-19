@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text,View,StyleSheet,TouchableHighlight,Alert} from 'react-native';
+import {Text,View,TouchableHighlight,Alert} from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
 import axios from 'axios';
@@ -9,22 +9,7 @@ import ScheduleItem from '../Components/ScheduleItem';
 import SideBar from '../Components/SideBar';
 import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-
-const styles = StyleSheet.create({
-  item: {
-    backgroundColor: 'white',
-    flex: 1,
-    borderRadius: 5,
-    padding: 10,
-    marginRight: 10,
-    marginTop: 17
-  },
-  emptyDate: {
-    height: 15,
-    flex: 1,
-    paddingTop: 30
-  }
-});
+import {weekSchedule as styles} from '../styles' ;
 
 export default class WeekSchedule extends Component {
   constructor(props) {
