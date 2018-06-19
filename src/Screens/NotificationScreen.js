@@ -94,12 +94,12 @@ export default class NotificationScreen extends Component {
         </CardItem>
         <CardItem footer>
           <View style={styles.buttonView}>
-            <ValidateButton text='Recusar' textStyle={styles.colorOrange} onPress={ () => this.in_construction()}/>
+            <ValidateButton text='Recusar' textStyle={styles.colorOrange}
+              onPress={ () => this.in_construction()}/>
             <ValidateButton text='Aceitar' textStyle={styles.colorPurple} onPress = {() => this.in_construction()}/>
           </View>
         </CardItem>
-      </Card>);
-  }
+      </Card>);}
 
   render() {
     return (
