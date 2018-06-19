@@ -91,16 +91,16 @@ class ProfileManagerScreen extends React.Component {
 
   render() {
     return (
-      <View style={{flexDirection: 'row', flex: 1}}>
-      <SideBar />
+      <View style={{flexDirection: 'row', flex: 1}}><SideBar />
       <View style={styles.container}>
         <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
         {this.state.loading ? (
             this.renderSpinner()) : (
             <View style={{flex: 1}}><View style={{flex: 1}}>
             <SmallLogo />
-              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.name}</Text>
-              <Text style={styles.text}> Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com</Text>
+              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.firtName}</Text>
+              <Text style={styles.text}> Sobrenome: {'\t'}{'\t'}{this.state.profile.lastName}</Text>
+              <Text style={styles.text}> Email:{'\t'}{'\t'}{this.state.profile.email}</Text>
             </View>
             <View style={{flex: 1 ,alignItems: 'center'}}>
             <IconButton

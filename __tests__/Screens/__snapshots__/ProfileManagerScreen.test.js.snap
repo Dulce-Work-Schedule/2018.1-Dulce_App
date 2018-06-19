@@ -243,7 +243,7 @@ ShallowWrapper {
                 }
                 virtual={undefined}
               >
-                Nome:
+                 Nome:
                 	
                 	
               </Styled(Text)>
@@ -257,10 +257,23 @@ ShallowWrapper {
                 }
                 virtual={undefined}
               >
-                Email:
+                 Sobrenome: 
                 	
                 	
-                @gmail.com
+              </Styled(Text)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
+                virtual={undefined}
+              >
+                 Email:
+                	
+                	
               </Styled(Text)>
             </View>
             <View
@@ -362,7 +375,7 @@ ShallowWrapper {
                   }
                   virtual={undefined}
                 >
-                  Nome:
+                   Nome:
                   	
                   	
                 </Styled(Text)>
@@ -376,10 +389,23 @@ ShallowWrapper {
                   }
                   virtual={undefined}
                 >
-                  Email:
+                   Sobrenome: 
                   	
                   	
-                  @gmail.com
+                </Styled(Text)>
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                   Email:
+                  	
+                  	
                 </Styled(Text)>
               </View>
               <View
@@ -473,7 +499,7 @@ ShallowWrapper {
                     }
                     virtual={undefined}
                   >
-                    Nome:
+                     Nome:
                     	
                     	
                   </Styled(Text)>
@@ -487,10 +513,23 @@ ShallowWrapper {
                     }
                     virtual={undefined}
                   >
-                    Email:
+                     Sobrenome: 
                     	
                     	
-                    @gmail.com
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                     Email:
+                    	
+                    	
                   </Styled(Text)>
                 </View>,
                 <View
@@ -562,7 +601,7 @@ ShallowWrapper {
                       }
                       virtual={undefined}
                     >
-                      Nome:
+                       Nome:
                       	
                       	
                     </Styled(Text)>,
@@ -576,10 +615,23 @@ ShallowWrapper {
                       }
                       virtual={undefined}
                     >
-                      Email:
+                       Sobrenome: 
                       	
                       	
-                      @gmail.com
+                    </Styled(Text)>,
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                       Email:
+                      	
+                      	
                     </Styled(Text)>,
                   ],
                   "style": Object {
@@ -603,7 +655,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": Array [
-                        "Nome:",
+                        " Nome:",
                         "	",
                         "	",
                         undefined,
@@ -617,7 +669,7 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": Array [
-                      "Nome:",
+                      " Nome:",
                       "	",
                       "	",
                       undefined,
@@ -630,11 +682,10 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": Array [
-                        "Email:",
+                        " Sobrenome: ",
                         "	",
                         "	",
                         undefined,
-                        "@gmail.com",
                       ],
                       "style": Object {
                         "alignSelf": "center",
@@ -645,11 +696,37 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": Array [
-                      "Email:",
+                      " Sobrenome: ",
                       "	",
                       "	",
                       undefined,
-                      "@gmail.com",
+                    ],
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        " Email:",
+                        "	",
+                        "	",
+                        undefined,
+                      ],
+                      "style": Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      },
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " Email:",
+                      "	",
+                      "	",
+                      undefined,
                     ],
                     "type": [Function],
                   },
@@ -830,7 +907,7 @@ ShallowWrapper {
                   }
                   virtual={undefined}
                 >
-                  Nome:
+                   Nome:
                   	
                   	
                 </Styled(Text)>
@@ -844,10 +921,23 @@ ShallowWrapper {
                   }
                   virtual={undefined}
                 >
-                  Email:
+                   Sobrenome: 
                   	
                   	
-                  @gmail.com
+                </Styled(Text)>
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                   Email:
+                  	
+                  	
                 </Styled(Text)>
               </View>
               <View
@@ -949,7 +1039,7 @@ ShallowWrapper {
                     }
                     virtual={undefined}
                   >
-                    Nome:
+                     Nome:
                     	
                     	
                   </Styled(Text)>
@@ -963,10 +1053,23 @@ ShallowWrapper {
                     }
                     virtual={undefined}
                   >
-                    Email:
+                     Sobrenome: 
                     	
                     	
-                    @gmail.com
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                     Email:
+                    	
+                    	
                   </Styled(Text)>
                 </View>
                 <View
@@ -1060,7 +1163,7 @@ ShallowWrapper {
                       }
                       virtual={undefined}
                     >
-                      Nome:
+                       Nome:
                       	
                       	
                     </Styled(Text)>
@@ -1074,10 +1177,23 @@ ShallowWrapper {
                       }
                       virtual={undefined}
                     >
-                      Email:
+                       Sobrenome: 
                       	
                       	
-                      @gmail.com
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                       Email:
+                      	
+                      	
                     </Styled(Text)>
                   </View>,
                   <View
@@ -1149,7 +1265,7 @@ ShallowWrapper {
                         }
                         virtual={undefined}
                       >
-                        Nome:
+                         Nome:
                         	
                         	
                       </Styled(Text)>,
@@ -1163,10 +1279,23 @@ ShallowWrapper {
                         }
                         virtual={undefined}
                       >
-                        Email:
+                         Sobrenome: 
                         	
                         	
-                        @gmail.com
+                      </Styled(Text)>,
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "fontSize": 20,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                         Email:
+                        	
+                        	
                       </Styled(Text)>,
                     ],
                     "style": Object {
@@ -1190,7 +1319,7 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": Array [
-                          "Nome:",
+                          " Nome:",
                           "	",
                           "	",
                           undefined,
@@ -1204,7 +1333,7 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": Array [
-                        "Nome:",
+                        " Nome:",
                         "	",
                         "	",
                         undefined,
@@ -1217,11 +1346,10 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": Array [
-                          "Email:",
+                          " Sobrenome: ",
                           "	",
                           "	",
                           undefined,
-                          "@gmail.com",
                         ],
                         "style": Object {
                           "alignSelf": "center",
@@ -1232,11 +1360,37 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": Array [
-                        "Email:",
+                        " Sobrenome: ",
                         "	",
                         "	",
                         undefined,
-                        "@gmail.com",
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": Array [
+                          " Email:",
+                          "	",
+                          "	",
+                          undefined,
+                        ],
+                        "style": Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        },
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        " Email:",
+                        "	",
+                        "	",
+                        undefined,
                       ],
                       "type": [Function],
                     },
