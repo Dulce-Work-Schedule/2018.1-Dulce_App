@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {sideMenu as styles} from '../styles' ;
 import {purple_dulce} from '../styles';
 
+
 export default class SideMenu extends React.Component {
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
