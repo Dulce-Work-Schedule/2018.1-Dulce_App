@@ -28,7 +28,7 @@ const styles = {
   },
   buttonView: {
     flexDirection: 'row',
-    marginLeft: 220
+    marginLeft: '60%'
   },
   colorPurple: {
     color: '#5f4b8b',
