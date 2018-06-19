@@ -4414,7 +4414,7 @@ exports[`renders correctly 1`] = `
                           }
                         }
                       >
-                        Selecionar
+                        Solicitar
                       </Text>
                     </View>
                   </View>

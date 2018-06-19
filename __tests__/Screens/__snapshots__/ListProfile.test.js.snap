@@ -232,49 +232,6 @@ exports[`renders correctly 1`] = `
                 virtual={undefined}
               >
                 <View
-                  header={true}
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#fff",
-                      "borderBottomWidth": null,
-                      "borderRadius": 2,
-                      "flexDirection": "row",
-                      "paddingBottom": 15,
-                      "paddingLeft": 15,
-                      "paddingRight": 15,
-                      "paddingTop": 15,
-                    }
-                  }
-                  virtual={undefined}
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#000",
-                          "fontFamily": "System",
-                          "fontSize": 16,
-                          "fontWeight": "600",
-                        },
-                        Object {
-                          "color": "#5f4b8b",
-                          "fontFamily": "Raleway",
-                          "fontSize": 17,
-                          "marginLeft": 5,
-                        },
-                      ]
-                    }
-                    uppercase={false}
-                    virtual={undefined}
-                  >
-                    Hospital Regional Do Gama
-                  </Text>
-                </View>
-                <View
                   accessibilityComponentType={undefined}
                   accessibilityLabel={undefined}
                   accessibilityTraits={undefined}
@@ -320,6 +277,30 @@ exports[`renders correctly 1`] = `
                     }
                     virtual={undefined}
                   >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "System",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "color": "#5f4b8b",
+                            "fontFamily": "Raleway",
+                            "fontSize": 17,
+                            "marginLeft": 5,
+                          },
+                        ]
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Hospital Regional Do Gama
+                    </Text>
                     <View>
                       <Text
                         accessible={true}
@@ -434,49 +415,6 @@ exports[`renders correctly 1`] = `
                 virtual={undefined}
               >
                 <View
-                  header={true}
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#fff",
-                      "borderBottomWidth": null,
-                      "borderRadius": 2,
-                      "flexDirection": "row",
-                      "paddingBottom": 15,
-                      "paddingLeft": 15,
-                      "paddingRight": 15,
-                      "paddingTop": 15,
-                    }
-                  }
-                  virtual={undefined}
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#000",
-                          "fontFamily": "System",
-                          "fontSize": 16,
-                          "fontWeight": "600",
-                        },
-                        Object {
-                          "color": "#5f4b8b",
-                          "fontFamily": "Raleway",
-                          "fontSize": 17,
-                          "marginLeft": 5,
-                        },
-                      ]
-                    }
-                    uppercase={false}
-                    virtual={undefined}
-                  >
-                    Hospital Regional da Asa Norte
-                  </Text>
-                </View>
-                <View
                   accessibilityComponentType={undefined}
                   accessibilityLabel={undefined}
                   accessibilityTraits={undefined}
@@ -522,6 +460,30 @@ exports[`renders correctly 1`] = `
                     }
                     virtual={undefined}
                   >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "System",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "color": "#5f4b8b",
+                            "fontFamily": "Raleway",
+                            "fontSize": 17,
+                            "marginLeft": 5,
+                          },
+                        ]
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Hospital Regional da Asa Norte
+                    </Text>
                     <View>
                       <Text
                         accessible={true}

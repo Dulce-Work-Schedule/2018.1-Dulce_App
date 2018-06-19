@@ -5,9 +5,7 @@ import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 require('bezier');
-import Adapter from 'enzyme-adapter-react-16';
-import Enzyme from 'enzyme';
-import {shallow} from 'enzyme';
+
 
 // import axios from 'axios';
 // import MockAdapter from 'axios-mock-adapter';
@@ -41,7 +39,8 @@ it('testing renderCard onPress',()=>{
   };
   const wrapper = shallow(<ListProfile />);
   const renderCard = shallow(wrapper.instance().renderCard(item));
-  const cardItem = renderCard.find('Styled(CardItem)').at(1);
+  const cardItem = renderCard.find('Styled(CardItem)').at(0);
   cardItem.props().onPress();
   console.log(cardItem.debug());
+  
 });
