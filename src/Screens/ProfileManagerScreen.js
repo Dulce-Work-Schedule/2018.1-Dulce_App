@@ -1,15 +1,12 @@
 import React from 'react';
-import {View, Alert} from 'react-native';
+import {View} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
-import {Card , CardItem , Body, Text} from 'native-base';
-import {Text} from 'native-base';
-import { Card, CardItem, Body, Text } from 'native-base';
-import {Card, CardItem, Body, Text} from 'native-base';
+import {Text,Button} from 'native-base';
 import IconButton from '../Components/IconButton';
 const styles = {
   container: {
@@ -31,6 +28,22 @@ const styles = {
   informacoes: {
     alignSelf: 'center',
     marginRight: 100
+  },
+  transparentButton: {
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginBottom: 20,
+    width: 170,
+    margin: 20,
+    marginHorizontal: 120
+  },
+  textButtonTrasparent: {
+    color: '#fd7d01',
+    fontSize: 17,
+    fontFamily: 'Raleway',
+    alignItems: 'center'
   }
 };
 
@@ -55,7 +68,7 @@ class ProfileManagerScreen extends React.Component {
     })
     .then((response) => {
       this.setState({profile: response.data, loading: false});
-    })
+    });
     /* .catch(() => {
       Alert.alert(
         'Erro',
@@ -96,17 +109,15 @@ class ProfileManagerScreen extends React.Component {
                Email:{'\t'}{'\t'}{this.state.profile.name}@gmail.com
               </Text>
             </View>
-            <View style={{flex: 1 ,alignContent: 'space-between',flexDirection: 'row'}}>
+            <View style={{flex: 1 ,alignItems: 'center'}}>
             <IconButton
             Icon = 'edit'
             text = 'Editar'
             onPress={() => this.navigateToEditScreen()}
             />
-            <IconButton
-            Icon = 'clear'
-            text = 'Excluir conta'
-            onPress={() => {}}
-            />
+              <Button transparent warning style={styles.transparentButton}>
+            <Text  style={styles.textButtonTrasparent}>Excluir conta</Text>
+            </Button>
             </View>
            </View>
           )
@@ -115,5 +126,6 @@ class ProfileManagerScreen extends React.Component {
       </View>
     );
   }
+}
 
 export default ProfileManagerScreen;

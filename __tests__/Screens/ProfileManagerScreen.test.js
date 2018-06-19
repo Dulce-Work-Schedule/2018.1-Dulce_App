@@ -50,7 +50,7 @@ it('testing edit button',() => {
   console.log(edit);
 });
 
-it('testing delete button',() => {
+/* it('testing delete button',() => {
   
   const navigation  = {navigate: jest.fn()};
   const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
@@ -58,7 +58,7 @@ it('testing delete button',() => {
   wrapper.setState({loading: false});
   const edit = wrapper.find('IconButton').at(1);
   edit.simulate('press');
-});
+}); */
 
 const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 

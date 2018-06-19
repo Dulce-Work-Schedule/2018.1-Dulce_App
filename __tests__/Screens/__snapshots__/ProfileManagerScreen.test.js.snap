@@ -204,17 +204,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <ScreenHeader
-          icon="arrow-back"
-          title="Meu Perfil"
-        />,
+        <SideBar />,
         <View
           style={
             Object {
-              "flex": 1,
+              "backgroundColor": "#FFF",
+              "flex": 8,
+              "flexDirection": "column",
             }
           }
         >
+          <ScreenHeader
+            icon="arrow-back"
+            title="Meu Perfil"
+          />
           <View
             style={
               Object {
@@ -222,63 +225,95 @@ ShallowWrapper {
               }
             }
           >
-            <SmallLogo />
-            <Styled(Text)
+            <View
               style={
                 Object {
-                  "alignSelf": "center",
-                  "fontSize": 20,
-                  "marginBottom": 15,
+                  "flex": 1,
                 }
               }
-              virtual={undefined}
             >
-              Nome:
-              	
-              	
-            </Styled(Text)>
-            <Styled(Text)
+              <SmallLogo />
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
+                virtual={undefined}
+              >
+                Nome:
+                	
+                	
+              </Styled(Text)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 20,
+                    "marginBottom": 15,
+                  }
+                }
+                virtual={undefined}
+              >
+                Email:
+                	
+                	
+                @gmail.com
+              </Styled(Text)>
+            </View>
+            <View
               style={
                 Object {
-                  "alignSelf": "center",
-                  "fontSize": 20,
-                  "marginBottom": 15,
+                  "alignItems": "center",
+                  "flex": 1,
                 }
               }
-              virtual={undefined}
             >
-              Email:
-              	
-              	
-              @gmail.com
-            </Styled(Text)>
-          </View>
-          <View
-            style={
-              Object {
-                "alignContent": "space-between",
-                "flex": 1,
-                "flexDirection": "row",
-              }
-            }
-          >
-            <IconButton
-              Icon="edit"
-              onPress={[Function]}
-              text="Editar"
-            />
-            <IconButton
-              Icon="clear"
-              onPress={[Function]}
-              text="Excluir conta"
-            />
+              <IconButton
+                Icon="edit"
+                onPress={[Function]}
+                text="Editar"
+              />
+              <Styled(Button)
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "height": 50,
+                    "justifyContent": "center",
+                    "margin": 20,
+                    "marginBottom": 20,
+                    "marginHorizontal": 120,
+                    "width": 170,
+                  }
+                }
+                transparent={true}
+                virtual={undefined}
+                warning={true}
+              >
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "color": "#fd7d01",
+                      "fontFamily": "Raleway",
+                      "fontSize": 17,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                  Excluir conta
+                </Styled(Text)>
+              </Styled(Button)>
+            </View>
           </View>
         </View>,
       ],
       "style": Object {
-        "backgroundColor": "#FFF",
         "flex": 1,
-        "flexDirection": "column",
+        "flexDirection": "row",
       },
     },
     "ref": null,
@@ -287,10 +322,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {
-          "icon": "arrow-back",
-          "title": "Meu Perfil",
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -301,6 +333,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <ScreenHeader
+              icon="arrow-back"
+              title="Meu Perfil"
+            />,
             <View
               style={
                 Object {
@@ -308,339 +344,6 @@ ShallowWrapper {
                 }
               }
             >
-              <SmallLogo />
-              <Styled(Text)
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "fontSize": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                virtual={undefined}
-              >
-                Nome:
-                	
-                	
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "fontSize": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                virtual={undefined}
-              >
-                Email:
-                	
-                	
-                @gmail.com
-              </Styled(Text)>
-            </View>,
-            <View
-              style={
-                Object {
-                  "alignContent": "space-between",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <IconButton
-                Icon="edit"
-                onPress={[Function]}
-                text="Editar"
-              />
-              <IconButton
-                Icon="clear"
-                onPress={[Function]}
-                text="Excluir conta"
-              />
-            </View>,
-          ],
-          "style": Object {
-            "flex": 1,
-          },
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <SmallLogo />,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "fontSize": 20,
-                      "marginBottom": 15,
-                    }
-                  }
-                  virtual={undefined}
-                >
-                  Nome:
-                  	
-                  	
-                </Styled(Text)>,
-                <Styled(Text)
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "fontSize": 20,
-                      "marginBottom": 15,
-                    }
-                  }
-                  virtual={undefined}
-                >
-                  Email:
-                  	
-                  	
-                  @gmail.com
-                </Styled(Text)>,
-              ],
-              "style": Object {
-                "flex": 1,
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {},
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    "Nome:",
-                    "	",
-                    "	",
-                    undefined,
-                  ],
-                  "style": Object {
-                    "alignSelf": "center",
-                    "fontSize": 20,
-                    "marginBottom": 15,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Nome:",
-                  "	",
-                  "	",
-                  undefined,
-                ],
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    "Email:",
-                    "	",
-                    "	",
-                    undefined,
-                    "@gmail.com",
-                  ],
-                  "style": Object {
-                    "alignSelf": "center",
-                    "fontSize": 20,
-                    "marginBottom": 15,
-                  },
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Email:",
-                  "	",
-                  "	",
-                  undefined,
-                  "@gmail.com",
-                ],
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <IconButton
-                  Icon="edit"
-                  onPress={[Function]}
-                  text="Editar"
-                />,
-                <IconButton
-                  Icon="clear"
-                  onPress={[Function]}
-                  text="Excluir conta"
-                />,
-              ],
-              "style": Object {
-                "alignContent": "space-between",
-                "flex": 1,
-                "flexDirection": "row",
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "Icon": "edit",
-                  "onPress": [Function],
-                  "text": "Editar",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "Icon": "clear",
-                  "onPress": [Function],
-                  "text": "Excluir conta",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <ScreenHeader
-            icon="arrow-back"
-            title="Meu Perfil"
-          />,
-          <View
-            style={
-              Object {
-                "flex": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "flex": 1,
-                }
-              }
-            >
-              <SmallLogo />
-              <Styled(Text)
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "fontSize": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                virtual={undefined}
-              >
-                Nome:
-                	
-                	
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "fontSize": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                virtual={undefined}
-              >
-                Email:
-                	
-                	
-                @gmail.com
-              </Styled(Text)>
-            </View>
-            <View
-              style={
-                Object {
-                  "alignContent": "space-between",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <IconButton
-                Icon="edit"
-                onPress={[Function]}
-                text="Editar"
-              />
-              <IconButton
-                Icon="clear"
-                onPress={[Function]}
-                text="Excluir conta"
-              />
-            </View>
-          </View>,
-        ],
-        "style": Object {
-          "backgroundColor": "#FFF",
-          "flex": 1,
-          "flexDirection": "column",
-        },
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "icon": "arrow-back",
-            "title": "Meu Perfil",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
               <View
                 style={
                   Object {
@@ -678,13 +381,12 @@ ShallowWrapper {
                   	
                   @gmail.com
                 </Styled(Text)>
-              </View>,
+              </View>
               <View
                 style={
                   Object {
-                    "alignContent": "space-between",
+                    "alignItems": "center",
                     "flex": 1,
-                    "flexDirection": "row",
                   }
                 }
               >
@@ -693,26 +395,74 @@ ShallowWrapper {
                   onPress={[Function]}
                   text="Editar"
                 />
-                <IconButton
-                  Icon="clear"
-                  onPress={[Function]}
-                  text="Excluir conta"
-                />
-              </View>,
-            ],
-            "style": Object {
-              "flex": 1,
-            },
+                <Styled(Button)
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "alignSelf": "center",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "margin": 20,
+                      "marginBottom": 20,
+                      "marginHorizontal": 120,
+                      "width": 170,
+                    }
+                  }
+                  transparent={true}
+                  virtual={undefined}
+                  warning={true}
+                >
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "color": "#fd7d01",
+                        "fontFamily": "Raleway",
+                        "fontSize": 17,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Excluir conta
+                  </Styled(Text)>
+                </Styled(Button)>
+              </View>
+            </View>,
+          ],
+          "style": Object {
+            "backgroundColor": "#FFF",
+            "flex": 8,
+            "flexDirection": "column",
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <SmallLogo />,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "icon": "arrow-back",
+              "title": "Meu Perfil",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <SmallLogo />
                   <Styled(Text)
                     style={
                       Object {
@@ -726,7 +476,7 @@ ShallowWrapper {
                     Nome:
                     	
                     	
-                  </Styled(Text)>,
+                  </Styled(Text)>
                   <Styled(Text)
                     style={
                       Object {
@@ -741,80 +491,549 @@ ShallowWrapper {
                     	
                     	
                     @gmail.com
-                  </Styled(Text)>,
-                ],
-                "style": Object {
-                  "flex": 1,
-                },
+                  </Styled(Text)>
+                </View>,
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <IconButton
+                    Icon="edit"
+                    onPress={[Function]}
+                    text="Editar"
+                  />
+                  <Styled(Button)
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "height": 50,
+                        "justifyContent": "center",
+                        "margin": 20,
+                        "marginBottom": 20,
+                        "marginHorizontal": 120,
+                        "width": 170,
+                      }
+                    }
+                    transparent={true}
+                    virtual={undefined}
+                    warning={true}
+                  >
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "color": "#fd7d01",
+                          "fontFamily": "Raleway",
+                          "fontSize": 17,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Excluir conta
+                    </Styled(Text)>
+                  </Styled(Button)>
+                </View>,
+              ],
+              "style": Object {
+                "flex": 1,
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {},
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <SmallLogo />,
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Nome:
+                      	
+                      	
+                    </Styled(Text)>,
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Email:
+                      	
+                      	
+                      @gmail.com
+                    </Styled(Text)>,
+                  ],
+                  "style": Object {
+                    "flex": 1,
+                  },
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        "Nome:",
+                        "	",
+                        "	",
+                        undefined,
+                      ],
+                      "style": Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      },
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Array [
                       "Nome:",
                       "	",
                       "	",
                       undefined,
                     ],
-                    "style": Object {
-                      "alignSelf": "center",
-                      "fontSize": 20,
-                      "marginBottom": 15,
-                    },
-                    "virtual": undefined,
+                    "type": [Function],
                   },
-                  "ref": null,
-                  "rendered": Array [
-                    "Nome:",
-                    "	",
-                    "	",
-                    undefined,
-                  ],
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        "Email:",
+                        "	",
+                        "	",
+                        undefined,
+                        "@gmail.com",
+                      ],
+                      "style": Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      },
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Array [
                       "Email:",
                       "	",
                       "	",
                       undefined,
                       "@gmail.com",
                     ],
-                    "style": Object {
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <IconButton
+                      Icon="edit"
+                      onPress={[Function]}
+                      text="Editar"
+                    />,
+                    <Styled(Button)
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "alignSelf": "center",
+                          "height": 50,
+                          "justifyContent": "center",
+                          "margin": 20,
+                          "marginBottom": 20,
+                          "marginHorizontal": 120,
+                          "width": 170,
+                        }
+                      }
+                      transparent={true}
+                      virtual={undefined}
+                      warning={true}
+                    >
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "color": "#fd7d01",
+                            "fontFamily": "Raleway",
+                            "fontSize": 17,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Excluir conta
+                      </Styled(Text)>
+                    </Styled(Button)>,
+                  ],
+                  "style": Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "Icon": "edit",
+                      "onPress": [Function],
+                      "text": "Editar",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Styled(Text)
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "color": "#fd7d01",
+                            "fontFamily": "Raleway",
+                            "fontSize": 17,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Excluir conta
+                      </Styled(Text)>,
+                      "style": Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "height": 50,
+                        "justifyContent": "center",
+                        "margin": 20,
+                        "marginBottom": 20,
+                        "marginHorizontal": 120,
+                        "width": 170,
+                      },
+                      "transparent": true,
+                      "virtual": undefined,
+                      "warning": true,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Excluir conta",
+                        "style": Object {
+                          "alignItems": "center",
+                          "color": "#fd7d01",
+                          "fontFamily": "Raleway",
+                          "fontSize": 17,
+                        },
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": "Excluir conta",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <SideBar />,
+          <View
+            style={
+              Object {
+                "backgroundColor": "#FFF",
+                "flex": 8,
+                "flexDirection": "column",
+              }
+            }
+          >
+            <ScreenHeader
+              icon="arrow-back"
+              title="Meu Perfil"
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <SmallLogo />
+                <Styled(Text)
+                  style={
+                    Object {
                       "alignSelf": "center",
                       "fontSize": 20,
                       "marginBottom": 15,
-                    },
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Email:",
-                    "	",
-                    "	",
-                    undefined,
-                    "@gmail.com",
-                  ],
-                  "type": [Function],
-                },
-              ],
+                    }
+                  }
+                  virtual={undefined}
+                >
+                  Nome:
+                  	
+                  	
+                </Styled(Text)>
+                <Styled(Text)
+                  style={
+                    Object {
+                      "alignSelf": "center",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                  virtual={undefined}
+                >
+                  Email:
+                  	
+                  	
+                  @gmail.com
+                </Styled(Text)>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                  }
+                }
+              >
+                <IconButton
+                  Icon="edit"
+                  onPress={[Function]}
+                  text="Editar"
+                />
+                <Styled(Button)
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "alignSelf": "center",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "margin": 20,
+                      "marginBottom": 20,
+                      "marginHorizontal": 120,
+                      "width": 170,
+                    }
+                  }
+                  transparent={true}
+                  virtual={undefined}
+                  warning={true}
+                >
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "color": "#fd7d01",
+                        "fontFamily": "Raleway",
+                        "fontSize": 17,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Excluir conta
+                  </Styled(Text)>
+                </Styled(Button)>
+              </View>
+            </View>
+          </View>,
+        ],
+        "style": Object {
+          "flex": 1,
+          "flexDirection": "row",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <ScreenHeader
+                icon="arrow-back"
+                title="Meu Perfil"
+              />,
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <SmallLogo />
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Nome:
+                    	
+                    	
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "alignSelf": "center",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Email:
+                    	
+                    	
+                    @gmail.com
+                  </Styled(Text)>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                    }
+                  }
+                >
+                  <IconButton
+                    Icon="edit"
+                    onPress={[Function]}
+                    text="Editar"
+                  />
+                  <Styled(Button)
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "height": 50,
+                        "justifyContent": "center",
+                        "margin": 20,
+                        "marginBottom": 20,
+                        "marginHorizontal": 120,
+                        "width": 170,
+                      }
+                    }
+                    transparent={true}
+                    virtual={undefined}
+                    warning={true}
+                  >
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "color": "#fd7d01",
+                          "fontFamily": "Raleway",
+                          "fontSize": 17,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Excluir conta
+                    </Styled(Text)>
+                  </Styled(Button)>
+                </View>
+              </View>,
+            ],
+            "style": Object {
+              "backgroundColor": "#FFF",
+              "flex": 8,
+              "flexDirection": "column",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "icon": "arrow-back",
+                "title": "Meu Perfil",
+              },
+              "ref": null,
+              "rendered": null,
               "type": [Function],
             },
             Object {
@@ -823,21 +1042,92 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <IconButton
-                    Icon="edit"
-                    onPress={[Function]}
-                    text="Editar"
-                  />,
-                  <IconButton
-                    Icon="clear"
-                    onPress={[Function]}
-                    text="Excluir conta"
-                  />,
+                  <View
+                    style={
+                      Object {
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <SmallLogo />
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Nome:
+                      	
+                      	
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Email:
+                      	
+                      	
+                      @gmail.com
+                    </Styled(Text)>
+                  </View>,
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flex": 1,
+                      }
+                    }
+                  >
+                    <IconButton
+                      Icon="edit"
+                      onPress={[Function]}
+                      text="Editar"
+                    />
+                    <Styled(Button)
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "alignSelf": "center",
+                          "height": 50,
+                          "justifyContent": "center",
+                          "margin": 20,
+                          "marginBottom": 20,
+                          "marginHorizontal": 120,
+                          "width": 170,
+                        }
+                      }
+                      transparent={true}
+                      virtual={undefined}
+                      warning={true}
+                    >
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "color": "#fd7d01",
+                            "fontFamily": "Raleway",
+                            "fontSize": 17,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Excluir conta
+                      </Styled(Text)>
+                    </Styled(Button)>
+                  </View>,
                 ],
                 "style": Object {
-                  "alignContent": "space-between",
                   "flex": 1,
-                  "flexDirection": "row",
                 },
               },
               "ref": null,
@@ -847,12 +1137,110 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "Icon": "edit",
-                    "onPress": [Function],
-                    "text": "Editar",
+                    "children": Array [
+                      <SmallLogo />,
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "fontSize": 20,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Nome:
+                        	
+                        	
+                      </Styled(Text)>,
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "fontSize": 20,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Email:
+                        	
+                        	
+                        @gmail.com
+                      </Styled(Text)>,
+                    ],
+                    "style": Object {
+                      "flex": 1,
+                    },
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": Array [
+                          "Nome:",
+                          "	",
+                          "	",
+                          undefined,
+                        ],
+                        "style": Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        },
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Nome:",
+                        "	",
+                        "	",
+                        undefined,
+                      ],
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": Array [
+                          "Email:",
+                          "	",
+                          "	",
+                          undefined,
+                          "@gmail.com",
+                        ],
+                        "style": Object {
+                          "alignSelf": "center",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        },
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Email:",
+                        "	",
+                        "	",
+                        undefined,
+                        "@gmail.com",
+                      ],
+                      "type": [Function],
+                    },
+                  ],
                   "type": [Function],
                 },
                 Object {
@@ -860,12 +1248,118 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "Icon": "clear",
-                    "onPress": [Function],
-                    "text": "Excluir conta",
+                    "children": Array [
+                      <IconButton
+                        Icon="edit"
+                        onPress={[Function]}
+                        text="Editar"
+                      />,
+                      <Styled(Button)
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "alignSelf": "center",
+                            "height": 50,
+                            "justifyContent": "center",
+                            "margin": 20,
+                            "marginBottom": 20,
+                            "marginHorizontal": 120,
+                            "width": 170,
+                          }
+                        }
+                        transparent={true}
+                        virtual={undefined}
+                        warning={true}
+                      >
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "color": "#fd7d01",
+                              "fontFamily": "Raleway",
+                              "fontSize": 17,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Excluir conta
+                        </Styled(Text)>
+                      </Styled(Button)>,
+                    ],
+                    "style": Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                    },
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "Icon": "edit",
+                        "onPress": [Function],
+                        "text": "Editar",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <Styled(Text)
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "color": "#fd7d01",
+                              "fontFamily": "Raleway",
+                              "fontSize": 17,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Excluir conta
+                        </Styled(Text)>,
+                        "style": Object {
+                          "alignItems": "center",
+                          "alignSelf": "center",
+                          "height": 50,
+                          "justifyContent": "center",
+                          "margin": 20,
+                          "marginBottom": 20,
+                          "marginHorizontal": 120,
+                          "width": 170,
+                        },
+                        "transparent": true,
+                        "virtual": undefined,
+                        "warning": true,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Excluir conta",
+                          "style": Object {
+                            "alignItems": "center",
+                            "color": "#fd7d01",
+                            "fontFamily": "Raleway",
+                            "fontSize": 17,
+                          },
+                          "virtual": undefined,
+                        },
+                        "ref": null,
+                        "rendered": "Excluir conta",
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
                   "type": [Function],
                 },
               ],
