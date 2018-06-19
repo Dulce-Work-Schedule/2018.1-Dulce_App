@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Icon} from 'native-base';
+import {Container, Content, Card, CardItem, Text, Body, List, Icon, Toast} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
 import SideBar from '../Components/SideBar';
@@ -70,10 +70,15 @@ export default class NotificationScreen extends Component {
     };
   }
 
+  in_construction() {
+    Toast.show({
+      text: 'Funcionalidade não disponivel'});
+  }
+
   renderCard(item) {
     return (
       <Card>
-      <CardItem header><Text><Text style={styles.colorPurple}>{item.name}</Text> solicitou mudança com o seu horário</Text></CardItem>
+        <CardItem header><Text><Text style={styles.colorPurple}>{item.name}</Text> solicitou mudança com o seu horário</Text></CardItem>
         <CardItem>
           <Body>
             <View style={styles.view1}>
@@ -88,14 +93,13 @@ export default class NotificationScreen extends Component {
           </Body>
         </CardItem>
         <CardItem footer>
-        <View style={styles.buttonView}>
-          <ValidateButton text='Recusar' textStyle={styles.colorOrange}/>
-          <ValidateButton text='Aceitar' textStyle={styles.colorPurple}/>
-        </View>
+          <View style={styles.buttonView}>
+            <ValidateButton text='Recusar' textStyle={styles.colorOrange}
+              onPress={ () => this.in_construction()}/>
+            <ValidateButton text='Aceitar' textStyle={styles.colorPurple} onPress = {() => this.in_construction()}/>
+          </View>
         </CardItem>
-      </Card>
-    );
-  }
+      </Card>);}
 
   render() {
     return (
@@ -109,7 +113,7 @@ export default class NotificationScreen extends Component {
             <List dataArray={this.state.notifications}
               renderRow={(item) => (
                 this.renderCard(item)
-                )
+              )
               } />
           </Content>
         </Container>
