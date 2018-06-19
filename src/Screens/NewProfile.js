@@ -5,40 +5,8 @@ import t from 'tcomb-form-native';
 import {Container} from 'native-base';
 import SideBar from '../Components/SideBar';
 import SignUpButton from '../Components/SignUpButton';
+import {newProfile as styles} from '../styles' ;
 
-const styles = {
-  container: {
-    justifyContent: 'center',
-    marginTop: 10,
-    padding: 15,
-    backgroundColor: '#FFF'
-  },
-  title: {
-    fontSize: 30,
-    alignSelf: 'center',
-    marginBottom: 30
-  },
-  buttonText: {
-    fontSize: 18,
-    color: 'white',
-    alignSelf: 'center'
-  },
-  item: {
-    borderBottomWidth: 1
-  },
-  errorTextStyle: {
-    fontSize: 20,
-    alignSelf: 'center',
-    color: 'red'
-  },
-  text: {
-    fontSize: 15,
-    marginBottom: 10,
-    marginLeft: 10,
-    color: 'black',
-    fontFamily: 'Raleway'
-  }
-};
 const default_profile_state_value = {
   value: {
     nome: '',
