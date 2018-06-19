@@ -3,24 +3,8 @@ import {View} from 'react-native';
 import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
+import {listProfile as styles} from './styles' ;
 
-const styles = {
-  center: {
-    flex: 1,
-    flexDirection: 'column',
-    marginLeft: 2
-  },
-
-  colorPurple: {
-    color: '#5f4b8b',
-    fontSize: 17,
-    fontFamily: 'Raleway'
-  },
-  img: {
-    height: 40,
-    resizeMode: 'contain'
-  }
-};
 export default class ListProfile extends Component {
 
   constructor(props) {
