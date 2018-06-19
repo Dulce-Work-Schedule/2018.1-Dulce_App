@@ -1,3 +1,4 @@
+import {editScreen as styles} from '../styles' ;
 import React from 'react';
 import {View} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
@@ -9,32 +10,7 @@ import t from 'tcomb-form-native';
 import SignUpButton from '../Components/SignUpButton';
 import SideBar from '../Components/SideBar';
 
-
 const Form = t.form.Form;
-
-const styles = {
-  container: {
-    justifyContent: 'center',
-    marginTop: 10,
-    padding: 15,
-    backgroundColor: '#FFF'
-  },
-  text: {
-    fontSize: 15,
-    marginBottom: 10,
-    marginLeft: 10,
-    color: 'black',
-    fontFamily: 'Raleway'
-  },
-  button: {
-    height: 50,
-    paddingHorizontal: 30,
-    backgroundColor: '#5f4b8b',
-    alignSelf: 'center',
-    alignItems: 'center',
-    width: 180
-  }
-};
 
 export default class EditScreen extends ValidationComponent {
   constructor(props) {
