@@ -488,7 +488,7 @@ export const styles = {
 //Components:
 export const absences = styles.components.absences;
 export const agrButton = styles.components.agrButton;
-export const agrImput = styles.components.agrImput;
+export const agrInput = styles.components.agrInput;
 export const googleButton = styles.components.googleButton;
 export const scaleIcon = styles.components.scaleIcon;
 export const scheduleItem = styles.components.scheduleItem;
@@ -500,3 +500,11 @@ export const smallLogo = styles.components.smallLogo;
 export const userItem = styles.components.userItem;
 
 //Screens:
+export const editScreen = styles.screens.editScreen;
+export const listProfile = styles.screens.listProfile;
+export const loginScreen = styles.screens.loginScreen;
+export const newProfile = styles.screens.newProfile;
+export const newUser = styles.screens.newUser;
+export const notificationScreen = styles.screens.notificationScreen;
+export const profileManagerScreen = styles.screens.profileManagerScreen;
+export const weekSchedule = styles.screens.weekSchedule;
