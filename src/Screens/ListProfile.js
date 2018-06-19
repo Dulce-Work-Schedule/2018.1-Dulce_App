@@ -4,7 +4,6 @@ import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'n
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
 
-
 const styles = {
   center: {
     flex: 1,
@@ -57,6 +56,7 @@ export default class ListProfile extends Component {
     return (
       <Card>
         <CardItem style={styles.center} button onPress={() => {}}>
+        <Icon type='MaterialCommunityIcons' name='hospital-building' size={25} style={{paddingHorizontal: 15}} color='#fff' />
           <Body>
           <Text style={styles.colorPurple}>{item.name}</Text>
             <View >
