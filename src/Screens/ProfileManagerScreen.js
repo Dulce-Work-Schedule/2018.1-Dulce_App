@@ -8,44 +8,7 @@ import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
 import {Text,Button} from 'native-base';
 import IconButton from '../Components/IconButton';
-const styles = {
-  container: {
-    flex: 8,
-    flexDirection: 'column',
-    backgroundColor: '#FFF'
-
-  },
-  text: {
-    fontSize: 20,
-    marginBottom: 15,
-    alignSelf: 'center'
-  },
-  name: {
-    fontSize: 30,
-    marginBottom: 15,
-    alignSelf: 'center'
-  },
-  informacoes: {
-    alignSelf: 'center',
-    marginRight: 100
-  },
-  transparentButton: {
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    marginBottom: 20,
-    width: 170,
-    margin: 20,
-    marginHorizontal: 120
-  },
-  textButtonTrasparent: {
-    color: '#fd7d01',
-    fontSize: 17,
-    fontFamily: 'Raleway',
-    alignItems: 'center'
-  }
-};
+import {profileManagerScreen as styles} from '../styles' ;
 
 class ProfileManagerScreen extends React.Component {
   constructor(props) {

@@ -464,7 +464,24 @@ export const styles = {
         alignSelf: 'center'
       },
       informacoes: {
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginRight: 100
+      },
+      transparentButton: {
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        marginBottom: 20,
+        width: 170,
+        margin: 20,
+        marginHorizontal: 120
+      },
+      textButtonTrasparent: {
+        color: '#fd7d01',
+        fontSize: 17,
+        fontFamily: 'Raleway',
+        alignItems: 'center'
       }
     },
     weekSchedule: {
