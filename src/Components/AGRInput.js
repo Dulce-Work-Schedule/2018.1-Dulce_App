@@ -1,4 +1,4 @@
-import {agrImput as styles} from '../styles' ;
+import {agrInput as styles} from '../styles' ;
 import React from 'react';
 import {Input, Item, Form, Label} from 'native-base';
 
