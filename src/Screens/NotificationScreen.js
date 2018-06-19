@@ -4,45 +4,8 @@ import {Container, Content, Card, CardItem, Text, Body, List, Icon, Toast} from 
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
 import SideBar from '../Components/SideBar';
+import {notificationScreen as styles} from '../styles' ;
 
-const styles = {
-  view1: {
-    flex: 1,
-    flexDirection: 'row'
-  },
-  view2: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  view3: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  view4: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'flex-end'
-  },
-  buttonView: {
-    flexDirection: 'row',
-    marginLeft: '60%'
-  },
-  colorPurple: {
-    color: '#5f4b8b',
-    fontSize: 15
-  },
-  colorOrange: {
-    color: '#fd7d01',
-    fontSize: 15
-  },
-  icon: {
-    fontSize: 40,
-    color: '#5f4b8b'
-  }
-};
 export default class NotificationScreen extends Component {
 
   constructor(props) {
