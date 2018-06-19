@@ -4,33 +4,7 @@ import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
 import {Container} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
-
-const styles = {
-  container: {
-    justifyContent: 'center',
-    marginTop: 10,
-    padding: 15,
-    backgroundColor: '#FFF'
-  },
-  title: {
-    fontSize: 30,
-    alignSelf: 'center',
-    marginBottom: 30
-  },
-  buttonText: {
-    fontSize: 18,
-    color: 'white',
-    alignSelf: 'center'
-  },
-  item: {
-    borderBottomWidth: 1
-  },
-  errorTextStyle: {
-    fontSize: 20,
-    alignSelf: 'center',
-    color: 'red'
-  }
-};
+import {newUser as styles} from '../styles' ;
 const default_state = {
   nome: '',
   email: '',
