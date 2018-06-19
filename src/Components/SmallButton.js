@@ -1,19 +1,6 @@
+import {smallButton as styles} from '../styles' ;
 import React from 'react';
 import {Text, TouchableHighlight} from 'react-native';
-
-const styles = {
-  container: {
-    backgroundColor: '#FFF',
-    height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 15
-  },
-  text: {
-    fontSize: 18,
-    color: 'black'
-  }
-};
 
 class SmallButton extends React.Component {
 
