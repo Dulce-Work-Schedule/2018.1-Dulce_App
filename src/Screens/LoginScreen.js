@@ -16,7 +16,7 @@ export class LoginScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      registration: '',
+      email: '',
       password: '',
       showToast: false
     };
@@ -39,7 +39,7 @@ export class LoginScreen extends React.Component {
 
   _onPressButton() {
 
-    if (this.state.password === '' || this.state.registration === '') {
+    if (this.state.password === '' || this.state.email === '') {
       Alert.alert(
         'Alguns campos ainda estão vazios',
         'Para entrar preencha corretamente os campos de matrícula e senha.'
@@ -51,18 +51,22 @@ export class LoginScreen extends React.Component {
   }
 
   login() {
-    //const url = 'http://ec2-52-67-139-45.sa-east-1.compute.amazonaws.com/api/userManager/login';
-    const url = 'http://172.18.0.1:8086/api/userManager/login';
+    const url = 'http://52.67.4.137:8083/api/user/login';
     axios.post(url, {
-      registration: this.state.registration,
+      email: this.state.email,
       password: this.state.password
     })
       .then((response) => {
         if (!response.data.success) {
-          throw new Error('error');
+          var error = '';
+          if (response.data.email_valid_error) {
+            error += response.data.email_valid_error;
+          }
+          Alert.alert('Erro!', error);
+        } else {
+          this.props.setCurrentUser(response.data.token, response.data.user);
+          this.resetNavigation('initial');
         }
-        this.props.setCurrentUser(response.data.token, response.data.user);
-        this.resetNavigation('initial');
       })
       .catch((err) => {
         Alert.alert('Erro!', err.response.data.message);
@@ -81,7 +85,7 @@ export class LoginScreen extends React.Component {
         <AGRInput
           autoCapitalize='none'
           nameLabel='Email'
-          onChangeText={(registration) => this.setState({registration})}/>
+          onChangeText={(email) => this.setState({email})}/>
         <AGRInput
           nameLabel='Senha'
           secureTextEntry
