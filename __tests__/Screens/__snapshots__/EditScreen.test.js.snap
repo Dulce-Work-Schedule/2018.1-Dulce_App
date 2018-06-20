@@ -40,6 +40,7 @@ exports[`renders correctly 1`] = `
           "height": 1334,
         },
         Object {
+          "backgroundColor": "#FFF",
           "flex": 8,
         },
       ]
@@ -521,33 +522,65 @@ exports[`renders correctly 1`] = `
                 "borderTopWidth": null,
                 "elevation": 2,
                 "flexDirection": "row",
-                "height": 45,
+                "height": 50,
                 "justifyContent": "space-between",
                 "opacity": 1,
                 "paddingBottom": 6,
-                "paddingHorizontal": 50,
+                "paddingHorizontal": 30,
                 "paddingTop": 6,
-                "width": 145,
+                "width": 180,
               }
             }
             testID={undefined}
             tvParallaxProperties={undefined}
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <View
               style={
                 Object {
                   "alignItems": "center",
-                  "color": "white",
-                  "fontFamily": "Raleway",
-                  "fontSize": 16,
+                  "flexDirection": "row",
                 }
               }
             >
-              Editar
-            </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#fff",
+                      "fontSize": 25,
+                    },
+                    Object {
+                      "paddingHorizontal": 15,
+                    },
+                    Object {
+                      "fontFamily": "Entypo",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "color": "white",
+                    "fontFamily": "Raleway",
+                    "fontSize": 16,
+                  }
+                }
+              >
+                Salvar
+              </Text>
+            </View>
           </View>
         </View>
       </RCTScrollView>

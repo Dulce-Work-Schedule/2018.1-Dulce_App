@@ -517,7 +517,7 @@ exports[`renders correctly 1`] = `
                   style={
                     Object {
                       "flexDirection": "row",
-                      "marginLeft": 220,
+                      "marginLeft": "60%",
                     }
                   }
                 >
@@ -950,7 +950,7 @@ exports[`renders correctly 1`] = `
                   style={
                     Object {
                       "flexDirection": "row",
-                      "marginLeft": 220,
+                      "marginLeft": "60%",
                     }
                   }
                 >

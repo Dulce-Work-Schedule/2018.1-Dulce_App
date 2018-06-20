@@ -1,13 +1,13 @@
 import React from 'react';
-import {View , Text} from 'react-native';
-import AGRButton from '../Components/AGRButton';
+import {View} from 'react-native';
 import axios from 'axios';
 import store from '../Reducers/store';
 import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
-
+import {Text,Button} from 'native-base';
+import IconButton from '../Components/IconButton';
 const styles = {
   container: {
     flex: 8,
@@ -26,7 +26,24 @@ const styles = {
     alignSelf: 'center'
   },
   informacoes: {
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginRight: 100
+  },
+  transparentButton: {
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginBottom: 20,
+    width: 170,
+    margin: 20,
+    marginHorizontal: 120
+  },
+  textButtonTrasparent: {
+    color: '#fd7d01',
+    fontSize: 17,
+    fontFamily: 'Raleway',
+    alignItems: 'center'
   }
 };
 
@@ -34,29 +51,34 @@ class ProfileManagerScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: [],
+      profile: {},
       loading: true
     };
   }
 
   componentDidMount() {
     this.setState({loading: true});
-
-    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=' + store.getState().currentUser.id;
-
+    const url = 'http://18.231.9.190:8083/api/userManager/listByid/?id=' + store.getState().currentUser.id;
+    console.log(url);
+    console.log(store.getState().currentUser.token);
     axios.get(url,{
-
       headers: {
-        'x-access-token': store.getState().currentUser.token
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
       }
-
     })
-      .then((response) => {this.setState({profile: response.data , loading: false});});
+    .then((response) => {
+      this.setState({profile: response.data, loading: false});
+    });
+    /* .catch(() => {
+      Alert.alert(
+        'Erro',
+        'Verifique sua conexão.');
+    }); */
   }
+
   navigateToEditScreen() {
     this.props.navigation.navigate('edit');
   }
-
   renderSpinner() {
     return (
       <Container>
@@ -69,29 +91,30 @@ class ProfileManagerScreen extends React.Component {
 
   render() {
     return (
-      <View style={{flexDirection: 'row', flex: 1}}>
-        <SideBar />
-        <View style={styles.container}>
-          <ScreenHeader title='Meu Perfil' />
-          {
-            this.state.loading ? (
-              this.renderSpinner()
-            ) : (
-              <View style={styles.informacoes}>
-                <SmallLogo />
-                <Text style={styles.name}>{this.state.profile.name}</Text>
-                <Text style={styles.text}>Matrícula:{this.state.profile.registration}</Text>
-                <Text style={styles.text}>Setor: {this.state.profile.sector}</Text>
-                <Text style={styles.text}>Hospital: {this.state.profile.hospital}</Text>
-                <View style={{marginTop: 60}} />
-                <AGRButton text='Editar'onPress = {() => this.navigateToEditScreen()}/>
-              </View>
-            )
-          }
-        </View>
+      <View style={{flexDirection: 'row', flex: 1}}><SideBar />
+      <View style={styles.container}>
+        <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
+        {this.state.loading ? (
+            this.renderSpinner()) : (
+            <View style={{flex: 1}}><View style={{flex: 1}}>
+            <SmallLogo />
+              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.firtName}</Text>
+              <Text style={styles.text}> Sobrenome: {'\t'}{'\t'}{this.state.profile.lastName}</Text>
+              <Text style={styles.text}> Email:{'\t'}{'\t'}{this.state.profile.email}</Text>
+            </View>
+            <View style={{flex: 1 ,alignItems: 'center'}}>
+            <IconButton
+            Icon = 'edit'
+            text = 'Editar'
+            onPress={() => this.navigateToEditScreen()}/>
+              <Button transparent warning style={styles.transparentButton}>
+            <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
+            </Button>
+            </View></View>
+          )}
       </View>
-    );
-  }
+      </View>
+    );}
 }
 
 export default ProfileManagerScreen;

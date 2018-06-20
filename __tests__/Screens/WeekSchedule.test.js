@@ -354,3 +354,4 @@ it('Testing renderModal function',() => {
   backButton.simulate('press');
   expect(spy).toHaveBeenCalled();
 });
+

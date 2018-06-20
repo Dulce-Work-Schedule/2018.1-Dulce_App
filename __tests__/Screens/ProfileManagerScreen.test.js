@@ -36,15 +36,33 @@ it('should test navigateToEditScreen correctly', () => {
   profileScreen.navigateToEditScreen();
 });
 
-const flushPromises = () => new Promise(resolve => setImmediate(resolve));
-
-it('Should call function when button is pressed', async() => {
+it('testing edit button',() => {
   const navigation = {navigate: jest.fn()};
   const spy = jest.spyOn(ProfileManagerScreen.prototype, 'navigateToEditScreen');
-  const wrapper = shallow(<ProfileManagerScreen navigation={navigation} />);
+  const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
+  wrapper.update();
+  wrapper.setState({loading: false});
+  const edit = wrapper.find('IconButton').at(0);
+  edit.simulate('press');
+  expect(spy).toHaveBeenCalled();
+  console.log(edit);
+});
+
+/* it('testing delete button',() => {
+
+  const navigation  = {navigate: jest.fn()};
+  const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
+  wrapper.update();
+  wrapper.setState({loading: false});
+  const edit = wrapper.find('IconButton').at(1);
+  edit.simulate('press');
+}); */
+
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('testing axios', async () => {
+  const wrapper = shallow(<ProfileManagerScreen/>);
   await flushPromises();
   wrapper.update();
-  const enterButton = wrapper.find('AGRButton').at(0);
-  enterButton.simulate('press');
-  expect(spy).toHaveBeenCalled();
+  expect(wrapper).toMatchSnapshot();
 });

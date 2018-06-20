@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   <Image
     source={
       Object {
-        "testUri": "../../../assets/img/DulceHorizontalFull.png",
+        "testUri": "../../../assets/img/logo.png",
       }
     }
     style={
