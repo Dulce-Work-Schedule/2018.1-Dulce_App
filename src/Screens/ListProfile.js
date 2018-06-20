@@ -4,21 +4,21 @@ import {Container, Content, Card, CardItem, Text, Body, List, Fab, Icon} from 'n
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
 
-
 const styles = {
   center: {
     flex: 1,
     flexDirection: 'column',
-    alignItems: 'center',
-    marginLeft: 68,
-    justifyContent: 'center'
+    marginLeft: 2
   },
 
   colorPurple: {
     color: '#5f4b8b',
     fontSize: 17,
-    marginLeft: 5,
     fontFamily: 'Raleway'
+  },
+  img: {
+    height: 40,
+    resizeMode: 'contain'
   }
 };
 export default class ListProfile extends Component {
@@ -55,13 +55,17 @@ export default class ListProfile extends Component {
 
   renderCard(item) {
     return (
-      <Card>
+      <Card iconLeft>
         <CardItem style={styles.center} button onPress={() => {}}>
           <Body>
-          <Text style={styles.colorPurple}>{item.name}</Text>
-            <View >
-              <Text> Setor: <Text style={styles.colorPurple}>{item.setor}</Text></Text>
-              <Text> Matricula: <Text style={styles.colorPurple}>{item.matricula}</Text></Text>
+            <Text style={styles.colorPurple}>{item.name}</Text>
+            <View style={{flexDirection: 'row',flex: 1}}>
+              <Icon type='MaterialCommunityIcons' name='hospital-building'
+                style={{padding: 10, fontSize: 40, color: '#5f4b8b'}}/>
+              <View style= {{marginTop: 10}} >
+                <Text> Setor: <Text style={styles.colorPurple}>{item.setor}</Text></Text>
+                <Text> Matricula: <Text style={styles.colorPurple}>{item.matricula}</Text></Text>
+              </View>
             </View>
           </Body>
         </CardItem>
