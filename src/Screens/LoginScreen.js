@@ -113,10 +113,9 @@ const mapDispatchToProps = (dispatch) => {
       const currentUser = {
         token: api_token,
         id: api_user.id,
-        name: api_user.name,
-        registration: api_user.registration,
-        sector: api_user.sector,
-        hospital: api_user.hospital
+        firstName: api_user.firstName,
+        lastName: api_user.lastName,
+        email: api_user.email
       };
       return dispatch(actionLogin(currentUser));
     }
