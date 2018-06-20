@@ -5,6 +5,7 @@ import {ScrollView, Text, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {sideMenu as styles} from './styles' ;
 import {purple_dulce} from '../styles';
+import store from '../Reducers/store';
 
 export default class SideMenu extends React.Component {
   navigateToScreen = (route) => () => {
@@ -35,8 +36,8 @@ export default class SideMenu extends React.Component {
           />
         </View>
         <View style={styles.subTitle}>
-          <Text style={styles.drawerTitle}> dulce</Text>
-          <Text style={styles.drawerEmail}> user.dulce@gmail.com</Text>
+          <Text style={styles.drawerTitle}>{store.getState().currentUser.firstName}</Text>
+          <Text style={styles.drawerEmail}>{store.getState().currentUser.email}</Text>
         </View>
       </View>
     );
