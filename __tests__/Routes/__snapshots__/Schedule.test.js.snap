@@ -9874,7 +9874,11 @@ exports[`renders correctly 1`] = `
                       }
                     >
                       <RCTDatePicker
+<<<<<<< HEAD
                         date={1529506303366}
+=======
+                        date={1529505262280}
+>>>>>>> 7cda242... Arrumando testes que estavam quebrando
                         locale={undefined}
                         maximumDate={undefined}
                         minimumDate={undefined}
@@ -10105,7 +10109,11 @@ exports[`renders correctly 1`] = `
                       }
                     >
                       <RCTDatePicker
+<<<<<<< HEAD
                         date={1529506303366}
+=======
+                        date={1529505262280}
+>>>>>>> 7cda242... Arrumando testes que estavam quebrando
                         locale={undefined}
                         maximumDate={undefined}
                         minimumDate={undefined}

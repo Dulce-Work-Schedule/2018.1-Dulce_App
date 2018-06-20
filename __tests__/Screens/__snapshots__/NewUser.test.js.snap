@@ -116,13 +116,89 @@ exports[`renders correctly 1`] = `
             }
           }
         >
-          Nome
+          Primeiro nome
         </Text>
         <View
           style={Object {}}
         >
           <TextInput
-            accessibilityLabel="Nome"
+            accessibilityLabel="Primeiro nome"
+            allowFontScaling={true}
+            autoCapitalize={undefined}
+            autoCorrect={undefined}
+            autoFocus={undefined}
+            blurOnSubmit={undefined}
+            clearButtonMode={undefined}
+            clearTextOnFocus={undefined}
+            editable={undefined}
+            enablesReturnKeyAutomatically={undefined}
+            keyboardAppearance={undefined}
+            keyboardType={undefined}
+            maxLength={undefined}
+            multiline={undefined}
+            numberOfLines={undefined}
+            onBlur={undefined}
+            onChange={undefined}
+            onChangeText={[Function]}
+            onContentSizeChange={undefined}
+            onEndEditing={undefined}
+            onFocus={undefined}
+            onKeyPress={undefined}
+            onLayout={undefined}
+            onSelectionChange={undefined}
+            onSubmitEditing={undefined}
+            placeholder={undefined}
+            placeholderTextColor={undefined}
+            returnKeyType={undefined}
+            secureTextEntry={undefined}
+            selectTextOnFocus={undefined}
+            selectionColor={undefined}
+            selectionState={undefined}
+            style={
+              Object {
+                "borderColor": "#cccccc",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "color": "#000000",
+                "fontSize": 17,
+                "height": 36,
+                "marginBottom": 5,
+                "paddingHorizontal": 7,
+                "paddingVertical": 7,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 17,
+              "fontWeight": "500",
+              "marginBottom": 7,
+            }
+          }
+        >
+          Segundo nome
+        </Text>
+        <View
+          style={Object {}}
+        >
+          <TextInput
+            accessibilityLabel="Segundo nome"
             allowFontScaling={true}
             autoCapitalize={undefined}
             autoCorrect={undefined}
