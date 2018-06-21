@@ -1,5 +1,5 @@
 import React from 'react';
-import {scaleIcon as styles} from '../styles' ;
+import {scaleIcon as styles} from './styles' ;
 import {Image, TouchableHighlight} from 'react-native';
 
 class ScaleIcon extends React.Component {

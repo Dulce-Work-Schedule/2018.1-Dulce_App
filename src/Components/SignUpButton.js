@@ -1,4 +1,4 @@
-import {signUpButton as styles} from '../styles' ;
+import {signUpButton as styles} from './styles' ;
 import React from 'react';
 import {Text, View} from 'react-native';
 import {Container, Content, Button} from 'native-base';
@@ -15,7 +15,7 @@ class SignUp extends React.Component {
             {this.props.icon ? <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Icon name={this.props.icon} size={25} style={{paddingHorizontal: 15}} color='#fff' />
               <Text style={styles.text}>{this.props.text}</Text>
-              </View>
+            </View>
               : <Text style={styles.text}>{this.props.text}</Text>
             }
           </Button>

@@ -4,7 +4,7 @@ import {Container, Content, Card, CardItem, Text, Body, List, Icon, Toast} from 
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
 import SideBar from '../Components/SideBar';
-import {notificationScreen as styles} from '../styles' ;
+import {notificationScreen as styles} from './styles' ;
 
 export default class NotificationScreen extends Component {
 

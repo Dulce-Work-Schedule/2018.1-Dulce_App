@@ -1,33 +1,6 @@
 import React from 'react';
 import {Text, Container, Content, Button,Icon} from 'native-base';
-
-const styles = {
-  container: {
-    backgroundColor: '#5f4b8b',
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 30,
-    paddingHorizontal: 20,
-    alignSelf: 'center',
-    marginBottom: 0,
-    width: 170,
-    borderColor: '#5f4b8b'
-  },
-  text: {
-    marginLeft: 35,
-    color: '#ffffff',
-    fontSize: 15,
-    fontFamily: 'Raleway',
-    alignItems: 'center'
-  },
-  icon: {
-    color: '#ffffff',
-    marginRight: 40,
-    height: 25,
-    width: 25
-  }
-};
+import {iconButton as styles} from './styles' ;
 
 class IconButton extends React.Component {
   render() {

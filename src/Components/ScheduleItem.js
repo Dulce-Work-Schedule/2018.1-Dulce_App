@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableHighlight, View} from 'react-native';
-import {scheduleItem as styles} from '../styles' ;
+import {scheduleItem as styles} from './styles' ;
 
 class ScheduleItem extends React.Component {
   render() {

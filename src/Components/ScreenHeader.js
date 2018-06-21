@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header, Body, Title} from 'native-base';
-import {screenHeader as styles} from '../styles' ;
+import {screenHeader as styles} from './styles' ;
 import {StatusBar} from 'react-native';
 
 class ScreenHeader extends React.Component {

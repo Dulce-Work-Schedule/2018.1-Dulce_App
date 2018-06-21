@@ -1,4 +1,4 @@
-import {editScreen as styles} from '../styles' ;
+import {editScreen as styles} from './styles' ;
 import React from 'react';
 import {View} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';

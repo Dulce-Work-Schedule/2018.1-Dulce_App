@@ -5,7 +5,7 @@ import t from 'tcomb-form-native';
 import {Container} from 'native-base';
 import SideBar from '../Components/SideBar';
 import SignUpButton from '../Components/SignUpButton';
-import {newProfile as styles} from '../styles' ;
+import {newProfile as styles} from './styles' ;
 
 const default_profile_state_value = {
   value: {

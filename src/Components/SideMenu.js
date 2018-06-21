@@ -3,9 +3,8 @@ import React from 'react';
 import {NavigationActions} from 'react-navigation';
 import {ScrollView, Text, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {sideMenu as styles} from '../styles' ;
+import {sideMenu as styles} from './styles' ;
 import {purple_dulce} from '../styles';
-
 
 export default class SideMenu extends React.Component {
   navigateToScreen = (route) => () => {

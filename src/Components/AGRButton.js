@@ -1,4 +1,4 @@
-import {agrButton as styles} from '../styles' ;
+import {agrButton as styles} from './styles' ;
 import React from 'react';
 import {Text} from 'react-native';
 import {Container, Content, Button} from 'native-base';

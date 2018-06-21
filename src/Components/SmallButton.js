@@ -1,4 +1,4 @@
-import {smallButton as styles} from '../styles' ;
+import {smallButton as styles} from './styles' ;
 import React from 'react';
 import {Text, TouchableHighlight} from 'react-native';
 

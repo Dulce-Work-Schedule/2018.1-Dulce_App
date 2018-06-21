@@ -1,4 +1,4 @@
-import {googleButton as styles} from '../styles' ;
+import {googleButton as styles} from './styles' ;
 import React from 'react';
 import {Text, Image} from 'react-native';
 import {Container, Content, Button} from 'native-base';

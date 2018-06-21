@@ -204,6 +204,7 @@ exports[`renders correctly 1`] = `
           >
             <View>
               <View
+                iconLeft={true}
                 style={
                   Object {
                     "backgroundColor": "#fff",
@@ -255,8 +256,7 @@ exports[`renders correctly 1`] = `
                       "borderRadius": 2,
                       "flex": 1,
                       "flexDirection": "column",
-                      "justifyContent": "center",
-                      "marginLeft": 68,
+                      "marginLeft": 2,
                       "opacity": 1,
                       "paddingBottom": 10,
                       "paddingLeft": 15,
@@ -292,7 +292,6 @@ exports[`renders correctly 1`] = `
                             "color": "#5f4b8b",
                             "fontFamily": "Raleway",
                             "fontSize": 17,
-                            "marginLeft": 5,
                           },
                         ]
                       }
@@ -301,92 +300,143 @@ exports[`renders correctly 1`] = `
                     >
                       Hospital Regional Do Gama
                     </Text>
-                    <View>
+                    <View
+                      style={
+                        Object {
+                          "flex": 1,
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
                       <Text
                         accessible={true}
-                        allowFontScaling={true}
+                        allowFontScaling={false}
                         ellipsizeMode="tail"
                         style={
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          }
+                          Array [
+                            Object {
+                              "color": undefined,
+                              "fontSize": 12,
+                            },
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontSize": 30,
+                              },
+                              Object {
+                                "color": "#000",
+                                "fontSize": 30,
+                              },
+                              Object {
+                                "color": "#5f4b8b",
+                                "fontSize": 40,
+                                "padding": 10,
+                              },
+                            ],
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                          ]
                         }
-                        uppercase={false}
+                        type="MaterialCommunityIcons"
                         virtual={undefined}
                       >
-                         Setor: 
+                        
+                      </Text>
+                      <View
+                        style={
+                          Object {
+                            "marginTop": 10,
+                          }
+                        }
+                      >
                         <Text
                           accessible={true}
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Array [
-                              Object {
-                                "color": "#000",
-                                "fontFamily": "System",
-                                "fontSize": 16,
-                              },
-                              Object {
-                                "color": "#5f4b8b",
-                                "fontFamily": "Raleway",
-                                "fontSize": 17,
-                                "marginLeft": 5,
-                              },
-                            ]
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                            }
                           }
                           uppercase={false}
                           virtual={undefined}
                         >
-                          Jimmy
+                           Setor: 
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "System",
+                                  "fontSize": 16,
+                                },
+                                Object {
+                                  "color": "#5f4b8b",
+                                  "fontFamily": "Raleway",
+                                  "fontSize": 17,
+                                },
+                              ]
+                            }
+                            uppercase={false}
+                            virtual={undefined}
+                          >
+                            Jimmy
+                          </Text>
                         </Text>
-                      </Text>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          }
-                        }
-                        uppercase={false}
-                        virtual={undefined}
-                      >
-                         Matricula: 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Array [
-                              Object {
-                                "color": "#000",
-                                "fontFamily": "System",
-                                "fontSize": 16,
-                              },
-                              Object {
-                                "color": "#5f4b8b",
-                                "fontFamily": "Raleway",
-                                "fontSize": 17,
-                                "marginLeft": 5,
-                              },
-                            ]
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                            }
                           }
                           uppercase={false}
                           virtual={undefined}
                         >
-                          123456
+                           Matricula: 
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "System",
+                                  "fontSize": 16,
+                                },
+                                Object {
+                                  "color": "#5f4b8b",
+                                  "fontFamily": "Raleway",
+                                  "fontSize": 17,
+                                },
+                              ]
+                            }
+                            uppercase={false}
+                            virtual={undefined}
+                          >
+                            123456
+                          </Text>
                         </Text>
-                      </Text>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
+                iconLeft={true}
                 style={
                   Object {
                     "backgroundColor": "#fff",
@@ -438,8 +488,7 @@ exports[`renders correctly 1`] = `
                       "borderRadius": 2,
                       "flex": 1,
                       "flexDirection": "column",
-                      "justifyContent": "center",
-                      "marginLeft": 68,
+                      "marginLeft": 2,
                       "opacity": 1,
                       "paddingBottom": 10,
                       "paddingLeft": 15,
@@ -475,7 +524,6 @@ exports[`renders correctly 1`] = `
                             "color": "#5f4b8b",
                             "fontFamily": "Raleway",
                             "fontSize": 17,
-                            "marginLeft": 5,
                           },
                         ]
                       }
@@ -484,87 +532,137 @@ exports[`renders correctly 1`] = `
                     >
                       Hospital Regional da Asa Norte
                     </Text>
-                    <View>
+                    <View
+                      style={
+                        Object {
+                          "flex": 1,
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
                       <Text
                         accessible={true}
-                        allowFontScaling={true}
+                        allowFontScaling={false}
                         ellipsizeMode="tail"
                         style={
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          }
+                          Array [
+                            Object {
+                              "color": undefined,
+                              "fontSize": 12,
+                            },
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontSize": 30,
+                              },
+                              Object {
+                                "color": "#000",
+                                "fontSize": 30,
+                              },
+                              Object {
+                                "color": "#5f4b8b",
+                                "fontSize": 40,
+                                "padding": 10,
+                              },
+                            ],
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                          ]
                         }
-                        uppercase={false}
+                        type="MaterialCommunityIcons"
                         virtual={undefined}
                       >
-                         Setor: 
+                        
+                      </Text>
+                      <View
+                        style={
+                          Object {
+                            "marginTop": 10,
+                          }
+                        }
+                      >
                         <Text
                           accessible={true}
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Array [
-                              Object {
-                                "color": "#000",
-                                "fontFamily": "System",
-                                "fontSize": 16,
-                              },
-                              Object {
-                                "color": "#5f4b8b",
-                                "fontFamily": "Raleway",
-                                "fontSize": 17,
-                                "marginLeft": 5,
-                              },
-                            ]
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                            }
                           }
                           uppercase={false}
                           virtual={undefined}
                         >
-                          Fepas Beauty
+                           Setor: 
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "System",
+                                  "fontSize": 16,
+                                },
+                                Object {
+                                  "color": "#5f4b8b",
+                                  "fontFamily": "Raleway",
+                                  "fontSize": 17,
+                                },
+                              ]
+                            }
+                            uppercase={false}
+                            virtual={undefined}
+                          >
+                            Fepas Beauty
+                          </Text>
                         </Text>
-                      </Text>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          }
-                        }
-                        uppercase={false}
-                        virtual={undefined}
-                      >
-                         Matricula: 
                         <Text
                           accessible={true}
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Array [
-                              Object {
-                                "color": "#000",
-                                "fontFamily": "System",
-                                "fontSize": 16,
-                              },
-                              Object {
-                                "color": "#5f4b8b",
-                                "fontFamily": "Raleway",
-                                "fontSize": 17,
-                                "marginLeft": 5,
-                              },
-                            ]
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                            }
                           }
                           uppercase={false}
                           virtual={undefined}
                         >
-                          160119553
+                           Matricula: 
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "System",
+                                  "fontSize": 16,
+                                },
+                                Object {
+                                  "color": "#5f4b8b",
+                                  "fontFamily": "Raleway",
+                                  "fontSize": 17,
+                                },
+                              ]
+                            }
+                            uppercase={false}
+                            virtual={undefined}
+                          >
+                            160119553
+                          </Text>
                         </Text>
-                      </Text>
+                      </View>
                     </View>
                   </View>
                 </View>

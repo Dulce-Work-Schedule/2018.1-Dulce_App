@@ -4,7 +4,7 @@ import ScreenHeader from '../Components/ScreenHeader';
 import t from 'tcomb-form-native';
 import {Container} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
-import {newUser as styles} from '../styles' ;
+import {newUser as styles} from './styles' ;
 const default_state = {
   nome: '',
   email: '',

@@ -9,7 +9,7 @@ import ScheduleItem from '../Components/ScheduleItem';
 import SideBar from '../Components/SideBar';
 import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-import {weekSchedule as styles} from '../styles' ;
+import {weekSchedule as styles} from './styles' ;
 
 export default class WeekSchedule extends Component {
   constructor(props) {

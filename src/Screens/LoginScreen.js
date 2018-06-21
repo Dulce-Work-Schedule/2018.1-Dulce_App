@@ -9,7 +9,7 @@ import {actionLogin} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
 import {Container ,Button, Toast,Content} from 'native-base';
 import {StatusBar} from 'react-native';
-import {loginScreen as styles} from '../styles' ;
+import {loginScreen as styles} from './styles' ;
 
 const logo = require('../../assets/img/logo.png');
 export class LoginScreen extends React.Component {

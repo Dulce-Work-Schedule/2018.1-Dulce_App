@@ -1,4 +1,4 @@
-import {absences as styles} from '../styles' ;
+import {absences as styles} from './styles' ;
 import React from 'react';
 import {
   View,

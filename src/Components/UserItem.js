@@ -1,4 +1,4 @@
-import {userItem as styles} from '../styles' ;
+import {userItem as styles} from './styles' ;
 import React from 'react';
 import {Text, TouchableHighlight} from 'react-native';
 
