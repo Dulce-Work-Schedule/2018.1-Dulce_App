@@ -16,6 +16,12 @@
         "password": "123456"
       }
     ],
-    "schedules":[]
+    "schedules":[],
+    "errors": {
+      "email_valid_error": true,
+      "email_duplicate_error": true,
+      "message": true,
+      "success": false
+    }
   }
 }

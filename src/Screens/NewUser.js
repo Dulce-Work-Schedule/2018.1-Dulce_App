@@ -82,9 +82,6 @@ class NewUser extends React.Component {
               this.props.navigation.navigate('login');
               Alert.alert('Cadastro feito com sucesso!');
             }
-          })
-          .catch((err) => {
-            Alert.alert('Erro!', err.response.data.message);
           });
       }
       else {

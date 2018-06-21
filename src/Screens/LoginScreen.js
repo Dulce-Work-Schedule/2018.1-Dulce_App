@@ -62,14 +62,14 @@ export class LoginScreen extends React.Component {
           if (response.data.email_valid_error) {
             error += response.data.email_valid_error;
           }
+          if (response.data.message) {
+            error += response.data.message;
+          }
           Alert.alert('Erro!', error);
         } else {
           this.props.setCurrentUser(response.data.token, response.data.user);
           this.resetNavigation('initial');
         }
-      })
-      .catch((err) => {
-        Alert.alert('Erro!', err.response.data.message);
       });
   }
 

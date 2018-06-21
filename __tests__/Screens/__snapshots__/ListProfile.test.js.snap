@@ -283,33 +283,6 @@ exports[`renders correctly 1`] = `
                       ellipsizeMode="tail"
                       style={
                         Array [
-<<<<<<< HEAD
-=======
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "color": "#5f4b8b",
-                            "fontFamily": "Raleway",
-                            "fontSize": 17,
-                            "marginLeft": 5,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                      Hospital Regional Do Gama
-                    </Text>
-                    <View>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
->>>>>>> 7cda242... Arrumando testes que estavam quebrando
                           Object {
                             "color": "#000",
                             "fontFamily": "System",
@@ -542,33 +515,6 @@ exports[`renders correctly 1`] = `
                       ellipsizeMode="tail"
                       style={
                         Array [
-<<<<<<< HEAD
-=======
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "color": "#5f4b8b",
-                            "fontFamily": "Raleway",
-                            "fontSize": 17,
-                            "marginLeft": 5,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                      Hospital Regional da Asa Norte
-                    </Text>
-                    <View>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
->>>>>>> 7cda242... Arrumando testes que estavam quebrando
                           Object {
                             "color": "#000",
                             "fontFamily": "System",
