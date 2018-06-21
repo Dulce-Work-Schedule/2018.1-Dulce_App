@@ -7,6 +7,25 @@ import SideBar from '../Components/SideBar';
 import AGRButton from '../Components/AGRButton';
 import {newProfile as styles} from './styles' ;
 
+<<<<<<< 2e01c13f8d06fd1a47a197f51d58bc14aade13d5
+=======
+const default_profile_state_value = {
+  value: {
+    matricula: '',
+    especialidade: ''
+  },
+  user_type: [
+    {
+      name: 'hospital Santa Maria',
+      value: 'hospital1'
+    },{
+      name: 'hospital gama',
+      value: 'hospital2'
+
+    }
+  ]
+};
+>>>>>>> #482 componentizando picker para receber dados das apis
 const Form = t.form.Form;
 const default_profile_options = {
   fields: {
@@ -30,10 +49,8 @@ class NewProfile extends React.Component {
   constructor(props) {
     super(props);
     this.Service = t.struct({
-      nome: t.String,
-      setor: t.String,
       matricula: t.String,
-      hospital: t.String
+      especialidade: t.String
     });
     this.state = {
       value: {
@@ -54,16 +71,20 @@ class NewProfile extends React.Component {
     });
   }
 
-  pickerButton() {
+  pickerButton(object, text) {
     return (
-      <Picker
-        selectedValue={this.state.userType}
-        style={{height: 50, width: 200,marginBottom: 5,marginLeft: 10}}
-        onValueChange={(itemValue) => this.setState({userType: itemValue})}>
-        <Picker.Item label='Funcionário' value='employee' />
-        <Picker.Item label='Gestor do setor' value='sector_manager' />
-        <Picker.Item label='gestor da instituição' value='institution_manager' />
-      </Picker>
+      <View>
+        <Text style={styles.text}> {text} </Text>
+        <Picker
+          selectedValue={this.state.userType}
+          style={{height: 50, width: 200,marginBottom: 5,marginLeft: 10}}
+          onValueChange={(itemValue) => this.setState({userType: itemValue})}
+        >
+        {object.map((item, index) => {
+          return (<Picker.Item key={index} label={item.name} value={item.value} />);
+        })}
+        </Picker>
+      </View>
     );
   }
 
@@ -74,6 +95,7 @@ class NewProfile extends React.Component {
   renderScreen(flexN) {
     const {goBack} = this.props.navigation;
     return (
+<<<<<<< 2e01c13f8d06fd1a47a197f51d58bc14aade13d5
       <Container style={{backgroundColor: '#FFF', flex: flexN}}>
         <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
         <View style={styles.container}>
@@ -103,6 +125,26 @@ class NewProfile extends React.Component {
           <View style={{flexDirection: 'row', flex: 1}}>
             <SideBar />
             {this.renderScreen(8)}
+=======
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar />
+        <Container style={{backgroundColor: '#FFF', flex: 8}}>
+          <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
+          <View style={styles.container}>
+            <Form
+              ref='form'
+              type={this.Service}
+              value={this.state.value}
+              options={this.options}
+              onChange={(v) => this.onChange(v)}
+            />
+          </View>
+          {this.pickerButton(this.state.user_type, 'Selecione o tipo de Funcionário que deseja criar')}
+          <View style={{flex: 1}}>
+            <AGRButton
+              text = 'Cadastrar'
+              onPress = {() => {}}/>
+>>>>>>> #482 componentizando picker para receber dados das apis
           </View>
         )}
       </View>
