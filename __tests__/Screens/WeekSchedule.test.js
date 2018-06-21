@@ -1,12 +1,12 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import WeekSchedule from '../../src/Screens/WeekSchedule';
-import Adapter from 'enzyme-adapter-react-16';
-import Enzyme from 'enzyme';
-import {shallow} from 'enzyme';
-import {View} from 'react-native';
-import {Alert} from 'react-native';
-import ScheduleItem from '../../src/Components/ScheduleItem';
+  import React from 'react';
+  import renderer from 'react-test-renderer';
+  import WeekSchedule from '../../src/Screens/WeekSchedule';
+  import Adapter from 'enzyme-adapter-react-16';
+  import Enzyme from 'enzyme';
+  import {shallow} from 'enzyme';
+  import {View} from 'react-native';
+  import {Alert} from 'react-native';
+  import ScheduleItem from '../../src/Components/ScheduleItem';
 // import axios from 'axios';
 // import MockAdapter from 'axios-mock-adapter';
 
@@ -355,3 +355,94 @@ it('Testing renderModal function',() => {
   expect(spy).toHaveBeenCalled();
 });
 
+
+it('alert_change onPress Não', () => {
+  
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    }
+  })
+  
+  const wrapper = shallow(<WeekSchedule />);
+
+  wrapper.instance().alert_change(jest.fn());
+  Alert.alert.mock.calls[0][2][0].onPress();
+
+ 
+});
+
+it('alert_change onPress Sim', () => {
+  
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    }
+  })
+
+  const wrapper = shallow(<WeekSchedule />);
+  wrapper.instance().alert_change(jest.fn());
+  Alert.alert.mock.calls[0][2][1].onPress();
+ 
+});
+
+
+it('_alert onPress Não', () => {
+  
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    }
+  })
+  
+  const wrapper = shallow(<WeekSchedule />);
+
+  wrapper.instance()._alert(jest.fn());
+  Alert.alert.mock.calls[1][2][0].onPress(); 
+});
+
+it('_alert onPress Sim', () => {
+  
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    }
+  })
+  
+  const wrapper = shallow(<WeekSchedule />);
+
+  wrapper.instance()._alert(jest.fn());
+  Alert.alert.mock.calls[1][2][1].onPress(); 
+});
+
+it('alert_Selfchange onPress Não', () => {
+  
+
+  const date = new Date();
+
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    }
+  })
+  
+  const wrapper = shallow(<WeekSchedule />);
+
+  wrapper.instance().alert_Selfchange(date);
+  Alert.alert.mock.calls[3][2][0].onPress(); 
+});
+
+  it('alert_Selfchange onPress Sim', () => {
+  
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    }
+  })
+  
+  const date = new Date();
+  const wrapper = shallow(<WeekSchedule />);
+
+  wrapper.instance().alert_Selfchange(date);
+  Alert.alert.mock.calls[3][2][1].onPress(); 
+});  

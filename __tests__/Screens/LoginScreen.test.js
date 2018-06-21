@@ -121,3 +121,10 @@ it('Should call register function', () => {
   registerButton.simulate('press');
   expect(spy).toHaveBeenCalled();
 });
+
+/* it('google button onpress',() => {
+const wrapper = shallow(<LoginScreen/>);
+const google = wrapper.find('GoogleButton').at(0);
+google.props().onPress();
+console.log(wrapper.debug());
+}); */
