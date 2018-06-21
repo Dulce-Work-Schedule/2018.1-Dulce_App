@@ -17,10 +17,10 @@ const default_profile_state_value = {
   user_type: [
     {
       name: 'hospital Santa Maria',
-      value: 'hospital1'
+      id: 'hospital1'
     },{
       name: 'hospital gama',
-      value: 'hospital2'
+      id: 'hospital2'
 
     }
   ]
@@ -48,7 +48,7 @@ const default_profile_options = {
 class NewProfile extends React.Component {
   constructor(props) {
     super(props);
-    this.Service = t.struct({
+    this.profile_basics = t.struct({
       matricula: t.String,
       especialidade: t.String
     });
@@ -81,7 +81,7 @@ class NewProfile extends React.Component {
           onValueChange={(itemValue) => this.setState({userType: itemValue})}
         >
         {object.map((item, index) => {
-          return (<Picker.Item key={index} label={item.name} value={item.value} />);
+          return (<Picker.Item key={index} label={item.name} value={item.id} />);
         })}
         </Picker>
       </View>
@@ -133,7 +133,7 @@ class NewProfile extends React.Component {
           <View style={styles.container}>
             <Form
               ref='form'
-              type={this.Service}
+              type={this.profile_basics}
               value={this.state.value}
               options={this.options}
               onChange={(v) => this.onChange(v)}
