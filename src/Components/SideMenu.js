@@ -10,6 +10,8 @@ import {actionLogout} from '../Actions/currentUser';
 import store from '../Reducers/store';
 
 class SideMenu extends React.Component {
+
+
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
       routeName: route
@@ -44,6 +46,13 @@ class SideMenu extends React.Component {
       </View>
     );
   }
+
+  logout() {
+    console.log('FUNÇão logout');
+    this.props.removeUser();
+    this.props.navigation.navigate('Logout');
+  }
+
   render() {
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
@@ -61,7 +70,7 @@ class SideMenu extends React.Component {
           </ScrollView>
           <View style={styles.footerContainer}>
             <Icon name='md-exit' size={30} color='#fff' style={{paddingHorizontal: 15}} />
-            <Text onPress={this.navigateToScreen('Logout')} style={{color: '#fff'}}>Logout</Text>
+            <Text onPress={() => this.logout()} style={{color: '#fff'}}>Logout</Text>
           </View>
         </View>
         <View style={{flex: 0.35, backgroundColor: '#fd7d01', alignItems: 'center', justifyContent: 'center'}}>
@@ -77,8 +86,8 @@ SideMenu.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-  return {
-    currentUser: {}
+  return{
+    currentUser:{}
   };
 };
 
