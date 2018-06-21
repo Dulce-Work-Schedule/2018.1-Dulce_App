@@ -5,6 +5,8 @@ import Adapter from 'enzyme-adapter-react-16';
 import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
 import renderer from 'react-test-renderer';
+import ImagePicker from 'react-native-image-picker';
+
 
 require('bezier');
 
@@ -191,3 +193,4 @@ it('testing onPress CardItem', () => {
   console.log(cardItem.debug());
 
 });
+
