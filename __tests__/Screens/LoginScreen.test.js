@@ -24,9 +24,9 @@ test('renders correctly', () => {
 
 test('change registration file ', () => {
   const wrapper = shallow(<LoginScreen />);
-  const registrationField = wrapper.find('AGRInput').at(0);
-  registrationField.simulate('changeText','text');
-  expect(wrapper.state('registration')).toBe('text');
+  const email = wrapper.find('AGRInput').at(0);
+  email.simulate('changeText','text');
+  expect(wrapper.state('email')).toBe('text');
 });
 
 test('change password file ', () => {
@@ -39,8 +39,8 @@ test('change password file ', () => {
 test('test alert empty password', () => {
   const wrapper = shallow(<LoginScreen />);
   //Registration preenchido
-  const registrationField = wrapper.find('AGRInput').at(0);
-  registrationField.simulate('changeText','123456');
+  const email = wrapper.find('AGRInput').at(0);
+  email.simulate('changeText','123456');
   //Password vazio
   const passwordField = wrapper.find('AGRInput').at(1);
   passwordField.simulate('changeText','');
@@ -52,8 +52,8 @@ test('test alert empty password', () => {
 test('test alert empty regitration', () => {
   const wrapper = shallow(<LoginScreen />);
   //Registration vazio
-  const registrationField = wrapper.find('AGRInput').at(0);
-  registrationField.simulate('changeText','');
+  const emailField = wrapper.find('AGRInput').at(0);
+  emailField.simulate('changeText','');
   //Password preenchido
   const passwordField = wrapper.find('AGRInput').at(1);
   passwordField.simulate('changeText','123456');
@@ -66,7 +66,7 @@ const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 it('Should call login function', async() => {
   const spy = jest.spyOn(LoginScreen.prototype, 'login');
   const wrapper = shallow(<LoginScreen />);
-  wrapper.setState({registration: '123456'});
+  wrapper.setState({email: 'user@test.com'});
   wrapper.setState({password: '123456'});
   await flushPromises();
   wrapper.update();

@@ -70,6 +70,26 @@ it('testing function _onPress',() => {
   console.log(onPressF);
 });
 
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('Should call login function', async() => {
+  const value = {
+    nome: 'Ezequiel',
+    email: '123@1234444.com',
+    senha: '12345',
+    confirmarSenha: '12345'
+  };
+  const spy = jest.spyOn(NewUser.prototype, '_onPress');
+  const wrapper = shallow(<NewUser />);
+  console.log(wrapper.debug);
+  wrapper.setState({value: value});
+  await flushPromises();
+  wrapper.update();
+  const enterButton = wrapper.find('SignUp').at(0);
+  enterButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
 it('testing function _onPress error',() => {
   const type = t.struct({
     nome: t.String,

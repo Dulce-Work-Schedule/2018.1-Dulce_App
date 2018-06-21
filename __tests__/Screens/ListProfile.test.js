@@ -1,16 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ListProfile from '../../src/Screens/ListProfile';
-import {shallow} from 'enzyme';
 import Enzyme from 'enzyme';
+import {shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-require('bezier');
-
-// import axios from 'axios';
-// import MockAdapter from 'axios-mock-adapter';
 
 require('bezier');
-Enzyme.configure({adapter: new Adapter()});
 
 Enzyme.configure({adapter: new Adapter()});
 
@@ -21,24 +16,33 @@ it('renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('Testing fab',() => {
+it('should test navigateToNewProfile correctly', () => {
+  // This is to test component functions
   const navigation = {navigate: jest.fn()};
-  const wrapper = shallow(<ListProfile navigation={navigation}/>);
-  wrapper.setState({active: true});
-  const fab = shallow(wrapper.instance().fab());
-  fab.props().onPress();
+  let profileScreen = renderer
+    .create(
+      <ListProfile
+      navigation={navigation}
+        dispatch={action =>
+          expect(action)
+          .toEqual(navigation.navigate)
+        }
+      />
+    )
+    .getInstance();
+
+  profileScreen.navigateToNewProfile();
 });
 
-it('testing renderCard onPress',() => {
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 
-  const item = {
-    name: 'ezequiel',
-    setor: 'gama',
-    hospital: 'fga'
-  };
-  const wrapper = shallow(<ListProfile />);
-  const renderCard = shallow(wrapper.instance().renderCard(item));
-  const cardItem = renderCard.find('Styled(CardItem)').at(0);
-  cardItem.props().onPress();
-  console.log(cardItem.debug());
+it('Should call function when button is pressed', async() => {
+  const navigation = {navigate: jest.fn()};
+  const spy = jest.spyOn(ListProfile.prototype, 'navigateToNewProfile');
+  const wrapper = shallow(<ListProfile navigation={navigation} />);
+  await flushPromises();
+  wrapper.update();
+  const enterButton = wrapper.find('Styled(Fab)').at(0);
+  enterButton.simulate('press');
+  expect(spy).toHaveBeenCalled();
 });
