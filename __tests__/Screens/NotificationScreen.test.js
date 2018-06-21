@@ -4,7 +4,6 @@ import NotificationScreen from '../../src/Screens/NotificationScreen';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
-import {shallow} from 'enzyme';
 
 require('bezier');
 Enzyme.configure({adapter: new Adapter()});
