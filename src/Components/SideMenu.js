@@ -5,9 +5,11 @@ import {ScrollView, Text, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {sideMenu as styles} from './styles' ;
 import {purple_dulce} from '../styles';
+import {connect} from 'react-redux';
+import {actionLogout} from '../Actions/currentUser';
 import store from '../Reducers/store';
 
-export default class SideMenu extends React.Component {
+class SideMenu extends React.Component {
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
       routeName: route
@@ -73,3 +75,19 @@ export default class SideMenu extends React.Component {
 SideMenu.propTypes = {
   navigation: PropTypes.object
 };
+
+const mapStateToProps = (state) => {
+  return {
+    currentUser: {}
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    removeUser: () => {
+      return dispatch(actionLogout());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideMenu);
