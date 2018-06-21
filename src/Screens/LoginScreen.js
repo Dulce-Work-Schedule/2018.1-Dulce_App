@@ -9,43 +9,10 @@ import {actionLogin} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
 import {Container ,Button, Toast,Content} from 'native-base';
 import {StatusBar} from 'react-native';
+import {loginScreen as styles} from './styles' ;
 
 const logo = require('../../assets/img/logo.png');
-
-const styles = {
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    padding: 15,
-    backgroundColor: '#FFF'
-  },
-  input: {
-    height: 36,
-    borderBottomWidth: 1,
-    borderBottomColor: 'grey',
-    marginBottom: 10,
-    width: '100%',
-    alignSelf: 'center'
-  },
-  text: {
-    fontSize: 15,
-    color: '#5f4b8b'
-  },
-  buttonRegister: {
-    alignSelf: 'center'
-  },
-  logo: {
-    alignSelf: 'center',
-    height: 140,
-    resizeMode: 'contain',
-    backgroundColor: 'transparent',
-    marginTop: 20
-  }
-};
-
 export class LoginScreen extends React.Component {
-
-
   constructor(props) {
     super(props);
     this.state = {

@@ -8,44 +8,7 @@ import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
 import {Text,Button} from 'native-base';
 import IconButton from '../Components/IconButton';
-const styles = {
-  container: {
-    flex: 8,
-    flexDirection: 'column',
-    backgroundColor: '#FFF'
-
-  },
-  text: {
-    fontSize: 20,
-    marginBottom: 15,
-    alignSelf: 'center'
-  },
-  name: {
-    fontSize: 30,
-    marginBottom: 15,
-    alignSelf: 'center'
-  },
-  informacoes: {
-    alignSelf: 'center',
-    marginRight: 100
-  },
-  transparentButton: {
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    marginBottom: 20,
-    width: 170,
-    margin: 20,
-    marginHorizontal: 120
-  },
-  textButtonTrasparent: {
-    color: '#fd7d01',
-    fontSize: 17,
-    fontFamily: 'Raleway',
-    alignItems: 'center'
-  }
-};
+import {profileManagerScreen as styles} from './styles' ;
 
 class ProfileManagerScreen extends React.Component {
   constructor(props) {
@@ -66,9 +29,9 @@ class ProfileManagerScreen extends React.Component {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
       }
     })
-    .then((response) => {
-      this.setState({profile: response.data, loading: false});
-    });
+      .then((response) => {
+        this.setState({profile: response.data, loading: false});
+      });
     /* .catch(() => {
       Alert.alert(
         'Erro',
@@ -92,27 +55,27 @@ class ProfileManagerScreen extends React.Component {
   render() {
     return (
       <View style={{flexDirection: 'row', flex: 1}}><SideBar />
-      <View style={styles.container}>
-        <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
-        {this.state.loading ? (
+        <View style={styles.container}>
+          <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
+          {this.state.loading ? (
             this.renderSpinner()) : (
             <View style={{flex: 1}}><View style={{flex: 1}}>
-            <SmallLogo />
-              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.firtName}</Text>
+              <SmallLogo />
+              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.firstName}</Text>
               <Text style={styles.text}> Sobrenome: {'\t'}{'\t'}{this.state.profile.lastName}</Text>
               <Text style={styles.text}> Email:{'\t'}{'\t'}{this.state.profile.email}</Text>
             </View>
             <View style={{flex: 1 ,alignItems: 'center'}}>
-            <IconButton
-            Icon = 'edit'
-            text = 'Editar'
-            onPress={() => this.navigateToEditScreen()}/>
+              <IconButton
+                Icon = 'edit'
+                text = 'Editar'
+                onPress={() => this.navigateToEditScreen()}/>
               <Button transparent warning style={styles.transparentButton}>
-            <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
-            </Button>
+                <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
+              </Button>
             </View></View>
           )}
-      </View>
+        </View>
       </View>
     );}
 }

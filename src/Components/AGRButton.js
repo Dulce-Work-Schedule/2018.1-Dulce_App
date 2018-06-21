@@ -1,26 +1,7 @@
+import {agrButton as styles} from './styles' ;
 import React from 'react';
 import {Text} from 'react-native';
 import {Container, Content, Button} from 'native-base';
-
-const styles = {
-  container: {
-    backgroundColor: '#5f4b8b',
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 30,
-    paddingHorizontal: 50,
-    alignSelf: 'center',
-    marginBottom: 0,
-    width: 170
-  },
-  text: {
-    color: 'white',
-    fontSize: 14,
-    fontFamily: 'Raleway',
-    alignItems: 'center'
-  }
-};
 
 class AGRButton extends React.Component {
   render() {

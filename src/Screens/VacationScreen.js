@@ -4,7 +4,6 @@ import ScreenHeader from '../Components/ScreenHeader';
 import {View} from 'react-native';
 import SideBar from '../Components/SideBar';
 
-
 export default class VacationScreen extends React.Component {
 
   render() {

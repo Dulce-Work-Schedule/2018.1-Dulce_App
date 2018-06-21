@@ -1,17 +1,6 @@
+import {userItem as styles} from './styles' ;
 import React from 'react';
 import {Text, TouchableHighlight} from 'react-native';
-
-const styles = {
-  item: {
-    height: 60,
-    borderBottomWidth: 1,
-    justifyContent: 'center'
-  },
-  text: {
-    color: 'black',
-    fontSize: 25
-  }
-};
 
 class UserItem extends React.Component {
   render() {

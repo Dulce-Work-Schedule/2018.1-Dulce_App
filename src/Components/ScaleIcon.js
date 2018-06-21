@@ -1,18 +1,6 @@
 import React from 'react';
+import {scaleIcon as styles} from './styles' ;
 import {Image, TouchableHighlight} from 'react-native';
-
-const styles = {
-  container: {
-    marginTop: 100,
-    width: 100,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  icon: {
-    height: 100,
-    width: 100
-  }
-};
 
 class ScaleIcon extends React.Component {
 

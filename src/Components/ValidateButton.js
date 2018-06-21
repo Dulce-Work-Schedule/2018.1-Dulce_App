@@ -2,7 +2,6 @@ import React from 'react';
 import {Text} from 'react-native';
 import {Button} from 'native-base';
 
-
 class ValidateButton extends React.Component {
   render() {
     return (
