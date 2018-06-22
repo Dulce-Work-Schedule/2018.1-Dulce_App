@@ -6,9 +6,10 @@ import ValidationComponent from 'react-native-form-validator';
 //import store from '../Reducers/store';
 //import axios from 'axios';
 import {Container} from 'native-base';
-import t from 'tcomb-form-native';
+import t from '../Components/Form';
 import SignUpButton from '../Components/SignUpButton';
 import SideBar from '../Components/SideBar';
+
 
 const Form = t.form.Form;
 
