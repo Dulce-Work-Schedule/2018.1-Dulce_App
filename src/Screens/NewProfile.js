@@ -73,12 +73,12 @@ class NewProfile extends React.Component {
   }
 
   render() {
-
+    const {goBack} = this.props.navigation;
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
         <SideBar />
         <Container style={{backgroundColor: '#FFF', flex: 8}}>
-          <ScreenHeader title = 'Criar novo perfil' />
+          <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
           <View style={styles.container}>
             <Form
               ref='form'
