@@ -7,6 +7,7 @@ import {sideMenu as styles} from './styles' ;
 import {purple_dulce} from '../styles';
 import {connect} from 'react-redux';
 import {actionLogout} from '../Actions/currentUser';
+import store from '../Reducers/store';
 
 class SideMenu extends React.Component {
 
@@ -47,7 +48,6 @@ class SideMenu extends React.Component {
   }
 
   logout() {
-    console.log('FUNÇão logout');
     this.props.removeUser();
     this.props.navigation.navigate('Logout');
   }
