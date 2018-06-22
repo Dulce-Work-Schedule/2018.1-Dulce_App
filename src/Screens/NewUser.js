@@ -92,10 +92,6 @@ class NewUser extends React.Component {
     }
   }
 
-  backToLogin() {
-    this.navigation.navigate('login');
-  }
-
   render() {
     const {goBack} = this.props.navigation;
     return (
