@@ -119,7 +119,8 @@ const mapDispatchToProps = (dispatch) => {
         id: api_user.id,
         firstName: api_user.firstName,
         lastName: api_user.lastName,
-        email: api_user.email
+        email: api_user.email,
+        logged_in: true
       };
       return dispatch(actionLogin(currentUser));
     }

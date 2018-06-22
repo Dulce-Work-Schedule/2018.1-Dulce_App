@@ -2,11 +2,19 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {actionLogout} from '../Actions/currentUser';
 import Router from '../Components/routes';
+import store from '../Reducers/store';
+import LoginNavigator from '../Navigators/LoginNavigator';
+import {Provider} from 'react-redux';
 
 class InitialScreen extends React.Component {
   render() {
     return (
-      <Router />
+      <Provider store={store}>
+      {
+        store.getState().currentUser.logged_in ? <Router />
+        : <LoginNavigator />
+      }
+      </Provider>
     );
   }
 }

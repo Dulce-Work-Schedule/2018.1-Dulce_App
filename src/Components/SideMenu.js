@@ -7,7 +7,6 @@ import {sideMenu as styles} from './styles' ;
 import {purple_dulce} from '../styles';
 import {connect} from 'react-redux';
 import {actionLogout} from '../Actions/currentUser';
-import store from '../Reducers/store';
 
 class SideMenu extends React.Component {
 
@@ -85,9 +84,9 @@ SideMenu.propTypes = {
   navigation: PropTypes.object
 };
 
-const mapStateToProps = (state) => {
-  return{
-    currentUser:{}
+const mapStateToProps = () => {
+  return {
+    currentUser: {}
   };
 };
 

@@ -21,7 +21,7 @@ class ProfileManagerScreen extends React.Component {
 
   componentDidMount() {
     this.setState({loading: true});
-    const url = 'http://18.231.9.190:8083/api/userManager/listByid/?id=' + store.getState().currentUser.id;
+    const url = 'http://52.67.4.137:8083/api/user/listByid/?id=' + store.getState().currentUser.id;
     console.log(url);
     console.log(store.getState().currentUser.token);
     axios.get(url,{
