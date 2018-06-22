@@ -41,6 +41,7 @@ exports[`renders correctly 1`] = `
         }
         virtual={undefined}
       >
+        <View />
         <View
           style={
             Object {

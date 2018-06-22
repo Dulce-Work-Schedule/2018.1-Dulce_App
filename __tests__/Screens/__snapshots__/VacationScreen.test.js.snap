@@ -69,6 +69,7 @@ exports[`renders correctly 1`] = `
         }
         virtual={undefined}
       >
+        <View />
         <View
           style={
             Object {
@@ -130,6 +131,7 @@ exports[`renders correctly 1`] = `
                 Object {
                   "alignSelf": "center",
                   "color": "#5f4b8b",
+                  "fontFamily": "Raleway",
                   "fontSize": 15,
                   "margin": 5,
                 },
@@ -3168,10 +3170,6 @@ exports[`renders correctly 1`] = `
                             "fontWeight": "300",
                             "marginTop": 7,
                           },
-                          Object {
-                            "color": "#2d4150",
-                            "fontWeight": "500",
-                          },
                           Object {},
                         ]
                       }
@@ -3274,6 +3272,10 @@ exports[`renders correctly 1`] = `
                             "fontSize": 16,
                             "fontWeight": "300",
                             "marginTop": 7,
+                          },
+                          Object {
+                            "color": "#2d4150",
+                            "fontWeight": "500",
                           },
                           Object {},
                         ]
@@ -4191,6 +4193,7 @@ exports[`renders correctly 1`] = `
                       },
                       Object {
                         "color": "#5f4b8b",
+                        "fontFamily": "Lato",
                         "fontSize": 20,
                       },
                     ]
@@ -4198,13 +4201,13 @@ exports[`renders correctly 1`] = `
                   uppercase={false}
                   virtual={undefined}
                 >
-                  21
+                  22
                   /
                   6
                   /
                   2018
                    até 
-                  21
+                  22
                   /
                   6
                   /

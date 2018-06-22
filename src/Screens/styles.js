@@ -39,6 +39,16 @@ export const styles = {
     img: {
       height: 40,
       resizeMode: 'contain'
+    },
+    text: {
+      fontFamily: 'Lato',
+      color: black_dulce,
+      fontSize: 17
+    },
+    textPurple: {
+      fontFamily: 'Lato',
+      color: purple_dulce,
+      fontSize: 17
     }
   },
   loginScreen: {

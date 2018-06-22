@@ -6,7 +6,7 @@ export const styles = {
     title: {
       margin: 5,
       alignSelf: 'center',
-      fontSize: 15,
+      fontSize: 17,
       color: purple_dulce,
       fontFamily: 'Raleway'
     },

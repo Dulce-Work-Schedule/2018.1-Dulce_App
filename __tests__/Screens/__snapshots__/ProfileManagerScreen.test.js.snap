@@ -71,6 +71,7 @@ exports[`renders correctly 1`] = `
         }
         virtual={undefined}
       >
+        <View />
         <View
           style={
             Object {
@@ -237,7 +238,8 @@ ShallowWrapper {
                 style={
                   Object {
                     "alignSelf": "center",
-                    "fontSize": 20,
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
                     "marginBottom": 15,
                   }
                 }
@@ -251,7 +253,8 @@ ShallowWrapper {
                 style={
                   Object {
                     "alignSelf": "center",
-                    "fontSize": 20,
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
                     "marginBottom": 15,
                   }
                 }
@@ -265,7 +268,8 @@ ShallowWrapper {
                 style={
                   Object {
                     "alignSelf": "center",
-                    "fontSize": 20,
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
                     "marginBottom": 15,
                   }
                 }
@@ -369,7 +373,8 @@ ShallowWrapper {
                   style={
                     Object {
                       "alignSelf": "center",
-                      "fontSize": 20,
+                      "fontFamily": "Lato",
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
@@ -383,7 +388,8 @@ ShallowWrapper {
                   style={
                     Object {
                       "alignSelf": "center",
-                      "fontSize": 20,
+                      "fontFamily": "Lato",
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
@@ -397,7 +403,8 @@ ShallowWrapper {
                   style={
                     Object {
                       "alignSelf": "center",
-                      "fontSize": 20,
+                      "fontFamily": "Lato",
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
@@ -493,7 +500,8 @@ ShallowWrapper {
                     style={
                       Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
@@ -507,7 +515,8 @@ ShallowWrapper {
                     style={
                       Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
@@ -521,7 +530,8 @@ ShallowWrapper {
                     style={
                       Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
@@ -595,7 +605,8 @@ ShallowWrapper {
                       style={
                         Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
@@ -609,7 +620,8 @@ ShallowWrapper {
                       style={
                         Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
@@ -623,7 +635,8 @@ ShallowWrapper {
                       style={
                         Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
@@ -662,7 +675,8 @@ ShallowWrapper {
                       ],
                       "style": Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       },
                       "virtual": undefined,
@@ -689,7 +703,8 @@ ShallowWrapper {
                       ],
                       "style": Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       },
                       "virtual": undefined,
@@ -716,7 +731,8 @@ ShallowWrapper {
                       ],
                       "style": Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       },
                       "virtual": undefined,
@@ -901,7 +917,8 @@ ShallowWrapper {
                   style={
                     Object {
                       "alignSelf": "center",
-                      "fontSize": 20,
+                      "fontFamily": "Lato",
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
@@ -915,7 +932,8 @@ ShallowWrapper {
                   style={
                     Object {
                       "alignSelf": "center",
-                      "fontSize": 20,
+                      "fontFamily": "Lato",
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
@@ -929,7 +947,8 @@ ShallowWrapper {
                   style={
                     Object {
                       "alignSelf": "center",
-                      "fontSize": 20,
+                      "fontFamily": "Lato",
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
@@ -1033,7 +1052,8 @@ ShallowWrapper {
                     style={
                       Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
@@ -1047,7 +1067,8 @@ ShallowWrapper {
                     style={
                       Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
@@ -1061,7 +1082,8 @@ ShallowWrapper {
                     style={
                       Object {
                         "alignSelf": "center",
-                        "fontSize": 20,
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
@@ -1157,7 +1179,8 @@ ShallowWrapper {
                       style={
                         Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
@@ -1171,7 +1194,8 @@ ShallowWrapper {
                       style={
                         Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
@@ -1185,7 +1209,8 @@ ShallowWrapper {
                       style={
                         Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
@@ -1259,7 +1284,8 @@ ShallowWrapper {
                         style={
                           Object {
                             "alignSelf": "center",
-                            "fontSize": 20,
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
                             "marginBottom": 15,
                           }
                         }
@@ -1273,7 +1299,8 @@ ShallowWrapper {
                         style={
                           Object {
                             "alignSelf": "center",
-                            "fontSize": 20,
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
                             "marginBottom": 15,
                           }
                         }
@@ -1287,7 +1314,8 @@ ShallowWrapper {
                         style={
                           Object {
                             "alignSelf": "center",
-                            "fontSize": 20,
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
                             "marginBottom": 15,
                           }
                         }
@@ -1326,7 +1354,8 @@ ShallowWrapper {
                         ],
                         "style": Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         },
                         "virtual": undefined,
@@ -1353,7 +1382,8 @@ ShallowWrapper {
                         ],
                         "style": Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         },
                         "virtual": undefined,
@@ -1380,7 +1410,8 @@ ShallowWrapper {
                         ],
                         "style": Object {
                           "alignSelf": "center",
-                          "fontSize": 20,
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
                           "marginBottom": 15,
                         },
                         "virtual": undefined,

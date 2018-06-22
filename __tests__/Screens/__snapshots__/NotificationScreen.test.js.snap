@@ -76,6 +76,7 @@ exports[`renders correctly 1`] = `
         }
         virtual={undefined}
       >
+        <View />
         <View
           style={
             Object {
@@ -260,34 +261,24 @@ exports[`renders correctly 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#000",
-                      "fontFamily": "System",
+                      "color": "#1a1515",
+                      "fontFamily": "Lato",
                       "fontSize": 16,
-                      "fontWeight": "600",
+                      "textDecorationStyle": "solid",
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
                 >
                   <Text
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#000",
-                          "fontFamily": "System",
-                          "fontSize": 16,
-                        },
-                        Object {
-                          "color": "#5f4b8b",
-                          "fontSize": 15,
-                        },
-                      ]
+                      Object {
+                        "color": "#5f4b8b",
+                        "fontFamily": "Raleway",
+                        "fontSize": 15,
+                      }
                     }
-                    uppercase={false}
-                    virtual={undefined}
                   >
                     Guilherme
                   </Text>
@@ -342,13 +333,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         Seu Horário
                       </Text>
@@ -358,13 +348,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         2018-04-28
                       </Text>
@@ -374,13 +363,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         10:30
                          - 
@@ -448,13 +436,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         Guilherme
                       </Text>
@@ -464,13 +451,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         2018-05-12
                       </Text>
@@ -480,13 +466,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         10:30
                          - 
@@ -573,6 +558,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "color": "#fd7d01",
+                          "fontFamily": "Raleway",
                           "fontSize": 15,
                         }
                       }
@@ -632,6 +618,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "color": "#5f4b8b",
+                          "fontFamily": "Raleway",
                           "fontSize": 15,
                         }
                       }
@@ -693,34 +680,24 @@ exports[`renders correctly 1`] = `
                   ellipsizeMode="tail"
                   style={
                     Object {
-                      "color": "#000",
-                      "fontFamily": "System",
+                      "color": "#1a1515",
+                      "fontFamily": "Lato",
                       "fontSize": 16,
-                      "fontWeight": "600",
+                      "textDecorationStyle": "solid",
                     }
                   }
-                  uppercase={false}
-                  virtual={undefined}
                 >
                   <Text
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Array [
-                        Object {
-                          "color": "#000",
-                          "fontFamily": "System",
-                          "fontSize": 16,
-                        },
-                        Object {
-                          "color": "#5f4b8b",
-                          "fontSize": 15,
-                        },
-                      ]
+                      Object {
+                        "color": "#5f4b8b",
+                        "fontFamily": "Raleway",
+                        "fontSize": 15,
+                      }
                     }
-                    uppercase={false}
-                    virtual={undefined}
                   >
                     Ezequiel
                   </Text>
@@ -775,13 +752,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         Seu Horário
                       </Text>
@@ -791,13 +767,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         2018-04-28
                       </Text>
@@ -807,13 +782,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         10:30
                          - 
@@ -881,13 +855,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         Ezequiel
                       </Text>
@@ -897,13 +870,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         2018-03-30
                       </Text>
@@ -913,13 +885,12 @@ exports[`renders correctly 1`] = `
                         ellipsizeMode="tail"
                         style={
                           Object {
-                            "color": "#000",
-                            "fontFamily": "System",
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
                             "fontSize": 16,
+                            "textDecorationStyle": "solid",
                           }
                         }
-                        uppercase={false}
-                        virtual={undefined}
                       >
                         10:30
                          - 
@@ -1006,6 +977,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "color": "#fd7d01",
+                          "fontFamily": "Raleway",
                           "fontSize": 15,
                         }
                       }
@@ -1065,6 +1037,7 @@ exports[`renders correctly 1`] = `
                       style={
                         Object {
                           "color": "#5f4b8b",
+                          "fontFamily": "Raleway",
                           "fontSize": 15,
                         }
                       }
