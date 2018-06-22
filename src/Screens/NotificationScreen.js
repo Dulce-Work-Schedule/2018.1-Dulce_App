@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
-import {Container, Content, Card, CardItem, Text, Body, List, Icon, Toast} from 'native-base';
+import {View, Text} from 'react-native';
+import {Container, Content, Card, CardItem, Body, List, Icon, Toast} from 'native-base';
 import ScreenHeader from '../Components/ScreenHeader';
 import ValidateButton from '../Components/ValidateButton';
 import SideBar from '../Components/SideBar';
@@ -41,16 +41,16 @@ export default class NotificationScreen extends Component {
   renderCard(item) {
     return (
       <Card>
-        <CardItem header><Text><Text style={styles.colorPurple}>{item.name}</Text> solicitou mudança com o seu horário</Text></CardItem>
+        <CardItem header><Text style={styles.text} ><Text style={styles.colorPurple}>{item.name}</Text> solicitou mudança com o seu horário</Text></CardItem>
         <CardItem>
           <Body>
             <View style={styles.view1}>
               <View style={styles.view2}>
-                <Text>Seu Horário</Text><Text>{item.currentDay}</Text><Text>{item.currentStartTime} - {item.currentEndTime}</Text>
+                <Text style={styles.text} >Seu Horário</Text><Text style={styles.text} >{item.currentDay}</Text><Text style={styles.text} >{item.currentStartTime} - {item.currentEndTime}</Text>
               </View>
               <View style={styles.view3}><Icon name='md-arrow-dropright' style={styles.icon} /></View>
               <View style ={styles.view4}>
-                <Text>{item.name}</Text><Text>{item.requestDay}</Text><Text>{item.requestStartTime} - {item.requestEndTime}</Text>
+                <Text style={styles.text} >{item.name}</Text><Text style={styles.text} >{item.requestDay}</Text><Text style={styles.text} >{item.requestStartTime} - {item.requestEndTime}</Text>
               </View>
             </View>
           </Body>

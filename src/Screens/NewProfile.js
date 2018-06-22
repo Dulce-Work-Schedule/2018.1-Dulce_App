@@ -34,7 +34,7 @@ const default_profile_options = {
       error: 'Campo obrigatório'
     }
   },
-  stylesheet: formStyles
+  stylesheet: styles.text
 };
 class NewProfile extends React.Component {
   constructor(props) {
@@ -100,15 +100,5 @@ class NewProfile extends React.Component {
     );
   }
 }
-
-const formStyles = {
-  ...Form.stylesheet,
-  error: {
-    color: 'red',
-    fontSize: 14,
-    marginBottom: 3,
-    fontWeight: '600'
-  }
-};
 
 export default NewProfile;
