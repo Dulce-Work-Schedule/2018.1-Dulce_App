@@ -1,6 +1,6 @@
 import {LOGIN, LOGOUT} from '../Actions/currentUser';
 
-const initialState = {};
+const initialState = {logged_in: false};
 
 function currentUser(state = initialState,action) {
   switch (action.type) {

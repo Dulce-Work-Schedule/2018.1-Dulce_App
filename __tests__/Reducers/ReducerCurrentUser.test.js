@@ -7,7 +7,7 @@ const currentUser = {
 
 describe('currentUser reducer', () => {
   it('should return the initial state',() => {
-    expect(reducer(void 0,{})).toEqual({});
+    expect(reducer(void 0,{})).toEqual({logged_in: false});
   });
 
   it('should handle the LOGIN action', () => {
@@ -27,6 +27,6 @@ describe('currentUser reducer', () => {
         type: LOGOUT,
         currentUser: {}
       })
-    ).toEqual({});
+    ).toEqual({logged_in: false});
   });
 });
