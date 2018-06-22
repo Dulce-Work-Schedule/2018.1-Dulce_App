@@ -34,11 +34,12 @@ export default class EditScreen extends ValidationComponent {
     this.setState({value});
   }
   render() {
+    const {goBack} = this.props.navigation;
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
         <SideBar />
         <Container style={{flex: 8, backgroundColor: '#FFF'}}>
-          <ScreenHeader title='Editar conta' />
+          <ScreenHeader title='Editar conta' goBack = {() => goBack()} />
           <View style={styles.container}>
             <Form
               ref='form'
