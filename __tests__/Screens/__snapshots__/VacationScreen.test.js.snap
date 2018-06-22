@@ -132,7 +132,7 @@ exports[`renders correctly 1`] = `
                   "alignSelf": "center",
                   "color": "#5f4b8b",
                   "fontFamily": "Raleway",
-                  "fontSize": 15,
+                  "fontSize": 17,
                   "margin": 5,
                 },
               ]

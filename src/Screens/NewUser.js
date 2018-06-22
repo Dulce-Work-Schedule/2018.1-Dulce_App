@@ -1,7 +1,7 @@
 import React from 'react';
 import {View,Alert} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
-import t from 'tcomb-form-native';
+import t from '../Components/Form';
 import {Container} from 'native-base';
 import SignUpButton from '../Components/SignUpButton';
 import {newUser as styles} from './styles' ;

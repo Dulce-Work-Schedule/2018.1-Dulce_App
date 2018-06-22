@@ -1,7 +1,7 @@
 import React from 'react';
 import {View,Text, Picker} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
-import t from 'tcomb-form-native';
+import t from '../Components/Form';
 import {Container} from 'native-base';
 import SideBar from '../Components/SideBar';
 import SignUpButton from '../Components/SignUpButton';
