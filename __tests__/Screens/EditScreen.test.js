@@ -14,31 +14,33 @@ require('bezier');
 Enzyme.configure({adapter: new Adapter()});
 
 it('renders correctly', () => {
+  const navigation = jest.fn();
   const tree = renderer
-    .create(<EditScreen />)
+    .create(<EditScreen navigation = {navigation} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it('test onChange value',() => {
-  const wrapper = shallow(<EditScreen/>);
+  const navigation = jest.fn();
+  const wrapper = shallow(<EditScreen navigation = {navigation}/>);
   const onChange = wrapper.instance().onChange();
   console.log(onChange);
 });
 
 it('testing onChange container',() => {
+  const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
     email: t.String,
     senha: t.String,
     confirmarSenha: t.String
   });
-  const wrapper = shallow(<EditScreen type={type}/>);
+  const wrapper = shallow(<EditScreen navigation = {navigation} type={type}/>);
   const container = wrapper.find('Styled(Container)').at(0);
   const form = container.find('Form').at(0);
   form.props().onChange();
 });
-
 
 //const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 //
