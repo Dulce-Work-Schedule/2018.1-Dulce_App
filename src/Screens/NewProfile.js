@@ -93,8 +93,7 @@ class NewProfile extends React.Component {
           <View style={{flex: 1}}>
             <SignUpButton
               text = 'Cadastrar'
-              onPress = {() => {}}
-            />
+              onPress = {() => {}}/>
           </View>
         </Container>
       </View>
