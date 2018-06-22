@@ -11,34 +11,38 @@ require('bezier');
 Enzyme.configure({adapter: new Adapter()});
 
 it('renders correctly', () => {
+  const navigation = jest.fn();
   const tree = renderer
-    .create(<NewUser />)
+    .create(<NewUser navigation = {navigation}/>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 it('test onChange value',() => {
-  const wrapper = shallow(<NewUser/>);
+  const navigation = jest.fn();
+  const wrapper = shallow(<NewUser navigation = {navigation}/>);
   const onChange = wrapper.instance().onChange();
   console.log(onChange);
 });
 
 it('testing onChange container',() => {
+  const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
     email: t.String,
     senha: t.String,
     confirmarSenha: t.String
   });
-  const wrapper = shallow(<NewUser type={type}/>);
+  const wrapper = shallow(<NewUser navigation= {navigation} type={type}/>);
   const container = wrapper.find('Styled(Container)').at(0);
   const form = container.find('Form').at(0);
   form.props().onChange();
 });
 
 it('testing onPress Cadastro',() => {
+  const navigation = jest.fn();
   const spy = jest.spyOn(NewUser.prototype, '_onPress');
-  const wrapper = shallow(<NewUser/>);
+  const wrapper = shallow(<NewUser navigation = {navigation}/>);
   const SignUp = wrapper.find('SignUp').at(0);
   SignUp.simulate('press');
   expect(spy).toHaveBeenCalled();
@@ -51,6 +55,7 @@ jest.mock('Alert', () => {
 });
 
 it('testing function _onPress',() => {
+  const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
     email: t.String,
@@ -63,7 +68,7 @@ it('testing function _onPress',() => {
     senha: '123',
     confirmarSenha: '123'
   };
-  const wrapper = shallow(<NewUser type={type}/>);
+  const wrapper = shallow(<NewUser type={type} navigation = {navigation}/>);
   wrapper.setState({value: value});
   const onPressF = wrapper.instance()._onPress();
   console.log(wrapper.debug());
@@ -73,6 +78,7 @@ it('testing function _onPress',() => {
 const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 
 it('Should call login function', async() => {
+  const navigation = jest.fn();
   const value = {
     nome: 'Ezequiel',
     email: '123@1234444.com',
@@ -80,7 +86,7 @@ it('Should call login function', async() => {
     confirmarSenha: '12345'
   };
   const spy = jest.spyOn(NewUser.prototype, '_onPress');
-  const wrapper = shallow(<NewUser />);
+  const wrapper = shallow(<NewUser navigation = {navigation} />);
   console.log(wrapper.debug);
   wrapper.setState({value: value});
   await flushPromises();
@@ -91,6 +97,7 @@ it('Should call login function', async() => {
 });
 
 it('testing function _onPress error',() => {
+  const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
     email: t.String,
@@ -103,7 +110,7 @@ it('testing function _onPress error',() => {
     senha: '123',
     confirmarSenha: '132'
   };
-  const wrapper = shallow(<NewUser type={type}/>);
+  const wrapper = shallow(<NewUser type={type} navigation = {navigation}/>);
   wrapper.setState({value: value});
   const onPressF = wrapper.instance()._onPress();
   console.log(wrapper.debug());
