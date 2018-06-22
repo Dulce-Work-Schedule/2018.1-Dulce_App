@@ -191,3 +191,4 @@ it('testing onPress CardItem', () => {
   console.log(cardItem.debug());
 
 });
+
