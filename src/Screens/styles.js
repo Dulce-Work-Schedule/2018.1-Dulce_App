@@ -83,6 +83,12 @@ export const styles = {
     }
   },
   newProfile: {
+    picker: {
+      height: 50,
+      width: 300,
+      marginBottom: 5,
+      marginLeft: 10
+    },
     container: {
       justifyContent: 'center',
       marginTop: 10,

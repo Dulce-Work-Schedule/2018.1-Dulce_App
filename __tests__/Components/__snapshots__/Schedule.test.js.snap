@@ -9715,11 +9715,18 @@ exports[`renders correctly 1`] = `
                 date={1529907200390}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={1529761360848}
 =======
                 date={1529605982721}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={1529608471684}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9954,11 +9961,18 @@ exports[`renders correctly 1`] = `
                 date={1529907200390}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={1529761360848}
 =======
                 date={1529605982721}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={1529608471684}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10121,11 +10135,18 @@ ShallowWrapper {
             selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-23T13:42:41.780Z}
 =======
             selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+            selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             style={
               Object {
                 "flex": 1,
@@ -10207,11 +10228,18 @@ ShallowWrapper {
                     selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-23T13:42:41.780Z}
 =======
                     selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                    selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                     style={
                       Object {
                         "flex": 1,
@@ -10263,11 +10291,18 @@ ShallowWrapper {
             date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-23T13:42:40.848Z}
 =======
             date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+            date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10292,11 +10327,18 @@ ShallowWrapper {
             date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-23T13:42:40.848Z}
 =======
             date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+            date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10353,11 +10395,18 @@ ShallowWrapper {
               selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               selected={2018-06-23T13:42:41.780Z}
 =======
               selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               style={
                 Object {
                   "flex": 1,
@@ -10439,11 +10488,18 @@ ShallowWrapper {
                       selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10495,11 +10551,18 @@ ShallowWrapper {
               date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10524,11 +10587,18 @@ ShallowWrapper {
               date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10580,11 +10650,18 @@ ShallowWrapper {
               "selected": 2018-06-25T06:13:21.329Z,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               "selected": 2018-06-23T13:42:41.780Z,
 =======
               "selected": 2018-06-21T18:33:03.593Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              "selected": 2018-06-21T19:14:32.759Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "style": Object {
                 "flex": 1,
               },
@@ -10670,11 +10747,18 @@ ShallowWrapper {
                       selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10774,11 +10858,18 @@ ShallowWrapper {
                       selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10876,11 +10967,18 @@ ShallowWrapper {
                         selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -10977,10 +11075,14 @@ ShallowWrapper {
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                           selected={2018-06-23T13:42:41.780Z}
 =======
                           selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+=======
+                          selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
                           style={
                             Object {
                               "flex": 1,
@@ -11039,10 +11141,14 @@ ShallowWrapper {
                           "renderItem": [Function],
                           "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                           "selected": 2018-06-23T13:42:41.780Z,
 =======
                           "selected": 2018-06-21T18:33:03.593Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+=======
+                          "selected": 2018-06-21T19:14:32.759Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
                           "style": Object {
                             "flex": 1,
                           },
@@ -11158,11 +11264,18 @@ ShallowWrapper {
               "date": 2018-06-25T06:13:20.390Z,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               "date": 2018-06-23T13:42:40.848Z,
 =======
               "date": 2018-06-21T18:33:02.721Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              "date": 2018-06-21T19:14:31.684Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -11193,11 +11306,18 @@ ShallowWrapper {
               "date": 2018-06-25T06:13:20.390Z,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               "date": 2018-06-23T13:42:40.848Z,
 =======
               "date": 2018-06-21T18:33:02.721Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              "date": 2018-06-21T19:14:31.684Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11253,11 +11373,18 @@ ShallowWrapper {
               selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               selected={2018-06-23T13:42:41.780Z}
 =======
               selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               style={
                 Object {
                   "flex": 1,
@@ -11339,11 +11466,18 @@ ShallowWrapper {
                       selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -11395,11 +11529,18 @@ ShallowWrapper {
               date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11424,11 +11565,18 @@ ShallowWrapper {
               date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11485,11 +11633,18 @@ ShallowWrapper {
                 selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 selected={2018-06-23T13:42:41.780Z}
 =======
                 selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 style={
                   Object {
                     "flex": 1,
@@ -11571,11 +11726,18 @@ ShallowWrapper {
                         selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11627,11 +11789,18 @@ ShallowWrapper {
                 date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={2018-06-23T13:42:40.848Z}
 =======
                 date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11656,11 +11825,18 @@ ShallowWrapper {
                 date={2018-06-25T06:13:20.390Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={2018-06-23T13:42:40.848Z}
 =======
                 date={2018-06-21T18:33:02.721Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={2018-06-21T19:14:31.684Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11712,11 +11888,18 @@ ShallowWrapper {
                 "selected": 2018-06-25T06:13:21.329Z,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "selected": 2018-06-23T13:42:41.780Z,
 =======
                 "selected": 2018-06-21T18:33:03.593Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                "selected": 2018-06-21T19:14:32.759Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "style": Object {
                   "flex": 1,
                 },
@@ -11802,11 +11985,18 @@ ShallowWrapper {
                         selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11906,11 +12096,18 @@ ShallowWrapper {
                         selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -12008,11 +12205,18 @@ ShallowWrapper {
                           selected={2018-06-25T06:13:21.329Z}
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                           selected={2018-06-23T13:42:41.780Z}
 =======
                           selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                          selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                           style={
                             Object {
                               "flex": 1,
@@ -12109,10 +12313,14 @@ ShallowWrapper {
                             renderItem={[Function]}
                             rowHasChanged={[Function]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                             selected={2018-06-23T13:42:41.780Z}
 =======
                             selected={2018-06-21T18:33:03.593Z}
 >>>>>>> 6f217c4... #482 mudando variaveis
+=======
+                            selected={2018-06-21T19:14:32.759Z}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
                             style={
                               Object {
                                 "flex": 1,
@@ -12171,10 +12379,14 @@ ShallowWrapper {
                             "renderItem": [Function],
                             "rowHasChanged": [Function],
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "selected": 2018-06-23T13:42:41.780Z,
 =======
                             "selected": 2018-06-21T18:33:03.593Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+=======
+                            "selected": 2018-06-21T19:14:32.759Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
                             "style": Object {
                               "flex": 1,
                             },
@@ -12290,11 +12502,18 @@ ShallowWrapper {
                 "date": 2018-06-25T06:13:20.390Z,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "date": 2018-06-23T13:42:40.848Z,
 =======
                 "date": 2018-06-21T18:33:02.721Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                "date": 2018-06-21T19:14:31.684Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -12325,11 +12544,18 @@ ShallowWrapper {
                 "date": 2018-06-25T06:13:20.390Z,
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "date": 2018-06-23T13:42:40.848Z,
 =======
                 "date": 2018-06-21T18:33:02.721Z,
 >>>>>>> 6f217c4... #482 mudando variaveis
+<<<<<<< 72e45b15dd10ebea424670a43eefbd96bf08dd4d:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 mudando variaveis:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                "date": 2018-06-21T19:14:31.684Z,
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+>>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,

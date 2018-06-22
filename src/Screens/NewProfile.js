@@ -1,14 +1,14 @@
 import React from 'react';
-import {View,Text, Picker} from 'react-native';
+import {View, Picker, Alert} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
-import t from '../Components/Form';
-import {Container} from 'native-base';
+import t from 'tcomb-form-native';
+import {Container, Content, Spinner} from 'native-base';
 import SideBar from '../Components/SideBar';
 import AGRButton from '../Components/AGRButton';
 import {newProfile as styles} from './styles' ;
+import axios from 'axios';
+import store from '../Reducers/store';
 
-<<<<<<< 2e01c13f8d06fd1a47a197f51d58bc14aade13d5
-=======
 const default_profile_state_value = {
   value: {
     matricula: '',
@@ -16,16 +16,19 @@ const default_profile_state_value = {
   },
   user_type: [
     {
-      name: 'hospital Santa Maria',
-      id: 'hospital1'
+      name: 'Funcionário',
+      id: 'employee'
     },{
-      name: 'hospital gama',
-      id: 'hospital2'
-
+      name: 'Gestor de Setor',
+      id: 'sector_manager'
+    },{
+      name: 'Gestor de Instituição',
+      id: 'institution_manager'
     }
-  ]
+  ],
+  loadingHospital: true,
+  isHospitalPicked: false
 };
->>>>>>> #482 componentizando picker para receber dados das apis
 const Form = t.form.Form;
 const default_profile_options = {
   fields: {
@@ -65,26 +68,89 @@ class NewProfile extends React.Component {
     this.options = default_profile_options;
   }
 
+  componentDidMount() {
+    const url = 'http://54.94.162.218:8083/api/hospital/listHospital';
+    axios.get(url, {
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
+    })
+      .then((response) => {
+
+        if (response.data === []) {
+          Alert.alert(
+            'Erro',
+            'Não há horários criados!');
+        } else {
+          this.setState({hospitals: response.data, loadingHospital: false});
+          this.arrayToObject();
+        }
+      })
+      .catch(() => {});
+  }
+
   onValueChange(value) {
     this.setState({
       selected: value
     });
   }
 
-  pickerButton(object, text) {
+  onChange(value) {
+    this.setState({selected: value});
+  }
+
+  renderSpinner() {
     return (
-      <View>
-        <Text style={styles.text}> {text} </Text>
-        <Picker
-          selectedValue={this.state.userType}
-          style={{height: 50, width: 200,marginBottom: 5,marginLeft: 10}}
-          onValueChange={(itemValue) => this.setState({userType: itemValue})}
-        >
+      <Container>
+        <Content>
+          <Spinner color='#5f4b8b'/>
+        </Content>
+      </Container>
+    );
+  }
+
+  selectHospital(id) {
+    this.setState({selectedHospital: id});
+    const url = 'http://18.231.27.220:8083/api/sector/listSector';
+    axios.get(url, {
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
+    })
+      .then((response) => {
+
+        if (response.data === []) {
+          Alert.alert(
+            'Erro',
+            'Não há horários criados!');
+        } else {
+          this.setState({sectors: response.data, isHospitalPicked: true});
+          this.arrayToObject();
+        }
+      })
+      .catch(() => {});
+  }
+
+  selectUserType(itemValue) {
+    this.setState({userType: itemValue});
+  }
+
+  selectSector(itemValue) {
+    this.setState({selectedSector: itemValue});
+  }
+
+  renderPicker(selectedValue, placeholder, object, action) {
+    return (
+      <Picker
+        selectedValue={selectedValue}
+        style={styles.picker}
+        onValueChange={(itemValue) => action(itemValue)}
+      >
+        <Picker.Item label={placeholder} value='' />
         {object.map((item, index) => {
           return (<Picker.Item key={index} label={item.name} value={item.id} />);
         })}
-        </Picker>
-      </View>
+      </Picker>
     );
   }
 
@@ -95,7 +161,6 @@ class NewProfile extends React.Component {
   renderScreen(flexN) {
     const {goBack} = this.props.navigation;
     return (
-<<<<<<< 2e01c13f8d06fd1a47a197f51d58bc14aade13d5
       <Container style={{backgroundColor: '#FFF', flex: flexN}}>
         <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
         <View style={styles.container}>
@@ -107,9 +172,17 @@ class NewProfile extends React.Component {
             onChange={(v) => this.onChange(v)}
           />
         </View>
-        <Text style={styles.text}> Selecione o tipo de Funcionário que deseja criar </Text>
-        {this.pickerButton()}
-        <View style={{flex: 1}}>
+        <View style={{justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}} >
+          {this.renderPicker(this.state.userType, 'Tipo de Perfil', this.state.user_type, this.selectUserType.bind(this))}
+          {this.state.loadingHospital ? this.renderSpinner()
+          : this.renderPicker(this.state.selectedHospital, 'Hospital', this.state.hospitals, this.selectHospital.bind(this))
+          }
+          {this.state.isHospitalPicked
+          ? this.renderPicker(this.state.selectedSector, 'Setor', this.state.sectors, this.selectSector.bind(this))
+          : <View />
+          }
+        </View>
+        <View style={{flex: 1, marginTop: 50}}>
           <AGRButton
             text = 'Cadastrar'
             onPress = {() => {}}/>
@@ -125,26 +198,6 @@ class NewProfile extends React.Component {
           <View style={{flexDirection: 'row', flex: 1}}>
             <SideBar />
             {this.renderScreen(8)}
-=======
-      <View style={{flexDirection: 'row', flex: 1}}>
-        <SideBar />
-        <Container style={{backgroundColor: '#FFF', flex: 8}}>
-          <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
-          <View style={styles.container}>
-            <Form
-              ref='form'
-              type={this.profile_basics}
-              value={this.state.value}
-              options={this.options}
-              onChange={(v) => this.onChange(v)}
-            />
-          </View>
-          {this.pickerButton(this.state.user_type, 'Selecione o tipo de Funcionário que deseja criar')}
-          <View style={{flex: 1}}>
-            <AGRButton
-              text = 'Cadastrar'
-              onPress = {() => {}}/>
->>>>>>> #482 componentizando picker para receber dados das apis
           </View>
         )}
       </View>

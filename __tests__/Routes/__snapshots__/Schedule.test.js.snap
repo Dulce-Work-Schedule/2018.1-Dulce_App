@@ -9881,10 +9881,14 @@ exports[`renders correctly 1`] = `
                     >
                       <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                         date={1529761369799}
 =======
                         date={1529605989883}
 >>>>>>> 6f217c4... #482 mudando variaveis
+=======
+                        date={1529608480048}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
                         locale={undefined}
                         maximumDate={undefined}
                         minimumDate={undefined}
@@ -10116,10 +10120,14 @@ exports[`renders correctly 1`] = `
                     >
                       <RCTDatePicker
 <<<<<<< HEAD
+<<<<<<< HEAD
                         date={1529761369799}
 =======
                         date={1529605989883}
 >>>>>>> 6f217c4... #482 mudando variaveis
+=======
+                        date={1529608480048}
+>>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
                         locale={undefined}
                         maximumDate={undefined}
                         minimumDate={undefined}
