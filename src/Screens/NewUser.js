@@ -92,11 +92,15 @@ class NewUser extends React.Component {
     }
   }
 
-  render() {
+  backToLogin() {
+    this.navigation.navigate('login');
+  }
 
+  render() {
+    const {goBack} = this.props.navigation;
     return (
       <Container style={{backgroundColor: '#FFF'}}>
-        <ScreenHeader title = 'Criar nova conta'/>
+        <ScreenHeader title = 'Criar nova conta' goBack={() => goBack()}/>
         <View style={styles.container}>
           <Form
             ref='form'
