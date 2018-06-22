@@ -18,16 +18,14 @@ export default class EditScreen extends ValidationComponent {
     super(props);
     this.Service = t.struct({
       nome: t.String,
-      email: t.String,
-      senha: t.String,
-      confirmarSenha: t.String
+      sobrenome: t.String,
+      email: t.String
     });
     this.state = {
-      value: {},
-      profile: {
-        name: '',
-        registration: '',
-        password: ''
+      value: {
+        nome: store.getState().currentUser.firstName,
+        sobrenome: store.getState().currentUser.lastName,
+        email: store.getState().currentUser.email
       },
       loading: true
     };
@@ -37,34 +35,12 @@ export default class EditScreen extends ValidationComponent {
     };
   }
 
-  componentDidMount() {
-    this.setState({loading: true});
-    const url = 'http://18.231.9.190:8083/api/userManager/listById/?id=5b230757b27c31001d178b3f'; //+ store.getState().currentUser.id;
-    console.log(url);
-    console.log(store.getState().currentUser.token);
-    axios.get(url,{
-      headers: {
-        'Authorization': 'Bearer ' + store.getState().currentUser.token
-      }
-    })
-    .then((response) => {
-      const default_state = {
-        nome: response.data.name,
-        email: response.data.registration,
-        senha: '',
-        confirmarSenha: ''
-      };
-      this.setState({profile: response.data, value: default_state , loading: false});
-      console.log(this.state.profile);
-    });
-  }
-
   onChange(value) {
     this.setState({value});
   }
 
   edit() {
-    const url = 'http://18.231.9.190:8083/api/userManager/editUser/?id=5b230757b27c31001d178b3f'; //+ store.getState().currentUser.id;
+    const url = 'http://52.67.4.137:8083/api/user/edit/?id=' + store.getState().currentUser.id;
     console.log(url);
     console.log(store.getState().currentUser.token);
     this.setProfile();
@@ -86,28 +62,21 @@ export default class EditScreen extends ValidationComponent {
   setProfile() {
     this.setState({
       profile: {
-        name: this.state.value.nome,
-        registration: this.state.value.email,
-        password: this.state.value.password
+        firstName: this.state.value.nome,
+        lastName: this.state.value.nome,
+        email: this.state.value.email
       }
     });
   }
+
   render() {
     const {goBack} = this.props.navigation;
     return (
-      <Container >
+      <View style={{flexDirection: 'row', flex: 1}}>
+        <SideBar/>
+        <View style={{flex: 8}}>
         <ScreenHeader title='Editar conta' />
-          {
-            this.state.loading ? (
-              <Container>
-              <SideBar />
-                <Content>
-                  <Spinner color='#5f4b8b'/>
-                </Content>
-              </Container>
-          ) : (
-            <Container style={{backgroundColor: '#FFF'}}>
-            <SideBar />
+          <Container style={{backgroundColor: '#FFF'}}>
             <View style={styles.container}>
                 <Form
                   ref='form'
@@ -119,12 +88,12 @@ export default class EditScreen extends ValidationComponent {
               </View>
               <IconButton
                 text = 'Editar'
-                onPress = {() => {this.edit()}}
+                onPress = {() => {this.edit();}}
                 style = {styles.button}
               />
           </Container>
-        )}
-      </Container>
+        </View>
+      </View>
     );
   }
 }
@@ -139,18 +108,13 @@ const formStyles = {
 };
 
 const default_field_options = {
-  Nome: {
+  nome: {
     error: 'Campo obrigatório'
   },
-  confirmarSenha: {
-    secureTextEntry: true,
+  sobrenome: {
     error: 'Campo obrigatório'
   },
-  Email: {
-    error: 'Campo obrigatório'
-  },
-  senha: {
-    secureTextEntry: true,
+  email: {
     error: 'Campo obrigatório'
   }
 };
