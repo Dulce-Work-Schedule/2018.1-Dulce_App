@@ -230,9 +230,21 @@ exports[`renders correctly 1`] = `
                 "Feb 2018",
                 "Mar 2018",
                 "Apr 2018",
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 "2018-05-25T00:00:00.000Z",
                 "2018-06-25T00:00:00.000Z",
                 "2018-07-25T00:00:00.000Z",
+=======
+<<<<<<< HEAD
+                "2018-05-23T00:00:00.000Z",
+                "2018-06-23T00:00:00.000Z",
+                "2018-07-23T00:00:00.000Z",
+=======
+                "2018-05-22T00:00:00.000Z",
+                "2018-06-22T00:00:00.000Z",
+                "2018-07-22T00:00:00.000Z",
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "Aug 2018",
                 "Sep 2018",
                 "Oct 2018",
@@ -1890,6 +1902,8 @@ exports[`renders correctly 1`] = `
                         style={
                           Object {
                             "alignItems": "center",
+                            "backgroundColor": "#5f4b8b",
+                            "borderRadius": 16,
                             "height": 32,
                             "opacity": 1,
                             "width": 32,
@@ -1911,6 +1925,9 @@ exports[`renders correctly 1`] = `
                                 "fontSize": 16,
                                 "fontWeight": "300",
                                 "marginTop": 6,
+                              },
+                              Object {
+                                "color": "#ffffff",
                               },
                             ]
                           }
@@ -4998,9 +5015,21 @@ exports[`renders correctly 1`] = `
                           "Feb 2018",
                           "Mar 2018",
                           "Apr 2018",
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
                           "2018-05-25T00:00:00.000Z",
                           "2018-06-25T00:00:00.000Z",
                           "2018-07-25T00:00:00.000Z",
+=======
+<<<<<<< HEAD
+                          "2018-05-23T00:00:00.000Z",
+                          "2018-06-23T00:00:00.000Z",
+                          "2018-07-23T00:00:00.000Z",
+=======
+                          "2018-05-22T00:00:00.000Z",
+                          "2018-06-22T00:00:00.000Z",
+                          "2018-07-22T00:00:00.000Z",
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                           "Aug 2018",
                           "Sep 2018",
                           "Oct 2018",
@@ -6658,6 +6687,8 @@ exports[`renders correctly 1`] = `
                                   style={
                                     Object {
                                       "alignItems": "center",
+                                      "backgroundColor": "#5f4b8b",
+                                      "borderRadius": 16,
                                       "height": 32,
                                       "opacity": 1,
                                       "width": 32,
@@ -6679,6 +6710,9 @@ exports[`renders correctly 1`] = `
                                           "fontSize": 16,
                                           "fontWeight": "300",
                                           "marginTop": 6,
+                                        },
+                                        Object {
+                                          "color": "#ffffff",
                                         },
                                       ]
                                     }
@@ -9716,6 +9750,7 @@ exports[`renders correctly 1`] = `
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={1529761360848}
 =======
                 date={1529605982721}
@@ -9726,7 +9761,13 @@ exports[`renders correctly 1`] = `
 =======
                 date={1529608471684}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={1529687208505}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9962,6 +10003,7 @@ exports[`renders correctly 1`] = `
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={1529761360848}
 =======
                 date={1529605982721}
@@ -9972,7 +10014,13 @@ exports[`renders correctly 1`] = `
 =======
                 date={1529608471684}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={1529687208505}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10136,6 +10184,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             selected={2018-06-23T13:42:41.780Z}
 =======
             selected={2018-06-21T18:33:03.593Z}
@@ -10146,7 +10195,13 @@ ShallowWrapper {
 =======
             selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+            selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             style={
               Object {
                 "flex": 1,
@@ -10229,6 +10284,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     selected={2018-06-23T13:42:41.780Z}
 =======
                     selected={2018-06-21T18:33:03.593Z}
@@ -10239,7 +10295,13 @@ ShallowWrapper {
 =======
                     selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                    selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                     style={
                       Object {
                         "flex": 1,
@@ -10292,6 +10354,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-23T13:42:40.848Z}
 =======
             date={2018-06-21T18:33:02.721Z}
@@ -10302,7 +10365,13 @@ ShallowWrapper {
 =======
             date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+            date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10328,6 +10397,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             date={2018-06-23T13:42:40.848Z}
 =======
             date={2018-06-21T18:33:02.721Z}
@@ -10338,7 +10408,13 @@ ShallowWrapper {
 =======
             date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+            date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10396,6 +10472,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               selected={2018-06-23T13:42:41.780Z}
 =======
               selected={2018-06-21T18:33:03.593Z}
@@ -10406,7 +10483,13 @@ ShallowWrapper {
 =======
               selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               style={
                 Object {
                   "flex": 1,
@@ -10489,6 +10572,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
@@ -10499,7 +10583,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10552,6 +10642,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
@@ -10562,7 +10653,13 @@ ShallowWrapper {
 =======
               date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10588,6 +10685,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
@@ -10598,7 +10696,13 @@ ShallowWrapper {
 =======
               date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10651,6 +10755,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               "selected": 2018-06-23T13:42:41.780Z,
 =======
               "selected": 2018-06-21T18:33:03.593Z,
@@ -10661,7 +10766,13 @@ ShallowWrapper {
 =======
               "selected": 2018-06-21T19:14:32.759Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              "selected": 2018-06-22T17:07:05.230Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "style": Object {
                 "flex": 1,
               },
@@ -10748,6 +10859,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
@@ -10758,7 +10870,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10859,6 +10977,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
@@ -10869,7 +10988,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10968,6 +11093,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
@@ -10978,7 +11104,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11076,6 +11208,7 @@ ShallowWrapper {
                           rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                           selected={2018-06-23T13:42:41.780Z}
 =======
                           selected={2018-06-21T18:33:03.593Z}
@@ -11083,6 +11216,9 @@ ShallowWrapper {
 =======
                           selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+=======
+                          selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
                           style={
                             Object {
                               "flex": 1,
@@ -11142,6 +11278,7 @@ ShallowWrapper {
                           "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                           "selected": 2018-06-23T13:42:41.780Z,
 =======
                           "selected": 2018-06-21T18:33:03.593Z,
@@ -11149,6 +11286,9 @@ ShallowWrapper {
 =======
                           "selected": 2018-06-21T19:14:32.759Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+=======
+                          "selected": 2018-06-22T17:07:05.230Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
                           "style": Object {
                             "flex": 1,
                           },
@@ -11265,6 +11405,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               "date": 2018-06-23T13:42:40.848Z,
 =======
               "date": 2018-06-21T18:33:02.721Z,
@@ -11275,7 +11416,13 @@ ShallowWrapper {
 =======
               "date": 2018-06-21T19:14:31.684Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              "date": 2018-06-22T17:06:48.505Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -11307,6 +11454,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               "date": 2018-06-23T13:42:40.848Z,
 =======
               "date": 2018-06-21T18:33:02.721Z,
@@ -11317,7 +11465,13 @@ ShallowWrapper {
 =======
               "date": 2018-06-21T19:14:31.684Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              "date": 2018-06-22T17:06:48.505Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11374,6 +11528,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               selected={2018-06-23T13:42:41.780Z}
 =======
               selected={2018-06-21T18:33:03.593Z}
@@ -11384,7 +11539,13 @@ ShallowWrapper {
 =======
               selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               style={
                 Object {
                   "flex": 1,
@@ -11467,6 +11628,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       selected={2018-06-23T13:42:41.780Z}
 =======
                       selected={2018-06-21T18:33:03.593Z}
@@ -11477,7 +11639,13 @@ ShallowWrapper {
 =======
                       selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                      selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -11530,6 +11698,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
@@ -11540,7 +11709,13 @@ ShallowWrapper {
 =======
               date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11566,6 +11741,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               date={2018-06-23T13:42:40.848Z}
 =======
               date={2018-06-21T18:33:02.721Z}
@@ -11576,7 +11752,13 @@ ShallowWrapper {
 =======
               date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+              date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11634,6 +11816,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 selected={2018-06-23T13:42:41.780Z}
 =======
                 selected={2018-06-21T18:33:03.593Z}
@@ -11644,7 +11827,13 @@ ShallowWrapper {
 =======
                 selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 style={
                   Object {
                     "flex": 1,
@@ -11727,6 +11916,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
@@ -11737,7 +11927,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11790,6 +11986,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={2018-06-23T13:42:40.848Z}
 =======
                 date={2018-06-21T18:33:02.721Z}
@@ -11800,7 +11997,13 @@ ShallowWrapper {
 =======
                 date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11826,6 +12029,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 date={2018-06-23T13:42:40.848Z}
 =======
                 date={2018-06-21T18:33:02.721Z}
@@ -11836,7 +12040,13 @@ ShallowWrapper {
 =======
                 date={2018-06-21T19:14:31.684Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                date={2018-06-22T17:06:48.505Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11889,6 +12099,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "selected": 2018-06-23T13:42:41.780Z,
 =======
                 "selected": 2018-06-21T18:33:03.593Z,
@@ -11899,7 +12110,13 @@ ShallowWrapper {
 =======
                 "selected": 2018-06-21T19:14:32.759Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                "selected": 2018-06-22T17:07:05.230Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "style": Object {
                   "flex": 1,
                 },
@@ -11986,6 +12203,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
@@ -11996,7 +12214,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -12097,6 +12321,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         selected={2018-06-23T13:42:41.780Z}
 =======
                         selected={2018-06-21T18:33:03.593Z}
@@ -12107,7 +12332,13 @@ ShallowWrapper {
 =======
                         selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                        selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -12206,6 +12437,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                           selected={2018-06-23T13:42:41.780Z}
 =======
                           selected={2018-06-21T18:33:03.593Z}
@@ -12216,7 +12448,13 @@ ShallowWrapper {
 =======
                           selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                          selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                           style={
                             Object {
                               "flex": 1,
@@ -12314,6 +12552,7 @@ ShallowWrapper {
                             rowHasChanged={[Function]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             selected={2018-06-23T13:42:41.780Z}
 =======
                             selected={2018-06-21T18:33:03.593Z}
@@ -12321,6 +12560,9 @@ ShallowWrapper {
 =======
                             selected={2018-06-21T19:14:32.759Z}
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+=======
+                            selected={2018-06-22T17:07:05.230Z}
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
                             style={
                               Object {
                                 "flex": 1,
@@ -12380,6 +12622,7 @@ ShallowWrapper {
                             "rowHasChanged": [Function],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "selected": 2018-06-23T13:42:41.780Z,
 =======
                             "selected": 2018-06-21T18:33:03.593Z,
@@ -12387,6 +12630,9 @@ ShallowWrapper {
 =======
                             "selected": 2018-06-21T19:14:32.759Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+=======
+                            "selected": 2018-06-22T17:07:05.230Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
                             "style": Object {
                               "flex": 1,
                             },
@@ -12503,6 +12749,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "date": 2018-06-23T13:42:40.848Z,
 =======
                 "date": 2018-06-21T18:33:02.721Z,
@@ -12513,7 +12760,13 @@ ShallowWrapper {
 =======
                 "date": 2018-06-21T19:14:31.684Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                "date": 2018-06-22T17:06:48.505Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -12545,6 +12798,7 @@ ShallowWrapper {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "date": 2018-06-23T13:42:40.848Z,
 =======
                 "date": 2018-06-21T18:33:02.721Z,
@@ -12555,7 +12809,13 @@ ShallowWrapper {
 =======
                 "date": 2018-06-21T19:14:31.684Z,
 >>>>>>> 40a8445... #482 recebendo requisições da api e componentizando corretamente
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117:__tests__/Components/__snapshots__/Schedule.test.js.snap
 >>>>>>> #482 recebendo requisições da api e componentizando corretamente:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+=======
+                "date": 2018-06-22T17:06:48.505Z,
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,

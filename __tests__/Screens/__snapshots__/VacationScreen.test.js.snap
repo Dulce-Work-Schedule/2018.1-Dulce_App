@@ -3278,6 +3278,10 @@ exports[`renders correctly 1`] = `
                             "fontWeight": "300",
                             "marginTop": 7,
                           },
+                          Object {
+                            "color": "#2d4150",
+                            "fontWeight": "500",
+                          },
                           Object {},
                         ]
                       }
@@ -4206,13 +4210,29 @@ exports[`renders correctly 1`] = `
                   uppercase={false}
                   virtual={undefined}
                 >
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117
                   25
+=======
+<<<<<<< HEAD
+                  23
+=======
+                  22
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo
                   /
                   6
                   /
                   2018
                    até 
+<<<<<<< 1ec2a397589d383661f00bfa2b41fde713caf117
                   25
+=======
+<<<<<<< HEAD
+                  23
+=======
+                  22
+>>>>>>> fc9d5dd... #482 deixando botão de criar fixo embaixo
+>>>>>>> #482 deixando botão de criar fixo embaixo
                   /
                   6
                   /
