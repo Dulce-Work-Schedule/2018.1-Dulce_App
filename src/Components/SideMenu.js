@@ -59,17 +59,17 @@ class SideMenu extends React.Component {
           <ScrollView style={{backgroundColor: purple_dulce}}>
             {this.renderDrawerHeader()}
             <View style={styles.routesContainer}>
-              {this.renderRoute('Ver Escala', 'md-calendar')}
+              {this.renderRoute('Ver escala', 'md-calendar')}
               {this.renderRoute('Notificações', 'md-notifications')}
-              {this.renderRoute('Meu Perfil atual', 'md-person')}
+              {this.renderRoute('Meu perfil atual', 'md-person')}
               {this.renderRoute('Todos os perfis', 'md-list')}
-              {this.renderRoute('Solicitar Férias', 'md-plane')}
-              {this.renderRoute('Solicitar Abono de Faltas', 'md-paper')}
+              {this.renderRoute('Solicitar férias', 'md-plane')}
+              {this.renderRoute('Solicitar abono de faltas', 'md-paper')}
             </View>
           </ScrollView>
           <View style={styles.footerContainer}>
             <Icon name='md-exit' size={30} color='#fff' style={{paddingHorizontal: 15}} />
-            <Text onPress={() => this.logout()} style={{color: '#fff'}}>Logout</Text>
+            <Text onPress={() => this.logout()} style={{color: '#fff', fontFamily: 'Lato'}}>Logout</Text>
           </View>
         </View>
         <View style={{flex: 0.35, backgroundColor: '#fd7d01', alignItems: 'center', justifyContent: 'center'}}>

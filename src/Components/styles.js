@@ -1,5 +1,5 @@
 import {PixelRatio} from 'react-native';
-import {purple_dulce} from '../styles';
+import {purple_dulce, black_dulce} from '../styles';
 
 export const styles = {
   absences: {
@@ -7,7 +7,8 @@ export const styles = {
       margin: 5,
       alignSelf: 'center',
       fontSize: 15,
-      color: purple_dulce
+      color: purple_dulce,
+      fontFamily: 'Raleway'
     },
     container1: {
       flex: 1,
@@ -16,7 +17,8 @@ export const styles = {
     },
     date: {
       color: purple_dulce,
-      fontSize: 20
+      fontSize: 20,
+      fontFamily: 'Lato'
     },
     dates: {
       flex: 1,
@@ -27,7 +29,8 @@ export const styles = {
       marginTop: 10,
       borderColor: purple_dulce,
       borderWidth: 2,
-      borderRadius: 5
+      borderRadius: 5,
+      fontFamily: 'Lato'
     },
     justify: {
       flex: 1.5,
@@ -75,6 +78,10 @@ export const styles = {
       height: 50,
       width: 170,
       marginLeft: 10
+    },
+    text: {
+      color: black_dulce,
+      fontFamily: 'Lato'
     }
   },
   agrButton: {
@@ -187,14 +194,12 @@ export const styles = {
     },
     drawerTitle: {
       color: '#fff',
-      fontFamily: 'Poiret One',
-      fontWeight: '500',
+      fontFamily: 'Raleway',
       fontSize: 21
     },
     drawerEmail: {
       color: '#fff',
-      fontFamily: 'Roboto',
-      fontWeight: '400',
+      fontFamily: 'Raleway',
       fontSize: 14
     },
     container: {
@@ -202,7 +207,9 @@ export const styles = {
     },
     navItemStyle: {
       padding: 10,
-      color: '#fff'
+      color: '#fff',
+      fontFamily: 'Lato',
+      fontSize: 15
     },
     route: {
       paddingVertical: 7,

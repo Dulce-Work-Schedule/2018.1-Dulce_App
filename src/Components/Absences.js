@@ -91,7 +91,7 @@ export default class Absences extends React.Component {
       <CardItem>
         <Body style={{flexDirection: 'row'}}>
           <Left>
-            <Text>
+            <Text style={styles.text} >
                   Tipo de abono:
             </Text>
           </Left>
@@ -100,9 +100,9 @@ export default class Absences extends React.Component {
               selectedValue={this.state.absenceOption}
               style={styles.picker}
               onValueChange={(itemValue) => this.onSelectAbsence(itemValue)}>
-              <Picker.Item label='Atestado' value='medical leave' />
-              <Picker.Item label='Maternidade' value='maternity leave' />
-              <Picker.Item label='Paternidade' value='paternity leave' />
+              <Picker.Item style={styles.text} label='Atestado' value='medical leave' />
+              <Picker.Item style={styles.text} label='Maternidade' value='maternity leave' />
+              <Picker.Item style={styles.text} label='Paternidade' value='paternity leave' />
             </Picker>
           </Right>
         </Body>
@@ -116,7 +116,7 @@ export default class Absences extends React.Component {
         <Body style={styles.container2}>
           <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
             <View style={[styles.document, styles.documentContainer, {marginBottom: 20}]}>
-              { this.state.documentSource === null ? <Text>Selecione uma Foto</Text>
+              { this.state.documentSource === null ? <Text style={styles.text}>Selecione uma Foto</Text>
                 : <Image style={styles.document} source={this.state.documentSource} />
               }
             </View>
