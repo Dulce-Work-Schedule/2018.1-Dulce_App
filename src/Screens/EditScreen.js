@@ -90,6 +90,7 @@ export default class EditScreen extends ValidationComponent {
                 text = 'Editar'
                 onPress = {() => {this.edit();}}
                 style = {styles.button}
+                icon= 'save'
               />
           </Container>
         </View>
