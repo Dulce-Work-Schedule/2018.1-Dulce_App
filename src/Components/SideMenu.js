@@ -59,7 +59,8 @@ class SideMenu extends React.Component {
           <ScrollView style={{backgroundColor: purple_dulce}}>
             {this.renderDrawerHeader()}
             <View style={styles.routesContainer}>
-              {this.renderRoute('Ver escala', 'md-calendar')}
+              {this.renderRoute('Minha Escala', 'md-calendar')}
+              {this.renderRoute('Escalas do Setor', 'md-people')}
               {this.renderRoute('Notificações', 'md-notifications')}
               {this.renderRoute('Meu perfil', 'md-person')}
               {this.renderRoute('Todos os perfis', 'md-list')}

@@ -9,6 +9,7 @@ import SideBar from '../Components/SideBar';
 import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import {weekSchedule as styles} from '../Screens/styles' ;
+import store from '../Reducers/store';
 
 export default class Schedule extends Component {
   constructor(props) {
@@ -178,7 +179,7 @@ export default class Schedule extends Component {
 
     Alert.alert(
       'Mudar de Horário',
-      this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
+      store.getState().currentUser.firstName + ', deseja trocar de horario' + '?\n\n ' +
       this.state.currentSchedule.date + '    ->   ' +
       (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' +
       (this.state.changeDay.getDate()).toString().padStart(2,0) + '/' +
@@ -198,12 +199,14 @@ export default class Schedule extends Component {
   renderItem(item) {
     return (
       <ScheduleItem
+        isSector={this.props.sector}
         item={item}
         onPress={() => { this._alert(item); }}/>);
   }
   renderChangeItem(item) {
     return (
       <ScheduleItem
+        isSector={this.props.sector}
         onPress={() => { this.alert_change(item); }}
         item={item}/>);
   }

@@ -3,6 +3,7 @@ import {Text, TouchableHighlight, View} from 'react-native';
 import {scheduleItem as styles} from './styles' ;
 import axios from 'axios';
 import store from '../Reducers/store';
+import {purple_dulce} from '../styles';
 
 class ScheduleItem extends React.Component {
   constructor(props) {
@@ -21,12 +22,10 @@ class ScheduleItem extends React.Component {
   }
 
   async componentDidMount() {
-    console.log('=========================================');
     await this.setTimeString();
     await this.setState({loading: false});
   }
   async axiosProfile() {
-    console.log('axios profile');
     const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + this.props.item.profile_id;
     axios.get(url,{
       headers: {
@@ -34,15 +33,13 @@ class ScheduleItem extends React.Component {
       }
     })
     .then((response) => {
-      console.log('response profile: ' + response.data);
       this.setState({userId: response.data.user_id, specialty: response.data.speciality});
-      console.log('user id:'+ this.state.userId);
+      console.log('setor:' + response.data.sector_id);
       this.axiosUser();
     });
   }
 
   axiosUser() {
-    console.log('axios user');
     const url = 'http://52.67.4.137:8083/api/user/listById?id=' + this.state.userId;
     axios.get(url,{
       headers: {
@@ -50,7 +47,6 @@ class ScheduleItem extends React.Component {
       }
     })
     .then((response) => {
-      console.log('response user: ' + response.data);
       this.setState({employee: response.data.firstName + ' ' + response.data.lastName});
     });
   }
@@ -72,21 +68,37 @@ class ScheduleItem extends React.Component {
     await this.axiosProfile();
   }
 
+  renderSectorItem() {
+    return (
+      <TouchableHighlight
+        underlayColor={purple_dulce}
+        onPress={() => {this.props.onPress();}}
+        style={styles.item}>
+        <View style={{padding: 5}}>
+        {
+          this.props.isSector ? (
+            <View>
+              <Text>{this.state.employee}</Text>
+              <Text>{this.state.start_time_string} - {this.state.end_time_string}</Text>
+              <Text>{this.state.specialty}</Text>
+            </View>
+          ) : (
+            <View>
+              <Text>Hospital</Text>
+              <Text>{this.state.start_time_string} - {this.state.end_time_string}</Text>
+            </View>
+          )
+        }
+        </View>
+      </TouchableHighlight>
+    );
+  }
+
   render() {
     return (
       <View>{
         this.state.loading ? (<Text>Loading...</Text>)
-        : (<TouchableHighlight
-          underlayColor='#5f4b8b'
-          onPress={() => {this.props.onPress();}}
-          style={styles.item}>
-          <View>
-          <Text>{this.state.employee}</Text>
-          <Text>{this.state.start_time_string} - {this.state.end_time_string}</Text>
-          <Text>{this.state.specialty}</Text>
-          </View>
-          </TouchableHighlight>
-        )
+        : this.renderSectorItem()
       }
       </View>
     );
