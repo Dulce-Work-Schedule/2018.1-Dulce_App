@@ -14,52 +14,36 @@ class ProfileManagerScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: {},
-      loading: true
+      profile: {}
     };
-  }
-
-  componentDidMount() {
-    this.setState({loading: true});
-    const url = 'http://52.67.4.137:8083/api/user/listByid/?id=' + store.getState().currentUser.id;
-    console.log(url);
-    console.log(store.getState().currentUser.token);
-    axios.get(url,{
-      headers: {
-        'Authorization': 'Bearer ' + store.getState().currentUser.token
-      }
-    })
-      .then((response) => {
-        this.setState({profile: response.data, loading: false});
-      });
-    /* .catch(() => {
-      Alert.alert(
-        'Erro',
-        'Verifique sua conexão.');
-    }); */
   }
 
   navigateToEditScreen() {
     this.props.navigation.navigate('edit');
   }
-  renderSpinner() {
-    return (
-      <Container>
-        <Content>
-          <Spinner color='#5f4b8b'/>
-        </Content>
-      </Container>
-    );
-  }
 
   renderScreen() {
     return (
-      <View style={{flex: 1}}>
-        <View style={{flex: 1}}>
+      <View style={{flex: 3}}>
+        <View style={{flex: 3}}>
           <SmallLogo />
-          <View style={{alignItems: 'center', justifyContent: 'center', width: '80%', alignSelf: 'center'}} >
-            <Text style={styles.text}> {this.state.profile.firstName} {this.state.profile.lastName}</Text>
-            <Text style={styles.textEmail}> {this.state.profile.email}</Text>
+          <View style={{alignItems: 'flex-start', justifyContent: 'center', width: '80%', alignSelf: 'center'}} >
+          <Text style={styles.textProfile}> {store.getState().currentUser.firstName} {store.getState().currentUser.lastName}</Text>
+            <Text style={styles.text}>{store.getState().currentUser.email}</Text>
+            <View style={{flexDirection: 'row'}}>
+            <Text style={styles.text}>Hospital: </Text>
+            <Text style={styles.text}>{store.getState().currentProfile.hospital} </Text>
+            </View>
+            <View style={{flexDirection: 'row'}}>
+            <Text style={styles.text}>Setor: </Text>
+            <Text style={styles.text}>{store.getState().currentProfile.sector} </Text>
+            </View>
+            <View style={{flexDirection: 'row'}}>
+            <Text style={styles.text}>Matricula: </Text>
+            <Text style={styles.text}>{store.getState().currentProfile.registration} </Text>
+            </View>
+
+
           </View>
         </View>
         <View style={{flex: 1 ,alignItems: 'center'}}>
