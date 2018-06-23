@@ -54,7 +54,7 @@ export const styles = {
       alignItems: 'center'
     },
     form: {
-      width: 375
+      width: '100%'
     },
     container2: {
       flex: 1,
@@ -94,11 +94,11 @@ export const styles = {
       paddingHorizontal: 50,
       alignSelf: 'center',
       marginBottom: 0,
-      width: 170
+      width: 180
     },
     text: {
       color: 'white',
-      fontSize: 14,
+      fontSize: 16,
       fontFamily: 'Raleway',
       alignItems: 'center'
     }
@@ -228,22 +228,26 @@ export const styles = {
       marginTop: 20
     }
   },
-  signUpButton: {
+  IconButton: {
     container: {
-      height: 45,
-      marginTop: 0,
-      paddingHorizontal: 50,
+      height: 50,
+      paddingHorizontal: 30,
       backgroundColor: purple_dulce,
       alignSelf: 'center',
       alignItems: 'center',
-      marginBottom: 0,
-      width: 175
+      width: 180
     },
     text: {
       color: 'white',
       fontSize: 16,
       fontFamily: 'Raleway',
       alignItems: 'center'
+    },
+    icon: {
+      color: '#ffffff',
+      marginRight: 40,
+      height: 25,
+      width: 25
     }
   },
   smallButton: {
@@ -280,33 +284,6 @@ export const styles = {
       color: 'black',
       fontSize: 25
     }
-  },
-  iconButton: {
-    container: {
-      backgroundColor: '#5f4b8b',
-      height: 50,
-      alignItems: 'center',
-      justifyContent: 'center',
-      marginTop: 30,
-      paddingHorizontal: 20,
-      alignSelf: 'center',
-      marginBottom: 0,
-      width: 170,
-      borderColor: '#5f4b8b'
-    },
-    text: {
-      marginLeft: 35,
-      color: '#ffffff',
-      fontSize: 15,
-      fontFamily: 'Raleway',
-      alignItems: 'center'
-    },
-    icon: {
-      color: '#ffffff',
-      marginRight: 40,
-      height: 25,
-      width: 25
-    }
   }
 };
 
@@ -319,8 +296,7 @@ export const scaleIcon = styles.scaleIcon;
 export const scheduleItem = styles.scheduleItem;
 export const screenHeader = styles.screenHeader;
 export const sideMenu = styles.sideMenu;
-export const signUpButton = styles.signUpButton;
+export const IconButton = styles.IconButton;
 export const smallButton = styles.smallButton;
 export const smallLogo = styles.smallLogo;
 export const userItem = styles.userItem;
-export const iconButton = styles.iconButton;

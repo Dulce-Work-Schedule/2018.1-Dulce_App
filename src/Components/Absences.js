@@ -158,7 +158,7 @@ export default class Absences extends React.Component {
           ? this.renderPicker()
           : <View />}
         <CardItem>
-          <Body>
+          <Body style={{alignItems: 'flex-start'}} >
             <Form style={styles.form}>
               <Textarea rowSpan={5} bordered placeholder='Justificativa' />
             </Form>

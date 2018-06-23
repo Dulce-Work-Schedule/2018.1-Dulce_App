@@ -203,9 +203,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -251,9 +252,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -279,9 +280,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -327,9 +329,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -355,9 +357,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -403,9 +406,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -431,9 +434,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -479,9 +483,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -507,9 +511,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -555,9 +560,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,

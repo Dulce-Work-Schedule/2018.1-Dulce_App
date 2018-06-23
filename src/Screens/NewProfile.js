@@ -4,7 +4,7 @@ import ScreenHeader from '../Components/ScreenHeader';
 import t from '../Components/Form';
 import {Container} from 'native-base';
 import SideBar from '../Components/SideBar';
-import SignUpButton from '../Components/SignUpButton';
+import AGRButton from '../Components/AGRButton';
 import {newProfile as styles} from './styles' ;
 
 const default_profile_state_value = {
@@ -33,8 +33,7 @@ const default_profile_options = {
       secureTextEntry: true,
       error: 'Campo obrigatório'
     }
-  },
-  stylesheet: styles.text
+  }
 };
 class NewProfile extends React.Component {
   constructor(props) {
@@ -91,7 +90,7 @@ class NewProfile extends React.Component {
           <Text style={styles.text}> Selecione o tipo de Funcionário que deseja criar </Text>
           {this.pickerButton()}
           <View style={{flex: 1}}>
-            <SignUpButton
+            <AGRButton
               text = 'Cadastrar'
               onPress = {() => {}}/>
           </View>

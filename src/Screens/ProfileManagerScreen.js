@@ -67,7 +67,7 @@ class ProfileManagerScreen extends React.Component {
             </View>
             <View style={{flex: 1 ,alignItems: 'center'}}>
               <IconButton
-                Icon = 'edit'
+                icon = 'edit'
                 text = 'Editar'
                 onPress={() => this.navigateToEditScreen()}/>
               <Button transparent warning style={styles.transparentButton}>

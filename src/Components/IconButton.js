@@ -1,15 +1,23 @@
+import {IconButton as styles} from './styles' ;
 import React from 'react';
-import {Text, Container, Content, Button,Icon} from 'native-base';
-import {iconButton as styles} from './styles' ;
+import {Text, View} from 'react-native';
+import {Container, Content, Button} from 'native-base';
+import Icon from 'react-native-vector-icons/Entypo';
 
-class IconButton extends React.Component {
+class SignUp extends React.Component {
   render() {
     return (
       <Container>
         <Content>
-          <Button rounded light style={styles.container} onPress={() => this.props.onPress()}>
-            <Text style={styles.text}>{this.props.text}</Text>
-            <Icon type='MaterialIcons' style={styles.icon} name={this.props.Icon} />
+          <Button rounded
+            style={this.props.style ? this.props.style : styles.container}
+            onPress={() => this.props.onPress()}>
+            {this.props.icon ? <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <Icon name={this.props.icon} size={25} style={{paddingHorizontal: 15}} color='#fff' />
+              <Text style={styles.text}>{this.props.text}</Text>
+            </View>
+              : <Text style={styles.text}>{this.props.text}</Text>
+            }
           </Button>
         </Content>
       </Container>
@@ -17,4 +25,4 @@ class IconButton extends React.Component {
   }
 }
 
-export default IconButton;
+export default SignUp;

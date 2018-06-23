@@ -19,7 +19,7 @@ class ScreenHeader extends React.Component {
           </Left>
           : <View/>
         }
-        <Body>
+        <Body style={ this.props.goBack ? {} : {alignItems: 'center'}} >
           <Title style={styles.text} > {this.props.title} </Title>
         </Body>
       </Header>

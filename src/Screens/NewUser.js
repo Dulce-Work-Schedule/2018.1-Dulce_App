@@ -3,7 +3,7 @@ import {View,Alert} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import t from '../Components/Form';
 import {Container} from 'native-base';
-import SignUpButton from '../Components/SignUpButton';
+import AGRButton from '../Components/AGRButton';
 import {newUser as styles} from './styles' ;
 import axios from 'axios';
 
@@ -49,8 +49,7 @@ class NewUser extends React.Component {
       value: default_state
     };
     this.options = {
-      fields: default_field_options,
-      stylesheet: formStyles
+      fields: default_field_options
     };
   }
 
@@ -107,7 +106,7 @@ class NewUser extends React.Component {
           />
         </View>
         <View style={{flex: 1}}>
-          <SignUpButton
+          <AGRButton
             text = 'Cadastrar'
             onPress = {(v) => this._onPress(v)}
           />
@@ -116,15 +115,5 @@ class NewUser extends React.Component {
     );
   }
 }
-
-const formStyles = {
-  ...Form.stylesheet,
-  error: {
-    color: 'red',
-    fontSize: 14,
-    marginBottom: 3,
-    fontWeight: '600'
-  }
-};
 
 export default NewUser;
