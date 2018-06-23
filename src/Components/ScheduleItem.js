@@ -15,45 +15,47 @@ class ScheduleItem extends React.Component {
       end_time_string: '',
       userId: '',
       employee: '',
+      specialty: 'teste',
       loading: true
     };
   }
 
   async componentDidMount() {
+    console.log('=========================================');
     await this.setTimeString();
-    await this.axiosProfile();
-    await this.axiosUser();
-    this.setState({loading: false});
-    console.log('user id:'+this.state.userId);
-    console.log('employee:'+this.state.employee);
+    await this.setState({loading: false});
   }
-  axiosProfile(){
-    const url = 'http://52.67.4.137:8083/api/profile/listByid/?id=' + this.props.profile_id;
-    console.log(store.getState().currentUser.token);
+  async axiosProfile() {
+    console.log('axios profile');
+    const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + this.props.item.profile_id;
     axios.get(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
       }
     })
     .then((response) => {
-      this.setState({userId: response.data.user_id});
+      console.log('response profile: ' + response.data);
+      this.setState({userId: response.data.user_id, specialty: response.data.speciality});
+      console.log('user id:'+ this.state.userId);
+      this.axiosUser();
     });
   }
 
   axiosUser() {
-    const url = 'http://52.67.4.137:8083/api/profile/listByid/?id=' + this.state.user_id;
-    console.log(store.getState().currentUser.token);
+    console.log('axios user');
+    const url = 'http://52.67.4.137:8083/api/user/listById?id=' + this.state.userId;
     axios.get(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
       }
     })
     .then((response) => {
+      console.log('response user: ' + response.data);
       this.setState({employee: response.data.firstName + ' ' + response.data.lastName});
     });
   }
 
-  setTimeString(){
+  async setTimeString() {
     if ((this.state.start_time !== '') && (this.state.end_time !== '')) {
       var st_string = (this.state.start_time.getHours() + this.state.timezone).toString().padStart(2, 0) +
        ':' + this.state.start_time.getMinutes().toString().padStart(2, 0);
@@ -67,6 +69,7 @@ class ScheduleItem extends React.Component {
       }
       this.setState({start_time_string: st_string, end_time_string: et_string});
     }
+    await this.axiosProfile();
   }
 
   render() {
@@ -80,7 +83,7 @@ class ScheduleItem extends React.Component {
           <View>
           <Text>{this.state.employee}</Text>
           <Text>{this.state.start_time_string} - {this.state.end_time_string}</Text>
-          <Text>{this.props.item.amount_of_hours}</Text>
+          <Text>{this.state.specialty}</Text>
           </View>
           </TouchableHighlight>
         )
