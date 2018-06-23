@@ -1,8 +1,10 @@
 import {createStore, combineReducers} from 'redux';
 import currentUser from './currentUser';
+import currentProfile from './currentProfile';
 
 const reducers = combineReducers({
-  currentUser: currentUser
+  currentUser: currentUser,
+  currentProfile: currentProfile
 });
 
 const store = createStore(reducers);
