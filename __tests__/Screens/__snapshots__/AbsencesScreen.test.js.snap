@@ -72,11 +72,16 @@ exports[`renders correctly 1`] = `
         <View />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "alignSelf": "center",
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "flex": 1,
+              },
+              Object {
+                "alignItems": "center",
+              },
+            ]
           }
           virtual={undefined}
         >
@@ -3273,10 +3278,6 @@ exports[`renders correctly 1`] = `
                             "fontWeight": "300",
                             "marginTop": 7,
                           },
-                          Object {
-                            "color": "#2d4150",
-                            "fontWeight": "500",
-                          },
                           Object {},
                         ]
                       }
@@ -3379,6 +3380,10 @@ exports[`renders correctly 1`] = `
                             "fontSize": 16,
                             "fontWeight": "300",
                             "marginTop": 7,
+                          },
+                          Object {
+                            "color": "#2d4150",
+                            "fontWeight": "500",
                           },
                           Object {},
                         ]
@@ -4201,13 +4206,13 @@ exports[`renders correctly 1`] = `
                   uppercase={false}
                   virtual={undefined}
                 >
-                  22
+                  23
                   /
                   6
                   /
                   2018
                    até 
-                  22
+                  23
                   /
                   6
                   /
@@ -4975,11 +4980,16 @@ exports[`renders correctly 1`] = `
             >
               <View
                 style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "alignSelf": "stretch",
-                    "flex": 1,
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "flex-start",
+                      "alignSelf": "stretch",
+                      "flex": 1,
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                    },
+                  ]
                 }
                 virtual={undefined}
               >
@@ -4988,7 +4998,7 @@ exports[`renders correctly 1`] = `
                     Array [
                       Object {},
                       Object {
-                        "width": 375,
+                        "width": "100%",
                       },
                     ]
                   }
@@ -5244,7 +5254,7 @@ exports[`renders correctly 1`] = `
                           "paddingBottom": 6,
                           "paddingHorizontal": 50,
                           "paddingTop": 6,
-                          "width": 170,
+                          "width": 180,
                         }
                       }
                       testID={undefined}
@@ -5259,7 +5269,7 @@ exports[`renders correctly 1`] = `
                             "alignItems": "center",
                             "color": "white",
                             "fontFamily": "Raleway",
-                            "fontSize": 14,
+                            "fontSize": 16,
                           }
                         }
                       >

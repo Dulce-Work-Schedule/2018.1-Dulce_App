@@ -59,21 +59,24 @@ class ProfileManagerScreen extends React.Component {
           <ScreenHeader title='Meu Perfil' icon='arrow-back'/>
           {this.state.loading ? (
             this.renderSpinner()) : (
-            <View style={{flex: 1}}><View style={{flex: 1}}>
-              <SmallLogo />
-              <Text style={styles.text}> Nome:{'\t'}{'\t'}{this.state.profile.firstName}</Text>
-              <Text style={styles.text}> Sobrenome: {'\t'}{'\t'}{this.state.profile.lastName}</Text>
-              <Text style={styles.text}> Email:{'\t'}{'\t'}{this.state.profile.email}</Text>
+            <View style={{flex: 1}}>
+              <View style={{flex: 1}}>
+                <SmallLogo />
+                <View style={{alignItems: 'center', justifyContent: 'center', width: '80%', alignSelf: 'center'}} >
+                  <Text style={styles.text}> {this.state.profile.firstName} {this.state.profile.lastName}</Text>
+                  <Text style={styles.textEmail}> {this.state.profile.email}</Text>
+                </View>
+              </View>
+              <View style={{flex: 1 ,alignItems: 'center'}}>
+                <IconButton
+                  icon = 'edit'
+                  text = 'Editar'
+                  onPress={() => this.navigateToEditScreen()}/>
+                <Button transparent warning style={styles.transparentButton}>
+                  <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
+                </Button>
+              </View>
             </View>
-            <View style={{flex: 1 ,alignItems: 'center'}}>
-              <IconButton
-                icon = 'edit'
-                text = 'Editar'
-                onPress={() => this.navigateToEditScreen()}/>
-              <Button transparent warning style={styles.transparentButton}>
-                <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
-              </Button>
-            </View></View>
           )}
         </View>
       </View>

@@ -34,11 +34,16 @@ exports[`renders correctly 1`] = `
     <View />
     <View
       style={
-        Object {
-          "alignItems": "center",
-          "alignSelf": "center",
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "flex": 1,
+          },
+          Object {
+            "alignItems": "center",
+          },
+        ]
       }
       virtual={undefined}
     >

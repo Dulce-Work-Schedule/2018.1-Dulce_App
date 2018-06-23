@@ -4,7 +4,7 @@ import {Text, View} from 'react-native';
 import {Container, Content, Button} from 'native-base';
 import Icon from 'react-native-vector-icons/Entypo';
 
-class SignUp extends React.Component {
+class IconButton extends React.Component {
   render() {
     return (
       <Container>
@@ -25,4 +25,4 @@ class SignUp extends React.Component {
   }
 }
 
-export default SignUp;
+export default IconButton;

@@ -183,12 +183,15 @@ export const styles = {
       flex: 8,
       flexDirection: 'column',
       backgroundColor: '#FFF'
-
     },
     text: {
       fontSize: 22,
       marginBottom: 15,
-      alignSelf: 'center',
+      fontFamily: 'Raleway'
+    },
+    textEmail: {
+      fontSize: 20,
+      marginBottom: 15,
       fontFamily: 'Lato'
     },
     transparentButton: {

@@ -74,11 +74,16 @@ exports[`renders correctly 1`] = `
         <View />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "alignSelf": "center",
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "flex": 1,
+              },
+              Object {
+                "alignItems": "center",
+              },
+            ]
           }
           virtual={undefined}
         >
@@ -234,51 +239,42 @@ ShallowWrapper {
               }
             >
               <SmallLogo />
-              <Styled(Text)
+              <View
                 style={
                   Object {
+                    "alignItems": "center",
                     "alignSelf": "center",
-                    "fontFamily": "Lato",
-                    "fontSize": 22,
-                    "marginBottom": 15,
+                    "justifyContent": "center",
+                    "width": "80%",
                   }
                 }
-                virtual={undefined}
               >
-                 Nome:
-                	
-                	
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "fontFamily": "Lato",
-                    "fontSize": 22,
-                    "marginBottom": 15,
+                <Styled(Text)
+                  style={
+                    Object {
+                      "fontFamily": "Raleway",
+                      "fontSize": 22,
+                      "marginBottom": 15,
+                    }
                   }
-                }
-                virtual={undefined}
-              >
-                 Sobrenome: 
-                	
-                	
-              </Styled(Text)>
-              <Styled(Text)
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "fontFamily": "Lato",
-                    "fontSize": 22,
-                    "marginBottom": 15,
+                  virtual={undefined}
+                >
+                   
+                   
+                </Styled(Text)>
+                <Styled(Text)
+                  style={
+                    Object {
+                      "fontFamily": "Lato",
+                      "fontSize": 20,
+                      "marginBottom": 15,
+                    }
                   }
-                }
-                virtual={undefined}
-              >
-                 Email:
-                	
-                	
-              </Styled(Text)>
+                  virtual={undefined}
+                >
+                   
+                </Styled(Text)>
+              </View>
             </View>
             <View
               style={
@@ -289,7 +285,7 @@ ShallowWrapper {
               }
             >
               <IconButton
-                Icon="edit"
+                icon="edit"
                 onPress={[Function]}
                 text="Editar"
               />
@@ -369,51 +365,42 @@ ShallowWrapper {
                 }
               >
                 <SmallLogo />
-                <Styled(Text)
+                <View
                   style={
                     Object {
+                      "alignItems": "center",
                       "alignSelf": "center",
-                      "fontFamily": "Lato",
-                      "fontSize": 22,
-                      "marginBottom": 15,
+                      "justifyContent": "center",
+                      "width": "80%",
                     }
                   }
-                  virtual={undefined}
                 >
-                   Nome:
-                  	
-                  	
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "fontFamily": "Lato",
-                      "fontSize": 22,
-                      "marginBottom": 15,
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Raleway",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
                     }
-                  }
-                  virtual={undefined}
-                >
-                   Sobrenome: 
-                  	
-                  	
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "fontFamily": "Lato",
-                      "fontSize": 22,
-                      "marginBottom": 15,
+                    virtual={undefined}
+                  >
+                     
+                     
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
                     }
-                  }
-                  virtual={undefined}
-                >
-                   Email:
-                  	
-                  	
-                </Styled(Text)>
+                    virtual={undefined}
+                  >
+                     
+                  </Styled(Text)>
+                </View>
               </View>
               <View
                 style={
@@ -424,7 +411,7 @@ ShallowWrapper {
                 }
               >
                 <IconButton
-                  Icon="edit"
+                  icon="edit"
                   onPress={[Function]}
                   text="Editar"
                 />
@@ -496,51 +483,42 @@ ShallowWrapper {
                   }
                 >
                   <SmallLogo />
-                  <Styled(Text)
+                  <View
                     style={
                       Object {
+                        "alignItems": "center",
                         "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                        "justifyContent": "center",
+                        "width": "80%",
                       }
                     }
-                    virtual={undefined}
                   >
-                     Nome:
-                    	
-                    	
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Raleway",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
                       }
-                    }
-                    virtual={undefined}
-                  >
-                     Sobrenome: 
-                    	
-                    	
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                      virtual={undefined}
+                    >
+                       
+                       
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
                       }
-                    }
-                    virtual={undefined}
-                  >
-                     Email:
-                    	
-                    	
-                  </Styled(Text)>
+                      virtual={undefined}
+                    >
+                       
+                    </Styled(Text)>
+                  </View>
                 </View>,
                 <View
                   style={
@@ -551,7 +529,7 @@ ShallowWrapper {
                   }
                 >
                   <IconButton
-                    Icon="edit"
+                    icon="edit"
                     onPress={[Function]}
                     text="Editar"
                   />
@@ -601,51 +579,42 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <SmallLogo />,
-                    <Styled(Text)
+                    <View
                       style={
                         Object {
+                          "alignItems": "center",
                           "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                          "justifyContent": "center",
+                          "width": "80%",
                         }
                       }
-                      virtual={undefined}
                     >
-                       Nome:
-                      	
-                      	
-                    </Styled(Text)>,
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Raleway",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
                         }
-                      }
-                      virtual={undefined}
-                    >
-                       Sobrenome: 
-                      	
-                      	
-                    </Styled(Text)>,
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                        virtual={undefined}
+                      >
+                         
+                         
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 20,
+                            "marginBottom": 15,
+                          }
                         }
-                      }
-                      virtual={undefined}
-                    >
-                       Email:
-                      	
-                      	
-                    </Styled(Text)>,
+                        virtual={undefined}
+                      >
+                         
+                      </Styled(Text)>
+                    </View>,
                   ],
                   "style": Object {
                     "flex": 1,
@@ -668,81 +637,91 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": Array [
-                        " Nome:",
-                        "	",
-                        "	",
-                        undefined,
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Raleway",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                           
+                           
+                        </Styled(Text)>,
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 20,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                           
+                        </Styled(Text)>,
                       ],
                       "style": Object {
+                        "alignItems": "center",
                         "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                        "justifyContent": "center",
+                        "width": "80%",
                       },
-                      "virtual": undefined,
                     },
                     "ref": null,
                     "rendered": Array [
-                      " Nome:",
-                      "	",
-                      "	",
-                      undefined,
-                    ],
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        " Sobrenome: ",
-                        "	",
-                        "	",
-                        undefined,
-                      ],
-                      "style": Object {
-                        "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            " ",
+                            undefined,
+                            " ",
+                            undefined,
+                          ],
+                          "style": Object {
+                            "fontFamily": "Raleway",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          },
+                          "virtual": undefined,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          " ",
+                          undefined,
+                          " ",
+                          undefined,
+                        ],
+                        "type": [Function],
                       },
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      " Sobrenome: ",
-                      "	",
-                      "	",
-                      undefined,
-                    ],
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": Array [
-                        " Email:",
-                        "	",
-                        "	",
-                        undefined,
-                      ],
-                      "style": Object {
-                        "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            " ",
+                            undefined,
+                          ],
+                          "style": Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 20,
+                            "marginBottom": 15,
+                          },
+                          "virtual": undefined,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          " ",
+                          undefined,
+                        ],
+                        "type": [Function],
                       },
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      " Email:",
-                      "	",
-                      "	",
-                      undefined,
                     ],
                     "type": [Function],
                   },
@@ -756,7 +735,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <IconButton
-                      Icon="edit"
+                      icon="edit"
                       onPress={[Function]}
                       text="Editar"
                     />,
@@ -804,7 +783,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "Icon": "edit",
+                      "icon": "edit",
                       "onPress": [Function],
                       "text": "Editar",
                     },
@@ -913,51 +892,42 @@ ShallowWrapper {
                 }
               >
                 <SmallLogo />
-                <Styled(Text)
+                <View
                   style={
                     Object {
+                      "alignItems": "center",
                       "alignSelf": "center",
-                      "fontFamily": "Lato",
-                      "fontSize": 22,
-                      "marginBottom": 15,
+                      "justifyContent": "center",
+                      "width": "80%",
                     }
                   }
-                  virtual={undefined}
                 >
-                   Nome:
-                  	
-                  	
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "fontFamily": "Lato",
-                      "fontSize": 22,
-                      "marginBottom": 15,
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Raleway",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
                     }
-                  }
-                  virtual={undefined}
-                >
-                   Sobrenome: 
-                  	
-                  	
-                </Styled(Text)>
-                <Styled(Text)
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "fontFamily": "Lato",
-                      "fontSize": 22,
-                      "marginBottom": 15,
+                    virtual={undefined}
+                  >
+                     
+                     
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 20,
+                        "marginBottom": 15,
+                      }
                     }
-                  }
-                  virtual={undefined}
-                >
-                   Email:
-                  	
-                  	
-                </Styled(Text)>
+                    virtual={undefined}
+                  >
+                     
+                  </Styled(Text)>
+                </View>
               </View>
               <View
                 style={
@@ -968,7 +938,7 @@ ShallowWrapper {
                 }
               >
                 <IconButton
-                  Icon="edit"
+                  icon="edit"
                   onPress={[Function]}
                   text="Editar"
                 />
@@ -1048,51 +1018,42 @@ ShallowWrapper {
                   }
                 >
                   <SmallLogo />
-                  <Styled(Text)
+                  <View
                     style={
                       Object {
+                        "alignItems": "center",
                         "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                        "justifyContent": "center",
+                        "width": "80%",
                       }
                     }
-                    virtual={undefined}
                   >
-                     Nome:
-                    	
-                    	
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Raleway",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
                       }
-                    }
-                    virtual={undefined}
-                  >
-                     Sobrenome: 
-                    	
-                    	
-                  </Styled(Text)>
-                  <Styled(Text)
-                    style={
-                      Object {
-                        "alignSelf": "center",
-                        "fontFamily": "Lato",
-                        "fontSize": 22,
-                        "marginBottom": 15,
+                      virtual={undefined}
+                    >
+                       
+                       
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 20,
+                          "marginBottom": 15,
+                        }
                       }
-                    }
-                    virtual={undefined}
-                  >
-                     Email:
-                    	
-                    	
-                  </Styled(Text)>
+                      virtual={undefined}
+                    >
+                       
+                    </Styled(Text)>
+                  </View>
                 </View>
                 <View
                   style={
@@ -1103,7 +1064,7 @@ ShallowWrapper {
                   }
                 >
                   <IconButton
-                    Icon="edit"
+                    icon="edit"
                     onPress={[Function]}
                     text="Editar"
                   />
@@ -1175,51 +1136,42 @@ ShallowWrapper {
                     }
                   >
                     <SmallLogo />
-                    <Styled(Text)
+                    <View
                       style={
                         Object {
+                          "alignItems": "center",
                           "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                          "justifyContent": "center",
+                          "width": "80%",
                         }
                       }
-                      virtual={undefined}
                     >
-                       Nome:
-                      	
-                      	
-                    </Styled(Text)>
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Raleway",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
                         }
-                      }
-                      virtual={undefined}
-                    >
-                       Sobrenome: 
-                      	
-                      	
-                    </Styled(Text)>
-                    <Styled(Text)
-                      style={
-                        Object {
-                          "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                        virtual={undefined}
+                      >
+                         
+                         
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 20,
+                            "marginBottom": 15,
+                          }
                         }
-                      }
-                      virtual={undefined}
-                    >
-                       Email:
-                      	
-                      	
-                    </Styled(Text)>
+                        virtual={undefined}
+                      >
+                         
+                      </Styled(Text)>
+                    </View>
                   </View>,
                   <View
                     style={
@@ -1230,7 +1182,7 @@ ShallowWrapper {
                     }
                   >
                     <IconButton
-                      Icon="edit"
+                      icon="edit"
                       onPress={[Function]}
                       text="Editar"
                     />
@@ -1280,51 +1232,42 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <SmallLogo />,
-                      <Styled(Text)
+                      <View
                         style={
                           Object {
+                            "alignItems": "center",
                             "alignSelf": "center",
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
+                            "justifyContent": "center",
+                            "width": "80%",
                           }
                         }
-                        virtual={undefined}
                       >
-                         Nome:
-                        	
-                        	
-                      </Styled(Text)>,
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "alignSelf": "center",
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Raleway",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
                           }
-                        }
-                        virtual={undefined}
-                      >
-                         Sobrenome: 
-                        	
-                        	
-                      </Styled(Text)>,
-                      <Styled(Text)
-                        style={
-                          Object {
-                            "alignSelf": "center",
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
+                          virtual={undefined}
+                        >
+                           
+                           
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 20,
+                              "marginBottom": 15,
+                            }
                           }
-                        }
-                        virtual={undefined}
-                      >
-                         Email:
-                        	
-                        	
-                      </Styled(Text)>,
+                          virtual={undefined}
+                        >
+                           
+                        </Styled(Text)>
+                      </View>,
                     ],
                     "style": Object {
                       "flex": 1,
@@ -1347,81 +1290,91 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": Array [
-                          " Nome:",
-                          "	",
-                          "	",
-                          undefined,
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Raleway",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                             
+                             
+                          </Styled(Text)>,
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 20,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                             
+                          </Styled(Text)>,
                         ],
                         "style": Object {
+                          "alignItems": "center",
                           "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                          "justifyContent": "center",
+                          "width": "80%",
                         },
-                        "virtual": undefined,
                       },
                       "ref": null,
                       "rendered": Array [
-                        " Nome:",
-                        "	",
-                        "	",
-                        undefined,
-                      ],
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": Array [
-                          " Sobrenome: ",
-                          "	",
-                          "	",
-                          undefined,
-                        ],
-                        "style": Object {
-                          "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              " ",
+                              undefined,
+                              " ",
+                              undefined,
+                            ],
+                            "style": Object {
+                              "fontFamily": "Raleway",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            },
+                            "virtual": undefined,
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            " ",
+                            undefined,
+                            " ",
+                            undefined,
+                          ],
+                          "type": [Function],
                         },
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        " Sobrenome: ",
-                        "	",
-                        "	",
-                        undefined,
-                      ],
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": Array [
-                          " Email:",
-                          "	",
-                          "	",
-                          undefined,
-                        ],
-                        "style": Object {
-                          "alignSelf": "center",
-                          "fontFamily": "Lato",
-                          "fontSize": 22,
-                          "marginBottom": 15,
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              " ",
+                              undefined,
+                            ],
+                            "style": Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 20,
+                              "marginBottom": 15,
+                            },
+                            "virtual": undefined,
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            " ",
+                            undefined,
+                          ],
+                          "type": [Function],
                         },
-                        "virtual": undefined,
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        " Email:",
-                        "	",
-                        "	",
-                        undefined,
                       ],
                       "type": [Function],
                     },
@@ -1435,7 +1388,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <IconButton
-                        Icon="edit"
+                        icon="edit"
                         onPress={[Function]}
                         text="Editar"
                       />,
@@ -1483,7 +1436,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "Icon": "edit",
+                        "icon": "edit",
                         "onPress": [Function],
                         "text": "Editar",
                       },

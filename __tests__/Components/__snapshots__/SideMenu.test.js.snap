@@ -97,7 +97,7 @@ exports[`renders sideMenu correctly 1`] = `
             "paddingBottom": 6,
             "paddingHorizontal": 50,
             "paddingTop": 6,
-            "width": 170,
+            "width": 180,
           }
         }
         testID={undefined}
@@ -112,7 +112,7 @@ exports[`renders sideMenu correctly 1`] = `
               "alignItems": "center",
               "color": "white",
               "fontFamily": "Raleway",
-              "fontSize": 14,
+              "fontSize": 16,
             }
           }
         />

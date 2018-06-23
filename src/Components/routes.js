@@ -15,7 +15,7 @@ export default DrawerNavigator({
   'Todos os perfis': {
     screen: Profiles
   },
-  'Meu perfil atual': {
+  'Meu perfil': {
     screen: Profile
   },
   'Notificações': {

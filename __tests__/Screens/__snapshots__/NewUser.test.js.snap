@@ -141,11 +141,14 @@ exports[`renders correctly 1`] = `
       </View>
       <View
         style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "flex": 1,
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flex": 1,
+            },
+            Object {},
+          ]
         }
         virtual={undefined}
       >
@@ -672,15 +675,15 @@ exports[`renders correctly 1`] = `
                 "borderTopWidth": null,
                 "elevation": 2,
                 "flexDirection": "row",
-                "height": 45,
-                "justifyContent": "space-between",
+                "height": 50,
+                "justifyContent": "center",
                 "marginBottom": 0,
-                "marginTop": 0,
+                "marginTop": 30,
                 "opacity": 1,
                 "paddingBottom": 6,
                 "paddingHorizontal": 50,
                 "paddingTop": 6,
-                "width": 175,
+                "width": 180,
               }
             }
             testID={undefined}
