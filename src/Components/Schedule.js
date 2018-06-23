@@ -101,6 +101,7 @@ export default class Schedule extends Component {
         mode='time'
         style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}/>);
   }
+
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
       var date = new Date(cur.start_time);
@@ -173,18 +174,31 @@ export default class Schedule extends Component {
 
   alert_Selfchange(date) {
     this.setState({finalDateString: date});
+    var timezone = new Date().getTimezoneOffset() / 60;
+    var start_time = new Date(this.state.currentSchedule.start_time);
+    var end_time = new Date(this.state.currentSchedule.end_time);
+
+    var dayString = start_time.getDay().toString().padStart(2, 0) + '/' +
+    (start_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
+    (start_time.getFullYear()).toString().padStart(2, 0);
+
+    var startString = (start_time.getHours() + timezone).toString().padStart(2, 0) +
+     ':' + start_time.getMinutes().toString().padStart(2, 0);
+    var endString = (end_time.getHours() + timezone).toString().padStart(2, 0) +
+     ':' + end_time.getMinutes().toString().padStart(2, 0);
+
     if (!this.state.finalDateString) {
       this.setState({finalDateString: new Date()});
     }
 
     Alert.alert(
       'Mudar de Horário',
-      store.getState().currentUser.firstName + ', deseja trocar de horario' + '?\n\n ' +
-      this.state.currentSchedule.date + '    ->   ' +
-      (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' +
+      store.getState().currentUser.firstName + ', deseja trocar de horario' + '?\n\nde ' +
+      dayString + '    para   ' +
       (this.state.changeDay.getDate()).toString().padStart(2,0) + '/' +
-      this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time +
-       ' - ' + this.state.currentSchedule.end_time + '  ->  ' +
+      (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' +
+      this.state.changeDay.getFullYear() + '\nde ' + startString +
+       ' - ' + endString + '  para  ' +
       (this.state.changeDay.getHours()).toString().padStart(2 , 0) + ':' +
       (this.state.changeDay.getMinutes()).toString().padStart(2,0) + ' - ' +
       (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' +
