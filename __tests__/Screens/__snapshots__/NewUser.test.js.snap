@@ -48,10 +48,107 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "alignItems": "center",
+            "alignItems": "flex-start",
             "alignSelf": "center",
             "flex": 1,
           }
+        }
+        virtual={undefined}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": null,
+              "backgroundColor": "transparent",
+              "borderBottomWidth": null,
+              "borderColor": null,
+              "borderLeftWidth": null,
+              "borderRadius": 5,
+              "borderRightWidth": null,
+              "borderTopWidth": null,
+              "elevation": 0,
+              "flexDirection": "row",
+              "height": 45,
+              "justifyContent": "space-between",
+              "marginLeft": -3,
+              "opacity": 1,
+              "paddingBottom": 6,
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 6,
+              "shadowColor": null,
+              "shadowOffset": null,
+              "shadowOpacity": null,
+              "shadowRadius": null,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontSize": 30,
+                  },
+                  Object {
+                    "color": "#007aff",
+                    "fontSize": 30,
+                    "marginLeft": 2,
+                    "marginRight": 2,
+                    "marginTop": 0,
+                    "paddingTop": 2,
+                  },
+                ],
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            virtual={undefined}
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flex": 1,
+            },
+            Object {},
+          ]
         }
         virtual={undefined}
       >
@@ -109,9 +206,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -157,9 +255,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -185,9 +283,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -233,9 +332,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -261,9 +360,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -309,9 +409,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -337,9 +437,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -385,9 +486,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -413,9 +514,10 @@ exports[`renders correctly 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#000000",
+              "color": "#1a1515",
+              "fontFamily": "Lato",
               "fontSize": 17,
-              "fontWeight": "500",
+              "fontWeight": "200",
               "marginBottom": 7,
             }
           }
@@ -461,9 +563,9 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "borderColor": "#cccccc",
-                "borderRadius": 4,
+                "borderRadius": 20,
                 "borderWidth": 1,
-                "color": "#000000",
+                "color": "#1a1515",
                 "fontSize": 17,
                 "height": 36,
                 "marginBottom": 5,
@@ -573,15 +675,15 @@ exports[`renders correctly 1`] = `
                 "borderTopWidth": null,
                 "elevation": 2,
                 "flexDirection": "row",
-                "height": 45,
-                "justifyContent": "space-between",
+                "height": 50,
+                "justifyContent": "center",
                 "marginBottom": 0,
-                "marginTop": 0,
+                "marginTop": 30,
                 "opacity": 1,
                 "paddingBottom": 6,
                 "paddingHorizontal": 50,
                 "paddingTop": 6,
-                "width": 175,
+                "width": 180,
               }
             }
             testID={undefined}

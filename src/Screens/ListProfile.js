@@ -51,8 +51,8 @@ export default class ListProfile extends Component {
               <Icon type='MaterialCommunityIcons' name='hospital-building'
                 style={{padding: 10, fontSize: 40, color: '#5f4b8b'}}/>
               <View style= {{marginTop: 10}} >
-                <Text> Setor: <Text style={styles.colorPurple}>{item.setor}</Text></Text>
-                <Text> Matricula: <Text style={styles.colorPurple}>{item.matricula}</Text></Text>
+                <Text style={styles.text} > Setor: <Text style={styles.textPurple}>{item.setor}</Text></Text>
+                <Text style={styles.text} > Matricula: <Text style={styles.textPurple}>{item.matricula}</Text></Text>
               </View>
             </View>
           </Body>

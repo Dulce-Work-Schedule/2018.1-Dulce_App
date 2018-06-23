@@ -9,22 +9,22 @@ import Absences from '../Routes/Absences';
 import SideMenu from './SideMenu';
 
 export default DrawerNavigator({
-  'Ver Escala': {
+  'Ver escala': {
     screen: Schedule
   },
   'Todos os perfis': {
     screen: Profiles
   },
-  'Meu Perfil atual': {
+  'Meu perfil': {
     screen: Profile
   },
   'Notificações': {
     screen: Notifications
   },
-  'Solicitar Férias': {
+  'Solicitar férias': {
     screen: Vacation
   },
-  'Solicitar Abono de Faltas': {
+  'Solicitar abono de faltas': {
     screen: Absences
   },
   Logout: {

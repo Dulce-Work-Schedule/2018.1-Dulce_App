@@ -6,9 +6,10 @@ import ValidationComponent from 'react-native-form-validator';
 //import store from '../Reducers/store';
 //import axios from 'axios';
 import {Container} from 'native-base';
-import t from 'tcomb-form-native';
-import SignUpButton from '../Components/SignUpButton';
+import t from '../Components/Form';
+import IconButton from '../Components/IconButton';
 import SideBar from '../Components/SideBar';
+
 
 const Form = t.form.Form;
 
@@ -49,10 +50,9 @@ export default class EditScreen extends ValidationComponent {
               onChange={(v) => this.onChange(v)}
             />
           </View>
-          <SignUpButton
+          <IconButton
             text = 'Salvar'
             onPress = {() => {}}
-            style = {styles.button}
             icon= 'save'
           />
         </Container>

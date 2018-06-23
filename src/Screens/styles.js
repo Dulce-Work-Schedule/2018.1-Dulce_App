@@ -1,4 +1,4 @@
-import {purple_dulce, orange_dulce} from '../styles';
+import {purple_dulce, orange_dulce, black_dulce} from '../styles';
 
 export const styles = {
   editScreen: {
@@ -12,16 +12,8 @@ export const styles = {
       fontSize: 15,
       marginBottom: 10,
       marginLeft: 10,
-      color: 'black',
-      fontFamily: 'Raleway'
-    },
-    button: {
-      height: 50,
-      paddingHorizontal: 30,
-      backgroundColor: purple_dulce,
-      alignSelf: 'center',
-      alignItems: 'center',
-      width: 180
+      color: black_dulce,
+      fontFamily: 'Lato'
     }
   },
   listProfile: {
@@ -39,6 +31,16 @@ export const styles = {
     img: {
       height: 40,
       resizeMode: 'contain'
+    },
+    text: {
+      fontFamily: 'Lato',
+      color: black_dulce,
+      fontSize: 17
+    },
+    textPurple: {
+      fontFamily: 'Lato',
+      color: purple_dulce,
+      fontSize: 17
     }
   },
   loginScreen: {
@@ -157,11 +159,19 @@ export const styles = {
     },
     colorPurple: {
       color: purple_dulce,
-      fontSize: 15
+      fontSize: 15,
+      fontFamily: 'Raleway'
     },
     colorOrange: {
       color: orange_dulce,
-      fontSize: 15
+      fontSize: 15,
+      fontFamily: 'Raleway'
+    },
+    text: {
+      color: black_dulce,
+      fontSize: 16,
+      fontFamily: 'Lato',
+      textDecorationStyle: 'solid'
     },
     icon: {
       fontSize: 40,
@@ -173,21 +183,16 @@ export const styles = {
       flex: 8,
       flexDirection: 'column',
       backgroundColor: '#FFF'
-
     },
     text: {
+      fontSize: 22,
+      marginBottom: 15,
+      fontFamily: 'Raleway'
+    },
+    textEmail: {
       fontSize: 20,
       marginBottom: 15,
-      alignSelf: 'center'
-    },
-    name: {
-      fontSize: 30,
-      marginBottom: 15,
-      alignSelf: 'center'
-    },
-    informacoes: {
-      alignSelf: 'center',
-      marginRight: 100
+      fontFamily: 'Lato'
     },
     transparentButton: {
       height: 50,
@@ -200,7 +205,7 @@ export const styles = {
       marginHorizontal: 120
     },
     textButtonTrasparent: {
-      color: '#fd7d01',
+      color: orange_dulce,
       fontSize: 17,
       fontFamily: 'Raleway',
       alignItems: 'center'

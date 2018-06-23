@@ -36,10 +36,12 @@ it('should test navigateToEditScreen correctly', () => {
   profileScreen.navigateToEditScreen();
 });
 
-it('testing edit button',() => {
+it('testing save button user',() => {
   const navigation = {navigate: jest.fn()};
   const spy = jest.spyOn(ProfileManagerScreen.prototype, 'navigateToEditScreen');
   const wrapper = shallow(<ProfileManagerScreen navigation={navigation}/>);
+  wrapper.setState({loading: false});
+  console.log(wrapper.debug());
   wrapper.update();
   wrapper.setState({loading: false});
   const edit = wrapper.find('IconButton').at(0);

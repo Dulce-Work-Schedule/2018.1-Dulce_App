@@ -78,13 +78,19 @@ exports[`renders correctly 1`] = `
           }
           virtual={undefined}
         >
+          <View />
           <View
             style={
-              Object {
-                "alignItems": "center",
-                "alignSelf": "center",
-                "flex": 1,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "flex": 1,
+                },
+                Object {
+                  "alignItems": "center",
+                },
+              ]
             }
             virtual={undefined}
           >
@@ -357,11 +363,18 @@ exports[`renders correctly 1`] = `
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Object {
-                              "color": "#000",
-                              "fontFamily": "System",
-                              "fontSize": 16,
-                            }
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontFamily": "System",
+                                "fontSize": 16,
+                              },
+                              Object {
+                                "color": "#1a1515",
+                                "fontFamily": "Lato",
+                                "fontSize": 17,
+                              },
+                            ]
                           }
                           uppercase={false}
                           virtual={undefined}
@@ -380,7 +393,7 @@ exports[`renders correctly 1`] = `
                                 },
                                 Object {
                                   "color": "#5f4b8b",
-                                  "fontFamily": "Raleway",
+                                  "fontFamily": "Lato",
                                   "fontSize": 17,
                                 },
                               ]
@@ -396,11 +409,18 @@ exports[`renders correctly 1`] = `
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Object {
-                              "color": "#000",
-                              "fontFamily": "System",
-                              "fontSize": 16,
-                            }
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontFamily": "System",
+                                "fontSize": 16,
+                              },
+                              Object {
+                                "color": "#1a1515",
+                                "fontFamily": "Lato",
+                                "fontSize": 17,
+                              },
+                            ]
                           }
                           uppercase={false}
                           virtual={undefined}
@@ -419,7 +439,7 @@ exports[`renders correctly 1`] = `
                                 },
                                 Object {
                                   "color": "#5f4b8b",
-                                  "fontFamily": "Raleway",
+                                  "fontFamily": "Lato",
                                   "fontSize": 17,
                                 },
                               ]
@@ -589,11 +609,18 @@ exports[`renders correctly 1`] = `
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Object {
-                              "color": "#000",
-                              "fontFamily": "System",
-                              "fontSize": 16,
-                            }
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontFamily": "System",
+                                "fontSize": 16,
+                              },
+                              Object {
+                                "color": "#1a1515",
+                                "fontFamily": "Lato",
+                                "fontSize": 17,
+                              },
+                            ]
                           }
                           uppercase={false}
                           virtual={undefined}
@@ -612,7 +639,7 @@ exports[`renders correctly 1`] = `
                                 },
                                 Object {
                                   "color": "#5f4b8b",
-                                  "fontFamily": "Raleway",
+                                  "fontFamily": "Lato",
                                   "fontSize": 17,
                                 },
                               ]
@@ -628,11 +655,18 @@ exports[`renders correctly 1`] = `
                           allowFontScaling={true}
                           ellipsizeMode="tail"
                           style={
-                            Object {
-                              "color": "#000",
-                              "fontFamily": "System",
-                              "fontSize": 16,
-                            }
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontFamily": "System",
+                                "fontSize": 16,
+                              },
+                              Object {
+                                "color": "#1a1515",
+                                "fontFamily": "Lato",
+                                "fontSize": 17,
+                              },
+                            ]
                           }
                           uppercase={false}
                           virtual={undefined}
@@ -651,7 +685,7 @@ exports[`renders correctly 1`] = `
                                 },
                                 Object {
                                   "color": "#5f4b8b",
-                                  "fontFamily": "Raleway",
+                                  "fontFamily": "Lato",
                                   "fontSize": 17,
                                 },
                               ]

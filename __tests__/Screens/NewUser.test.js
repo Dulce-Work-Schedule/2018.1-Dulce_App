@@ -43,8 +43,8 @@ it('testing onPress Cadastro',() => {
   const navigation = jest.fn();
   const spy = jest.spyOn(NewUser.prototype, '_onPress');
   const wrapper = shallow(<NewUser navigation = {navigation}/>);
-  const SignUp = wrapper.find('SignUp').at(0);
-  SignUp.simulate('press');
+  const AGRButton = wrapper.find('AGRButton').at(0);
+  AGRButton.simulate('press');
   expect(spy).toHaveBeenCalled();
 });
 
@@ -91,7 +91,7 @@ it('Should call login function', async() => {
   wrapper.setState({value: value});
   await flushPromises();
   wrapper.update();
-  const enterButton = wrapper.find('SignUp').at(0);
+  const enterButton = wrapper.find('AGRButton').at(0);
   enterButton.simulate('press');
   expect(spy).toHaveBeenCalled();
 });

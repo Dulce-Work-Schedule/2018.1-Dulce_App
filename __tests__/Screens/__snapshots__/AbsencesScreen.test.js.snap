@@ -69,13 +69,19 @@ exports[`renders correctly 1`] = `
         }
         virtual={undefined}
       >
+        <View />
         <View
           style={
-            Object {
-              "alignItems": "center",
-              "alignSelf": "center",
-              "flex": 1,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "flex": 1,
+              },
+              Object {
+                "alignItems": "center",
+              },
+            ]
           }
           virtual={undefined}
         >
@@ -130,7 +136,8 @@ exports[`renders correctly 1`] = `
                 Object {
                   "alignSelf": "center",
                   "color": "#5f4b8b",
-                  "fontSize": 15,
+                  "fontFamily": "Raleway",
+                  "fontSize": 17,
                   "margin": 5,
                 },
               ]
@@ -3168,10 +3175,6 @@ exports[`renders correctly 1`] = `
                             "fontWeight": "300",
                             "marginTop": 7,
                           },
-                          Object {
-                            "color": "#2d4150",
-                            "fontWeight": "500",
-                          },
                           Object {},
                         ]
                       }
@@ -3377,6 +3380,10 @@ exports[`renders correctly 1`] = `
                             "fontSize": 16,
                             "fontWeight": "300",
                             "marginTop": 7,
+                          },
+                          Object {
+                            "color": "#2d4150",
+                            "fontWeight": "500",
                           },
                           Object {},
                         ]
@@ -4191,6 +4198,7 @@ exports[`renders correctly 1`] = `
                       },
                       Object {
                         "color": "#5f4b8b",
+                        "fontFamily": "Lato",
                         "fontSize": 20,
                       },
                     ]
@@ -4198,13 +4206,13 @@ exports[`renders correctly 1`] = `
                   uppercase={false}
                   virtual={undefined}
                 >
-                  21
+                  23
                   /
                   6
                   /
                   2018
                    até 
-                  21
+                  23
                   /
                   6
                   /
@@ -4257,11 +4265,17 @@ exports[`renders correctly 1`] = `
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                     style={
-                      Object {
-                        "color": "#000",
-                        "fontFamily": "System",
-                        "fontSize": 16,
-                      }
+                      Array [
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#1a1515",
+                          "fontFamily": "Lato",
+                        },
+                      ]
                     }
                     uppercase={false}
                     virtual={undefined}
@@ -4573,14 +4587,32 @@ exports[`renders correctly 1`] = `
                                 Array [
                                   <Item
                                     label="Atestado"
+                                    style={
+                                      Object {
+                                        "color": "#1a1515",
+                                        "fontFamily": "Lato",
+                                      }
+                                    }
                                     value="medical leave"
                                   />,
                                   <Item
                                     label="Maternidade"
+                                    style={
+                                      Object {
+                                        "color": "#1a1515",
+                                        "fontFamily": "Lato",
+                                      }
+                                    }
                                     value="maternity leave"
                                   />,
                                   <Item
                                     label="Paternidade"
+                                    style={
+                                      Object {
+                                        "color": "#1a1515",
+                                        "fontFamily": "Lato",
+                                      }
+                                    }
                                     value="paternity leave"
                                   />,
                                 ]
@@ -4948,11 +4980,16 @@ exports[`renders correctly 1`] = `
             >
               <View
                 style={
-                  Object {
-                    "alignItems": "flex-start",
-                    "alignSelf": "stretch",
-                    "flex": 1,
-                  }
+                  Array [
+                    Object {
+                      "alignItems": "flex-start",
+                      "alignSelf": "stretch",
+                      "flex": 1,
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                    },
+                  ]
                 }
                 virtual={undefined}
               >
@@ -4961,7 +4998,7 @@ exports[`renders correctly 1`] = `
                     Array [
                       Object {},
                       Object {
-                        "width": 375,
+                        "width": "100%",
                       },
                     ]
                   }
@@ -5080,11 +5117,17 @@ exports[`renders correctly 1`] = `
                       allowFontScaling={true}
                       ellipsizeMode="tail"
                       style={
-                        Object {
-                          "color": "#000",
-                          "fontFamily": "System",
-                          "fontSize": 16,
-                        }
+                        Array [
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "System",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "color": "#1a1515",
+                            "fontFamily": "Lato",
+                          },
+                        ]
                       }
                       uppercase={false}
                       virtual={undefined}
@@ -5211,7 +5254,7 @@ exports[`renders correctly 1`] = `
                           "paddingBottom": 6,
                           "paddingHorizontal": 50,
                           "paddingTop": 6,
-                          "width": 170,
+                          "width": 180,
                         }
                       }
                       testID={undefined}
@@ -5226,7 +5269,7 @@ exports[`renders correctly 1`] = `
                             "alignItems": "center",
                             "color": "white",
                             "fontFamily": "Raleway",
-                            "fontSize": 14,
+                            "fontSize": 16,
                           }
                         }
                       >
