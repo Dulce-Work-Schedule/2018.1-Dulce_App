@@ -32,20 +32,13 @@ class ProfileManagerScreen extends React.Component {
             <Text style={styles.text}>{store.getState().currentUser.email}</Text>
             <View style={{flexDirection: 'row'}}>
             <Text style={styles.text}>Hospital: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.hospital} </Text>
-            </View>
+            <Text style={styles.text}>{store.getState().currentProfile.hospital} </Text></View>
             <View style={{flexDirection: 'row'}}>
             <Text style={styles.text}>Setor: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.sector} </Text>
-            </View>
+            <Text style={styles.text}>{store.getState().currentProfile.sector} </Text></View>
             <View style={{flexDirection: 'row'}}>
             <Text style={styles.text}>Matricula: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.registration} </Text>
-            </View>
-
-
-          </View>
-        </View>
+            <Text style={styles.text}>{store.getState().currentProfile.registration} </Text></View></View></View>
         <View style={{flex: 1 ,alignItems: 'center'}}>
           <IconButton
             icon = 'edit'
@@ -53,9 +46,7 @@ class ProfileManagerScreen extends React.Component {
             onPress={() => this.navigateToEditScreen()}/>
           <Button transparent warning style={styles.transparentButton}>
             <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
-          </Button>
-        </View>
-      </View>
+          </Button></View></View>
     );
   }
 

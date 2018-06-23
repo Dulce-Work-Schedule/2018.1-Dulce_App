@@ -118,75 +118,499 @@ exports[`renders correctly 1`] = `
     <View
       style={
         Object {
-          "flex": 1,
-          "height": 1334,
+          "flex": 3,
         }
       }
-      virtual={undefined}
     >
-      <RCTScrollView
-        automaticallyAdjustContentInsets={false}
-        contentContainerStyle={
-          Array [
-            Object {
-              "padding": undefined,
-            },
-            undefined,
-          ]
-        }
-        contentInset={
-          Object {
-            "bottom": 0,
-          }
-        }
-        enableAutomaticScroll={true}
-        enableResetScrollToCoords={true}
-        extraHeight={75}
-        extraScrollHeight={0}
-        getScrollResponder={[Function]}
-        handleOnScroll={[Function]}
-        keyboardDismissMode="interactive"
-        keyboardOpeningTime={250}
-        keyboardShouldPersistTaps="handled"
-        keyboardSpace={0}
-        onScroll={[Function]}
-        resetKeyboardSpace={[Function]}
-        resetScrollToCoords={
-          Object {
-            "x": 0,
-            "y": 0,
-          }
-        }
-        scrollEventThrottle={1}
-        scrollForExtraHeightOnAndroid={[Function]}
-        scrollToEnd={[Function]}
-        scrollToFocusedInput={[Function]}
-        scrollToPosition={[Function]}
-        showsVerticalScrollIndicator={true}
+      <View
         style={
           Object {
-            "backgroundColor": "transparent",
+            "flex": 3,
+          }
+        }
+      >
+        <View>
+          <Image
+            source={
+              Object {
+                "testUri": "../../../assets/img/logo.png",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "transparent",
+                "height": 100,
+                "marginBottom": 30,
+                "marginTop": 45,
+                "resizeMode": "contain",
+                "width": 200,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "alignSelf": "center",
+              "justifyContent": "center",
+              "width": "80%",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                },
+                Object {
+                  "alignSelf": "center",
+                  "fontFamily": "Raleway",
+                  "fontSize": 25,
+                  "marginBottom": 15,
+                },
+              ]
+            }
+            uppercase={false}
+            virtual={undefined}
+          >
+             
+             
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#000",
+                  "fontFamily": "System",
+                  "fontSize": 16,
+                },
+                Object {
+                  "fontFamily": "Lato",
+                  "fontSize": 22,
+                  "marginBottom": 15,
+                },
+              ]
+            }
+            uppercase={false}
+            virtual={undefined}
+          />
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
+                    "marginBottom": 15,
+                  },
+                ]
+              }
+              uppercase={false}
+              virtual={undefined}
+            >
+              Hospital: 
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
+                    "marginBottom": 15,
+                  },
+                ]
+              }
+              uppercase={false}
+              virtual={undefined}
+            >
+              Lappis
+               
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
+                    "marginBottom": 15,
+                  },
+                ]
+              }
+              uppercase={false}
+              virtual={undefined}
+            >
+              Setor: 
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
+                    "marginBottom": 15,
+                  },
+                ]
+              }
+              uppercase={false}
+              virtual={undefined}
+            >
+              Portal
+               
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
+                    "marginBottom": 15,
+                  },
+                ]
+              }
+              uppercase={false}
+              virtual={undefined}
+            >
+              Matricula: 
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "System",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "fontFamily": "Lato",
+                    "fontSize": 22,
+                    "marginBottom": 15,
+                  },
+                ]
+              }
+              uppercase={false}
+              virtual={undefined}
+            >
+              160111612
+               
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
             "flex": 1,
           }
         }
-        viewIsInsideTabBar={false}
-        virtual={undefined}
       >
-        <View>
-          <ActivityIndicator
-            animating={true}
-            color="#5f4b8b"
-            hidesWhenStopped={true}
-            size="large"
-            style={
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "height": 1334,
+            }
+          }
+          virtual={undefined}
+        >
+          <RCTScrollView
+            automaticallyAdjustContentInsets={false}
+            contentContainerStyle={
+              Array [
+                Object {
+                  "padding": undefined,
+                },
+                undefined,
+              ]
+            }
+            contentInset={
               Object {
-                "height": 80,
+                "bottom": 0,
               }
             }
+            enableAutomaticScroll={true}
+            enableResetScrollToCoords={true}
+            extraHeight={75}
+            extraScrollHeight={0}
+            getScrollResponder={[Function]}
+            handleOnScroll={[Function]}
+            keyboardDismissMode="interactive"
+            keyboardOpeningTime={250}
+            keyboardShouldPersistTaps="handled"
+            keyboardSpace={0}
+            onScroll={[Function]}
+            resetKeyboardSpace={[Function]}
+            resetScrollToCoords={
+              Object {
+                "x": 0,
+                "y": 0,
+              }
+            }
+            scrollEventThrottle={1}
+            scrollForExtraHeightOnAndroid={[Function]}
+            scrollToEnd={[Function]}
+            scrollToFocusedInput={[Function]}
+            scrollToPosition={[Function]}
+            showsVerticalScrollIndicator={true}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "flex": 1,
+              }
+            }
+            viewIsInsideTabBar={false}
             virtual={undefined}
-          />
+          >
+            <View>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                collapsable={undefined}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                nativeID={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "center",
+                    "backgroundColor": "#5f4b8b",
+                    "borderBottomWidth": null,
+                    "borderColor": "#007aff",
+                    "borderLeftWidth": null,
+                    "borderRadius": 57,
+                    "borderRightWidth": null,
+                    "borderTopWidth": null,
+                    "elevation": 2,
+                    "flexDirection": "row",
+                    "height": 50,
+                    "justifyContent": "space-between",
+                    "opacity": 1,
+                    "paddingBottom": 6,
+                    "paddingHorizontal": 30,
+                    "paddingTop": 6,
+                    "width": 180,
+                  }
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 25,
+                        },
+                        Object {
+                          "paddingHorizontal": 15,
+                        },
+                        Object {
+                          "fontFamily": "Entypo",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "color": "white",
+                        "fontFamily": "Raleway",
+                        "fontSize": 16,
+                      }
+                    }
+                  >
+                    Editar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
         </View>
-      </RCTScrollView>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": null,
+              "borderBottomWidth": null,
+              "borderColor": "#007aff",
+              "borderLeftWidth": null,
+              "borderRadius": 5,
+              "borderRightWidth": null,
+              "borderTopWidth": null,
+              "elevation": 0,
+              "flexDirection": "row",
+              "height": 50,
+              "justifyContent": "center",
+              "margin": 20,
+              "marginBottom": 20,
+              "marginHorizontal": 120,
+              "opacity": 1,
+              "paddingBottom": 6,
+              "paddingTop": 6,
+              "shadowColor": null,
+              "shadowOffset": null,
+              "shadowOpacity": null,
+              "shadowRadius": null,
+              "width": 170,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#f0ad4e",
+                  "fontFamily": "System",
+                  "fontSize": 16.5,
+                  "lineHeight": 19,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {
+                  "alignItems": "center",
+                  "color": "#fd7d01",
+                  "fontFamily": "Raleway",
+                  "fontSize": 17,
+                },
+              ]
+            }
+            uppercase={false}
+            virtual={undefined}
+          >
+            Excluir conta
+          </Text>
+        </View>
+      </View>
     </View>
   </View>
 </View>
@@ -227,14 +651,14 @@ ShallowWrapper {
           <View
             style={
               Object {
-                "flex": 1,
+                "flex": 3,
               }
             }
           >
             <View
               style={
                 Object {
-                  "flex": 1,
+                  "flex": 3,
                 }
               }
             >
@@ -242,7 +666,7 @@ ShallowWrapper {
               <View
                 style={
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "alignSelf": "center",
                     "justifyContent": "center",
                     "width": "80%",
@@ -252,8 +676,9 @@ ShallowWrapper {
                 <Styled(Text)
                   style={
                     Object {
+                      "alignSelf": "center",
                       "fontFamily": "Raleway",
-                      "fontSize": 22,
+                      "fontSize": 25,
                       "marginBottom": 15,
                     }
                   }
@@ -266,14 +691,111 @@ ShallowWrapper {
                   style={
                     Object {
                       "fontFamily": "Lato",
-                      "fontSize": 20,
+                      "fontSize": 22,
                       "marginBottom": 15,
                     }
                   }
                   virtual={undefined}
+                />
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
                 >
-                   
-                </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Hospital: 
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Lappis
+                     
+                  </Styled(Text)>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Setor: 
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Portal
+                     
+                  </Styled(Text)>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    Matricula: 
+                  </Styled(Text)>
+                  <Styled(Text)
+                    style={
+                      Object {
+                        "fontFamily": "Lato",
+                        "fontSize": 22,
+                        "marginBottom": 15,
+                      }
+                    }
+                    virtual={undefined}
+                  >
+                    160111612
+                     
+                  </Styled(Text)>
+                </View>
               </View>
             </View>
             <View
@@ -353,14 +875,14 @@ ShallowWrapper {
             <View
               style={
                 Object {
-                  "flex": 1,
+                  "flex": 3,
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "flex": 1,
+                    "flex": 3,
                   }
                 }
               >
@@ -368,7 +890,7 @@ ShallowWrapper {
                 <View
                   style={
                     Object {
-                      "alignItems": "center",
+                      "alignItems": "flex-start",
                       "alignSelf": "center",
                       "justifyContent": "center",
                       "width": "80%",
@@ -378,8 +900,9 @@ ShallowWrapper {
                   <Styled(Text)
                     style={
                       Object {
+                        "alignSelf": "center",
                         "fontFamily": "Raleway",
-                        "fontSize": 22,
+                        "fontSize": 25,
                         "marginBottom": 15,
                       }
                     }
@@ -392,14 +915,111 @@ ShallowWrapper {
                     style={
                       Object {
                         "fontFamily": "Lato",
-                        "fontSize": 20,
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
                     virtual={undefined}
+                  />
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
                   >
-                     
-                  </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Hospital: 
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Lappis
+                       
+                    </Styled(Text)>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Setor: 
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Portal
+                       
+                    </Styled(Text)>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Matricula: 
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      160111612
+                       
+                    </Styled(Text)>
+                  </View>
                 </View>
               </View>
               <View
@@ -478,7 +1098,7 @@ ShallowWrapper {
                 <View
                   style={
                     Object {
-                      "flex": 1,
+                      "flex": 3,
                     }
                   }
                 >
@@ -486,7 +1106,7 @@ ShallowWrapper {
                   <View
                     style={
                       Object {
-                        "alignItems": "center",
+                        "alignItems": "flex-start",
                         "alignSelf": "center",
                         "justifyContent": "center",
                         "width": "80%",
@@ -496,8 +1116,9 @@ ShallowWrapper {
                     <Styled(Text)
                       style={
                         Object {
+                          "alignSelf": "center",
                           "fontFamily": "Raleway",
-                          "fontSize": 22,
+                          "fontSize": 25,
                           "marginBottom": 15,
                         }
                       }
@@ -510,14 +1131,111 @@ ShallowWrapper {
                       style={
                         Object {
                           "fontFamily": "Lato",
-                          "fontSize": 20,
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
                       virtual={undefined}
+                    />
+                    <View
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
                     >
-                       
-                    </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Hospital: 
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Lappis
+                         
+                      </Styled(Text)>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Setor: 
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Portal
+                         
+                      </Styled(Text)>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Matricula: 
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        160111612
+                         
+                      </Styled(Text)>
+                    </View>
                   </View>
                 </View>,
                 <View
@@ -567,7 +1285,7 @@ ShallowWrapper {
                 </View>,
               ],
               "style": Object {
-                "flex": 1,
+                "flex": 3,
               },
             },
             "ref": null,
@@ -582,7 +1300,7 @@ ShallowWrapper {
                     <View
                       style={
                         Object {
-                          "alignItems": "center",
+                          "alignItems": "flex-start",
                           "alignSelf": "center",
                           "justifyContent": "center",
                           "width": "80%",
@@ -592,8 +1310,9 @@ ShallowWrapper {
                       <Styled(Text)
                         style={
                           Object {
+                            "alignSelf": "center",
                             "fontFamily": "Raleway",
-                            "fontSize": 22,
+                            "fontSize": 25,
                             "marginBottom": 15,
                           }
                         }
@@ -606,18 +1325,115 @@ ShallowWrapper {
                         style={
                           Object {
                             "fontFamily": "Lato",
-                            "fontSize": 20,
+                            "fontSize": 22,
                             "marginBottom": 15,
                           }
                         }
                         virtual={undefined}
+                      />
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
                       >
-                         
-                      </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Hospital: 
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Lappis
+                           
+                        </Styled(Text)>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Setor: 
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Portal
+                           
+                        </Styled(Text)>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Matricula: 
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          160111612
+                           
+                        </Styled(Text)>
+                      </View>
                     </View>,
                   ],
                   "style": Object {
-                    "flex": 1,
+                    "flex": 3,
                   },
                 },
                 "ref": null,
@@ -640,8 +1456,9 @@ ShallowWrapper {
                         <Styled(Text)
                           style={
                             Object {
+                              "alignSelf": "center",
                               "fontFamily": "Raleway",
-                              "fontSize": 22,
+                              "fontSize": 25,
                               "marginBottom": 15,
                             }
                           }
@@ -654,17 +1471,114 @@ ShallowWrapper {
                           style={
                             Object {
                               "fontFamily": "Lato",
-                              "fontSize": 20,
+                              "fontSize": 22,
                               "marginBottom": 15,
                             }
                           }
                           virtual={undefined}
+                        />,
+                        <View
+                          style={
+                            Object {
+                              "flexDirection": "row",
+                            }
+                          }
                         >
-                           
-                        </Styled(Text)>,
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Hospital: 
+                          </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Lappis
+                             
+                          </Styled(Text)>
+                        </View>,
+                        <View
+                          style={
+                            Object {
+                              "flexDirection": "row",
+                            }
+                          }
+                        >
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Setor: 
+                          </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Portal
+                             
+                          </Styled(Text)>
+                        </View>,
+                        <View
+                          style={
+                            Object {
+                              "flexDirection": "row",
+                            }
+                          }
+                        >
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Matricula: 
+                          </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            160111612
+                             
+                          </Styled(Text)>
+                        </View>,
                       ],
                       "style": Object {
-                        "alignItems": "center",
+                        "alignItems": "flex-start",
                         "alignSelf": "center",
                         "justifyContent": "center",
                         "width": "80%",
@@ -684,8 +1598,9 @@ ShallowWrapper {
                             undefined,
                           ],
                           "style": Object {
+                            "alignSelf": "center",
                             "fontFamily": "Raleway",
-                            "fontSize": 22,
+                            "fontSize": 25,
                             "marginBottom": 15,
                           },
                           "virtual": undefined,
@@ -704,21 +1619,258 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "class",
                         "props": Object {
-                          "children": Array [
-                            " ",
-                            undefined,
-                          ],
+                          "children": undefined,
                           "style": Object {
                             "fontFamily": "Lato",
-                            "fontSize": 20,
+                            "fontSize": 22,
                             "marginBottom": 15,
                           },
                           "virtual": undefined,
                         },
                         "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Hospital: 
+                            </Styled(Text)>,
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Lappis
+                               
+                            </Styled(Text)>,
+                          ],
+                          "style": Object {
+                            "flexDirection": "row",
+                          },
+                        },
+                        "ref": null,
                         "rendered": Array [
-                          " ",
-                          undefined,
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": "Hospital: ",
+                              "style": Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              },
+                              "virtual": undefined,
+                            },
+                            "ref": null,
+                            "rendered": "Hospital: ",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": Array [
+                                "Lappis",
+                                " ",
+                              ],
+                              "style": Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              },
+                              "virtual": undefined,
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Lappis",
+                              " ",
+                            ],
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Setor: 
+                            </Styled(Text)>,
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Portal
+                               
+                            </Styled(Text)>,
+                          ],
+                          "style": Object {
+                            "flexDirection": "row",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": "Setor: ",
+                              "style": Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              },
+                              "virtual": undefined,
+                            },
+                            "ref": null,
+                            "rendered": "Setor: ",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": Array [
+                                "Portal",
+                                " ",
+                              ],
+                              "style": Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              },
+                              "virtual": undefined,
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Portal",
+                              " ",
+                            ],
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Matricula: 
+                            </Styled(Text)>,
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              160111612
+                               
+                            </Styled(Text)>,
+                          ],
+                          "style": Object {
+                            "flexDirection": "row",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": "Matricula: ",
+                              "style": Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              },
+                              "virtual": undefined,
+                            },
+                            "ref": null,
+                            "rendered": "Matricula: ",
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": Array [
+                                160111612,
+                                " ",
+                              ],
+                              "style": Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              },
+                              "virtual": undefined,
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              160111612,
+                              " ",
+                            ],
+                            "type": [Function],
+                          },
                         ],
                         "type": [Function],
                       },
@@ -880,14 +2032,14 @@ ShallowWrapper {
             <View
               style={
                 Object {
-                  "flex": 1,
+                  "flex": 3,
                 }
               }
             >
               <View
                 style={
                   Object {
-                    "flex": 1,
+                    "flex": 3,
                   }
                 }
               >
@@ -895,7 +2047,7 @@ ShallowWrapper {
                 <View
                   style={
                     Object {
-                      "alignItems": "center",
+                      "alignItems": "flex-start",
                       "alignSelf": "center",
                       "justifyContent": "center",
                       "width": "80%",
@@ -905,8 +2057,9 @@ ShallowWrapper {
                   <Styled(Text)
                     style={
                       Object {
+                        "alignSelf": "center",
                         "fontFamily": "Raleway",
-                        "fontSize": 22,
+                        "fontSize": 25,
                         "marginBottom": 15,
                       }
                     }
@@ -919,14 +2072,111 @@ ShallowWrapper {
                     style={
                       Object {
                         "fontFamily": "Lato",
-                        "fontSize": 20,
+                        "fontSize": 22,
                         "marginBottom": 15,
                       }
                     }
                     virtual={undefined}
+                  />
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
                   >
-                     
-                  </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Hospital: 
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Lappis
+                       
+                    </Styled(Text)>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Setor: 
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Portal
+                       
+                    </Styled(Text)>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "flexDirection": "row",
+                      }
+                    }
+                  >
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      Matricula: 
+                    </Styled(Text)>
+                    <Styled(Text)
+                      style={
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        }
+                      }
+                      virtual={undefined}
+                    >
+                      160111612
+                       
+                    </Styled(Text)>
+                  </View>
                 </View>
               </View>
               <View
@@ -1006,14 +2256,14 @@ ShallowWrapper {
               <View
                 style={
                   Object {
-                    "flex": 1,
+                    "flex": 3,
                   }
                 }
               >
                 <View
                   style={
                     Object {
-                      "flex": 1,
+                      "flex": 3,
                     }
                   }
                 >
@@ -1021,7 +2271,7 @@ ShallowWrapper {
                   <View
                     style={
                       Object {
-                        "alignItems": "center",
+                        "alignItems": "flex-start",
                         "alignSelf": "center",
                         "justifyContent": "center",
                         "width": "80%",
@@ -1031,8 +2281,9 @@ ShallowWrapper {
                     <Styled(Text)
                       style={
                         Object {
+                          "alignSelf": "center",
                           "fontFamily": "Raleway",
-                          "fontSize": 22,
+                          "fontSize": 25,
                           "marginBottom": 15,
                         }
                       }
@@ -1045,14 +2296,111 @@ ShallowWrapper {
                       style={
                         Object {
                           "fontFamily": "Lato",
-                          "fontSize": 20,
+                          "fontSize": 22,
                           "marginBottom": 15,
                         }
                       }
                       virtual={undefined}
+                    />
+                    <View
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
                     >
-                       
-                    </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Hospital: 
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Lappis
+                         
+                      </Styled(Text)>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Setor: 
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Portal
+                         
+                      </Styled(Text)>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        Matricula: 
+                      </Styled(Text)>
+                      <Styled(Text)
+                        style={
+                          Object {
+                            "fontFamily": "Lato",
+                            "fontSize": 22,
+                            "marginBottom": 15,
+                          }
+                        }
+                        virtual={undefined}
+                      >
+                        160111612
+                         
+                      </Styled(Text)>
+                    </View>
                   </View>
                 </View>
                 <View
@@ -1131,7 +2479,7 @@ ShallowWrapper {
                   <View
                     style={
                       Object {
-                        "flex": 1,
+                        "flex": 3,
                       }
                     }
                   >
@@ -1139,7 +2487,7 @@ ShallowWrapper {
                     <View
                       style={
                         Object {
-                          "alignItems": "center",
+                          "alignItems": "flex-start",
                           "alignSelf": "center",
                           "justifyContent": "center",
                           "width": "80%",
@@ -1149,8 +2497,9 @@ ShallowWrapper {
                       <Styled(Text)
                         style={
                           Object {
+                            "alignSelf": "center",
                             "fontFamily": "Raleway",
-                            "fontSize": 22,
+                            "fontSize": 25,
                             "marginBottom": 15,
                           }
                         }
@@ -1163,14 +2512,111 @@ ShallowWrapper {
                         style={
                           Object {
                             "fontFamily": "Lato",
-                            "fontSize": 20,
+                            "fontSize": 22,
                             "marginBottom": 15,
                           }
                         }
                         virtual={undefined}
+                      />
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
                       >
-                         
-                      </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Hospital: 
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Lappis
+                           
+                        </Styled(Text)>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Setor: 
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Portal
+                           
+                        </Styled(Text)>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          Matricula: 
+                        </Styled(Text)>
+                        <Styled(Text)
+                          style={
+                            Object {
+                              "fontFamily": "Lato",
+                              "fontSize": 22,
+                              "marginBottom": 15,
+                            }
+                          }
+                          virtual={undefined}
+                        >
+                          160111612
+                           
+                        </Styled(Text)>
+                      </View>
                     </View>
                   </View>,
                   <View
@@ -1220,7 +2666,7 @@ ShallowWrapper {
                   </View>,
                 ],
                 "style": Object {
-                  "flex": 1,
+                  "flex": 3,
                 },
               },
               "ref": null,
@@ -1235,7 +2681,7 @@ ShallowWrapper {
                       <View
                         style={
                           Object {
-                            "alignItems": "center",
+                            "alignItems": "flex-start",
                             "alignSelf": "center",
                             "justifyContent": "center",
                             "width": "80%",
@@ -1245,8 +2691,9 @@ ShallowWrapper {
                         <Styled(Text)
                           style={
                             Object {
+                              "alignSelf": "center",
                               "fontFamily": "Raleway",
-                              "fontSize": 22,
+                              "fontSize": 25,
                               "marginBottom": 15,
                             }
                           }
@@ -1259,18 +2706,115 @@ ShallowWrapper {
                           style={
                             Object {
                               "fontFamily": "Lato",
-                              "fontSize": 20,
+                              "fontSize": 22,
                               "marginBottom": 15,
                             }
                           }
                           virtual={undefined}
+                        />
+                        <View
+                          style={
+                            Object {
+                              "flexDirection": "row",
+                            }
+                          }
                         >
-                           
-                        </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Hospital: 
+                          </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Lappis
+                             
+                          </Styled(Text)>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "flexDirection": "row",
+                            }
+                          }
+                        >
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Setor: 
+                          </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Portal
+                             
+                          </Styled(Text)>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "flexDirection": "row",
+                            }
+                          }
+                        >
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            Matricula: 
+                          </Styled(Text)>
+                          <Styled(Text)
+                            style={
+                              Object {
+                                "fontFamily": "Lato",
+                                "fontSize": 22,
+                                "marginBottom": 15,
+                              }
+                            }
+                            virtual={undefined}
+                          >
+                            160111612
+                             
+                          </Styled(Text)>
+                        </View>
                       </View>,
                     ],
                     "style": Object {
-                      "flex": 1,
+                      "flex": 3,
                     },
                   },
                   "ref": null,
@@ -1293,8 +2837,9 @@ ShallowWrapper {
                           <Styled(Text)
                             style={
                               Object {
+                                "alignSelf": "center",
                                 "fontFamily": "Raleway",
-                                "fontSize": 22,
+                                "fontSize": 25,
                                 "marginBottom": 15,
                               }
                             }
@@ -1307,17 +2852,114 @@ ShallowWrapper {
                             style={
                               Object {
                                 "fontFamily": "Lato",
-                                "fontSize": 20,
+                                "fontSize": 22,
                                 "marginBottom": 15,
                               }
                             }
                             virtual={undefined}
+                          />,
+                          <View
+                            style={
+                              Object {
+                                "flexDirection": "row",
+                              }
+                            }
                           >
-                             
-                          </Styled(Text)>,
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Hospital: 
+                            </Styled(Text)>
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Lappis
+                               
+                            </Styled(Text)>
+                          </View>,
+                          <View
+                            style={
+                              Object {
+                                "flexDirection": "row",
+                              }
+                            }
+                          >
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Setor: 
+                            </Styled(Text)>
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Portal
+                               
+                            </Styled(Text)>
+                          </View>,
+                          <View
+                            style={
+                              Object {
+                                "flexDirection": "row",
+                              }
+                            }
+                          >
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              Matricula: 
+                            </Styled(Text)>
+                            <Styled(Text)
+                              style={
+                                Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                }
+                              }
+                              virtual={undefined}
+                            >
+                              160111612
+                               
+                            </Styled(Text)>
+                          </View>,
                         ],
                         "style": Object {
-                          "alignItems": "center",
+                          "alignItems": "flex-start",
                           "alignSelf": "center",
                           "justifyContent": "center",
                           "width": "80%",
@@ -1337,8 +2979,9 @@ ShallowWrapper {
                               undefined,
                             ],
                             "style": Object {
+                              "alignSelf": "center",
                               "fontFamily": "Raleway",
-                              "fontSize": 22,
+                              "fontSize": 25,
                               "marginBottom": 15,
                             },
                             "virtual": undefined,
@@ -1357,21 +3000,258 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "class",
                           "props": Object {
-                            "children": Array [
-                              " ",
-                              undefined,
-                            ],
+                            "children": undefined,
                             "style": Object {
                               "fontFamily": "Lato",
-                              "fontSize": 20,
+                              "fontSize": 22,
                               "marginBottom": 15,
                             },
                             "virtual": undefined,
                           },
                           "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              <Styled(Text)
+                                style={
+                                  Object {
+                                    "fontFamily": "Lato",
+                                    "fontSize": 22,
+                                    "marginBottom": 15,
+                                  }
+                                }
+                                virtual={undefined}
+                              >
+                                Hospital: 
+                              </Styled(Text)>,
+                              <Styled(Text)
+                                style={
+                                  Object {
+                                    "fontFamily": "Lato",
+                                    "fontSize": 22,
+                                    "marginBottom": 15,
+                                  }
+                                }
+                                virtual={undefined}
+                              >
+                                Lappis
+                                 
+                              </Styled(Text)>,
+                            ],
+                            "style": Object {
+                              "flexDirection": "row",
+                            },
+                          },
+                          "ref": null,
                           "rendered": Array [
-                            " ",
-                            undefined,
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": "Hospital: ",
+                                "style": Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                },
+                                "virtual": undefined,
+                              },
+                              "ref": null,
+                              "rendered": "Hospital: ",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": Array [
+                                  "Lappis",
+                                  " ",
+                                ],
+                                "style": Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                },
+                                "virtual": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Lappis",
+                                " ",
+                              ],
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              <Styled(Text)
+                                style={
+                                  Object {
+                                    "fontFamily": "Lato",
+                                    "fontSize": 22,
+                                    "marginBottom": 15,
+                                  }
+                                }
+                                virtual={undefined}
+                              >
+                                Setor: 
+                              </Styled(Text)>,
+                              <Styled(Text)
+                                style={
+                                  Object {
+                                    "fontFamily": "Lato",
+                                    "fontSize": 22,
+                                    "marginBottom": 15,
+                                  }
+                                }
+                                virtual={undefined}
+                              >
+                                Portal
+                                 
+                              </Styled(Text)>,
+                            ],
+                            "style": Object {
+                              "flexDirection": "row",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": "Setor: ",
+                                "style": Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                },
+                                "virtual": undefined,
+                              },
+                              "ref": null,
+                              "rendered": "Setor: ",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": Array [
+                                  "Portal",
+                                  " ",
+                                ],
+                                "style": Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                },
+                                "virtual": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Portal",
+                                " ",
+                              ],
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              <Styled(Text)
+                                style={
+                                  Object {
+                                    "fontFamily": "Lato",
+                                    "fontSize": 22,
+                                    "marginBottom": 15,
+                                  }
+                                }
+                                virtual={undefined}
+                              >
+                                Matricula: 
+                              </Styled(Text)>,
+                              <Styled(Text)
+                                style={
+                                  Object {
+                                    "fontFamily": "Lato",
+                                    "fontSize": 22,
+                                    "marginBottom": 15,
+                                  }
+                                }
+                                virtual={undefined}
+                              >
+                                160111612
+                                 
+                              </Styled(Text)>,
+                            ],
+                            "style": Object {
+                              "flexDirection": "row",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": "Matricula: ",
+                                "style": Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                },
+                                "virtual": undefined,
+                              },
+                              "ref": null,
+                              "rendered": "Matricula: ",
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": Array [
+                                  160111612,
+                                  " ",
+                                ],
+                                "style": Object {
+                                  "fontFamily": "Lato",
+                                  "fontSize": 22,
+                                  "marginBottom": 15,
+                                },
+                                "virtual": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                160111612,
+                                " ",
+                              ],
+                              "type": [Function],
+                            },
                           ],
                           "type": [Function],
                         },
