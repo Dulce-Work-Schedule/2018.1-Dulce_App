@@ -2,11 +2,9 @@ import 'react-native';
 import React from 'react';
 import EditScreen from '../../src/Screens/EditScreen';
 import Adapter from 'enzyme-adapter-react-16';
-//import {shallow} from 'enzyme';
-import renderer from 'react-test-renderer';
-//import Adapter from 'enzyme-adapter-react-16';
-import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
+import renderer from 'react-test-renderer';
+import Enzyme from 'enzyme';
 import t from 'tcomb-form-native';
 
 require('bezier');
@@ -32,9 +30,8 @@ it('testing onChange container',() => {
   const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
-    email: t.String,
-    senha: t.String,
-    confirmarSenha: t.String
+    sobrenome: t.String,
+    email: t.String
   });
   const wrapper = shallow(<EditScreen navigation = {navigation} type={type}/>);
   const container = wrapper.find('Styled(Container)').at(0);
@@ -42,6 +39,7 @@ it('testing onChange container',() => {
   form.props().onChange();
 });
 
+<<<<<<< HEAD
 //const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 //
 // it('testing axios', async () => {
@@ -50,3 +48,18 @@ it('testing onChange container',() => {
 //   wrapper.update();
 //   expect(wrapper).toMatchSnapshot();
 // });
+=======
+
+const flushPromises = () => new Promise(resolve => setImmediate(resolve));
+
+it('should call edit function', async () => {
+  const spy = jest.spyOn(EditScreen.prototype, 'edit');
+  const wrapper = shallow(<EditScreen />);
+  const button = wrapper.find('SignUp').at(0);
+  console.log(button);
+  button.simulate('press');
+  await flushPromises();
+  wrapper.update();
+  expect(spy).toHaveBeenCalled();
+});
+>>>>>>> #407 Arrumando testes

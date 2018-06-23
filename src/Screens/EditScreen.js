@@ -43,7 +43,6 @@ export default class EditScreen extends ValidationComponent {
     const url = 'http://52.67.4.137:8083/api/user/edit/?id=' + store.getState().currentUser.id;
     console.log(url);
     console.log(store.getState().currentUser.token);
-    this.setProfile();
     axios.put(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
@@ -51,7 +50,8 @@ export default class EditScreen extends ValidationComponent {
       data: {
         firstName: this.state.value.nome,
         lastName: this.state.value.sobrenome,
-        email: this.state.value.email
+        email: this.state.value.email,
+        id: store.getState().currentUser.id
       }
     })
     .then((response) => {
@@ -60,16 +60,6 @@ export default class EditScreen extends ValidationComponent {
         'Sua conta foi editada com sucesso!',
         {text: 'ok', onPress: () => { this.props.navigation.navigate('profile'); }}
       );
-    });
-  }
-
-  setProfile() {
-    this.setState({
-      profile: {
-        firstName: this.state.value.nome,
-        lastName: this.state.value.nome,
-        email: this.state.value.email
-      }
     });
   }
 

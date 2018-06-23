@@ -9739,10 +9739,14 @@ exports[`renders correctly 1`] = `
             >
               <RCTDatePicker
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 date={1529882507744}
 =======
                 date={1529762254487}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                date={1529764534570}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9974,10 +9978,14 @@ exports[`renders correctly 1`] = `
             >
               <RCTDatePicker
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 date={1529882507744}
 =======
                 date={1529762254487}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                date={1529764534570}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10137,10 +10145,14 @@ ShallowWrapper {
             renderItem={[Function]}
             rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
             selected={2018-06-24T23:21:53.812Z}
 =======
             selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+            selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             style={
               Object {
                 "flex": 1,
@@ -10219,10 +10231,14 @@ ShallowWrapper {
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                     selected={2018-06-24T23:21:53.812Z}
 =======
                     selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                    selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                     style={
                       Object {
                         "flex": 1,
@@ -10271,10 +10287,14 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
             date={2018-06-24T23:21:47.744Z}
 =======
             date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+            date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10296,10 +10316,14 @@ ShallowWrapper {
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
             date={2018-06-24T23:21:47.744Z}
 =======
             date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+            date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10353,10 +10377,14 @@ ShallowWrapper {
               renderItem={[Function]}
               rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               selected={2018-06-24T23:21:53.812Z}
 =======
               selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               style={
                 Object {
                   "flex": 1,
@@ -10435,10 +10463,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                       selected={2018-06-24T23:21:53.812Z}
 =======
                       selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                      selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10487,10 +10519,14 @@ ShallowWrapper {
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               date={2018-06-24T23:21:47.744Z}
 =======
               date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10512,10 +10548,14 @@ ShallowWrapper {
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               date={2018-06-24T23:21:47.744Z}
 =======
               date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10564,10 +10604,14 @@ ShallowWrapper {
               "renderItem": [Function],
               "rowHasChanged": [Function],
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               "selected": 2018-06-24T23:21:53.812Z,
 =======
               "selected": 2018-06-23T13:58:42.266Z,
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              "selected": 2018-06-23T14:35:35.538Z,
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "style": Object {
                 "flex": 1,
               },
@@ -10650,10 +10694,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                       selected={2018-06-24T23:21:53.812Z}
 =======
                       selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                      selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10750,10 +10798,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                       selected={2018-06-24T23:21:53.812Z}
 =======
                       selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                      selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -10848,10 +10900,14 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                         selected={2018-06-24T23:21:53.812Z}
 =======
                         selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                        selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -10947,7 +11003,7 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-                          selected={2018-06-23T13:58:42.266Z}
+                          selected={2018-06-23T14:35:35.538Z}
                           style={
                             Object {
                               "flex": 1,
@@ -11005,7 +11061,7 @@ ShallowWrapper {
                           "renderEmptyDate": [Function],
                           "renderItem": [Function],
                           "rowHasChanged": [Function],
-                          "selected": 2018-06-23T13:58:42.266Z,
+                          "selected": 2018-06-23T14:35:35.538Z,
                           "style": Object {
                             "flex": 1,
                           },
@@ -11118,10 +11174,14 @@ ShallowWrapper {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               "date": 2018-06-24T23:21:47.744Z,
 =======
               "date": 2018-06-23T13:57:34.487Z,
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              "date": 2018-06-23T14:35:34.570Z,
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -11149,10 +11209,14 @@ ShallowWrapper {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               "date": 2018-06-24T23:21:47.744Z,
 =======
               "date": 2018-06-23T13:57:34.487Z,
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              "date": 2018-06-23T14:35:34.570Z,
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11205,10 +11269,14 @@ ShallowWrapper {
               renderItem={[Function]}
               rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               selected={2018-06-24T23:21:53.812Z}
 =======
               selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               style={
                 Object {
                   "flex": 1,
@@ -11287,10 +11355,14 @@ ShallowWrapper {
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                       selected={2018-06-24T23:21:53.812Z}
 =======
                       selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                      selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                       style={
                         Object {
                           "flex": 1,
@@ -11339,10 +11411,14 @@ ShallowWrapper {
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               date={2018-06-24T23:21:47.744Z}
 =======
               date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11364,10 +11440,14 @@ ShallowWrapper {
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
               date={2018-06-24T23:21:47.744Z}
 =======
               date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+              date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11421,10 +11501,14 @@ ShallowWrapper {
                 renderItem={[Function]}
                 rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 selected={2018-06-24T23:21:53.812Z}
 =======
                 selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 style={
                   Object {
                     "flex": 1,
@@ -11503,10 +11587,14 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                         selected={2018-06-24T23:21:53.812Z}
 =======
                         selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                        selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11555,10 +11643,14 @@ ShallowWrapper {
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 date={2018-06-24T23:21:47.744Z}
 =======
                 date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11580,10 +11672,14 @@ ShallowWrapper {
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 date={2018-06-24T23:21:47.744Z}
 =======
                 date={2018-06-23T13:57:34.487Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                date={2018-06-23T14:35:34.570Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11632,10 +11728,14 @@ ShallowWrapper {
                 "renderItem": [Function],
                 "rowHasChanged": [Function],
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 "selected": 2018-06-24T23:21:53.812Z,
 =======
                 "selected": 2018-06-23T13:58:42.266Z,
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                "selected": 2018-06-23T14:35:35.538Z,
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "style": Object {
                   "flex": 1,
                 },
@@ -11718,10 +11818,14 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                         selected={2018-06-24T23:21:53.812Z}
 =======
                         selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                        selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11818,10 +11922,14 @@ ShallowWrapper {
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                         selected={2018-06-24T23:21:53.812Z}
 =======
                         selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                        selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         style={
                           Object {
                             "flex": 1,
@@ -11916,10 +12024,14 @@ ShallowWrapper {
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                           selected={2018-06-24T23:21:53.812Z}
 =======
                           selected={2018-06-23T13:58:42.266Z}
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                          selected={2018-06-23T14:35:35.538Z}
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                           style={
                             Object {
                               "flex": 1,
@@ -12015,7 +12127,7 @@ ShallowWrapper {
                             renderEmptyDate={[Function]}
                             renderItem={[Function]}
                             rowHasChanged={[Function]}
-                            selected={2018-06-23T13:58:42.266Z}
+                            selected={2018-06-23T14:35:35.538Z}
                             style={
                               Object {
                                 "flex": 1,
@@ -12073,7 +12185,7 @@ ShallowWrapper {
                             "renderEmptyDate": [Function],
                             "renderItem": [Function],
                             "rowHasChanged": [Function],
-                            "selected": 2018-06-23T13:58:42.266Z,
+                            "selected": 2018-06-23T14:35:35.538Z,
                             "style": Object {
                               "flex": 1,
                             },
@@ -12186,10 +12298,14 @@ ShallowWrapper {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 "date": 2018-06-24T23:21:47.744Z,
 =======
                 "date": 2018-06-23T13:57:34.487Z,
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                "date": 2018-06-23T14:35:34.570Z,
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -12217,10 +12333,14 @@ ShallowWrapper {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
 <<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 "date": 2018-06-24T23:21:47.744Z,
 =======
                 "date": 2018-06-23T13:57:34.487Z,
 >>>>>>> #407 Arrumando resposta para a api:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+=======
+                "date": 2018-06-23T14:35:34.570Z,
+>>>>>>> #407 Arrumando testes:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,
