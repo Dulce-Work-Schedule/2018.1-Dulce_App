@@ -48,7 +48,11 @@ export default class EditScreen extends ValidationComponent {
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
       },
-      data: this.state.profile
+      data: {
+        firstName: this.state.value.nome,
+        lastName: this.state.value.sobrenome,
+        email: this.state.value.email
+      }
     })
     .then((response) => {
       console.log(response.data);
@@ -70,7 +74,6 @@ export default class EditScreen extends ValidationComponent {
   }
 
   render() {
-    const {goBack} = this.props.navigation;
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
         <SideBar/>
@@ -87,7 +90,7 @@ export default class EditScreen extends ValidationComponent {
                 />
               </View>
               <IconButton
-                text = 'Editar'
+                text = 'Salvar'
                 onPress = {() => {this.edit();}}
                 style = {styles.button}
                 icon= 'save'
