@@ -21,6 +21,8 @@ export default class Schedule extends Component {
       modalVisible: false,
       currentSchedule: {},
       selectedSchedule: {},
+      currentEmployee: '',
+      selectedEmployee: '',
       items: {},
       loading: true,
       selectedDay: new Date(),
@@ -156,46 +158,66 @@ export default class Schedule extends Component {
       {cancelable: true});
   }
 
-  alert_change(employee) {
-    this.setState({selectedSchedule: employee}, () => {
-      var timezone = new Date().getTimezoneOffset() / 60;
-      var cStart_time = new Date(this.state.currentSchedule.start_time);
-      var cEnd_time = new Date(this.state.currentSchedule.end_time);
+  axiosProfile(profile_id, selected) {
+    const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + profile_id;
+    axios.get(url,{
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
+    })
+    .then((response) => {
+      var user_id = response.data.user_id;
+      this.axiosUser(user_id, selected);
+    });
+  }
 
-      var sStart_time = new Date(this.state.selectedSchedule.start_time);
-      var sEnd_time = new Date(this.state.selectedSchedule.end_time);
-      console.log(this.state.selectedSchedule.start_time);
-      console.log(this.state.selectedSchedule.end_time);
-      console.log(sStart_time);
-      console.log(sEnd_time);
+  axiosUser(user_id, selected) {
+    const url = 'http://52.67.4.137:8083/api/user/listById?id=' + user_id;
+    axios.get(url,{
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
+    })
+    .then((response) => {
+      console.log(response.data);
+      var name = response.data.firstName + ' ' + response.data.lastName;
+      console.log(name);
+      if (selected) {
+        this.setState({selectedEmployee: name}, () => {
+          this.alert_change();
+        });
+      } else {
+        this.setState({currentEmployee: name}, () => {
+          this.axiosProfile(this.state.selectedSchedule.profile_id, true);
+        });
+      }
+    });
+  }
 
-      var cDayString = cStart_time.getDay().toString().padStart(2, 0) +
-       '/' + (cStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
-      (cStart_time.getFullYear()).toString().padStart(2, 0);
-      var sDayString = sStart_time.getDay().toString().padStart(2, 0) +
-       '/' + (sStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
-      (sStart_time.getFullYear()).toString().padStart(2, 0);
+  alert_change() {
+    var timezone = new Date().getTimezoneOffset() / 60;
+    var cStart_time = new Date(this.state.currentSchedule.start_time);
+    var cEnd_time = new Date(this.state.currentSchedule.end_time);
+    var sStart_time = new Date(this.state.selectedSchedule.start_time);
+    var sEnd_time = new Date(this.state.selectedSchedule.end_time);
 
-      var cStartString = (cStart_time.getHours() + timezone).toString().padStart(2, 0) +
-      ':' + cStart_time.getMinutes().toString().padStart(2, 0);
-      var cEndString = (cEnd_time.getHours() + timezone).toString().padStart(2, 0) +
-      ':' + cEnd_time.getMinutes().toString().padStart(2, 0);
+    var cDayString = cStart_time.getDay().toString().padStart(2, 0) + '/' + (cStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' + (cStart_time.getFullYear()).toString().padStart(2, 0);
+    var sDayString = sStart_time.getDay().toString().padStart(2, 0) + '/' + (sStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' + (sStart_time.getFullYear()).toString().padStart(2, 0);
+    var cStartString = (cStart_time.getHours() + timezone).toString().padStart(2, 0) + ':' + cStart_time.getMinutes().toString().padStart(2, 0);
+    var cEndString = (cEnd_time.getHours() + timezone).toString().padStart(2, 0) + ':' + cEnd_time.getMinutes().toString().padStart(2, 0);
+    var sStartString = (sStart_time.getHours() + timezone).toString().padStart(2, 0) + ':' + sStart_time.getMinutes().toString().padStart(2, 0);
+    var sEndString = (sEnd_time.getHours() + timezone).toString().padStart(2, 0) + ':' + sEnd_time.getMinutes().toString().padStart(2, 0);
 
-      var sStartString = (sStart_time.getHours() + timezone).toString().padStart(2, 0) +
-      ':' + sStart_time.getMinutes().toString().padStart(2, 0);
-      var sEndString = (sEnd_time.getHours() + timezone).toString().padStart(2, 0) +
-       ':' + sEnd_time.getMinutes().toString().padStart(2, 0);
-
-
-      Alert.alert(
-        'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' +
-        this.state.selectedSchedule.employee + '?\n\n ' +
-        cDayString + '    ->   ' + sDayString + '\n' + cStartString + ' - ' + cEndString +
-        '  ->  ' + sStartString + ' - ' + sEndString,
-        [{text: 'Não', onPress: () => { }},
-          {text: 'Sim', onPress: () => {this.requestChange();}}],
-        {cancelable: true});});
+    Alert.alert(
+      'Mudar de Horário',
+      this.state.currentEmployee + ', deseja trocar de horario com o/a ' +
+      this.state.selectedEmployee + '?\n\n ' +
+      cDayString + '    ->   ' + sDayString + '\n' + cStartString + ' - ' + cEndString +
+      '  ->  ' + sStartString + ' - ' + sEndString,
+      [{text: 'Não', onPress: () => { }},
+      {text: 'Sim', onPress: () => {this.requestChange();}}],
+      {cancelable: true}
+    );
   }
 
   alert_Selfchange(date) {
@@ -247,8 +269,14 @@ export default class Schedule extends Component {
     return (
       <ScheduleItem
         isSector={this.props.sector}
-        onPress={() => { this.alert_change(item); }}
+        onPress={() => this.setNames(item)}
         item={item}/>);
+  }
+
+  setNames(item) {
+    this.setState({selectedSchedule: item}, () => {
+      this.axiosProfile(this.state.currentSchedule.profile_id, false);
+    });
   }
   renderModal() {
     return (
