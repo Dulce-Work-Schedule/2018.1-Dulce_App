@@ -187,10 +187,16 @@ export const styles = {
     text: {
       fontSize: 22,
       marginBottom: 15,
+      fontFamily: 'Lato'
+    },
+    textProfile: {
+      fontSize: 25,
+      marginBottom: 15,
+      alignSelf: 'center',
       fontFamily: 'Raleway'
     },
     textEmail: {
-      fontSize: 20,
+      fontSize: 25,
       marginBottom: 15,
       fontFamily: 'Lato'
     },
