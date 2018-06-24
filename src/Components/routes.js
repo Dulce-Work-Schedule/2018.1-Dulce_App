@@ -2,15 +2,19 @@ import Logout from '../Routes/Logout';
 import Profile from '../Routes/Profile';
 import Profiles from '../Routes/Profiles';
 import {DrawerNavigator} from 'react-navigation';
-import Schedule from '../Routes/Schedule';
+import SectorSchedule from '../Routes/SectorSchedule';
+import ProfileSchedule from '../Routes/ProfileSchedule';
 import Notifications from '../Routes/Notifications';
 import Vacation from '../Routes/Vacation';
 import Absences from '../Routes/Absences';
 import SideMenu from './SideMenu';
 
 export default DrawerNavigator({
-  'Ver escala': {
-    screen: Schedule
+  'Minha Escala': {
+    screen: ProfileSchedule
+  },
+  'Escalas do Setor': {
+    screen: SectorSchedule
   },
   'Todos os perfis': {
     screen: Profiles

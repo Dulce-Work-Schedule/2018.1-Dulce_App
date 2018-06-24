@@ -2,7 +2,7 @@ import reducer from '../../src/Reducers/currentProfile';
 import {SETPROFILE, RESETPROFILE} from '../../src/Actions/currentProfile';
 
 const currentProfile = {
-  id: 40028922,
+  id: '5b2d6fa1415965001ddaa5dd',
   registration: 160111612,
   sector: 'Portal',
   hospital: 'Lappis'
@@ -11,7 +11,7 @@ const currentProfile = {
 describe('currentProfile reducer', () => {
   it('should return the initial state',() => {
     expect(reducer(void 0,{})).toEqual({
-      id: 40028922,
+      id: '5b2d6fa1415965001ddaa5dd',
       registration: 160111612,
       sector: 'Portal',
       hospital: 'Lappis'});
@@ -24,7 +24,7 @@ describe('currentProfile reducer', () => {
         currentProfile: currentProfile
       })
     ).toEqual({
-      id: 40028922,
+      id: '5b2d6fa1415965001ddaa5dd',
       registration: 160111612,
       sector: 'Portal',
       hospital: 'Lappis'
@@ -38,7 +38,7 @@ describe('currentProfile reducer', () => {
         currentProfile: {}
       })
     ).toEqual({
-      id: 40028922,
+      id: '5b2d6fa1415965001ddaa5dd',
       registration: 160111612,
       sector: 'Portal',
       hospital: 'Lappis'

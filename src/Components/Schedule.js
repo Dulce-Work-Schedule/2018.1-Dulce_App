@@ -3,15 +3,15 @@ import {Text,View,TouchableHighlight,Alert} from 'react-native';
 import {Agenda} from 'react-native-calendars';
 import Modal from 'react-native-modal';
 import axios from 'axios';
-import store from '../Reducers/store';
 import ScreenHeader from '../Components/ScreenHeader';
 import ScheduleItem from '../Components/ScheduleItem';
 import SideBar from '../Components/SideBar';
 import {Icon, Fab} from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-import {weekSchedule as styles} from './styles' ;
+import {weekSchedule as styles} from '../Screens/styles' ;
+import store from '../Reducers/store';
 
-export default class WeekSchedule extends Component {
+export default class Schedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,6 +21,8 @@ export default class WeekSchedule extends Component {
       modalVisible: false,
       currentSchedule: {},
       selectedSchedule: {},
+      currentEmployee: '',
+      selectedEmployee: '',
       items: {},
       loading: true,
       selectedDay: new Date(),
@@ -32,14 +34,12 @@ export default class WeekSchedule extends Component {
   }
 
   componentDidMount() {
-    const url = 'http://172.18.0.1:8091/api/schedule/listYear';
-    axios.get(url, {
-      headers: {
-        'x-access-token': store.getState().currentUser.token
-      }
-    })
+    const url = this.props.url;
+    axios.get(url)
       .then((response) => {
         this.setState({itemDate: response.data, loading: false});
+        console.log(response.data);
+        console.log(this.state.itemDate);
         this.arrayToObject();
         if (response.data === []) {
           Alert.alert(
@@ -64,7 +64,7 @@ export default class WeekSchedule extends Component {
   fab() {
     return (
       <Fab
-        active={this.state.active}
+        active={false}
         direction='up'
         containerStyle={{}}
         style={{backgroundColor: '#5f4b8b'}}
@@ -103,11 +103,12 @@ export default class WeekSchedule extends Component {
         mode='time'
         style={{backgroundColor: '#5f4b8b', borderColor: '#5f4b8b', underlayColor: '#5f4b8b'}}/>);
   }
+
   arrayToObject() {
     const newObj = this.state.itemDate.reduce((acc, cur) => {
-      var date = new Date(cur.date);
+      var date = new Date(cur.start_time);
       var format = (date.getFullYear() + '-' +
-        (date.getMonth()).toString().padStart(2, 0) + '-' +
+        (date.getMonth() + 1).toString().padStart(2, 0) + '-' +
         (date.getDate()).toString().padStart(2, 0));
       if (!acc[format]) {
         acc[format] = [];
@@ -116,6 +117,7 @@ export default class WeekSchedule extends Component {
       return acc;
     }, {});
     this.setState({items: newObj});
+    console.log(this.state.items);
   }
   //Função para criar itens para o mês inteiro
   loadItems(day) {
@@ -151,64 +153,123 @@ export default class WeekSchedule extends Component {
       'Deseja solicitar mudança de horário?',
       [
         {text: 'Não', onPress: () => { }},
-        {text: 'Sim', onPress: () => { this.setModalVisible(true); }}
+        {text: 'Sim', onPress: () => this.props.sector ? this.setModalVisible(true) : this.timePickerVisible(true)}
       ],
       {cancelable: true});
   }
 
-  alert_change(employee) {
-    this.setState({selectedSchedule: employee}, () => {
-      Alert.alert(
-        'Mudar de Horário',
-        this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' +
-        this.state.selectedSchedule.employee + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date +
-        '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time +
-        '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
-        [
-          {text: 'Não', onPress: () => { }},
-          {text: 'Sim', onPress: () => {this.requestChange();}}
-        ],
-        {cancelable: true});});
+  axiosProfile(profile_id, selected) {
+    const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + profile_id;
+    console.log(url);
+    axios.get(url,{
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
+    })
+    .then((response) => {
+      var user_id = response.data.user_id;
+      this.axiosUser(user_id, selected);
+    });
   }
 
-  alert_Selfchange(date) {
-    this.setState({finalDateString: date});
-    if (!this.state.finalDateString) {
-      this.setState({finalDateString: new Date()});
-    }
+  axiosUser(user_id, selected) {
+    const url = 'http://52.67.4.137:8083/api/user/listById?id=' + user_id;
+    console.log(url);
+    axios.get(url,{
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
+    })
+    .then((response) => {
+      console.log(response.data);
+      var name = response.data.firstName + ' ' + response.data.lastName;
+      console.log(name);
+      if (selected) {
+        this.setState({selectedEmployee: name}, () => {
+          this.alert_change();
+        });
+      } else {
+        this.setState({currentEmployee: name}, () => {
+          this.axiosProfile(this.state.selectedSchedule.profile_id, true);
+        });
+      }
+    });
+  }
+
+  alert_change() {
+    var timezone = new Date().getTimezoneOffset() / 60;
+    var cStart_time = new Date(this.state.currentSchedule.start_time);
+    var cEnd_time = new Date(this.state.currentSchedule.end_time);
+    var sStart_time = new Date(this.state.selectedSchedule.start_time);
+    var sEnd_time = new Date(this.state.selectedSchedule.end_time);
+
+    var cDayString = cStart_time.getDay().toString().padStart(2, 0) + '/' + (cStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' + (cStart_time.getFullYear()).toString().padStart(2, 0);
+    var sDayString = sStart_time.getDay().toString().padStart(2, 0) + '/' + (sStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' + (sStart_time.getFullYear()).toString().padStart(2, 0);
+    var cStartString = (cStart_time.getHours() + timezone).toString().padStart(2, 0) + ':' + cStart_time.getMinutes().toString().padStart(2, 0);
+    var cEndString = (cEnd_time.getHours() + timezone).toString().padStart(2, 0) + ':' + cEnd_time.getMinutes().toString().padStart(2, 0);
+    var sStartString = (sStart_time.getHours() + timezone).toString().padStart(2, 0) + ':' + sStart_time.getMinutes().toString().padStart(2, 0);
+    var sEndString = (sEnd_time.getHours() + timezone).toString().padStart(2, 0) + ':' + sEnd_time.getMinutes().toString().padStart(2, 0);
 
     Alert.alert(
       'Mudar de Horário',
-      this.state.currentSchedule.employee + ', deseja trocar de horario' + '?\n\n ' +
-      this.state.currentSchedule.date + '    ->   ' +
-      (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' +
+      this.state.currentEmployee + ', deseja trocar de horario com o/a ' +
+      this.state.selectedEmployee + '?\n\n ' +
+      cDayString + '    ->   ' + sDayString + '\n' + cStartString + ' - ' + cEndString +
+      '  ->  ' + sStartString + ' - ' + sEndString,
+      [{text: 'Não', onPress: () => { }},
+      {text: 'Sim', onPress: () => {this.requestChange();}}],
+      {cancelable: true}
+    );
+  }
+
+  alert_Selfchange(date) {
+    if (!this.state.finalDateString) {
+      this.setState({finalDateString: new Date()});
+    } else {this.setState({finalDateString: date});}
+    var timezone = new Date().getTimezoneOffset() / 60;
+    var start_time = new Date(this.state.currentSchedule.start_time);
+    var end_time = new Date(this.state.currentSchedule.end_time);
+    var dayString = start_time.getDay().toString().padStart(2, 0) + '/' + (start_time.getMonth() + 1).toString().padStart(2, 0) + '/' + (start_time.getFullYear()).toString().padStart(2, 0);
+    var startString = (start_time.getHours() + timezone).toString().padStart(2, 0) + ':' + start_time.getMinutes().toString().padStart(2, 0);
+    var endString = (end_time.getHours() + timezone).toString().padStart(2, 0) + ':' + end_time.getMinutes().toString().padStart(2, 0);
+    Alert.alert(
+      'Mudar de Horário',
+      store.getState().currentUser.firstName + ', deseja trocar de horario' + '?\n\nde ' +
+      dayString + '    para   ' +
       (this.state.changeDay.getDate()).toString().padStart(2,0) + '/' +
-      this.state.changeDay.getFullYear() + '\n' + this.state.currentSchedule.start_time +
-       ' - ' + this.state.currentSchedule.end_time + '  ->  ' +
+      (this.state.changeDay.getMonth() + 1).toString().padStart(2 , 0) + '/' +
+      this.state.changeDay.getFullYear() + '\nde ' + startString +
+       ' - ' + endString + '  para  ' +
       (this.state.changeDay.getHours()).toString().padStart(2 , 0) + ':' +
       (this.state.changeDay.getMinutes()).toString().padStart(2,0) + ' - ' +
       (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' +
       (this.state.finalDateString.getMinutes()).toString().padStart(2,0),
-      [
-        {text: 'Não', onPress: () => {this.timePickerVisible(false);this.hideEndDateTimePicker();}},
-        {text: 'Sim', onPress: () => {this.requestChange(); }}
-      ],
+      [{text: 'Não', onPress: () => {this.timePickerVisible(false);this.hideEndDateTimePicker();}},
+        {text: 'Sim', onPress: () => {this.requestChange(); }}],
       {cancelable: true});
   }
 
   renderItem(item) {
     return (
       <ScheduleItem
+        isSector={this.props.sector}
         item={item}
         onPress={() => { this._alert(item); }}/>);
   }
   renderChangeItem(item) {
     return (
       <ScheduleItem
-        onPress={() => { this.alert_change(item); }}
+        isSector={this.props.sector}
+        onPress={() => this.setNames(item)}
         item={item}/>);
   }
+
+  setNames(item) {
+    this.setState({selectedSchedule: item}, () => {
+      this.axiosProfile(this.state.currentSchedule.profile_id, false);
+    });
+  }
+
   renderModal() {
     return (
       <View>
@@ -219,7 +280,7 @@ export default class WeekSchedule extends Component {
             Selecione o Horário que Deseja solicitar troca</Text>
             <View style={{flex: 1}}>
               {this.renderAgenda(this.renderChangeItem)}
-              {this.fab()}
+
             </View>
             {this.cancelChange()}
           </View>
@@ -270,7 +331,7 @@ export default class WeekSchedule extends Component {
         <SideBar />
         <View style={{flex: 8}}>
           <ScreenHeader
-            title='Escalas'
+            title={this.props.title}
           />
           {this.renderAgenda(this.renderItem)}
           {this.renderModal()}
