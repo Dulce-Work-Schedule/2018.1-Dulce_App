@@ -158,17 +158,43 @@ export default class Schedule extends Component {
 
   alert_change(employee) {
     this.setState({selectedSchedule: employee}, () => {
+      var timezone = new Date().getTimezoneOffset() / 60;
+      var cStart_time = new Date(this.state.currentSchedule.start_time);
+      var cEnd_time = new Date(this.state.currentSchedule.end_time);
+
+      var sStart_time = new Date(this.state.selectedSchedule.start_time);
+      var sEnd_time = new Date(this.state.selectedSchedule.end_time);
+      console.log(this.state.selectedSchedule.start_time);
+      console.log(this.state.selectedSchedule.end_time);
+      console.log(sStart_time);
+      console.log(sEnd_time);
+
+      var cDayString = cStart_time.getDay().toString().padStart(2, 0) +
+       '/' + (cStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
+      (cStart_time.getFullYear()).toString().padStart(2, 0);
+      var sDayString = sStart_time.getDay().toString().padStart(2, 0) +
+       '/' + (sStart_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
+      (sStart_time.getFullYear()).toString().padStart(2, 0);
+
+      var cStartString = (cStart_time.getHours() + timezone).toString().padStart(2, 0) +
+      ':' + cStart_time.getMinutes().toString().padStart(2, 0);
+      var cEndString = (cEnd_time.getHours() + timezone).toString().padStart(2, 0) +
+      ':' + cEnd_time.getMinutes().toString().padStart(2, 0);
+
+      var sStartString = (sStart_time.getHours() + timezone).toString().padStart(2, 0) +
+      ':' + sStart_time.getMinutes().toString().padStart(2, 0);
+      var sEndString = (sEnd_time.getHours() + timezone).toString().padStart(2, 0) +
+       ':' + sEnd_time.getMinutes().toString().padStart(2, 0);
+
+
       Alert.alert(
         'Mudar de Horário',
         this.state.currentSchedule.employee + ', deseja trocar de horario com o/a ' +
         this.state.selectedSchedule.employee + '?\n\n ' +
-        this.state.currentSchedule.date + '    ->   ' + this.state.selectedSchedule.date +
-        '\n' + this.state.currentSchedule.start_time + ' - ' + this.state.currentSchedule.end_time +
-        '  ->  ' + this.state.selectedSchedule.start_time + ' - ' + this.state.selectedSchedule.end_time,
-        [
-          {text: 'Não', onPress: () => { }},
-          {text: 'Sim', onPress: () => {this.requestChange();}}
-        ],
+        cDayString + '    ->   ' + sDayString + '\n' + cStartString + ' - ' + cEndString +
+        '  ->  ' + sStartString + ' - ' + sEndString,
+        [{text: 'Não', onPress: () => { }},
+          {text: 'Sim', onPress: () => {this.requestChange();}}],
         {cancelable: true});});
   }
 
