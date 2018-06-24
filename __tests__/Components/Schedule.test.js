@@ -485,14 +485,14 @@ it('should test renderChangeItem', () => {
 });
 
 it('should test if in selfChange', () => {
-  const date = '2018-06-24T18:00'
+  const date = '2018-06-24T18:00';
   const wrapper = shallow(<Schedule sector={false}/>);
   wrapper.setState({finalDateString: false});
   wrapper.update();
-  const selfChange = wrapper.instance().alert_Selfchange(date);
+  wrapper.instance().alert_Selfchange(date);
 });
 
-// 
+//
 // it('_alert onPress Não', () => {
 //
 //   jest.mock('Alert',() => {
