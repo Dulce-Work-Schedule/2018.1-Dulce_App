@@ -3386,10 +3386,6 @@ exports[`renders correctly 1`] = `
                             "fontWeight": "300",
                             "marginTop": 7,
                           },
-                          Object {
-                            "color": "#2d4150",
-                            "fontWeight": "500",
-                          },
                           Object {},
                         ]
                       }
@@ -4215,21 +4211,13 @@ exports[`renders correctly 1`] = `
                   uppercase={false}
                   virtual={undefined}
                 >
-<<<<<<< HEAD
-                  23
-=======
                   24
->>>>>>> #411 #413 #420 #421 #423 testando axios
                   /
                   6
                   /
                   2018
                    até 
-<<<<<<< HEAD
-                  23
-=======
                   24
->>>>>>> #411 #413 #420 #421 #423 testando axios
                   /
                   6
                   /

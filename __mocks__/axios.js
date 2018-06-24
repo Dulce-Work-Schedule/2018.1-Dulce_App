@@ -14,6 +14,7 @@ const AXIOS_USER_U = 'http://52.67.4.137:8083/api/user/listById?id=undefined';
 const AXIOS_USER_ = 'http://52.67.4.137:8083/api/user/listById?id=';
 const SECTOR_SCHEDULE = 'http://18.231.80.185:8083/api/schedule/listYearBySector?sector_id=';
 const PROFILE_SCHEDULE = 'http://18.231.80.185:8083/api/schedule/listYearByProfile?profile_id=';
+const NO_SCHEDULES = 'noSchedule';
 
 module.exports = {
   get: jest.fn((url) => {
@@ -71,6 +72,10 @@ module.exports = {
       case PROFILE_SCHEDULE:
         return Promise.resolve({
           data: data.scheduleProfiles
+        });
+      case NO_SCHEDULES:
+        return Promise.resolve({
+          data: data.schedules
         });
       default:
         return Promise.resolve({

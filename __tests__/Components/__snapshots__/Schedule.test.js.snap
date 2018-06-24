@@ -235,15 +235,9 @@ exports[`renders correctly 1`] = `
                 "Feb 2018",
                 "Mar 2018",
                 "Apr 2018",
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                "2018-05-23T00:00:00.000Z",
-                "2018-06-23T00:00:00.000Z",
-                "2018-07-23T00:00:00.000Z",
-=======
                 "2018-05-24T00:00:00.000Z",
                 "2018-06-24T00:00:00.000Z",
                 "2018-07-24T00:00:00.000Z",
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
                 "Aug 2018",
                 "Sep 2018",
                 "Oct 2018",
@@ -1949,8 +1943,6 @@ exports[`renders correctly 1`] = `
                         style={
                           Object {
                             "alignItems": "center",
-                            "backgroundColor": "#5f4b8b",
-                            "borderRadius": 16,
                             "height": 32,
                             "opacity": 1,
                             "width": 32,
@@ -1972,9 +1964,6 @@ exports[`renders correctly 1`] = `
                                 "fontSize": 16,
                                 "fontWeight": "300",
                                 "marginTop": 6,
-                              },
-                              Object {
-                                "color": "#ffffff",
                               },
                             ]
                           }
@@ -5014,15 +5003,9 @@ exports[`renders correctly 1`] = `
                           "Feb 2018",
                           "Mar 2018",
                           "Apr 2018",
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                          "2018-05-23T00:00:00.000Z",
-                          "2018-06-23T00:00:00.000Z",
-                          "2018-07-23T00:00:00.000Z",
-=======
                           "2018-05-24T00:00:00.000Z",
                           "2018-06-24T00:00:00.000Z",
                           "2018-07-24T00:00:00.000Z",
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
                           "Aug 2018",
                           "Sep 2018",
                           "Oct 2018",
@@ -6728,8 +6711,6 @@ exports[`renders correctly 1`] = `
                                   style={
                                     Object {
                                       "alignItems": "center",
-                                      "backgroundColor": "#5f4b8b",
-                                      "borderRadius": 16,
                                       "height": 32,
                                       "opacity": 1,
                                       "width": 32,
@@ -6751,9 +6732,6 @@ exports[`renders correctly 1`] = `
                                           "fontSize": 16,
                                           "fontWeight": "300",
                                           "marginTop": 6,
-                                        },
-                                        Object {
-                                          "color": "#ffffff",
                                         },
                                       ]
                                     }
@@ -9738,11 +9716,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                date={1529785957667}
-=======
-                date={1529870277811}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={1529874434660}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9973,11 +9947,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                date={1529785957667}
-=======
-                date={1529870277811}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={1529874434660}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10136,11 +10106,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-            selected={2018-06-23T20:32:38.654Z}
-=======
-            selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+            selected={2018-06-24T21:07:15.676Z}
             style={
               Object {
                 "flex": 1,
@@ -10218,11 +10184,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                    selected={2018-06-23T20:32:38.654Z}
-=======
-                    selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                    selected={2018-06-24T21:07:15.676Z}
                     style={
                       Object {
                         "flex": 1,
@@ -10270,11 +10232,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-            date={2018-06-23T20:32:37.667Z}
-=======
-            date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+            date={2018-06-24T21:07:14.660Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10295,11 +10253,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-            date={2018-06-23T20:32:37.667Z}
-=======
-            date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+            date={2018-06-24T21:07:14.660Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10352,11 +10306,7 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              selected={2018-06-23T20:32:38.654Z}
-=======
-              selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              selected={2018-06-24T21:07:15.676Z}
               style={
                 Object {
                   "flex": 1,
@@ -10434,11 +10384,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                      selected={2018-06-23T20:32:38.654Z}
-=======
-                      selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T21:07:15.676Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10486,11 +10432,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              date={2018-06-23T20:32:37.667Z}
-=======
-              date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T21:07:14.660Z}
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10511,11 +10453,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              date={2018-06-23T20:32:37.667Z}
-=======
-              date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T21:07:14.660Z}
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10563,11 +10501,7 @@ ShallowWrapper {
               "renderEmptyDate": [Function],
               "renderItem": [Function],
               "rowHasChanged": [Function],
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              "selected": 2018-06-23T20:32:38.654Z,
-=======
-              "selected": 2018-06-24T19:57:59.056Z,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              "selected": 2018-06-24T21:07:15.676Z,
               "style": Object {
                 "flex": 1,
               },
@@ -10649,11 +10583,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                      selected={2018-06-23T20:32:38.654Z}
-=======
-                      selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T21:07:15.676Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10749,11 +10679,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                      selected={2018-06-23T20:32:38.654Z}
-=======
-                      selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T21:07:15.676Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10847,11 +10773,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                        selected={2018-06-23T20:32:38.654Z}
-=======
-                        selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T21:07:15.676Z}
                         style={
                           Object {
                             "flex": 1,
@@ -10924,29 +10846,6 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                      "children": Array [
-                        <AgendaView
-                          items={Object {}}
-                          loadItemsForMonth={[Function]}
-                          onDayChange={[Function]}
-                          onDayPress={[Function]}
-                          renderEmptyDate={[Function]}
-                          renderItem={[Function]}
-                          rowHasChanged={[Function]}
-                          selected={2018-06-23T20:32:38.654Z}
-                          style={
-                            Object {
-                              "flex": 1,
-                            }
-                          }
-                          theme={
-                            Object {
-                              "agendaKnobColor": "#5f4b8b",
-                              "calendarBackground": "#ffffff",
-                              "selectedDayBackgroundColor": "#5f4b8b",
-                            }
-=======
                       "children": <AgendaView
                         items={Object {}}
                         loadItemsForMonth={[Function]}
@@ -10955,11 +10854,10 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-                        selected={2018-06-24T19:57:59.056Z}
+                        selected={2018-06-24T21:07:15.676Z}
                         style={
                           Object {
                             "flex": 1,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
                           }
                         }
                         theme={
@@ -10975,54 +10873,6 @@ ShallowWrapper {
                       },
                     },
                     "ref": null,
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "items": Object {},
-                          "loadItemsForMonth": [Function],
-                          "onDayChange": [Function],
-                          "onDayPress": [Function],
-                          "renderEmptyDate": [Function],
-                          "renderItem": [Function],
-                          "rowHasChanged": [Function],
-                          "selected": 2018-06-23T20:32:38.654Z,
-                          "style": Object {
-                            "flex": 1,
-                          },
-                          "theme": Object {
-                            "agendaKnobColor": "#5f4b8b",
-                            "calendarBackground": "#ffffff",
-                            "selectedDayBackgroundColor": "#5f4b8b",
-                          },
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "class",
-                        "props": Object {
-                          "active": undefined,
-                          "children": <Styled(Icon)
-                            name="edit"
-                            type="MaterialIcons"
-                            virtual={undefined}
-                          />,
-                          "containerStyle": Object {},
-                          "direction": "up",
-                          "onPress": [Function],
-                          "position": "bottomRight",
-                          "style": Object {
-                            "backgroundColor": "#5f4b8b",
-                          },
-                          "virtual": undefined,
-=======
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
@@ -11035,10 +10885,9 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
-                        "selected": 2018-06-24T19:57:59.056Z,
+                        "selected": 2018-06-24T21:07:15.676Z,
                         "style": Object {
                           "flex": 1,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
                         },
                         "theme": Object {
                           "agendaKnobColor": "#5f4b8b",
@@ -11117,11 +10966,7 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              "date": 2018-06-23T20:32:37.667Z,
-=======
-              "date": 2018-06-24T19:57:57.811Z,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              "date": 2018-06-24T21:07:14.660Z,
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -11148,11 +10993,7 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              "date": 2018-06-23T20:32:37.667Z,
-=======
-              "date": 2018-06-24T19:57:57.811Z,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              "date": 2018-06-24T21:07:14.660Z,
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11204,11 +11045,7 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              selected={2018-06-23T20:32:38.654Z}
-=======
-              selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              selected={2018-06-24T21:07:15.676Z}
               style={
                 Object {
                   "flex": 1,
@@ -11286,11 +11123,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                      selected={2018-06-23T20:32:38.654Z}
-=======
-                      selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T21:07:15.676Z}
                       style={
                         Object {
                           "flex": 1,
@@ -11338,11 +11171,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              date={2018-06-23T20:32:37.667Z}
-=======
-              date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T21:07:14.660Z}
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11363,11 +11192,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-              date={2018-06-23T20:32:37.667Z}
-=======
-              date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T21:07:14.660Z}
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11420,11 +11245,7 @@ ShallowWrapper {
                 renderEmptyDate={[Function]}
                 renderItem={[Function]}
                 rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                selected={2018-06-23T20:32:38.654Z}
-=======
-                selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                selected={2018-06-24T21:07:15.676Z}
                 style={
                   Object {
                     "flex": 1,
@@ -11502,11 +11323,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                        selected={2018-06-23T20:32:38.654Z}
-=======
-                        selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T21:07:15.676Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11554,11 +11371,7 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                date={2018-06-23T20:32:37.667Z}
-=======
-                date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={2018-06-24T21:07:14.660Z}
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11579,11 +11392,7 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                date={2018-06-23T20:32:37.667Z}
-=======
-                date={2018-06-24T19:57:57.811Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={2018-06-24T21:07:14.660Z}
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11631,11 +11440,7 @@ ShallowWrapper {
                 "renderEmptyDate": [Function],
                 "renderItem": [Function],
                 "rowHasChanged": [Function],
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                "selected": 2018-06-23T20:32:38.654Z,
-=======
-                "selected": 2018-06-24T19:57:59.056Z,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                "selected": 2018-06-24T21:07:15.676Z,
                 "style": Object {
                   "flex": 1,
                 },
@@ -11717,11 +11522,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                        selected={2018-06-23T20:32:38.654Z}
-=======
-                        selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T21:07:15.676Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11817,11 +11618,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                        selected={2018-06-23T20:32:38.654Z}
-=======
-                        selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T21:07:15.676Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11915,11 +11712,7 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                          selected={2018-06-23T20:32:38.654Z}
-=======
-                          selected={2018-06-24T19:57:59.056Z}
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                          selected={2018-06-24T21:07:15.676Z}
                           style={
                             Object {
                               "flex": 1,
@@ -11992,29 +11785,6 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                        "children": Array [
-                          <AgendaView
-                            items={Object {}}
-                            loadItemsForMonth={[Function]}
-                            onDayChange={[Function]}
-                            onDayPress={[Function]}
-                            renderEmptyDate={[Function]}
-                            renderItem={[Function]}
-                            rowHasChanged={[Function]}
-                            selected={2018-06-23T20:32:38.654Z}
-                            style={
-                              Object {
-                                "flex": 1,
-                              }
-                            }
-                            theme={
-                              Object {
-                                "agendaKnobColor": "#5f4b8b",
-                                "calendarBackground": "#ffffff",
-                                "selectedDayBackgroundColor": "#5f4b8b",
-                              }
-=======
                         "children": <AgendaView
                           items={Object {}}
                           loadItemsForMonth={[Function]}
@@ -12023,11 +11793,10 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-                          selected={2018-06-24T19:57:59.056Z}
+                          selected={2018-06-24T21:07:15.676Z}
                           style={
                             Object {
                               "flex": 1,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
                             }
                           }
                           theme={
@@ -12043,54 +11812,6 @@ ShallowWrapper {
                         },
                       },
                       "ref": null,
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "items": Object {},
-                            "loadItemsForMonth": [Function],
-                            "onDayChange": [Function],
-                            "onDayPress": [Function],
-                            "renderEmptyDate": [Function],
-                            "renderItem": [Function],
-                            "rowHasChanged": [Function],
-                            "selected": 2018-06-23T20:32:38.654Z,
-                            "style": Object {
-                              "flex": 1,
-                            },
-                            "theme": Object {
-                              "agendaKnobColor": "#5f4b8b",
-                              "calendarBackground": "#ffffff",
-                              "selectedDayBackgroundColor": "#5f4b8b",
-                            },
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {
-                            "active": undefined,
-                            "children": <Styled(Icon)
-                              name="edit"
-                              type="MaterialIcons"
-                              virtual={undefined}
-                            />,
-                            "containerStyle": Object {},
-                            "direction": "up",
-                            "onPress": [Function],
-                            "position": "bottomRight",
-                            "style": Object {
-                              "backgroundColor": "#5f4b8b",
-                            },
-                            "virtual": undefined,
-=======
                       "rendered": Object {
                         "instance": null,
                         "key": undefined,
@@ -12103,10 +11824,9 @@ ShallowWrapper {
                           "renderEmptyDate": [Function],
                           "renderItem": [Function],
                           "rowHasChanged": [Function],
-                          "selected": 2018-06-24T19:57:59.056Z,
+                          "selected": 2018-06-24T21:07:15.676Z,
                           "style": Object {
                             "flex": 1,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
                           },
                           "theme": Object {
                             "agendaKnobColor": "#5f4b8b",
@@ -12185,11 +11905,7 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                "date": 2018-06-23T20:32:37.667Z,
-=======
-                "date": 2018-06-24T19:57:57.811Z,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                "date": 2018-06-24T21:07:14.660Z,
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -12216,11 +11932,7 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
-<<<<<<< HEAD:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
-                "date": 2018-06-23T20:32:37.667Z,
-=======
-                "date": 2018-06-24T19:57:57.811Z,
->>>>>>> #411 #413 #420 #421 #423 testando axios:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                "date": 2018-06-24T21:07:14.660Z,
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,

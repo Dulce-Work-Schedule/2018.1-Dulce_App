@@ -106,34 +106,12 @@ exports[`renders correctly 1`] = `
           allowFontScaling={true}
           ellipsizeMode="tail"
           style={
-<<<<<<< HEAD
             Object {
               "alignItems": "center",
               "color": "white",
               "fontFamily": "Raleway",
               "fontSize": 16,
             }
-=======
-            Array [
-              Object {
-                "backgroundColor": "transparent",
-                "color": "#000",
-                "fontFamily": "System",
-                "fontSize": 16.5,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "paddingLeft": 16,
-                "paddingRight": 16,
-              },
-              Object {
-                "alignItems": "center",
-                "color": "#ffffff",
-                "fontFamily": "Raleway",
-                "fontSize": 15,
-                "marginLeft": 35,
-              },
-            ]
->>>>>>> #411 #413 #420 #421 #423 testando axios
           }
         />
       </View>

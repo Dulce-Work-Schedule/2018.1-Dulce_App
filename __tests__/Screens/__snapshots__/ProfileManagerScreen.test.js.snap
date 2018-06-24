@@ -595,7 +595,6 @@ exports[`renders correctly 1`] = `
                   "color": "#f0ad4e",
                   "fontFamily": "System",
                   "fontSize": 16.5,
-                  "lineHeight": 19,
                   "marginLeft": 0,
                   "marginRight": 0,
                   "paddingLeft": 16,

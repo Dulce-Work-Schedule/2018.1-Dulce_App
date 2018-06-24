@@ -223,7 +223,11 @@ export default class Schedule extends Component {
   }
 
   alert_Selfchange(date) {
-    this.setState({finalDateString: date});
+    if (!this.state.finalDateString) {
+      this.setState({finalDateString: new Date()});
+    } else {
+      this.setState({finalDateString: date});
+    }
     var timezone = new Date().getTimezoneOffset() / 60;
     var start_time = new Date(this.state.currentSchedule.start_time);
     var end_time = new Date(this.state.currentSchedule.end_time);
@@ -237,9 +241,6 @@ export default class Schedule extends Component {
     var endString = (end_time.getHours() + timezone).toString().padStart(2, 0) +
      ':' + end_time.getMinutes().toString().padStart(2, 0);
 
-    if (!this.state.finalDateString) {
-      this.setState({finalDateString: new Date()});
-    }
 
     Alert.alert(
       'Mudar de Horário',

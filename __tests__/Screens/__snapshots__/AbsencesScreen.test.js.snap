@@ -3386,10 +3386,6 @@ exports[`renders correctly 1`] = `
                             "fontWeight": "300",
                             "marginTop": 7,
                           },
-                          Object {
-                            "color": "#2d4150",
-                            "fontWeight": "500",
-                          },
                           Object {},
                         ]
                       }
@@ -4215,21 +4211,13 @@ exports[`renders correctly 1`] = `
                   uppercase={false}
                   virtual={undefined}
                 >
-<<<<<<< HEAD
-                  23
-=======
                   24
->>>>>>> #411 #413 #420 #421 #423 testando axios
                   /
                   6
                   /
                   2018
                    até 
-<<<<<<< HEAD
-                  23
-=======
                   24
->>>>>>> #411 #413 #420 #421 #423 testando axios
                   /
                   6
                   /
@@ -4559,14 +4547,32 @@ exports[`renders correctly 1`] = `
                             Array [
                               <Item
                                 label="Atestado"
+                                style={
+                                  Object {
+                                    "color": "#1a1515",
+                                    "fontFamily": "Lato",
+                                  }
+                                }
                                 value="medical leave"
                               />,
                               <Item
                                 label="Maternidade"
+                                style={
+                                  Object {
+                                    "color": "#1a1515",
+                                    "fontFamily": "Lato",
+                                  }
+                                }
                                 value="maternity leave"
                               />,
                               <Item
                                 label="Paternidade"
+                                style={
+                                  Object {
+                                    "color": "#1a1515",
+                                    "fontFamily": "Lato",
+                                  }
+                                }
                                 value="paternity leave"
                               />,
                             ]
@@ -4595,56 +4601,7 @@ exports[`renders correctly 1`] = `
                           windowSize={21}
                         >
                           <View>
-<<<<<<< HEAD
-                            <RCTScrollView
-                              data={
-                                Array [
-                                  <Item
-                                    label="Atestado"
-                                    style={
-                                      Object {
-                                        "color": "#1a1515",
-                                        "fontFamily": "Lato",
-                                      }
-                                    }
-                                    value="medical leave"
-                                  />,
-                                  <Item
-                                    label="Maternidade"
-                                    style={
-                                      Object {
-                                        "color": "#1a1515",
-                                        "fontFamily": "Lato",
-                                      }
-                                    }
-                                    value="maternity leave"
-                                  />,
-                                  <Item
-                                    label="Paternidade"
-                                    style={
-                                      Object {
-                                        "color": "#1a1515",
-                                        "fontFamily": "Lato",
-                                      }
-                                    }
-                                    value="paternity leave"
-                                  />,
-                                ]
-                              }
-                              disableVirtualization={false}
-                              getItem={[Function]}
-                              getItemCount={[Function]}
-                              horizontal={false}
-                              initialNumToRender={10}
-                              invertStickyHeaders={undefined}
-                              keyExtractor={[Function]}
-                              maxToRenderPerBatch={10}
-                              numColumns={1}
-                              onContentSizeChange={[Function]}
-                              onEndReachedThreshold={2}
-=======
                             <View
->>>>>>> #411 #413 #420 #421 #423 testando axios
                               onLayout={[Function]}
                               style={null}
                             >

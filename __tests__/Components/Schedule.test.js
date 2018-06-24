@@ -339,21 +339,65 @@ it('Testing renderModal function',() => {
   expect(spy).toHaveBeenCalled();
 });
 
-// it('alert_change onPress Não', () => {
-//   jest.mock('Alert',() => {
-//     return {
-//       alert: jest.fn()
-//     };
-//   }
-// );
+// // it('alert_change onPress Não', () => {
+// //   jest.mock('Alert',() => {
+// //     return {
+// //       alert: jest.fn()
+// //     };
+// //   }
+// // );
+// //
+// //   const wrapper = shallow(<Schedule />);
+// //
+// //   wrapper.instance().alert_change(jest.fn());
+// //   Alert.alert.mock.calls[0][2][0].onPress();
+// // });
 //
-//   const wrapper = shallow(<Schedule />);
+// // it('alert_change onPress Sim', () => {
+// //   jest.mock('Alert',() => {
+// //     return {
+// //       alert: jest.fn()
+// //     };
+// //   });
+// //
+// //   const wrapper = shallow(<Schedule />);
+// //   wrapper.instance().alert_change(jest.fn());
+// //   Alert.alert.mock.calls[0][2][1].onPress();
+// //
+// // });
+// //
+// // it('_alert onPress Não', () => {
+// //
+// //   jest.mock('Alert',() => {
+// //     return {
+// //       alert: jest.fn()
+// //     };
+// //   });
+// //
+// //   const wrapper = shallow(<Schedule />);
+// //
+// //   wrapper.instance()._alert(jest.fn());
+// //   Alert.alert.mock.calls[1][2][0].onPress();
+// // });
+// //
+// // it('_alert onPress Sim', () => {
+// //
+// //   jest.mock('Alert',() => {
+// //     return {
+// //       alert: jest.fn()
+// //     };
+// //   });
+// //
+// //   const wrapper = shallow(<Schedule />);
+// //
+// //   wrapper.instance()._alert(jest.fn());
+// //   Alert.alert.mock.calls[1][2][1].onPress();
+// // });
 //
-//   wrapper.instance().alert_change(jest.fn());
-//   Alert.alert.mock.calls[0][2][0].onPress();
-// });
-
-// it('alert_change onPress Sim', () => {
+// it('alert_Selfchange onPress Não', () => {
+//
+//   const date = new Date();
+//
 //   jest.mock('Alert',() => {
 //     return {
 //       alert: jest.fn()
@@ -361,11 +405,94 @@ it('Testing renderModal function',() => {
 //   });
 //
 //   const wrapper = shallow(<Schedule />);
-//   wrapper.instance().alert_change(jest.fn());
-//   Alert.alert.mock.calls[0][2][1].onPress();
 //
+//   wrapper.instance().alert_Selfchange(date);
+//   Alert.alert.mock.calls[3][2][0].onPress();
 // });
 //
+// it('alert_Selfchange onPress Sim', () => {
+//
+//   jest.mock('Alert',() => {
+//     return {
+//       alert: jest.fn()
+//     };
+//   });
+//
+//   const date = new Date();
+//   const wrapper = shallow(<Schedule />);
+//
+//   wrapper.instance().alert_Selfchange(date);
+//   Alert.alert.mock.calls[3][2][1].onPress();
+// });
+
+
+it('should test axiosProfile', async() => {
+  const wrapper = shallow(<Schedule sector={true} />);
+  wrapper.instance().axiosProfile(1,true);
+  await flushPromises();
+  wrapper.update();
+  console.log(wrapper.debug());
+});
+
+it('should test axiosUser true', async() => {
+  const wrapper = shallow(<Schedule sector={true} />);
+  wrapper.instance().axiosUser(1,true);
+  await flushPromises();
+  wrapper.update();
+  console.log(wrapper.debug());
+});
+
+it('should test axiosUser false', async() => {
+  const wrapper = shallow(<Schedule sector={true} />);
+  wrapper.instance().axiosUser(1,false);
+  await flushPromises();
+  wrapper.update();
+  console.log(wrapper.debug());
+});
+
+it('should test renderItem', async() => {
+  const item = {
+    'start_time': '2018-06-24T08:00',
+    'end_time': '2018-06-24T18:00',
+    'profile_id': '1',
+    'sector_id': '1'
+  };
+  const spy = jest.spyOn(Schedule.prototype, '_alert');
+  const wrapper = shallow(<Schedule sector={false}/>);
+  const render = shallow(wrapper.instance().renderItem(item));
+  render.setState({loading: false});
+  console.log(render.debug());
+  const button = render.find('TouchableHighlight').at(0);
+  button.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('should test renderChangeItem', () => {
+  const item = {
+    'start_time': '2018-06-24T08:00',
+    'end_time': '2018-06-24T18:00',
+    'profile_id': '1',
+    'sector_id': '1'
+  };
+  const spy = jest.spyOn(Schedule.prototype, 'setNames');
+  const wrapper = shallow(<Schedule sector={false}/>);
+  const render = shallow(wrapper.instance().renderChangeItem(item));
+  render.setState({loading: false});
+  console.log(render.debug());
+  const button = render.find('TouchableHighlight').at(0);
+  button.simulate('press');
+  expect(spy).toHaveBeenCalled();
+});
+
+it('should test if in selfChange', () => {
+  const date = '2018-06-24T18:00'
+  const wrapper = shallow(<Schedule sector={false}/>);
+  wrapper.setState({finalDateString: false});
+  wrapper.update();
+  const selfChange = wrapper.instance().alert_Selfchange(date);
+});
+
+// 
 // it('_alert onPress Não', () => {
 //
 //   jest.mock('Alert',() => {
@@ -377,67 +504,5 @@ it('Testing renderModal function',() => {
 //   const wrapper = shallow(<Schedule />);
 //
 //   wrapper.instance()._alert(jest.fn());
-//   Alert.alert.mock.calls[1][2][0].onPress();
+//   Alert.alert.mock.calls[0][2][0];
 // });
-//
-// it('_alert onPress Sim', () => {
-//
-//   jest.mock('Alert',() => {
-//     return {
-//       alert: jest.fn()
-//     };
-//   });
-//
-//   const wrapper = shallow(<Schedule />);
-//
-//   wrapper.instance()._alert(jest.fn());
-//   Alert.alert.mock.calls[1][2][1].onPress();
-// });
-
-it('alert_Selfchange onPress Não', () => {
-
-  const date = new Date();
-
-  jest.mock('Alert',() => {
-    return {
-      alert: jest.fn()
-    };
-  });
-
-  const wrapper = shallow(<Schedule />);
-
-  wrapper.instance().alert_Selfchange(date);
-  Alert.alert.mock.calls[3][2][0].onPress();
-});
-
-it('alert_Selfchange onPress Sim', () => {
-
-  jest.mock('Alert',() => {
-    return {
-      alert: jest.fn()
-    };
-  });
-
-  const date = new Date();
-  const wrapper = shallow(<Schedule />);
-
-  wrapper.instance().alert_Selfchange(date);
-  Alert.alert.mock.calls[3][2][1].onPress();
-});
-
-
-it('should test axiosProfile', async() => {
-  const wrapper = shallow(<Schedule sector={true} />);
-  wrapper.instance().axiosProfile(1,true);
-  await flushPromises();
-  wrapper.update();
-  console.log(wrapper.debug());
-});
-
-it('should test axiosUser', async() => {
-  const wrapper = shallow(<Schedule sector={true} />);
-  wrapper.instance().axiosUser(1,true);
-  await flushPromises();
-  wrapper.update();
-  console.log(wrapper.debug());
-});
