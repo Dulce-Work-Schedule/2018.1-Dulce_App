@@ -225,23 +225,13 @@ export default class Schedule extends Component {
   alert_Selfchange(date) {
     if (!this.state.finalDateString) {
       this.setState({finalDateString: new Date()});
-    } else {
-      this.setState({finalDateString: date});
-    }
+    } else {this.setState({finalDateString: date});}
     var timezone = new Date().getTimezoneOffset() / 60;
     var start_time = new Date(this.state.currentSchedule.start_time);
     var end_time = new Date(this.state.currentSchedule.end_time);
-
-    var dayString = start_time.getDay().toString().padStart(2, 0) + '/' +
-    (start_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
-    (start_time.getFullYear()).toString().padStart(2, 0);
-
-    var startString = (start_time.getHours() + timezone).toString().padStart(2, 0) +
-     ':' + start_time.getMinutes().toString().padStart(2, 0);
-    var endString = (end_time.getHours() + timezone).toString().padStart(2, 0) +
-     ':' + end_time.getMinutes().toString().padStart(2, 0);
-
-
+    var dayString = start_time.getDay().toString().padStart(2, 0) + '/' + (start_time.getMonth() + 1).toString().padStart(2, 0) + '/' + (start_time.getFullYear()).toString().padStart(2, 0);
+    var startString = (start_time.getHours() + timezone).toString().padStart(2, 0) + ':' + start_time.getMinutes().toString().padStart(2, 0);
+    var endString = (end_time.getHours() + timezone).toString().padStart(2, 0) + ':' + end_time.getMinutes().toString().padStart(2, 0);
     Alert.alert(
       'Mudar de Horário',
       store.getState().currentUser.firstName + ', deseja trocar de horario' + '?\n\nde ' +
@@ -254,10 +244,8 @@ export default class Schedule extends Component {
       (this.state.changeDay.getMinutes()).toString().padStart(2,0) + ' - ' +
       (this.state.finalDateString.getHours()).toString().padStart(2,0) + ':' +
       (this.state.finalDateString.getMinutes()).toString().padStart(2,0),
-      [
-        {text: 'Não', onPress: () => {this.timePickerVisible(false);this.hideEndDateTimePicker();}},
-        {text: 'Sim', onPress: () => {this.requestChange(); }}
-      ],
+      [{text: 'Não', onPress: () => {this.timePickerVisible(false);this.hideEndDateTimePicker();}},
+        {text: 'Sim', onPress: () => {this.requestChange(); }}],
       {cancelable: true});
   }
 
