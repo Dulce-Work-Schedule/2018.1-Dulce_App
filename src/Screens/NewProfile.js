@@ -69,7 +69,7 @@ class NewProfile extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://54.94.162.218:8083/api/hospital/listHospital';
+    const url = 'http://54.94.162.218:8083/api/hospital/list';
     axios.get(url, {
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
@@ -96,7 +96,7 @@ class NewProfile extends React.Component {
   }
 
   onChange(value) {
-    this.setState({selected: value});
+    this.setState({value});
   }
 
   renderSpinner() {
@@ -111,7 +111,7 @@ class NewProfile extends React.Component {
 
   selectHospital(id) {
     this.setState({selectedHospital: id});
-    const url = 'http://18.231.27.220:8083/api/sector/listSector';
+    const url = 'http://18.231.27.220:8083/api/sector/listByHospital?hospital_id=' + id;
     axios.get(url, {
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
@@ -129,6 +129,49 @@ class NewProfile extends React.Component {
         }
       })
       .catch(() => {});
+  }
+
+  createProfile() {
+    const url = 'http://18.231.9.190:8083/api/profile/create';
+    axios.post(url, {
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      },
+      user_type: this.state.userType,
+      registration: this.state.value.matricula,
+      speciality: this.state.value.especialidade,
+      sector_id: this.state.selectedSector,
+      hospital_id: this.state.selectedHospital,
+      user_id: store.getState().currentUser.id
+    })
+    .then((response) => {
+      var error = '';
+      if (response.data.user_type_error) {
+        error += response.data.user_type_error;
+      }
+      if (response.data.speciality_error) {
+        error += response.data.speciality_error;
+      }
+      if (response.data.registration_error) {
+        error += response.data.registration_error;
+      }
+      if (response.data.sector_id_error) {
+        error += response.data.sector_id_error;
+      }
+      if (response.data.hospital_id_error) {
+        error += response.data.hospital_id_error;
+      }
+      if (response.data.user_id_error) {
+        error += response.data.user_id_error;
+      }
+      if (error !== '') {
+        Alert.alert('Erro!', error);
+      } else {
+        console.log(store.getState().currentUser.id);
+        this.props.navigation.navigate('listProfiles');
+        Alert.alert('Novo profile feito com sucesso!');
+      }
+    });
   }
 
   selectUserType(itemValue) {
@@ -166,7 +209,7 @@ class NewProfile extends React.Component {
         <View style={styles.container}>
           <Form
             ref='form'
-            type={this.Service}
+            type={this.profile_basics}
             value={this.state.value}
             options={this.options}
             onChange={(v) => this.onChange(v)}
@@ -185,7 +228,7 @@ class NewProfile extends React.Component {
         <View style={{flex: 1, marginTop: 50}}>
           <AGRButton
             text = 'Cadastrar'
-            onPress = {() => {}}/>
+            onPress = {() => this.createProfile()}/>
         </View>
       </Container>
     );
