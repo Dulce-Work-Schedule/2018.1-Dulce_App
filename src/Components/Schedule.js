@@ -160,6 +160,7 @@ export default class Schedule extends Component {
 
   axiosProfile(profile_id, selected) {
     const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + profile_id;
+    console.log(url);
     axios.get(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
@@ -173,6 +174,7 @@ export default class Schedule extends Component {
 
   axiosUser(user_id, selected) {
     const url = 'http://52.67.4.137:8083/api/user/listById?id=' + user_id;
+    console.log(url);
     axios.get(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
@@ -278,6 +280,7 @@ export default class Schedule extends Component {
       this.axiosProfile(this.state.currentSchedule.profile_id, false);
     });
   }
+
   renderModal() {
     return (
       <View>

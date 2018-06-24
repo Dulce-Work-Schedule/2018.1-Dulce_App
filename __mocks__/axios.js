@@ -7,9 +7,17 @@ const EDIT_USER_SAVE_ENDPOINT = 'http://localhost:8083/api/userManager/editUser/
 const LOGIN_ENDPOINT = 'http://52.67.4.137:8083/api/user/login';
 const SCHEDULES_ENDPOINT = 'http://172.18.0.1:8091/api/schedule/listYear';
 const NEW_USER_ENDPOINT = 'http://52.67.4.137:8083/api/user/create';
+const AXIOS_PROFILE = 'http://18.231.9.190:8083/api/profile/view/?profile_id=1';
+const AXIOS_PROFILE_U = 'http://18.231.9.190:8083/api/profile/view/?profile_id=undefined';
+const AXIOS_USER = 'http://52.67.4.137:8083/api/user/listById?id=1';
+const AXIOS_USER_U = 'http://52.67.4.137:8083/api/user/listById?id=undefined';
+const AXIOS_USER_ = 'http://52.67.4.137:8083/api/user/listById?id=';
+const SECTOR_SCHEDULE = 'http://18.231.80.185:8083/api/schedule/listYearBySector?sector_id=';
+const PROFILE_SCHEDULE = 'http://18.231.80.185:8083/api/schedule/listYearByProfile?profile_id=';
 
 module.exports = {
   get: jest.fn((url) => {
+    console.log(url);
     switch (url) {
       case USERS_LIST_ENDPOINT:
         return Promise.resolve({
@@ -30,6 +38,39 @@ module.exports = {
       case SCHEDULES_ENDPOINT:
         return Promise.resolve({
           data: data.schedules
+        });
+      case AXIOS_USER:
+        console.log('foi user');
+        return Promise.resolve({
+          data: data.users[1]
+        });
+      case AXIOS_PROFILE:
+        console.log('foi profile');
+        return Promise.resolve({
+          data: data.profiles[1]
+        });
+      case AXIOS_USER_U:
+        console.log('foi user');
+        return Promise.resolve({
+          data: data.users[1]
+        });
+      case AXIOS_USER_:
+        console.log('foi user');
+        return Promise.resolve({
+          data: data.users[1]
+        });
+      case AXIOS_PROFILE_U:
+        console.log('foi profile');
+        return Promise.resolve({
+          data: data.profiles[1]
+        });
+      case SECTOR_SCHEDULE:
+        return Promise.resolve({
+          data: data.scheduleSector
+        });
+      case PROFILE_SCHEDULE:
+        return Promise.resolve({
+          data: data.scheduleProfiles
         });
       default:
         return Promise.resolve({

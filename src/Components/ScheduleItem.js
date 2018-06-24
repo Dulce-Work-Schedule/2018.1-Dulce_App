@@ -34,7 +34,6 @@ class ScheduleItem extends React.Component {
     })
     .then((response) => {
       this.setState({userId: response.data.user_id, specialty: response.data.speciality});
-      console.log('setor:' + response.data.sector_id);
       this.axiosUser();
     });
   }
