@@ -4,8 +4,8 @@ import {SETPROFILE, RESETPROFILE} from '../../src/Actions/currentProfile';
 const currentProfile = {
   id: 40028922,
   registration: 160111612,
-  sector: "Portal",
-  hospital: "Lappis"
+  sector: 'Portal',
+  hospital: 'Lappis'
 };
 
 describe('currentProfile reducer', () => {
@@ -13,8 +13,8 @@ describe('currentProfile reducer', () => {
     expect(reducer(void 0,{})).toEqual({
       id: 40028922,
       registration: 160111612,
-      sector: "Portal",
-      hospital: "Lappis"});
+      sector: 'Portal',
+      hospital: 'Lappis'});
   });
 
   it('should handle the setprofile action', () => {
@@ -26,8 +26,8 @@ describe('currentProfile reducer', () => {
     ).toEqual({
       id: 40028922,
       registration: 160111612,
-      sector: "Portal",
-      hospital: "Lappis"
+      sector: 'Portal',
+      hospital: 'Lappis'
     });
   });
 
@@ -40,8 +40,8 @@ describe('currentProfile reducer', () => {
     ).toEqual({
       id: 40028922,
       registration: 160111612,
-      sector: "Portal",
-      hospital: "Lappis"
+      sector: 'Portal',
+      hospital: 'Lappis'
     });
   });
 });

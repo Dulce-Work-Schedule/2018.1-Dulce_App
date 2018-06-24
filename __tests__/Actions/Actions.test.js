@@ -35,8 +35,8 @@ describe('actions profile', () => {
     const currentProfile = {
       id: 40028922,
       registration: 160111612,
-      sector: "Portal",
-      hospital: "Lappis"
+      sector: 'Portal',
+      hospital: 'Lappis'
     };
 
     const expectedActionSetProfile = {
@@ -47,7 +47,6 @@ describe('actions profile', () => {
   });
 
 });
-
 
 it('should set a reset profile action', () => {
   const currentProfile = {};

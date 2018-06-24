@@ -1,8 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import axios from 'axios';
 import store from '../Reducers/store';
-import {Container, Content, Spinner} from 'native-base';
 import SmallLogo from '../Components/SmallLogo';
 import ScreenHeader from '../Components/ScreenHeader';
 import SideBar from '../Components/SideBar';
