@@ -9808,7 +9808,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-                date={1529761360848}
+                date={1529785957667}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10039,7 +10039,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-                date={1529761360848}
+                date={1529785957667}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10198,7 +10198,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-            selected={2018-06-23T13:42:41.780Z}
+            selected={2018-06-23T20:32:38.654Z}
             style={
               Object {
                 "flex": 1,
@@ -10276,7 +10276,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-                    selected={2018-06-23T13:42:41.780Z}
+                    selected={2018-06-23T20:32:38.654Z}
                     style={
                       Object {
                         "flex": 1,
@@ -10343,7 +10343,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-            date={2018-06-23T13:42:40.848Z}
+            date={2018-06-23T20:32:37.667Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10364,7 +10364,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-            date={2018-06-23T13:42:40.848Z}
+            date={2018-06-23T20:32:37.667Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10417,7 +10417,7 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
-              selected={2018-06-23T13:42:41.780Z}
+              selected={2018-06-23T20:32:38.654Z}
               style={
                 Object {
                   "flex": 1,
@@ -10495,7 +10495,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-                      selected={2018-06-23T13:42:41.780Z}
+                      selected={2018-06-23T20:32:38.654Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10562,7 +10562,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-              date={2018-06-23T13:42:40.848Z}
+              date={2018-06-23T20:32:37.667Z}
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10583,7 +10583,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-              date={2018-06-23T13:42:40.848Z}
+              date={2018-06-23T20:32:37.667Z}
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10631,7 +10631,7 @@ ShallowWrapper {
               "renderEmptyDate": [Function],
               "renderItem": [Function],
               "rowHasChanged": [Function],
-              "selected": 2018-06-23T13:42:41.780Z,
+              "selected": 2018-06-23T20:32:38.654Z,
               "style": Object {
                 "flex": 1,
               },
@@ -10713,7 +10713,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-                      selected={2018-06-23T13:42:41.780Z}
+                      selected={2018-06-23T20:32:38.654Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10828,7 +10828,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-                      selected={2018-06-23T13:42:41.780Z}
+                      selected={2018-06-23T20:32:38.654Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10941,7 +10941,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-                        selected={2018-06-23T13:42:41.780Z}
+                        selected={2018-06-23T20:32:38.654Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11042,7 +11042,7 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-                          selected={2018-06-23T13:42:41.780Z}
+                          selected={2018-06-23T20:32:38.654Z}
                           style={
                             Object {
                               "flex": 1,
@@ -11094,7 +11094,7 @@ ShallowWrapper {
                           "renderEmptyDate": [Function],
                           "renderItem": [Function],
                           "rowHasChanged": [Function],
-                          "selected": 2018-06-23T13:42:41.780Z,
+                          "selected": 2018-06-23T20:32:38.654Z,
                           "style": Object {
                             "flex": 1,
                           },
@@ -11212,7 +11212,7 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
-              "date": 2018-06-23T13:42:40.848Z,
+              "date": 2018-06-23T20:32:37.667Z,
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -11239,7 +11239,7 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
-              "date": 2018-06-23T13:42:40.848Z,
+              "date": 2018-06-23T20:32:37.667Z,
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11291,7 +11291,7 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
-              selected={2018-06-23T13:42:41.780Z}
+              selected={2018-06-23T20:32:38.654Z}
               style={
                 Object {
                   "flex": 1,
@@ -11369,7 +11369,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-                      selected={2018-06-23T13:42:41.780Z}
+                      selected={2018-06-23T20:32:38.654Z}
                       style={
                         Object {
                           "flex": 1,
@@ -11436,7 +11436,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-              date={2018-06-23T13:42:40.848Z}
+              date={2018-06-23T20:32:37.667Z}
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11457,7 +11457,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-              date={2018-06-23T13:42:40.848Z}
+              date={2018-06-23T20:32:37.667Z}
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11510,7 +11510,7 @@ ShallowWrapper {
                 renderEmptyDate={[Function]}
                 renderItem={[Function]}
                 rowHasChanged={[Function]}
-                selected={2018-06-23T13:42:41.780Z}
+                selected={2018-06-23T20:32:38.654Z}
                 style={
                   Object {
                     "flex": 1,
@@ -11588,7 +11588,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-                        selected={2018-06-23T13:42:41.780Z}
+                        selected={2018-06-23T20:32:38.654Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11655,7 +11655,7 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
-                date={2018-06-23T13:42:40.848Z}
+                date={2018-06-23T20:32:37.667Z}
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11676,7 +11676,7 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
-                date={2018-06-23T13:42:40.848Z}
+                date={2018-06-23T20:32:37.667Z}
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11724,7 +11724,7 @@ ShallowWrapper {
                 "renderEmptyDate": [Function],
                 "renderItem": [Function],
                 "rowHasChanged": [Function],
-                "selected": 2018-06-23T13:42:41.780Z,
+                "selected": 2018-06-23T20:32:38.654Z,
                 "style": Object {
                   "flex": 1,
                 },
@@ -11806,7 +11806,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-                        selected={2018-06-23T13:42:41.780Z}
+                        selected={2018-06-23T20:32:38.654Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11921,7 +11921,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-                        selected={2018-06-23T13:42:41.780Z}
+                        selected={2018-06-23T20:32:38.654Z}
                         style={
                           Object {
                             "flex": 1,
@@ -12034,7 +12034,7 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-                          selected={2018-06-23T13:42:41.780Z}
+                          selected={2018-06-23T20:32:38.654Z}
                           style={
                             Object {
                               "flex": 1,
@@ -12135,7 +12135,7 @@ ShallowWrapper {
                             renderEmptyDate={[Function]}
                             renderItem={[Function]}
                             rowHasChanged={[Function]}
-                            selected={2018-06-23T13:42:41.780Z}
+                            selected={2018-06-23T20:32:38.654Z}
                             style={
                               Object {
                                 "flex": 1,
@@ -12187,7 +12187,7 @@ ShallowWrapper {
                             "renderEmptyDate": [Function],
                             "renderItem": [Function],
                             "rowHasChanged": [Function],
-                            "selected": 2018-06-23T13:42:41.780Z,
+                            "selected": 2018-06-23T20:32:38.654Z,
                             "style": Object {
                               "flex": 1,
                             },
@@ -12305,7 +12305,7 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
-                "date": 2018-06-23T13:42:40.848Z,
+                "date": 2018-06-23T20:32:37.667Z,
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -12332,7 +12332,7 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
-                "date": 2018-06-23T13:42:40.848Z,
+                "date": 2018-06-23T20:32:37.667Z,
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,
