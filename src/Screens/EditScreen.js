@@ -40,8 +40,6 @@ export default class EditScreen extends ValidationComponent {
 
   edit() {
     const url = 'http://52.67.4.137:8083/api/user/edit';
-    console.log('Bearer ' + store.getState().currentUser.token);
-    console.log(store.getState().currentUser.id);
     axios.put(url,{
       firstName: this.state.value.nome,
       lastName: this.state.value.sobrenome,
@@ -53,18 +51,13 @@ export default class EditScreen extends ValidationComponent {
       }
     })
     .then((response) => {
-      console.log(response.data);
       if (response.data.message) {
         Alert.alert('Erro',response.data.message);
-        console.log(response.data);
       } else {
-        console.log(response.data);
         Alert.alert(
           'Successo!',
           'Sua conta foi editada com sucesso!',
-          [
-            {text: 'ok', onPress: () => { this.props.navigation.navigate('profile'); }}
-          ]
+          [{text: 'ok', onPress: () => { this.props.navigation.navigate('profile'); }}]
         );
       }
     });
