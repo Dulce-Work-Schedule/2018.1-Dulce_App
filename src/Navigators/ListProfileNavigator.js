@@ -11,13 +11,13 @@ const routes = {
       header: null
     }
   },
-  profile: {
+  newProfile: {
     screen: NewProfile,
     navigationOptions: {
       header: null
     }
   },
-  schedule: {
+  initial: {
     screen: ProfileSchedule,
     navigationOptions: {
       header: null

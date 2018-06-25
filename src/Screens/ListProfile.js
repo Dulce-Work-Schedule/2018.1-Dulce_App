@@ -26,7 +26,8 @@ class ListProfile extends Component {
         }
       ],
       profiles: [],
-      loading: true
+      loading: true,
+      noSideBar: this.props.navigation.state.params !== void 0 ? this.props.navigation.state.params.noSideBar : false
     };
   }
 
@@ -40,10 +41,11 @@ class ListProfile extends Component {
       }
     })
       .then((response) => {
-        if (response.data === []) {
-          this.props.navigation.navigate('profile');
+        console.log(response.data);
+        if (response.data.length === 0) {
+          this.setState({loading: false});
+          this.props.navigation.navigate('newProfile', {noSideBar: this.state.noSideBar});
         } else {
-
           console.log(response.data);
           let item = 0;
 
@@ -101,7 +103,7 @@ class ListProfile extends Component {
   }
 
   navigateToNewProfile() {
-    this.props.navigation.navigate('profile');
+    this.props.navigation.navigate('newProfile', {noSideBar: this.state.noSideBar});
   }
 
   fab() {
@@ -129,10 +131,12 @@ class ListProfile extends Component {
 
   goToProfile(item) {
     this.props.setCurrentProfile(item);
-    this.props.navigation.navigate('schedule');
+    this.props.navigation.navigate('initial');
   }
 
   renderCard(item) {
+    console.log('PARAMS:');
+    console.log(this.props.navigation.state.params);
     return (
       <Card iconLeft>
         <CardItem style={styles.center} button onPress={() => this.goToProfile(item)}>
@@ -152,25 +156,34 @@ class ListProfile extends Component {
     );
   }
 
+  renderScreen(flexN) {
+    return (
+      <View style={{flex: flexN}}>
+        <Container>
+          <ScreenHeader
+            title = 'Perfis'
+          />
+          {this.state.loading ? (this.renderSpinner()) : (
+            <Content>
+              <List dataArray={this.state.profiles}
+                renderRow={(item) => (
+                  this.renderCard(item))} />
+            </Content>
+          )}
+        </Container>
+        {this.fab()}
+      </View>
+    );
+  }
   render() {
     return (
-      <View style={{flexDirection: 'row', flex: 1}}>
-        <SideBar />
-        <View style={{flex: 8}}>
-          <Container>
-            <ScreenHeader
-              title = 'Perfis'
-            />
-            {this.state.loading ? (this.renderSpinner()) : (
-              <Content>
-                <List dataArray={this.state.profiles}
-                  renderRow={(item) => (
-                    this.renderCard(item))} />
-              </Content>
-            )}
-          </Container>
-          {this.fab()}
-        </View>
+      <View style={{flex: 1}} >
+        {this.state.noSideBar ? this.renderScreen(1) : (
+          <View style={{flexDirection: 'row', flex: 1}}>
+            <SideBar />
+            {this.renderScreen(8)}
+          </View>
+        )}
       </View>
     );
   }

@@ -14,7 +14,8 @@ class SideMenu extends React.Component {
 
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
-      routeName: route
+      routeName: route,
+      params: {noSideBar: false}
     });
     this.props.navigation.dispatch(navigateAction);
   }
