@@ -1,5 +1,7 @@
 import ListProfile from '../Screens/ListProfile';
 import NewProfile from '../Screens/NewProfile';
+import ProfileSchedule from '../Routes/ProfileSchedule';
+
 import {StackNavigator} from 'react-navigation';
 
 const routes = {
@@ -11,6 +13,12 @@ const routes = {
   },
   profile: {
     screen: NewProfile,
+    navigationOptions: {
+      header: null
+    }
+  },
+  schedule: {
+    screen: ProfileSchedule,
     navigationOptions: {
       header: null
     }

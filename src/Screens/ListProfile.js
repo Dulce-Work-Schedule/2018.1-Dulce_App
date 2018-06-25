@@ -6,9 +6,10 @@ import SideBar from '../Components/SideBar';
 import {listProfile as styles} from './styles' ;
 import store from '../Reducers/store';
 import axios from 'axios';
-// import {connect} from 'react-redux';
+import {connect} from 'react-redux';
+import {actionSetProfile} from '../Actions/currentProfile';
 
-export default class ListProfile extends Component {
+class ListProfile extends Component {
 
   constructor(props) {
     super(props);
@@ -40,9 +41,7 @@ export default class ListProfile extends Component {
     })
       .then((response) => {
         if (response.data === []) {
-          Alert.alert(
-            'Erro',
-            'Não há Perfis criados!');
+          this.props.navigation.navigate('profile');
         } else {
 
           console.log(response.data);
@@ -88,7 +87,6 @@ export default class ListProfile extends Component {
                       item++;
                       if (item === response.data.length) {
                         console.log(this.state.profiles);
-
                         this.setState({loading: false});
                       }
                     });
@@ -131,7 +129,7 @@ export default class ListProfile extends Component {
 
   goToProfile(item) {
     this.props.setCurrentProfile(item);
-    this.props.navigation.navigate('profile');
+    this.props.navigation.navigate('schedule');
   }
 
   renderCard(item) {
@@ -177,3 +175,26 @@ export default class ListProfile extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    currentProfile: state.currentProfile
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setCurrentProfile: (api_profile) => {
+      const currentProfile = {
+        id: api_profile.id,
+        registration: api_profile.registration,
+        hospital: api_profile.hospital,
+        sector: api_profile.sector,
+        sector_id: api_profile.sector_id
+      };
+      return dispatch(actionSetProfile(currentProfile));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ListProfile);
