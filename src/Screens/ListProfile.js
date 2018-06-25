@@ -6,6 +6,7 @@ import SideBar from '../Components/SideBar';
 import {listProfile as styles} from './styles' ;
 import store from '../Reducers/store';
 import axios from 'axios';
+// import {connect} from 'react-redux';
 
 export default class ListProfile extends Component {
 
@@ -78,10 +79,16 @@ export default class ListProfile extends Component {
                       } else {
                         profile.registration = element.registration;
                         profile.sector = response2.data.name;
+                        profile.sector_id = element.sector_id;
+                        profile.hospital_id = element.hospital_id;
+                        profile.id = element.id;
+
                         this.state.profiles = [...this.state.profiles, profile];
                       }
                       item++;
                       if (item === response.data.length) {
+                        console.log(this.state.profiles);
+
                         this.setState({loading: false});
                       }
                     });
@@ -122,10 +129,15 @@ export default class ListProfile extends Component {
     );
   }
 
+  goToProfile(item) {
+    this.props.setCurrentProfile(item);
+    this.props.navigation.navigate('profile');
+  }
+
   renderCard(item) {
     return (
       <Card iconLeft>
-        <CardItem style={styles.center} button onPress={() => {}}>
+        <CardItem style={styles.center} button onPress={() => this.goToProfile(item)}>
           <Body>
             <Text style={styles.colorPurple}>{item.hospital}</Text>
             <View style={{flexDirection: 'row',flex: 1}}>

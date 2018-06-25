@@ -9711,7 +9711,15 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
+<<<<<<< HEAD
                 date={1529892737270}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={1529882507744}
+=======
+                date={1529889868860}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9942,7 +9950,15 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
+<<<<<<< HEAD
                 date={1529892737270}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={1529882507744}
+=======
+                date={1529889868860}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10101,7 +10117,15 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
+<<<<<<< HEAD
             selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+            selected={2018-06-24T23:21:53.812Z}
+=======
+            selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
             style={
               Object {
                 "flex": 1,
@@ -10179,7 +10203,15 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
+<<<<<<< HEAD
                     selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                    selected={2018-06-24T23:21:53.812Z}
+=======
+                    selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                     style={
                       Object {
                         "flex": 1,
@@ -10227,7 +10259,15 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
+<<<<<<< HEAD
             date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+            date={2018-06-24T23:21:47.744Z}
+=======
+            date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10248,7 +10288,15 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
+<<<<<<< HEAD
             date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+            date={2018-06-24T23:21:47.744Z}
+=======
+            date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10301,7 +10349,15 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
+<<<<<<< HEAD
               selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              selected={2018-06-24T23:21:53.812Z}
+=======
+              selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               style={
                 Object {
                   "flex": 1,
@@ -10379,7 +10435,15 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T23:21:53.812Z}
+=======
+                      selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                       style={
                         Object {
                           "flex": 1,
@@ -10427,7 +10491,15 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
+<<<<<<< HEAD
               date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T23:21:47.744Z}
+=======
+              date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10448,7 +10520,15 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
+<<<<<<< HEAD
               date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T23:21:47.744Z}
+=======
+              date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10496,7 +10576,15 @@ ShallowWrapper {
               "renderEmptyDate": [Function],
               "renderItem": [Function],
               "rowHasChanged": [Function],
+<<<<<<< HEAD
               "selected": 2018-06-25T02:12:17.759Z,
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              "selected": 2018-06-24T23:21:53.812Z,
+=======
+              "selected": 2018-06-25T01:24:30.431Z,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               "style": Object {
                 "flex": 1,
               },
@@ -10578,7 +10666,15 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T23:21:53.812Z}
+=======
+                      selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                       style={
                         Object {
                           "flex": 1,
@@ -10674,7 +10770,15 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T23:21:53.812Z}
+=======
+                      selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                       style={
                         Object {
                           "flex": 1,
@@ -10768,7 +10872,15 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
+<<<<<<< HEAD
                         selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T23:21:53.812Z}
+=======
+                        selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                         style={
                           Object {
                             "flex": 1,
@@ -10841,6 +10953,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                       "children": <AgendaView
                         items={Object {}}
                         loadItemsForMonth={[Function]}
@@ -10853,6 +10966,29 @@ ShallowWrapper {
                         style={
                           Object {
                             "flex": 1,
+=======
+                      "children": Array [
+                        <AgendaView
+                          items={Object {}}
+                          loadItemsForMonth={[Function]}
+                          onDayChange={[Function]}
+                          onDayPress={[Function]}
+                          renderEmptyDate={[Function]}
+                          renderItem={[Function]}
+                          rowHasChanged={[Function]}
+                          selected={2018-06-25T01:24:30.431Z}
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
+                          theme={
+                            Object {
+                              "agendaKnobColor": "#5f4b8b",
+                              "calendarBackground": "#ffffff",
+                              "selectedDayBackgroundColor": "#5f4b8b",
+                            }
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                           }
                         }
                         theme={
@@ -10868,6 +11004,7 @@ ShallowWrapper {
                       },
                     },
                     "ref": null,
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
@@ -10883,6 +11020,54 @@ ShallowWrapper {
                         "selected": 2018-06-25T02:12:17.759Z,
                         "style": Object {
                           "flex": 1,
+=======
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "items": Object {},
+                          "loadItemsForMonth": [Function],
+                          "onDayChange": [Function],
+                          "onDayPress": [Function],
+                          "renderEmptyDate": [Function],
+                          "renderItem": [Function],
+                          "rowHasChanged": [Function],
+                          "selected": 2018-06-25T01:24:30.431Z,
+                          "style": Object {
+                            "flex": 1,
+                          },
+                          "theme": Object {
+                            "agendaKnobColor": "#5f4b8b",
+                            "calendarBackground": "#ffffff",
+                            "selectedDayBackgroundColor": "#5f4b8b",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "active": undefined,
+                          "children": <Styled(Icon)
+                            name="edit"
+                            type="MaterialIcons"
+                            virtual={undefined}
+                          />,
+                          "containerStyle": Object {},
+                          "direction": "up",
+                          "onPress": [Function],
+                          "position": "bottomRight",
+                          "style": Object {
+                            "backgroundColor": "#5f4b8b",
+                          },
+                          "virtual": undefined,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                         },
                         "theme": Object {
                           "agendaKnobColor": "#5f4b8b",
@@ -10961,7 +11146,15 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
               "date": 2018-06-25T02:12:17.270Z,
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              "date": 2018-06-24T23:21:47.744Z,
+=======
+              "date": 2018-06-25T01:24:28.860Z,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -10988,7 +11181,15 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
               "date": 2018-06-25T02:12:17.270Z,
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              "date": 2018-06-24T23:21:47.744Z,
+=======
+              "date": 2018-06-25T01:24:28.860Z,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11040,7 +11241,15 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
+<<<<<<< HEAD
               selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              selected={2018-06-24T23:21:53.812Z}
+=======
+              selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               style={
                 Object {
                   "flex": 1,
@@ -11118,7 +11327,15 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
+<<<<<<< HEAD
                       selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                      selected={2018-06-24T23:21:53.812Z}
+=======
+                      selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                       style={
                         Object {
                           "flex": 1,
@@ -11166,7 +11383,15 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
+<<<<<<< HEAD
               date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T23:21:47.744Z}
+=======
+              date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11187,7 +11412,15 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
+<<<<<<< HEAD
               date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+              date={2018-06-24T23:21:47.744Z}
+=======
+              date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11240,7 +11473,15 @@ ShallowWrapper {
                 renderEmptyDate={[Function]}
                 renderItem={[Function]}
                 rowHasChanged={[Function]}
+<<<<<<< HEAD
                 selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                selected={2018-06-24T23:21:53.812Z}
+=======
+                selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 style={
                   Object {
                     "flex": 1,
@@ -11318,7 +11559,15 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
+<<<<<<< HEAD
                         selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T23:21:53.812Z}
+=======
+                        selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                         style={
                           Object {
                             "flex": 1,
@@ -11366,7 +11615,15 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
+<<<<<<< HEAD
                 date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={2018-06-24T23:21:47.744Z}
+=======
+                date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11387,7 +11644,15 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
+<<<<<<< HEAD
                 date={2018-06-25T02:12:17.270Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                date={2018-06-24T23:21:47.744Z}
+=======
+                date={2018-06-25T01:24:28.860Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11435,7 +11700,15 @@ ShallowWrapper {
                 "renderEmptyDate": [Function],
                 "renderItem": [Function],
                 "rowHasChanged": [Function],
+<<<<<<< HEAD
                 "selected": 2018-06-25T02:12:17.759Z,
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                "selected": 2018-06-24T23:21:53.812Z,
+=======
+                "selected": 2018-06-25T01:24:30.431Z,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 "style": Object {
                   "flex": 1,
                 },
@@ -11517,7 +11790,15 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
+<<<<<<< HEAD
                         selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T23:21:53.812Z}
+=======
+                        selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                         style={
                           Object {
                             "flex": 1,
@@ -11613,7 +11894,15 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
+<<<<<<< HEAD
                         selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                        selected={2018-06-24T23:21:53.812Z}
+=======
+                        selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                         style={
                           Object {
                             "flex": 1,
@@ -11707,7 +11996,15 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
+<<<<<<< HEAD
                           selected={2018-06-25T02:12:17.759Z}
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                          selected={2018-06-24T23:21:53.812Z}
+=======
+                          selected={2018-06-25T01:24:30.431Z}
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                           style={
                             Object {
                               "flex": 1,
@@ -11780,6 +12077,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                         "children": <AgendaView
                           items={Object {}}
                           loadItemsForMonth={[Function]}
@@ -11792,6 +12090,29 @@ ShallowWrapper {
                           style={
                             Object {
                               "flex": 1,
+=======
+                        "children": Array [
+                          <AgendaView
+                            items={Object {}}
+                            loadItemsForMonth={[Function]}
+                            onDayChange={[Function]}
+                            onDayPress={[Function]}
+                            renderEmptyDate={[Function]}
+                            renderItem={[Function]}
+                            rowHasChanged={[Function]}
+                            selected={2018-06-25T01:24:30.431Z}
+                            style={
+                              Object {
+                                "flex": 1,
+                              }
+                            }
+                            theme={
+                              Object {
+                                "agendaKnobColor": "#5f4b8b",
+                                "calendarBackground": "#ffffff",
+                                "selectedDayBackgroundColor": "#5f4b8b",
+                              }
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                             }
                           }
                           theme={
@@ -11807,6 +12128,7 @@ ShallowWrapper {
                         },
                       },
                       "ref": null,
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
                       "rendered": Object {
                         "instance": null,
                         "key": undefined,
@@ -11822,6 +12144,54 @@ ShallowWrapper {
                           "selected": 2018-06-25T02:12:17.759Z,
                           "style": Object {
                             "flex": 1,
+=======
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "items": Object {},
+                            "loadItemsForMonth": [Function],
+                            "onDayChange": [Function],
+                            "onDayPress": [Function],
+                            "renderEmptyDate": [Function],
+                            "renderItem": [Function],
+                            "rowHasChanged": [Function],
+                            "selected": 2018-06-25T01:24:30.431Z,
+                            "style": Object {
+                              "flex": 1,
+                            },
+                            "theme": Object {
+                              "agendaKnobColor": "#5f4b8b",
+                              "calendarBackground": "#ffffff",
+                              "selectedDayBackgroundColor": "#5f4b8b",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "active": undefined,
+                            "children": <Styled(Icon)
+                              name="edit"
+                              type="MaterialIcons"
+                              virtual={undefined}
+                            />,
+                            "containerStyle": Object {},
+                            "direction": "up",
+                            "onPress": [Function],
+                            "position": "bottomRight",
+                            "style": Object {
+                              "backgroundColor": "#5f4b8b",
+                            },
+                            "virtual": undefined,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
                           },
                           "theme": Object {
                             "agendaKnobColor": "#5f4b8b",
@@ -11900,7 +12270,15 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
                 "date": 2018-06-25T02:12:17.270Z,
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                "date": 2018-06-24T23:21:47.744Z,
+=======
+                "date": 2018-06-25T01:24:28.860Z,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -11927,7 +12305,15 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
+<<<<<<< HEAD
                 "date": 2018-06-25T02:12:17.270Z,
+=======
+<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
+                "date": 2018-06-24T23:21:47.744Z,
+=======
+                "date": 2018-06-25T01:24:28.860Z,
+>>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
+>>>>>>> 190cb46... #495 fazendo conexão com redux
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,
