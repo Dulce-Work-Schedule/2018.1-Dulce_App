@@ -14,6 +14,15 @@ export const styles = {
       marginLeft: 10,
       color: black_dulce,
       fontFamily: 'Lato'
+    },
+    button: {
+      height: 50,
+      paddingHorizontal: 30,
+      backgroundColor: purple_dulce,
+      alignSelf: 'center',
+      alignItems: 'center',
+      width: 180,
+      marginTop: '80%'
     }
   },
   listProfile: {

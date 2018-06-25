@@ -1,7 +1,7 @@
 import {SETPROFILE, RESETPROFILE} from '../Actions/currentProfile';
 
 const initialState = {
-  id: 40028922,
+  id: '5b2d6fa1415965001ddaa5dd',
   registration: 160111612,
   sector: 'Portal',
   hospital: 'Lappis'

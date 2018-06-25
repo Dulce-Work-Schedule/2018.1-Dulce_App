@@ -7,8 +7,15 @@ store.subscribe(() => {
   console.log(store.getState());
 });
 
-class App extends React.Component {
+String.prototype.padStart = function padStart(x, y) {
+  if (this.length < x) {
+    return (y.toString().repeat((x - this.length))) + this;
+  } else {
+    return this.toString();
+  }
+};
 
+class App extends React.Component {
   render() {
     return (
       <Root>
