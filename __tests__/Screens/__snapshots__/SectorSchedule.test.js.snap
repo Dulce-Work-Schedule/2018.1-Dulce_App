@@ -9712,11 +9712,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-<<<<<<< HEAD
-                date={1529892746693}
-=======
-                date={1529896959127}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                date={1529907209180}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9947,11 +9943,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-<<<<<<< HEAD
-                date={1529892746693}
-=======
-                date={1529896959127}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                date={1529907209180}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}

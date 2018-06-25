@@ -328,7 +328,6 @@ exports[`renders correctly 1`] = `
                       uppercase={false}
                       virtual={undefined}
                     >
-                      Lappis
                        
                     </Text>
                   </View>
@@ -383,7 +382,6 @@ exports[`renders correctly 1`] = `
                       uppercase={false}
                       virtual={undefined}
                     >
-                      Portal
                        
                     </Text>
                   </View>
@@ -415,7 +413,7 @@ exports[`renders correctly 1`] = `
                       uppercase={false}
                       virtual={undefined}
                     >
-                      Matricula: 
+                      Matrícula: 
                     </Text>
                     <Text
                       accessible={true}
@@ -438,7 +436,6 @@ exports[`renders correctly 1`] = `
                       uppercase={false}
                       virtual={undefined}
                     >
-                      160111612
                        
                     </Text>
                   </View>
@@ -447,162 +444,162 @@ exports[`renders correctly 1`] = `
               <View
                 style={
                   Object {
+                    "marginTop": 60,
+                  }
+                }
+              />
+              <RCTScrollView
+                automaticallyAdjustContentInsets={false}
+                contentContainerStyle={
+                  Array [
+                    Object {
+                      "padding": undefined,
+                    },
+                    undefined,
+                  ]
+                }
+                contentInset={
+                  Object {
+                    "bottom": 0,
+                  }
+                }
+                enableAutomaticScroll={true}
+                enableResetScrollToCoords={true}
+                extraHeight={75}
+                extraScrollHeight={0}
+                getScrollResponder={[Function]}
+                handleOnScroll={[Function]}
+                keyboardDismissMode="interactive"
+                keyboardOpeningTime={250}
+                keyboardShouldPersistTaps="handled"
+                keyboardSpace={0}
+                onScroll={[Function]}
+                resetKeyboardSpace={[Function]}
+                resetScrollToCoords={
+                  Object {
+                    "x": 0,
+                    "y": 0,
+                  }
+                }
+                scrollEventThrottle={1}
+                scrollForExtraHeightOnAndroid={[Function]}
+                scrollToEnd={[Function]}
+                scrollToFocusedInput={[Function]}
+                scrollToPosition={[Function]}
+                showsVerticalScrollIndicator={true}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "flex": 1,
+                  }
+                }
+                viewIsInsideTabBar={false}
+                virtual={undefined}
+              >
+                <View>
+                  <View
+                    accessibilityComponentType={undefined}
+                    accessibilityLabel={undefined}
+                    accessibilityTraits={undefined}
+                    accessible={true}
+                    collapsable={undefined}
+                    hasTVPreferredFocus={undefined}
+                    hitSlop={undefined}
+                    isTVSelectable={true}
+                    nativeID={undefined}
+                    onLayout={undefined}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "backgroundColor": "#5f4b8b",
+                        "borderBottomWidth": null,
+                        "borderColor": "#007aff",
+                        "borderLeftWidth": null,
+                        "borderRadius": 57,
+                        "borderRightWidth": null,
+                        "borderTopWidth": null,
+                        "elevation": 2,
+                        "flex": 8,
+                        "flexDirection": "row",
+                        "height": 50,
+                        "justifyContent": "center",
+                        "marginBottom": 0,
+                        "marginTop": 40,
+                        "opacity": 1,
+                        "paddingBottom": 6,
+                        "paddingTop": 6,
+                        "width": 180,
+                      }
+                    }
+                    testID={undefined}
+                    tvParallaxProperties={undefined}
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={false}
+                        ellipsizeMode="tail"
+                        style={
+                          Array [
+                            Object {
+                              "color": "#fff",
+                              "fontSize": 25,
+                            },
+                            Object {
+                              "paddingHorizontal": 15,
+                            },
+                            Object {
+                              "fontFamily": "Entypo",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                          ]
+                        }
+                      >
+                        
+                      </Text>
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "color": "white",
+                            "fontFamily": "Raleway",
+                            "fontSize": 16,
+                            "marginRight": 40,
+                          }
+                        }
+                      >
+                        Editar
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </RCTScrollView>
+              <View
+                style={
+                  Object {
                     "alignItems": "center",
                     "flex": 1,
                   }
                 }
               >
-                <View
-                  style={
-                    Object {
-                      "flex": 1,
-                      "height": 1334,
-                    }
-                  }
-                  virtual={undefined}
-                >
-                  <RCTScrollView
-                    automaticallyAdjustContentInsets={false}
-                    contentContainerStyle={
-                      Array [
-                        Object {
-                          "padding": undefined,
-                        },
-                        undefined,
-                      ]
-                    }
-                    contentInset={
-                      Object {
-                        "bottom": 0,
-                      }
-                    }
-                    enableAutomaticScroll={true}
-                    enableResetScrollToCoords={true}
-                    extraHeight={75}
-                    extraScrollHeight={0}
-                    getScrollResponder={[Function]}
-                    handleOnScroll={[Function]}
-                    keyboardDismissMode="interactive"
-                    keyboardOpeningTime={250}
-                    keyboardShouldPersistTaps="handled"
-                    keyboardSpace={0}
-                    onScroll={[Function]}
-                    resetKeyboardSpace={[Function]}
-                    resetScrollToCoords={
-                      Object {
-                        "x": 0,
-                        "y": 0,
-                      }
-                    }
-                    scrollEventThrottle={1}
-                    scrollForExtraHeightOnAndroid={[Function]}
-                    scrollToEnd={[Function]}
-                    scrollToFocusedInput={[Function]}
-                    scrollToPosition={[Function]}
-                    showsVerticalScrollIndicator={true}
-                    style={
-                      Object {
-                        "backgroundColor": "transparent",
-                        "flex": 1,
-                      }
-                    }
-                    viewIsInsideTabBar={false}
-                    virtual={undefined}
-                  >
-                    <View>
-                      <View
-                        accessibilityComponentType={undefined}
-                        accessibilityLabel={undefined}
-                        accessibilityTraits={undefined}
-                        accessible={true}
-                        collapsable={undefined}
-                        hasTVPreferredFocus={undefined}
-                        hitSlop={undefined}
-                        isTVSelectable={true}
-                        nativeID={undefined}
-                        onLayout={undefined}
-                        onResponderGrant={[Function]}
-                        onResponderMove={[Function]}
-                        onResponderRelease={[Function]}
-                        onResponderTerminate={[Function]}
-                        onResponderTerminationRequest={[Function]}
-                        onStartShouldSetResponder={[Function]}
-                        style={
-                          Object {
-                            "alignItems": "center",
-                            "alignSelf": "center",
-                            "backgroundColor": "#5f4b8b",
-                            "borderBottomWidth": null,
-                            "borderColor": "#007aff",
-                            "borderLeftWidth": null,
-                            "borderRadius": 57,
-                            "borderRightWidth": null,
-                            "borderTopWidth": null,
-                            "elevation": 2,
-                            "flexDirection": "row",
-                            "height": 50,
-                            "justifyContent": "space-between",
-                            "opacity": 1,
-                            "paddingBottom": 6,
-                            "paddingHorizontal": 30,
-                            "paddingTop": 6,
-                            "width": 180,
-                          }
-                        }
-                        testID={undefined}
-                        tvParallaxProperties={undefined}
-                      >
-                        <View
-                          style={
-                            Object {
-                              "alignItems": "center",
-                              "flexDirection": "row",
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={false}
-                            ellipsizeMode="tail"
-                            style={
-                              Array [
-                                Object {
-                                  "color": "#fff",
-                                  "fontSize": 25,
-                                },
-                                Object {
-                                  "paddingHorizontal": 15,
-                                },
-                                Object {
-                                  "fontFamily": "Entypo",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                              ]
-                            }
-                          >
-                            
-                          </Text>
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                            style={
-                              Object {
-                                "alignItems": "center",
-                                "color": "white",
-                                "fontFamily": "Raleway",
-                                "fontSize": 16,
-                              }
-                            }
-                          >
-                            Editar
-                          </Text>
-                        </View>
-                      </View>
-                    </View>
-                  </RCTScrollView>
-                </View>
                 <View
                   accessibilityComponentType={undefined}
                   accessibilityLabel={undefined}

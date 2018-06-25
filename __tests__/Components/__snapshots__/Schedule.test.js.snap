@@ -9711,19 +9711,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-                date={1529892737270}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                date={1529882507744}
-=======
-                date={1529889868860}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                date={1529896949310}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                date={1529907200390}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9954,19 +9942,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-<<<<<<< HEAD
-<<<<<<< HEAD
-                date={1529892737270}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                date={1529882507744}
-=======
-                date={1529889868860}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                date={1529896949310}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                date={1529907200390}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -10125,19 +10101,7 @@ ShallowWrapper {
             renderEmptyDate={[Function]}
             renderItem={[Function]}
             rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-            selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-            selected={2018-06-24T23:21:53.812Z}
-=======
-            selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-            selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+            selected={2018-06-25T06:13:21.329Z}
             style={
               Object {
                 "flex": 1,
@@ -10215,19 +10179,7 @@ ShallowWrapper {
                     renderEmptyDate={[Function]}
                     renderItem={[Function]}
                     rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                    selected={2018-06-24T23:21:53.812Z}
-=======
-                    selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                    selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                    selected={2018-06-25T06:13:21.329Z}
                     style={
                       Object {
                         "flex": 1,
@@ -10275,19 +10227,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-            date={2018-06-24T23:21:47.744Z}
-=======
-            date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-            date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+            date={2018-06-25T06:13:20.390Z}
             isVisible={false}
             mode="datetime"
             neverDisableConfirmIOS={false}
@@ -10308,19 +10248,7 @@ ShallowWrapper {
           <CustomDatePickerIOS
             cancelTextIOS="Cancel"
             confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-            date={2018-06-24T23:21:47.744Z}
-=======
-            date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-            date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+            date={2018-06-25T06:13:20.390Z}
             isVisible={false}
             mode="time"
             neverDisableConfirmIOS={false}
@@ -10373,19 +10301,7 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-              selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              selected={2018-06-24T23:21:53.812Z}
-=======
-              selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              selected={2018-06-25T06:13:21.329Z}
               style={
                 Object {
                   "flex": 1,
@@ -10463,19 +10379,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                      selected={2018-06-24T23:21:53.812Z}
-=======
-                      selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                      selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                      selected={2018-06-25T06:13:21.329Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10523,19 +10427,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              date={2018-06-24T23:21:47.744Z}
-=======
-              date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              date={2018-06-25T06:13:20.390Z}
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -10556,19 +10448,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              date={2018-06-24T23:21:47.744Z}
-=======
-              date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              date={2018-06-25T06:13:20.390Z}
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -10616,19 +10496,7 @@ ShallowWrapper {
               "renderEmptyDate": [Function],
               "renderItem": [Function],
               "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "selected": 2018-06-25T02:12:17.759Z,
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              "selected": 2018-06-24T23:21:53.812Z,
-=======
-              "selected": 2018-06-25T01:24:30.431Z,
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              "selected": 2018-06-25T03:22:30.733Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              "selected": 2018-06-25T06:13:21.329Z,
               "style": Object {
                 "flex": 1,
               },
@@ -10710,19 +10578,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                      selected={2018-06-24T23:21:53.812Z}
-=======
-                      selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                      selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                      selected={2018-06-25T06:13:21.329Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10818,19 +10674,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                      selected={2018-06-24T23:21:53.812Z}
-=======
-                      selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                      selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                      selected={2018-06-25T06:13:21.329Z}
                       style={
                         Object {
                           "flex": 1,
@@ -10924,19 +10768,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                        selected={2018-06-24T23:21:53.812Z}
-=======
-                        selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                        selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                        selected={2018-06-25T06:13:21.329Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11017,11 +10849,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-                        selected={2018-06-25T02:12:17.759Z}
-=======
-                        selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                        selected={2018-06-25T06:13:21.329Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11052,11 +10880,7 @@ ShallowWrapper {
                         "renderEmptyDate": [Function],
                         "renderItem": [Function],
                         "rowHasChanged": [Function],
-<<<<<<< HEAD
-                        "selected": 2018-06-25T02:12:17.759Z,
-=======
-                        "selected": 2018-06-25T03:22:30.733Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                        "selected": 2018-06-25T06:13:21.329Z,
                         "style": Object {
                           "flex": 1,
                         },
@@ -11137,19 +10961,7 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "date": 2018-06-25T02:12:17.270Z,
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              "date": 2018-06-24T23:21:47.744Z,
-=======
-              "date": 2018-06-25T01:24:28.860Z,
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              "date": 2018-06-25T03:22:29.310Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              "date": 2018-06-25T06:13:20.390Z,
               "isVisible": false,
               "mode": "datetime",
               "neverDisableConfirmIOS": false,
@@ -11176,19 +10988,7 @@ ShallowWrapper {
             "props": Object {
               "cancelTextIOS": "Cancel",
               "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "date": 2018-06-25T02:12:17.270Z,
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              "date": 2018-06-24T23:21:47.744Z,
-=======
-              "date": 2018-06-25T01:24:28.860Z,
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              "date": 2018-06-25T03:22:29.310Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              "date": 2018-06-25T06:13:20.390Z,
               "isVisible": false,
               "mode": "time",
               "neverDisableConfirmIOS": false,
@@ -11240,19 +11040,7 @@ ShallowWrapper {
               renderEmptyDate={[Function]}
               renderItem={[Function]}
               rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-              selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              selected={2018-06-24T23:21:53.812Z}
-=======
-              selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              selected={2018-06-25T06:13:21.329Z}
               style={
                 Object {
                   "flex": 1,
@@ -11330,19 +11118,7 @@ ShallowWrapper {
                       renderEmptyDate={[Function]}
                       renderItem={[Function]}
                       rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                      selected={2018-06-24T23:21:53.812Z}
-=======
-                      selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                      selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                      selected={2018-06-25T06:13:21.329Z}
                       style={
                         Object {
                           "flex": 1,
@@ -11390,19 +11166,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              date={2018-06-24T23:21:47.744Z}
-=======
-              date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              date={2018-06-25T06:13:20.390Z}
               isVisible={false}
               mode="datetime"
               neverDisableConfirmIOS={false}
@@ -11423,19 +11187,7 @@ ShallowWrapper {
             <CustomDatePickerIOS
               cancelTextIOS="Cancel"
               confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-              date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-              date={2018-06-24T23:21:47.744Z}
-=======
-              date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-              date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+              date={2018-06-25T06:13:20.390Z}
               isVisible={false}
               mode="time"
               neverDisableConfirmIOS={false}
@@ -11488,19 +11240,7 @@ ShallowWrapper {
                 renderEmptyDate={[Function]}
                 renderItem={[Function]}
                 rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                selected={2018-06-24T23:21:53.812Z}
-=======
-                selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                selected={2018-06-25T06:13:21.329Z}
                 style={
                   Object {
                     "flex": 1,
@@ -11578,19 +11318,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                        selected={2018-06-24T23:21:53.812Z}
-=======
-                        selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                        selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                        selected={2018-06-25T06:13:21.329Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11638,19 +11366,7 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                date={2018-06-24T23:21:47.744Z}
-=======
-                date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                date={2018-06-25T06:13:20.390Z}
                 isVisible={false}
                 mode="datetime"
                 neverDisableConfirmIOS={false}
@@ -11671,19 +11387,7 @@ ShallowWrapper {
               <CustomDatePickerIOS
                 cancelTextIOS="Cancel"
                 confirmTextIOS="Confirm"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                date={2018-06-25T02:12:17.270Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                date={2018-06-24T23:21:47.744Z}
-=======
-                date={2018-06-25T01:24:28.860Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                date={2018-06-25T03:22:29.310Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                date={2018-06-25T06:13:20.390Z}
                 isVisible={false}
                 mode="time"
                 neverDisableConfirmIOS={false}
@@ -11731,19 +11435,7 @@ ShallowWrapper {
                 "renderEmptyDate": [Function],
                 "renderItem": [Function],
                 "rowHasChanged": [Function],
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "selected": 2018-06-25T02:12:17.759Z,
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                "selected": 2018-06-24T23:21:53.812Z,
-=======
-                "selected": 2018-06-25T01:24:30.431Z,
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                "selected": 2018-06-25T03:22:30.733Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                "selected": 2018-06-25T06:13:21.329Z,
                 "style": Object {
                   "flex": 1,
                 },
@@ -11825,19 +11517,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                        selected={2018-06-24T23:21:53.812Z}
-=======
-                        selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                        selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                        selected={2018-06-25T06:13:21.329Z}
                         style={
                           Object {
                             "flex": 1,
@@ -11933,19 +11613,7 @@ ShallowWrapper {
                         renderEmptyDate={[Function]}
                         renderItem={[Function]}
                         rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                        selected={2018-06-24T23:21:53.812Z}
-=======
-                        selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                        selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                        selected={2018-06-25T06:13:21.329Z}
                         style={
                           Object {
                             "flex": 1,
@@ -12039,19 +11707,7 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-<<<<<<< HEAD
-<<<<<<< HEAD
-                          selected={2018-06-25T02:12:17.759Z}
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                          selected={2018-06-24T23:21:53.812Z}
-=======
-                          selected={2018-06-25T01:24:30.431Z}
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                          selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                          selected={2018-06-25T06:13:21.329Z}
                           style={
                             Object {
                               "flex": 1,
@@ -12132,11 +11788,7 @@ ShallowWrapper {
                           renderEmptyDate={[Function]}
                           renderItem={[Function]}
                           rowHasChanged={[Function]}
-<<<<<<< HEAD
-                          selected={2018-06-25T02:12:17.759Z}
-=======
-                          selected={2018-06-25T03:22:30.733Z}
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                          selected={2018-06-25T06:13:21.329Z}
                           style={
                             Object {
                               "flex": 1,
@@ -12167,11 +11819,7 @@ ShallowWrapper {
                           "renderEmptyDate": [Function],
                           "renderItem": [Function],
                           "rowHasChanged": [Function],
-<<<<<<< HEAD
-                          "selected": 2018-06-25T02:12:17.759Z,
-=======
-                          "selected": 2018-06-25T03:22:30.733Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                          "selected": 2018-06-25T06:13:21.329Z,
                           "style": Object {
                             "flex": 1,
                           },
@@ -12252,19 +11900,7 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "date": 2018-06-25T02:12:17.270Z,
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                "date": 2018-06-24T23:21:47.744Z,
-=======
-                "date": 2018-06-25T01:24:28.860Z,
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                "date": 2018-06-25T03:22:29.310Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                "date": 2018-06-25T06:13:20.390Z,
                 "isVisible": false,
                 "mode": "datetime",
                 "neverDisableConfirmIOS": false,
@@ -12291,19 +11927,7 @@ ShallowWrapper {
               "props": Object {
                 "cancelTextIOS": "Cancel",
                 "confirmTextIOS": "Confirm",
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "date": 2018-06-25T02:12:17.270Z,
-=======
-<<<<<<< HEAD:__tests__/Components/__snapshots__/Schedule.test.js.snap
-                "date": 2018-06-24T23:21:47.744Z,
-=======
-                "date": 2018-06-25T01:24:28.860Z,
->>>>>>> 565e284... #495 fazendo conexão com redux:__tests__/Screens/__snapshots__/WeekSchedule.test.js.snap
->>>>>>> 190cb46... #495 fazendo conexão com redux
-=======
-                "date": 2018-06-25T03:22:29.310Z,
->>>>>>> 3269a16... #495 arrumando rotas e tirando sideBar onde nao precisa
+                "date": 2018-06-25T06:13:20.390Z,
                 "isVisible": false,
                 "mode": "time",
                 "neverDisableConfirmIOS": false,

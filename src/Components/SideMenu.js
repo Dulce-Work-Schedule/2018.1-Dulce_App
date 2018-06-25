@@ -71,7 +71,7 @@ class SideMenu extends React.Component {
           </ScrollView>
           <View style={styles.footerContainer}>
             <Icon name='md-exit' size={30} color='#fff' style={{paddingHorizontal: 15}} />
-            <Text onPress={() => this.logout()} style={{color: '#fff', fontFamily: 'Lato'}}>Logout</Text>
+            <Text onPress={() => this.logout()} style={{color: '#fff', fontFamily: 'Lato'}}>Sair</Text>
           </View>
         </View>
         <View style={{flex: 0.35, backgroundColor: '#fd7d01', alignItems: 'center', justifyContent: 'center'}}>
