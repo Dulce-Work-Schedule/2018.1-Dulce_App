@@ -202,7 +202,7 @@ class NewProfile extends React.Component {
             onChange={(v) => this.onChange(v)}
           />
         </View>
-        <View style={{alignItems: 'center', flexDirection: 'column', height: '45%'}} >
+        <View style={{alignItems: 'center', flexDirection: 'column', height: '30%'}} >
           {this.renderPicker(this.state.userType, 'Tipo de Perfil', this.state.user_type, this.selectUserType.bind(this))}
           {this.state.loadingHospital ? this.renderSpinner()
           : this.renderPicker(this.state.selectedHospital, 'Hospital', this.state.hospitals, this.selectHospital.bind(this))
