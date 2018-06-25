@@ -6,6 +6,9 @@ const EDIT_USER_ENDPOINT = 'http://52.67.4.137:8083/api/user/edit';
 const LOGIN_ENDPOINT = 'http://52.67.4.137:8083/api/user/login';
 const SCHEDULES_ENDPOINT = 'http://172.18.0.1:8091/api/schedule/listYear';
 const NEW_USER_ENDPOINT = 'http://52.67.4.137:8083/api/user/create';
+const NEW_PROFILE_ENDPOINT = 'http://18.231.9.190:8083/api/profile/create';
+const SECTORS_ENDPOINT = 'http://18.231.27.220:8083/api/sector/listByHospital?hospital_id=undefined';
+const HOSPITALS_ENDPOINT = 'http://54.94.162.218:8083/api/hospital/list';
 const AXIOS_PROFILE = 'http://18.231.9.190:8083/api/profile/view/?profile_id=1';
 const AXIOS_PROFILE_U = 'http://18.231.9.190:8083/api/profile/view/?profile_id=undefined';
 const AXIOS_USER = 'http://52.67.4.137:8083/api/user/listById?id=1';
@@ -72,6 +75,14 @@ module.exports = {
         return Promise.resolve({
           data: data.schedules
         });
+      case SECTORS_ENDPOINT:
+        return Promise.resolve({
+          data: data.sectors
+        });
+      case HOSPITALS_ENDPOINT:
+        return Promise.resolve({
+          data: data.hospitals
+        });
       default:
         return Promise.resolve({
           data: {message: '404 data not found'}
@@ -83,6 +94,10 @@ module.exports = {
       case LOGIN_ENDPOINT:
         return Promise.resolve({
           data: data.errors
+        });
+      case NEW_PROFILE_ENDPOINT:
+        return Promise.resolve({
+          data: data.profile
         });
       case NEW_USER_ENDPOINT:
         return Promise.resolve({

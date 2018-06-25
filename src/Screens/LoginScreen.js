@@ -1,13 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Image, Alert ,Text} from 'react-native';
+import {Image, Alert ,Text, View} from 'react-native';
 import AGRButton from '../Components/AGRButton';
 import AGRInput from '../Components/AGRInput';
 import GoogleButton from '../Components/GoogleButton';
 import axios from 'axios';
 import {actionLogin} from '../Actions/currentUser';
 import {NavigationActions} from 'react-navigation';
-import {Container ,Button, Toast,Content} from 'native-base';
+import {Container ,Button, Toast} from 'native-base';
 import {StatusBar} from 'react-native';
 import {loginScreen as styles} from './styles' ;
 
@@ -95,9 +95,9 @@ export class LoginScreen extends React.Component {
         <AGRButton
           onPress={this._onPressButton}
           text='Entrar'/>
-        <Content padder>
+        <View style={{flex: 1}}>
           <GoogleButton onPress={() => this.alert()}/>
-        </Content>
+        </View>
         <Button transparent style={styles.buttonRegister} testID='register' onPress = {() => this.register()}>
           <Text style={styles.text}>Não tem uma conta? Cadastre-se!</Text>
         </Button>

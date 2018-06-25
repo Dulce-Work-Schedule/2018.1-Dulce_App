@@ -26,25 +26,24 @@ class ProfileManagerScreen extends React.Component {
         <View style={{flex: 3}}>
           <SmallLogo />
           <View style={{alignItems: 'flex-start', justifyContent: 'center', width: '80%', alignSelf: 'center'}} >
-          <Text style={styles.textProfile}> {store.getState().currentUser.firstName} {store.getState().currentUser.lastName}</Text>
-            <Text style={styles.text}>{store.getState().currentUser.email}</Text>
-            <View style={{flexDirection: 'row'}}>
-            <Text style={styles.text}>Hospital: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.hospital} </Text></View>
-            <View style={{flexDirection: 'row'}}>
-            <Text style={styles.text}>Setor: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.sector} </Text></View>
-            <View style={{flexDirection: 'row'}}>
-            <Text style={styles.text}>Matrícula: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.registration} </Text></View></View></View><View style={{marginTop: 60}}/>
+            <Text style={styles.textProfile}> {store.getState().currentUser.firstName} {store.getState().currentUser.lastName}</Text>
+            <Text style={styles.textEmail}>{store.getState().currentUser.email}</Text>
+            <Text style={styles.text}>Hospital: {store.getState().currentProfile.hospital} </Text>
+            <Text style={styles.text}>Setor: {store.getState().currentProfile.sector} </Text>
+            <Text style={styles.text}>Matrícula: {store.getState().currentProfile.registration}</Text>
+          </View>
+          <View style={{marginTop: 60}}/>
             <IconButton
-            icon = 'edit'
-            text = 'Editar'
-            onPress={() => this.navigateToEditScreen()}/>
-        <View style={{flex: 1 ,alignItems: 'center'}}>
-          <Button transparent warning style={styles.transparentButton}>
-            <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
-          </Button></View></View>
+              icon = 'edit'
+              text = 'Editar'
+              onPress={() => this.navigateToEditScreen()}/>
+            <View style={{flex: 1 ,alignItems: 'center'}}>
+              <Button transparent warning style={styles.transparentButton}>
+                <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
+              </Button>
+            </View>
+          </View>
+        </View>
     );
   }
 

@@ -23,6 +23,26 @@
       "message": true,
       "success": false
     },
+    "profile": {
+      "user_type_error": "O campo Tipo de usuário é obrigatório.",
+      "registration_error": "O campo Matricula é obrigatório.",
+      "speciality_error": "O campo Especialidade é obrigatório.",
+      "sector_id_error": "O campo Setor é obrigatório.",
+      "hospital_id_error": "O campo Hospital é obrigatório.",
+      "user_id_error": "O campo Usuário é obrigatório.",
+      "success": false
+    },
+    "hospitals": [
+       {
+         "name": "firstHospital",
+         "id": "12345"
+       },
+       {
+         "name": "secondHospital",
+         "id": "123456"
+       }
+    ],
+    "sectors": [],
     "profiles":[
       {
         "id": "1",

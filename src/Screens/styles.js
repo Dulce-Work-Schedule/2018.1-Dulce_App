@@ -83,6 +83,12 @@ export const styles = {
     }
   },
   newProfile: {
+    picker: {
+      height: 50,
+      width: 300,
+      marginBottom: 5,
+      marginLeft: 10
+    },
     container: {
       justifyContent: 'center',
       marginTop: 10,
@@ -205,9 +211,10 @@ export const styles = {
       fontFamily: 'Raleway'
     },
     textEmail: {
-      fontSize: 25,
+      fontSize: 22,
       marginBottom: 15,
-      fontFamily: 'Lato'
+      fontFamily: 'Lato',
+      alignSelf: 'center'
     },
     transparentButton: {
       height: 50,
