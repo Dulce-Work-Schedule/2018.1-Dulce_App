@@ -231,19 +231,20 @@ export const styles = {
   IconButton: {
     container: {
       backgroundColor: purple_dulce,
+      width: 180,
       height: 50,
-      alignItems: 'center',
+      marginTop: 40,
       justifyContent: 'center',
-      marginTop: 30,
+      alignItems: 'center',
       flex: 8,
-      alignSelf: 'center',
       marginBottom: 0,
-      width: 180
+      alignSelf: 'center'
     },
     text: {
       color: 'white',
       fontSize: 16,
       fontFamily: 'Raleway',
+      marginRight: 40,
       alignItems: 'center'
     },
     icon: {
