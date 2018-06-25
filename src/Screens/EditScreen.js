@@ -64,11 +64,12 @@ export default class EditScreen extends ValidationComponent {
   }
 
   render() {
+    const {goBack} = this.props.navigation;
     return (
       <View style={{flexDirection: 'row', flex: 1}}>
         <SideBar/>
         <View style={{flex: 8}}>
-        <ScreenHeader title='Editar conta' />
+        <ScreenHeader title='Editar conta' goBack={() => goBack()}/>
           <Container style={{backgroundColor: '#FFF'}}>
             <View style={styles.container}>
                 <Form
@@ -76,15 +77,13 @@ export default class EditScreen extends ValidationComponent {
                   options={this.options}
                   value={this.state.value}
                   type={this.Service}
-                  onChange={(v) => this.onChange(v)}
-                />
-              </View>
+                  onChange={(v) => this.onChange(v)}/>
+            </View>
               <IconButton
                 text = 'Salvar'
                 onPress = {() => {this.edit();}}
                 style = {styles.button}
-                icon= 'save'
-              />
+                icon= 'save'/>
           </Container>
         </View>
       </View>

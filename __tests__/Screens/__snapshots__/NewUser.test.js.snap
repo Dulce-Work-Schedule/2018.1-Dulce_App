@@ -1,684 +1,198 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View
+<RCTScrollView
   style={
-    Array [
-      Object {
-        "flex": 1,
-        "height": 1334,
-      },
-      Object {
-        "backgroundColor": "#FFF",
-      },
-    ]
+    Object {
+      "backgroundColor": "#FFF",
+    }
   }
-  virtual={undefined}
 >
   <View>
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#F8F8F8",
-            "borderBottomColor": "#a7a6ab",
-            "borderBottomWidth": 0.5,
-            "elevation": 3,
-            "flexDirection": "row",
-            "height": 64,
-            "justifyContent": "center",
-            "left": 0,
-            "paddingLeft": 10,
-            "paddingRight": 10,
-            "paddingTop": 15,
-            "right": 0,
-            "shadowColor": undefined,
-            "shadowOffset": undefined,
-            "shadowOpacity": undefined,
-            "shadowRadius": undefined,
-            "top": 0,
-          },
-          Object {
-            "backgroundColor": "#5f4b8b",
-          },
-        ]
-      }
-      virtual={undefined}
-    >
+    <View>
       <View
         style={
-          Object {
-            "alignItems": "flex-start",
-            "alignSelf": "center",
-            "flex": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#F8F8F8",
+              "borderBottomColor": "#a7a6ab",
+              "borderBottomWidth": 0.5,
+              "elevation": 3,
+              "flexDirection": "row",
+              "height": 64,
+              "justifyContent": "center",
+              "left": 0,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 15,
+              "right": 0,
+              "shadowColor": undefined,
+              "shadowOffset": undefined,
+              "shadowOpacity": undefined,
+              "shadowRadius": undefined,
+              "top": 0,
+            },
+            Object {
+              "backgroundColor": "#5f4b8b",
+            },
+          ]
         }
         virtual={undefined}
       >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "alignSelf": null,
-              "backgroundColor": "transparent",
-              "borderBottomWidth": null,
-              "borderColor": null,
-              "borderLeftWidth": null,
-              "borderRadius": 5,
-              "borderRightWidth": null,
-              "borderTopWidth": null,
-              "elevation": 0,
-              "flexDirection": "row",
-              "height": 45,
-              "justifyContent": "space-between",
-              "marginLeft": -3,
-              "opacity": 1,
-              "paddingBottom": 6,
-              "paddingLeft": 6,
-              "paddingRight": 6,
-              "paddingTop": 6,
-              "shadowColor": null,
-              "shadowOffset": null,
-              "shadowOpacity": null,
-              "shadowRadius": null,
+              "alignItems": "flex-start",
+              "alignSelf": "center",
+              "flex": 1,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
+          virtual={undefined}
+        >
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "alignSelf": null,
+                "backgroundColor": "transparent",
+                "borderBottomWidth": null,
+                "borderColor": null,
+                "borderLeftWidth": null,
+                "borderRadius": 5,
+                "borderRightWidth": null,
+                "borderTopWidth": null,
+                "elevation": 0,
+                "flexDirection": "row",
+                "height": 45,
+                "justifyContent": "space-between",
+                "marginLeft": -3,
+                "opacity": 1,
+                "paddingBottom": 6,
+                "paddingLeft": 6,
+                "paddingRight": 6,
+                "paddingTop": 6,
+                "shadowColor": null,
+                "shadowOffset": null,
+                "shadowOpacity": null,
+                "shadowRadius": null,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Array [
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#007aff",
+                      "fontSize": 30,
+                      "marginLeft": 2,
+                      "marginRight": 2,
+                      "marginTop": 0,
+                      "paddingTop": 2,
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Ionicons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+              virtual={undefined}
+            >
+              
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "flex": 1,
+              },
+              Object {},
+            ]
+          }
+          virtual={undefined}
         >
           <Text
             accessible={true}
-            allowFontScaling={false}
+            allowFontScaling={true}
             ellipsizeMode="tail"
+            numberOfLines={1}
             style={
               Array [
                 Object {
-                  "color": undefined,
-                  "fontSize": 12,
+                  "color": "#000",
+                  "fontFamily": "System",
+                  "fontSize": 17,
+                  "fontWeight": "600",
+                  "textAlign": "center",
                 },
-                Array [
-                  Object {
-                    "color": "#000",
-                    "fontSize": 30,
-                  },
-                  Object {
-                    "color": "#007aff",
-                    "fontSize": 30,
-                    "marginLeft": 2,
-                    "marginRight": 2,
-                    "marginTop": 0,
-                    "paddingTop": 2,
-                  },
-                ],
                 Object {
-                  "fontFamily": "Ionicons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
+                  "fontFamily": "Raleway",
                 },
               ]
             }
             virtual={undefined}
           >
-            
+             
+            Criar nova conta
+             
           </Text>
         </View>
       </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "alignSelf": "center",
-              "flex": 1,
-            },
-            Object {},
-          ]
-        }
-        virtual={undefined}
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#000",
-                "fontFamily": "System",
-                "fontSize": 17,
-                "fontWeight": "600",
-                "textAlign": "center",
-              },
-              Object {
-                "fontFamily": "Raleway",
-              },
-            ]
-          }
-          virtual={undefined}
-        >
-           
-          Criar nova conta
-           
-        </Text>
-      </View>
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "#FFF",
-        "justifyContent": "center",
-        "marginTop": 10,
-        "padding": 15,
-      }
-    }
-  >
     <View
-      style={Object {}}
-    >
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#1a1515",
-              "fontFamily": "Lato",
-              "fontSize": 17,
-              "fontWeight": "200",
-              "marginBottom": 7,
-            }
-          }
-        >
-          Primeiro nome
-        </Text>
-        <View
-          style={Object {}}
-        >
-          <TextInput
-            accessibilityLabel="Primeiro nome"
-            allowFontScaling={true}
-            autoCapitalize={undefined}
-            autoCorrect={undefined}
-            autoFocus={undefined}
-            blurOnSubmit={undefined}
-            clearButtonMode={undefined}
-            clearTextOnFocus={undefined}
-            editable={undefined}
-            enablesReturnKeyAutomatically={undefined}
-            keyboardAppearance={undefined}
-            keyboardType={undefined}
-            maxLength={undefined}
-            multiline={undefined}
-            numberOfLines={undefined}
-            onBlur={undefined}
-            onChange={undefined}
-            onChangeText={[Function]}
-            onContentSizeChange={undefined}
-            onEndEditing={undefined}
-            onFocus={undefined}
-            onKeyPress={undefined}
-            onLayout={undefined}
-            onSelectionChange={undefined}
-            onSubmitEditing={undefined}
-            placeholder={undefined}
-            placeholderTextColor={undefined}
-            returnKeyType={undefined}
-            secureTextEntry={undefined}
-            selectTextOnFocus={undefined}
-            selectionColor={undefined}
-            selectionState={undefined}
-            style={
-              Object {
-                "borderColor": "#cccccc",
-                "borderRadius": 20,
-                "borderWidth": 1,
-                "color": "#1a1515",
-                "fontSize": 17,
-                "height": 36,
-                "marginBottom": 5,
-                "paddingHorizontal": 7,
-                "paddingVertical": 7,
-              }
-            }
-            underlineColorAndroid="transparent"
-            value=""
-          />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#1a1515",
-              "fontFamily": "Lato",
-              "fontSize": 17,
-              "fontWeight": "200",
-              "marginBottom": 7,
-            }
-          }
-        >
-          Segundo nome
-        </Text>
-        <View
-          style={Object {}}
-        >
-          <TextInput
-            accessibilityLabel="Segundo nome"
-            allowFontScaling={true}
-            autoCapitalize={undefined}
-            autoCorrect={undefined}
-            autoFocus={undefined}
-            blurOnSubmit={undefined}
-            clearButtonMode={undefined}
-            clearTextOnFocus={undefined}
-            editable={undefined}
-            enablesReturnKeyAutomatically={undefined}
-            keyboardAppearance={undefined}
-            keyboardType={undefined}
-            maxLength={undefined}
-            multiline={undefined}
-            numberOfLines={undefined}
-            onBlur={undefined}
-            onChange={undefined}
-            onChangeText={[Function]}
-            onContentSizeChange={undefined}
-            onEndEditing={undefined}
-            onFocus={undefined}
-            onKeyPress={undefined}
-            onLayout={undefined}
-            onSelectionChange={undefined}
-            onSubmitEditing={undefined}
-            placeholder={undefined}
-            placeholderTextColor={undefined}
-            returnKeyType={undefined}
-            secureTextEntry={undefined}
-            selectTextOnFocus={undefined}
-            selectionColor={undefined}
-            selectionState={undefined}
-            style={
-              Object {
-                "borderColor": "#cccccc",
-                "borderRadius": 20,
-                "borderWidth": 1,
-                "color": "#1a1515",
-                "fontSize": 17,
-                "height": 36,
-                "marginBottom": 5,
-                "paddingHorizontal": 7,
-                "paddingVertical": 7,
-              }
-            }
-            underlineColorAndroid="transparent"
-            value=""
-          />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#1a1515",
-              "fontFamily": "Lato",
-              "fontSize": 17,
-              "fontWeight": "200",
-              "marginBottom": 7,
-            }
-          }
-        >
-          Email
-        </Text>
-        <View
-          style={Object {}}
-        >
-          <TextInput
-            accessibilityLabel="Email"
-            allowFontScaling={true}
-            autoCapitalize={undefined}
-            autoCorrect={undefined}
-            autoFocus={undefined}
-            blurOnSubmit={undefined}
-            clearButtonMode={undefined}
-            clearTextOnFocus={undefined}
-            editable={undefined}
-            enablesReturnKeyAutomatically={undefined}
-            keyboardAppearance={undefined}
-            keyboardType={undefined}
-            maxLength={undefined}
-            multiline={undefined}
-            numberOfLines={undefined}
-            onBlur={undefined}
-            onChange={undefined}
-            onChangeText={[Function]}
-            onContentSizeChange={undefined}
-            onEndEditing={undefined}
-            onFocus={undefined}
-            onKeyPress={undefined}
-            onLayout={undefined}
-            onSelectionChange={undefined}
-            onSubmitEditing={undefined}
-            placeholder={undefined}
-            placeholderTextColor={undefined}
-            returnKeyType={undefined}
-            secureTextEntry={undefined}
-            selectTextOnFocus={undefined}
-            selectionColor={undefined}
-            selectionState={undefined}
-            style={
-              Object {
-                "borderColor": "#cccccc",
-                "borderRadius": 20,
-                "borderWidth": 1,
-                "color": "#1a1515",
-                "fontSize": 17,
-                "height": 36,
-                "marginBottom": 5,
-                "paddingHorizontal": 7,
-                "paddingVertical": 7,
-              }
-            }
-            underlineColorAndroid="transparent"
-            value=""
-          />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#1a1515",
-              "fontFamily": "Lato",
-              "fontSize": 17,
-              "fontWeight": "200",
-              "marginBottom": 7,
-            }
-          }
-        >
-          Senha
-        </Text>
-        <View
-          style={Object {}}
-        >
-          <TextInput
-            accessibilityLabel="Senha"
-            allowFontScaling={true}
-            autoCapitalize={undefined}
-            autoCorrect={undefined}
-            autoFocus={undefined}
-            blurOnSubmit={undefined}
-            clearButtonMode={undefined}
-            clearTextOnFocus={undefined}
-            editable={undefined}
-            enablesReturnKeyAutomatically={undefined}
-            keyboardAppearance={undefined}
-            keyboardType={undefined}
-            maxLength={undefined}
-            multiline={undefined}
-            numberOfLines={undefined}
-            onBlur={undefined}
-            onChange={undefined}
-            onChangeText={[Function]}
-            onContentSizeChange={undefined}
-            onEndEditing={undefined}
-            onFocus={undefined}
-            onKeyPress={undefined}
-            onLayout={undefined}
-            onSelectionChange={undefined}
-            onSubmitEditing={undefined}
-            placeholder={undefined}
-            placeholderTextColor={undefined}
-            returnKeyType={undefined}
-            secureTextEntry={true}
-            selectTextOnFocus={undefined}
-            selectionColor={undefined}
-            selectionState={undefined}
-            style={
-              Object {
-                "borderColor": "#cccccc",
-                "borderRadius": 20,
-                "borderWidth": 1,
-                "color": "#1a1515",
-                "fontSize": 17,
-                "height": 36,
-                "marginBottom": 5,
-                "paddingHorizontal": 7,
-                "paddingVertical": 7,
-              }
-            }
-            underlineColorAndroid="transparent"
-            value=""
-          />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#1a1515",
-              "fontFamily": "Lato",
-              "fontSize": 17,
-              "fontWeight": "200",
-              "marginBottom": 7,
-            }
-          }
-        >
-          Confirmar senha
-        </Text>
-        <View
-          style={Object {}}
-        >
-          <TextInput
-            accessibilityLabel="Confirmar senha"
-            allowFontScaling={true}
-            autoCapitalize={undefined}
-            autoCorrect={undefined}
-            autoFocus={undefined}
-            blurOnSubmit={undefined}
-            clearButtonMode={undefined}
-            clearTextOnFocus={undefined}
-            editable={undefined}
-            enablesReturnKeyAutomatically={undefined}
-            keyboardAppearance={undefined}
-            keyboardType={undefined}
-            maxLength={undefined}
-            multiline={undefined}
-            numberOfLines={undefined}
-            onBlur={undefined}
-            onChange={undefined}
-            onChangeText={[Function]}
-            onContentSizeChange={undefined}
-            onEndEditing={undefined}
-            onFocus={undefined}
-            onKeyPress={undefined}
-            onLayout={undefined}
-            onSelectionChange={undefined}
-            onSubmitEditing={undefined}
-            placeholder={undefined}
-            placeholderTextColor={undefined}
-            returnKeyType={undefined}
-            secureTextEntry={true}
-            selectTextOnFocus={undefined}
-            selectionColor={undefined}
-            selectionState={undefined}
-            style={
-              Object {
-                "borderColor": "#cccccc",
-                "borderRadius": 20,
-                "borderWidth": 1,
-                "color": "#1a1515",
-                "fontSize": 17,
-                "height": 36,
-                "marginBottom": 5,
-                "paddingHorizontal": 7,
-                "paddingVertical": 7,
-              }
-            }
-            underlineColorAndroid="transparent"
-            value=""
-          />
-        </View>
-      </View>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <RCTScrollView
-      automaticallyAdjustContentInsets={false}
-      contentContainerStyle={
-        Array [
-          Object {
-            "padding": undefined,
-          },
-          undefined,
-        ]
-      }
-      contentInset={
-        Object {
-          "bottom": 0,
-        }
-      }
-      enableAutomaticScroll={true}
-      enableResetScrollToCoords={true}
-      extraHeight={75}
-      extraScrollHeight={0}
-      getScrollResponder={[Function]}
-      handleOnScroll={[Function]}
-      keyboardDismissMode="interactive"
-      keyboardOpeningTime={250}
-      keyboardShouldPersistTaps="handled"
-      keyboardSpace={0}
-      onScroll={[Function]}
-      resetKeyboardSpace={[Function]}
-      resetScrollToCoords={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
-      scrollEventThrottle={1}
-      scrollForExtraHeightOnAndroid={[Function]}
-      scrollToEnd={[Function]}
-      scrollToFocusedInput={[Function]}
-      scrollToPosition={[Function]}
-      showsVerticalScrollIndicator={true}
       style={
         Object {
-          "backgroundColor": "transparent",
-          "flex": 1,
+          "backgroundColor": "#FFF",
+          "justifyContent": "center",
+          "marginTop": 10,
+          "padding": 15,
         }
       }
-      viewIsInsideTabBar={false}
-      virtual={undefined}
     >
-      <View>
+      <View
+        style={Object {}}
+      >
         <View
-          accessibilityComponentType={undefined}
-          accessibilityLabel={undefined}
-          accessibilityTraits={undefined}
-          accessible={true}
-          collapsable={undefined}
-          hasTVPreferredFocus={undefined}
-          hitSlop={undefined}
-          isTVSelectable={true}
-          nativeID={undefined}
-          onLayout={undefined}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "alignSelf": "center",
-              "backgroundColor": "#5f4b8b",
-              "borderBottomWidth": null,
-              "borderColor": "#007aff",
-              "borderLeftWidth": null,
-              "borderRadius": 57,
-              "borderRightWidth": null,
-              "borderTopWidth": null,
-              "elevation": 2,
-              "flex": 8,
-              "flexDirection": "row",
-              "height": 50,
-              "justifyContent": "center",
-              "marginBottom": 0,
-              "marginTop": 30,
-              "opacity": 1,
-              "paddingBottom": 6,
-              "paddingTop": 6,
-              "width": 180,
+              "marginBottom": 10,
             }
           }
-          testID={undefined}
-          tvParallaxProperties={undefined}
         >
           <Text
             accessible={true}
@@ -686,18 +200,499 @@ exports[`renders correctly 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "alignItems": "center",
-                "color": "white",
-                "fontFamily": "Raleway",
-                "fontSize": 16,
+                "color": "#1a1515",
+                "fontFamily": "Lato",
+                "fontSize": 17,
+                "fontWeight": "200",
+                "marginBottom": 7,
               }
             }
           >
-            Cadastrar
+            Primeiro nome
           </Text>
+          <View
+            style={Object {}}
+          >
+            <TextInput
+              accessibilityLabel="Primeiro nome"
+              allowFontScaling={true}
+              autoCapitalize={undefined}
+              autoCorrect={undefined}
+              autoFocus={undefined}
+              blurOnSubmit={undefined}
+              clearButtonMode={undefined}
+              clearTextOnFocus={undefined}
+              editable={undefined}
+              enablesReturnKeyAutomatically={undefined}
+              keyboardAppearance={undefined}
+              keyboardType={undefined}
+              maxLength={undefined}
+              multiline={undefined}
+              numberOfLines={undefined}
+              onBlur={undefined}
+              onChange={undefined}
+              onChangeText={[Function]}
+              onContentSizeChange={undefined}
+              onEndEditing={undefined}
+              onFocus={undefined}
+              onKeyPress={undefined}
+              onLayout={undefined}
+              onSelectionChange={undefined}
+              onSubmitEditing={undefined}
+              placeholder={undefined}
+              placeholderTextColor={undefined}
+              returnKeyType={undefined}
+              secureTextEntry={undefined}
+              selectTextOnFocus={undefined}
+              selectionColor={undefined}
+              selectionState={undefined}
+              style={
+                Object {
+                  "borderColor": "#cccccc",
+                  "borderRadius": 20,
+                  "borderWidth": 1,
+                  "color": "#1a1515",
+                  "fontSize": 17,
+                  "height": 36,
+                  "marginBottom": 5,
+                  "paddingHorizontal": 7,
+                  "paddingVertical": 7,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#1a1515",
+                "fontFamily": "Lato",
+                "fontSize": 17,
+                "fontWeight": "200",
+                "marginBottom": 7,
+              }
+            }
+          >
+            Segundo nome
+          </Text>
+          <View
+            style={Object {}}
+          >
+            <TextInput
+              accessibilityLabel="Segundo nome"
+              allowFontScaling={true}
+              autoCapitalize={undefined}
+              autoCorrect={undefined}
+              autoFocus={undefined}
+              blurOnSubmit={undefined}
+              clearButtonMode={undefined}
+              clearTextOnFocus={undefined}
+              editable={undefined}
+              enablesReturnKeyAutomatically={undefined}
+              keyboardAppearance={undefined}
+              keyboardType={undefined}
+              maxLength={undefined}
+              multiline={undefined}
+              numberOfLines={undefined}
+              onBlur={undefined}
+              onChange={undefined}
+              onChangeText={[Function]}
+              onContentSizeChange={undefined}
+              onEndEditing={undefined}
+              onFocus={undefined}
+              onKeyPress={undefined}
+              onLayout={undefined}
+              onSelectionChange={undefined}
+              onSubmitEditing={undefined}
+              placeholder={undefined}
+              placeholderTextColor={undefined}
+              returnKeyType={undefined}
+              secureTextEntry={undefined}
+              selectTextOnFocus={undefined}
+              selectionColor={undefined}
+              selectionState={undefined}
+              style={
+                Object {
+                  "borderColor": "#cccccc",
+                  "borderRadius": 20,
+                  "borderWidth": 1,
+                  "color": "#1a1515",
+                  "fontSize": 17,
+                  "height": 36,
+                  "marginBottom": 5,
+                  "paddingHorizontal": 7,
+                  "paddingVertical": 7,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#1a1515",
+                "fontFamily": "Lato",
+                "fontSize": 17,
+                "fontWeight": "200",
+                "marginBottom": 7,
+              }
+            }
+          >
+            Email
+          </Text>
+          <View
+            style={Object {}}
+          >
+            <TextInput
+              accessibilityLabel="Email"
+              allowFontScaling={true}
+              autoCapitalize={undefined}
+              autoCorrect={undefined}
+              autoFocus={undefined}
+              blurOnSubmit={undefined}
+              clearButtonMode={undefined}
+              clearTextOnFocus={undefined}
+              editable={undefined}
+              enablesReturnKeyAutomatically={undefined}
+              keyboardAppearance={undefined}
+              keyboardType={undefined}
+              maxLength={undefined}
+              multiline={undefined}
+              numberOfLines={undefined}
+              onBlur={undefined}
+              onChange={undefined}
+              onChangeText={[Function]}
+              onContentSizeChange={undefined}
+              onEndEditing={undefined}
+              onFocus={undefined}
+              onKeyPress={undefined}
+              onLayout={undefined}
+              onSelectionChange={undefined}
+              onSubmitEditing={undefined}
+              placeholder={undefined}
+              placeholderTextColor={undefined}
+              returnKeyType={undefined}
+              secureTextEntry={undefined}
+              selectTextOnFocus={undefined}
+              selectionColor={undefined}
+              selectionState={undefined}
+              style={
+                Object {
+                  "borderColor": "#cccccc",
+                  "borderRadius": 20,
+                  "borderWidth": 1,
+                  "color": "#1a1515",
+                  "fontSize": 17,
+                  "height": 36,
+                  "marginBottom": 5,
+                  "paddingHorizontal": 7,
+                  "paddingVertical": 7,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#1a1515",
+                "fontFamily": "Lato",
+                "fontSize": 17,
+                "fontWeight": "200",
+                "marginBottom": 7,
+              }
+            }
+          >
+            Senha
+          </Text>
+          <View
+            style={Object {}}
+          >
+            <TextInput
+              accessibilityLabel="Senha"
+              allowFontScaling={true}
+              autoCapitalize={undefined}
+              autoCorrect={undefined}
+              autoFocus={undefined}
+              blurOnSubmit={undefined}
+              clearButtonMode={undefined}
+              clearTextOnFocus={undefined}
+              editable={undefined}
+              enablesReturnKeyAutomatically={undefined}
+              keyboardAppearance={undefined}
+              keyboardType={undefined}
+              maxLength={undefined}
+              multiline={undefined}
+              numberOfLines={undefined}
+              onBlur={undefined}
+              onChange={undefined}
+              onChangeText={[Function]}
+              onContentSizeChange={undefined}
+              onEndEditing={undefined}
+              onFocus={undefined}
+              onKeyPress={undefined}
+              onLayout={undefined}
+              onSelectionChange={undefined}
+              onSubmitEditing={undefined}
+              placeholder={undefined}
+              placeholderTextColor={undefined}
+              returnKeyType={undefined}
+              secureTextEntry={true}
+              selectTextOnFocus={undefined}
+              selectionColor={undefined}
+              selectionState={undefined}
+              style={
+                Object {
+                  "borderColor": "#cccccc",
+                  "borderRadius": 20,
+                  "borderWidth": 1,
+                  "color": "#1a1515",
+                  "fontSize": 17,
+                  "height": 36,
+                  "marginBottom": 5,
+                  "paddingHorizontal": 7,
+                  "paddingVertical": 7,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#1a1515",
+                "fontFamily": "Lato",
+                "fontSize": 17,
+                "fontWeight": "200",
+                "marginBottom": 7,
+              }
+            }
+          >
+            Confirmar senha
+          </Text>
+          <View
+            style={Object {}}
+          >
+            <TextInput
+              accessibilityLabel="Confirmar senha"
+              allowFontScaling={true}
+              autoCapitalize={undefined}
+              autoCorrect={undefined}
+              autoFocus={undefined}
+              blurOnSubmit={undefined}
+              clearButtonMode={undefined}
+              clearTextOnFocus={undefined}
+              editable={undefined}
+              enablesReturnKeyAutomatically={undefined}
+              keyboardAppearance={undefined}
+              keyboardType={undefined}
+              maxLength={undefined}
+              multiline={undefined}
+              numberOfLines={undefined}
+              onBlur={undefined}
+              onChange={undefined}
+              onChangeText={[Function]}
+              onContentSizeChange={undefined}
+              onEndEditing={undefined}
+              onFocus={undefined}
+              onKeyPress={undefined}
+              onLayout={undefined}
+              onSelectionChange={undefined}
+              onSubmitEditing={undefined}
+              placeholder={undefined}
+              placeholderTextColor={undefined}
+              returnKeyType={undefined}
+              secureTextEntry={true}
+              selectTextOnFocus={undefined}
+              selectionColor={undefined}
+              selectionState={undefined}
+              style={
+                Object {
+                  "borderColor": "#cccccc",
+                  "borderRadius": 20,
+                  "borderWidth": 1,
+                  "color": "#1a1515",
+                  "fontSize": 17,
+                  "height": 36,
+                  "marginBottom": 5,
+                  "paddingHorizontal": 7,
+                  "paddingVertical": 7,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </View>
         </View>
       </View>
-    </RCTScrollView>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <RCTScrollView
+        automaticallyAdjustContentInsets={false}
+        contentContainerStyle={
+          Array [
+            Object {
+              "padding": undefined,
+            },
+            undefined,
+          ]
+        }
+        contentInset={
+          Object {
+            "bottom": 0,
+          }
+        }
+        enableAutomaticScroll={true}
+        enableResetScrollToCoords={true}
+        extraHeight={75}
+        extraScrollHeight={0}
+        getScrollResponder={[Function]}
+        handleOnScroll={[Function]}
+        keyboardDismissMode="interactive"
+        keyboardOpeningTime={250}
+        keyboardShouldPersistTaps="handled"
+        keyboardSpace={0}
+        onScroll={[Function]}
+        resetKeyboardSpace={[Function]}
+        resetScrollToCoords={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+        scrollEventThrottle={1}
+        scrollForExtraHeightOnAndroid={[Function]}
+        scrollToEnd={[Function]}
+        scrollToFocusedInput={[Function]}
+        scrollToPosition={[Function]}
+        showsVerticalScrollIndicator={true}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "flex": 1,
+          }
+        }
+        viewIsInsideTabBar={false}
+        virtual={undefined}
+      >
+        <View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hasTVPreferredFocus={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "backgroundColor": "#5f4b8b",
+                "borderBottomWidth": null,
+                "borderColor": "#007aff",
+                "borderLeftWidth": null,
+                "borderRadius": 57,
+                "borderRightWidth": null,
+                "borderTopWidth": null,
+                "elevation": 2,
+                "flex": 8,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "center",
+                "marginBottom": 0,
+                "marginTop": 30,
+                "opacity": 1,
+                "paddingBottom": 6,
+                "paddingTop": 6,
+                "width": 180,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "color": "white",
+                  "fontFamily": "Raleway",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Cadastrar
+            </Text>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
   </View>
-</View>
+</RCTScrollView>
 `;

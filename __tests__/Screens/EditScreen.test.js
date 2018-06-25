@@ -43,7 +43,8 @@ const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 
 it('should call edit function', async () => {
   const spy = jest.spyOn(EditScreen.prototype, 'edit');
-  const wrapper = shallow(<EditScreen />);
+  const navigation = jest.fn();
+  const wrapper = shallow(<EditScreen navigation = {navigation}/>);
   const button = wrapper.find('IconButton').at(0);
   console.log(button);
   button.simulate('press');
