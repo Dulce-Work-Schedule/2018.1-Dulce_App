@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 import {shallow} from 'enzyme';
 import t from 'tcomb-form-native';
-
+import {Alert} from 'react-native';
 require('bezier');
 Enzyme.configure({adapter: new Adapter()});
 
@@ -96,7 +96,7 @@ it('Should call login function', async() => {
   expect(spy).toHaveBeenCalled();
 });
 
-it('testing function _onPress error',() => {
+it('testing function _onPress error',async () => {
   const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
@@ -110,9 +110,10 @@ it('testing function _onPress error',() => {
     senha: '123',
     confirmarSenha: '132'
   };
-  const wrapper = shallow(<NewUser type={type} navigation = {navigation}/>);
+  const wrapper = shallow(<NewUser type={type} navigation={navigation}/>);
   wrapper.setState({value: value});
-  const onPressF = wrapper.instance()._onPress();
-  console.log(wrapper.debug());
-  console.log(onPressF);
+  wrapper.instance()._onPress();
+  await flushPromises();
+  wrapper.update();
+  expect(Alert.alert).toHaveBeenCalled();
 });

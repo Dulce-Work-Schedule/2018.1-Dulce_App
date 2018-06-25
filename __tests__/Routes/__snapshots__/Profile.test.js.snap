@@ -113,9 +113,7 @@ exports[`renders correctly 1`] = `
               }
             }
           >
-            <View
-              onLayout={[Function]}
-            >
+            <View>
               <View
                 style={
                   Array [
@@ -128,9 +126,9 @@ exports[`renders correctly 1`] = `
                       "height": 64,
                       "justifyContent": "center",
                       "left": 0,
-                      "paddingLeft": 6,
+                      "paddingLeft": 10,
                       "paddingRight": 10,
-                      "paddingTop": 18,
+                      "paddingTop": 15,
                       "right": 0,
                       "shadowColor": undefined,
                       "shadowOffset": undefined,
@@ -172,10 +170,7 @@ exports[`renders correctly 1`] = `
                           "color": "#000",
                           "fontFamily": "System",
                           "fontSize": 17,
-                          "fontWeight": "700",
-                          "marginLeft": undefined,
-                          "paddingLeft": 4,
-                          "paddingTop": 1,
+                          "fontWeight": "600",
                           "textAlign": "center",
                         },
                         Object {
@@ -667,6 +662,7 @@ exports[`renders correctly 1`] = `
                           "color": "#f0ad4e",
                           "fontFamily": "System",
                           "fontSize": 16.5,
+                          "lineHeight": 19,
                           "marginLeft": 0,
                           "marginRight": 0,
                           "paddingLeft": 16,
