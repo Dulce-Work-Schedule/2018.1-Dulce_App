@@ -6,7 +6,7 @@ import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 import Enzyme from 'enzyme';
 import t from 'tcomb-form-native';
-
+import {Alert} from 'react-native';
 require('bezier');
 
 Enzyme.configure({adapter: new Adapter()});
@@ -39,27 +39,48 @@ it('testing onChange container',() => {
   form.props().onChange();
 });
 
-<<<<<<< HEAD
-//const flushPromises = () => new Promise(resolve => setImmediate(resolve));
-//
-// it('testing axios', async () => {
-//   const wrapper = shallow(<EditScreen />);
-//   await flushPromises();
-//   wrapper.update();
-//   expect(wrapper).toMatchSnapshot();
-// });
-=======
-
 const flushPromises = () => new Promise(resolve => setImmediate(resolve));
 
 it('should call edit function', async () => {
   const spy = jest.spyOn(EditScreen.prototype, 'edit');
   const wrapper = shallow(<EditScreen />);
-  const button = wrapper.find('SignUp').at(0);
+  const button = wrapper.find('IconButton').at(0);
   console.log(button);
   button.simulate('press');
   await flushPromises();
   wrapper.update();
   expect(spy).toHaveBeenCalled();
 });
->>>>>>> #407 Arrumando testes
+
+it('should navigate to profile', async () => {
+  jest.mock('Alert',() => {
+    return {
+      alert: jest.fn()
+    };
+  });
+  const navigation = {navigate: jest.fn()};
+  const wrapper = shallow(<EditScreen navigation={navigation}/>);
+  const button = wrapper.find('IconButton').at(0);
+  console.log(button);
+  button.simulate('press');
+  await flushPromises();
+  wrapper.update();
+  console.log(Alert.alert.mock.calls[0][2][0]);
+  Alert.alert.mock.calls[0][2][0].onPress();
+  expect(navigation.navigate).toHaveBeenCalled();
+});
+
+//
+// it('_alert onPress Não', () => {
+//
+//   jest.mock('Alert',() => {
+//     return {
+//       alert: jest.fn()
+//     };
+//   });
+//
+//   const wrapper = shallow(<Schedule />);
+//
+//   wrapper.instance()._alert(jest.fn());
+//   Alert.alert.mock.calls[0][2][0];
+// });

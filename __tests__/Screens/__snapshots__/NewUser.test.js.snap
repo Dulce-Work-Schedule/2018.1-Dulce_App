@@ -15,9 +15,7 @@ exports[`renders correctly 1`] = `
   }
   virtual={undefined}
 >
-  <View
-    onLayout={[Function]}
-  >
+  <View>
     <View
       style={
         Array [
@@ -30,9 +28,9 @@ exports[`renders correctly 1`] = `
             "height": 64,
             "justifyContent": "center",
             "left": 0,
-            "paddingLeft": 6,
+            "paddingLeft": 10,
             "paddingRight": 10,
-            "paddingTop": 18,
+            "paddingTop": 15,
             "right": 0,
             "shadowColor": undefined,
             "shadowOffset": undefined,
@@ -92,7 +90,7 @@ exports[`renders correctly 1`] = `
               "marginLeft": -3,
               "opacity": 1,
               "paddingBottom": 6,
-              "paddingLeft": 4,
+              "paddingLeft": 6,
               "paddingRight": 6,
               "paddingTop": 6,
               "shadowColor": null,
@@ -121,11 +119,11 @@ exports[`renders correctly 1`] = `
                   },
                   Object {
                     "color": "#007aff",
-                    "fontSize": 34,
-                    "marginLeft": 1,
+                    "fontSize": 30,
+                    "marginLeft": 2,
                     "marginRight": 2,
                     "marginTop": 0,
-                    "paddingTop": 1,
+                    "paddingTop": 2,
                   },
                 ],
                 Object {
@@ -165,10 +163,7 @@ exports[`renders correctly 1`] = `
                 "color": "#000",
                 "fontFamily": "System",
                 "fontSize": 17,
-                "fontWeight": "700",
-                "marginLeft": undefined,
-                "paddingLeft": 4,
-                "paddingTop": 1,
+                "fontWeight": "600",
                 "textAlign": "center",
               },
               Object {

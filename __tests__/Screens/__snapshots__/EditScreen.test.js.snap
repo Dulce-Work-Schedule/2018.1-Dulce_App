@@ -39,9 +39,7 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    <View
-      onLayout={[Function]}
-    >
+    <View>
       <View
         style={
           Array [
@@ -54,9 +52,9 @@ exports[`renders correctly 1`] = `
               "height": 64,
               "justifyContent": "center",
               "left": 0,
-              "paddingLeft": 6,
+              "paddingLeft": 10,
               "paddingRight": 10,
-              "paddingTop": 18,
+              "paddingTop": 15,
               "right": 0,
               "shadowColor": undefined,
               "shadowOffset": undefined,
@@ -71,100 +69,7 @@ exports[`renders correctly 1`] = `
         }
         virtual={undefined}
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "alignSelf": "center",
-              "flex": 1,
-            }
-          }
-          virtual={undefined}
-        >
-          <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
-            accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
-            isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "alignItems": "center",
-                "alignSelf": null,
-                "backgroundColor": "transparent",
-                "borderBottomWidth": null,
-                "borderColor": null,
-                "borderLeftWidth": null,
-                "borderRadius": 5,
-                "borderRightWidth": null,
-                "borderTopWidth": null,
-                "elevation": 0,
-                "flexDirection": "row",
-                "height": 45,
-                "justifyContent": "space-between",
-                "marginLeft": -3,
-                "opacity": 1,
-                "paddingBottom": 6,
-                "paddingLeft": 4,
-                "paddingRight": 6,
-                "paddingTop": 6,
-                "shadowColor": null,
-                "shadowOffset": null,
-                "shadowOpacity": null,
-                "shadowRadius": null,
-              }
-            }
-            testID={undefined}
-            tvParallaxProperties={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={false}
-              ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": undefined,
-                    "fontSize": 12,
-                  },
-                  Array [
-                    Object {
-                      "color": "#000",
-                      "fontSize": 30,
-                    },
-                    Object {
-                      "color": "#007aff",
-                      "fontSize": 34,
-                      "marginLeft": 1,
-                      "marginRight": 2,
-                      "marginTop": 0,
-                      "paddingTop": 1,
-                    },
-                  ],
-                  Object {
-                    "fontFamily": "Ionicons",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                  },
-                ]
-              }
-              virtual={undefined}
-            >
-              
-            </Text>
-          </View>
-        </View>
+        <View />
         <View
           style={
             Array [
@@ -173,7 +78,9 @@ exports[`renders correctly 1`] = `
                 "alignSelf": "center",
                 "flex": 1,
               },
-              Object {},
+              Object {
+                "alignItems": "center",
+              },
             ]
           }
           virtual={undefined}
@@ -189,10 +96,7 @@ exports[`renders correctly 1`] = `
                   "color": "#000",
                   "fontFamily": "System",
                   "fontSize": 17,
-                  "fontWeight": "700",
-                  "marginLeft": undefined,
-                  "paddingLeft": 4,
-                  "paddingTop": 1,
+                  "fontWeight": "600",
                   "textAlign": "center",
                 },
                 Object {
@@ -236,101 +140,10 @@ exports[`renders correctly 1`] = `
         <View
           style={Object {}}
         >
-<<<<<<< HEAD
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#1a1515",
-                "fontFamily": "Lato",
-                "fontSize": 17,
-                "fontWeight": "200",
-                "marginBottom": 7,
-              }
-            }
-          >
-            Nome
-          </Text>
-          <View
-            style={Object {}}
-          >
-            <TextInput
-              accessibilityLabel="Nome"
-              allowFontScaling={true}
-              autoCapitalize={undefined}
-              autoCorrect={undefined}
-              autoFocus={undefined}
-              blurOnSubmit={undefined}
-              clearButtonMode={undefined}
-              clearTextOnFocus={undefined}
-              editable={undefined}
-              enablesReturnKeyAutomatically={undefined}
-              keyboardAppearance={undefined}
-              keyboardType={undefined}
-              maxLength={undefined}
-              multiline={undefined}
-              numberOfLines={undefined}
-              onBlur={undefined}
-              onChange={undefined}
-              onChangeText={[Function]}
-              onContentSizeChange={undefined}
-              onEndEditing={undefined}
-              onFocus={undefined}
-              onKeyPress={undefined}
-              onLayout={undefined}
-              onSelectionChange={undefined}
-              onSubmitEditing={undefined}
-              placeholder={undefined}
-              placeholderTextColor={undefined}
-              returnKeyType={undefined}
-              secureTextEntry={undefined}
-              selectTextOnFocus={undefined}
-              selectionColor={undefined}
-              selectionState={undefined}
-              style={
-                Object {
-                  "borderColor": "#cccccc",
-                  "borderRadius": 20,
-                  "borderWidth": 1,
-                  "color": "#1a1515",
-                  "fontSize": 17,
-                  "height": 36,
-                  "marginBottom": 5,
-                  "paddingHorizontal": 7,
-                  "paddingVertical": 7,
-                }
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "marginBottom": 10,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#1a1515",
-                "fontFamily": "Lato",
-                "fontSize": 17,
-                "fontWeight": "200",
-                "marginBottom": 7,
-=======
           <View
             style={
               Object {
                 "marginBottom": 10,
->>>>>>> #407 Arrumando resposta para a api
               }
             }
           >
@@ -340,16 +153,10 @@ exports[`renders correctly 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-<<<<<<< HEAD
-                  "borderColor": "#cccccc",
-                  "borderRadius": 20,
-                  "borderWidth": 1,
                   "color": "#1a1515",
-=======
-                  "color": "#000000",
->>>>>>> #407 Arrumando resposta para a api
+                  "fontFamily": "Lato",
                   "fontSize": 17,
-                  "fontWeight": "500",
+                  "fontWeight": "200",
                   "marginBottom": 7,
                 }
               }
@@ -395,9 +202,9 @@ exports[`renders correctly 1`] = `
                 style={
                   Object {
                     "borderColor": "#cccccc",
-                    "borderRadius": 4,
+                    "borderRadius": 20,
                     "borderWidth": 1,
-                    "color": "#000000",
+                    "color": "#1a1515",
                     "fontSize": 17,
                     "height": 36,
                     "marginBottom": 5,
@@ -413,15 +220,7 @@ exports[`renders correctly 1`] = `
           <View
             style={
               Object {
-<<<<<<< HEAD
-                "color": "#1a1515",
-                "fontFamily": "Lato",
-                "fontSize": 17,
-                "fontWeight": "200",
-                "marginBottom": 7,
-=======
                 "marginBottom": 10,
->>>>>>> #407 Arrumando resposta para a api
               }
             }
           >
@@ -431,16 +230,10 @@ exports[`renders correctly 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-<<<<<<< HEAD
-                  "borderColor": "#cccccc",
-                  "borderRadius": 20,
-                  "borderWidth": 1,
                   "color": "#1a1515",
-=======
-                  "color": "#000000",
->>>>>>> #407 Arrumando resposta para a api
+                  "fontFamily": "Lato",
                   "fontSize": 17,
-                  "fontWeight": "500",
+                  "fontWeight": "200",
                   "marginBottom": 7,
                 }
               }
@@ -486,9 +279,9 @@ exports[`renders correctly 1`] = `
                 style={
                   Object {
                     "borderColor": "#cccccc",
-                    "borderRadius": 4,
+                    "borderRadius": 20,
                     "borderWidth": 1,
-                    "color": "#000000",
+                    "color": "#1a1515",
                     "fontSize": 17,
                     "height": 36,
                     "marginBottom": 5,
@@ -504,15 +297,7 @@ exports[`renders correctly 1`] = `
           <View
             style={
               Object {
-<<<<<<< HEAD
-                "color": "#1a1515",
-                "fontFamily": "Lato",
-                "fontSize": 17,
-                "fontWeight": "200",
-                "marginBottom": 7,
-=======
                 "marginBottom": 10,
->>>>>>> #407 Arrumando resposta para a api
               }
             }
           >
@@ -522,16 +307,10 @@ exports[`renders correctly 1`] = `
               ellipsizeMode="tail"
               style={
                 Object {
-<<<<<<< HEAD
-                  "borderColor": "#cccccc",
-                  "borderRadius": 20,
-                  "borderWidth": 1,
                   "color": "#1a1515",
-=======
-                  "color": "#000000",
->>>>>>> #407 Arrumando resposta para a api
+                  "fontFamily": "Lato",
                   "fontSize": 17,
-                  "fontWeight": "500",
+                  "fontWeight": "200",
                   "marginBottom": 7,
                 }
               }
@@ -577,9 +356,9 @@ exports[`renders correctly 1`] = `
                 style={
                   Object {
                     "borderColor": "#cccccc",
-                    "borderRadius": 4,
+                    "borderRadius": 20,
                     "borderWidth": 1,
-                    "color": "#000000",
+                    "color": "#1a1515",
                     "fontSize": 17,
                     "height": 36,
                     "marginBottom": 5,

@@ -5,11 +5,10 @@ import ScreenHeader from '../Components/ScreenHeader';
 import ValidationComponent from 'react-native-form-validator';
 import store from '../Reducers/store';
 import axios from 'axios';
-import {Container, Content, Spinner} from 'native-base';
+import {Container} from 'native-base';
 import t from '../Components/Form';
 import IconButton from '../Components/IconButton';
 import SideBar from '../Components/SideBar';
-
 
 const Form = t.form.Form;
 
@@ -41,7 +40,6 @@ export default class EditScreen extends ValidationComponent {
 
   edit() {
     const url = 'http://52.67.4.137:8083/api/user/edit';
-    console.log(url);
     console.log('Bearer ' + store.getState().currentUser.token);
     console.log(store.getState().currentUser.id);
     axios.put(url,{
