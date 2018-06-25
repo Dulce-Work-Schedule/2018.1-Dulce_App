@@ -158,9 +158,11 @@ class NewProfile extends React.Component {
       if (error !== '') {
         Alert.alert('Erro!', error);
       } else {
-        console.log(store.getState().currentUser.id);
-        this.props.navigation.navigate('listProfiles');
-        Alert.alert('Novo profile feito com sucesso!');
+        Alert.alert(
+          'Sucesso',
+          'Seu perfil foi criado!',
+          [{text: 'ok', onPress: () => this.props.navigation.navigate('profile', {noSideBar: this.state.noSideBar})}]
+      );
       }
     });
   }
