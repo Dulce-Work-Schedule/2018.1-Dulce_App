@@ -32,7 +32,6 @@ class ProfileManagerScreen extends React.Component {
             <Text style={styles.text}>Setor: {store.getState().currentProfile.sector} </Text>
             <Text style={styles.text}>Matrícula: {store.getState().currentProfile.registration}</Text>
           </View>
-          <View style={{marginTop: 60}}/>
             <IconButton
               icon = 'edit'
               text = 'Editar'

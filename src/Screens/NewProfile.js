@@ -212,11 +212,9 @@ class NewProfile extends React.Component {
           : <View />
           }
         </View>
-        <View style={{flex: 1, marginTop: 50}}>
-          <AGRButton
-            text = 'Cadastrar'
-            onPress = {() => this.createProfile()}/>
-        </View>
+        <AGRButton
+          text = 'Cadastrar'
+          onPress = {() => this.createProfile()}/>
       </Container>
     );
   }

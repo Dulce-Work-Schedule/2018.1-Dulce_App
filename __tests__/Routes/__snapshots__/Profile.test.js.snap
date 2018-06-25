@@ -268,6 +268,7 @@ exports[`renders correctly 1`] = `
                           "fontSize": 16,
                         },
                         Object {
+                          "alignSelf": "center",
                           "fontFamily": "Lato",
                           "fontSize": 22,
                           "marginBottom": 15,
@@ -277,226 +278,230 @@ exports[`renders correctly 1`] = `
                     uppercase={false}
                     virtual={undefined}
                   />
-                  <View
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
                     style={
-                      Object {
-                        "flexDirection": "row",
-                      }
+                      Array [
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        },
+                      ]
                     }
+                    uppercase={false}
+                    virtual={undefined}
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                      Hospital: 
-                    </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                       
-                    </Text>
-                  </View>
-                  <View
+                    Hospital: 
+                     
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
                     style={
-                      Object {
-                        "flexDirection": "row",
-                      }
+                      Array [
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        },
+                      ]
                     }
+                    uppercase={false}
+                    virtual={undefined}
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                      Setor: 
-                    </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                       
-                    </Text>
-                  </View>
-                  <View
+                    Setor: 
+                     
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
                     style={
-                      Object {
-                        "flexDirection": "row",
-                      }
+                      Array [
+                        Object {
+                          "color": "#000",
+                          "fontFamily": "System",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "fontFamily": "Lato",
+                          "fontSize": 22,
+                          "marginBottom": 15,
+                        },
+                      ]
                     }
+                    uppercase={false}
+                    virtual={undefined}
                   >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                      Matrícula: 
-                    </Text>
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Array [
-                          Object {
-                            "color": "#000",
-                            "fontFamily": "System",
-                            "fontSize": 16,
-                          },
-                          Object {
-                            "fontFamily": "Lato",
-                            "fontSize": 22,
-                            "marginBottom": 15,
-                          },
-                        ]
-                      }
-                      uppercase={false}
-                      virtual={undefined}
-                    >
-                       
-                    </Text>
-                  </View>
+                    Matrícula: 
+                  </Text>
                 </View>
-              </View>
-              <View
-                style={
-                  Object {
-                    "marginTop": 60,
+                <RCTScrollView
+                  automaticallyAdjustContentInsets={false}
+                  contentContainerStyle={
+                    Array [
+                      Object {
+                        "padding": undefined,
+                      },
+                      undefined,
+                    ]
                   }
-                }
-              />
-              <RCTScrollView
-                automaticallyAdjustContentInsets={false}
-                contentContainerStyle={
-                  Array [
+                  contentInset={
                     Object {
-                      "padding": undefined,
-                    },
-                    undefined,
-                  ]
-                }
-                contentInset={
-                  Object {
-                    "bottom": 0,
+                      "bottom": 0,
+                    }
                   }
-                }
-                enableAutomaticScroll={true}
-                enableResetScrollToCoords={true}
-                extraHeight={75}
-                extraScrollHeight={0}
-                getScrollResponder={[Function]}
-                handleOnScroll={[Function]}
-                keyboardDismissMode="interactive"
-                keyboardOpeningTime={250}
-                keyboardShouldPersistTaps="handled"
-                keyboardSpace={0}
-                onScroll={[Function]}
-                resetKeyboardSpace={[Function]}
-                resetScrollToCoords={
-                  Object {
-                    "x": 0,
-                    "y": 0,
+                  enableAutomaticScroll={true}
+                  enableResetScrollToCoords={true}
+                  extraHeight={75}
+                  extraScrollHeight={0}
+                  getScrollResponder={[Function]}
+                  handleOnScroll={[Function]}
+                  keyboardDismissMode="interactive"
+                  keyboardOpeningTime={250}
+                  keyboardShouldPersistTaps="handled"
+                  keyboardSpace={0}
+                  onScroll={[Function]}
+                  resetKeyboardSpace={[Function]}
+                  resetScrollToCoords={
+                    Object {
+                      "x": 0,
+                      "y": 0,
+                    }
                   }
-                }
-                scrollEventThrottle={1}
-                scrollForExtraHeightOnAndroid={[Function]}
-                scrollToEnd={[Function]}
-                scrollToFocusedInput={[Function]}
-                scrollToPosition={[Function]}
-                showsVerticalScrollIndicator={true}
-                style={
-                  Object {
-                    "backgroundColor": "transparent",
-                    "flex": 1,
+                  scrollEventThrottle={1}
+                  scrollForExtraHeightOnAndroid={[Function]}
+                  scrollToEnd={[Function]}
+                  scrollToFocusedInput={[Function]}
+                  scrollToPosition={[Function]}
+                  showsVerticalScrollIndicator={true}
+                  style={
+                    Object {
+                      "backgroundColor": "transparent",
+                      "flex": 1,
+                    }
                   }
-                }
-                viewIsInsideTabBar={false}
-                virtual={undefined}
-              >
-                <View>
+                  viewIsInsideTabBar={false}
+                  virtual={undefined}
+                >
+                  <View>
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hasTVPreferredFocus={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "alignSelf": "center",
+                          "backgroundColor": "#5f4b8b",
+                          "borderBottomWidth": null,
+                          "borderColor": "#007aff",
+                          "borderLeftWidth": null,
+                          "borderRadius": 57,
+                          "borderRightWidth": null,
+                          "borderTopWidth": null,
+                          "elevation": 2,
+                          "flex": 8,
+                          "flexDirection": "row",
+                          "height": 50,
+                          "justifyContent": "center",
+                          "marginBottom": 0,
+                          "marginTop": 40,
+                          "opacity": 1,
+                          "paddingBottom": 6,
+                          "paddingTop": 6,
+                          "width": 180,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={false}
+                          ellipsizeMode="tail"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#fff",
+                                "fontSize": 25,
+                              },
+                              Object {
+                                "paddingHorizontal": 15,
+                              },
+                              Object {
+                                "fontFamily": "Entypo",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "color": "white",
+                              "fontFamily": "Raleway",
+                              "fontSize": 16,
+                              "marginRight": 40,
+                            }
+                          }
+                        >
+                          Editar
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </RCTScrollView>
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flex": 1,
+                    }
+                  }
+                >
                   <View
                     accessibilityComponentType={undefined}
                     accessibilityLabel={undefined}
@@ -518,166 +523,64 @@ exports[`renders correctly 1`] = `
                       Object {
                         "alignItems": "center",
                         "alignSelf": "center",
-                        "backgroundColor": "#5f4b8b",
+                        "backgroundColor": null,
                         "borderBottomWidth": null,
                         "borderColor": "#007aff",
                         "borderLeftWidth": null,
-                        "borderRadius": 57,
+                        "borderRadius": 5,
                         "borderRightWidth": null,
                         "borderTopWidth": null,
-                        "elevation": 2,
-                        "flex": 8,
+                        "elevation": 0,
                         "flexDirection": "row",
                         "height": 50,
                         "justifyContent": "center",
-                        "marginBottom": 0,
-                        "marginTop": 40,
+                        "margin": 20,
+                        "marginBottom": 20,
+                        "marginHorizontal": 120,
                         "opacity": 1,
                         "paddingBottom": 6,
                         "paddingTop": 6,
-                        "width": 180,
+                        "shadowColor": null,
+                        "shadowOffset": null,
+                        "shadowOpacity": null,
+                        "shadowRadius": null,
+                        "width": 170,
                       }
                     }
                     testID={undefined}
                     tvParallaxProperties={undefined}
                   >
-                    <View
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
                       style={
-                        Object {
-                          "alignItems": "center",
-                          "flexDirection": "row",
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {
-                              "color": "#fff",
-                              "fontSize": 25,
-                            },
-                            Object {
-                              "paddingHorizontal": 15,
-                            },
-                            Object {
-                              "fontFamily": "Entypo",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
-                        }
-                      >
-                        
-                      </Text>
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
+                        Array [
+                          Object {
+                            "backgroundColor": "transparent",
+                            "color": "#f0ad4e",
+                            "fontFamily": "System",
+                            "fontSize": 16.5,
+                            "lineHeight": 19,
+                            "marginLeft": 0,
+                            "marginRight": 0,
+                            "paddingLeft": 16,
+                            "paddingRight": 16,
+                          },
                           Object {
                             "alignItems": "center",
-                            "color": "white",
+                            "color": "#fd7d01",
                             "fontFamily": "Raleway",
-                            "fontSize": 16,
-                            "marginRight": 40,
-                          }
-                        }
-                      >
-                        Editar
-                      </Text>
-                    </View>
+                            "fontSize": 17,
+                          },
+                        ]
+                      }
+                      uppercase={false}
+                      virtual={undefined}
+                    >
+                      Excluir conta
+                    </Text>
                   </View>
-                </View>
-              </RCTScrollView>
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "flex": 1,
-                  }
-                }
-              >
-                <View
-                  accessibilityComponentType={undefined}
-                  accessibilityLabel={undefined}
-                  accessibilityTraits={undefined}
-                  accessible={true}
-                  collapsable={undefined}
-                  hasTVPreferredFocus={undefined}
-                  hitSlop={undefined}
-                  isTVSelectable={true}
-                  nativeID={undefined}
-                  onLayout={undefined}
-                  onResponderGrant={[Function]}
-                  onResponderMove={[Function]}
-                  onResponderRelease={[Function]}
-                  onResponderTerminate={[Function]}
-                  onResponderTerminationRequest={[Function]}
-                  onStartShouldSetResponder={[Function]}
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "alignSelf": "center",
-                      "backgroundColor": null,
-                      "borderBottomWidth": null,
-                      "borderColor": "#007aff",
-                      "borderLeftWidth": null,
-                      "borderRadius": 5,
-                      "borderRightWidth": null,
-                      "borderTopWidth": null,
-                      "elevation": 0,
-                      "flexDirection": "row",
-                      "height": 50,
-                      "justifyContent": "center",
-                      "margin": 20,
-                      "marginBottom": 20,
-                      "marginHorizontal": 120,
-                      "opacity": 1,
-                      "paddingBottom": 6,
-                      "paddingTop": 6,
-                      "shadowColor": null,
-                      "shadowOffset": null,
-                      "shadowOpacity": null,
-                      "shadowRadius": null,
-                      "width": 170,
-                    }
-                  }
-                  testID={undefined}
-                  tvParallaxProperties={undefined}
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                          "color": "#f0ad4e",
-                          "fontFamily": "System",
-                          "fontSize": 16.5,
-                          "lineHeight": 19,
-                          "marginLeft": 0,
-                          "marginRight": 0,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                        },
-                        Object {
-                          "alignItems": "center",
-                          "color": "#fd7d01",
-                          "fontFamily": "Raleway",
-                          "fontSize": 17,
-                        },
-                      ]
-                    }
-                    uppercase={false}
-                    virtual={undefined}
-                  >
-                    Excluir conta
-                  </Text>
                 </View>
               </View>
             </View>

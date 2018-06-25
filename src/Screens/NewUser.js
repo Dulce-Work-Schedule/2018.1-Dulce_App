@@ -1,8 +1,7 @@
 import React from 'react';
-import {View,Alert} from 'react-native';
+import {View,Alert, ScrollView} from 'react-native';
 import ScreenHeader from '../Components/ScreenHeader';
 import t from '../Components/Form';
-import {Container} from 'native-base';
 import AGRButton from '../Components/AGRButton';
 import {newUser as styles} from './styles' ;
 import axios from 'axios';
@@ -94,7 +93,7 @@ class NewUser extends React.Component {
   render() {
     const {goBack} = this.props.navigation;
     return (
-      <Container style={{backgroundColor: '#FFF'}}>
+      <ScrollView style={{backgroundColor: '#FFF'}}>
         <ScreenHeader title = 'Criar nova conta' goBack={() => goBack()}/>
         <View style={styles.container}>
           <Form
@@ -111,7 +110,7 @@ class NewUser extends React.Component {
             onPress = {(v) => this._onPress(v)}
           />
         </View>
-      </Container>
+      </ScrollView>
     );
   }
 }

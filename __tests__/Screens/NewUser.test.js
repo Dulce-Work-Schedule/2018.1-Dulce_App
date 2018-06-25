@@ -25,7 +25,7 @@ it('test onChange value',() => {
   console.log(onChange);
 });
 
-it('testing onChange container',() => {
+it('testing onChange scrollview',() => {
   const navigation = jest.fn();
   const type = t.struct({
     nome: t.String,
@@ -34,7 +34,7 @@ it('testing onChange container',() => {
     confirmarSenha: t.String
   });
   const wrapper = shallow(<NewUser navigation= {navigation} type={type}/>);
-  const container = wrapper.find('Styled(Container)').at(0);
+  const container = wrapper.find('ScrollView').at(0);
   const form = container.find('Form').at(0);
   form.props().onChange();
 });
