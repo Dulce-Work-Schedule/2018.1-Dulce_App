@@ -9712,7 +9712,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-                date={1529907210283}
+                date={1529909394970}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}
@@ -9943,7 +9943,7 @@ exports[`renders correctly 1`] = `
               }
             >
               <RCTDatePicker
-                date={1529907210283}
+                date={1529909394970}
                 locale={undefined}
                 maximumDate={undefined}
                 minimumDate={undefined}

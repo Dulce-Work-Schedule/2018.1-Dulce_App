@@ -3349,10 +3349,6 @@ exports[`renders correctly 1`] = `
                   "fontWeight": "300",
                   "marginTop": 7,
                 },
-                Object {
-                  "color": "#2d4150",
-                  "fontWeight": "500",
-                },
                 Object {},
               ]
             }

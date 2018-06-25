@@ -9,26 +9,6 @@ import {newProfile as styles} from './styles' ;
 import axios from 'axios';
 import store from '../Reducers/store';
 
-const default_profile_state_value = {
-  value: {
-    matricula: '',
-    especialidade: ''
-  },
-  user_type: [
-    {
-      name: 'Funcionário',
-      id: 'employee'
-    },{
-      name: 'Gestor de Setor',
-      id: 'sector_manager'
-    },{
-      name: 'Gestor de Instituição',
-      id: 'institution_manager'
-    }
-  ],
-  loadingHospital: true,
-  isHospitalPicked: false
-};
 const Form = t.form.Form;
 const default_profile_options = {
   fields: {
@@ -57,12 +37,23 @@ class NewProfile extends React.Component {
     });
     this.state = {
       value: {
-        nome: '',
-        setor: '',
         matricula: '',
-        hospital: ''
+        especialidade: ''
       },
-      userType: '',
+      user_type: [
+        {
+          name: 'Funcionário',
+          id: 'employee'
+        },{
+          name: 'Gestor de Setor',
+          id: 'sector_manager'
+        },{
+          name: 'Gestor de Instituição',
+          id: 'institution_manager'
+        }
+      ],
+      loadingHospital: true,
+      isHospitalPicked: false,
       noSideBar: this.props.navigation.state.params !== void 0 ? this.props.navigation.state.params.noSideBar : false
     };
     this.options = default_profile_options;
@@ -197,10 +188,6 @@ class NewProfile extends React.Component {
     );
   }
 
-  onChange(value) {
-    this.setState({selected: value});
-  }
-
   renderScreen(flexN) {
     const {goBack} = this.props.navigation;
     return (
@@ -215,7 +202,7 @@ class NewProfile extends React.Component {
             onChange={(v) => this.onChange(v)}
           />
         </View>
-        <View style={{justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}} >
+        <View style={{alignItems: 'center', flexDirection: 'column', height: '45%'}} >
           {this.renderPicker(this.state.userType, 'Tipo de Perfil', this.state.user_type, this.selectUserType.bind(this))}
           {this.state.loadingHospital ? this.renderSpinner()
           : this.renderPicker(this.state.selectedHospital, 'Hospital', this.state.hospitals, this.selectHospital.bind(this))
@@ -235,8 +222,9 @@ class NewProfile extends React.Component {
   }
 
   render() {
+    console.log(this.state);
     return (
-      <View style={{flex: 1}} >
+      <View style={{flex: 1}}>
         {this.state.noSideBar ? this.renderScreen(1) : (
           <View style={{flexDirection: 'row', flex: 1}}>
             <SideBar />
