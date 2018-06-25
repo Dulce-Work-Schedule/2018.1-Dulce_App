@@ -45,23 +45,28 @@ export default class EditScreen extends ValidationComponent {
     console.log('Bearer ' + store.getState().currentUser.token);
     console.log(store.getState().currentUser.id);
     axios.put(url,{
-      headers: {
-        'Authorization': 'Bearer ' + store.getState().currentUser.token
-      },
       firstName: this.state.value.nome,
       lastName: this.state.value.sobrenome,
       email: this.state.value.email,
       id: store.getState().currentUser.id
+    }, {
+      headers: {
+        'Authorization': 'Bearer ' + store.getState().currentUser.token
+      }
     })
     .then((response) => {
+      console.log(response.data);
       if (response.data.message) {
         Alert.alert('Erro',response.data.message);
         console.log(response.data);
       } else {
         console.log(response.data);
         Alert.alert(
+          'Successo!',
           'Sua conta foi editada com sucesso!',
-          {text: 'ok', onPress: () => { this.props.navigation.navigate('profile'); }}
+          [
+            {text: 'ok', onPress: () => { this.props.navigation.navigate('profile'); }}
+          ]
         );
       }
     });
