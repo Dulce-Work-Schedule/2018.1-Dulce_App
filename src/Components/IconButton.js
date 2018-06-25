@@ -1,13 +1,12 @@
 import {IconButton as styles} from './styles' ;
 import React from 'react';
 import {Text, View} from 'react-native';
-import {Container, Content, Button} from 'native-base';
+import {Content, Button} from 'native-base';
 import Icon from 'react-native-vector-icons/Entypo';
 
 class IconButton extends React.Component {
   render() {
     return (
-      <Container>
         <Content>
           <Button rounded
             style={this.props.style ? this.props.style : styles.container}
@@ -20,7 +19,6 @@ class IconButton extends React.Component {
             }
           </Button>
         </Content>
-      </Container>
     );
   }
 }

@@ -36,12 +36,12 @@ class ProfileManagerScreen extends React.Component {
             <Text style={styles.text}>{store.getState().currentProfile.sector} </Text></View>
             <View style={{flexDirection: 'row'}}>
             <Text style={styles.text}>Matricula: </Text>
-            <Text style={styles.text}>{store.getState().currentProfile.registration} </Text></View></View></View>
-        <View style={{flex: 1 ,alignItems: 'center'}}>
-          <IconButton
+            <Text style={styles.text}>{store.getState().currentProfile.registration} </Text></View></View></View><View style={{marginTop: 60}}/>
+            <IconButton
             icon = 'edit'
             text = 'Editar'
             onPress={() => this.navigateToEditScreen()}/>
+        <View style={{flex: 1 ,alignItems: 'center'}}>
           <Button transparent warning style={styles.transparentButton}>
             <Text style={styles.textButtonTrasparent}>Excluir conta</Text>
           </Button></View></View>
