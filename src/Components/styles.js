@@ -91,7 +91,7 @@ export const styles = {
       alignItems: 'center',
       justifyContent: 'center',
       marginTop: 30,
-      paddingHorizontal: 50,
+      flex: 8,
       alignSelf: 'center',
       marginBottom: 0,
       width: 180
@@ -230,11 +230,14 @@ export const styles = {
   },
   IconButton: {
     container: {
-      height: 50,
-      paddingHorizontal: 30,
       backgroundColor: purple_dulce,
-      alignSelf: 'center',
+      height: 50,
       alignItems: 'center',
+      justifyContent: 'center',
+      marginTop: 30,
+      flex: 8,
+      alignSelf: 'center',
+      marginBottom: 0,
       width: 180
     },
     text: {
@@ -245,7 +248,6 @@ export const styles = {
     },
     icon: {
       color: '#ffffff',
-      marginRight: 40,
       height: 25,
       width: 25
     }
