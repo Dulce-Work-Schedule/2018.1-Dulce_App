@@ -27,11 +27,11 @@ export class LoginScreen extends React.Component {
     Toast.show({
       text: 'Funcionalidade não disponivel'});
   }
-  resetNavigation(targetRoute) {
+  resetNavigation() {
     const resetAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({routeName: targetRoute})
+        NavigationActions.navigate({routeName: 'profile', params: {noSideBar: true}})
       ]
     });
     this.props.navigation.dispatch(resetAction);
@@ -68,7 +68,8 @@ export class LoginScreen extends React.Component {
           Alert.alert('Erro!', error);
         } else {
           this.props.setCurrentUser(response.data.token, response.data.user);
-          this.resetNavigation('initial');
+          this.resetNavigation();
+          // this.props.navigation.navigate('profile', {noSideBar: true});
         }
       });
   }
@@ -78,6 +79,7 @@ export class LoginScreen extends React.Component {
   }
 
   render() {
+
     return (
       <Container style={styles.container}>
         <StatusBar backgroundColor='#5f4b79' />

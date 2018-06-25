@@ -60,7 +60,7 @@ class ScheduleItem extends React.Component {
       (this.state.start_time.getMonth() < this.state.end_time.getMonth())) {
         et_string += '(' + this.state.end_time.getDay().toString().padStart(2, 0) + '/' +
         (this.state.end_time.getMonth() + 1).toString().padStart(2, 0) + '/' +
-        (this.state.end_time.getYear()).toString().padStart(2, 0) + ')';
+        (this.state.end_time.getFullYear()).toString().padStart(2, 0) + ')';
       }
       this.setState({start_time_string: st_string, end_time_string: et_string});
     }
@@ -83,7 +83,7 @@ class ScheduleItem extends React.Component {
             </View>
           ) : (
             <View>
-              <Text>Hospital</Text>
+              <Text>{store.getState().currentProfile.hospital}</Text>
               <Text>{this.state.start_time_string} - {this.state.end_time_string}</Text>
             </View>
           )

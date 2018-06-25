@@ -7,15 +7,6 @@ import SideBar from '../Components/SideBar';
 import AGRButton from '../Components/AGRButton';
 import {newProfile as styles} from './styles' ;
 
-const default_profile_state_value = {
-  value: {
-    nome: '',
-    setor: '',
-    matricula: '',
-    hospital: ''
-  },
-  userType: ''
-};
 const Form = t.form.Form;
 const default_profile_options = {
   fields: {
@@ -44,7 +35,16 @@ class NewProfile extends React.Component {
       matricula: t.String,
       hospital: t.String
     });
-    this.state = default_profile_state_value;
+    this.state = {
+      value: {
+        nome: '',
+        setor: '',
+        matricula: '',
+        hospital: ''
+      },
+      userType: '',
+      noSideBar: this.props.navigation.state.params !== void 0 ? this.props.navigation.state.params.noSideBar : false
+    };
     this.options = default_profile_options;
   }
 
@@ -71,30 +71,40 @@ class NewProfile extends React.Component {
     this.setState({selected: value});
   }
 
-  render() {
+  renderScreen(flexN) {
     const {goBack} = this.props.navigation;
     return (
-      <View style={{flexDirection: 'row', flex: 1}}>
-        <SideBar />
-        <Container style={{backgroundColor: '#FFF', flex: 8}}>
-          <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
-          <View style={styles.container}>
-            <Form
-              ref='form'
-              type={this.Service}
-              value={this.state.value}
-              options={this.options}
-              onChange={(v) => this.onChange(v)}
-            />
+      <Container style={{backgroundColor: '#FFF', flex: flexN}}>
+        <ScreenHeader title = 'Criar novo perfil' goBack = {() => goBack()} />
+        <View style={styles.container}>
+          <Form
+            ref='form'
+            type={this.Service}
+            value={this.state.value}
+            options={this.options}
+            onChange={(v) => this.onChange(v)}
+          />
+        </View>
+        <Text style={styles.text}> Selecione o tipo de Funcionário que deseja criar </Text>
+        {this.pickerButton()}
+        <View style={{flex: 1}}>
+          <AGRButton
+            text = 'Cadastrar'
+            onPress = {() => {}}/>
+        </View>
+      </Container>
+    );
+  }
+
+  render() {
+    return (
+      <View style={{flex: 1}} >
+        {this.state.noSideBar ? this.renderScreen(1) : (
+          <View style={{flexDirection: 'row', flex: 1}}>
+            <SideBar />
+            {this.renderScreen(8)}
           </View>
-          <Text style={styles.text}> Selecione o tipo de Funcionário que deseja criar </Text>
-          {this.pickerButton()}
-          <View style={{flex: 1}}>
-            <AGRButton
-              text = 'Cadastrar'
-              onPress = {() => {}}/>
-          </View>
-        </Container>
+        )}
       </View>
     );
   }

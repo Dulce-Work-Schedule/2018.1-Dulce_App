@@ -665,6 +665,7 @@ exports[`renders correctly 1`] = `
               "borderRightWidth": null,
               "borderTopWidth": null,
               "elevation": 2,
+              "flex": 8,
               "flexDirection": "row",
               "height": 50,
               "justifyContent": "center",
@@ -672,7 +673,6 @@ exports[`renders correctly 1`] = `
               "marginTop": 30,
               "opacity": 1,
               "paddingBottom": 6,
-              "paddingHorizontal": 50,
               "paddingTop": 6,
               "width": 180,
             }

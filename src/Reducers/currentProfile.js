@@ -1,11 +1,6 @@
 import {SETPROFILE, RESETPROFILE} from '../Actions/currentProfile';
 
-const initialState = {
-  id: '5b2d6fa1415965001ddaa5dd',
-  registration: 160111612,
-  sector: 'Portal',
-  hospital: 'Lappis'
-};
+const initialState = {};
 
 function currentProfile(state = initialState,action) {
   switch (action.type) {
@@ -15,7 +10,7 @@ function currentProfile(state = initialState,action) {
       return initialState;
 
     default:
-      return initialState;
+      return state;
   }
 }
 

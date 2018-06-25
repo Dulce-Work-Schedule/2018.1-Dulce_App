@@ -10,11 +10,7 @@ const currentProfile = {
 
 describe('currentProfile reducer', () => {
   it('should return the initial state',() => {
-    expect(reducer(void 0,{})).toEqual({
-      id: '5b2d6fa1415965001ddaa5dd',
-      registration: 160111612,
-      sector: 'Portal',
-      hospital: 'Lappis'});
+    expect(reducer(void 0,{})).toEqual({});
   });
 
   it('should handle the setprofile action', () => {
@@ -37,11 +33,6 @@ describe('currentProfile reducer', () => {
         type: RESETPROFILE,
         currentProfile: {}
       })
-    ).toEqual({
-      id: '5b2d6fa1415965001ddaa5dd',
-      registration: 160111612,
-      sector: 'Portal',
-      hospital: 'Lappis'
-    });
+    ).toEqual({});
   });
 });
