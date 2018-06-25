@@ -112,7 +112,7 @@ it('testing function _onPress error',async () => {
   };
   const wrapper = shallow(<NewUser type={type} navigation={navigation}/>);
   wrapper.setState({value: value});
-  const onPressF = wrapper.instance()._onPress();
+  wrapper.instance()._onPress();
   await flushPromises();
   wrapper.update();
   expect(Alert.alert).toHaveBeenCalled();
