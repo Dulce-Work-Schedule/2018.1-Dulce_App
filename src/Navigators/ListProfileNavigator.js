@@ -5,7 +5,7 @@ import ProfileSchedule from '../Routes/ProfileSchedule';
 import {StackNavigator} from 'react-navigation';
 
 const routes = {
-  listProfiles: {
+  profile: {
     screen: ListProfile,
     navigationOptions: {
       header: null

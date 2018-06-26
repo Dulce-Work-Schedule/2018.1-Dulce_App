@@ -158,9 +158,11 @@ class NewProfile extends React.Component {
       if (error !== '') {
         Alert.alert('Erro!', error);
       } else {
-        console.log(store.getState().currentUser.id);
-        this.props.navigation.navigate('listProfiles');
-        Alert.alert('Novo profile feito com sucesso!');
+        Alert.alert(
+          'Sucesso',
+          'Seu perfil foi criado!',
+          [{text: 'ok', onPress: () => this.props.navigation.navigate('profile', {noSideBar: this.state.noSideBar})}]
+      );
       }
     });
   }
@@ -202,7 +204,7 @@ class NewProfile extends React.Component {
             onChange={(v) => this.onChange(v)}
           />
         </View>
-        <View style={{alignItems: 'center', flexDirection: 'column', height: '45%'}} >
+        <View style={{alignItems: 'center', flexDirection: 'column', height: '30%'}} >
           {this.renderPicker(this.state.userType, 'Tipo de Perfil', this.state.user_type, this.selectUserType.bind(this))}
           {this.state.loadingHospital ? this.renderSpinner()
           : this.renderPicker(this.state.selectedHospital, 'Hospital', this.state.hospitals, this.selectHospital.bind(this))
