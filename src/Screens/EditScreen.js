@@ -39,7 +39,7 @@ export default class EditScreen extends ValidationComponent {
   }
 
   edit() {
-    const url = 'http://18.228.140.213:8083/api/user/edit';
+    const url = 'http://54.233.119.148:8083/api/user/edit';
     axios.put(url,{
       firstName: this.state.value.nome,
       lastName: this.state.value.sobrenome,

@@ -39,7 +39,7 @@ class ScheduleItem extends React.Component {
   }
 
   axiosUser() {
-    const url = 'http://18.228.140.213:8083/api/user/listById?id=' + this.state.userId;
+    const url = 'http://54.233.119.148:8083/api/user/listById?id=' + this.state.userId;
     axios.get(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
