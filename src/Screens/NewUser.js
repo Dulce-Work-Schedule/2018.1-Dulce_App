@@ -59,7 +59,7 @@ class NewUser extends React.Component {
   _onPress() {
     if (this.state.value.primeiroNome !== '' && this.state.value.segundoNome !== '' && this.state.value.email !== '') {
       if (this.state.value.senha === this.state.value.confirmarSenha) {
-        const url = 'http://54.233.119.148/api/user/create';
+        const url = 'http://54.233.119.148:8083/api/user/create';
         axios.post(url, {
           firstName: this.state.value.primeiroNome,
           lastName: this.state.value.segundoNome,
