@@ -159,7 +159,7 @@ export default class Schedule extends Component {
   }
 
   axiosProfile(profile_id, selected) {
-    const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + profile_id;
+    const url = 'http://18.228.140.213:8083/api/profile/view/?profile_id=' + profile_id;
     console.log(url);
     axios.get(url,{
       headers: {

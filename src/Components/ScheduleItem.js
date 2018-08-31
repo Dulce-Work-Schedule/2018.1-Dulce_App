@@ -26,7 +26,7 @@ class ScheduleItem extends React.Component {
     await this.setState({loading: false});
   }
   async axiosProfile() {
-    const url = 'http://18.231.9.190:8083/api/profile/view/?profile_id=' + this.props.item.profile_id;
+    const url = 'http://18.228.140.213:8083/api/profile/view/?profile_id=' + this.props.item.profile_id;
     axios.get(url,{
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token

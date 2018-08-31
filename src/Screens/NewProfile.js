@@ -123,7 +123,7 @@ class NewProfile extends React.Component {
   }
 
   createProfile() {
-    const url = 'http://18.231.9.190:8083/api/profile/create';
+    const url = 'http://18.228.140.213:8083/api/profile/create';
     axios.post(url, {
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token

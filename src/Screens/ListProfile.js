@@ -33,7 +33,7 @@ class ListProfile extends Component {
 
   componentDidMount() {
     /*eslint max-nested-callbacks: ["error", 4]*/
-    const url = 'http://18.231.9.190:8083/api/profile/list?user_id=' + store.getState().currentUser.id;
+    const url = 'http://18.228.140.213:8083/api/profile/list?user_id=' + store.getState().currentUser.id;
     console.log(store.getState().currentUser.id);
     axios.get(url, {
       headers: {
