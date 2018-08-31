@@ -51,7 +51,7 @@ export class LoginScreen extends React.Component {
   }
 
   login() {
-    const url = 'http://52.67.4.137:8083/api/user/login';
+    const url = 'http://54.233.119.148:8083/api/user/login';
     axios.post(url, {
       email: this.state.email,
       password: this.state.password

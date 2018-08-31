@@ -9,7 +9,7 @@ export default class SectorSchedule extends Component {
       <Schedule
         sector={false}
         title = 'Minha Escala'
-        url = {'http://18.231.80.185:8083/api/schedule/listYearByProfile?profile_id=' +
+        url = {'http://18.228.71.197:8083/api/schedule/listYearByProfile?profile_id=' +
         store.getState().currentProfile.id}
       />
     );

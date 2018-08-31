@@ -60,7 +60,7 @@ class NewProfile extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://54.94.162.218:8083/api/hospital/list';
+    const url = 'http://54.207.7.98:8083/api/hospital/list';
     axios.get(url, {
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token
@@ -102,7 +102,7 @@ class NewProfile extends React.Component {
 
   selectHospital(id) {
     this.setState({selectedHospital: id});
-    const url = 'http://18.231.27.220:8083/api/sector/listByHospital?hospital_id=' + id;
+    const url = 'http://18.228.85.198:8083/api/sector/listByHospital?hospital_id=' + id;
     axios.get(url, {
       headers: {
         'Authorization': 'Bearer ' + store.getState().currentUser.token

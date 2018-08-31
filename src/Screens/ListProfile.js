@@ -52,8 +52,8 @@ class ListProfile extends Component {
           response.data.forEach(async (element) => {
             let profile = {};
 
-            let url2 = 'http://54.94.162.218:8083/api/hospital/view?hospital_id=' + element.hospital_id;
-            let url3 = 'http://18.231.27.220:8083/api/sector/view?sector_id=' + element.sector_id;
+            let url2 = 'http://54.207.7.98:8083/api/hospital/view?hospital_id=' + element.hospital_id;
+            let url3 = 'http://18.228.85.198:8083/api/sector/view?sector_id=' + element.sector_id;
             await axios.get(url2, {
               headers: {
                 'Authorization': 'Bearer ' + store.getState().currentUser.token

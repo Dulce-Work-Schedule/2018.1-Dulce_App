@@ -173,7 +173,7 @@ export default class Schedule extends Component {
   }
 
   axiosUser(user_id, selected) {
-    const url = 'http://52.67.4.137:8083/api/user/listById?id=' + user_id;
+    const url = 'http://18.228.140.213:8083/api/user/listById?id=' + user_id;
     console.log(url);
     axios.get(url,{
       headers: {
