@@ -10,7 +10,7 @@ Dulce tem o propósito de auxiliar a gestão no sistema de saúde do DF, promove
 
 ### Por que usar o Dulce?
 
-O Dulce é o unico APP que permite os gestores de saúde uma facil vizualização das escalas dos médicos ligados a Secretaria de Saúde do Distrito Federal.
+O Dulce é o unico APP que permite os gestores de saúde uma facil vizualização das escalas dos médicos ligados a Secretaria de Saúde do Distrito Federal. 
 
 ### Instalação
 A Instalação do App pode ser feita para Android em breve será lançada a versão para IOs.  
